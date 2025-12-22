@@ -1,0 +1,199 @@
+\chapter{STRUCTURE DU CURSUS}
+\label{chap:structure}
+
+\section{Architecture Cursus : 28 Semaines}
+
+\subsubsection{Vue d'Ensemble : Phases et Objectifs}
+\textbf{28 semaines au total = 24 semaines techniques + 4 semaines de professionnalisation.}
+
+Le cursus est une séquence logique de déconstruction et reconstruction des compétences.
+\begin{enumerate}
+    \item \textbf{Phase 0 (Piscine) :} Nettoyer les mauvaises habitudes. \textit{Livrable : CLI Tool en Rust.}
+    \item \textbf{Phase 1 (Fondations) :} Maîtriser les briques bas-niveau. \textit{Livrable : Token standard \& Swap.}
+    \item \textbf{Phase 2 (Spécialisation) :} Devenir expert sur une stack (Solana/EVM/Product). \textit{Livrable : Protocole DeFi ou Dashboard.}
+    \item \textbf{Phase 3 (Professionnalisation) :} Livrer un produit fini. \textit{Livrable : Capstone audité.}
+\end{enumerate}
+
+\section{Découpage Commercial : 3 Niveaux Stackables}
+
+Pour maximiser l'accessibilité et la réussite, le cursus de 28 semaines est découpé en 3 niveaux certifiants et indépendants ("Stackable"). Ce modèle permet aux étudiants de valider des jalons intermédiaires, de réduire le risque financier, et de ne s'engager sur la suite qu'après avoir prouvé leur compétence. Chaque niveau délivre une valeur tangible immédiate : une compétence technique, une preuve vérifiable (SBT), et un accès réseau. L'étudiant peut s'arrêter après le N1 avec un profil junior employable, ou continuer pour viser l'excellence "Studio".
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm, auto]
+        % Nodes (Boîtes) - Espacement horizontal augmenté (0 -> 5 -> 10)
+        \node[draw, fill=SolanaBlue!10, rounded corners, minimum width=3.5cm, minimum height=1.5cm, align=center, drop shadow] (n1) at (0,0) {\textbf{Niveau 1}\\Fondations\\(8 sem)};
+        \node[draw, fill=SolanaPurple!10, rounded corners, minimum width=3.5cm, minimum height=1.5cm, align=center, drop shadow] (n2) at (5,2.5) {\textbf{Niveau 2}\\Spécialisation\\(12 sem)};
+        \node[draw, fill=SolanaGreen!10, rounded corners, minimum width=3.5cm, minimum height=1.5cm, align=center, drop shadow] (n3) at (10,5) {\textbf{Niveau 3}\\Studio\\(8 sem)};
+        
+        % Flèches (Chemin en escalier propre : Sortie Est -> Montée -> Entrée Ouest)
+        \draw[->, ultra thick, SolanaBlue, rounded corners=5pt] (n1.east) -- ++(1,0) |- (n2.west) node[pos=0.25, below, font=\footnotesize\bfseries] {Gate 1};
+        \draw[->, ultra thick, SolanaPurple, rounded corners=5pt] (n2.east) -- ++(1,0) |- (n3.west) node[pos=0.25, below, font=\footnotesize\bfseries] {Gate 2};
+        
+        % Labels Preuves (Ancrés proprement sous les nœuds)
+        \node[below=0.3cm of n1, font=\footnotesize, align=center, text width=4cm] {\textbf{Preuve :} CLI Tool\\SBT Foundations};
+        \node[below=0.3cm of n2, font=\footnotesize, align=center, text width=4cm] {\textbf{Preuve :} Repo Pro\\SBT Specialist};
+        \node[below=0.3cm of n3, font=\footnotesize, align=center, text width=4cm] {\textbf{Preuve :} Capstone\\SBT Graduate + Alumni};
+    \end{tikzpicture}
+    \caption{Staircase de Progression (3 Niveaux). \textit{Les "Gates" symbolisent des examens de passage obligatoires conditionnant l'accès au niveau supérieur.}}
+\end{figure}
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Passerelles d'Admission]
+L'entrée directe en Niveau 2 ou 3 est possible pour les candidats expérimentés, sous réserve de réussite aux \textbf{Tests de Positionnement} (voir Annexe G).
+\end{tcolorbox}
+
+\begin{table}[h]
+    \caption{Structure Stackable}
+    \centering
+    \small
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{|l|l|l|X|l|}
+        \hline
+        \textbf{Niveau} & \textbf{Durée} & \textbf{Pré-requis} & \textbf{Preuves Attendues} & \textbf{Sortie} \\ \hline
+        \textbf{1. Fondations} & 8 Sem. & Débutant (Motivé) & CLI Rust, Audit Trail, Mini-App & SBT Fundamentals \\ \hline
+        \textbf{2. Track} & 12 Sem. & Gate 1 (ou Test) & DApp Complexe, Tests E2E, CI/CD & SBT Specialist \\ \hline
+        \textbf{3. Studio} & 8 Sem. & Gate 2 (ou Portfolio) & Capstone Audité, Demo Publique & SBT Graduate \\ \hline
+    \end{tabularx}
+\end{table}
+
+Le Chapitre 6 détaille l'exécution opérationnelle de ces phases semaine par semaine.
+
+\subsubsection{Definition of Done (DoD) par Phase}
+Pour passer à la phase suivante (Gate), l'étudiant doit prouver sa compétence.
+
+\begin{table}[h]
+    \caption{Definition of Done (DoD) et Gates de Passage}
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{l X X c}
+        \toprule
+        \textbf{Phase} & \textbf{Livrable Pivot} & \textbf{Critère Qualité} & \textbf{Gate Score} \\
+        \midrule
+        \textbf{Ph. 0} & Rust CLI (grep-like) & Exécutable, Zéro warning, Tests unitaires & > 80/100 \\
+        \textbf{Ph. 1} & Déploiement Token & Vérifiable sur Explorer, Script de mint & > 70/100 \\
+        \textbf{Ph. 2} & Protocole Complexe & Architecture propre, Gas optimized & > 3 PRs validées \\
+        \textbf{Ph. 3} & Capstone Mainnet & Audit de sécurité passé (sans Critical) & Note > 12/20 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Système de Validation et Rattrapage}
+Le scoring est une moyenne pondérée : \textbf{Technique (60\%)}, \textbf{Soft Skills (20\%)}, \textbf{Discipline (20\%)}.
+\begin{itemize}
+    \item \textbf{Score > 70/100 :} Passage automatique (GO).
+    \item \textbf{Score 50-70 :} Passage conditionnel (WARN). Rattrapage obligatoire sous 2 semaines.
+    \item \textbf{Score < 50 :} Redoublement ou réorientation (NO-GO).
+\end{itemize}
+
+\subsubsection{Charge de Travail et Discipline d'Exécution}
+Le rythme est intense. Une semaine type représente 40 à 50 heures d'engagement.
+
+\begin{table}[h]
+    \caption{Rituel Hebdomadaire et Livrables}
+    \centering
+    \small
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{l X l}
+        \toprule
+        \textbf{Moment} & \textbf{Sortie Attendue} & \textbf{Outil} \\
+        \midrule
+        Lun. Matin & Planification des tâches (Issues) & GitHub Projects \\
+        Mar. - Jeu. & Code, Tests, Commits (Deep Work) & VS Code / Cursor \\
+        Ven. Midi & Pull Request (PR) pour review & GitHub \\
+        Ven. PM & Demo Video (Loom) & Loom / Discord \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=0.8cm,
+        phase/.style={rectangle, draw=none, fill=SolanaPurple!10, rounded corners, minimum width=13cm, minimum height=1.5cm, align=left, text width=12cm, drop shadow},
+        title/.style={font=\bfseries\large, color=SolanaPurple},
+        detail/.style={font=\small\color{BaseDark}},
+        arrow/.style={->, >=Stealth, ultra thick, SolanaGreen}
+    ]
+        \node[phase] (phase1) {\textbf{\color{SolanaPurple}NIVEAU 1 : FONDATIONS (8 Semaines)}\\ \footnotesize Piscine Rust (4s) + Fondations Web3 (4s). Gate: Mini-DApp & CLI};
+        
+        \node[phase, below=of phase1] (phase2) {\textbf{\color{SolanaPurple}NIVEAU 2 : SPÉCIALISATION (12 Semaines)}\\ \footnotesize Track A (Solana) / B (EVM) / C (Product). Gate: Protocole Complexe};
+        
+        \node[phase, below=of phase2] (phase3) {\textbf{\color{SolanaPurple}NIVEAU 3 : PROFESSIONNALISATION (8 Semaines)}\\ \footnotesize Capstone Studio (4s) + Audit & Carrière (4s). Gate: Mainnet Launch};
+
+        \draw[arrow] (phase1) -- (phase2);
+        \draw[arrow] (phase2) -- (phase3);
+
+    \end{tikzpicture}
+    \caption{Architecture Temporelle Alignée (24 Sem. Tech + 4 Sem. Carrière = 28 Semaines)}
+\end{figure}
+
+\section{Track C : Web3 Product \& Ecosystem Strategy}
+
+\subsubsection{Positionnement Stratégique}
+Le Track C forme les "Product Owners" et "Token Designers" qui manquent aux équipes techniques. Ils ne codent pas le smart contract, mais ils en définissent la logique économique et gouvernent son déploiement. Ils travaillent en binôme avec les étudiants du Track A/B. \textbf{Exemple de mission :} Concevoir le modèle d'inflation décroissante d'un stablecoin ou rédiger le Whitepaper technique d'un protocole DeFi.
+
+\subsubsection{Livrables Track C (Portfolio)}
+Pour valider ce track, l'étudiant doit produire 4 pièces maîtresses :
+\begin{enumerate}
+    \item \textbf{Tokenomics Paper :} Modélisation des incitations (Supply, Emission, Utility) simulée sur Machinations.io.
+    \item \textbf{GTM Playbook :} Stratégie d'acquisition utilisateurs pour les 4 premières semaines post-launch.
+    \item \textbf{Analytics Dashboard :} Un tableau de bord Dune Analytics monitorant les KPIs d'un protocole réel.
+    \item \textbf{Governance Framework :} Les règles de la DAO (Quorum, Timelock, Voting power).
+\end{enumerate}
+
+\subsubsection{Plan de Progression (12 Semaines)}
+
+\begin{table}[h]
+    \caption{Syllabus Détaillé Track C}
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{l X l}
+        \toprule
+        \textbf{Module} & \textbf{Focus} & \textbf{Livrable Clé} \\
+        \midrule
+        \textbf{M1 : Product} & User Research, Prototyping (Figma) & PRD (Product Req. Doc) \\
+        \textbf{M2 : Eco-Design} & Token Engineering, Game Theory & Simulation Excel/Python \\
+        \textbf{M3 : Growth} & Community Building (Discord), Questing & Campagne Galxe \\
+        \textbf{M4 : Ops \& Legal} & DAO Tooling (Realms), Compliance & Risk Memo \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{center}
+    \begin{tikzpicture}
+        \foreach \angle/\label in {90/Product Vision, 162/Analytics (SQL), 234/Tokenomics, 306/Legal Awareness, 18/Community Growth} {
+            \draw[gray!30] (0,0) -- (\angle:3cm);
+            \node at (\angle:3.3cm) {\small \label};
+        }
+        \draw[gray!30] (0,0) circle (1cm);
+        \draw[gray!30] (0,0) circle (2cm);
+        \draw[gray!30] (0,0) circle (3cm);
+        
+        \draw[SolanaPurple, thick, fill=SolanaPurple!20, opacity=0.7] 
+        (90:2.8) -- (162:2.5) -- (234:2.9) -- (306:2.0) -- (18:2.8) -- cycle;
+        
+        \node[color=SolanaPurple, font=\bfseries] at (0,-3.5) {Profil Cible Track C};
+    \end{tikzpicture}
+\end{center}
+
+\section{Certifications Industrielles \& Partenariats}
+
+\subsection{Partenariat Solana Foundation : Accréditation "Developer Bootcamp"}
+\begin{itemize}
+    \item \textbf{Objectif} : Devenir le centre agréé de référence pour l'Afrique francophone.
+    \item \textbf{Avantages} : Accès aux bourses (grants), certifications officielles (NFTs), et visibilité réseau.
+\end{itemize}
+
+\subsection{Certification "RBK Auditor"}
+Reconnue par l'industrie pour sa rigueur.
+\begin{enumerate}
+    \item \textbf{Niveau 1 (Théorique)} : Examen sur les vulnérabilités (SWC Registry).
+    \item \textbf{Niveau 2 (Pratique)} : CTF (Capture The Flag) et Audit d'un protocole réel.
+    \item \textbf{Valeur} : Pipeline de recrutement direct avec des firmes d'audit partenaires.
+\end{enumerate}
+
+\subsection{Badges "Web3 Professional"}
+Utilisation du standard \textbf{Open Badges 3.0} pour des preuves de compétences vérifiables sur LinkedIn.
+
