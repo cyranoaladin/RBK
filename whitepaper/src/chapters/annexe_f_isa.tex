@@ -1,0 +1,77 @@
+% =========================
+% ANNEXE ISA — Modèle propre
+% =========================
+\chapter{ANNEXE — Modèle ISA (Income Share Agreement)}
+
+\section{Objet et Principes}
+L’ISA est un mécanisme de financement \textbf{sélectif} destiné à aligner l’école et l’étudiant : l’étudiant ne paie que s’il dépasse un seuil de revenu, et l’école accepte un risque (non-emploi, variabilité, défaut). L’ISA est réservé aux profils validés \textbf{Top Talent}.
+
+\section{Éligibilité (Gating)}
+\begin{itemize}
+    \item \textbf{Périmètre :} réservé au \textbf{parcours complet} (N1+N2+N3), avec dérogation exceptionnelle (sur dossier) pour admission directe en N3.
+    \item \textbf{Quota :} nombre de places ISA limité par cohorte (ex : 30\% max) afin de préserver la trésorerie.
+    \item \textbf{Sélection :} top performance (tests + discipline + livrables) + validation par comité (risques \& éthique).
+\end{itemize}
+
+\section{Définitions Normalisées (Net/Brut)}
+Pour supprimer toute ambiguïté, les termes sont normalisés comme suit :
+
+\paragraph{Revenu Net Mensuel (RNM).}
+Montant \textbf{net} effectivement perçu et traçable pour un mois $m$, exprimé en TND :
+\begin{itemize}
+    \item \textbf{Emploi local :} net indiqué sur fiche de paie (après retenues).
+    \item \textbf{Remote / freelance :} montant net crédité sur le compte bancaire (après frais de plateforme/banque), converti en TND au \textbf{taux mensuel} retenu (preuve : relevés).
+\end{itemize}
+
+\textbf{Définition (anti-ambiguïté) :} « Revenu net mensuel » désigne le montant net effectivement encaissé par l’étudiant (après charges sociales et impôts). En cas de revenus en devise, la conversion se fait au taux de référence du mois d’encaissement.
+
+\paragraph{Seuil de Déclenchement.}
+\textbf{3\,000 TND nets / mois}. Si $RNM(m) \le 3\,000$, alors paiement $= 0$.
+
+\paragraph{Taux de Partage.}
+\textbf{15\%} appliqué au \textbf{RNM} net mensuel encaissé (si > Seuil).
+
+\paragraph{Cap (Plafond).}
+Montant total maximal remboursable (toutes mensualités cumulées) : \textbf{CAP = 20\,000 TND}. Dès que le cumul atteint CAP, le contrat s’éteint.
+
+\paragraph{Durée Maximale.}
+\textbf{36 mensualités} de paiement effectif maximum. Une fenêtre d’extinction « drop-off » met fin au contrat au bout de \textbf{60 mois calendaires}, même si les 36 mensualités n’ont pas été atteintes (protection étudiant).
+
+\section{Règles de Pause, Chômage, Variabilité}
+\begin{itemize}
+    \item \textbf{Pause automatique :} si $RNM(m) \le 3\,000$ (chômage ou revenu faible), paiement = 0.
+    \item \textbf{Reprise :} dès que $RNM(m) > 3\,000$, le paiement reprend.
+    \item \textbf{Variabilité :} aucun rattrapage sur les mois faibles ; le calcul est \textbf{mensuel}, indépendant.
+\end{itemize}
+
+\section{Cas Limites (Edge Cases) — à expliciter dans le contrat}
+\begin{enumerate}
+    \item \textbf{RNM fluctuant autour du seuil :} si 2\,900 puis 3\,200, seul le mois à 3\,200 déclenche un paiement.
+    \item \textbf{Plusieurs revenus :} RNM = somme des nets traçables (salaires + freelance) pour le mois.
+    \item \textbf{Revenus en devise :} conversion en TND au taux mensuel convenu (source bancaire/BC), preuve par relevé.
+    \item \textbf{Déclaration incomplète :} \textbf{Pénalités de retard (standard)} : 1\% par mois de retard sur le montant dû (calcul pro-rata), plafonné à 10\%. Aucune pénalité n’est appliquée durant une période de suspension (revenu < seuil / chômage). L’activation du recouvrement formel intervient uniquement après 90 jours de retard et après relances documentées.
+    \item \textbf{Congé maladie / arrêt :} RNM baisse $\Rightarrow$ pause automatique (aucune pénalité).
+    \item \textbf{Paiement anticipé :} option de clôture anticipée : l’étudiant peut solder le restant dû jusqu’au CAP.
+    \item \textbf{Départ à l’étranger :} RNM calculé de la même manière (preuve par virements et relevés).
+\end{enumerate}
+
+\section{Exemples Chiffrés (Seuil 3\,000 net, Taux 15\%)}
+\begin{center}
+\small
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\textbf{Scénario} & \textbf{RNM} & \textbf{Mensualité (15\%)} & \textbf{Temps vers CAP 20k} \\
+\hline
+A. Junior local & 3\,500 TND & 525 TND & $\approx$ 38 mois (Stop à 36 mois : 18\,900 TND payés) \\
+\hline
+B. Profil solide local & 5\,000 TND & 750 TND & $\approx$ 27 mois (CAP atteint) \\
+\hline
+C. Remote (équiv.) & 6\,000 TND & 900 TND & $\approx$ 23 mois (CAP atteint) \\
+\hline
+D. Chômage & 0 TND & 0 TND & -- \\
+\hline
+E. Petit job & 2\,500 TND & 0 TND & -- \\
+\hline
+\end{tabular}
+\end{center}
+\textit{Note : Dans le scénario A, le plafond de 36 mensualités est atteint avant le Cap financier, l'étudiant paie donc moins que 20 000 TND.}

@@ -1,0 +1,33 @@
+\chapter{SPÉCIFICATIONS TECHNIQUES SBT}
+
+\section{Schéma de Métadonnées (JSON)}
+
+Les SBT RBK suivent le standard Metaplex Core ou ERC-721 (Non-Transferable).
+
+\begin{lstlisting}[caption=Metadata SBT Standard]
+{
+  "name": "RBK Guardian - Cohort 1",
+  "symbol": "RBKC1-G",
+  "description": "Certified Solana Smart Contract Engineer.",
+  "image": "https://arweave.net/...",
+  "attributes": [
+    { "trait_type": "Track", "value": "Solana" },
+    { "trait_type": "Level", "value": "Gold" },
+    { "trait_type": "Cohort", "value": "Genesis 2025" },
+    { "trait_type": "FinalGrade", "value": "92/100" }
+  ],
+  "properties": {
+    "files": [
+      { "uri": "https://github.com/student/capstone", "type": "text/html" },
+      { "uri": "https://rbk.tn/audit/S12345", "type": "application/pdf" }
+    ]
+  }
+}
+\end{lstlisting}
+
+\section{Processus de Vérification}
+\begin{enumerate}
+    \item \textbf{Issuer Check :} Vérifier que l'adresse émettrice est bien le Multisig RBK Certifié.
+    \item \textbf{Owner Check :} L'étudiant prouve qu'il possède le wallet (Signature message).
+    \item \textbf{Content Check :} Le lien vers le rapport d'audit correspond au hash stocké on-chain.
+\end{enumerate}

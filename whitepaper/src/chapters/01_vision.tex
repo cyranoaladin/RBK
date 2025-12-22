@@ -1,0 +1,169 @@
+\chapter[🚀 VISION \& MANIFESTE]{VISION \& MANIFESTE}
+\label{chap:vision}
+
+\section{La Thèse Centrale : Former des Architectes, pas des Codeurs}
+
+Le marché n'a plus besoin de "développeurs exécutants". L'IA le fait mieux, plus vite, et moins cher. Ce qui manque cruellement, ce sont des \textbf{Architectes de Systèmes Distribués}.
+
+\begin{ceoBox}{Le Manifeste RBK 2.0}
+    \textbf{Manifeste :} "RBK 2.0 forge des Architectes Web3 immédiatement opérationnels, capables de concevoir, auditer et sécuriser des systèmes décentralisés dès leur sortie. Notre promesse : un diplômé RBK possède la rigueur d'un ingénieur senior et la productivité d'une équipe junior assistée par l'IA."
+\end{ceoBox}
+
+\subsubsection{Définition opérationnelle d'un Architecte Web3}
+
+Un Architecte Web3 ne se contente pas d'écrire des smart contracts ; il conçoit des systèmes financiers inarrêtables. Sa responsabilité principale est la \textbf{gestion du risque}. Contrairement au développeur Web2 qui optimise pour la vitesse de livraison, l'architecte Web3 optimise pour la \textbf{sécurité} et la \textbf{résilience} (Trust Minimization).
+
+Concrètement, un architecte RBK maîtrise :
+\begin{itemize}
+    \item \textbf{Le Design de Protocoles :} Définition des invariants économiques et des surfaces d'attaque (Threat Modeling).
+    \item \textbf{L'Optimisation Bas-Niveau :} Gestion fine des \textit{Compute Units} et du stockage on-chain (PDA Seeds, Merkle Trees).
+    \item \textbf{Les Patterns de Sécurité :} Protection contre les attaques classiques (Re-entrancy, CPI hijacking, Sybil attacks).
+    \item \textbf{L'Observabilité :} Capacité à monitorer l'état du système en temps réel (Indexing, RPCs).
+\end{itemize}
+
+\textbf{Livrables attendus d'un Architecte RBK :}
+\begin{itemize}
+    \item Diagrammes d'architecture (C4 Model) et de flux de données.
+    \item Rapport de Threat Modeling identifiant les vecteurs d'attaque.
+    \item Suite de tests exhaustive (Unitaires + Fuzzing + Invariants).
+    \item Code audité et documenté (NatSpec / RustDoc).
+    \item Runbook d'incident (Procédure de pause/fixation d'urgence).
+\end{itemize}
+
+\subsubsection{Pourquoi le "code basique" ne suffit plus à l'ère des LLM}
+
+L'avènement des LLMs (GPT-4, Claude 3.5 Sonnet) a commoditisé la production de code syntaxique. Générer un ERC-20 ou un programme Anchor standard prend désormais 30 secondes et coûte 0.01\$. La valeur ajoutée du "codeur" qui traduit une spec en fonctions s'effondre.
+
+Cependant, l'IA ne sait pas \textbf{raisonner sur l'intention}. Elle peut générer un code qui compile parfaitement mais qui contient des failles logiques dévastatrices.
+
+\begin{kpiBox}{Le Risque des "Failles Invisibles" (IA-Generated)}
+\begin{enumerate}
+    \item \textbf{Hypothèses Non Vérifiées :} L'IA suppose que l'utilisateur est honnête, omettant les contrôles d'accès (Missing Access Control). \textit{Impact : Vol de fonds.}
+    \item \textbf{Invariants Économiques :} L'IA ne vérifie pas si `total\_minted <= max\_supply` après un calcul complexe. \textit{Impact : Inflation infinie.}
+    \item \textbf{Edge Cases :} L'IA oublie les cas limites (division par zéro, overflow, array vide). \textit{Impact : Blocage du protocole (DoS).}
+\end{enumerate}
+\end{kpiBox}
+
+C'est pourquoi RBK 2.0 adopte l'approche \textbf{"Learning by Auditing"}. Nous formons les étudiants à considérer tout code (humain ou IA) comme potentiellement hostile jusqu'à preuve du contraire.
+
+\subsubsection{Le Mécanisme Senior-by-Design}
+
+Comment transformer un profil junior en architecte senior en 28 semaines ? Par un conditionnement intensif en 4 étapes :
+
+1.  \textbf{Sélection Draconienne (The Filter) :} Nous ne retenons que les profils démontrant une capacité cognitive élevée et une résilience à la frustration (Piscine Rust). Le "Senior" commence par le mindset.
+2.  \textbf{Contraintes Industrielles (The Forge) :} Dès le jour 1, aucun code n'est accepté sans tests et sans review. Les standards sont ceux d'un audit (OpenZeppelin/OtterSec).
+3.  \textbf{IA Multiplicateur (The Exoskeleton) :} L'étudiant utilise l'IA pour tout ce qui est répétitif, libérant 80\% de son temps pour l'architecture et la sécurité.
+4.  \textbf{Exposition Marché (The Arena) :} Validation des acquis par des preuves réelles (Hackathons, Bounties, Open Source Contributions).
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|l|}
+\hline
+\rowcolor{SolanaPurple!10} \textbf{Mécanisme} & \textbf{Habitude Créée} & \textbf{Preuve Tangible} \\ \hline
+Code Review Obligatoire & "Mon code sera lu par un humain" & Qualité des PRs, Commentaires \\ \hline
+Fuzzing Systématique & "Le happy-path ne suffit pas" & Rapports de couverture > 90\% \\ \hline
+Threat Modeling & "Penser comme un attaquant" & Documents d'architecture défensive \\ \hline
+Démo Publique & "Je dois défendre mes choix" & Vidéos de pitch, README pro \\ \hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{Métriques de Succès et Méthode de Mesure}
+
+Nous ne vendons pas du rêve, nous vendons des résultats mesurables.
+
+\begin{itemize}
+    \item \textbf{Taux de placement (3 mois) :} Pourcentage des diplômés ayant signé un contrat (CDI, Freelance > 3 mois, ou Grant > 5k\$) 90 jours après la fin du cursus.
+    \item \textbf{Salaire Moyen de Sortie :} Moyenne des rémunérations annualisées (converties en TND), hors equity/tokens non-liquides.
+    \item \textbf{Time-to-First-Revenue :} Délai moyen entre le début de la Phase 3 et le premier dollar gagné (souvent via un Bounty Superteam).
+\end{itemize}
+
+\begin{table}[h]
+    \caption{Métriques de Succès RBK 2.0}
+    \centering
+    \rowcolors{2}{SolanaGreen!5}{white}
+    \small
+    \begin{tabularx}{\textwidth}{l X c X l}
+        \toprule
+        \textbf{Indicateur} & \textbf{Définition} & \textbf{Cible} & \textbf{Méthode} & \textbf{Preuve} \\
+        \midrule
+        Placement & Contrat signé ou facture émise & 90\% & Suivi Alumni J+90 & Contrats, Relevés \\
+        Salaire & Revenu net mensuel équivalent & >3k TND & Déclaration sur l'honneur & Fiches de paie \\
+        Satisfaction & NPS (Net Promoter Score) & >70 & Enquête anonyme fin de cursus & Typeform Export \\
+        Niveau Tech & Score aux tests finaux & >850/1000 & Platforme d'examen (LMS) & Certificat On-chain \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto, scale=0.8, every node/.style={scale=0.8}]
+        \node[draw, rectangle, rounded corners] (entree) {Entrée (Bases)};
+        \node[draw, rectangle, rounded corners, right of=entree, xshift=2cm] (ia) {IA (x10)};
+        \node[draw, rectangle, rounded corners, fill=SolanaPurple!20, right of=ia, xshift=2cm] (cyborg) {Cyborg 2.0};
+        \node[draw, rectangle, rounded corners, right of=cyborg, xshift=2cm] (reseau) {Réseau (Superteam)};
+        \node[draw, rectangle, rounded corners, fill=SolanaGreen!20, right of=reseau, xshift=2cm] (sortie) {\textbf{Architecte}};
+
+        \draw[->, thick] (entree) -- (ia);
+        \draw[->, thick] (ia) -- (cyborg);
+        \draw[->, thick] (cyborg) -- (reseau);
+        \draw[->, thick] (reseau) -- (sortie);
+        
+        \node[below of=cyborg, yshift=1cm, node distance=1.5cm] {\textit{Méthode \& Rigueur}};
+        \node[below of=sortie, yshift=1cm, node distance=1.5cm] {\textit{Preuves : Portfolio, Audit}};
+    \end{tikzpicture}
+    \caption{La Chaîne de Valeur RBK 2.0}
+\end{figure}
+
+\section{Pourquoi RBK 2.0 ?}
+
+\subsubsection{Diagnostic : L'Écart de Compétence (Skills Gap)}
+
+Le fossé entre l'offre de formation classique et la demande du marché Web3 est béant.
+\begin{enumerate}
+    \item \textbf{Évaluation obsolète :} Les écoles notent la mémorisation; le marché paie la résolution de problèmes inconnus.
+    \item \textbf{Absence de Sécurité :} La sécurité est souvent une option ou un module théorique. En Web3, c'est le prérequis absolu.
+    \item \textbf{Pas de Production Réelle :} Les projets d'école finissent dans un dossier "brouillon". Un profil senior doit montrer un code en production.
+    \item \textbf{Signaux Marché Faibles :} Un diplôme papier ne prouve rien à une DAO internationale. Seul le code (GitHub) et la réputation (On-chain) comptent.
+\end{enumerate}
+
+\subsubsection{Les Différenciateurs RBK 2.0}
+
+\begin{itemize}
+    \item \textbf{Méthodologie Cyborg 2.0} (voir Chap. 4) : Nous intégrons l'IA comme outil de base, pas comme aide à la triche.
+    \item \textbf{Intensité 28 Semaines} (voir Chap. 5) : Une immersion totale nécessaire pour changer de mindset.
+    \item \textbf{Preuve de Travail (Proof of Work)} (voir Chap. 11) : Chaque ligne de code contribue à un portfolio public auditable.
+    \item \textbf{Réseau Global} : Connexion directe avec la Superteam et les opportunités internationales.
+\end{itemize}
+
+\subsubsection{Ce que RBK 2.0 n'est pas}
+
+Il est crucial d'aligner les attentes. RBK 2.0 n'est :
+\begin{itemize}
+    \item \textbf{Pas un cours vidéo passif :} L'apprentissage se fait par la pratique douloureuse et gratifiante (Hard Fun).
+    \item \textbf{Pas un bootcamp JavaScript :} Nous formons des ingénieurs système (Rust/Solidity), pas des développeurs frontend React (bien que ce soit une compétence annexe).
+    \item \textbf{Pas une promesse magique :} L'ISA et le placement dépendent à 100\% de l'engagement de l'étudiant.
+\end{itemize}
+
+\begin{strategieBox}{Positionnement Stratégique}
+RBK 2.0 est une "School of Engineering" accélérée, positionnée entre le bootcamp d'élite (type 42) et l'incubateur de startups Web3.
+\end{strategieBox}
+
+\subsubsection{Changement de Paradigme}
+
+\begin{table}[h]
+    \caption{Le Changement de Paradigme RBK 2.0 (Détaillé)}
+    \centering
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \tiny
+    \begin{tabularx}{\textwidth}{L X X l}
+        \rowcolor{SolanaPurple!20} \textbf{Dimension} & \textbf{Ancien Monde (Univ/Bootcamps)} & \textbf{RBK 2.0 (Senior-by-Design)} & \textbf{Signal Recruteur} \\
+        \toprule
+        Objectif & Valider des modules & Livrer de la valeur & GitHub Activity \\
+        Outils & Interdits (Pas d'IA) & Obligatoires (Cursor, Copilot) & Vitesse d'exécution \\
+        Rythme & Linéaire, théorique & Cyclique, intense, pratique & Résilience \\
+        Sécurité & Optionnelle / Théorique & \textbf{By Design (Audit Flow)} & Portfolio d'audits \\
+        Santé & Ignorée & \textbf{Gérée (Protocole Anti-Burnout)} & Stabilité émotionnelle \\
+        Sortie & Stage sous-payé & Consultance / CDI Senior / Grant & Contrats signés \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

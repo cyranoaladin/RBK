@@ -1,0 +1,61 @@
+\chapter{GUIDE DE SÉLECTION \& SCORING « PISCINE RUST »}
+
+La Piscine n'est pas un cours, c'est un filtre.
+
+\section{Grille de Scoring}
+
+Le score final (sur 100) détermine l'admission. Seuil d'admission : 75/100.
+
+\begin{center}
+    \textbf{Table: Critères de Sélection} \\
+    \small
+    \begin{tabular}{|l|r|p{8cm}|}
+        \hline
+        \textbf{Critère} & \textbf{Poids} & \textbf{Indicateurs} \\ \hline
+        \textbf{Aptitude Tech} & 40\% & Progression sur les exercices Rust, Qualité du code final. \\ \hline
+        \textbf{Résilience} & 30\% & Capacité à rebondir après échec, Constance de l'effort. \\ \hline
+        \textbf{Collaboration} & 20\% & Aide apportée aux autres (Peer-learning). \\ \hline
+        \textbf{Communication} & 10\% & Clarté des questions posées, Respect des mentors. \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Red Flags (Éliminatoires)}
+\begin{itemize}
+    \item \textbf{Plagiat / Triche :} Copie de code sans compréhension, usage caché d'IA. $\to$ Exclusion immédiate.
+    \item \textbf{Toxicité :} Comportement agressif ou dénigrant envers pairs/mentors.
+    \item \textbf{Fantôme :} Absence non justifiée > 2 jours.
+\end{itemize}
+
+\section{Admission Parallèle (Accès Direct N2 / N3)}
+
+Pour les profils expérimentés souhaitant "sauter" le tronc commun ou la spécialisation, nous proposons un processus d'admission spécifique visant à valider les acquis de manière irréfutable.
+
+\subsection{Test d'Entrée Niveau 2 (Bypass Piscine)}
+\textbf{Pré-requis :} Maîtrise prouvée de Rust ou C++ et des concepts Blockchain de base.
+
+\begin{enumerate}
+    \item \textbf{Théorie (45 min) :} QCM statique sur l'Account Model, le Memory Management (Stack/Heap) et la Complexité Algorithmique.
+    \item \textbf{Pratique (3h) :} "Mini-Piscine Express". Implémentation d'une CLI Rust qui parse un fichier binaire et signe une payload cryptographique (Ed25519). \textbf{Critère Éliminatoire :} Absence de tests unitaires ou usage d'IA générative détecté.
+    \item \textbf{Entretien (15 min) :} Code review live avec le Lead Instructor. Justification des choix d'allocation mémoire.
+\end{enumerate}
+
+\begin{table}[h]
+    \caption{Barème Admission N2}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Critère} & \textbf{Points} & \textbf{Attendu} & \textbf{KO si...} \\ \hline
+        Code Quality & 40 & Rust idiomatique, Zero CLippy warnings & `unwrap()` non géré \\ \hline
+        Tests & 30 & Unit tests couvrant les edge cases & 0 tests \\ \hline
+        Architecture & 30 & Gestion erreurs (Result), Structs propres & Code non structuré \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Test d'Entrée Niveau 3 (Bypass Track)}
+\textbf{Pré-requis :} Portfolio prouvant 2+ ans d'expérience sur la stack cible (Solana ou EVM).
+
+\begin{enumerate}
+    \item \textbf{Audit Readiness :} Soumission d'un repo personnel existant. Vérification des critères "Studio" (CI/CD, Docs, Tests E2E).
+    \item \textbf{Exercice de Review :} L'étudiant doit auditer une PR contenant 3 vulnérabilités cachées (Reentrancy, Arithmetic Overflow, Access Control).
+\end{enumerate}

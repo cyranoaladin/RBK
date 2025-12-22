@@ -1,0 +1,133 @@
+\chapter{ANALYSE DU CONTEXTE}
+\label{chap:contexte}
+
+\section{L'Opportunité Web3 \& Solana}
+
+\subsubsection{Définitions Minimales (Lexique Opérationnel)}
+Pour comprendre l'arbitrage RBK, il faut maîtriser le vocabulaire du marché :
+\begin{itemize}
+    \item \textbf{Web3 :} Un internet où les utilisateurs possèdent leurs données et leurs actifs, sécurisé par des réseaux décentralisés (Blockchains).
+    \item \textbf{Solana (SVM) :} La blockchain la plus performante à ce jour (65k TPS théoriques), optimisée pour des applications grand public (Payments, Gaming, DePIN).
+    \item \textbf{DeFi (Decentralized Finance) :} Services financiers (prêt, échange) sans intermédiaire bancaire.
+    \item \textbf{DePIN (Decentralized Physical Infrastructure) :} Réseaux physiques (Wifi, GPU) gérés par des incitations crypto.
+    \item \textbf{Bounty :} Mission à la tâche rémunérée en stablecoins\footnote{\textbf{Stablecoin :} Cryptomonnaie dont le cours est indexé sur une monnaie fiduciaire (ex: USDC = 1 Dollar USD) pour éviter la volatilité.} (USDC), souvent premier revenu d'un étudiant.
+\end{itemize}
+
+\subsubsection{Segmentation de la Demande}
+
+Le marché ne cherche pas "un dev blockchain", mais des spécialistes par verticale.
+
+\begin{table}[h]
+    \caption{Segmentation des Rôles Web3 (2025)}
+    \centering
+    \small
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{l l X l}
+        \toprule
+        \textbf{Segment} & \textbf{Rôles Clés} & \textbf{Livrables Concrets} & \textbf{Compétence Dominante} \\
+        \midrule
+        \textbf{DeFi} & Smart Contract Eng. & AMM, Lending Protocol, Vaults & Mathématiques \& Sécurité \\
+        \textbf{DePIN} & Rust Embedded Eng. & Drivers IoT, Proof-of-Coverage & Optimisation Bas-niveau \\
+        \textbf{Infra} & DevOps / RPC Eng. & Indexers, Validators, Nodes & Linux, Docker, Rust \\
+        \textbf{Consumer} & Mobile dApp Dev. & Wallet UI, Payment SDK & UX/UI, React Native \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Pourquoi Solana est un Accélérateur d'Employabilité}
+Contrairement à Ethereum (EVM) qui est saturé et fragmenté (L2s), Solana offre un écosystème unifié et en hyper-croissance (+500\% d'adresses actives en 2024). Pour un junior, la courbe d'apprentissage est plus raide (Rust), mais la concurrence est moindre et les primes sont plus élevées. La \textbf{Superteam} offre un pipeline direct vers l'emploi via Earn.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Market Intelligence – Q4 2025]
+\begin{enumerate}
+    \item \textbf{Postes ouverts :} 15~000+ offres actives en Remote Global\footnote{Source : Web3.career \& TrueUp Tech Jobs Report, Q4 2024.}.
+    \item \textbf{Pénurie :} 58\% des Lead Techs citent le recrutement d'ingénieurs Rust seniors comme leur blocage n°1.
+    \item \textbf{Développeurs Actifs :} < 25~000 développeurs crypto mensuels vs 25M devs Web2. L'opportunité d'arbitrage est de x1000\footnote{Source : Electric Capital Developer Report 2023.}.
+\end{enumerate}
+\end{tcolorbox}
+
+
+\section{Dynamique Salariale}
+
+\subsubsection{Hypothèses de Lecture (TND vs USD)}
+Les chiffres présentés ci-dessous sont exprimés en USD brut annuel. Pour un talent tunisien en remote :
+\begin{itemize}
+    \item \textbf{Conversion :} 1 USD $\approx$ 3.1 TND.
+    \item \textbf{Fiscalité :} En statut "Exportateur de Services" (entreprise totalement exportatrice), l'imposition est avantageuse, maximisant le net.
+    \item \textbf{Réalité Marché :} Le salaire "Junior" Web3 (60k\$) correspond souvent à un salaire "VP Engineering" sur le marché local.
+\end{itemize}
+
+\subsubsection{Grille de Rémunération Standard}
+
+\begin{table}[h]
+    \caption{Grille Salariale Web3 (Remote Global) vs Local}
+    \centering
+    \rowcolors{2}{SolanaGreen!5}{white}
+    \begin{tabularx}{\textwidth}{l c c l}
+        \rowcolor{SolanaGreen} \textbf{Rôle} & \textbf{Junior (0-2 ans)} & \textbf{Senior (3+ ans)} & \textbf{Pré-requis} \\
+        \toprule
+        Solana Rust Engineer & 60k\$ - 90k\$ & 140k\$ - 220k\$ & Portfolio GitHub Solide \\
+        Security Auditor & 80k\$ - 120k\$ & 250k\$+ & Track Record de vulnérabilités trouvées \\
+        Fullstack dApp & 50k\$ - 80k\$ & 110k\$ - 160k\$ & Portfolio React + Anchor \\
+        \textit{Dev Web2 (Tunisie)} & \textit{15k - 25k TND} & \textit{40k - 60k TND} & \textit{Diplôme Ingénieur} \\
+        \bottomrule
+    \end{tabularx}
+    \footnotesize{\textit{Sources : Web3.career, Pantera Capital Salary Survey 2024. Note : Les montants Web3 sont en Brut Global. En Tunisie, grâce au statut exportateur (off-shore/startup act), le Net est maximisé (charges allégées), rendant le pouvoir d'achat x3 supérieur au local.}}
+\end{table}
+
+\subsubsection{Modèle ROI Candidat (Simulation 1 an)}
+
+\begin{table}[h]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|c|X|l|}
+        \hline
+        \textbf{Scénario} & \textbf{Revenu Cible} & \textbf{Time-to-Revenue} & \textbf{Risques} \\ \hline
+        \textbf{Prudent} & 1 500 \$/mois & 4 mois post-cursus & Marché Bear, Anglais moyen \\ \hline
+        \textbf{Médian} & 3 000 \$/mois & 2 mois post-cursus & Concurrence, Portfolio standard \\ \hline
+        \textbf{Top Gun} & 5 000 \$/mois & Pendant le cursus (S20) & Burnout, Gestion charge travail \\ \hline
+    \end{tabularx}
+\end{table}
+
+
+\section{Croissance du Marché}
+
+\subsubsection{Définition de l'Index}
+Le graphique ci-dessous agrège le volume d'offres d'emploi techniques (Engineering, Product, Design) postées sur les 5 principaux job boards crypto, normalisé sur une base 100 en Janvier 2021.
+
+\subsubsection{Lecture Stratégique}
+La corrélation avec le prix des actifs (BTC/SOL) diminue : les entreprises construisent (Build) même en bear market. Cela signifie que l'embauche se professionnalise et devient moins volatile. Pour RBK, cela valide la stratégie de "formation longue" (7 mois) qui lisse les cycles de court terme.
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        title={Index Offres d'Emploi Web3 vs Web2 (2021-2026)},
+        xlabel={Année},
+        ylabel={Index (Base 100 = Jan 2021)},
+        xmin=2021, xmax=2026,
+        ymin=80, ymax=400,
+        xtick={2021,2022,2023,2024,2025,2026},
+        legend pos=north west,
+        ymajorgrids=true,
+        grid style=dashed,
+        width=0.9\textwidth,
+        height=0.3\textwidth
+    ]
+    
+    \addplot[color=SolanaPurple, mark=square, ultra thick]
+        coordinates {
+        (2021,100)(2022,140)(2023,120)(2024,190)(2025,280)(2026,380)
+        };
+        \addlegendentry{Web3 (Rust/Solidity) - Hypothèse Croissance}
+        
+    \addplot[color=BaseDark, mark=*, dashed]
+        coordinates {
+        (2021,100)(2022,105)(2023,108)(2024,110)(2025,112)(2026,115)
+        };
+        \addlegendentry{Web2 (Marché IT Classique)}
+        
+    \node[draw, fill=white] at (axis cs: 2024, 190) {Adoption Institutionnelle};
+        
+    \end{axis}
+    \node[anchor=north, font=\tiny] at (current bounding box.south) {Source : Projection interne basée sur Electric Capital Reports \& LinkedIn Data.};
+\end{tikzpicture}
+\end{center}

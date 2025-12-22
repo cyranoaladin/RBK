@@ -1,0 +1,255 @@
+\chapter{FICHES MÉTIERS \& ÉCONOMIE DU DIPLÔMÉ}
+
+Ce chapitre détaille les 7 profils de sortie du cursus RBK. Chaque fiche est un standard industriel définissant les attentes, responsabilités et preuves exigées.
+
+\section{Fiche Métier 1 : Smart Contract Engineer \& Auditor (Le « Guardian »)}
+
+\paragraph{Résumé métier}
+Le \textbf{Guardian} est le profil le plus critique : il construit des protocoles qui manipulent de la valeur et il sait les attaquer mentalement avant que d’autres ne le fassent. Il délivre du code \textbf{audit-ready}, documenté, testé, instrumenté, et il sait gérer le \textbf{post-prod} (incident, patch, gouvernance, communication).
+Un Guardian qui ne sait pas écrire des tests négatifs et formaliser des invariants n’est pas “junior” : il est \textbf{dangereux}.
+
+\paragraph{Mission et périmètre}
+\begin{itemize}
+    \item Concevoir et livrer des smart contracts (Solana/Anchor ou EVM selon track) avec \textbf{garanties} : invariants, contrôles d’accès, intégrité économique.
+    \item Réaliser des audits internes et externes : revue “impitoyable”, modèle de menaces, classification des findings, correctifs, preuves.
+    \item Organiser la \textbf{sécurité opérationnelle} : runbooks, multisig ops, war room, surveillance.
+\end{itemize}
+
+\paragraph{Responsabilités cœur (opérationnelles)}
+\begin{enumerate}
+    \item \textbf{Threat Modeling (avant le code)} : Définir actifs critiques, surfaces d’attaque, hypothèses. Produire un \textit{threat model} exploitable (STRIDE simplifié).
+    \item \textbf{High-Assurance Coding} : Formaliser les invariants (soldes, monotonicité). Machine à états explicite.
+    \item \textbf{Review \& Audit} : Revue structurée (checklist auth, CPI, oracles). Rédiger findings et findings.
+    \item \textbf{Hardening (pré-prod)} : Tests négatifs, fuzz/invariants, quality gates bloquants.
+    \item \textbf{Emergency Response} : War room, diagnostic, patch, rollback, communication.
+\end{enumerate}
+
+\paragraph{Trajectoire Carrière \& Mission}
+\begin{itemize}
+    \item \textbf{Junior (0-2 ans) :} Écrit des tests, corrige des bugs, audite des modules isolés. \textit{Mission : Implémenter le Staking Reward d'un protocole.}
+    \item \textbf{Senior (3+ ans) :} Lead l'architecture, gère la War Room, valide les upgrades critiques. \textit{Mission : Sécuriser un Bridge cross-chain à 500M\$ TVL.}
+\end{itemize}
+
+\paragraph{Interactions}
+Builder/PM (cadrage), dApp Engineer (API/erreurs), QA Engineer (stratégie tests), Visionnaire (hypothèses éco).
+
+\paragraph{Livrables standard}
+\texttt{docs/threat-model.md}, \texttt{AUDIT\_REPORT.md} (10 pages), Architecture doc, Tests suite (unit, int, fuzz), \texttt{RUNBOOK.md}.
+
+\paragraph{KPIs}
+Taux de findings critiques avant audit externe ("zéro surprise"), MTTR (correction vuln), Couverture utile, Fréquence incidents.
+
+\begin{center}
+    \textbf{Table: Matrice Compétence $\to$ Preuve $\to$ Outil} \\
+    \small
+    \begin{tabular}{|l|p{4.5cm}|l|}
+        \hline
+        \textbf{Compétence} & \textbf{Preuve attendue} & \textbf{Outil} \\ \hline
+        Threat modeling & Threat model (actifs, surfaces) & STRIDE \\ \hline
+        Sécurité & Tests négatifs auth/PDA/CPI & CI Checklist \\ \hline
+        Audit mindset & Audit report protocole tiers & Markdown \\ \hline
+        Fuzz / Invariants & Campagne fuzz + rapport & Trident/Foundry \\ \hline
+        Hardening & Quality gates bloquants & CI/CD \\ \hline
+        Perf budget & Profiling compute/gas & CLI / Gas report \\ \hline
+        Post-prod ops & Runbook + war-room drill & Simulation \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm, auto,
+        block/.style={rectangle, draw, rounded corners, minimum height=0.8cm, text centered}]
+        \node[block] (spec) {Spec};
+        \node[block, right=of spec] (threat) {Threat Model};
+        \node[block, right=of threat] (code) {Code};
+        \node[block, below=of code] (test) {Tests (Fuzz)};
+        \node[block, left=of test] (review) {Review};
+        \node[block, left=of review] (deploy) {Deploy};
+        \node[block, below=of review] (monitor) {Monitor};
+        \node[block, right=of monitor] (incident) {Incident Drill};
+        
+        \draw[->] (spec) -- (threat);
+        \draw[->] (threat) -- (code);
+        \draw[->] (code) -- (test);
+        \draw[->] (test) -- (review);
+        \draw[->] (review) -- (deploy);
+        \draw[->] (deploy) -- (monitor);
+        \draw[->] (monitor) -- (incident);
+        \draw[->, dashed] (incident) -| (spec);
+    \end{tikzpicture}
+    \caption{Boucle Guardian (SecDevOps)}
+\end{figure}
+
+\section{Fiche Métier 2 : Protocol \& Ecosystem Strategist (Le « Visionnaire »)}
+
+\paragraph{Résumé métier}
+Le Visionnaire transforme une idée en \textbf{système incitatif}. Il définit les règles économiques, le cadre de gouvernance et les risques. Il ne code pas le "comment", il rend le "quoi" mesurable.
+
+\paragraph{Mission}
+Concevoir tokenomics, governance (DAO), incentives. Produire simulations et plans de mitigation.
+
+\paragraph{Responsabilités}
+\begin{enumerate}
+    \item \textbf{Tokenomics Design} : Émission, vesting, sinks/sources.
+    \item \textbf{Incentive Modeling} : Boucles positives vs toxiques (Ponzi).
+    \item \textbf{Governance} : Quorum, timelocks, emergency powers.
+    \item \textbf{Risk Framing} : Depegging, bank-run, oracles.
+    \item \textbf{Go-to-market} : Bounties, grants, amorçage.
+\end{enumerate}
+
+\begin{center}
+    \textbf{Table: Livrables Visionnaire} \\
+    \small
+    \begin{tabular}{|l|p{5cm}|l|}
+        \hline
+        \textbf{Livrable} & \textbf{Contenu Minimum} & \textbf{Qualité} \\ \hline
+        Litepaper & Vision, méca, roadmap & Clair, sans jargon \\ \hline
+        Simulation Sheet & Modèle paramétrique & Rejouable \\ \hline
+        Risk Register & Matrice Prob/Impact & Actionnable \\ \hline
+        Governance Spec & Règles, quorum, rôles & Testable \\ \hline
+        Incentive Plan & Rewards, budget, durée & Anti-mercenaire \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Métier 3 : Web3 Product Builder / Entrepreneur (Le « Builder »)}
+
+\paragraph{Résumé métier}
+Le Builder est obsédé par la livraison. Il transforme un problème en produit utilisable. Il cadre le MVP, orchestre le delivery et garantit la qualité.
+
+\paragraph{Responsabilités}
+Product Discovery, Spec \& Scope, Delivery coordination, QA end-to-end, Business loop.
+
+\begin{center}
+    \textbf{Table: Definition of Done (Builder)} \\
+    \small
+    \begin{tabular}{|l|p{8cm}|}
+        \hline
+        \textbf{Axe} & \textbf{Critère DoD} \\ \hline
+        Sécurité & Audit interne + Security Checklist + Bug Bounty \\ \hline
+        Perf & TTF/Latence < seuil cible + Bench \\ \hline
+        Obs & Dashboard actif (Retention, Churn, Erreurs) \\ \hline
+        Docs & README Fresh Clone + User Guide \\ \hline
+        Release & Tag + Changelog + Rollback Plan \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Métier 4 : Solana dApp Engineer (Front Web3)}
+
+\paragraph{Résumé métier}
+Le dApp Engineer est l’anti-chaos. Il rend une blockchain instable utilisable humainement. Il gère le lifecycle transactionnel, les erreurs RPC, et l'UX wallet.
+
+\paragraph{Responsabilités}
+Transaction lifecycle UI, RPC Management (failover), Wallet UX, Data Layer (caching), Observabilité.
+
+\begin{center}
+    \textbf{Table: Taxonomie erreurs (Extrait)} \\
+    \small
+    \begin{tabular}{|l|p{6cm}|}
+        \hline
+        \textbf{Cause} & \textbf{Mitigation Standard} \\ \hline
+        RPC Rate Limit & Exponential backoff + Failover \\ \hline
+        Simulation Failed & Message clair précondition + Lien doc \\ \hline
+        Blockhash Expired & Auto-refresh + Re-sign guidé \\ \hline
+        Stale Indexer & Fallback on-chain + UI Syncing \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Métier 5 : Tokenization \& DePIN Architect}
+
+\paragraph{Résumé métier}
+Relie le réel à la blockchain : actifs, droits, conformité. Pense "Lifecycle" (Mint $\to$ Transfer $\to$ Freeze $\to$ Burn).
+
+\paragraph{Responsabilités}
+RBAC Design, Compliance (KYC/AML), Asset Lifecycle, Ops.
+
+\begin{center}
+    \textbf{Table: Matrice RBAC (Extrait)} \\
+    \small
+    \begin{tabular}{|l|c|c|l|}
+        \hline
+        \textbf{Permission} & \textbf{Admin} & \textbf{User} & \textbf{Risque} \\ \hline
+        Mint & Oui & Non & Inflation (Plafond/Logs) \\ \hline
+        Freeze & Oui & Non & Censure (Timelock/Audit) \\ \hline
+        Transfer & Non & Oui & Vol (Limites/Recovery) \\ \hline
+        Update Policy & Oui & Non & Contournement (Review) \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Métier 6 : Web3 QA \& Test Automation Engineer}
+
+\paragraph{Résumé métier}
+Le QA Web3 écrit du code qui teste le code. C'est un rôle de sécurité (fuzz, invariants, forks).
+
+\paragraph{Responsabilités}
+Test Strategy, Automation (CI), Forking/Simulation, Regression Discipline.
+
+\begin{center}
+    \textbf{Table: Pipeline Qualité} \\
+    \small
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Étape} & \textbf{Gate Bloquant} \\ \hline
+        Lint/Format & Échec si KO \\ \hline
+        Unit Tests & Échec si logique locale KO \\ \hline
+        Integration (Fork) & Échec si scénario critique KO \\ \hline
+        Fuzz/Invariants & Échec si invariant violé \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Métier 7 : Developer Advocate \& Technical Writer}
+
+\paragraph{Résumé métier}
+La voix technique. Il rend le protocole adoptable via docs, SDKs et support. Multiplicateur de croissance.
+
+\paragraph{Responsabilités}
+Documentation, SDKs \& Examples, Community Support, Feedback Loop.
+
+\paragraph{Preuves attendues}
+Doc set complet (Quickstart/API), Starter Kit maintenu, Integration Playbook.
+
+\section{Perspectives Économiques \& Carrière}
+
+\subsection{Revenus Annuels Cibles 2025}
+
+Ce tableau présente des ordres de grandeur. Le haut de fourchette n'est accessible qu'avec des preuves de compétence "Studio-Grade".
+
+\textit{Note Importante : Le différentiel apparent "Tunisie vs Remote" doit être pondéré par le coût de la vie (x4 moins cher) et la fiscalité avantageuse (Statut Exportateur). Un salaire de 6 000 TND Net à Tunis offre un pouvoir d'achat équivalent à une rémunération de 60 000 \$ à Paris.}
+
+\begin{center}
+    \textbf{Table: Revenus Indicatifs} \\
+    \scriptsize
+    \begin{tabular}{|l|l|l|p{3cm}|}
+        \hline
+        \textbf{Métier} & \textbf{Remote Global} & \textbf{Tunisie} & \textbf{Condition Top Tier} \\ \hline
+        Guardian & \$80k--\$150k & 5k--10k TND & 3 repos + Audit Report \\ \hline
+        Auditor (Elite) & \$120k--\$250k & N/A & Track record findings \\ \hline
+        Strategist & \$90k--\$160k & Consultant & Modèles + Risk Register \\ \hline
+        dApp Eng. & \$60k--\$110k & 3k--6k TND & UX irréprochable \\ \hline
+        Token Arch. & \$90k--\$180k & Consultant & RBAC + Compliance \\ \hline
+        QA Eng. & \$60k--\$120k & 3k--7k TND & Fuzz + CI robuste \\ \hline
+        DevRel & \$50k--\$110k & 3k--6k TND & Doc set + Starter kits \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Comment atteindre le palier}
+
+\paragraph{Palier commun "RBK Ready"}
+\begin{itemize}
+    \item Portfolio GitHub : 3 repos studio-grade (Tests, Docs, CI).
+    \item 1 Demo rejouable + 1 Runbook.
+    \item Communication Pro : README, Changelog, Versioning.
+\end{itemize}
+
+\paragraph{Preuves par métier}
+\begin{itemize}
+    \item \textbf{Guardian :} Threat Model + Audit Report + Tests Négatifs.
+    \item \textbf{Visionnaire :} Simulation paramétrique + Risk Register.
+    \item \textbf{Builder :} PRD + Backlog + Release Tag.
+    \item \textbf{dApp :} State Machine Tx + Error Taxonomy.
+    \item \textbf{Token Arch :} RBAC Matrix + Audit Trail.
+    \item \textbf{QA :} CI Gates + Fork Suite.
+\end{itemize}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Disqualifiants]
+Pas de tests négatifs, Docs inexistantes, CI rouge, Absence de specs.
+\end{tcolorbox}

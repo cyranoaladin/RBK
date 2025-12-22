@@ -1,0 +1,344 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white, colframe=black!60, sharp corners, boxrule=0.6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{CAPSTONES --- Projets signatures (Studio-grade)\\\large Cahiers des charges + rubriques + packaging}
+\author{RBK 2.0}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{6pt}
+
+% =========================================================
+\section{Philosophie ``standard studio'' + checklist non négociable}
+\paragraph{Principe.}
+Un capstone RBK est un livrable \textbf{utilisable}, pas un prototype. Il comprend : code, tests, documentation, menaces, observabilité, runbook, release et démonstration reproductible.
+
+\begin{tcolorbox}[title={Non négociables (Studio-grade)}]
+\begin{itemize}
+  \item Spec + critères d'acceptation mesurables.
+  \item Threat model + security checklist.
+  \item Tests : unit + intégration + négatifs (et fuzz si pertinent).
+  \item CI : lint + tests + rapport.
+  \item Observabilité : logs/métriques + alerting minimal.
+  \item Runbook incidents : symptômes $\rightarrow$ diagnostic $\rightarrow$ action.
+  \item Demo rejouable : script + scénario + données.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Catégorie} & \textbf{Preuve attendue} \\
+\midrule
+Spec \& DoD & document + checklist acceptance (15--25 items) \\
+Sécurité & threat model + findings + correctifs testés \\
+Tests & suite complète + logs CI + cas négatifs \\
+Docs & architecture + API + schémas + guide déploiement \\
+Ops & runbook + dashboard + signaux/alertes \\
+Release & tags + changelog + address book / manifest \\
+\bottomrule
+\end{tabularx}
+\caption{Checklist studio-grade (résumé)}
+\label{tab:studio_checklist}
+\end{table}
+
+% =========================================================
+\section{Gabarit unique A$\rightarrow$J (à appliquer à chaque capstone)}
+\subsection*{A) Problème \& Contexte}
+\subsection*{B) Personas \& User Stories (min 6)}
+\subsection*{C) Architecture cible (onchain/offchain/indexer/UI/obs)}
+\subsection*{D) Spécification Smart Contracts (comptes, instr, events, invariants)}
+\subsection*{E) Threat model (STRIDE simplifié) + hypothèses}
+\subsection*{F) Plan de tests (unit/int/e2e/fuzz) + seuils}
+\subsection*{G) Performance budget (latence, CU/gas, RPC strategy)}
+\subsection*{H) Observabilité \& Runbook}
+\subsection*{I) Critères d'acceptation (checklist mesurable)}
+\subsection*{J) Livrables (repo structure + docs + demo + audit report)}
+
+% =========================================================
+\section{Capstone 1 : Wallet \& Transaction Reliability Pack}
+
+\subsection*{A) Problème \& Contexte}
+Les dApps Web3 échouent souvent par \textbf{instabilité transactionnelle} : erreurs RPC, timeouts, confirmations incertaines, UX dégradée, et absence d'outillage de diagnostic. L'objectif est de produire un ``reliability pack'' réutilisable : state machine transaction, taxonomie d'erreurs, stratégies de retry, instrumentation et dashboard.
+
+\subsection*{B) Personas \& User stories}
+\begin{itemize}
+  \item \textbf{User} : ``En tant qu'utilisateur, je veux comprendre pourquoi ma transaction a échoué.''
+  \item \textbf{Support} : ``En tant que support, je veux un diagnostic rapide (cause probable + action).''
+  \item \textbf{Dev} : ``En tant que dev, je veux instrumenter la tx lifecycle et mesurer les erreurs.''
+  \item \textbf{Ops} : ``Je veux détecter une hausse d'échecs RPC et déclencher une mitigation.''
+  \item \textbf{PM} : ``Je veux suivre le taux de succès et la latence de confirmation.''
+  \item \textbf{Partner} : ``Je veux un mode ‘verification' pour reproduire un incident.''
+\end{itemize}
+
+\subsection*{C) Architecture cible}
+Front (state machine tx) + couche RPC strategy (providers, fallback) + telemetry (events) + dashboard + playbooks support.
+
+\subsection*{D) Spécification (composants)}
+\begin{itemize}
+  \item \textbf{Tx State Machine} : created $\rightarrow$ signed $\rightarrow$ sent $\rightarrow$ confirmed $\rightarrow$ finalized (ou failed).
+  \item \textbf{Error taxonomy} : erreurs wallet, RPC, simulation, blockhash, compute, signature.
+  \item \textbf{Retry policy} : règles déterministes, backoff, limite, passage provider.
+\end{itemize}
+
+\subsection*{E) Threat model (simplifié)}
+\begin{itemize}
+  \item Spoofing : faux provider / réponses falsifiées $\rightarrow$ mitigation : allowlist providers, signatures.
+  \item DoS : surcharges RPC $\rightarrow$ mitigation : fallback + cache + rate limit.
+  \item Repudiation : logs absents $\rightarrow$ mitigation : trace IDs et journaux horodatés.
+\end{itemize}
+
+\subsection*{F) Plan de tests}
+Unit tests (state transitions) + intégration (provider failover) + tests ``chaos RPC'' (timeouts) + tests de messages UX.
+
+\subsection*{G) Performance budget}
+\begin{itemize}
+  \item Latence UI : affichage état \(\leq\) 200 ms après événement.
+  \item Stratégie confirmations : seuil configurable ; fallback si non confirmé.
+\end{itemize}
+
+\subsection*{H) Observabilité \& Runbook}
+Métriques : success rate, fail types, provider errors, confirm latency. Runbook : hausse des fails $\rightarrow$ switch provider $\rightarrow$ degrade features $\rightarrow$ informer user.
+
+\subsection*{I) Critères d'acceptation}
+Voir Table \ref{tab:cap1_acceptance} (20 items).
+
+\subsection*{J) Livrables}
+Repo + docs + dashboard + demo script + mini ``support guide''.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Erreur} & \textbf{Cause probable} & \textbf{Mitigation / UX} \\
+\midrule
+Timeout RPC & provider saturé & fallback provider + message ``réessayer'' \\
+Blockhash expired & tx trop lente & re-sign + refresh blockhash \\
+Simulation failed & état invalide & expliquer précondition + lien docs \\
+Signature rejected & wallet / user & demander re-sign + check wallet \\
+Compute limit & tx trop lourde & proposer simplification / split tx \\
+\bottomrule
+\end{tabularx}
+\caption{Taxonomie erreurs Wallet/RPC (extrait)}
+\label{tab:cap1_error_taxonomy}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y}
+\toprule
+\textbf{Acceptance criteria (Capstone 1) --- 20 items mesurables (exemples)} \\
+\midrule
+1) State machine couvre 100\% des transitions prévues + tests transitions invalides.\\
+2) 12 types d'erreurs minimum catégorisés, chacun avec mitigation + message UX.\\
+3) Fallback provider fonctionnel (démo : provider A down $\rightarrow$ provider B).\\
+4) Dashboard : success rate, latency, top errors, provider errors.\\
+5) Runbook : au moins 3 incidents simulés + résolution.\\
+6) Demo script rejouable depuis fresh clone.\\
+\bottomrule
+\end{tabularx}
+\caption{Acceptance criteria Capstone 1 (à compléter jusqu'à 20 items)}
+\label{tab:cap1_acceptance}
+\end{table}
+
+% =========================================================
+\section{Capstone 2 : Tokenization \& Admin Control Center (RWA/Token-2022)}
+
+\subsection*{A) Problème \& Contexte}
+Les projets de tokenization échouent par manque de \textbf{contrôles admin}, \textbf{piste d'audit}, politiques (RBAC), et procédures (approbation, exécution, rollback). Ce capstone construit un ``Control Center'' : interface admin + policies + audit trail + vérification.
+
+\subsection*{B) Personas \& user stories}
+Admin, compliance, ops, support, auditor, partner.
+
+\subsection*{C) Architecture cible}
+Admin UI $\rightarrow$ API/Policy engine $\rightarrow$ indexer/audit store $\rightarrow$ smart contracts $\rightarrow$ dashboard.
+
+\subsection*{D) Spec smart contracts (résumé)}
+Roles, permissions, events d'audit, state machine actions (mint/burn/freeze/whitelist).
+
+\subsection*{E) Threat model (simplifié)}
+Elevation of privilege (RBAC mal conçu) ; repudiation (audit logs absents) ; tampering (policy contournée).
+
+\subsection*{F) Tests}
+RBAC tests (positifs/négatifs), tests audit trail (events), tests rollback.
+
+\subsection*{G) Perf budget}
+Temps d'exécution policy, latence admin UI, intégrité audit.
+
+\subsection*{H) Observabilité \& runbook}
+Alertes : actions admin inhabituelles ; anomalies permissions ; freeze/unfreeze.
+
+\subsection*{I) Acceptance criteria}
+Inclure RBAC matrix + audit trail schema + PRR.
+
+\subsection*{J) Livrables}
+Repo + docs compliance-friendly + démo + audit report.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Rôle} & \textbf{Permissions} & \textbf{Risque si mal configuré} \\
+\midrule
+Issuer & mint/burn, set policy & inflation / abus \\
+Compliance & whitelist/freeze & censure/erreurs de blocage \\
+Operator & exécuter jobs & opérations frauduleuses \\
+Auditor & read-only + exports & fuite d'infos \\
+\bottomrule
+\end{tabularx}
+\caption{RBAC matrix (extrait) --- Capstone 2}
+\label{tab:cap2_rbac}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Event d'audit} & \textbf{Champs minimaux} \\
+\midrule
+PolicyUpdated & who, when, diff, rationale \\
+MintExecuted & who, amount, recipient, policy-id \\
+FreezeAction & who, target, reason, duration \\
+\bottomrule
+\end{tabularx}
+\caption{Audit trail schema (extrait)}
+\label{tab:cap2_audit_schema}
+\end{table}
+
+% =========================================================
+\section{Capstone 3 : Digital Assets \& Utility Ecosystem (NFT/Gating)}
+
+\subsection*{A) Problème \& Contexte}
+Les NFTs sans utilité réelle sont fragiles. Ce capstone impose une utilité \textbf{gated}, vérifiable, performante : ``My Assets'', accès features, perks, dashboards, indexation, et UX stable.
+
+\subsection*{B) Personas \& user stories}
+Holder, new user, support, partner, devrel, ops.
+
+\subsection*{C) Architecture}
+Wallet connect $\rightarrow$ gating checks (on-chain + cache) $\rightarrow$ unlock features $\rightarrow$ telemetry. Indexer : events $\rightarrow$ DB $\rightarrow$ cache $\rightarrow$ API.
+
+\subsection*{D) Spec}
+Tiers, règles de gating, events, invalidations cache, policy updates.
+
+\subsection*{E) Threat model}
+Spoof gating, cache poisoning, replay, DoS sur indexer.
+
+\subsection*{F) Tests}
+Unit (rules), integration (indexer), e2e (unlock), perf (cache).
+
+\subsection*{G) Perf budget}
+Latence gating \(\leq\) 300ms (cible), taux cache hit, fallback on-chain.
+
+\subsection*{H) Observabilité}
+Métriques gating latency, unlock success, indexer lag.
+
+\subsection*{I) Acceptance criteria}
+Matrice utility + 15+ critères.
+
+\subsection*{J) Livrables}
+Repo + docs + demo + audit.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y Y}
+\toprule
+\textbf{Tier NFT} & \textbf{Feature} & \textbf{Check} & \textbf{UX attendu} \\
+\midrule
+Bronze & accès contenu A & on-chain + cache & unlock immédiat \\
+Silver & accès bounties & check + signature & écran ``eligible'' \\
+Gold & priority support & tier check & badge UI + SLA \\
+\bottomrule
+\end{tabularx}
+\caption{Utility mapping (extrait) --- Capstone 3}
+\label{tab:cap3_utility_mapping}
+\end{table}
+
+% =========================================================
+\section{Grille d'évaluation 100 points (jury/audit)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l c Y}
+\toprule
+\textbf{Catégorie} & \textbf{Poids} & \textbf{Critères} \\
+\midrule
+Sécurité \& menaces & 25 & threat model + tests négatifs + corrections \\
+Tests \& qualité & 20 & suite complète + CI + coverage utile \\
+Architecture \& scalabilité & 15 & indexer/caching, dépendances, ADR \\
+Observabilité \& runbook & 15 & métriques, alertes, incidents simulés \\
+UX \& robustesse wallet/RPC & 10 & messages clairs, retries, state machine \\
+Docs \& audit report & 15 & package complet et vérifiable \\
+\bottomrule
+\end{tabularx}
+\caption{Rubrique capstones (100 points)}
+\label{tab:capstones_rubric}
+\end{table}
+
+% =========================================================
+\section{Package final (repo + docs + demo + audit)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Item} & \textbf{Contenu minimal} \\
+\midrule
+Repo structure & /programs /app /tests /scripts /docs /monitoring \\
+Docs & architecture, API, threat model, runbook, deployment/rollback \\
+Audit report & 10 pages min : findings, sévérité, correctifs, preuves \\
+Observabilité & dashboard + règles d'alerting + playbooks \\
+Demo & vidéo + script live + scénario \\
+\bottomrule
+\end{tabularx}
+\caption{Package final (DoD capstone)}
+\label{tab:package_final}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=8mm,
+  box/.style={draw, rounded corners, align=center, minimum width=32mm, minimum height=9mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (build) {Build};
+\node[box, right=10mm of build] (test) {Test};
+\node[box, right=10mm of test] (audit) {Audit Doc};
+\node[box, right=10mm of audit] (release) {Release};
+\node[box, right=10mm of release] (demo) {Demo};
+
+\draw[arr] (build) -- (test);
+\draw[arr] (test) -- (audit);
+\draw[arr] (audit) -- (release);
+\draw[arr] (release) -- (demo);
+\end{tikzpicture}
+\caption{Packaging pipeline : build $\rightarrow$ test $\rightarrow$ audit doc $\rightarrow$ release $\rightarrow$ demo}
+\label{fig:packaging_pipeline}
+\end{figure}
+
+\end{document}

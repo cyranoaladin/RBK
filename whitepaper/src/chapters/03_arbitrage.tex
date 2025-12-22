@@ -1,0 +1,108 @@
+\chapter{ARBITRAGE TECHNOLOGIQUE}
+\label{chap:arbitrage}
+
+\section{Solana vs EVM : Le Choix Stratégique}
+
+\begin{ceoBox}{L'Arbitrage en un coup d'œil}
+Pour un dirigeant, le choix technologique se résume ainsi :
+\begin{itemize}
+    \item \textbf{Solana (SVM)} : Optimisé pour la \textbf{vitesse} et le \textbf{coût infime}. Idéal pour les applications grand public (Paiements, Jeux, DePIN). C'est le "Nasdaq" de la blockchain.
+    \item \textbf{Ethereum (EVM)} : Optimisé pour la \textbf{sécurité} et la \textbf{décentralisation}. Idéal pour la finance lourde et les actifs de haute valeur. C'est le "Coffre-fort" numérique.
+\end{itemize}
+\textbf{Notre approche :} Former sur l'architecture la plus exigeante (Solana/Rust) rend l'apprentissage de la seconde (Ethereum/Solidity) trivial.
+\end{ceoBox}
+
+\subsubsection{Méthode d'Arbitrage (Scoring)}
+Notre choix technologique n'est pas idéologique, il est pragmatique. Nous évaluons les écosystèmes selon trois vecteurs pondérés :
+
+\begin{itemize}
+    \item \textbf{Employabilité (Poids 50\%) :} Volume d'offres, niveau des salaires, pénurie relative.
+    \item \textbf{Innovation (Poids 30\%) :} Capacité à supporter de nouveaux cas d'usage (DePIN, Mobile).
+    \item \textbf{Stabilité (Poids 20\%) :} Maturité des outils (Tooling), documentation, risque de fork.
+\end{itemize}
+
+Actuellement, Solana domine sur l'Innovation et la pénurie de talents, tandis qu'EVM domine sur la stabilité et le volume total de TVL.
+
+\subsubsection{Conséquences Pédagogiques : "Solana-first, EVM-competent"}
+Apprendre Rust (Solana) est plus difficile que Solidity (EVM) en raison de la gestion de la mémoire et de la concurrence. C'est pourquoi nous commençons par le plus dur :
+\begin{enumerate}
+    \item \textbf{Phase 0-1 (Rust) :} L'étudiant acquiert une rigueur système (Memory safety, Type system).
+    \item \textbf{Phase 2 (Solidity) :} Le passage à l'EVM est vécu comme une simplification, permettant de se concentrer sur les failles de sécurité spécifiques (Re-entrancy) plutôt que sur la syntaxe.
+\end{enumerate}
+
+\subsubsection{Risque Technologique et Atténuation}
+Le risque principal de Solana est sa jeunesse (pannes historiques, changements d'API). Nous l'atténuons par une veille technique active et l'utilisation de wrappers stables (Anchor). Le risque EVM est la fragmentation (L2s\footnote{\textbf{L2 (Layer 2) / Rollup :} Technologies (comme Arbitrum, Optimism) qui s'exécutent "au-dessus" d'une blockchain principale (L1) pour traiter les transactions plus vite et moins cher, tout en héritant de sa sécurité.} incompatibles) ; nous l'adressons en enseignant les standards (ERC-20, ERC-721) qui restent universels.
+
+\subsubsection{Matrice Comparative Détaillée}
+
+\begin{table}[h]
+    \caption{Comparatif Technique et Stratégique (2025)}
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{L X X l}
+        \rowcolor{SolanaPurple!20} \textbf{Critère} & \textbf{Ethereum/EVM} & \textbf{Solana/SVM} & \textbf{RBK Posture} \\
+        \toprule
+        \textbf{Modèle Mental} & Séquentiel (Single Thread) & Parallèle (Sealevel) & Maîtrise des deux \\
+        \textbf{Langage} & Solidity (Haut niveau) & Rust (Système) & Rust comme fondation \\
+        \textbf{Coût Tx} & 2\$ - 50\$ (L1) / 0.1\$ (L2) & < 0.0001\$ & Optimisation Gas \\
+        \textbf{Sécurité} & Surface d'attaque mature & Surface complexe (CPI) & Audit First \\
+        \textbf{Opportunité} & Corporate / Audit & Startup / Growth & Polyvalence \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\section{Stratégie Multi-Chain \& Interopérabilité}
+
+\subsubsection{Interopérabilité : Notions Essentielles}
+L'avenir n'est pas "Winner Takes All", mais "Cross-Chain"\footnote{\textbf{Cross-Chain :} Architecture permettant l'interopérabilité et la communication entre des blockchains indépendantes, essentielle pour éviter les silos de liquidité.}. Un architecte doit comprendre comment déplacer de la valeur et de l'information entre des réseaux hétérogènes.
+\begin{itemize}
+    \item \textbf{Bridge (Lock \& Mint)}\footnote{\textbf{Bridge :} Protocole ou infrastructure permettant de transférer des actifs (Tokens) d'une blockchain à une autre.} : Verrouiller un actif sur la chaîne A pour en créer une représentation sur la chaîne B.
+    \item \textbf{Messaging (General Passing) :} Envoyer une instruction arbitraire d'une chaîne à l'autre (ex: Vote DAO sur Eth -> Exécution sur Sol).
+    \item \textbf{Finality :} Le temps nécessaire pour garantir qu'une transaction ne sera jamais annulée (Solana: ~400ms, Eth: ~12min).
+\end{itemize}
+
+\subsubsection{Risques Cross-Chain}
+Les "Bridges" sont historiquement les cibles les plus hackées (>2 Mrd\$ volés). RBK enseigne une posture paranoïaque :
+\begin{enumerate}
+    \item Ne jamais faire confiance à un validateur unique.
+    \item Vérifier les preuves cryptographiques (Merkle Proofs).
+    \item Utiliser des standards audités (Wormhole, LayerZero) plutôt que des solutions maison.
+\end{enumerate}
+
+\subsubsection{Livrables Étudiants}
+Pour valider le module interopérabilité, l'étudiant doit livrer :
+\begin{itemize}
+    \item Un schéma d'architecture cross-chain (flux des actifs).
+    \item Une implémentation de transfert de message (ex: "Hello World" cross-chain).
+    \item Une analyse des risques spécifiques à son architecture.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=2.5cm,
+        chain/.style={circle, draw=BaseDark, very thick, fill=white, minimum size=2.2cm, align=center, drop shadow},
+        component/.style={rectangle, draw=SolanaPurple, fill=SolanaPurple!10, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, font=\small},
+        link/.style={->, >=Stealth, very thick, SolanaBlue}
+    ]
+        % Zones
+        \node[chain, label=below:\textbf{EVM}] (evm) at (0,0) {Smart\\Contract\\(Source)};
+        \node[chain, label=below:\textbf{SVM}] (svm) at (10,0) {Program\\(Dest.)};
+        
+        % Bridge Components
+        \node[component] (relayer) at (5, 2) {Relayer / Oracle\\(Off-chain)};
+        \node[component] (guardian) at (5, -2) {Guardian Network\\(Consensus)};
+        
+        % Flows
+        \draw[link] (evm) -- node[midway, left] {1. Emit Event} (relayer);
+        \draw[link] (relayer) -- node[midway, right] {2. Submit Proof} (svm);
+        \draw[link, dashed] (evm) -- node[midway, left] {Verify} (guardian);
+        \draw[link, dashed] (guardian) -- node[midway, right] {Sign VAA} (svm);
+        
+        % Legend
+        \node[draw, fill=white, align=left] at (5,0) {\tiny \textbf{Légende :}\\ \textcolor{SolanaBlue}{$\rightarrow$} Flux de Données\\ \textcolor{BaseDark}{---} Zone de Trust};
+
+    \end{tikzpicture}
+    \caption{Architecture Cross-Chain : Flux de Vérification}
+\end{figure}

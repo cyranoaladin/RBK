@@ -1,0 +1,149 @@
+\chapter{ÉLÉMENTS DE DIFFÉRENCIATION}
+
+\section{Le Paradigme « Senior-by-Design »}
+
+Le terme "Junior" est banni de notre vocabulaire. Un étudiant RBK ne sort pas pour "apprendre le métier", mais pour "exécuter le métier".
+L'objectif est de produire un ingénieur immédiatement opérationnel, capable de livrer du code sécurisé en production sans supervision constante.
+
+\paragraph{Mécanisme Opérationnel}
+\begin{itemize}
+    \item \textbf{No-AI Piscine :} Le filtre d'entrée se fait à la dure (Rust pur, sans Copilot) pour garantir la capacité cognitive.
+    \item \textbf{Standards Audit :} Dès la semaine 9, tout code est soumis aux standards des cabinets d'audit (Documentation, Tests, Invariants).
+    \item \textbf{Autonomie Radicale :} Pas de "prof" qui corrige. Peer-review et documentation technique sont les seules sources de vérité.
+\end{itemize}
+
+\begin{table}[h]
+    \caption{Grille de Maturité Senior-by-Design}
+    \centering
+    \small
+    
+    \begin{tabular}{|p{2.5cm}|p{3cm}|p{4cm}|p{3.5cm}|}
+        \hline
+        \textbf{Axe} & \textbf{Niveau 0 (Junior)} & \textbf{Niveau 4 (Senior RBK)} & \textbf{Preuve} \\ \hline
+        Architecture & Code monolithique & Modulaire, Composabilité & Diagramme C4 \\ \hline
+        Sécurité & "Ça marche" & "C'est incassable" & Threat Model \\ \hline
+        Tests & Manuels & CI/CD, Fuzzing, Property-Based & Rapport Coverage \\ \hline
+        Collaboration & Solo coder & Reviewer implacable & Historique PR \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \node[draw, rectangle] (coder) {Codeur (S0)};
+        \node[draw, rectangle, right=of coder] (builder) {Builder (S12)};
+        \node[draw, rectangle, right=of builder] (architect) {Architecte (S28)};
+        \draw[->, thick] (coder) -- node[above] {Technique} (builder);
+        \draw[->, thick] (builder) -- node[above] {Systémique} (architect);
+    \end{tikzpicture}
+    \caption{Transformation Codeur $\to$ Architecte}
+\end{figure}
+
+\section{Approche « Cyborg » : IA-Augmented Engineering}
+
+L'IA n'est pas une béquille, c'est un exosquelette. Chez RBK, nous formons des "Cyborgs" : des ingénieurs qui utilisent l'IA pour multiplier leur productivité par 10, tout en gardant le contrôle absolu sur la qualité et la sécurité.
+
+\paragraph{Protocole d'Usage}
+\begin{itemize}
+    \item \textbf{Autorisé :} Documentation, boilerplate, génération de tests unitaires, explication d'erreurs.
+    \item \textbf{Interdit :} Copier-coller de logique métier critique sans audit ligne par ligne.
+    \item \textbf{Traçabilité :} Tout prompt générant du code prod doit être loggé (Git commit message ou comments).
+\end{itemize}
+
+\begin{table}[h]
+    \caption{Checklist d'Audit Code IA}
+    \centering
+    \small
+    \begin{tabular}{|p{4cm}|l|l|}
+        \hline
+        \textbf{Point de Contrôle} & \textbf{Risque IA} & \textbf{Validation Humaine} \\ \hline
+        Logique Invariante & Hallucination de règles métier & Preuve mathématique \\ \hline
+        Vecteurs d'Attaque & Oubli de "Reentrancy Guard" & Analyse statique \\ \hline
+        Edge Cases & Gestion naïve des erreurs & Tests de limites \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Dual Track Solana/EVM : Flexibilité Stratégique}
+
+Pourquoi choisir ? Le marché valorise la polyvalence. Nos ingénieurs sont "T-Shaped" : experts profonds sur une stack (ex: Solana) et compétents sur l'autre (EVM). Cela garantit une employabilité maximale et une capacité à auditer des architectures cross-chain.
+
+\begin{table}[h]
+    \caption{Comparatif Technique Solana vs EVM}
+    \centering
+    \small
+    \begin{tabular}{|l|p{5cm}|p{5cm}|}
+        \hline
+        \textbf{Dimension} & \textbf{Solana (Track A)} & \textbf{EVM (Track B)} \\ \hline
+        Modèle Mental & Stateless (Account Model) & Stateful (Contract Storage) \\ \hline
+        Langage & Rust + Anchor & Solidity + Foundry \\ \hline
+        Performance & Parallélisme (SVM) & Séquentiel (EVM) \\ \hline
+        Sécurité & Ownership checks & Reentrancy guards \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Intégration Superteam : Opportunités Directes}
+
+Superteam n'est pas un partenaire, c'est notre client. RBK est conçu comme une usine à talents pour l'écosystème Superteam (Bounties, Grants, Jobs).
+
+\paragraph{Processus}
+\begin{enumerate}
+    \item \textbf{Sourcing :} Les meilleurs bounties sont sélectionnés chaque lundi.
+    \item \textbf{Squads :} Des équipes de 2-3 étudiants se forment pour attaquer les bounties complexes.
+    \item \textbf{Review RBK :} Un mentor senior valide la soumission avant envoi (Quality Gate).
+    \item \textbf{Revenue :} 100\% des gains vont aux étudiants (preuve de concept économique).
+\end{enumerate}
+
+\section{« On-Chain Resume » : Preuve de Travail Public}
+
+Le CV PDF est mort. RBK délivre un "On-Chain Resume" vérifiable cryptographiquement.
+Chaque compétence validée, chaque projet livré, chaque audit réalisé est ancré sur la blockchain via des SBT (Soulbound Tokens) et un historique GitHub immuable.
+
+\begin{table}[h]
+    \caption{Structure du On-Chain Resume}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|l|X|}
+        \hline
+        \textbf{Composant} & \textbf{Support} & \textbf{Preuve Vérifiable} \\ \hline
+        Identité & Wallet & Signature cryptographique \\ \hline
+        Compétences & SBT Badge & Transaction on-chain (Issuer: RBK) \\ \hline
+        Projets & GitHub Repo & Commit history, CI logs \\ \hline
+        Réputation & DAO Vote & Poids de vote on-chain \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Ancrage Tunisie + Export : Software Factory Future}
+
+RBK positionne la Tunisie comme la "Base Arrière" de l'ingénierie Web3 mondiale.
+Moins cher que l'Europe de l'Est, plus qualifié que l'Asie du Sud-Est (sur la niche Rust/Crypto), et sur le même fuseau horaire que Paris/Berlin/Lagos.
+
+\begin{table}[h]
+    \caption{Risk Register Export}
+    \centering
+    \small
+    \begin{tabular}{|l|l|p{6cm}|l|}
+        \hline
+        \textbf{Risque} & \textbf{Prob.} & \textbf{Impact} & \textbf{Mitigation} \\ \hline
+        Juridique & Moyen & Blocage paiements & Contrats types validés, Crypto-payments \\ \hline
+        Fuite Talents & Haut & Perte expertise locale & Modèle "Remote from Tunisia" (Salaire indexé) \\ \hline
+        Qualité & Moyen & Perte réputation & QA systématique par Senior RBK \\ \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Comparatif RBK 2.0 vs Bootcamps Classiques}
+
+RBK n'est pas un bootcamp. C'est un centre d'entraînement olympique pour ingénieurs.
+
+\begin{table}[h]
+    \caption{Matrice Comparée}
+    \centering
+    \small
+    \begin{tabular}{|l|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+        \hline
+        \textbf{Critère} & \textbf{RBK 2.0} & \textbf{Bootcamp Web2} & \textbf{Université} \\ \hline
+        Profondeur & Expert (Rust/Systems) & Surface (JS/React) & Théorique \\ \hline
+        Sécurité & Obsessionnelle & Basique & Abstraite \\ \hline
+        Preuve & Audit Report & "Projet TodoList" & Diplôme Papier \\ \hline
+        Modèle Éco & ISA (Success fee) & Cash Upfront & Gratuit / Public \\ \hline
+    \end{tabular}
+\end{table}

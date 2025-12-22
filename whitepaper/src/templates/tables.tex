@@ -1,0 +1,23 @@
+% Template pour tableaux RBK
+\newcommand{\rbktable}[4]{%
+  \begin{table}[#1]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{#2}
+      \hline
+      \rowcolor{rbkpurple!20} #3 \\
+      \hline
+      #4
+      \hline
+    \end{tabularx}
+    \caption{}
+    \label{}
+  \end{table}
+}
+
+% Tableau de comparaison
+\newenvironment{comparisontable}
+  {\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|X|X|X|}
+    \hline
+    \rowcolor{rbkpurple!20}}
+  {\hline\end{tabularx}}

@@ -1,0 +1,110 @@
+\chapter{MODULE SOFT SKILLS \& PROFESSIONNALISATION}
+
+\section{Structure du Module (4 semaines)}
+
+Ce module de 4 semaines (Phase 3) est le pont critique entre l'étudiant et le professionnel. Dans un marché où la compétence technique est un pré-requis, c'est la "Seniorité Attitude" qui déclenche l'embauche. Nous ne formons pas seulement des codeurs, mais des ingénieurs capables de gérer des incidents, de communiquer avec des stakeholders non-techniques, et de vendre leur valeur. C'est l'étape finale de transformation "Senior-by-Design".
+
+\paragraph{Livrables Finaux du Module (Obligatoires pour Certification)}
+Pour valider cette phase, l'étudiant doit produire et faire valider :
+\begin{enumerate}
+    \item \textbf{Rapport d'Audit Professionnel :} Basé sur le template Code4rena/OtterSec, analysant un protocole réel.
+    \item \textbf{Documentation Technique (GitBook) :} Une documentation utilisateur et développeur complète pour leur Capstone.
+    \item \textbf{Package Freelance :} Une proposition commerciale (SOW) type, une grille tarifaire (TJM) et un contrat de service.
+    \item \textbf{Board Projet (Jira/Notion) :} L'historique des sprints, user stories, et une rétrospective écrite post-mortem.
+    \item \textbf{Pitch Deck (10 slides) \& Démo :} Une présentation vidéo (3-5 min) et un pitch deck investisseur.
+    \item \textbf{Profil Public : } GitHub (Green dots, Readme profil) et LinkedIn (Headline, About, Featured) optimisés.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Timeline simple 4 semaines
+        \node[draw, rounded corners, fill=SolanaBlue!10, minimum width=3cm, minimum height=1cm] (s25) at (0,0) {\textbf{S25} : Comms};
+        \node[draw, rounded corners, fill=SolanaGreen!10, minimum width=3cm, minimum height=1cm, right=0.5cm of s25] (s26) {\textbf{S26} : Business};
+        \node[draw, rounded corners, fill=MF_Gold!20, minimum width=3cm, minimum height=1cm, right=0.5cm of s26] (s27) {\textbf{S27} : Gestion};
+        \node[draw, rounded corners, fill=BaseDark!10, minimum width=3cm, minimum height=1cm, right=0.5cm of s27] (s28) {\textbf{S28} : Leadership};
+        
+        \node[right=0.5cm of s28, font=\bfseries\color{SolanaPurple}] (demo) {DEMO DAY};
+        
+        \draw[->, thick, BaseDark] (s25) -- (s26);
+        \draw[->, thick, BaseDark] (s26) -- (s27);
+        \draw[->, thick, BaseDark] (s27) -- (s28);
+        \draw[->, thick, superBold, SolanaPurple] (s28) -- (demo);
+    \end{tikzpicture}
+    \caption{Timeline 4 semaines — Soft Skills \& Pro}
+\end{figure}
+
+\begin{table}[h]
+    \caption{Vue d'ensemble du module (4 semaines)}
+    \centering
+    \small
+    \rowcolors{2}{gray!10}{white}
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Sem.} & \textbf{Thème} & \textbf{Livrable Principal} & \textbf{Évaluation} \\ \hline
+        S25 & Communication Tech & Audit Report \& Documentation & Revue par Pairs + Mentor \\ \hline
+        S26 & Négociation \& Biz & Simulation Freelance (SOW) & Roleplay Client/Vendeur \\ \hline
+        S27 & Gestion Projet Web3 & Board Notion \& Retro & Audit de Process \\ \hline
+        S28 & Leadership & Pitch Deck \& Démo & Jury Final (Investisseurs) \\ \hline
+    \end{tabularx}
+\end{table}
+
+\paragraph{Détail Semaine 25 : Communication Technique}
+\textbf{Objectifs :} Savoir vulgariser sans simplifier à l'excès. Rédiger pour être lu.
+\textbf{Ateliers :} "Writing for Developers" (Docs), "Audit Reporting Standards".
+\textbf{Exercice :} Réécrire le README d'un projet open-source complexe pour le rendre accessible.
+\textbf{Livrable :} Rapport d'incident (Post-Mortem) fictif sur un hack historique.
+\textbf{Critères :} Clarté, Précision technique, Ton professionnel, Anglais technique impeccable.
+
+\paragraph{Détail Semaine 26 : Business \& Négociation}
+\textbf{Objectifs :} Se vendre, chiffrer, contractualiser.
+\textbf{Ateliers :} "Pricing your TJM", "Mock Négociation Client", "Structuring a DAO Proposal".
+\textbf{Exercice :} Répondre à un appel d'offre réel (Upwork/Bounties) ou simulé.
+\textbf{Livrable :} Proposition Commerciale (Statement of Work) complète.
+\textbf{Critères :} Réalisme du chiffrage, couverture des risques (clauses), force de conviction.
+
+\paragraph{Détail Semaine 27 : Gestion de Projet Agile/Web3}
+\textbf{Objectifs :} Délivrer de la valeur en continu, gérer le chaos.
+\textbf{Ateliers :} "Scrum for Web3", "Async Communication Rules", "Github Flow".
+\textbf{Exercice :} Organiser le sprint final du Capstone.
+\textbf{Livrable :} Board Projet propre + Rétrospective Sincère (Start/Stop/Continue).
+\textbf{Critères :} Transparence, granularité des tickets, gestion des bloquants.
+
+\paragraph{Détail Semaine 28 : Leadership \& Pitch}
+\textbf{Objectifs :} Inspirer la confiance, présenter une vision.
+\textbf{Ateliers :} "Public Speaking", "Pitch Deck Design", "Demo Day Rehearsal".
+\textbf{Exercice :} Crash-test du pitch devant des "commis d'office" hostiles.
+\textbf{Livrable :} Pitch Deck Final + Vidéo Démo.
+\textbf{Critères :} Storytelling, Body Language, Gestion du Q\&A, Qualité visuelle.
+
+\section{Rubrique d'Évaluation}
+
+L'évaluation des Soft Skills chez RBK n'est pas une "note de participation". C'est une évaluation professionnelle basée sur des preuves tangibles (artefacts). Nous utilisons une grille stricte pour objectiver la progression. Le barème est conçu pour protéger l'étudiant : on ne juge pas la personnalité, mais les comportements professionnels et les livrables.
+
+\paragraph{Axes d'Évaluation et Pondération}
+\begin{itemize}
+    \item \textbf{Communication Technique (30\%)} : Capacité à transmettre de l'information complexe (écrit/oral).
+    \item \textbf{Collaboration \& Leadership (30\%)} : Capacité à travailler en équipe, gérer les conflits et driver le projet.
+    \item \textbf{Professionnalisme (40\%)} : Fiabilité, ponctualité, rigueur, gestion du temps, "Doer" attitude.
+\end{itemize}
+
+\paragraph{Échelle de Notation}
+\begin{itemize}
+    \item \textbf{Insuffisant (0-9)} : Bloquant pour l'emploi. Attitude passive ou toxique. Livrables bâclés.
+    \item \textbf{En Progrès (10-13)} : Junior standard. Fait le job mais nécessite un management serré.
+    \item \textbf{Pro (14-17)} : L'objectif RBK. Autonome, fiable, communique proactivement. "Fire and Forget".
+    \item \textbf{Excellent (18-20)} : Top Gun. Tire l'équipe vers le haut, anticipe les problèmes, livre au-delà des attentes.
+\end{itemize}
+
+\begin{table}[h]
+    \caption{Rubrique d'Évaluation des Soft Skills}
+    \centering
+    \footnotesize
+    \begin{tabularx}{\textwidth}{|l|c|X|X|}
+        \hline
+        \textbf{Axe} & \textbf{Poids} & \textbf{Preuves de niveau "Pro" (14-17)} & \textbf{Preuves attendues (Artefacts)} \\ \hline
+        Comm. Tech & 30\% & Documentation claire, PR descriptions détaillées, sait expliquer le "pourquoi" technique. & GitBook du Capstone, Historique de PRs, Rapport d'Audit. \\ \hline
+        Collab. & 30\% & Débloque les autres, ne blâme pas, feedback constructif, utilise les outils async correctement. & Commentaires Code Review, Activity Log Discord/Jira. \\ \hline
+        Pro. & 40\% & Respect absolu des deadlines, communication immédiate en cas de retard, proactivité sur les problèmes. & Ponctualité rendus, Qualité finition (typos, UX), Suivi planning. \\ \hline
+    \end{tabularx}
+\end{table}
