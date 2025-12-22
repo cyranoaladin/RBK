@@ -15,6 +15,14 @@ Cette annexe détaille le cadre légal permettant d'opérer depuis la Tunisie en
 \subsection{Définition et Cadre Légal}
 L'\textbf{Entreprise Totalement Exportatrice (ETE)} est un régime fiscal tunisien réglementé par le \textbf{Code d'Incitation aux Investissements} (Loi n°2016-71) et le Décret n°2017-758. Il permet aux entités réalisant 100\% de leur chiffre d'affaires à l'export de bénéficier d'avantages majeurs.
 
+\section{Avantages Fiscaux}
+\begin{itemize}
+    \item \textbf{Impôts Sociétés (IS) :} Exonération totale pendant 4 ans, puis taux réduit à 10\% (vs 15\% standard).
+    \item \textbf{Devises :} Liberté totale de gestion des comptes en devises étrangères (EUR/USD) sans autorisation préalable de la BCT pour les opérations liées à l'activité.
+    \item \textbf{TVA :} Exonération de TVA sur les services et biens acquis pour l'exportation (en suspension de taxes).
+    \item \textbf{Dividendes :} Exonération de retenue à la source sur les dividendes distribués.
+\end{itemize}
+
 \subsection{Conditions d'Éligibilité pour RBK 2.0}
 Pour bénéficier du statut ETE, RBK (et ses alumni entrepreneurs) doit :
 \begin{itemize}
@@ -23,124 +31,134 @@ Pour bénéficier du statut ETE, RBK (et ses alumni entrepreneurs) doit :
 \end{itemize}
 
 \subsection{Procédure d'Obtention (Flux Visuel)}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \begin{tikzpicture}[node distance=1.5cm, auto]
-        \node (start) [draw, rounded corners] {Dépôt Dossier APII};
-        \node (instruct) [draw, rectangle, below of=start] {Instruction Technique (15j)};
-        \node (commission) [draw, rectangle, below of=instruct] {Commission Agrément (10j)};
-        \node (decision) [draw, diamond, aspect=2, below of=commission] {Décision};
-        \node (agrement) [draw, rectangle, fill=green!10, below of=decision, xshift=-2cm] {Agrément ETE};
-        \node (refus) [draw, rectangle, fill=red!10, below of=decision, xshift=2cm] {Refus (Recours)};
-        \node (rne) [draw, rectangle, below of=agrement] {Enregistrement RNE (10j)};
-        \node (bank) [draw, rectangle, below of=rne] {Compte Devises (5j)};
+    \begin{tikzpicture}[node distance=1.6cm, auto]
+        \node (start) [draw, rounded corners, fill=white, drop shadow] {Dépôt Dossier APII};
+        \node (instruct) [draw, rectangle, below of=start, fill=white, drop shadow] {Instruction Technique (15j)};
+        \node (commission) [draw, rectangle, below of=instruct, fill=white, drop shadow] {Commission Agrément (10j)};
+        \node (decision) [draw, diamond, aspect=2, below of=commission, fill=SolanaPurple!10] {Décision};
+        \node (agrement) [draw, rectangle, fill=SolanaGreen!20, below of=decision, xshift=-2.5cm, drop shadow] {Agrément ETE (OK)};
+        \node (refus) [draw, rectangle, fill=red!10, below of=decision, xshift=2.5cm, drop shadow] {Refus (Recours)};
+        \node (rne) [draw, rectangle, below of=agrement, fill=white, drop shadow] {Enregistrement RNE (10j)};
+        \node (bank) [draw, rectangle, below of=rne, fill=white, drop shadow] {Compte Devises (5j)};
 
-        \draw[->] (start) -- (instruct);
-        \draw[->] (instruct) -- (commission);
-        \draw[->] (commission) -- (decision);
-        \draw[->] (decision) -| node[near start, left] {OK} (agrement);
-        \draw[->] (decision) -| node[near start, right] {KO} (refus);
-        \draw[->] (agrement) -- (rne);
-        \draw[->] (rne) -- (bank);
+        \draw[->, thick] (start) -- (instruct);
+        \draw[->, thick] (instruct) -- (commission);
+        \draw[->, thick] (commission) -- (decision);
+        \draw[->, thick, SolanaGreen] (decision) -| node[near start, above] {} (agrement);
+        \draw[->, thick, red] (decision) -| node[near start, above] {} (refus);
+        \draw[->, thick] (agrement) -- (rne);
+        \draw[->, thick] (rne) -- (bank);
     \end{tikzpicture}
     \caption{Processus d'Obtention Agrément ETE (45 jours)}
 \end{figure}
 
-\subsection{Avantages Fiscaux (Synthèse)}
-\begin{table}[h]
+\subsection{Avantages Fiscaux Comparés}
+\begin{table}[H]
     \centering
     \small
     \rowcolors{2}{gray!5}{white}
-    \begin{tabularx}{\textwidth}{|l|X|l|}
+    \begin{tabularx}{\textwidth}{|l|X|X|}
     \hline
-    \textbf{Type d'Avantage} & \textbf{Détail} & \textbf{Impact} \\ \hline
-    \textbf{IS (Impôt Sociétés)} & 10 ans d'exonération totale & Économie massive (~35k TND/an) \\ \hline
-    \textbf{TVA} & Exonération sur achats/services liés & Coûts opérationnels réduits \\ \hline
-    \textbf{Devises} & Rapatriement libre & Flexibilité financière \\ \hline
+    \textbf{Indicateur} & \textbf{Régime Standard} & \textbf{Régime ETE (Export)} \\ \hline
+    \textbf{IS (Impôt Sociétés)} & 15\% dès Année 1 & \textbf{0\% (4 ans) puis 15\%} \\ \hline
+    \textbf{Dividendes} & Retenue à la source 10\% & \textbf{Exonérés} (si bénéfices export) \\ \hline
+    \textbf{TVA Achats} & 19\% & \textbf{Suspension de TVA} \\ \hline
+    \textbf{Compte Bancaire} & TND uniquement & \textbf{Devises + TND} \\ \hline
+    \end{tabularx}
+    \caption{Comparatif Fiscal : Standard vs ETE}
+\end{table}
+
+\section{Kit de Survie Juridique Freelance}
+
+Pour l'étudiant qui se lance en freelance international ou en remote, le choix de la structure est critique.
+
+\subsection{Matrice de Décision : Patente vs SUARL}
+\begin{table}[H]
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{|X|l|l|}
+    \hline
+    \textbf{Critère} & \textbf{Patente (Personne Physique)} & \textbf{SUARL (Personne Morale)} \\ \hline
+    \textbf{Coût Création} & Quasi-nul (~50 TND) & Moyen (~1000 TND + Capital) \\ \hline
+    \textbf{Complexité} & Très faible (RNE + APII) & Moyenne (Statuts Rédigés) \\ \hline
+    \textbf{Responsabilité} & Illimitée (Biens personnels) & Limitée au capital \\ \hline
+    \textbf{Crédibilité} & Faible (B2C / Freelance) & \textbf{Forte (B2B / Contrats Cadres)} \\ \hline
+    \textbf{Recommandation} & Pour débuter (< 50k TND/an) & \textbf{Dès que CA > 80k TND/an} \\ \hline
     \end{tabularx}
 \end{table}
 
-\section{Encadrement des Paiements en Crypto-Monnaies}
+\subsection{Checklist Création d'Entreprise ETE}
+\begin{itemize}[label=$\square$]
+    \item \textbf{J-0} : Rédaction des statuts (Objet social: "Export de services informatiques").
+    \item \textbf{J-2} : Dépôt dossier APII en ligne (Déclaration d'investissement).
+    \item \textbf{J-15} : Obtention de l'attestation de dépôt APII.
+    \item \textbf{J-20} : Enregistrement Recette Finance (Timbre fiscal).
+    \item \textbf{J-30} : Immatriculation RNE (Registre National des Entreprises).
+    \item \textbf{J-35} : Ouverture Compte Bancaire "Dossier Juridique" (+ Compte Devises).
+\end{itemize}
 
-\subsection{Analyse du Cadre Légal Tunisien}
-La \textbf{Loi des Changes} impose que les transactions entre résidents se fassent en TND. Cependant, les entreprises ETE bénéficient d'une \textbf{liberté de change} pour leurs opérations internationales.
-La BCT (Banque Centrale) considère les \textbf{Stablecoins} (USDC) comme des actifs numériques assimilables à des devises électroniques lorsqu'ils sont utilisés pour le règlement de services exportés.
+\section{Mécanisme de Paiement Crypto $\to$ Fiat Conforme}
 
-\subsection{Stratégie de Conformité pour RBK}
+\subsection{Architecture des Flux}
+L'objectif est de recevoir des honoraires en Stablecoin (USDC) ou Crypto, et de les rapatrier en TND de manière 100\% légale en tant qu'exportation de services.
 
-\subsubsection{Pour les Étudiants Tunisiens}
-\textbf{Option A : Paiement en TND} via virement bancaire classique (indexé taux du jour). \\
-\textbf{Option B : Paiement en USDC via prestataire agréé (Recommandé)}.
-Partenariat avec \textbf{Grey.co} ou \textbf{Bitwage} :
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto, font=\small]
+        % Nodes
+        \node (client) [draw, cloud, cloud puffs=10, aspect=2, fill=SolanaBlue!10] {Client DAO (USDC)};
+        \node (platform) [draw, rectangle, rounded corners, right of=client, node distance=4cm, fill=gray!10] {Intermédiaire (Bitwage/Grey)};
+        \node (swift) [draw, rectangle, right of=platform, node distance=3.5cm] {Réseau SWIFT (EUR/USD)};
+        \node (bank) [draw, cylinder, shape border rotate=90, aspect=0.25, right of=swift, node distance=3cm, fill=SolanaGreen!10] {Banque TN (Compte TND)};
+        
+        % Arrows
+        \draw[->, thick, SolanaBlue] (client) -- node[above] {Crypto (On-Chain)} (platform);
+        \draw[->, thick, black] (platform) -- node[above] {Conversion Fiat} (swift);
+        \draw[->, thick, SolanaGreen] (swift) -- node[above] {Virement Intl} (bank);
+        
+        % Annotations
+        \node [below of=platform, node distance=1.2cm, font=\scriptsize] {Génération Facture Export};
+        \node [below of=bank, node distance=1.2cm, font=\scriptsize] {Fiche Investissement + Cession Devises};
+    \end{tikzpicture}
+    \caption{Flux de Paiement Hybride (Crypto vers Fiat)}
+\end{figure}
+
+\subsection{Traçabilité Comptable}
+Pour chaque transaction entrante :
 \begin{enumerate}
-    \item L'étudiant transfère des USDC.
-    \item La plateforme convertit en TND.
-    \item RBK reçoit un virement TND local conforme.
+    \item Émettre une facture en Devises (EUR/USD) mentionnant "Règlement par voie électronique".
+    \item Conserver le "Transaction Hash" comme preuve d'exécution.
+    \item Obtenir l'avis de crédit bancaire mentionnant l'origine des fonds (Bitwage/Grey).
+    \item Comptabiliser en TND au taux du jour de réception.
 \end{enumerate}
 
-\subsubsection{Pour les Étudiants Étrangers}
-Paiement direct en USDC accepté sur le wallet corporate (entité offshore RBK Studio Ltd) puis rapatriement selon besoins.
+\section{Validation Juridique des ISA}
 
-\section{Contrats Income Share Agreement (ISA)}
+L'Income Share Agreement (ISA) est un contrat innovant qui nécessite un ancrage solide dans le droit tunisien.
 
-\subsection{Structure Contractuelle}
+\subsection{Qualification Juridique (COC)}
+Le contrat ISA est qualifié de \textbf{Contrat Innommé} (Article 2 du Code des Obligations et Contrats), régi par la volonté des parties tant qu'il ne contrevient pas à l'ordre public.
+Il s'apparente à :
 \begin{itemize}
-    \item \textbf{Durée} : 24 mois maximum (protection étudiant).
-    \item \textbf{Seuil} : 3 000 TND Nets / mois.
-    \item \textbf{Plafond (Cap)} : 20 000 TND (fixe).
+    \item Un \textbf{Prêt à Rémunération Variable} (Finance classique).
+    \item Un contrat de \textbf{Musharaka} (Finance islamique) : Partage des risques et des gains (l'école investit, l'étudiant partage le fruit futur).
 \end{itemize}
 
-\subsection{Clauses Essentielles}
-\begin{quote}
-\textbf{Clause 1 : Définition du Revenu} \\
-"Le revenu pris en compte comprend tout revenu d'activité professionnelle liée aux compétences acquises... net de charges."
-\end{quote}
-
-\begin{quote}
-\textbf{Clause 3 : Force Majeure} \\
-"En cas de chômage involontaire de plus de 6 mois... le contrat peut être suspendu ou résilié sans pénalité."
-\end{quote}
-
-\section{Mentions Légales \& Disclaimers}
-
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=AVERTISSEMENT JURIDIQUE IMPORTANT]
-\textbf{Nature des services :} RBK 2.0 délivre une formation professionnelle à vocation d'exportation de services numériques.
-\textbf{Cryptomonnaies :} Les crypto-actifs (SOL, USDC) sont présentés comme des technologies. RBK ne fournit aucun conseil en investissement.
-\textbf{Paiements :} Les options stablecoins sont de simples moyens de transfert technologique, respectant la réglementation des changes.
-\end{tcolorbox}
-
-\subsection{Mentions Obligatoires sur le Site Web}
-\begin{techBox}{Footer Légal Standard}
-RBK 2.0 © 2025 - Un programme de Money Factory AI \\
-Établissement de formation professionnelle - Agrément N° [À compléter] \\
-Siège social : [Adresse complète Tunisie] \\
-Contact légal : contact@moneyfactory.ai \\
-Numéro RNE : [À compléter après immatriculation]
-\end{techBox}
-
-\section{Checklist de Conformité Opérationnelle}
-
-\subsection{Phase de Lancement}
-\begin{itemize}[label=$\square$]
-    \item Immatriculation au \textbf{Registre National des Entreprises (RNE)}.
-    \item Obtention du \textbf{numéro d'opérateur économique}.
-    \item Ouverture \textbf{compte bancaire professionnel} (Devises + TND).
-    \item Souscription \textbf{assurance RC Pro}.
-    \item Dépôt \textbf{marque RBK 2.0} à l'INNORPI.
-\end{itemize}
-
-\subsection{Routine Trimestrielle}
-\begin{itemize}[label=$\square$]
-    \item \textbf{Rapport financier} (P\&L, Cash Flow).
-    \item \textbf{Déclaration de change} (Entrées/Sorties devises).
-    \item \textbf{Audit de conformité} (Interne : Vérification des preuves ZK/KYC).
-    \item \textbf{GDPR Cleaning} : Purge des données personnelles obsolètes.
-\end{itemize}
+\subsection{Conditions de Validité Opposables}
+Pour éviter toute requalification en "Clause Léonine" :
+\begin{enumerate}
+    \item \textbf{Aléa Réel} : Si l'étudiant ne trouve pas de travail > Seuil, il ne paie RIEN. Le risque est porté par l'école.
+    \item \textbf{Plafond (Cap)} : Le montant total remboursé ne peut jamais dépasser un multiple raisonnable (ex: 1.5x le prix public).
+    \item \textbf{Durée Limitée} : L'obligation s'éteint automatiquement après 24 ou 36 mois, même si le Cap n'est pas atteint (Drop-off policy).
+\end{enumerate}
 
 \section{Risques Juridiques \& Mitigation}
 
 \subsection{Matrice des Risques Principaux}
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \small
     \rowcolors{2}{red!5}{white}

@@ -41,7 +41,7 @@ Ce track \textbf{n'est pas} un apprentissage ``rapide'' centré sur la syntaxe. 
 
 \paragraph{Règle.} Chaque compétence est évaluée par une \textbf{preuve vérifiable} (artefact), un \textbf{seuil minimal} et un \textbf{outil de vérification}.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{lY Y Y}
 \toprule
@@ -75,6 +75,36 @@ Rapport perf + respect budget CU défini \\
 \end{table}
 
 % =========================================================
+% Ajout critique : Architecture Anchor Production
+\section{Architecture "Money Factory Standard" (Anchor)}
+L'excellence technique commence par une structure de code irréprochable. Nous imposons le standard suivant pour tous les projets finaux :
+
+\begin{techBox}{File Structure}
+\begin{lstlisting}[language=bash]
+programs/rbk-protocol/
+├── src/
+│   ├── instructions/    (1 file par instruction)
+│   │   ├── mod.rs
+│   │   ├── deposit.rs
+│   │   └── withdraw.rs
+│   ├── state/           (Comptes et types)
+│   │   ├── vault.rs
+│   │   └── user_profile.rs
+│   ├── errors.rs        (Custom Errors avec msg!)
+│   ├── events.rs        (Indexing hooks)
+│   └── lib.rs           (Entrypoint ultra-léger)
+\end{lstlisting}
+\end{techBox}
+
+\section{Sécurité Hardcore (OtterSec Checklist)}
+Au-delà des tests, chaque PR doit valider cette checklist de survie :
+\begin{itemize}
+    \item[$\square$] \textbf{Signer Checks} : Tous les comptes sensibles (Owner, Admin) ont-ils \texttt{is\_signer=true} ?
+    \item[$\square$] \textbf{Ownership Checks} : Le compte Token modifié appartient-il bien au PDA du programme ?
+    \item[$\square$] \textbf{Arithmetic Overflows} : Utilisation de \texttt{checked\_add} / \texttt{checked\_sub} ou \texttt{overflow-checks = true}.
+    \item[$\square$] \textbf{Account Confusion} : Validation des discriminants de type sur tous les comptes désérialisés.
+\end{itemize}
+
 \section{Programme (12 semaines : Semaines 9--20) --- modules 1 à 4}
 \label{sec:programme}
 
@@ -120,7 +150,7 @@ S20 & Release & CI, docs, demo & Capstone final & Gate final \\
 \subsection*{Lab A --- Message Board (natif Solana)}
 \paragraph{Objectif.} Construire une primitive on-chain simple, mais \textbf{correcte} : stockage sérialisé, authorisation, erreurs explicites, logs.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{Y Y Y}
 \toprule
@@ -151,7 +181,7 @@ tests sur erreurs attendues ; pas d'erreurs silencieuses \\
 \subsection*{Lab B --- Mini Escrow / Vault (natif Solana)}
 \paragraph{Objectif.} Implémenter un escrow/vault avec règles de release et \textbf{anti-abus}.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{Y Y Y}
 \toprule
@@ -175,7 +205,7 @@ events présents ; payload stable ; doc d'event \\
 \subsection*{Lab C --- Counter+Vault (Anchor fundamentals)}
 \paragraph{Objectif.} Maîtriser IDL, macros, constraints, events, error codes.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{Y Y Y}
 \toprule
@@ -231,7 +261,7 @@ deposit/withdraw & user signer + vault + state &
 \section{Rubrique de notation (standard audit) --- total 100}
 \label{sec:rubrique}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{l c Y}
 \toprule
@@ -268,7 +298,7 @@ README exécutable ; doc API ; diagrammes ; démo reproductible \\
 \section{Stack outillage et standards repo}
 \label{sec:stack}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{l Y Y}
 \toprule
@@ -323,7 +353,7 @@ dossier /docs ; templates remplis ; lien demo \\
 \label{sec:annexes_trackA}
 
 \subsection*{A) Security checklist Solana/Anchor (réutilisable)}
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{Y Y}
 \toprule
@@ -374,7 +404,7 @@ State machine cohérente & diagramme + tests transitions invalides \\
 \end{tcolorbox}
 
 \subsection*{D) PRR --- Production Readiness Review (tableau)}
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{l Y Y}
 \toprule
@@ -397,7 +427,7 @@ Release & versioning + changelog & tag + notes \\
 \label{sec:figures}
 
 \subsection*{Figure 1 --- Account model / instruction flow}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[
   node distance=10mm,
@@ -421,7 +451,7 @@ Release & versioning + changelog & tag + notes \\
 \end{figure}
 
 \subsection*{Figure 2 --- CPI call graph (simplifié)}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[
   node distance=12mm,

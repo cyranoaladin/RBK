@@ -44,7 +44,7 @@ Montant total maximal remboursable (toutes mensualités cumulées) : \textbf{CAP
     \item \textbf{Variabilité :} aucun rattrapage sur les mois faibles ; le calcul est \textbf{mensuel}, indépendant.
 \end{itemize}
 
-\section{Cas Limites (Edge Cases) — à expliciter dans le contrat}
+\section{Cas Limites (Edge Cases) — Précisions Contractuelles}
 \begin{enumerate}
     \item \textbf{RNM fluctuant autour du seuil :} si 2\,900 puis 3\,200, seul le mois à 3\,200 déclenche un paiement.
     \item \textbf{Plusieurs revenus :} RNM = somme des nets traçables (salaires + freelance) pour le mois.
@@ -58,20 +58,20 @@ Montant total maximal remboursable (toutes mensualités cumulées) : \textbf{CAP
 \section{Exemples Chiffrés (Seuil 3\,000 net, Taux 15\%)}
 \begin{center}
 \small
-\begin{tabular}{|l|r|r|r|r|}
+\begin{tabular}{|l|r|r|l|}
 \hline
-\textbf{Scénario} & \textbf{RNM} & \textbf{Mensualité (15\%)} & \textbf{Temps vers CAP 20k} \\
+\textbf{Scénario} & \textbf{RNM} & \textbf{Mensualité} & \textbf{Statut Final} \\
 \hline
-A. Junior local & 3\,500 TND & 525 TND & $\approx$ 38 mois (Stop à 36 mois : 18\,900 TND payés) \\
+A. Junior local & 3\,500 TND & 525 TND & \textbf{Arrêt à 36 mois} (Total payé : 18\,900 TND < Cap) \\
 \hline
-B. Profil solide local & 5\,000 TND & 750 TND & $\approx$ 27 mois (CAP atteint) \\
+B. Profil solide & 5\,000 TND & 750 TND & \textbf{Cap atteint} au 27ème mois (Total : 20\,000 TND) \\
 \hline
-C. Remote (équiv.) & 6\,000 TND & 900 TND & $\approx$ 23 mois (CAP atteint) \\
+C. Remote & 6\,000 TND & 900 TND & \textbf{Cap atteint} au 23ème mois (Total : 20\,000 TND) \\
 \hline
-D. Chômage & 0 TND & 0 TND & -- \\
+D. Chômage & 0 TND & 0 TND & \textbf{Drop-off à 60 mois} (Paiement total : 0 TND) \\
 \hline
-E. Petit job & 2\,500 TND & 0 TND & -- \\
+E. Petit job & 2\,500 TND & 0 TND & \textbf{Drop-off à 60 mois} (Paiement total : 0 TND) \\
 \hline
 \end{tabular}
 \end{center}
-\textit{Note : Dans le scénario A, le plafond de 36 mensualités est atteint avant le Cap financier, l'étudiant paie donc moins que 20 000 TND.}
+\textit{Note : Le contrat s'arrête dès que l'une des 3 conditions est atteinte : (1) Cap 20k payé, (2) 36 mensualités payées, ou (3) 60 mois écoulés.}

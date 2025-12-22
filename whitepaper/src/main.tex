@@ -45,11 +45,12 @@
 \usepackage[table]{xcolor}
 \definecolor{SolanaGreen}{HTML}{14F195}
 \definecolor{SolanaPurple}{HTML}{9945FF}
+\definecolor{SOLANAPURPLE}{HTML}{9945FF} % Fix for uppercase headers
 \definecolor{SolanaBlue}{HTML}{03E1FF}
 \definecolor{BaseDark}{HTML}{0B0E14}
 \definecolor{DeepBlack}{HTML}{000000}
 \definecolor{TerminalDark}{HTML}{1A1D23}
-\colorlet{SOLANAPURPLE}{SolanaPurple}
+
 
 % Palette MF_* (compatibilité)
 \definecolor{MF_DeepNavy}{HTML}{0A0F1F}
@@ -81,6 +82,17 @@
 \pgfplotsset{compat=1.18}
 \usepackage{tikz-timing}
 \usepackage{listings}
+\lstdefinelanguage{yaml}{
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{darkgray}\bfseries,
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{gray},
+  stringstyle=\color{SolanaGreen},
+  morestring=[b]",
+  morestring=[b]'
+}
 \usepackage{pdflscape}
 \usepackage{makecell}
 \usepackage{multirow}
@@ -139,7 +151,8 @@
 \tcbuselibrary{skins, breakable}
 \usepackage{fontawesome5}
 
-\providecommand{\faPreselectedIcon}[2][]{\texorpdfstring{\faIcon{#2}}{#2}}
+% Renamed to avoid conflicts
+\providecommand{\rbkIcon}[2][]{\texorpdfstring{\faIcon{#2}}{#2}}
 
 \newtcolorbox{ceoBox}[1]{
     enhanced, breakable, frame hidden, colback=white, boxsep=5pt, left=10mm,
@@ -225,7 +238,7 @@
     {\LARGE \bfseries \color{SolanaGreen!70!black} MONEY FACTORY AI} \\[0.5cm]
     {\large \color{BaseDark} Web3 Expert Training Program} \\[2cm]
     % Version injectée automatiquement si disponible
-    \IfFileExists{version.tex}{\input{version.tex}}{\textcolor{black!60}{\large Version à définir}}
+    \input{version.tex}
 \end{titlepage}
 
 \pagecolor{white}
@@ -275,7 +288,7 @@
 
 % 9. Capstones & Portfolio
 \input{chapters/11_capstones.tex}
-\input{chapters/10_fiches_metiers.tex}
+\input{chapters/11b_fiches_metiers.tex}
 
 % 10. Business Plan
 \input{chapters/12_business_plan.tex}
@@ -295,8 +308,11 @@
 % 15. Impact & ODD
 \input{chapters/17_impact_odd.tex}
 
+% 15b. Infrastructure SBT (Nouvel Ajout)
+\input{chapters/19_sbt_infrastructure.tex}
+
 % 16. Roadmap & Plan de Lancement
-\input{chapters/15_roadmap.tex}
+\input{chapters/16_roadmap.tex}
 \input{chapters/20_roadmap_lancement.tex}
 
 % 17. Token & Alumni
@@ -314,6 +330,7 @@
 \phantomsection
 \addcontentsline{toc}{part}{ANNEXES}
 \appendix
+% Annexes are inherently numbered A, B, C... by \appendix
 \input{chapters/annexe_a_syllabus_detaille.tex}
 \input{chapters/annexe_b_finance.tex}
 \input{chapters/annexe_c_juridique.tex}
@@ -326,10 +343,13 @@
 \input{chapters/annexe_j_offre.tex}
 \input{chapters/annexe_k_glossaire.tex}
 \input{chapters/annexe_l_mentors.tex}
-\input{chapters/annexe_m_b2b.tex}
-\input{chapters/annexe_n_kit_juridique.tex}
+\input{chapters/annexe_m_partenariats.tex}
+\input{chapters/annexe_n_outillage.tex}
 \input{chapters/annexe_o_competences.tex}
 \input{chapters/annexe_p_qualite.tex}
+\input{chapters/annexe_q_contrat_isa.tex}
+\input{chapters/annexe_r_contrat_b2b.tex}
+\input{chapters/annexe_s_kit_juridique.tex}
 \input{chapters/99_references.tex}
 
 \end{document}

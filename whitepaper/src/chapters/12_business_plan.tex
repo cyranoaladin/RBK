@@ -1,141 +1,97 @@
-\chapter[💰 BUSINESS PLAN \& STRATÉGIE DE CROISSANCE]{BUSINESS PLAN \& STRATÉGIE DE CROISSANCE}
+\chapter[BUSINESS PLAN \& STRATÉGIE DE CROISSANCE]{BUSINESS PLAN \& STRATÉGIE DE CROISSANCE}
 \label{chap:business_plan}
 
-\section{Modèle Économique Hybride}
+\section{Hypothèses de Revenus & Salaires}
+\label{sec:revenus_salaires}
 
-RBK 2.0 repose sur une diversification des sources de revenus pour garantir sa pérennité indépendamment des cycles du marché crypto.
+\begin{tcolorbox}[colback=yellow!10, colframe=orange!80!black, title=\textbf{Note sur les Données de Marché}]
+Les chiffres ci-dessous sont des projections basées sur l'arbitrage "Salaire Global / Coût de Vie Local". 
+Ils supposent :
+\begin{enumerate}
+    \item Une capacité à travailler en **Anglais** (marché international).
+    \item L'obtention du statut **ETE** (optimisation fiscale nette).
+    \item Une facturation en devises (EUR/USD) convertie en TND.
+\end{enumerate}
+Le salaire moyen local "Web2 Senior" (environ 2.5k TND) sert de plancher, pas de cible.
+\end{tcolorbox}
 
-\begin{figure}[h]
+\section{Modèle Économique Hybride (60/30/10)}
+
+Pour maximiser la résilience, RBK 2.0 adopte un mix revenus stratégique :
+\begin{itemize}
+    \item \textbf{60\% Upfront (Cashflow immédiat)} : Sécurise les opex (salaires, locaux).
+    \item \textbf{30\% ISA (Cashflow futur)} : Aligne les intérêts ("Skin in the Game") et crée un fond de roulement exponentiel.
+    \item \textbf{10\% B2B (Marge pure)} : Valorise l'expertise pédagogique auprès des entreprises (Formation continue).
+\end{itemize}
+
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}
         \draw[fill=SolanaPurple!20] (0,0) circle (2cm);
-        \node at (0,0.5) {\textbf{B2C (70\%)}};
-        \node at (0,-0.5) {\footnotesize Formation Initiale};
+        \node at (0,0.5) {\textbf{Upfront (60\%)}};
+        \node at (0,-0.5) {\footnotesize Trésoimmédiate};
         
         \draw[fill=SolanaBlue!20] (3,0) circle (1.5cm);
-        \node at (3,0.5) {\textbf{ISA (20\%)}};
-        \node at (3,-0.5) {\footnotesize Success Fees};
+        \node at (3,0.5) {\textbf{ISA (30\%)}};
+        \node at (3,-0.5) {\footnotesize Upside (M+10)};
         
         \draw[fill=SolanaGreen!20] (5.5,0) circle (1cm);
         \node at (5.5,0.3) {\textbf{B2B (10\%)}};
         \node at (5.5,-0.3) {\footnotesize Corporate};
     \end{tikzpicture}
-    \caption{Mix Revenus Cible (Année 3)}
+    \caption{Mix Revenus Stratégique}
 \end{figure}
 
-\section{Le Pilier B2B : Corporate Upskilling}
-
-Pour réduire la dépendance aux frais de scolarité individuels, nous lançons une offre dédiée aux entreprises (Banques, ESN, Telcos) souhaitant monter une "Blockchain Factory" interne.
-
-\textbf{Offre "Corporate Cohort" :}
-\begin{itemize}
-    \item \textbf{Principe :} Une entreprise réserve un bloc de sièges dans une cohorte pour ses employés.
-    \item \textbf{Tarif :} \textbf{18 000 TND / siège} (Starter) à \textbf{15 300 TND} (Volume).
-    \item \textbf{Avantages :} Suivi RH dédié, Capstone orienté sur un Use-Case de l'entreprise, Clause de confidentialité.
-    \item \textbf{Objectif :} 30\% du CA total en Année 3.
-\end{itemize}
-
-\section{Trajectoire Financière (36 Mois)}
-
-La trésorerie est le nerf de la guerre. Notre modèle prend en compte le "Cash Drag" (décalage) des ISA.
-
-\textbf{Projection du Volume Étudiant (Funnel) :}
-\begin{center}
-\small
-\begin{tabular}{|l|c|c|c|}
-\hline
-\textbf{Niveau} & \textbf{Année 1} & \textbf{Année 2} & \textbf{Année 3} \\ \hline
-\textbf{Niveau 1} (Foundations) & 30 & 60 & 90 \\ \hline
-\textbf{Niveau 2} (Builder) & 20 & 40 & 60 \\ \hline
-\textbf{Niveau 3} (Pro/Audit) & 12 & 24 & 36 \\ \hline
-\end{tabular}
-\end{center}
-
-\textbf{Hypothèses de conversion (Value Ladder) :}
-L’acquisition est modélisée comme une montée en gamme : \textbf{N1 $\to$ N2 $\to$ N3}, avec un mix "bundle" et corporate.
-\begin{itemize}
-    \item \textbf{Conversion N1$\to$N2 :} 55\% (base), 40\% (conservateur), 70\% (optimiste).
-    \item \textbf{Conversion N2$\to$N3 :} 60\% (base), 45\% (conservateur), 75\% (optimiste).
-    \item \textbf{Part Bundle (paiement upfront) :} 20\% des entrants (base).
-    \item \textbf{Part Corporate (B2B) :} 10\% des inscrits annuels (base).
-\end{itemize}
-Ces hypothèses pilotent directement la ligne \textbf{CA Formation} du P\&L et permettent de relier les KPI d’acquisition (leads $\to$ N1) aux revenus (N2/N3 + Corporate).
-
-\textbf{Hypothèses de Chiffrage (Formules) :}
-\begin{itemize}
-    \item \textbf{CA Formation} = $(N1 \times 3900) + (N2 \times 6900 \times 0.6) + (N3 \times 9900 \times 0.4)$. Note : Mix estimé Upfront/Échelonné.
-    \item \textbf{Conversion} : N1 vers N2 estimé à 60\%, N2 vers N3 estimé à 50\%.
-    \item \textbf{CA ISA (Différé)} : Prend en compte un décalage moyen de 9 mois (Formation + Recherche Emploi + 1 mois). Les revenus ISA de l'Année N proviennent principalement des cohortes de l'Année N-1.
-\end{itemize}
-
-\begin{table}[h]
-    \caption{Compte de Résultat et Trésorerie Prévisionnelle (TND)}
+\section{Unit Economics \& CAC}
+\begin{table}[H]
     \centering
     \small
     \rowcolors{2}{gray!5}{white}
-    \begin{tabularx}{\textwidth}{|l|r|r|r|}
-        \hline
-        \textbf{Indicateur} & \textbf{Année 1 (Amorçage)} & \textbf{Année 2 (Scale)} & \textbf{Année 3 (Maturité)} \\ \hline
-        \textbf{CA FORMATION (L1+L2+L3)} & \textbf{311 800} & \textbf{623 600} & \textbf{935 400} \\ \hline
-        \textbf{CA ISA (Différé)} & 0 & 120 000 & 350 000 \\ \hline
-        \textbf{CA SERVICES (B2B)} & 20 000 & 80 000 & 200 000 \\ \hline
-        \textbf{TOTAL REVENUS} & \textbf{331 800} & \textbf{823 600} & \textbf{1 485 400} \\ \hline
-        \textbf{DÉPENSES (OPEX)} & \textbf{260 000} & \textbf{520 000} & \textbf{880 000} \\ \hline
-        \textit{(dont Salaires Staff)} & \textit{150 000} & \textit{300 000} & \textit{500 000} \\ \hline
-        \textit{(dont Mentors Variable)} & \textit{60 000} & \textit{120 000} & \textit{200 000} \\ \hline
-        \textbf{EBITDA} & \textbf{+71 800} & \textbf{+303 600} & \textbf{+605 400} \\ \hline
-        \textit{Marge \%} & \textit{21\%} & \textit{37\%} & \textit{41\%} \\ \hline
+    \begin{tabularx}{\textwidth}{|l|r|X|}
+    \hline
+    \textbf{Métrique} & \textbf{Valeur} & \textbf{Hypothèses} \\ \hline
+    \textbf{LTV (Lifetime Value)} & $\approx$ 12 500 TND & Mix N1+N2+N3 moyen par étudiant inscrit. \\ \hline
+    \textbf{CAC (Coût Acquisition)} & 450 TND & Blended (Ads + Events + Referral). \\ \hline
+    \textbf{Coût Mentorat} & 1 500 TND / étudiant & Ratio 1:12, Mentors payés à l'heure + variable. \\ \hline
+    \textbf{Marge Brute} & $\approx$ 80\% & Business model à fort levier (Digital). \\ \hline
+    \textbf{Point Mort (Breakeven)} & \textbf{40 Étudiants/an} & Seuil de rentabilité structurelle basse. \\ \hline
     \end{tabularx}
 \end{table}
 
-\textbf{Analyse de Trésorerie :}
-L'Année 1 est financée par le mix Upfront. L'effet de levier ISA commence à impacter significativement la trésorerie au milieu de l'Année 2, créant un "Fond de Roulement" naturel pour l'expansion.
+\section{Scénarios de Sensibilité (Stress Tests)}
+Notre modèle a été éprouvé contre des scénarios de crise pour valider sa robustesse.
 
-\section{Analyse de Sensibilité}
-
-Nous stress-testons le modèle selon 3 variables critiques.
-
-\begin{table}[h]
-    \caption{Sensibilité de l'EBITDA Année 2 (Objectif Cible 303k)}
+\begin{table}[H]
+    \caption{Impact EBITDA Année 2}
     \centering
     \small
-    \begin{tabular}{|l|c|c|l|}
-        \hline
-        \textbf{Variable} & \textbf{Variation} & \textbf{Impact EBITDA} & \textbf{Commentaire} \\ \hline
-        Taux Placement & -20 pts & -50k & Impact différé sur ISA. \\ \hline
-        Prix Bundle & -20\% & -120k & \textbf{Critique}. Nécessite réduction coûts Mentors. \\ \hline
-        Conv. N1$\to$N2 & -15 pts & -90k & Critique. Nécessite meilleur sourcing S0. \\ \hline
+    \begin{tabular}{|l|l|c|l|}
+    \hline
+    \textbf{Scénario} & \textbf{Détail} & \textbf{Impact} & \textbf{Réponse Stratégique} \\ \hline
+    \textbf{"Crypto Winter"} & Chute demande Web3 & -120k & Pivot vers Rust/Systems Programming (Marché Embedded). \\ \hline
+    \textbf{"Défaut ISA"} & Taux défaut 15\% & -45k & Activation Fonds Garantie + Recouvrement Légal. \\ \hline
+    \textbf{"Low Conversion"} & N1$\to$N2 à 40\% & -90k & Réduction Opex (Mentors) + Focus B2B plus tôt. \\ \hline
     \end{tabular}
 \end{table}
 
-\subsection{Gestion du Risque Crédit ISA}
-
-\subsubsection{Fonds de Garantie ISA (50k TND)}
-Pour sécuriser la trésorerie face aux défauts potentiels, nous constituons un fonds de réserve.
-\begin{itemize}
-    \item \textbf{Dotation Initiale :} 50 000 TND (Bloqués sur compte séquestre).
-    \item \textbf{Abondement :} 10\% des revenus de chaque promotion sont versés au fonds.
-    \item \textbf{Règle de Déclenchement :}
-    \begin{enumerate}
-        \item J+30 : Relance amiable.
-        \item J+60 : Mise en demeure.
-        \item J+90 : \textbf{Activation du Fonds} pour couvrir la mensualité manquante dans la tréso RBK.
-    \end{enumerate}
-\end{itemize}
+\section{Gestion du "Cash Drag" ISA}
+L'ISA crée un décalage de trésorerie de 10 à 18 mois (Formation + Recherche Emploi + Franchise).
+\textbf{Impact :} L'Année 1 est cash-negative sur le segment ISA.
+\textbf{Solution :} Financement par CA Upfront et Capital d'amorçage (Levée ou Prêt d'honneur) pour couvrir le BFR de 200k TND.
 
 \subsubsection{Tableau de Flux de Trésorerie (Forecast Mensuel)}
-\begin{table}[h]
+\begin{table}[H]
     \caption{Projection Cash Flow (Milliers TND)}
     \centering
     \small
     \rowcolors{2}{gray!5}{white}
     \begin{tabular}{|l|c|c|c|c|}
     \hline
-    \textbf{Mois} & \textbf{M1-M6} & \textbf{M7-M12} & \textbf{M13-M18} & \textbf{M19-M24} \\ \hline
-    \textbf{Encaissements Ops} & 50 & 180 & 350 & 500 \\ \hline
-    \textbf{Décaissements Ops} & (120) & (150) & (200) & (250) \\ \hline
-    \textbf{Solde Mensuel} & \textbf{(70)} & \textbf{+30} & \textbf{+150} & \textbf{+250} \\ \hline
-    \textbf{Cash Position} & 200 (Levée) & 250 & 800 & 1 500 \\ \hline
+    \textbf{Mois} & \textbf{Année 1 (Sem 1)} & \textbf{Année 1 (Sem 2)} & \textbf{Année 2} & \textbf{Année 3} \\ \hline
+    \textbf{Encaissements} & 150 & 200 & 850 & 1 500 \\ \hline
+    \textbf{Décaissements} & (180) & (150) & (550) & (900) \\ \hline
+    \textbf{Solde Période} & \textbf{(30)} & \textbf{+50} & \textbf{+300} & \textbf{+600} \\ \hline
+    \textbf{Cash Fin Période} & 170 (Post-Levée) & 220 & 520 & 1 120 \\ \hline
     \end{tabular}
 \end{table}
 

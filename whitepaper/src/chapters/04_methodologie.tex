@@ -6,7 +6,7 @@
 La méthodologie RBK 2.0 ne se contente pas de former des techniciens ; elle forge des \textit{athlètes cognitifs}. Conscients de la charge mentale intense imposée par l'apprentissage du développement blockchain (Rust, Zero-Knowledge Proofs, audits de sécurité), nous avons intégré une dimension \textbf{santé mentale et résilience} au cœur même du curriculum.
 \marginpar{\footnotesize \faHeartbeat\ \textbf{Priorité Absolue} : La santé mentale de l'étudiant est notre actif le plus précieux.}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[
         scale=0.9,
@@ -67,7 +67,7 @@ Elle est \textbf{interdite} pour :
 \subsection{Matrice de Séniorité (0-4)}
 Pour objectiver la progression, nous utilisons une grille inspirée des "Engineering Ladders" des grandes tech.
 
-\begin{table}[h]
+\begin{table}[H]
     \caption{Seniority Matrix RBK}
     \centering
     \small
@@ -178,7 +178,7 @@ La Piscine Rust n'évalue pas le niveau informatique initial (nous acceptons les
 \subsubsection{Rubrique d'Évaluation (Scoring)}
 Nous utilisons une grille précise pour objectiver la sélection :
 
-\begin{table}[h]
+\begin{table}[H]
     \caption{Critères de Sélection Pré-Piscine}
     \centering
     \small
@@ -203,21 +203,23 @@ Pour garantir que c'est bien l'étudiant qui code :
     \item \textbf{Analyse Stylométrique :} Détection des changements brusques de style de code (indiquant un copier-coller).
 \end{itemize}
 
-\section{Protocole Anti-Burnout}
+\section{Protocole de Performance Durable (Ex : Anti-Burnout)}
+\label{sec:wellness}
 
-Nous avons industrialisé la protection de nos étudiants via un protocole strict.
+Chez RBK, nous ne confondons pas "bien-être" et "tourisme". **La récupération fait partie de l'entraînement**, comme pour un athlète de haut niveau. 
 
-\subsubsection{Monitoring Hebdomadaire}
-Chaque vendredi, les étudiants remplissent un "Wellness Check" anonymisé de 5 questions :
-\begin{enumerate}
-    \item Qualité du sommeil (1-5).
-    \item Niveau de stress perçu (1-5).
-    \item Sentiment de compétence (Impostor Syndrome) (1-5).
-\end{enumerate}
+\begin{ceoBox}{Philosophie : "Rest is a Feature, not a Bug"}
+Un ingénieur fatigué écrit du code vulnérable. Notre protocole de santé mentale est une mesure de **sécurité industrielle** avant d'être une mesure humaniste.
+\end{ceoBox}
 
-\subsubsection{Seuils et Escalade (Traffic Light Protocol)}
-
-\begin{table}[h]
+\subsection{Le "Traffic Light Protocol"}
+Chaque matin, l'étudiant déclare son état (Anonymisé) :
+\begin{itemize}
+    \item \textbf{Vert :} Prêt à pusher.
+    \item \textbf{Orange :} Fatigue cognitive, passage en mode "Review Only".
+    \item \textbf{Rouge :} Stop immédiat. 1/2 journée off obligatoire. Si > 2 rouges/semaine, intervention mentor.
+\end{itemize}
+\begin{table}[H]
     \caption{Matrice d'Intervention Santé Mentale}
     \centering
     \small
@@ -240,7 +242,7 @@ En cas de zone rouge persistante, nous activons la "Pause Fusible" :
     \item \textbf{Rattrapage :} Il réintègre la cohorte avec un plan allégé ou bascule sur la cohorte suivante (Roll-over) si nécessaire.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[scale=0.8, node distance=2cm]
         \node[draw, rectangle, rounded corners] (quest) {Questionnaire Hebdo};
