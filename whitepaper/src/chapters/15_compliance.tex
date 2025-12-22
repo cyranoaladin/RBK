@@ -1,0 +1,47 @@
+\chapter{COMPLIANCE \& RÉGULATION WEB3 – GUIDE PRATIQUE}
+\label{chap:compliance}
+
+Ce chapitre transforme la contrainte réglementaire en avantage compétitif. Dans le Web3, la conformité n'est pas un frein, mais une fonctionnalité architecturale.
+
+\section{KYC/AML Décentralisé – La Conformité par la Technologie}
+
+\subsection{Philosophie du "Privacy by Design"}
+Nous enseignons à passer du KYC centralisé (documents stockés sur serveur vulnérable) à l'\textbf{Identité Auto-Souveraine (SSI)} et aux **Preuves à Divulgation Nulle de Connaissance (ZK-Proofs)}.
+
+\subsection{Architecture Technique}
+\begin{enumerate}
+    \item \textbf{Vérification (Claim)} : L'utilisateur se vérifie une fois auprès d'un Issuer (ex: Civic) et reçoit une "Verifiable Credential" (VC).
+    \item \textbf{Stockage (Wallet)} : La VC est stockée localement dans le portefeuille de l'utilisateur.
+    \item \textbf{Preuve (Proof)} : Pour accéder à un protocole, le portefeuille génère une preuve ZK : "J'ai +18 ans et je ne suis pas résident US", \textbf{sans révéler l'identité réelle}.
+\end{enumerate}
+
+\subsection{Stack Pratique Enseignée}
+\begin{itemize}
+    \item \textbf{Polygon ID} : Création de contrats de staking avec gating géographique via VC.
+    \item \textbf{Civic Pass} : Protection anti-sybil pour les airdrops.
+    \item \textbf{Sismo} : Badges ZK pour la réputation (gouvernance DAO).
+\end{itemize}
+
+\section{GDPR \& Données On-Chain}
+
+\subsection{Le Conflit Immuabilité vs Droit à l'Oubli}
+Règle d'or : \textbf{Jamais de PII (Personally Identifiable Information) on-chain}.
+
+\subsection{Patterns Architecturaux}
+\begin{itemize}
+    \item \textbf{Hash-Only} : Stocker `keccak256(data)` on-chain. La donnée réelle est off-chain avec contrôle d'accès.
+    \item \textbf{Chiffrement Asymétrique} : Données chiffrées avec la clé publique du destinataire.
+    \item \textbf{Pointeurs IPFS} : Stocker uniquement le CID (Content ID) sur la blockchain.
+\end{itemize}
+
+\section{Fiscalité Crypto \& Statut ETE}
+
+\subsection{Le Guide de l'Ingénieur-Exportateur}
+Les revenus en crypto sont des revenus en devises étrangères. Le statut ETE (Entreprise Totalement Exportatrice) est la clé de l'optimisation légale.
+
+\subsection{Flux Financier Recommandé}
+\begin{enumerate}
+    \item \textbf{Réception} : Client $\to$ Passerelle (Grey.co/Bitwage) $\to$ Virement TND.
+    \item \textbf{Comptabilité} : Enregistrement au taux du jour BCT.
+    \item \textbf{Déclaration} : Trimestrielle auprès de la banque centrale.
+\end{enumerate}
