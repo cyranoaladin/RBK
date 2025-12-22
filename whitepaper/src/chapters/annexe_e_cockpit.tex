@@ -1,0 +1,64 @@
+% ==============================================================================
+% Annexe E : Cockpit RBK (Dashboard de Suivi)
+% ==============================================================================
+\chapter{ANNEXE — COCKPIT RBK (DASHBOARD ÉTUDIANT)}
+\label{annexe:cockpit}
+
+Le "Cockpit" (`cockpit.rbk.tn`) est l'outil central de pilotage de la performance étudiante. Il agrège les données techniques, comportementales et de santé mentale.
+
+\section{Vue d'Ensemble}
+
+\begin{techBox}{Fonctionnalités Clés}
+\begin{itemize}
+    \item \textbf{Suivi Temps Réel :} Synchronisation avec l'API GitHub.
+    \item \textbf{Seniority Tracking :} Évolution sur la grille 0 à 4.
+    \item \textbf{Santé Mentale :} Remontée des "Wellness Checks" hebdomadaires.
+    \item \textbf{Employability Score :} Calculé pour l'accès au Job Board.
+\end{itemize}
+\end{techBox}
+
+\section{Suivi des Compétences (Seniority Matrix)}
+
+Visualisation radar des 5 axes de compétences :
+\begin{enumerate}
+    \item \textbf{Coding Standard} : Qualité, Linter, Types.
+    \item \textbf{Architecture} : Modularité, Scalabilité, Patterns.
+    \item \textbf{Testing} : Coverage, Fuzzing, Invariants.
+    \item \textbf{Security} : Audit mindset, Threat modeling.
+    \item \textbf{Collaboration} : Code Review, Documentation, Communication.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \foreach \angle/\label in {90/Code, 162/Arch, 234/Test, 306/Secu, 18/Collab} {
+            \draw[gray!30] (0,0) -- (\angle:3cm);
+            \node at (\angle:3.3cm) {\small \label};
+        }
+        \draw[gray!30] (0,0) circle (1cm);
+        \draw[gray!30] (0,0) circle (2cm);
+        \draw[gray!30] (0,0) circle (3cm);
+        
+        \draw[SolanaGreen, thick, fill=SolanaGreen!20, opacity=0.7] 
+        (90:2.5) -- (162:2.0) -- (234:2.8) -- (306:1.5) -- (18:2.9) -- cycle;
+        \node[color=SolanaGreen, font=\bfseries] at (0,-3.5) {Profil Cible (Level 3)};
+    \end{tikzpicture}
+    \caption{Radar de Compétences (Cockpit View)}
+\end{figure}
+
+\section{Alerting & Monitoring (Anti-Burnout)}
+
+Le système analyse les signaux faibles pour prévenir le décrochage :
+\begin{itemize}
+    \item \textbf{Signal GitHub} : Absence de commit > 3 jours (Orange).
+    \item \textbf{Signal Discord} : Silence radio > 48h (Orange).
+    \item \textbf{Signal Wellness} : Score self-reported < 2/5 (Rouge).
+\end{itemize}
+
+\section{Interface Employeur (Talent Pool)}
+Les partenaires recruteurs accèdent à une vue filtrée ("Anonymized Mode" ou "Full Profile" avec consentement) :
+\begin{itemize}
+    \item \textbf{Badge Vérifié} : SBT Link.
+    \item \textbf{Top Projects} : Liens directs vers les repos "Golden".
+    \item \textbf{Soft Skills} : Note de collaboration et fiabilité (Ponctualité).
+\end{itemize}
