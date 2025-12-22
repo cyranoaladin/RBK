@@ -1,8 +1,7 @@
+% FULL SOURCE AUDIT BUNDLE
 
-% ============================================================
-% START OF FILE: whitepaper/src/main.tex
-% ============================================================
 
+% --- FILE: whitepaper/src/main.tex ---
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  MOTEUR GRAPHIQUE PREMIUM - PREAMBULE LATEX
 %  Projet: RBK 2.0 - L'Architecture de la Souveraineté Numérique
@@ -69,6 +68,7 @@
 % ----------------------------
 \usepackage{graphicx}
 \usepackage{amsmath,amsthm}
+\usepackage{amssymb}
 \usepackage{unicode-math}
 \setmathfont{Latin Modern Math}
 \usepackage{enumitem}
@@ -78,6 +78,7 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % Added for robustness
 \usepackage{multicol}
 \usepackage{rotating}
 \usepackage{pgfplots}
@@ -328,21 +329,41 @@
 \input{chapters/annexe_m_b2b.tex}
 \input{chapters/annexe_n_compliance.tex}
 \input{chapters/annexe_o_competences.tex}
-\input{chapters/annexe_p_crise.tex}
+\input{chapters/annexe_p_qualite.tex}
+\input{chapters/99_references.tex}
 \input{chapters/99_references.tex}
 
 \end{document}
 
+% --- FILE: whitepaper/src/version.tex ---
+{\large \color{black!60} Version 4.0.0-dev — 22 décembre 2025 (Structure refondue)}
 
-% ============================================================
-% END OF FILE: whitepaper/src/main.tex
-% ============================================================
+% --- FILE: whitepaper/src/templates/tables.tex ---
+% Template pour tableaux RBK
+\newcommand{\rbktable}[4]{%
+  \begin{table}[#1]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{#2}
+      \hline
+      \rowcolor{rbkpurple!20} #3 \\
+      \hline
+      #4
+      \hline
+    \end{tabularx}
+    \caption{}
+    \label{}
+  \end{table}
+}
 
+% Tableau de comparaison
+\newenvironment{comparisontable}
+  {\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|X|X|X|}
+    \hline
+    \rowcolor{rbkpurple!20}}
+  {\hline\end{tabularx}}
 
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/00_acronymes.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/00_acronymes.tex ---
 \chapter*{Liste des Acronymes}
 \addcontentsline{toc}{chapter}{Liste des Acronymes}
 
@@ -376,16 +397,7 @@
     \end{longtable}
 \end{center}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/00_acronymes.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/00_executive_summary.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/00_executive_summary.tex ---
 % =========================
 % EXECUTIVE SUMMARY (1 page)
 % =========================
@@ -430,16 +442,7 @@
 \vspace{0.6em}
 \textbf{Demande partenaire / investisseur.} Soutien à l’industrialisation (contenus gold, cockpits, mentors), financement du fonds de garantie ISA (si activé), et partenariats B2B pour upskilling. Objectif : installer RBK 2.0 comme \textbf{hub tunisien} de talents exportables (software export) avec gouvernance et conformité renforcées.
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/00_executive_summary.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/00_guide_lecture.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/00_guide_lecture.tex ---
 \clearpage
 \thispagestyle{empty}
 \chapter*{GUIDE DE LECTURE}
@@ -476,16 +479,7 @@ Ce document est conçu pour servir plusieurs audiences. Voici les parcours de le
 \end{description}
 \clearpage
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/00_guide_lecture.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/01_vision.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/01_vision.tex ---
 \chapter[🚀 VISION \& MANIFESTE]{VISION \& MANIFESTE}
 \label{chap:vision}
 
@@ -656,16 +650,7 @@ RBK 2.0 est une "School of Engineering" accélérée, positionnée entre le boot
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/01_vision.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/02_contexte.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/02_contexte.tex ---
 \chapter{ANALYSE DU CONTEXTE}
 \label{chap:contexte}
 
@@ -800,16 +785,7 @@ La corrélation avec le prix des actifs (BTC/SOL) diminue : les entreprises cons
 \end{tikzpicture}
 \end{center}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/02_contexte.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/03_arbitrage.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/03_arbitrage.tex ---
 \chapter{ARBITRAGE TECHNOLOGIQUE}
 \label{chap:arbitrage}
 
@@ -919,22 +895,14 @@ Pour valider le module interopérabilité, l'étudiant doit livrer :
     \caption{Architecture Cross-Chain : Flux de Vérification}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/03_arbitrage.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/04_methodologie.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/04_methodologie.tex ---
 \chapter{MÉTHODOLOGIE CYBORG 2.0}
 \label{chap:methodologie}
 
 \section{Philosophie Pédagogique : Intégration du Bien-être}
 
 La méthodologie RBK 2.0 ne se contente pas de former des techniciens ; elle forge des \textit{athlètes cognitifs}. Conscients de la charge mentale intense imposée par l'apprentissage du développement blockchain (Rust, Zero-Knowledge Proofs, audits de sécurité), nous avons intégré une dimension \textbf{santé mentale et résilience} au cœur même du curriculum.
+\marginpar{\footnotesize \faHeartbeat\ \textbf{Priorité Absolue} : La santé mentale de l'étudiant est notre actif le plus précieux.}
 
 \begin{figure}[h]
     \centering
@@ -1015,6 +983,55 @@ Pour objectiver la progression, nous utilisons une grille inspirée des "Enginee
 
 \subsection{Standardisation des Repos GitHub}
 Pas de "code spaghetti". Tous les projets étudiants doivent respecter la structure de l'organisation \texttt{rbk-studio}.
+
+\subsubsection{Workflow CI/CD Standard (YAML)}
+Chaque repo doit obligatoirement inclure ce workflow dans `.github/workflows/security.yml` :
+
+\begin{lstlisting}[language=yaml, caption=RBK Security Workflow Standard]
+name: RBK Security Gate
+on: [push, pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Audit Tools
+        run: |
+          cargo install cargo-audit
+          npm install -g solhint
+      - name: Static Analysis
+        run: |
+          cargo audit
+          solhint 'contracts/**/*.sol'
+      - name: Fuzzing Check
+        run: ./scripts/fuzz.sh --duration 300
+\end{lstlisting}
+
+\subsubsection{Script d'Audit Automatisé (Bash)}
+Exemple de script `scripts/audit.sh` à inclure :
+
+\begin{lstlisting}[language=bash, caption=Pre-Commit Audit Script]
+#!/bin/bash
+set -e
+echo "🔎 Starting RBK Pre-Commit Audit..."
+
+# 1. Check for Sensitive Keys
+if grep -r "PRIVATE_KEY" .; then
+    echo "❌ CRITICAL: Private Key found in code!"
+    exit 1
+fi
+
+# 2. Run Tests
+echo "🧪 Running Tests..."
+anchor test
+
+# 3. Verify Formatting
+echo "🎨 Checking Style..."
+cargo fmt -- --check
+
+echo "✅ Audit Passed. Ready to Push."
+\end{lstlisting}
 
 \begin{techBox}{Organisation rbk-studio (Structure Complète)}
 rbk-studio/
@@ -1138,16 +1155,7 @@ En cas de zone rouge persistante, nous activons la "Pause Fusible" :
     \caption{Algorithme de Décision Anti-Burnout}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/04_methodologie.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/05_structure.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/05_structure.tex ---
 \chapter{STRUCTURE DU CURSUS}
 \label{chap:structure}
 
@@ -1348,16 +1356,7 @@ Reconnue par l'industrie pour sa rigueur.
 Utilisation du standard \textbf{Open Badges 3.0} pour des preuves de compétences vérifiables sur LinkedIn.
 
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/05_structure.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/06_syllabus_tronc_commun.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/06_syllabus_tronc_commun.tex ---
 \chapter{SYLLABUS TECHNIQUE COMPLET (28 SEMAINES)}
 
 \textit{Note : Ce chapitre détaille l'exécution technique. L'intégration des Soft Skills (S25-S28) est traitée au Chapitre 7.}
@@ -1469,16 +1468,7 @@ Pour les étudiants souhaitant élargir leur spectre technique, RBK 2.0 propose 
     \item \textbf{Projet :} Bridge NFT Solana $\leftrightarrow$ Ethereum.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/06_syllabus_tronc_commun.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/07_soft_skills.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/07_soft_skills.tex ---
 \chapter{MODULE SOFT SKILLS \& PROFESSIONNALISATION}
 
 \section{Structure du Module (4 semaines)}
@@ -1590,16 +1580,7 @@ L'évaluation des Soft Skills chez RBK n'est pas une "note de participation". C'
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/07_soft_skills.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/08_track_solana.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/08_track_solana.tex ---
 \chapter{TRACK A : SOLANA SMART CONTRACT ENGINEER (RUST/ANCHOR)}
 
 % =========================================================
@@ -2044,16 +2025,7 @@ Release & versioning + changelog & tag + notes \\
 \label{fig:cpi_call_graph}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/08_track_solana.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/09_track_evm.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/09_track_evm.tex ---
 \chapter{TRACK B : EVM ENGINEER (SOLIDITY/FOUNDRY)}
 
 % =========================================================
@@ -2276,16 +2248,7 @@ Upgrade risks & tests migration & storage discipline + governance \\
 \label{fig:code_to_mainnet}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/09_track_evm.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/10_fiches_metiers.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/10_fiches_metiers.tex ---
 \chapter{FICHES MÉTIERS \& ÉCONOMIE DU DIPLÔMÉ}
 
 Ce chapitre détaille les 7 profils de sortie du cursus RBK. Chaque fiche est un standard industriel définissant les attentes, responsabilités et preuves exigées.
@@ -2542,16 +2505,7 @@ Ce tableau présente des ordres de grandeur. Le haut de fourchette n'est accessi
 Pas de tests négatifs, Docs inexistantes, CI rouge, Absence de specs.
 \end{tcolorbox}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/10_fiches_metiers.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/10_track_product.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/10_track_product.tex ---
 \chapter{TRACK C : PRODUCT \& GROWTH ENGINEER (FULL STACK + ANALYTICS)}
 
 \section{Philosophie du Track : Le "Product Builder" Complet}
@@ -2641,16 +2595,7 @@ Un "Full Stack Web3" capable de lancer sa propre startup ou de rejoindre une éq
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/10_track_product.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/11_capstones.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/11_capstones.tex ---
 \chapter{CAPSTONES --- Projets Signatures (Studio-grade)}
 
 % =========================================================
@@ -2960,16 +2905,7 @@ Demo & vidéo + script live + scénario \\
 \label{fig:packaging_pipeline}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/11_capstones.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/12_business_plan.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/12_business_plan.tex ---
 \chapter[💰 BUSINESS PLAN \& STRATÉGIE DE CROISSANCE]{BUSINESS PLAN \& STRATÉGIE DE CROISSANCE}
 \label{chap:business_plan}
 
@@ -3134,16 +3070,7 @@ Dès l'Année 3, le modèle "RBK in a Box" (LMS + Programme + Brand) sera propos
     \item \textbf{Apport :} RBK fournit la plateforme et la certification SBT. Le partenaire gère le local et le sourcing.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/12_business_plan.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/13_marketing.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/13_marketing.tex ---
 \chapter{STRATÉGIE MARKETING \& ACQUISITION RENFORCÉE}
 
 \section{Programme "Building in Public"}
@@ -3301,16 +3228,7 @@ Cela crée une culture de "Contribution" dès le premier jour.
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/13_marketing.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/14_risques.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/14_risques.tex ---
 \chapter[⚠️ ANALYSE DES RISQUES \& MODÈLE DE RÉSILIENCE]{ANALYSE DES RISQUES \& MODÈLE DE RÉSILIENCE}
 \label{chap:risques}
 
@@ -3402,20 +3320,15 @@ Face à la volatilité intrinsèque du secteur, nous déployons un plan de conti
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/14_risques.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/15_compliance.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/15_compliance.tex ---
 \chapter{COMPLIANCE \& RÉGULATION WEB3 – GUIDE PRATIQUE}
 \label{chap:compliance}
 
 Ce chapitre transforme la contrainte réglementaire en avantage compétitif. Dans le Web3, la conformité n'est pas un frein, mais une fonctionnalité architecturale.
+
+\begin{ceoBox}{Résumé Exécutif : La Conformité comme Avantage Compétitif}
+Le Web3 n'est pas une zone de non-droit. RBK 2.0 forme des ingénieurs capables de naviguer dans la complexité réglementaire (GDPR, MiCA, ETE). Ce chapitre détaille les protocoles techniques pour garantir une conformité "By Design" sans sacrifier la décentralisation.
+\end{ceoBox}
 
 \section{KYC/AML Décentralisé – La Conformité par la Technologie}
 
@@ -3460,16 +3373,7 @@ Les revenus en crypto sont des revenus en devises étrangères. Le statut ETE (E
     \item \textbf{Déclaration} : Trimestrielle auprès de la banque centrale.
 \end{enumerate}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/15_compliance.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/15_roadmap.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/15_roadmap.tex ---
 \chapter{FEUILLE DE ROUTE 120 JOURS}
 
 \section{Timeline des Opérations}
@@ -3642,16 +3546,7 @@ Ce diagramme de Gantt illustre le chemin critique. Les tâches \textbf{Juridique
     \label{fig:gantt_macro}
 \end{figure}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/15_roadmap.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/16_token_reputation.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/16_token_reputation.tex ---
 \chapter{TOKEN DE RÉPUTATION \& ALUMNI PROGRAM}
 
 \section{RBK Soulbound Tokens (SBTs)}
@@ -3783,16 +3678,7 @@ Règle Anti-Sybil : Seuls les wallets avec un SBT "Certified" actif depuis > 3 m
     \end{tabularx}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/16_token_reputation.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/17_fiches_metiers_bis.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/17_fiches_metiers_bis.tex ---
 \chapter{MODÈLE OPÉRATIONNEL DÉTAILLÉ}
 \label{chap:finances_details}
 
@@ -3956,16 +3842,7 @@ Ce Business Plan montre un ROI immédiat. Le Studio s'autofinance dès le 6ème 
 % ========================================
 % CHAPITRE 12~: STRATÉGIE MARKETING
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/17_fiches_metiers_bis.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/17_impact_odd.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/17_impact_odd.tex ---
 \chapter{IMPACT SOCIAL \& ALIGNEMENT ODD}
 
 RBK 2.0 est une entreprise à mission. Notre but est de transférer de la richesse du PIB mondial (Web3) vers l'économie locale tunisienne et africaine.
@@ -4001,16 +3878,7 @@ La blockchain est perçue comme polluante. RBK nuance et agit :
     \item \textbf{Compensation :} Nous nous engageons à compenser 100\% de l'empreinte carbone de l'école (serveurs + clim + déplacements staff) via l'achat de crédits carbone certifiés on-chain (ex: Toucan Protocol).
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/17_impact_odd.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/18_gouvernance.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/18_gouvernance.tex ---
 \chapter{GOUVERNANCE, ÉTHIQUE \& TRANSPARENCE}
 
 RBK 2.0 aspire à devenir une institution de confiance. Cela exige une gouvernance partagée et une transparence radicale sur nos résultats.
@@ -4073,16 +3941,7 @@ Pour assurer une clarté totale vis-à-vis des étudiants et partenaires, nous d
     \item[Le Programme "RBK 2.0" :] Est le fruit de cette joint-venture : l'infrastructure opérationnelle de RBK propulsée par l'expertise technique de Money Factory AI.
 \end{description}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/18_gouvernance.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/18_marketing_bis.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/18_marketing_bis.tex ---
 % ========================================
 
 \chapter{{STRATÉGIE MARKETING \& ACQUISITION}}
@@ -4175,16 +4034,7 @@ La force du marketing RBK 2.0 repose sur le réseau. En devenant le hub de Super
 % ========================================
 % CHAPITRE 13~: ANALYSE DES RISQUES
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/18_marketing_bis.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/19_risques_bis.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/19_risques_bis.tex ---
 % ========================================
 
 \chapter{{ANALYSE DES RISQUES \& ATTÉNUATION}}
@@ -4299,16 +4149,7 @@ L'analyse montre que le plus gros risque (la régulation) est atténué par un p
 % ========================================
 % CHAPITRE 14~: FEUILLE DE ROUTE
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/19_risques_bis.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/20_roadmap_lancement.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/20_roadmap_lancement.tex ---
 % ========================================
 
 \chapter{{FEUILLE DE ROUTE~: LE PLAN DE LANCEMENT (90 JOURS)}}
@@ -4419,16 +4260,7 @@ Ce plan de 90 jours est agressif mais réaliste. Il repose sur l'utilisation int
 % ========================================
 % CHAPITRE 15~: ÉLÉMENTS DE DIFFÉRENCIATION
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/20_roadmap_lancement.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/21_differentiation.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/21_differentiation.tex ---
 \chapter{ÉLÉMENTS DE DIFFÉRENCIATION}
 
 \section{Le Paradigme « Senior-by-Design »}
@@ -4579,16 +4411,7 @@ RBK n'est pas un bootcamp. C'est un centre d'entraînement olympique pour ingén
     \end{tabular}
 \end{table}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/21_differentiation.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/22_conclusion.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/22_conclusion.tex ---
 \chapter{CONCLUSION \& FEUILLE DE ROUTE}
 
 \section{Priorités Immédiates (Semaine 1–4)}
@@ -4686,16 +4509,7 @@ C'est un \textbf{GO}.
     \end{tabular}
 \end{center}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/22_conclusion.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/99_references.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/99_references.tex ---
 \chapter{SOURCES \& RÉFÉRENCES}
 
 \section{Documents de Référence (Primaire)}
@@ -4719,16 +4533,7 @@ C'est un \textbf{GO}.
     \item \textbf{Metaplex} : Standard NFT sur Solana.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/99_references.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_a_syllabus_detaille.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_a_syllabus_detaille.tex ---
 \chapter{SYLLABUS TECHNIQUE DÉTAILLÉ (28 SEMAINES)}
 
 \section{Structure Hebdomadaire Standard}
@@ -4760,16 +4565,7 @@ Chaque semaine suit le rythme : Concept (Lun) $\to$ Lab Guidé (Mar) $\to$ Proje
 \section{Rubrique d'Évaluation Hebdo}
 (Voir texte section suivante)
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_a_syllabus_detaille.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_b_finance.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_b_finance.tex ---
 \chapter{MODÈLE FINANCIER DÉTAILLÉ}
 
 Le modèle financier RBK 2.0 repose sur une approche **Hybride** robuste, privilégiant la liquidité immédiate via les frais Upfront tout en conservant un potentiel d'upside significatif via l'ISA pour les Top Talents.
@@ -4831,21 +4627,16 @@ Pour les besoins de la modélisation :
 \section{Rentabilité \& Seuil}
 Le seuil de rentabilité opérationnelle (Breakeven) est atteint dès que le volume dépasse **40 étudiants payants / an** (Niveau 1+), ce qui sécurise la structure indépendamment des succès ISA.
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_b_finance.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_c_juridique.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_c_juridique.tex ---
 % ==============================================================================
 % Annexe C : Cadre Juridique & Conformité - Tunisie
 % ==============================================================================
 \chapter{ANNEXE — CADRE JURIDIQUE \& CONFORMITÉ (TUNISIE)}
 \label{annexe:juridique}
+
+\begin{ceoBox}{Synthèse Juridique : Opérer depuis la Tunisie}
+Grâce au statut \textbf{Entreprise Totalement Exportatrice (ETE)}, l'ingénieur RBK bénéficie d'une exonération fiscale massive sur ses revenus étrangers (0\% IS pendant 4 ans, puis 10\%). Ce cadre, couplé à une gestion rigoureuse des flux crypto/fiat, fait de la Tunisie un hub Web3 ultra-compétitif.
+\end{ceoBox}
 
 Cette annexe détaille le cadre légal permettant d'opérer depuis la Tunisie en tant qu'ingénieur Web3 exportateur.
 
@@ -4860,6 +4651,30 @@ Pour bénéficier du statut ETE, RBK (et ses alumni entrepreneurs) doit :
     \item \textbf{Exporter 100\% de ses services} à l'étranger (formation remote, consulting, audit).
     \item \textbf{Justifier d'un plan d'affaires} et créer un minimum d'emplois.
 \end{itemize}
+
+\subsection{Procédure d'Obtention (Flux Visuel)}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm, auto]
+        \node (start) [draw, rounded corners] {Dépôt Dossier APII};
+        \node (instruct) [draw, rectangle, below of=start] {Instruction Technique (15j)};
+        \node (commission) [draw, rectangle, below of=instruct] {Commission Agrément (10j)};
+        \node (decision) [draw, diamond, aspect=2, below of=commission] {Décision};
+        \node (agrement) [draw, rectangle, fill=green!10, below of=decision, xshift=-2cm] {Agrément ETE};
+        \node (refus) [draw, rectangle, fill=red!10, below of=decision, xshift=2cm] {Refus (Recours)};
+        \node (rne) [draw, rectangle, below of=agrement] {Enregistrement RNE (10j)};
+        \node (bank) [draw, rectangle, below of=rne] {Compte Devises (5j)};
+
+        \draw[->] (start) -- (instruct);
+        \draw[->] (instruct) -- (commission);
+        \draw[->] (commission) -- (decision);
+        \draw[->] (decision) -| node[near start, left] {OK} (agrement);
+        \draw[->] (decision) -| node[near start, right] {KO} (refus);
+        \draw[->] (agrement) -- (rne);
+        \draw[->] (rne) -- (bank);
+    \end{tikzpicture}
+    \caption{Processus d'Obtention Agrément ETE (45 jours)}
+\end{figure}
 
 \subsection{Avantages Fiscaux (Synthèse)}
 \begin{table}[h]
@@ -4977,16 +4792,7 @@ Action : Bascule 100\% TND via partenaires bancaires locaux. Migration de l'enti
 Action : Activation du Fonds de Garantie (50k TND). Restructuration des dettes. Renforcement des critères d'admission (Gate S0 plus stricte).
 
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_c_juridique.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_d_audit.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_d_audit.tex ---
 \chapter{TEMPLATE DE RAPPORT D'AUDIT DE SÉCURITÉ}
 
 Un rapport d'audit professionnel doit être clair, complet et actionnable.
@@ -5024,16 +4830,7 @@ Un rapport d'audit professionnel doit être clair, complet et actionnable.
 \textbf{Recommandation :} Utiliser \texttt{anchor\_lang::solana\_program::program::invoke\_signed} et gérer le \texttt{Result}.
 \end{tcolorbox}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_d_audit.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_e_cockpit.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_e_cockpit.tex ---
 % ==============================================================================
 % Annexe E : Cockpit RBK (Dashboard de Suivi)
 % ==============================================================================
@@ -5082,7 +4879,7 @@ Visualisation radar des 5 axes de compétences :
     \caption{Radar de Compétences (Cockpit View)}
 \end{figure}
 
-\section{Alerting & Monitoring (Anti-Burnout)}
+\section{Alerting \& Monitoring (Anti-Burnout)}
 
 Le système analyse les signaux faibles pour prévenir le décrochage :
 \begin{itemize}
@@ -5099,16 +4896,7 @@ Les partenaires recruteurs accèdent à une vue filtrée ("Anonymized Mode" ou "
     \item \textbf{Soft Skills} : Note de collaboration et fiabilité (Ponctualité).
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_e_cockpit.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_f_isa.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_f_isa.tex ---
 % =========================
 % ANNEXE ISA — Modèle propre
 % =========================
@@ -5187,16 +4975,7 @@ E. Petit job & 2\,500 TND & 0 TND & -- \\
 \end{center}
 \textit{Note : Dans le scénario A, le plafond de 36 mensualités est atteint avant le Cap financier, l'étudiant paie donc moins que 20 000 TND.}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_f_isa.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_g_selection.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_g_selection.tex ---
 \chapter{GUIDE DE SÉLECTION \& SCORING « PISCINE RUST »}
 
 La Piscine n'est pas un cours, c'est un filtre.
@@ -5259,16 +5038,7 @@ Pour les profils expérimentés souhaitant "sauter" le tronc commun ou la spéci
     \item \textbf{Exercice de Review :} L'étudiant doit auditer une PR contenant 3 vulnérabilités cachées (Reentrancy, Arithmetic Overflow, Access Control).
 \end{enumerate}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_g_selection.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_h_sbt.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_h_sbt.tex ---
 \chapter{SPÉCIFICATIONS TECHNIQUES SBT}
 
 \section{Schéma de Métadonnées (JSON)}
@@ -5303,16 +5073,7 @@ Les SBT RBK suivent le standard Metaplex Core ou ERC-721 (Non-Transferable).
     \item \textbf{Content Check :} Le lien vers le rapport d'audit correspond au hash stocké on-chain.
 \end{enumerate}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_h_sbt.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_i_dashboard.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_i_dashboard.tex ---
 \chapter{DASHBOARD DE SUIVI PROMO}
 
 \section{Indicateurs Hebdomadaires (KPI)}
@@ -5337,16 +5098,7 @@ Envoyé chaque vendredi via Bot Discord (Anonyme).
     \item Charge de travail (Trop faible / OK / Trop forte) ?
     \item Sentiment de progression (Je stagne / J'apprends / Je vole) ?
 \end{enumerate}
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_i_dashboard.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_j_offre.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_j_offre.tex ---
 % =========================
 % GRILLE D’OFFRE — 3 PACKS
 % =========================
@@ -5404,16 +5156,7 @@ La fac offre un diplôme académique. Nous offrons une certification technique i
     \item \textbf{Non-Garanti :} RBK s'engage sur la qualité de la formation ("Obligation de Moyens") mais ne peut garantir contractuellement une embauche ou un niveau de salaire spécifique ("Obligation de Résultats"), ceux-ci dépendant du marché et de l'effort individuel.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_j_offre.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_k_glossaire.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_k_glossaire.tex ---
 \chapter{GLOSSAIRE COMPLET}
 
 \section{Concepts Fondamentaux Web3}
@@ -5487,16 +5230,7 @@ La fac offre un diplôme académique. Nous offrons une certification technique i
     \end{tabularx}
 \end{center}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_k_glossaire.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_l_mentors.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_l_mentors.tex ---
 \chapter{STRATÉGIE MENTORAT \& TRAIN-THE-TRAINER}
 
 La qualité de RBK 2.0 repose sur la qualité de son encadrement humain. Nous ne recrutons pas des "profs", mais des "Tech Leads" capables de guider des juniors.
@@ -5543,16 +5277,7 @@ Pour éviter le "Bus Factor" (départ d'un instructeur clé) :
     \item \textbf{Guest Lecturers :} Bassin de 5 experts externes (CTO partenaires) activables pour des masterclasses ponctuelles ou des remplacements d'urgence.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_l_mentors.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_m_b2b.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_m_b2b.tex ---
 \chapter{OFFRE PARTENARIAT B2B}
 
 \section{Modèle dOffre Corporate}
@@ -5580,16 +5305,7 @@ Ce document sert de base aux négociations avec les entreprises partenaires (ESN
     \item \textbf{Clause de Confidentialité :} RBK signe un NDA concernant les Use-Cases métier apportés par lentreprise pour les projets.
 \end{enumerate}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_m_b2b.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_n_compliance.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_n_compliance.tex ---
 \chapter{GUIDE DE CONFORMITÉ WEB3}
 
 Ce guide est distribué à tous les diplômés pour assurer leur sécurité juridique lors de leurs premières missions freelances internationales.
@@ -5611,16 +5327,7 @@ Ce guide est distribué à tous les diplômés pour assurer leur sécurité juri
     \item \textbf{HODL :} Conserver une partie de sa rémunération en crypto pour spéculer est une activité de gestion de patrimoine privée, distincte de lactivité pro.
 \end{enumerate}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_n_compliance.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_n_kit_juridique.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_n_kit_juridique.tex ---
 % ==============================================================================
 % Annexe N : Kit de Survie Juridique
 % ==============================================================================
@@ -5662,6 +5369,24 @@ Ce kit fournit les templates et checklists pratiques pour que l'étudiant puisse
 Flux type : \textbf{Étudiant RBK (Tunisie) $\to$ Portfolio GitHub $\to$ Plateforme (Upwork, X) $\to$ Client (USA/DAO) $\to$ Contrat Signé $\to$ Paiement USDC.}
 
 \subsection{Arbre de Décision : Quelle Voie Choisir ?}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, font=\small]
+        \node (start) [draw, rounded corners] {Recevoir Salaire ($>$ 2000 USD)};
+        \node (ease) [draw, diamond, aspect=2, below of=start] {Je veux la simplicité ?};
+        
+        \node (grey) [draw, rectangle, fill=green!10, below of=ease, xshift=-3cm] {Option A : Passerelle (Grey/Bitwage)};
+        \node (wallet) [draw, rectangle, fill=orange!10, below of=ease, xshift=3cm] {Option B : Wallet Pro (Direct)};
+        
+        \node (greyinfo) [below of=grey, text width=4cm, align=center] {Conversion auto USDC $\to$ TND \\ Virement sur banque locale \\ \textbf{100\% Conforme}};
+        \node (walletinfo) [below of=wallet, text width=4cm, align=center] {Conversion immédiate USDC \\ Tenue comptabilité devises \\ Déclaration BCT Manuelle};
+
+        \draw[->] (start) -- (ease);
+        \draw[->] (ease) -| node[near start, above] {OUI} (grey);
+        \draw[->] (ease) -| node[near start, above] {NON} (wallet);
+    \end{tikzpicture}
+    \caption{Stratégie de Réception des Fonds Web3}
+\end{figure}
 \begin{enumerate}
     \item \textbf{Je veux la simplicité :} Utiliser \textbf{GREY.CO} ou \textbf{BITWAGE}.
     \begin{itemize}
@@ -5685,16 +5410,7 @@ Flux type : \textbf{Étudiant RBK (Tunisie) $\to$ Portfolio GitHub $\to$ Platefo
     \item \textbf{Demande de "frais d'avance"} : Scam garanti.
 \end{itemize}
 
-
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_n_kit_juridique.tex
-% ============================================================
-
-
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_o_competences.tex
-% ============================================================
-
+% --- FILE: whitepaper/src/chapters/annexe_o_competences.tex ---
 \chapter{RÉFÉRENTIEL DE COMPÉTENCES}
 
 Mapping entre les compétences acquises, les badges délivrés et les métiers visés.
@@ -5715,56 +5431,1220 @@ Mapping entre les compétences acquises, les badges délivrés et les métiers v
     \end{tabularx}
 \end{table}
 
+% --- FILE: whitepaper/src/chapters/annexe_p_qualite.tex ---
+% ==============================================================================
+% Annexe P : Charte de Qualité (Règles Non Négociables)
+% ==============================================================================
+\chapter{ANNEXE — CHARTE DE QUALITÉ \& RÈGLES D'OR}
+\label{annexe:qualite}
 
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_o_competences.tex
-% ============================================================
+RBK 2.0 repose sur un socle de valeurs non négociables. Tout manquement à ces règles entraîne une exclusion immédiate ou un refus de certification.
 
+\section*{Les 4 Commandements de l'Ingénieur RBK}
 
-% ============================================================
-% START OF FILE: whitepaper/src/chapters/annexe_p_crise.tex
-% ============================================================
-
-\chapter{GESTION DE CRISE (COMMUNICATION)}
-
-\section{Template de Communiqué (Incident Majeur)}
-
-\textbf{Objet :} Incident de Sécurité / Panne Réseau - Impact sur la Formation
-
-\textit{[Date/Heure]}
-
-Chers Étudiants, Partenaires,
-
-Nous avons détecté \textit{[Description Incident : ex, une vulnérabilité critique sur le bridge X]}.
-
-\textbf{Impact Immédiat :}
 \begin{itemize}
-    \item Les fonds de lécole sont \textit{[Sécurisés / Affectés]}.
-    \item Les cours de la semaine sont \textit{[Maintenus / Adaptés]}.
+    \item[\faCheckCircle] \textbf{Règle 1 : No Broken Windows} \\
+    Aucun code n'est mergé sur `main` s'il contient des warnings de linter ou des TODOs non résolus. La propreté du code est le reflet de la clarté de la pensée.
+    
+    \item[\faCheckCircle] \textbf{Règle 2 : Don't Trust, Verify} \\
+    Chaque ligne de code générée par IA (Copilot, ChatGPT) doit être auditée, comprise et testée. Une vulnérabilité introduite par "copier-coller" est une faute grave.
+    
+    \item[\faCheckCircle] \textbf{Règle 3 : Ships or Nothing} \\
+    Un projet non déployé n'existe pas. Un code qui ne tourne que sur `localhost` vaut zéro. La livraison (Mainnet ou Testnet public) est le seul juge de paix.
+    
+    \item[\faCheckCircle] \textbf{Règle 4 : Leave No One Behind} \\
+    Le savoir ne vaut que s'il est partagé. Refuser d'aider un pair ou cacher une information technique est contraire à l'esprit Web3 (Open Source).
 \end{itemize}
 
-\textbf{Mesures Prises :}
-1. Nous avons suspendu toutes les interactions on-chain sur les contrats concernés.
-2. Une cellule de crise technique est active.
+\section{Matrice de Conformité (Sanctions)}
 
-\textbf{Consigne Étudiants :}
-Ne tentez aucune transaction sur le protocole X jusquà nouvel ordre. Ceci est un exercice réel de gestion de risque.
+\begin{table}[h]
+    \centering
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{|l|X|l|}
+    \hline
+    \textbf{Infraction} & \textbf{Exemple} & \textbf{Sanction} \\ \hline
+    \textbf{Plagiat} & Copie repo externe sans crédit & Exclusion \\ \hline
+    \textbf{Négligence Sécurité} & Commit de Private Key & Blâme + Reset Projet \\ \hline
+    \textbf{Ghosting} & Absence non justifiée > 48h & Avertissement \\ \hline
+    \end{tabularx}
+\end{table}
 
-\textit{La Direction RBK.}
+\section{Processus de Validation Qualité (Flow)}
 
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm]
+        \node (code) [draw, rounded corners] {Code Complete};
+        \node (lint) [draw, rectangle, below of=code] {Linter \& Format};
+        \node (test) [draw, diamond, aspect=2, below of=lint] {Tests Pass ?};
+        \node (audit) [draw, rectangle, below of=test, yshift=-1cm] {Audit IA \& Humain};
+        \node (merge) [draw, rectangle, fill=green!10, below of=audit] {Merge on Main};
+        \node (fix) [draw, rectangle, fill=red!10, right of=test, xshift=2cm] {Fix Bugs};
 
-% ============================================================
-% END OF FILE: whitepaper/src/chapters/annexe_p_crise.tex
-% ============================================================
+        \draw[->] (code) -- (lint);
+        \draw[->] (lint) -- (test);
+        \draw[->] (test) -- node[left] {YES} (audit);
+        \draw[->] (test) -- node[above] {NO} (fix);
+        \draw[->] (fix) |- (lint);
+        \draw[->] (audit) -- (merge);
+    \end{tikzpicture}
+    \caption{Pipeline de Validation Qualité}
+\end{figure}
 
+% --- FILE: whitepaper/src/separates/Capstones_Projets_Signatures.tex ---
+\documentclass[11pt,a4paper]{article}
 
-% ============================================================
-% START OF FILE: whitepaper/src/version.tex
-% ============================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
 
-{\large \color{black!60} Version 4.0.0-dev — 22 décembre 2025 (Structure refondue)}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
 
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
 
-% ============================================================
-% END OF FILE: whitepaper/src/version.tex
-% ============================================================
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white, colframe=black!60, sharp corners, boxrule=0.6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{CAPSTONES --- Projets signatures (Studio-grade)\\\large Cahiers des charges + rubriques + packaging}
+\author{RBK 2.0}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{6pt}
+
+% =========================================================
+\section{Philosophie ``standard studio'' + checklist non négociable}
+\paragraph{Principe.}
+Un capstone RBK est un livrable \textbf{utilisable}, pas un prototype. Il comprend : code, tests, documentation, menaces, observabilité, runbook, release et démonstration reproductible.
+
+\begin{tcolorbox}[title={Non négociables (Studio-grade)}]
+\begin{itemize}
+  \item Spec + critères d'acceptation mesurables.
+  \item Threat model + security checklist.
+  \item Tests : unit + intégration + négatifs (et fuzz si pertinent).
+  \item CI : lint + tests + rapport.
+  \item Observabilité : logs/métriques + alerting minimal.
+  \item Runbook incidents : symptômes $\rightarrow$ diagnostic $\rightarrow$ action.
+  \item Demo rejouable : script + scénario + données.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Catégorie} & \textbf{Preuve attendue} \\
+\midrule
+Spec \& DoD & document + checklist acceptance (15--25 items) \\
+Sécurité & threat model + findings + correctifs testés \\
+Tests & suite complète + logs CI + cas négatifs \\
+Docs & architecture + API + schémas + guide déploiement \\
+Ops & runbook + dashboard + signaux/alertes \\
+Release & tags + changelog + address book / manifest \\
+\bottomrule
+\end{tabularx}
+\caption{Checklist studio-grade (résumé)}
+\label{tab:studio_checklist}
+\end{table}
+
+% =========================================================
+\section{Gabarit unique A$\rightarrow$J (à appliquer à chaque capstone)}
+\subsection*{A) Problème \& Contexte}
+\subsection*{B) Personas \& User Stories (min 6)}
+\subsection*{C) Architecture cible (onchain/offchain/indexer/UI/obs)}
+\subsection*{D) Spécification Smart Contracts (comptes, instr, events, invariants)}
+\subsection*{E) Threat model (STRIDE simplifié) + hypothèses}
+\subsection*{F) Plan de tests (unit/int/e2e/fuzz) + seuils}
+\subsection*{G) Performance budget (latence, CU/gas, RPC strategy)}
+\subsection*{H) Observabilité \& Runbook}
+\subsection*{I) Critères d'acceptation (checklist mesurable)}
+\subsection*{J) Livrables (repo structure + docs + demo + audit report)}
+
+% =========================================================
+\section{Capstone 1 : Wallet \& Transaction Reliability Pack}
+
+\subsection*{A) Problème \& Contexte}
+Les dApps Web3 échouent souvent par \textbf{instabilité transactionnelle} : erreurs RPC, timeouts, confirmations incertaines, UX dégradée, et absence d'outillage de diagnostic. L'objectif est de produire un ``reliability pack'' réutilisable : state machine transaction, taxonomie d'erreurs, stratégies de retry, instrumentation et dashboard.
+
+\subsection*{B) Personas \& User stories}
+\begin{itemize}
+  \item \textbf{User} : ``En tant qu'utilisateur, je veux comprendre pourquoi ma transaction a échoué.''
+  \item \textbf{Support} : ``En tant que support, je veux un diagnostic rapide (cause probable + action).''
+  \item \textbf{Dev} : ``En tant que dev, je veux instrumenter la tx lifecycle et mesurer les erreurs.''
+  \item \textbf{Ops} : ``Je veux détecter une hausse d'échecs RPC et déclencher une mitigation.''
+  \item \textbf{PM} : ``Je veux suivre le taux de succès et la latence de confirmation.''
+  \item \textbf{Partner} : ``Je veux un mode ‘verification' pour reproduire un incident.''
+\end{itemize}
+
+\subsection*{C) Architecture cible}
+Front (state machine tx) + couche RPC strategy (providers, fallback) + telemetry (events) + dashboard + playbooks support.
+
+\subsection*{D) Spécification (composants)}
+\begin{itemize}
+  \item \textbf{Tx State Machine} : created $\rightarrow$ signed $\rightarrow$ sent $\rightarrow$ confirmed $\rightarrow$ finalized (ou failed).
+  \item \textbf{Error taxonomy} : erreurs wallet, RPC, simulation, blockhash, compute, signature.
+  \item \textbf{Retry policy} : règles déterministes, backoff, limite, passage provider.
+\end{itemize}
+
+\subsection*{E) Threat model (simplifié)}
+\begin{itemize}
+  \item Spoofing : faux provider / réponses falsifiées $\rightarrow$ mitigation : allowlist providers, signatures.
+  \item DoS : surcharges RPC $\rightarrow$ mitigation : fallback + cache + rate limit.
+  \item Repudiation : logs absents $\rightarrow$ mitigation : trace IDs et journaux horodatés.
+\end{itemize}
+
+\subsection*{F) Plan de tests}
+Unit tests (state transitions) + intégration (provider failover) + tests ``chaos RPC'' (timeouts) + tests de messages UX.
+
+\subsection*{G) Performance budget}
+\begin{itemize}
+  \item Latence UI : affichage état \(\leq\) 200 ms après événement.
+  \item Stratégie confirmations : seuil configurable ; fallback si non confirmé.
+\end{itemize}
+
+\subsection*{H) Observabilité \& Runbook}
+Métriques : success rate, fail types, provider errors, confirm latency. Runbook : hausse des fails $\rightarrow$ switch provider $\rightarrow$ degrade features $\rightarrow$ informer user.
+
+\subsection*{I) Critères d'acceptation}
+Voir Table \ref{tab:cap1_acceptance} (20 items).
+
+\subsection*{J) Livrables}
+Repo + docs + dashboard + demo script + mini ``support guide''.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Erreur} & \textbf{Cause probable} & \textbf{Mitigation / UX} \\
+\midrule
+Timeout RPC & provider saturé & fallback provider + message ``réessayer'' \\
+Blockhash expired & tx trop lente & re-sign + refresh blockhash \\
+Simulation failed & état invalide & expliquer précondition + lien docs \\
+Signature rejected & wallet / user & demander re-sign + check wallet \\
+Compute limit & tx trop lourde & proposer simplification / split tx \\
+\bottomrule
+\end{tabularx}
+\caption{Taxonomie erreurs Wallet/RPC (extrait)}
+\label{tab:cap1_error_taxonomy}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y}
+\toprule
+\textbf{Acceptance criteria (Capstone 1) --- 20 items mesurables (exemples)} \\
+\midrule
+1) State machine couvre 100\% des transitions prévues + tests transitions invalides.\\
+2) 12 types d'erreurs minimum catégorisés, chacun avec mitigation + message UX.\\
+3) Fallback provider fonctionnel (démo : provider A down $\rightarrow$ provider B).\\
+4) Dashboard : success rate, latency, top errors, provider errors.\\
+5) Runbook : au moins 3 incidents simulés + résolution.\\
+6) Demo script rejouable depuis fresh clone.\\
+\bottomrule
+\end{tabularx}
+\caption{Acceptance criteria Capstone 1 (à compléter jusqu'à 20 items)}
+\label{tab:cap1_acceptance}
+\end{table}
+
+% =========================================================
+\section{Capstone 2 : Tokenization \& Admin Control Center (RWA/Token-2022)}
+
+\subsection*{A) Problème \& Contexte}
+Les projets de tokenization échouent par manque de \textbf{contrôles admin}, \textbf{piste d'audit}, politiques (RBAC), et procédures (approbation, exécution, rollback). Ce capstone construit un ``Control Center'' : interface admin + policies + audit trail + vérification.
+
+\subsection*{B) Personas \& user stories}
+Admin, compliance, ops, support, auditor, partner.
+
+\subsection*{C) Architecture cible}
+Admin UI $\rightarrow$ API/Policy engine $\rightarrow$ indexer/audit store $\rightarrow$ smart contracts $\rightarrow$ dashboard.
+
+\subsection*{D) Spec smart contracts (résumé)}
+Roles, permissions, events d'audit, state machine actions (mint/burn/freeze/whitelist).
+
+\subsection*{E) Threat model (simplifié)}
+Elevation of privilege (RBAC mal conçu) ; repudiation (audit logs absents) ; tampering (policy contournée).
+
+\subsection*{F) Tests}
+RBAC tests (positifs/négatifs), tests audit trail (events), tests rollback.
+
+\subsection*{G) Perf budget}
+Temps d'exécution policy, latence admin UI, intégrité audit.
+
+\subsection*{H) Observabilité \& runbook}
+Alertes : actions admin inhabituelles ; anomalies permissions ; freeze/unfreeze.
+
+\subsection*{I) Acceptance criteria}
+Inclure RBAC matrix + audit trail schema + PRR.
+
+\subsection*{J) Livrables}
+Repo + docs compliance-friendly + démo + audit report.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Rôle} & \textbf{Permissions} & \textbf{Risque si mal configuré} \\
+\midrule
+Issuer & mint/burn, set policy & inflation / abus \\
+Compliance & whitelist/freeze & censure/erreurs de blocage \\
+Operator & exécuter jobs & opérations frauduleuses \\
+Auditor & read-only + exports & fuite d'infos \\
+\bottomrule
+\end{tabularx}
+\caption{RBAC matrix (extrait) --- Capstone 2}
+\label{tab:cap2_rbac}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Event d'audit} & \textbf{Champs minimaux} \\
+\midrule
+PolicyUpdated & who, when, diff, rationale \\
+MintExecuted & who, amount, recipient, policy-id \\
+FreezeAction & who, target, reason, duration \\
+\bottomrule
+\end{tabularx}
+\caption{Audit trail schema (extrait)}
+\label{tab:cap2_audit_schema}
+\end{table}
+
+% =========================================================
+\section{Capstone 3 : Digital Assets \& Utility Ecosystem (NFT/Gating)}
+
+\subsection*{A) Problème \& Contexte}
+Les NFTs sans utilité réelle sont fragiles. Ce capstone impose une utilité \textbf{gated}, vérifiable, performante : ``My Assets'', accès features, perks, dashboards, indexation, et UX stable.
+
+\subsection*{B) Personas \& user stories}
+Holder, new user, support, partner, devrel, ops.
+
+\subsection*{C) Architecture}
+Wallet connect $\rightarrow$ gating checks (on-chain + cache) $\rightarrow$ unlock features $\rightarrow$ telemetry. Indexer : events $\rightarrow$ DB $\rightarrow$ cache $\rightarrow$ API.
+
+\subsection*{D) Spec}
+Tiers, règles de gating, events, invalidations cache, policy updates.
+
+\subsection*{E) Threat model}
+Spoof gating, cache poisoning, replay, DoS sur indexer.
+
+\subsection*{F) Tests}
+Unit (rules), integration (indexer), e2e (unlock), perf (cache).
+
+\subsection*{G) Perf budget}
+Latence gating \(\leq\) 300ms (cible), taux cache hit, fallback on-chain.
+
+\subsection*{H) Observabilité}
+Métriques gating latency, unlock success, indexer lag.
+
+\subsection*{I) Acceptance criteria}
+Matrice utility + 15+ critères.
+
+\subsection*{J) Livrables}
+Repo + docs + demo + audit.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y Y}
+\toprule
+\textbf{Tier NFT} & \textbf{Feature} & \textbf{Check} & \textbf{UX attendu} \\
+\midrule
+Bronze & accès contenu A & on-chain + cache & unlock immédiat \\
+Silver & accès bounties & check + signature & écran ``eligible'' \\
+Gold & priority support & tier check & badge UI + SLA \\
+\bottomrule
+\end{tabularx}
+\caption{Utility mapping (extrait) --- Capstone 3}
+\label{tab:cap3_utility_mapping}
+\end{table}
+
+% =========================================================
+\section{Grille d'évaluation 100 points (jury/audit)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l c Y}
+\toprule
+\textbf{Catégorie} & \textbf{Poids} & \textbf{Critères} \\
+\midrule
+Sécurité \& menaces & 25 & threat model + tests négatifs + corrections \\
+Tests \& qualité & 20 & suite complète + CI + coverage utile \\
+Architecture \& scalabilité & 15 & indexer/caching, dépendances, ADR \\
+Observabilité \& runbook & 15 & métriques, alertes, incidents simulés \\
+UX \& robustesse wallet/RPC & 10 & messages clairs, retries, state machine \\
+Docs \& audit report & 15 & package complet et vérifiable \\
+\bottomrule
+\end{tabularx}
+\caption{Rubrique capstones (100 points)}
+\label{tab:capstones_rubric}
+\end{table}
+
+% =========================================================
+\section{Package final (repo + docs + demo + audit)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Item} & \textbf{Contenu minimal} \\
+\midrule
+Repo structure & /programs /app /tests /scripts /docs /monitoring \\
+Docs & architecture, API, threat model, runbook, deployment/rollback \\
+Audit report & 10 pages min : findings, sévérité, correctifs, preuves \\
+Observabilité & dashboard + règles d'alerting + playbooks \\
+Demo & vidéo + script live + scénario \\
+\bottomrule
+\end{tabularx}
+\caption{Package final (DoD capstone)}
+\label{tab:package_final}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=8mm,
+  box/.style={draw, rounded corners, align=center, minimum width=32mm, minimum height=9mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (build) {Build};
+\node[box, right=10mm of build] (test) {Test};
+\node[box, right=10mm of test] (audit) {Audit Doc};
+\node[box, right=10mm of audit] (release) {Release};
+\node[box, right=10mm of release] (demo) {Demo};
+
+\draw[arr] (build) -- (test);
+\draw[arr] (test) -- (audit);
+\draw[arr] (audit) -- (release);
+\draw[arr] (release) -- (demo);
+\end{tikzpicture}
+\caption{Packaging pipeline : build $\rightarrow$ test $\rightarrow$ audit doc $\rightarrow$ release $\rightarrow$ demo}
+\label{fig:packaging_pipeline}
+\end{figure}
+
+\end{document}
+
+% --- FILE: whitepaper/src/separates/Track_A_Solana_Rust_Anchor.tex ---
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Encodage / langue ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---------- Mise en page ----------
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+% ---------- Typo / utilitaires ----------
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+% ---------- Tableaux ----------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+% ---------- Figures / schémas ----------
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+% ---------- Encadrés ----------
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white, colframe=black!60, sharp corners, boxrule=0.6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+
+% ---------- Macros ----------
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\DoD}{\textbf{DoD}}
+\newcommand{\KPI}{\textbf{KPI}}
+
+\title{TRACK A --- Solana Smart Contract Engineer (Rust/Anchor)\\\large Détail exécutable (PDF séparé)}
+\author{RBK 2.0}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{6pt}
+
+% =========================================================
+\section{Résumé exécutif du track (1 page)}
+\label{sec:exec_summary}
+
+\paragraph{Positionnement.}
+Ce track forme un \textbf{Smart Contract Engineer Solana} capable de livrer des programmes \textbf{audit-ready}, conscients des contraintes \textbf{Account Model / CPI / compute units} et de la réalité \textbf{production} (observabilité, incidents, UX transactionnelle, reproductibilité). Le profil de sortie visé est le \textbf{Guardian} : un ingénieur qui sait \emph{concevoir, implémenter, tester, documenter, auditer, durcir et opérer} un smart contract Solana.
+
+\paragraph{Promesse mesurable.}
+À la fin du track, l'apprenant est capable de :
+\begin{itemize}
+  \item produire un \textbf{repo studio-grade} avec \textbf{tests automatisés}, \textbf{documentation}, \textbf{scripts reproductibles}, \textbf{CI} et \textbf{runbook},
+  \item présenter un \textbf{threat model} (STRIDE simplifié) et un \textbf{mini-audit report} (findings classés, correctifs, preuves),
+  \item maîtriser les patterns \textbf{PDA / seeds / constraints / CPI} et éviter les anti-patterns de sécurité,
+  \item livrer un \textbf{capstone de production} incluant observabilité, critères d'acceptation et performance budget (compute).
+\end{itemize}
+
+\paragraph{Pré-requis.}
+\begin{itemize}
+  \item Rust niveau intermédiaire (ownership/borrowing, Result, modules, tests).
+  \item Bases blockchain : transactions, signatures, état, events/logs.
+  \item Discipline d'ingénierie : Git, PRs, revue, documentation.
+\end{itemize}
+
+\paragraph{Différenciation pédagogique (non négociable).}
+\begin{itemize}
+  \item \textbf{Spec-first} : aucun lab sans spécification, critères d'acceptation et plan de tests.
+  \item \textbf{Security-first} : threat model et checklists à chaque jalon.
+  \item \textbf{Reproductibilité} : scripts de build/test, environnements et démos rejouables.
+  \item \textbf{Production mindset} : observabilité, runbook, erreurs explicites, UX transaction.
+\end{itemize}
+
+\begin{tcolorbox}[title={Ce que ce track n'est pas}]
+Ce track \textbf{n'est pas} un apprentissage ``rapide'' centré sur la syntaxe. Il vise la capacité à \textbf{livrer} des programmes Solana robustes, testés, documentés et \textbf{auditable} --- c'est-à-dire utilisables dans un contexte professionnel.
+\end{tcolorbox}
+
+% =========================================================
+\section{Objectifs mesurables et preuves attendues}
+\label{sec:objectifs}
+
+\paragraph{Règle.} Chaque compétence est évaluée par une \textbf{preuve vérifiable} (artefact), un \textbf{seuil minimal} et un \textbf{outil de vérification}.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{lY Y Y}
+\toprule
+\textbf{Domaine} & \textbf{Compétence} & \textbf{Preuve attendue} & \textbf{Outil \& seuil minimal} \\
+\midrule
+Solana Model & Account model correct (owners, signers, rent/lamports, sérialisation) &
+Schéma des comptes + tests de cas limites + logs explicites &
+Anchor/solana test + couverture tests \(\geq\) 70\% des branches critiques \\
+Anchor & PDAs/constraints robustes (seeds, bumps, ownership checks) &
+IDL + tests négatifs + checklist seeds/constraints signée &
+Anchor tests + revue ``security gate'' validée \\
+CPI & Composabilité via CPI sans fuite d'autorité &
+Schéma call-graph + tests CPI + restrictions d'authority &
+Tests d'intégration + audit checklist ``CPI safety'' \\
+Sécurité & Threat model (STRIDE) + findings &
+Document threat model + mini audit report (min 6 findings dont 2 ``High'') &
+Template audit + preuves (PoC tests) \\
+Qualité & CI/CD + reproductibilité &
+Pipeline CI + scripts build/test + README exécutable &
+CI verte + ``fresh clone works'' (checklist) \\
+Production & Observabilité + runbook incidents &
+Dashboard (métriques/alertes) + runbook + scénarios incidents simulés &
+PRR validée + MTTR cible simulée \(\leq\) 30 min \\
+Performance & Compute-aware + optimisation raisonnable &
+Benchmarks CU + justification + budget perf &
+Rapport perf + respect budget CU défini \\
+\bottomrule
+\end{tabularx}
+\caption{Compétences cibles vs preuves vérifiables}
+\label{tab:competences_preuves}
+\end{table}
+
+% =========================================================
+\section{Programme (12 semaines : Semaines 9--20) --- modules 1$\rightarrow$4}
+\label{sec:programme}
+
+\paragraph{Principe.} Chaque semaine produit un \textbf{artefact portfolio}. Chaque module se termine par un \textbf{jalon} avec \textbf{criteria gate} (Go/No-Go).
+
+\begin{longtable}{p{1.4cm}p{3.2cm}p{4.2cm}p{3.6cm}p{3.2cm}}
+\toprule
+\textbf{Semaine} & \textbf{Focus} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD (Definition of Done)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Semaine} & \textbf{Focus} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD (Definition of Done)} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\emph{Suite page suivante}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+S9 & Solana modèle (natif) &
+Transactions, instructions, comptes, signers, sérialisation &
+Lab A v0 : Message Board (natif) &
+Tests unit + tests négatifs + README exécutable \\
+
+S10 & Ownership / sécurité de base &
+Contrôles owner, signers, erreurs explicites, logs &
+Lab A v1 : Message Board + permissions &
+Checklist sécu module 1 signée + couverture cible \\
+
+S11 & Vault/Escrow natif &
+Gestion de dépôts, conditions de release, cas limites &
+Lab B : Mini-Escrow/Vault natif &
+Spec + tests e2e + schéma comptes + démo \\
+
+S12 & Anchor fundamentals &
+Macros, Accounts constraints, IDL, erreurs &
+Lab C : Counter+Vault (Anchor) &
+IDL propre + tests + events + doc ``API surface'' \\
+
+S13 & Anchor PDAs &
+Seeds/bump, authorities, constraints avancées &
+Lab D : Staking minimal (Anchor) &
+Tests de sécurité (négatifs) + audit checklist \\
+
+S14 & Anchor composabilité &
+Events, CPI simple, patterns robustes &
+Livrable module 2 : ``Anchor Pack'' &
+Gate module 2 : PR review + IDL + tests + doc \\
+
+S15 & Architectures avancées &
+CPI orchestrator, séparation programmes, invariants &
+Lab E : CPI composability challenge &
+Call graph + tests CPI + threat model \\
+
+S16 & Token standards / extensions &
+Token-2022 (ou équivalent selon stack), metadata patterns &
+Lab F : Token extension + policy &
+ADR + tests + doc d'intégration client \\
+
+S17 & Innovation / intégration &
+Indexation, UX tx, actions/blinks (si retenu) &
+Livrable module 3 : ``Composable System'' &
+Gate module 3 : PRR partielle + bench CU \\
+
+S18 & Hardening production &
+Runbook, logs, métriques, alerting, error taxonomy &
+Capstone v0 : PRR + monitoring &
+Checklist PRR 60\% + observabilité en place \\
+
+S19 & Performance + sécurité &
+Compute budget, optimisations, tests de charge &
+Capstone v1 : perf + security gate &
+Budget CU respecté + findings traités \\
+
+S20 & Release studio &
+CI, versioning, docs, démo, post-mortem simulé &
+Capstone final : release &
+Gate final : CI verte + audit report + demo \\
+
+\caption{Semaine $\rightarrow$ objectifs $\rightarrow$ lab $\rightarrow$ livrable $\rightarrow$ \DoD}
+\label{tab:programme_12semaines}
+\end{longtable}
+
+% =========================================================
+\section{Labs détaillés et critères d'acceptation}
+\label{sec:labs}
+
+\subsection*{Règles communes à tous les labs}
+\begin{itemize}
+  \item Chaque lab commence par une \textbf{spec} (fonctionnalités, comptes, invariants, erreurs).
+  \item Les tests incluent \textbf{cas nominaux} + \textbf{cas négatifs} (attaques triviales, permissions, double-spend, etc.).
+  \item Chaque livrable inclut : \textbf{README exécutable}, \textbf{scripts}, \textbf{schéma des comptes}, \textbf{journal des décisions} (ADR).
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab A --- Message Board (natif Solana)}
+\paragraph{Objectif.} Construire une primitive on-chain simple, mais \textbf{correcte} : stockage sérialisé, authorisation, erreurs explicites, logs.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Fonctionnalité} & \textbf{Entrées / Comptes} & \textbf{Tests attendus (mesurables)} \\
+\midrule
+Créer un message & signer auteur + compte message (PDA ou compte dédié) &
+création OK ; échec si auteur absent ; taille max contrôlée \\
+Modifier un message & signer auteur + compte message &
+échec si non-auteur ; logs explicites ; état cohérent \\
+Lister via indexation off-chain & events/logs + indexer (simulé) &
+events émis ; schéma d'event stable ; doc d'intégration \\
+Gestion erreurs & codes d'erreur + messages &
+tests sur erreurs attendues ; pas d'erreurs silencieuses \\
+\bottomrule
+\end{tabularx}
+\caption{Spécification Lab A (Message Board)}
+\label{tab:labA_spec}
+\end{table}
+
+\paragraph{Critères d'acceptation (Gate Lab A).}
+\begin{itemize}
+  \item README ``fresh clone'' : un clone vierge compile et passe les tests.
+  \item Tests : \(\geq\) 12 tests dont \(\geq\) 5 négatifs.
+  \item Documentation : schéma des comptes + table ``Instruction $\rightarrow$ comptes $\rightarrow$ erreurs''.
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab B --- Mini Escrow / Vault (natif Solana)}
+\paragraph{Objectif.} Implémenter un escrow/vault avec règles de release et \textbf{anti-abus}.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Règle} & \textbf{Invariants} & \textbf{Tests attendus} \\
+\midrule
+Dépôt & fonds conservés dans vault ; owner vérifié &
+dépôt OK ; échec si mauvais owner ; double dépôt contrôlé \\
+Release conditionnel & release uniquement si condition satisfaite &
+release OK ; échec si condition fausse ; reentrancy-like patterns (simulés) \\
+Cancel / timeout & cancel seulement par rôle autorisé / selon délai &
+cancel OK ; échec si rôle incorrect ; délais testés \\
+Journalisation & events pour opérations critiques &
+events présents ; payload stable ; doc d'event \\
+\bottomrule
+\end{tabularx}
+\caption{Invariants et tests Lab B (Escrow/Vault)}
+\label{tab:labB_invariants}
+\end{table}
+
+% ---------------------------
+\subsection*{Lab C --- Counter+Vault (Anchor fundamentals)}
+\paragraph{Objectif.} Maîtriser IDL, macros, constraints, events, error codes.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Instruction} & \textbf{Comptes (résumé)} & \textbf{Erreurs \& tests} \\
+\midrule
+initialize & authority signer + state PDA &
+échec si déjà init ; seeds correctes \\
+increment & authority signer + state PDA &
+échec si non-authority ; event émis \\
+deposit/withdraw & user signer + vault + state &
+échec si fonds insuffisants ; logs ; invariants \\
+\bottomrule
+\end{tabularx}
+\caption{IDL et surface API Lab C}
+\label{tab:labC_idl}
+\end{table}
+
+% ---------------------------
+\subsection*{Lab D --- Staking minimal (Anchor PDAs \& constraints)}
+\paragraph{Objectif.} PDAs déterministes + constraints robustes + tests négatifs.
+
+\paragraph{Critères d'acceptation.}
+\begin{itemize}
+  \item Tous les accès sensibles protégé par checks explicites (authority/owner/signers).
+  \item Seeds documentées ; tests sur seeds ; ``bump mismatch'' géré.
+  \item Tests de retrait anticipé/illégitime \(\rightarrow\) échec explicite.
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab E --- CPI composability challenge (Architecture avancée)}
+\paragraph{Objectif.} Construire un orchestrateur qui appelle un programme ``service'' via CPI en conservant un modèle d'autorité sain.
+
+\begin{tcolorbox}[title={Exigences CPI (non négociables)}]
+\begin{itemize}
+  \item Aucun CPI ne doit introduire une autorité implicite ou réutilisable par un tiers.
+  \item Les comptes en CPI doivent être minimaux et vérifiés (owner, seeds, signers).
+  \item Le call-graph est documenté et testé.
+\end{itemize}
+\end{tcolorbox}
+
+% ---------------------------
+\subsection*{Lab F --- Token extension / policy (Token-2022 ou équivalent)}
+\paragraph{Objectif.} Démontrer la capacité à gérer des métadonnées/policies et leur validation (off-chain + on-chain checks).
+
+\paragraph{Livrables.}
+\begin{itemize}
+  \item ADR : choix d'extension/pattern.
+  \item Tests : policy enforcement (positifs + négatifs).
+  \item Guide intégration client (front) : ``how to verify''.
+\end{itemize}
+
+% =========================================================
+\section{Rubrique de notation (standard audit) --- total 100}
+\label{sec:rubrique}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l c Y}
+\toprule
+\textbf{Axe} & \textbf{Poids} & \textbf{Critères (exemples mesurables)} \\
+\midrule
+Sécurité \& threat model & 25 &
+threat model complet ; findings classés ; corrections justifiées ; tests ``négatifs'' \\
+Tests \& qualité & 20 &
+tests unit+int ; cas limites ; CI stable ; couverture sur chemins critiques \\
+Architecture \& invariants & 15 &
+invariants explicités ; schémas comptes ; call-graph CPI ; décisions ADR \\
+Production \& observabilité & 15 &
+runbook ; logs ; métriques ; alerting ; scénarios incidents simulés \\
+Performance (compute) & 10 &
+budget CU ; benchmarks ; choix d'optimisation argumentés \\
+Docs \& demo & 15 &
+README exécutable ; doc API ; diagrammes ; démo reproductible \\
+\bottomrule
+\end{tabularx}
+\caption{Rubrique d'évaluation Track A (100 points)}
+\label{tab:rubric_trackA}
+\end{table}
+
+\begin{tcolorbox}[title={Condition d'échec immédiate (Fail conditions)}]
+\begin{itemize}
+  \item absence de tests négatifs sur les chemins d'autorité,
+  \item absence de documentation des seeds/PDA sur un programme Anchor,
+  \item livrable non reproductible (fresh clone ne compile pas / tests KO),
+  \item absence de threat model sur capstone.
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Stack outillage et standards repo}
+\label{sec:stack}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Catégorie} & \textbf{Outils} & \textbf{Standard attendu (artefact)} \\
+\midrule
+Toolchain & Rust toolchain, Solana CLI, Anchor &
+scripts build/test ; versions documentées ; ``fresh clone'' \\
+Testing & anchor test, tests TS, tests Rust &
+unit + integration + négatifs ; rapports CI \\
+Qualité & fmt/clippy, lint, pre-commit &
+format stable ; lint clean ; conventions repo \\
+Observabilité & logs, métriques, dashboards (selon stack) &
+runbook + alert rules + tableau ``signaux'' \\
+Docs & README, schémas, ADR, threat model &
+dossier /docs ; templates remplis ; lien demo \\
+\bottomrule
+\end{tabularx}
+\caption{Stack Track A --- outillage et standards}
+\label{tab:stack_trackA}
+\end{table}
+
+\begin{tcolorbox}[title={Standards repo (minimum)}]
+\begin{itemize}
+  \item \texttt{/programs} (code on-chain), \texttt{/tests}, \texttt{/scripts}, \texttt{/docs}
+  \item \texttt{README.md} exécutable + prérequis + ``how to run tests''
+  \item \texttt{docs/architecture.md}, \texttt{docs/threat-model.md}, \texttt{docs/adr/}
+  \item CI : lint + tests + artefacts (rapport) ; badge de status
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Portfolio minimal et employability pack}
+\label{sec:portfolio}
+
+\paragraph{Portfolio minimal (obligatoire).}
+\begin{itemize}
+  \item \textbf{Repo 1 --- Solana Native Primitive} : Lab A/B finalisé, tests négatifs, doc comptes.
+  \item \textbf{Repo 2 --- Anchor Program} : IDL propre, PDAs/constraints robustes, guide intégration client.
+  \item \textbf{Repo 3 --- Capstone Studio} : hardening + observabilité + perf budget + audit report.
+  \item \textbf{1 mini audit report} : findings, sévérité, correctifs, preuves tests.
+  \item \textbf{1 runbook} : incidents types + actions + métriques/alerting.
+\end{itemize}
+
+\paragraph{Employability pack (recruteur-ready).}
+\begin{itemize}
+  \item 1 page ``\emph{What I shipped}'' (liens repos + démos).
+  \item 1 page ``\emph{Security posture}'' (threat model + checklists + exemples corrections).
+  \item 1 page ``\emph{Performance posture}'' (compute budgets, benches, arbitrages).
+\end{itemize}
+
+% =========================================================
+\section{Annexes du track (templates \& checklists)}
+\label{sec:annexes_trackA}
+
+\subsection*{A) Security checklist Solana/Anchor (réutilisable)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Contrôle} & \textbf{Comment vérifier (preuve)} \\
+\midrule
+Owner checks & asserts explicites + tests négatifs \\
+Signer checks & requires signer + tests ``missing signer'' \\
+PDA seeds/bump & seeds documentées + tests seeds + collisions évitées \\
+Account constraints (Anchor) & constraints justifiées + tests violations \\
+CPI safety & call-graph + accounts minimal + authority non escaladable \\
+Error taxonomy & erreurs explicites + mapping doc + logs \\
+Replay / double spend logique & invariants + tests de répétition \\
+Overflow / underflow (logique) & checks + tests limites \\
+State machine cohérente & diagramme + tests transitions invalides \\
+\bottomrule
+\end{tabularx}
+\caption{Security checklist Solana/Anchor}
+\label{tab:security_checklist_trackA}
+\end{table}
+
+\subsection*{B) Template ADR (Architecture Decision Record)}
+\begin{tcolorbox}[title={ADR Template (copier-coller)}]
+\textbf{Titre :} ADR-\#\# --- \emph{[Décision]}\\
+\textbf{Contexte :} \emph{[Problème, contraintes]}\\
+\textbf{Options :} \emph{[Option A / B / C]}\\
+\textbf{Décision :} \emph{[Choix]}\\
+\textbf{Rationale :} \emph{[Pourquoi]}\\
+\textbf{Conséquences :} \emph{[Trade-offs]}\\
+\textbf{Risques :} \emph{[Risques]}\\
+\textbf{Mitigations :} \emph{[Contrôles/tests]}\\
+\end{tcolorbox}
+
+\subsection*{C) Template Threat Model (STRIDE simplifié)}
+\begin{tcolorbox}[title={Threat Model Template (STRIDE simplifié)}]
+\textbf{Système :} \emph{[Nom + périmètre]}\\
+\textbf{Actifs critiques :} \emph{[fonds, autorisations, état]}\\
+\textbf{Hypothèses :} \emph{[RPC, indexer, user behavior]}\\
+\textbf{Surfaces d'attaque :} \emph{[instructions, CPI, accounts]}\\
+\textbf{Menaces (STRIDE) :}\\
+- Spoofing : \emph{[...]}\\
+- Tampering : \emph{[...]}\\
+- Repudiation : \emph{[...]}\\
+- Information disclosure : \emph{[...]}\\
+- Denial of service : \emph{[...]}\\
+- Elevation of privilege : \emph{[...]}\\
+\textbf{Contrôles :} \emph{[checks, constraints, tests]}\\
+\textbf{Tests associés :} \emph{[négatifs, invariants]}\\
+\end{tcolorbox}
+
+\subsection*{D) PRR --- Production Readiness Review (tableau)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Domaine} & \textbf{Critère} & \textbf{Preuve} \\
+\midrule
+Qualité & CI verte + tests + lint clean & logs CI + badge + rapports \\
+Sécurité & threat model + checklist signée & docs + PR review \\
+Docs & README exécutable + API surface & /docs + guide \\
+Observabilité & logs + métriques + alertes & dashboard + runbook \\
+Perf & budget CU + bench & rapport bench \\
+Release & versioning + changelog & tag + notes \\
+\bottomrule
+\end{tabularx}
+\caption{PRR (Production Readiness Review) --- Track A}
+\label{tab:prr_trackA}
+\end{table}
+
+% =========================================================
+\section{Figures indispensables (TikZ)}
+\label{sec:figures}
+
+\subsection*{Figure 1 --- Account model / instruction flow}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=10mm,
+  box/.style={draw, rounded corners, align=center, minimum width=34mm, minimum height=10mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (user) {Utilisateur\\(wallet)};
+\node[box, right=18mm of user] (tx) {Transaction\\+ signatures};
+\node[box, right=18mm of tx] (program) {Program\\Solana};
+\node[box, below=10mm of program] (accounts) {Accounts\\(state, vault, PDA)};
+\node[box, below=10mm of tx] (rpc) {RPC / Runtime};
+
+\draw[arr] (user) -- (tx);
+\draw[arr] (tx) -- (rpc);
+\draw[arr] (rpc) -- (program);
+\draw[arr] (program) -- (accounts);
+\draw[arr] (accounts) -- (program);
+\end{tikzpicture}
+\caption{Account model / instruction flow (vue simplifiée)}
+\label{fig:account_model_flow}
+\end{figure}
+
+\subsection*{Figure 2 --- CPI call graph (simplifié)}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=12mm,
+  box/.style={draw, rounded corners, align=center, minimum width=34mm, minimum height=10mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (A) {Programme A\\(Orchestrator)};
+\node[box, right=20mm of A] (B) {Programme B\\(Service)};
+\node[box, right=20mm of B] (T) {Token Program\\/ Sys Program};
+
+\draw[arr] (A) -- node[above]{CPI} (B);
+\draw[arr] (B) -- node[above]{CPI} (T);
+
+\node[below=8mm of A, align=left] (note) {\small \textbf{Règle :} comptes minimaux, owner checks,\\\small authority explicitement contrôlée.};
+\end{tikzpicture}
+\caption{CPI call graph (orchestrateur $\rightarrow$ service $\rightarrow$ programme système)}
+\label{fig:cpi_call_graph}
+\end{figure}
+
+\end{document}
+
+% --- FILE: whitepaper/src/separates/Track_B_EVM_Solidity_Foundry.tex ---
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white, colframe=black!60, sharp corners, boxrule=0.6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\DoD}{\textbf{DoD}}
+
+\title{TRACK B --- EVM Engineer (Solidity/Foundry)\\\large Détail exécutable (PDF séparé)}
+\author{RBK 2.0}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{6pt}
+
+% =========================================================
+\section{Résumé exécutif}
+\paragraph{Positionnement.}
+Ce track vise un \textbf{EVM Engineer} capable de livrer des smart contracts Solidity \textbf{production-ready} avec une discipline de tests \textbf{professionnelle} (unit, fuzz, invariants), une approche \textbf{security-first}, la maîtrise des standards (ERC) et des patterns industriels (déploiement, verification, upgrades, monitoring).
+
+\paragraph{Promesse mesurable.}
+\begin{itemize}
+  \item Capacité à produire des contracts avec \textbf{Foundry pipeline complet} (unit $\rightarrow$ fuzz $\rightarrow$ invariants $\rightarrow$ coverage).
+  \item Capacité à livrer un projet intégrant \textbf{verification on-chain}, scripts de déploiement reproductibles et \textbf{plan d'upgrade} (UUPS).
+  \item Capacité à rédiger un \textbf{mini audit report} et à corriger des findings.
+\end{itemize}
+
+\begin{tcolorbox}[title={Non négociables (track B)}]
+\begin{itemize}
+  \item Tests fuzz et invariants sur les composants critiques.
+  \item Threat model + checklist sécurité.
+  \item Scripts de déploiement et verification reproductibles.
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Objectifs mesurables (preuves)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Domaine} & \textbf{Compétence} & \textbf{Preuve + outil (seuil)} \\
+\midrule
+Solidity core & Storage/memory/calldata, errors, events, libs &
+Repo ``Vault/Escrow'' + tests + doc API \\
+Testing pro & unit + fuzz + invariants &
+Foundry pipeline + rapports ; invariants sur modules critiques \\
+Standards & ERC-20/721 (+extensions) &
+Contrat standard + RBAC + scripts deploy/verify \\
+Upgrades & UUPS + gouvernance d'upgrade &
+Plan d'upgrade + tests + ``upgrade safety checklist'' \\
+Sécurité & vuln classes + mitigations &
+Mini audit report (min 8 findings) + correctifs testés \\
+Production & deploy manifest + monitoring plan &
+address book + runbook + events/metrics map \\
+\bottomrule
+\end{tabularx}
+\caption{Objectifs mesurables Track B}
+\label{tab:objectifs_trackB}
+\end{table}
+
+% =========================================================
+\section{Programme (12 semaines : modules 1$\rightarrow$6)}
+\begin{longtable}{p{1.4cm}p{3.2cm}p{4.2cm}p{3.6cm}p{3.2cm}}
+\toprule
+\textbf{Semaine} & \textbf{Module} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Semaine} & \textbf{Module} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\emph{Suite page suivante}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+S9 & M1 & Solidity deep dive + state machine & Vault v0 & unit tests + doc \\
+S10 & M1 & permissions + erreurs + events & Escrow & tests négatifs + invariants \\
+S11 & M2 & Foundry env pro & Pipeline CI + coverage & CI verte + badges \\
+S12 & M2 & fuzz/invariants & Fuzz harness sur vault & invariants + report \\
+S13 & M3 & ERC standards & ERC-20/721 + RBAC & deploy scripts + verify \\
+S14 & M3 & composabilité & module composable & tests + docs \\
+S15 & M4 & dApp integration & front minimal + tx UX & demo + error taxonomy \\
+S16 & M4 & events + indexing & indexer simple & logs + docs \\
+S17 & M5 & L2/patterns + gas & gas budget + optim & bench + justification \\
+S18 & M5 & upgrades UUPS & UUPS + upgrade plan & tests upgrades \\
+S19 & M6 & security hardening & audit checklist + fix & mini audit report \\
+S20 & M6 & capstone release & capstone final & PRR + verification + demo \\
+
+\caption{Programme Track B (12 semaines)}
+\label{tab:programme_trackB}
+\end{longtable}
+
+% =========================================================
+\section{Labs détaillés (extraits studio-grade)}
+
+\subsection*{Lab Vault (Module 1) --- Spec \& invariants}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Fonctionnalité} & \textbf{Invariants} & \textbf{Tests attendus} \\
+\midrule
+deposit & balance augmente, event émis & unit tests + fuzz sur montants \\
+withdraw & ne dépasse pas balance & tests négatifs + invariant ``never negative'' \\
+roles & seuls rôles autorisés & tests access control \\
+\bottomrule
+\end{tabularx}
+\caption{Vault spec (résumé)}
+\end{table}
+
+\subsection*{Lab UUPS Upgrade (Module 5) --- Safety gate}
+\begin{tcolorbox}[title={Upgrade safety checklist (résumé)}]
+\begin{itemize}
+  \item stockage compatible (pas de collisions) + tests de migration
+  \item gouvernance d'upgrade (qui peut upgrader ?)
+  \item rollback plan + address book + verification
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Rubrique standard audit EVM (100 points)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l c Y}
+\toprule
+\textbf{Axe} & \textbf{Poids} & \textbf{Critères} \\
+\midrule
+Sécurité (threat model + findings) & 30 & vuln classes couvertes + correctifs testés \\
+Tests (unit+fuzz+invariants) & 25 & invariants critiques + coverage utile \\
+Standards + composabilité & 15 & ERC correct + RBAC + scripts \\
+Upgrades + production & 15 & UUPS safe + PRR + deploy manifest \\
+Docs + demo & 15 & README + API + demo reproductible \\
+\bottomrule
+\end{tabularx}
+\caption{Rubrique Track B}
+\label{tab:rubric_trackB}
+\end{table}
+
+% =========================================================
+\section{Stack Foundry + outils}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Catégorie} & \textbf{Outils} & \textbf{Artefact attendu} \\
+\midrule
+Dev & Foundry (forge/cast/anvil) & scripts + pipeline tests \\
+Qualité & lint/format + CI & badges + rapports \\
+Sécurité & analyse statique (option) + checklist & mini audit report \\
+Deploy & scripts + verification & address book + verify links \\
+Monitoring & events map + runbook & plan monitoring + alerting \\
+\bottomrule
+\end{tabularx}
+\caption{Stack Track B}
+\end{table}
+
+% =========================================================
+\section{Tables/Figures indispensables}
+
+\subsection*{Table --- Foundry pipeline}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Étape} & \textbf{Objectif / preuve} \\
+\midrule
+Unit tests & logique nominale + edge cases \\
+Fuzz tests & robustesse sur large espace d'entrées \\
+Invariant tests & propriétés globales (safety) \\
+Coverage & visibilité sur chemins critiques \\
+Report & rapport CI + conclusions \\
+\bottomrule
+\end{tabularx}
+\caption{Foundry pipeline : unit $\rightarrow$ fuzz $\rightarrow$ invariants $\rightarrow$ coverage}
+\label{tab:foundry_pipeline}
+\end{table}
+
+\subsection*{Table --- Vuln classes $\rightarrow$ tests $\rightarrow$ mitigations}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Classe} & \textbf{Test} & \textbf{Mitigation} \\
+\midrule
+Auth flaws & tests rôles + négatifs & least privilege + modifiers \\
+Reentrancy & scénario appel externe & checks-effects-interactions / guards \\
+DoS & tests limites + gas & bounded loops + pull pattern \\
+Oracle misuse & tests data stale & validations + fallback \\
+Upgrade risks & tests migration & storage discipline + governance \\
+\bottomrule
+\end{tabularx}
+\caption{Vuln classes $\rightarrow$ tests $\rightarrow$ mitigations (défensif)}
+\label{tab:vuln_tests_mitigations}
+\end{table}
+
+\subsection*{Figure --- UUPS upgrade flow}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=10mm,
+  box/.style={draw, rounded corners, align=center, minimum width=34mm, minimum height=10mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (impl1) {Impl v1};
+\node[box, right=18mm of impl1] (proxy) {Proxy (UUPS)};
+\node[box, below=10mm of proxy] (admin) {Upgrade Authority};
+\node[box, right=18mm of proxy] (impl2) {Impl v2};
+
+\draw[arr] (impl1) -- (proxy);
+\draw[arr] (admin) -- node[right]{upgradeTo} (proxy);
+\draw[arr] (impl2) -- (proxy);
+\end{tikzpicture}
+\caption{UUPS upgrade flow (vue simplifiée)}
+\label{fig:uups_flow}
+\end{figure}
+
+\subsection*{Figure --- From code to mainnet (verification \& monitoring)}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=8mm,
+  box/.style={draw, rounded corners, align=center, minimum width=32mm, minimum height=9mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (code) {Code Solidity};
+\node[box, right=10mm of code] (tests) {Tests Foundry};
+\node[box, right=10mm of tests] (deploy) {Deploy scripts};
+\node[box, right=10mm of deploy] (verify) {Verification};
+\node[box, right=10mm of verify] (monitor) {Monitoring};
+
+\draw[arr] (code) -- (tests);
+\draw[arr] (tests) -- (deploy);
+\draw[arr] (deploy) -- (verify);
+\draw[arr] (verify) -- (monitor);
+\end{tikzpicture}
+\caption{Chaîne industrielle : code $\rightarrow$ tests $\rightarrow$ deploy $\rightarrow$ verify $\rightarrow$ monitoring}
+\label{fig:code_to_mainnet}
+\end{figure}
+
+\end{document}

@@ -39,6 +39,24 @@ Ce kit fournit les templates et checklists pratiques pour que l'étudiant puisse
 Flux type : \textbf{Étudiant RBK (Tunisie) $\to$ Portfolio GitHub $\to$ Plateforme (Upwork, X) $\to$ Client (USA/DAO) $\to$ Contrat Signé $\to$ Paiement USDC.}
 
 \subsection{Arbre de Décision : Quelle Voie Choisir ?}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, font=\small]
+        \node (start) [draw, rounded corners] {Recevoir Salaire ($>$ 2000 USD)};
+        \node (ease) [draw, diamond, aspect=2, below of=start] {Je veux la simplicité ?};
+        
+        \node (grey) [draw, rectangle, fill=green!10, below of=ease, xshift=-3cm] {Option A : Passerelle (Grey/Bitwage)};
+        \node (wallet) [draw, rectangle, fill=orange!10, below of=ease, xshift=3cm] {Option B : Wallet Pro (Direct)};
+        
+        \node (greyinfo) [below of=grey, text width=4cm, align=center] {Conversion auto USDC $\to$ TND \\ Virement sur banque locale \\ \textbf{100\% Conforme}};
+        \node (walletinfo) [below of=wallet, text width=4cm, align=center] {Conversion immédiate USDC \\ Tenue comptabilité devises \\ Déclaration BCT Manuelle};
+
+        \draw[->] (start) -- (ease);
+        \draw[->] (ease) -| node[near start, above] {OUI} (grey);
+        \draw[->] (ease) -| node[near start, above] {NON} (wallet);
+    \end{tikzpicture}
+    \caption{Stratégie de Réception des Fonds Web3}
+\end{figure}
 \begin{enumerate}
     \item \textbf{Je veux la simplicité :} Utiliser \textbf{GREY.CO} ou \textbf{BITWAGE}.
     \begin{itemize}

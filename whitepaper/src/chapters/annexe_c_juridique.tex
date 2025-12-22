@@ -4,6 +4,10 @@
 \chapter{ANNEXE — CADRE JURIDIQUE \& CONFORMITÉ (TUNISIE)}
 \label{annexe:juridique}
 
+\begin{ceoBox}{Synthèse Juridique : Opérer depuis la Tunisie}
+Grâce au statut \textbf{Entreprise Totalement Exportatrice (ETE)}, l'ingénieur RBK bénéficie d'une exonération fiscale massive sur ses revenus étrangers (0\% IS pendant 4 ans, puis 10\%). Ce cadre, couplé à une gestion rigoureuse des flux crypto/fiat, fait de la Tunisie un hub Web3 ultra-compétitif.
+\end{ceoBox}
+
 Cette annexe détaille le cadre légal permettant d'opérer depuis la Tunisie en tant qu'ingénieur Web3 exportateur.
 
 \section{Statut d'Entreprise Totalement Exportatrice (ETE)}
@@ -17,6 +21,30 @@ Pour bénéficier du statut ETE, RBK (et ses alumni entrepreneurs) doit :
     \item \textbf{Exporter 100\% de ses services} à l'étranger (formation remote, consulting, audit).
     \item \textbf{Justifier d'un plan d'affaires} et créer un minimum d'emplois.
 \end{itemize}
+
+\subsection{Procédure d'Obtention (Flux Visuel)}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm, auto]
+        \node (start) [draw, rounded corners] {Dépôt Dossier APII};
+        \node (instruct) [draw, rectangle, below of=start] {Instruction Technique (15j)};
+        \node (commission) [draw, rectangle, below of=instruct] {Commission Agrément (10j)};
+        \node (decision) [draw, diamond, aspect=2, below of=commission] {Décision};
+        \node (agrement) [draw, rectangle, fill=green!10, below of=decision, xshift=-2cm] {Agrément ETE};
+        \node (refus) [draw, rectangle, fill=red!10, below of=decision, xshift=2cm] {Refus (Recours)};
+        \node (rne) [draw, rectangle, below of=agrement] {Enregistrement RNE (10j)};
+        \node (bank) [draw, rectangle, below of=rne] {Compte Devises (5j)};
+
+        \draw[->] (start) -- (instruct);
+        \draw[->] (instruct) -- (commission);
+        \draw[->] (commission) -- (decision);
+        \draw[->] (decision) -| node[near start, left] {OK} (agrement);
+        \draw[->] (decision) -| node[near start, right] {KO} (refus);
+        \draw[->] (agrement) -- (rne);
+        \draw[->] (rne) -- (bank);
+    \end{tikzpicture}
+    \caption{Processus d'Obtention Agrément ETE (45 jours)}
+\end{figure}
 
 \subsection{Avantages Fiscaux (Synthèse)}
 \begin{table}[h]

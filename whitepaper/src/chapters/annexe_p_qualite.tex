@@ -1,0 +1,59 @@
+% ==============================================================================
+% Annexe P : Charte de Qualité (Règles Non Négociables)
+% ==============================================================================
+\chapter{ANNEXE — CHARTE DE QUALITÉ \& RÈGLES D'OR}
+\label{annexe:qualite}
+
+RBK 2.0 repose sur un socle de valeurs non négociables. Tout manquement à ces règles entraîne une exclusion immédiate ou un refus de certification.
+
+\section*{Les 4 Commandements de l'Ingénieur RBK}
+
+\begin{itemize}
+    \item[\faCheckCircle] \textbf{Règle 1 : No Broken Windows} \\
+    Aucun code n'est mergé sur `main` s'il contient des warnings de linter ou des TODOs non résolus. La propreté du code est le reflet de la clarté de la pensée.
+    
+    \item[\faCheckCircle] \textbf{Règle 2 : Don't Trust, Verify} \\
+    Chaque ligne de code générée par IA (Copilot, ChatGPT) doit être auditée, comprise et testée. Une vulnérabilité introduite par "copier-coller" est une faute grave.
+    
+    \item[\faCheckCircle] \textbf{Règle 3 : Ships or Nothing} \\
+    Un projet non déployé n'existe pas. Un code qui ne tourne que sur `localhost` vaut zéro. La livraison (Mainnet ou Testnet public) est le seul juge de paix.
+    
+    \item[\faCheckCircle] \textbf{Règle 4 : Leave No One Behind} \\
+    Le savoir ne vaut que s'il est partagé. Refuser d'aider un pair ou cacher une information technique est contraire à l'esprit Web3 (Open Source).
+\end{itemize}
+
+\section{Matrice de Conformité (Sanctions)}
+
+\begin{table}[h]
+    \centering
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{|l|X|l|}
+    \hline
+    \textbf{Infraction} & \textbf{Exemple} & \textbf{Sanction} \\ \hline
+    \textbf{Plagiat} & Copie repo externe sans crédit & Exclusion \\ \hline
+    \textbf{Négligence Sécurité} & Commit de Private Key & Blâme + Reset Projet \\ \hline
+    \textbf{Ghosting} & Absence non justifiée > 48h & Avertissement \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Processus de Validation Qualité (Flow)}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm]
+        \node (code) [draw, rounded corners] {Code Complete};
+        \node (lint) [draw, rectangle, below of=code] {Linter \& Format};
+        \node (test) [draw, diamond, aspect=2, below of=lint] {Tests Pass ?};
+        \node (audit) [draw, rectangle, below of=test, yshift=-1cm] {Audit IA \& Humain};
+        \node (merge) [draw, rectangle, fill=green!10, below of=audit] {Merge on Main};
+        \node (fix) [draw, rectangle, fill=red!10, right of=test, xshift=2cm] {Fix Bugs};
+
+        \draw[->] (code) -- (lint);
+        \draw[->] (lint) -- (test);
+        \draw[->] (test) -- node[left] {YES} (audit);
+        \draw[->] (test) -- node[above] {NO} (fix);
+        \draw[->] (fix) |- (lint);
+        \draw[->] (audit) -- (merge);
+    \end{tikzpicture}
+    \caption{Pipeline de Validation Qualité}
+\end{figure}

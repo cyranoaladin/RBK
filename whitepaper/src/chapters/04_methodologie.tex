@@ -4,6 +4,7 @@
 \section{Philosophie Pédagogique : Intégration du Bien-être}
 
 La méthodologie RBK 2.0 ne se contente pas de former des techniciens ; elle forge des \textit{athlètes cognitifs}. Conscients de la charge mentale intense imposée par l'apprentissage du développement blockchain (Rust, Zero-Knowledge Proofs, audits de sécurité), nous avons intégré une dimension \textbf{santé mentale et résilience} au cœur même du curriculum.
+\marginpar{\footnotesize \faHeartbeat\ \textbf{Priorité Absolue} : La santé mentale de l'étudiant est notre actif le plus précieux.}
 
 \begin{figure}[h]
     \centering
@@ -84,6 +85,55 @@ Pour objectiver la progression, nous utilisons une grille inspirée des "Enginee
 
 \subsection{Standardisation des Repos GitHub}
 Pas de "code spaghetti". Tous les projets étudiants doivent respecter la structure de l'organisation \texttt{rbk-studio}.
+
+\subsubsection{Workflow CI/CD Standard (YAML)}
+Chaque repo doit obligatoirement inclure ce workflow dans `.github/workflows/security.yml` :
+
+\begin{lstlisting}[language=yaml, caption=RBK Security Workflow Standard]
+name: RBK Security Gate
+on: [push, pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Audit Tools
+        run: |
+          cargo install cargo-audit
+          npm install -g solhint
+      - name: Static Analysis
+        run: |
+          cargo audit
+          solhint 'contracts/**/*.sol'
+      - name: Fuzzing Check
+        run: ./scripts/fuzz.sh --duration 300
+\end{lstlisting}
+
+\subsubsection{Script d'Audit Automatisé (Bash)}
+Exemple de script `scripts/audit.sh` à inclure :
+
+\begin{lstlisting}[language=bash, caption=Pre-Commit Audit Script]
+#!/bin/bash
+set -e
+echo "🔎 Starting RBK Pre-Commit Audit..."
+
+# 1. Check for Sensitive Keys
+if grep -r "PRIVATE_KEY" .; then
+    echo "❌ CRITICAL: Private Key found in code!"
+    exit 1
+fi
+
+# 2. Run Tests
+echo "🧪 Running Tests..."
+anchor test
+
+# 3. Verify Formatting
+echo "🎨 Checking Style..."
+cargo fmt -- --check
+
+echo "✅ Audit Passed. Ready to Push."
+\end{lstlisting}
 
 \begin{techBox}{Organisation rbk-studio (Structure Complète)}
 rbk-studio/
