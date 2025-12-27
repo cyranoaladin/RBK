@@ -290,3 +290,330 @@ Gross margin / student & Marge brute par étudiant & (Recettes - coûts directs)
 
 \paragraph{Recommandation d’usage.}
 Ce tableau doit être \textbf{revu en COPIL} (hebdo pendant cohorte) avec : (i) statut des actions risques, (ii) KPI en alerte, (iii) décisions consignées dans un journal de pilotage.
+
+\clearpage
+
+% ============================================================
+% (1) PAGE "HEATMAP KPI" — table courte + score global par domaine
+% ============================================================
+% Définitions couleurs locales pour cette section
+\definecolor{rbkGreen}{HTML}{C6EFCE}
+\definecolor{rbkAmber}{HTML}{FFEB9C}
+\definecolor{rbkRed}{HTML}{FFC7CE}
+\definecolor{rbkGray}{HTML}{F2F2F2}
+\definecolor{rbkBlue}{HTML}{D9E1F2}
+
+\section*{KPI Heatmap — Synthèse exécutive (hebdomadaire)}
+
+\noindent
+\textbf{Objectif.} Donner une lecture immédiate de l’état du programme par domaine (Admissions, Qualité, Sécurité, Ops, Carrière, Finance), avec un score global et des déclencheurs d’actions.
+
+\vspace{0.5em}
+
+\begin{tabularx}{\textwidth}{L{3.2cm} L{2.2cm} L{1.8cm} L{2.6cm} X}
+\toprule
+\rowcolor{rbkBlue}
+\textbf{Domaine} & \textbf{Score global (0--5)} & \textbf{Tendance} & \textbf{Statut} & \textbf{Signal / Explication (KPI en alerte + action)}\\
+\midrule
+
+Admissions \& Marketing
+& \cellcolor{rbkAmber}\textbf{3.0/5}
+& $\rightarrow$
+& \cellcolor{rbkAmber}\textbf{Alerte}
+& \textbf{Alerte:} CVR Lead$\rightarrow$Entretien en baisse; cohorte à \texttt{[12]} confirmés. \textbf{Action:} A-003 webinaires + A-002 pipeline admissions (Owner: Mkt/Ops).\\
+
+Pédagogie \& Engagement
+& \cellcolor{rbkGreen}\textbf{4.0/5}
+& $\nearrow$
+& \cellcolor{rbkGreen}\textbf{OK}
+& Attendance \texttt{[92\%]}, Lab completion \texttt{[88\%]}. \textbf{Action:} maintenir binômage A-017 et monitoring surcharge A-046.\\
+
+Qualité Studio (PR/CI/Tests)
+& \cellcolor{rbkAmber}\textbf{3.5/5}
+& $\rightarrow$
+& \cellcolor{rbkAmber}\textbf{Alerte légère}
+& CI pass rate \texttt{[78\%]} proche seuil; MT Green \texttt{[10h]}. \textbf{Action:} freeze merges si >24h (A-020) + stabilisation tests.\\
+
+Sécurité
+& \cellcolor{rbkAmber}\textbf{3.0/5}
+& $\searrow$
+& \cellcolor{rbkAmber}\textbf{Alerte}
+& Threat models incomplets (\texttt{[80\%]}). \textbf{Action:} A-024 threat model obligatoire + A-054 security gate capstone (Owner: SecLead).\\
+
+Ops \& Infrastructure
+& \cellcolor{rbkGreen}\textbf{4.5/5}
+& $\rightarrow$
+& \cellcolor{rbkGreen}\textbf{OK}
+& RPC error rate \texttt{[1.5\%]}; drills réalisés. \textbf{Action:} poursuivre runbooks + tests fallback (A-021/A-023).\\
+
+Carrière \& Employabilité
+& \cellcolor{rbkAmber}\textbf{3.0/5}
+& $\rightarrow$
+& \cellcolor{rbkAmber}\textbf{Alerte}
+& Portfolio readiness \texttt{[72\%]} (trop tôt ou retard). \textbf{Action:} Career pack A-037 + sprint bounties A-038 (Owner: Career).\\
+
+Finance
+& \cellcolor{rbkGreen}\textbf{4.0/5}
+& $\rightarrow$
+& \cellcolor{rbkGreen}\textbf{OK}
+& Budget variance \texttt{[+6\%]}; revenue collected \texttt{[96\%]}. \textbf{Action:} maintenir reporting variance A-008.\\
+
+\bottomrule
+\end{tabularx}
+
+\vspace{0.75em}
+
+\noindent
+\textbf{Méthode de calcul du score (proposition).}
+Chaque domaine est noté à partir de 3 à 6 KPI clés :
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{5} = tous KPI au-dessus des cibles ; \textbf{4} = 1 KPI en alerte légère ; \textbf{3} = 1 KPI en alerte + plan d’action actif ;
+  \item \textbf{2} = plusieurs KPI en alerte ou 1 KPI critique ; \textbf{1} = plusieurs KPI critiques ; \textbf{0} = domaine non pilotable (données manquantes ou incident majeur).
+\end{itemize}
+
+\noindent
+\textbf{Décision COPIL requise si} : un domaine $\le 2/5$ \textbf{ou} 2 domaines en alerte simultanée \textbf{ou} un KPI “critique” déclenché.
+
+
+% ============================================================
+% (2) MODÈLE CR COPIL / COSUI — LaTeX (professionnel, structuré)
+% ============================================================
+\clearpage
+\section*{Modèle de Compte Rendu — COPIL / COSUI (RBK Web3 Studio)}
+
+% ---- En-tête
+\noindent\textbf{Type de comité :} \fbox{COPIL} \quad \textbf{ou} \quad \fbox{COSUI}\\
+\textbf{Projet :} RBK Web3 Studio — Dual Track (EVM / Solana)\\
+\textbf{Date :} \underline{\hspace{4cm}} \quad
+\textbf{Heure :} \underline{\hspace{2cm}} \quad
+\textbf{Lieu / visio :} \underline{\hspace{5cm}}\\
+\textbf{Animateur :} \underline{\hspace{5cm}} \quad
+\textbf{Rédacteur :} \underline{\hspace{5cm}}\\
+\textbf{Référence CR :} \texttt{RBK-W3S-CR-\underline{\hspace{2cm}}} \quad
+\textbf{Version :} \underline{\hspace{1.5cm}}
+
+\vspace{0.6em}
+
+% ---- Participants
+\subsection*{1. Participants}
+\begin{tabularx}{\textwidth}{L{4.2cm} L{4.2cm} L{3.2cm} L{2.3cm}}
+\toprule
+\rowcolor{rbkGray}
+\textbf{Nom} & \textbf{Rôle} & \textbf{Organisation} & \textbf{Présence}\\
+\midrule
+\underline{\hspace{4cm}} & \underline{\hspace{4cm}} & \underline{\hspace{3cm}} & Présent / Excusé\\
+\underline{\hspace{4cm}} & \underline{\hspace{4cm}} & \underline{\hspace{3cm}} & Présent / Excusé\\
+\underline{\hspace{4cm}} & \underline{\hspace{4cm}} & \underline{\hspace{3cm}} & Présent / Excusé\\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.6em}
+
+% ---- Ordre du jour
+\subsection*{2. Ordre du jour}
+\begin{enumerate}[leftmargin=1.5em]
+  \item Revue KPI \& Heatmap (semaine \underline{\hspace{1.5cm}})
+  \item Avancement (pédagogie, contenus, tracks, capstones)
+  \item Risques / incidents / décisions sécurité
+  \item Budget \& ressources (mentors, outils, infra)
+  \item Carrière (placements, bounties, demo day)
+  \item Décisions / arbitrages / actions
+  \item Prochain comité
+\end{enumerate}
+
+% ---- KPI
+\subsection*{3. Revue KPI (synthèse)}
+\begin{tabularx}{\textwidth}{L{3.2cm} L{2.5cm} L{2.5cm} L{2.5cm} X}
+\toprule
+\rowcolor{rbkBlue}
+\textbf{Domaine} & \textbf{Score} & \textbf{État} & \textbf{KPI en alerte} & \textbf{Décision / action}\\
+\midrule
+Admissions & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+Qualité & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+Sécurité & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+Ops & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+Carrière & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+Finance & \underline{\hspace{2cm}} & OK / Alerte / Critique & \underline{\hspace{2cm}} & \underline{\hspace{5cm}}\\
+\bottomrule
+\end{tabularx}
+
+% ---- Avancement
+\subsection*{4. Avancement \& livrables}
+\paragraph{Points clés (fait / en cours / à risque).}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{Fait :} \underline{\hspace{13cm}}
+  \item \textbf{En cours :} \underline{\hspace{12.6cm}}
+  \item \textbf{À risque / bloqué :} \underline{\hspace{12cm}}
+\end{itemize}
+
+\paragraph{Décisions techniques majeures (ADR).}
+\begin{itemize}[leftmargin=1.2em]
+  \item ADR-\underline{\hspace{1cm}} : \underline{\hspace{12cm}} (Owner: \underline{\hspace{3cm}})
+  \item ADR-\underline{\hspace{1cm}} : \underline{\hspace{12cm}} (Owner: \underline{\hspace{3cm}})
+\end{itemize}
+
+% ---- Risques & incidents
+\subsection*{5. Risques \& incidents}
+\paragraph{Risque(s) en alerte / critique (extrait registre).}
+\begin{itemize}[leftmargin=1.2em]
+  \item R-\underline{\hspace{1cm}} : \underline{\hspace{12.2cm}} (Action: A-\underline{\hspace{1cm}})
+  \item R-\underline{\hspace{1cm}} : \underline{\hspace{12.2cm}} (Action: A-\underline{\hspace{1cm}})
+\end{itemize}
+
+\paragraph{Incidents depuis le dernier comité (résumé).}
+\begin{itemize}[leftmargin=1.2em]
+  \item INC-\underline{\hspace{1.5cm}} : \underline{\hspace{12cm}} (Sévérité: \underline{\hspace{1cm}} ; MTTR: \underline{\hspace{1cm}})
+\end{itemize}
+
+% ---- Décisions
+\subsection*{6. Décisions \& arbitrages}
+\begin{tabularx}{\textwidth}{L{2.2cm} L{10.2cm} L{2.8cm}}
+\toprule
+\rowcolor{rbkGray}
+\textbf{Déc. ID} & \textbf{Décision} & \textbf{Validation}\\
+\midrule
+D-\underline{\hspace{1.2cm}} & \underline{\hspace{10cm}} & Approuvé / Rejeté\\
+D-\underline{\hspace{1.2cm}} & \underline{\hspace{10cm}} & Approuvé / Rejeté\\
+\bottomrule
+\end{tabularx}
+
+% ---- Actions
+\subsection*{7. Plan d’actions (exécutable)}
+\begin{longtable}{L{2.0cm} L{8.2cm} L{2.8cm} L{2.6cm} L{2.8cm}}
+\toprule
+\rowcolor{rbkBlue}
+\textbf{Action ID} & \textbf{Action (verbe + livrable)} & \textbf{Owner} & \textbf{Échéance} & \textbf{Statut}\\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{rbkBlue}
+\textbf{Action ID} & \textbf{Action (verbe + livrable)} & \textbf{Owner} & \textbf{Échéance} & \textbf{Statut}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\textit{Suite page suivante}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+A-\underline{\hspace{1cm}} & \underline{\hspace{8cm}} & \underline{\hspace{2.3cm}} & \underline{\hspace{2cm}} & À faire / En cours / Fait\\
+A-\underline{\hspace{1cm}} & \underline{\hspace{8cm}} & \underline{\hspace{2.3cm}} & \underline{\hspace{2cm}} & À faire / En cours / Fait\\
+A-\underline{\hspace{1cm}} & \underline{\hspace{8cm}} & \underline{\hspace{2.3cm}} & \underline{\hspace{2cm}} & À faire / En cours / Fait\\
+
+\end{longtable}
+
+% ---- Prochain comité
+\subsection*{8. Prochain comité}
+\noindent
+\textbf{Date/heure :} \underline{\hspace{5cm}} \quad
+\textbf{Type :} COPIL / COSUI \quad
+\textbf{Objectif :} \underline{\hspace{7cm}}
+
+\vspace{0.6em}
+\noindent
+\textbf{Annexes :} (1) Heatmap KPI, (2) Extrait registre risques, (3) Journal d’incidents, (4) ADRs nouvelles.
+
+
+
+% ============================================================
+% (3) JOURNAL D'INCIDENTS — longtable aligné MTTR / drills / runbooks
+% ============================================================
+\clearpage
+\section*{Journal d’incidents (v1) — Aligné MTTR / drills / runbooks}
+
+\noindent
+\textbf{But.} Tracer chaque incident (réel ou drill), mesurer MTTA/MTTR, relier aux runbooks et suivre les actions correctives jusqu’à clôture.
+
+\vspace{0.4em}
+
+\begin{longtable}{L{1.7cm} L{2.2cm} L{1.6cm} L{1.6cm} L{2.2cm} L{4.8cm} L{2.6cm} L{2.4cm} L{1.6cm} L{1.6cm} L{2.9cm} L{3.6cm} L{2.8cm}}
+\caption{Journal d’incidents v1 — RBK Web3 Studio}\label{tab:rbk-incident-log-v1}\\
+\toprule
+\rowcolor{rbkBlue}
+\textbf{INC ID} & \textbf{Date/Heure détection} & \textbf{Type} & \textbf{Sévérité} & \textbf{Service} & \textbf{Description / Symptômes} & \textbf{Détection (source)} & \textbf{Impact (users/ops)} & \textbf{MTTA} & \textbf{MTTR} & \textbf{Remédiation immédiate (restore)} & \textbf{Cause racine + Correctifs (follow-up)} & \textbf{Runbook / Postmortem}\\
+\midrule
+\endfirsthead
+
+\toprule
+\rowcolor{rbkBlue}
+\textbf{INC ID} & \textbf{Date/Heure détection} & \textbf{Type} & \textbf{Sévérité} & \textbf{Service} & \textbf{Description / Symptômes} & \textbf{Détection (source)} & \textbf{Impact (users/ops)} & \textbf{MTTA} & \textbf{MTTR} & \textbf{Remédiation immédiate (restore)} & \textbf{Cause racine + Correctifs (follow-up)} & \textbf{Runbook / Postmortem}\\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{13}{r}{\textit{Suite page suivante}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+% ---------------------------
+% Lignes d'exemple pré-remplies (à adapter)
+% ---------------------------
+INC-0001 &
+2025-01-15 10:42 &
+Réel &
+Sev2 &
+CI/CD &
+CI rouge (tests instables) : échec intermittent sur suite e2e. &
+GitHub Actions + alerte Slack &
+Blocage merges; risque retard sprint. &
+00:15 &
+06:10 &
+Freeze merges + rerun; isoler test flaky; hotfix pipeline. &
+Cause: test dépendant timing RPC. Correctifs: mocks + timeouts + retry policy. Actions: A-020, A-022. &
+RBK-RB-OPS-02 \newline Postmortem: \href{https://\ldots}{lien}\\
+
+INC-0002 &
+2025-01-22 14:05 &
+Drill &
+Sev3 &
+RPC/Provider &
+Scénario “RPC down” : timeouts et rate-limit. &
+Exercice planifié (Ops) &
+Formation: démontrer fallback et UX dégradée. &
+00:05 &
+00:45 &
+Basculer provider B; activer cache; afficher message UX. &
+Améliorer runbook RPC; ajouter observabilité requêtes. Actions: A-021, A-023. &
+RBK-RB-OPS-01 \newline CR drill: \href{https://\ldots}{lien}\\
+
+INC-0003 &
+2025-02-03 09:18 &
+Réel &
+Sev1 &
+Sécurité &
+Secret détecté dans commit (clé API test). &
+Gitleaks CI &
+Risque fuite; rotation nécessaire. &
+00:10 &
+01:05 &
+Révoquer clé; purge historique; informer équipe; renforcer pre-commit. &
+Cause: mauvaise hygiène .env. Correctifs: templates .env.example + formation + scan obligatoire. Actions: A-042, A-043. &
+RBK-RB-SEC-01 \newline Postmortem: \href{https://\ldots}{lien}\\
+
+% ---------------------------
+% Lignes vides (à dupliquer)
+% ---------------------------
+INC-\underline{\hspace{1.2cm}} &
+\underline{\hspace{2cm}} &
+Réel / Drill &
+Sev1/2/3 &
+\underline{\hspace{2cm}} &
+\underline{\hspace{4.5cm}} &
+\underline{\hspace{2.2cm}} &
+\underline{\hspace{2.2cm}} &
+\underline{\hspace{1.2cm}} &
+\underline{\hspace{1.2cm}} &
+\underline{\hspace{2.6cm}} &
+\underline{\hspace{3.2cm}} &
+\underline{\hspace{2.6cm}}\\
+
+\end{longtable}
+
+\paragraph{Règles de gouvernance incidents (recommandation).}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{Sev1/Sev2} : postmortem obligatoire (cause, timeline, correctifs, prévention) + action(s) dans registre risques.
+  \item \textbf{Drills} : consigner scénario, temps de bascule, amélioration runbook.
+  \item \textbf{Objectif MTTR} : suivre tendance mensuelle ; si dérive, déclencher session “runbook hardening”.
+\end{itemize}
