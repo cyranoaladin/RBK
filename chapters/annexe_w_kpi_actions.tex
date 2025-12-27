@@ -1,0 +1,292 @@
+\chapter{ANNEXE — Plan d'Actions Risques \& Tableau de Bord KPI (v1)}
+\label{ann:kpi_actions}
+
+Cette annexe détaille le plan d'action opérationnel pour mitiger les risques identifiés, ainsi que le tableau de bord de pilotage (KPI) pour le suivi hebdomadaire.
+
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\subsection*{Registre des actions risques v1 (transforme chaque risque en tâches exécutables)}
+\paragraph{Référence planning.} On note \textbf{T0} la date de démarrage officiel de la cohorte. Les échéances sont exprimées relativement à T0.
+
+\begin{landscape}
+\begin{longtable}{L{1.0cm} L{0.9cm} L{4.2cm} L{1.6cm} L{1.0cm} L{2.0cm} L{1.4cm} L{1.4cm} L{1.5cm} L{3.0cm} L{2.8cm} L{2.8cm}}
+\caption{Registre des actions risques v1 — RBK Web3 Studio}\label{tab:rbk-risk-actions-v1}\\
+\toprule
+\textbf{Act. ID} & \textbf{Risque} & \textbf{Action (verbe + livrable)} & \textbf{Type} & \textbf{Prio} & \textbf{Owner} & \textbf{Début} & \textbf{Échéance} & \textbf{Statut} & \textbf{Livrable / DoD} & \textbf{Dépendances} & \textbf{Preuve / Trace}\\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Act. ID} & \textbf{Risque} & \textbf{Action (verbe + livrable)} & \textbf{Type} & \textbf{Prio} & \textbf{Owner} & \textbf{Début} & \textbf{Échéance} & \textbf{Statut} & \textbf{Livrable / DoD} & \textbf{Dépendances} & \textbf{Preuve / Trace}\\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{12}{r}{\textit{Suite page suivante}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+% ---------------------------
+% R-01 Sous-remplissage cohorte
+% ---------------------------
+A-001 & R-01 & Définir ICP + message de valeur (1 page) + FAQ anti-trading & Préventif & P1 & Mkt + CEO & T0-90 & T0-75 & À faire & ICP validé + FAQ publiée (site + PDF) & Validation Legal & PDF/URL\\
+A-002 & R-01 & Mettre en place funnel admissions (CRM léger + pipeline) & Préventif & P1 & Mkt + Ops & T0-90 & T0-60 & À faire & Pipeline (Lead$\rightarrow$Entretien$\rightarrow$Admis) opérationnel & Outil CRM & Capture + procédure\\
+A-003 & R-01 & Lancer 3 webinaires “Web3 careers after AI” + collecte leads & Préventif & P1 & Mkt + HoP & T0-75 & T0-45 & À faire & 3 replays + 200 leads qualifiés & Landing + tracking & Liens replays + stats\\
+A-004 & R-01 & Plan “early bird + alumni” (grille prix + conditions) & Préventif & P2 & CEO + Ops & T0-75 & T0-60 & À faire & Offre tarifaire validée + CGV & Legal & Doc offre + CGV\\
+A-005 & R-01 & Plan B : lancer 1 seul track si < seuil cohort & Contingence & P1 & CEO + HoP & T0-30 & T0-14 & À faire & Règle Go/No-Go + communication prête & KPI admissions & Note Go/No-Go\\
+
+% ---------------------------
+% R-02 Dérive budgétaire
+% ---------------------------
+A-006 & R-02 & Construire budget détaillé (Must/Should/Could) + réserve 15\% & Préventif & P1 & CEO + Ops & T0-90 & T0-70 & À faire & Budget table + règles d’arbitrage signées & Business plan & Fichier budget\\
+A-007 & R-02 & Contractualiser mentors (forfait + SLA + calendrier) & Préventif & P1 & CEO + HoP & T0-75 & T0-50 & À faire & Contrats signés + calendrier interventions & Pool mentors & Contrats\\
+A-008 & R-02 & Mettre en place reporting mensuel variance budget & Préventif & P2 & Ops & T0-60 & T0-30 & À faire & Tableau variance + alerte seuil 10\% & Budget A-006 & Dashboard\\
+
+% ---------------------------
+% R-03 Retard production pédagogique
+% ---------------------------
+A-009 & R-03 & Geler structure syllabus + DoD par module (checklist) & Préventif & P1 & HoP & T0-90 & T0-80 & À faire & DoD module (labs+tests+doc) validé & -- & Doc DoD\\
+A-010 & R-03 & Produire “Golden repos” : starter kits EVM + Solana & Préventif & P1 & TechLead-EVM + TechLead-SOL & T0-80 & T0-45 & À faire & 2 repos templates (CI verte) & A-009 & URLs Git\\
+A-011 & R-03 & QA labs (reproductibilité sur machine neuve) & Préventif & P1 & TA + Ops & T0-60 & T0-20 & À faire & 100\% labs testés + correctifs & A-010 & Checklist QA signée\\
+A-012 & R-03 & Plan de réduction périmètre (si retard) & Contingence & P2 & HoP & T0-30 & T0-14 & À faire & Liste modules “cut” + com interne & Avancement QA & Note\\
+
+% ---------------------------
+% R-04 Défection expert clé
+% ---------------------------
+A-013 & R-04 & Constituer pool de remplaçants (2 profils/compétence) & Préventif & P1 & HoP & T0-90 & T0-60 & À faire & Liste + disponibilité + tarifs & Réseau & Doc pool\\
+A-014 & R-04 & Enregistrer cours critiques + notes complètes & Préventif & P2 & HoP + Mentors & T0-14 & T0+14 & À faire & Replays + supports versionnés & Calendrier & Liens replays\\
+
+% ---------------------------
+% R-05 Hétérogénéité niveau
+% ---------------------------
+A-015 & R-05 & Créer test d’entrée (JS/TS, Git, logique, anglais) & Préventif & P1 & HoP & T0-75 & T0-60 & À faire & Test + barème + seuils & ICP & PDF test\\
+A-016 & R-05 & Mettre “Bridge” 2–4 semaines (TS+Git+tests) & Préventif & P1 & HoP + TA & T0-60 & T0-30 & À faire & Programme bridge + mini-projet & A-015 & Syllabus bridge\\
+A-017 & R-05 & Mettre en place binômage “strong/weak” + tutorat & Correctif & P2 & HoP & T0+0 & T0+7 & À faire & Matrice binômes + règles & Cohorte & Planning\\
+
+% ---------------------------
+% R-06 Studio non appliqué
+% ---------------------------
+A-018 & R-06 & Implémenter règles Git : PR obligatoires + branch protection & Préventif & P1 & Ops + TechLeads & T0-30 & T0-14 & À faire & Protection main + CI required & Repos A-010 & Config Git\\
+A-019 & R-06 & Créer rubric PR + template PR + codeowners & Préventif & P1 & HoP + SecLead & T0-30 & T0-14 & À faire & Templates actifs sur repos & A-018 & Fichiers .github\\
+A-020 & R-06 & Mettre “merge freeze” si CI rouge > 24h & Correctif & P2 & HoP & T0+0 & T0+90 & À faire & Procédure + déclencheurs & KPI CI & Procédure\\
+
+% ---------------------------
+% R-07 Instabilité RPC
+% ---------------------------
+A-021 & R-07 & Choisir 2 providers RPC/track + fallback strategy & Préventif & P1 & Ops + TechLeads & T0-45 & T0-20 & À faire & Runbook RPC + clés + quotas & Budget & Doc runbook\\
+A-022 & R-07 & Ajouter mocks locaux + modes “offline labs” & Préventif & P2 & TechLeads & T0-30 & T0-10 & À faire & Scripts mocks + doc usage & A-010 & Repo\\
+A-023 & R-07 & Tester incident drill “RPC down” (scénario) & Préventif & P2 & Ops & T0-7 & T0+7 & À faire & Rapport drill + corrections & A-021 & CR incident drill\\
+
+% ---------------------------
+% R-08 Vulnérabilité grave capstone
+% ---------------------------
+A-024 & R-08 & Exiger threat model 1 page par capstone + validation SecLead & Préventif & P1 & SecLead & T0+14 & T0+21 & À faire & Threat model signé & Template & Docs\\
+A-025 & R-08 & Instaurer “Security Sprint” obligatoire (S19) & Préventif & P1 & HoP + SecLead & T0+35 & T0+49 & À faire & Checklist sécurité complétée & KPI findings & Evidence checklist\\
+A-026 & R-08 & Audit croisé inter-équipes (2 reviewers) & Préventif & P2 & SecLead & T0+49 & T0+56 & À faire & Rapport audit croisé & A-025 & PDF findings\\
+
+% ---------------------------
+% R-09 Confusion trading
+% ---------------------------
+A-027 & R-09 & Charte marketing + disclaimers “no trading / no speculation” & Préventif & P1 & Legal + Mkt & T0-75 & T0-60 & À faire & Charte signée & CEO & Doc charte\\
+A-028 & R-09 & Relecture Legal de toutes pages publiques + ads & Préventif & P1 & Legal & T0-45 & T0-20 & À faire & Visa Legal (liste URLs) & A-027 & Liste URLs\\
+
+% ---------------------------
+% R-10 Réglementaire / paiements
+% ---------------------------
+A-029 & R-10 & Définir modèle contractuel “software training export” & Préventif & P1 & Legal + CEO & T0-75 & T0-45 & À faire & Contrat + CGV + mentions & -- & PDFs\\
+A-030 & R-10 & Scénarios opérationnels (local / export / hybride) & Préventif & P2 & CEO + Ops & T0-60 & T0-30 & À faire & Note scénarios + triggers & A-029 & Note\\
+
+% ---------------------------
+% R-11 FX/Inflation
+% ---------------------------
+A-031 & R-11 & Lister coûts en devise + buffer + règle révision prix & Préventif & P3 & CEO + Ops & T0-60 & T0-30 & À faire & Tableau devises + clauses & Budget & Tableau\\
+
+% ---------------------------
+% R-12 Documentation incohérente
+% ---------------------------
+A-032 & R-12 & Créer “Factsheet” (source unique chiffres) + verrouillage & Préventif & P1 & Ops & T0-45 & T0-25 & À faire & Factsheet versionnée + owners & Livre blanc & Factsheet\\
+A-033 & R-12 & Mettre CI build LaTeX + lint doc (si applicable) & Préventif & P2 & Ops & T0-30 & T0-14 & À faire & Build auto + alertes & Repo doc & CI logs\\
+A-034 & R-12 & Mettre CHANGELOG + règles contribution (docs) & Préventif & P2 & Ops & T0-30 & T0-14 & À faire & CHANGELOG + CONTRIBUTING & Repo doc & Fichiers\\
+
+% ---------------------------
+% R-13 Partenariats non signés
+% ---------------------------
+A-035 & R-13 & Pipeline partenariats (Target/Contacted/Signed) & Préventif & P2 & CEO + HoP & T0-60 & T0-30 & À faire & Tableau pipeline + owners & Réseau & Tableau\\
+A-036 & R-13 & Obtenir 2 lettres d’intention mentors/invités & Préventif & P2 & HoP & T0-45 & T0-20 & À faire & 2 emails/LOI & A-035 & PDFs\\
+
+% ---------------------------
+% R-14 Insertion insuffisante
+% ---------------------------
+A-037 & R-14 & Définir “Career Pack” (portfolio, mock interviews, bounties) & Préventif & P1 & Career + HoP & T0-45 & T0-14 & À faire & Kit complet + calendrier & -- & Pack PDF\\
+A-038 & R-14 & Instaurer “Bounties Sprint” encadré (semaine 8+) & Préventif & P2 & Career & T0+35 & T0+49 & À faire & 1 bounty/étudiant min & Réseau & Table bounties\\
+A-039 & R-14 & Mettre tableau placements (3/6 mois) + relances & Correctif & P2 & Career & T0+60 & T0+180 & À faire & Dashboard placements & CRM & Dashboard\\
+
+% ---------------------------
+% R-15 IA irresponsable
+% ---------------------------
+A-040 & R-15 & Politique IA (ce qui est autorisé/interdit) + oral defense & Préventif & P1 & HoP & T0-30 & T0-14 & À faire & Règles IA signées + grille orale & -- & Politique\\
+A-041 & R-15 & Mettre “ADR obligatoire” pour décisions majeures & Préventif & P2 & TechLeads & T0+0 & T0+90 & À faire & ADR template + usage vérifié & Repo & ADRs\\
+
+% ---------------------------
+% R-16 Secrets/keys exposés
+% ---------------------------
+A-042 & R-16 & Mettre scan secrets (gitleaks) + règles .env.example & Préventif & P1 & SecLead + Ops & T0-30 & T0-14 & À faire & Scan actif en CI + doc & A-018 & CI logs\\
+A-043 & R-16 & Session “keys hygiene” (30 min) + quiz & Préventif & P2 & SecLead & T0+0 & T0+7 & À faire & Support + quiz & -- & Résultats quiz\\
+
+% ---------------------------
+% R-17 Dépendance outil unique
+% ---------------------------
+A-044 & R-17 & Mettre backups hebdo (repos/docs) + procédure restore & Préventif & P2 & Ops & T0-30 & T0-10 & À faire & Backup + test restore & Accès admin & Log restore\\
+
+% ---------------------------
+% R-18 Programme trop dense
+% ---------------------------
+A-045 & R-18 & Appliquer MoSCoW à chaque sprint + gating Must & Préventif & P1 & HoP & T0+0 & T0+90 & À faire & MoSCoW présent sur tickets & Templates & Tickets\\
+A-046 & R-18 & Mettre indicateur surcharge (heures sup + carry-over) & Préventif & P2 & HoP + TA & T0+7 & T0+90 & À faire & Tableau charge hebdo & Outils & Tableau\\
+
+% ---------------------------
+% R-19 Qualité éditoriale livre blanc
+% ---------------------------
+A-047 & R-19 & Checklist QA PDF (ToC, tables, figures, cohérence chiffres) & Préventif & P2 & Ops & T0-30 & T0-14 & À faire & Checklist signée & Factsheet & Checklist\\
+A-048 & R-19 & Relectures croisées (2 reviewers) + corrections & Préventif & P2 & Ops + HoP & T0-21 & T0-7 & À faire & CR relecture + patches & A-047 & CR\\
+
+% ---------------------------
+% R-20 ISA/bourses mal cadrées
+% ---------------------------
+A-049 & R-20 & Définir politique bourses simple (pilot) + critères & Préventif & P3 & CEO + Legal & T0-45 & T0-20 & À faire & Politique bourses & -- & Doc\\
+
+% ---------------------------
+% R-21 IP capstones
+% ---------------------------
+A-050 & R-21 & Ajouter clause IP (open-source par défaut + exceptions) & Préventif & P2 & Legal & T0-45 & T0-20 & À faire & Clause dans contrat & A-029 & Contrat\\
+
+% ---------------------------
+% R-22 PCA/PRA
+% ---------------------------
+A-051 & R-22 & Écrire PCA/PRA minimum (RPO/RTO, backups, rôles) & Préventif & P2 & Ops & T0-30 & T0-10 & À faire & Doc PCA/PRA + test & A-044 & Doc + logs\\
+
+% ---------------------------
+% R-23 Tooling EVM change
+% ---------------------------
+A-052 & R-23 & Verrouiller versions + docker image + guide install & Préventif & P2 & TechLead-EVM & T0-30 & T0-14 & À faire & Dockerfile + doc & A-010 & Repo\\
+
+% ---------------------------
+% R-24 Tooling Solana/Anchor change
+% ---------------------------
+A-053 & R-24 & Verrouiller versions Anchor/Solana + guide migration & Préventif & P2 & TechLead-SOL & T0-30 & T0-14 & À faire & Notes versions + doc & A-010 & Repo\\
+
+% ---------------------------
+% R-25 Culture security-first faible
+% ---------------------------
+A-054 & R-25 & Créer “Security Gate” capstone : seuil findings + blocage & Préventif & P1 & SecLead & T0+35 & T0+56 & À faire & Critères gate + checklist & A-025 & Doc gate\\
+A-055 & R-25 & Instaurer “oral defense sécurité” (10 min/équipe) & Préventif & P2 & SecLead + HoP & T0+56 & T0+63 & À faire & Grille + PV & A-054 & PV\\
+
+\end{longtable}
+\end{landscape}
+
+\paragraph{Mode d’emploi.} À chaque COPIL/COSUI : (i) mettre à jour statuts, (ii) reporter décisions dans un journal, (iii) créer de nouvelles actions si un risque change de nature.
+
+\clearpage
+
+\subsection*{Tableau de pilotage KPI (v1) — Admissions, Qualité, Sécurité, Ops, Carrière, Finance}
+
+\begin{longtable}{L{2.6cm} L{4.4cm} L{4.6cm} L{2.1cm} L{1.7cm} L{2.2cm} L{2.2cm} L{2.6cm} L{3.0cm}}
+\caption{KPI de pilotage v1 — RBK Web3 Studio}\label{tab:rbk-kpi-dashboard-v1}\\
+\toprule
+\textbf{KPI} & \textbf{Définition} & \textbf{Formule / Calcul} & \textbf{Cible} & \textbf{Cadence} & \textbf{Source} & \textbf{Owner} & \textbf{Seuils Alerte/Critique} & \textbf{Actions déclenchées}\\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{KPI} & \textbf{Définition} & \textbf{Formule / Calcul} & \textbf{Cible} & \textbf{Cadence} & \textbf{Source} & \textbf{Owner} & \textbf{Seuils Alerte/Critique} & \textbf{Actions déclenchées}\\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{9}{r}{\textit{Suite page suivante}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+% ---------------------------
+% Admissions / Marketing
+% ---------------------------
+Leads qualifiés & Volume de prospects répondant à l’ICP (profil technique + motivation) & \#leads qualifiés/semaine & $\ge 40$/sem & Hebdo & CRM + forms & Mkt & Alerte < 25 ; Critique < 15 & Intensifier webinars, partenariats, retargeting\\
+
+CVR Lead$\rightarrow$Entretien & Efficacité qualification & \#entretiens / \#leads qualifiés & $\ge 25\%$ & Hebdo & CRM & Mkt + HoP & Alerte < 18\% ; Critique < 12\% & Ajuster ICP, landing, message, screening\\
+
+CVR Entretien$\rightarrow$Admis & Efficacité sélection/adéquation offre & \#admis / \#entretiens & 40–60\% & Hebdo & CRM & HoP & Alerte < 30\% ; Critique < 20\% & Revoir critères, renforcer bridge, clarifier prérequis\\
+
+Taille cohorte (Go/No-Go) & Seuil minimal de lancement & \#admis confirmés & $\ge 15$ & Hebdo & CRM & CEO & Alerte 12–14 ; Critique < 12 & Activer plan B : 1 track, format part-time, report\\
+
+CPL (cost per lead) & Coût acquisition & Budget marketing / \#leads qualifiés & À définir & Hebdo & Budget + CRM & Mkt & Alerte +20\% ; Critique +40\% & Optimiser canaux, couper ads faibles\\
+
+% ---------------------------
+% Pédagogie / Engagement
+% ---------------------------
+Attendance rate & Présence aux sessions synchrones & \#présences / \#sessions attendues & $\ge 90\%$ & Hebdo & LMS/Discord & HoP & Alerte < 85\% ; Critique < 75\% & 1:1 coaching, rattrapages, ajuster charge\\
+
+Lab completion & Livraison des labs dans les délais & \#labs validés / \#labs prévus & $\ge 85\%$ & Hebdo & Repo issues/grades & HoP + TA & Alerte < 75\% ; Critique < 60\% & Réduire scope, ajouter TA, replanifier sprint\\
+
+Capstone milestone hit-rate & Respect jalons capstone (S17–S20) & \#jalons atteints / \#jalons planifiés & $\ge 80\%$ & Hebdo & Board projet & HoP & Alerte < 70\% ; Critique < 50\% & Gating Must, couper Could, mentorat intensif\\
+
+Dropout / churn & Décrochage apprenants & \#abandons / \#cohorte & $\le 5\%$ & Mensuel & Admin & HoP & Alerte 6–10\% ; Critique > 10\% & Diagnostic charge, accompagnement, adaptation rythme\\
+
+NPS programme & Satisfaction globale (recommandation) & \%promoteurs - \%détracteurs & $\ge 45$ & Mensuel & Survey & Ops + HoP & Alerte 20–44 ; Critique < 20 & Plan actions qualité (top 3 irritants)\\
+
+% ---------------------------
+% Qualité d’ingénierie (Studio)
+% ---------------------------
+PR pass rate (rubric) & PR acceptées sans rework majeur & \#PR \textit{pass} / \#PR totales & $\ge 70\%$ & Hebdo & GitHub & TechLeads & Alerte < 60\% ; Critique < 45\% & Coaching code review, exemples, pairing\\
+
+PR rework rate & Proportion PR demandant refonte & \#PR rework / \#PR totales & $\le 25\%$ & Hebdo & GitHub & TechLeads & Alerte > 35\% ; Critique > 50\% & Revoir DoD, templates, formation tests\\
+
+CI pass rate & Qualité pipeline CI (lint/tests) & \#runs CI OK / \#runs CI totaux & $\ge 85\%$ & Hebdo & GitHub Actions & Ops + TechLeads & Alerte < 75\% ; Critique < 60\% & Stop merges, fix flakes, stabiliser tests\\
+
+Mean time to green (CI) & Vitesse de réparation CI & Temps moyen entre CI rouge et CI verte & $\le 6h$ & Hebdo & GitHub & Ops & Alerte > 12h ; Critique > 24h & Freeze merges + task force\\
+
+Test coverage (min) & Couverture tests minimale (selon repos) & Couverture \% (ou proxy: \#tests) & $\ge 60\%$ (min) & Mensuel & CI reports & TechLeads & Alerte < 50\% ; Critique < 35\% & Sprint tests, obligations DoD\\
+
+% ---------------------------
+% Sécurité
+% ---------------------------
+High/Critical findings & Findings sécurité majeurs sur capstones & \#findings High+Critical & 0 Critical ; $\le 2$ High & Hebdo & Audit notes & SecLead & Alerte: 1 Critical ou >2 High ; Critique: >=2 Critical & Bloquer release, security sprint, re-audit\\
+
+Threat model compliance & Threat model présent et validé & \#capstones avec TM validé / total & 100\% & Hebdo (capstone) & Docs repo & SecLead & Alerte < 90\% ; Critique < 75\% & Refus validation milestone\\
+
+Secrets leakage incidents & Fuites détectées (keys, tokens) & \#incidents / période & 0 & Hebdo & Gitleaks/alerts & SecLead & Alerte: 1 ; Critique: >1 & Rotation immédiate + incident report\\
+
+% ---------------------------
+% Ops / Infra
+% ---------------------------
+RPC error rate & Erreurs RPC (timeouts, rate-limit) & \#erreurs / \#requêtes (ou logs) & $\le 2\%$ & Hebdo & Logs app & Ops & Alerte > 5\% ; Critique > 10\% & Basculer provider, activer cache/mocks\\
+
+MTTR incidents & Temps moyen de rétablissement & Moyenne temps résolution incidents & $\le 2h$ & Mensuel & Incident log & Ops & Alerte > 4h ; Critique > 8h & Revoir runbooks, drills, ownership\\
+
+% ---------------------------
+% Carrière / Employabilité
+% ---------------------------
+Portfolio readiness & Portfolios prêts (repos+docs+demo) & \#apprenants ready / total & $\ge 90\%$ & Hebdo (fin) & Checklist & Career & Alerte < 80\% ; Critique < 65\% & Bootcamp portfolio + rework\\
+
+Placement 3 mois & Placement (job/mission/bounty régulier) à 3 mois & \#placés / \#diplômés & $\ge 50\%$ & Mensuel & Placement sheet & Career + CEO & Alerte < 35\% ; Critique < 20\% & Intensifier réseau, mock interviews, bounties\\
+
+Placement 6 mois & Placement à 6 mois & \#placés / \#diplômés & $\ge 70\%$ & Mensuel & Placement sheet & Career + CEO & Alerte < 55\% ; Critique < 40\% & Partenariats RH + suivi individuel\\
+
+Bounties completed & Bounties complétées (Superteam/OSS etc.) & \#bounties validées / cohorte & $\ge 1$/étudiant (min) & Mensuel & Table bounties & Career & Alerte < 0.5 ; Critique < 0.2 & Sprint bounties, mentorat ciblé\\
+
+% ---------------------------
+% Finance
+% ---------------------------
+Budget variance & Écart budget réel vs prévisionnel & (Réel - Prévu) / Prévu & $\le +10\%$ & Mensuel & Budget sheet & CEO + Ops & Alerte +10–20\% ; Critique > 20\% & Couper “Could”, renégocier licences\\
+
+Revenue collected rate & Encaissement vs facturé & Encaissement / Facturation & $\ge 95\%$ & Mensuel & Finance & CEO & Alerte < 90\% ; Critique < 80\% & Relances, ajuster modalités paiement\\
+
+Gross margin / student & Marge brute par étudiant & (Recettes - coûts directs) / \#étudiants & À définir & Mensuel & Finance & CEO & Alerte baisse 15\% ; Critique baisse 30\% & Ajuster prix, coûts, taille cohorte\\
+
+\end{longtable}
+
+\paragraph{Recommandation d’usage.}
+Ce tableau doit être \textbf{revu en COPIL} (hebdo pendant cohorte) avec : (i) statut des actions risques, (ii) KPI en alerte, (iii) décisions consignées dans un journal de pilotage.
