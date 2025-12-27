@@ -3,7 +3,7 @@
 %  Projet: RBK 2.0 - L'Architecture de la Souveraineté Numérique
 %  Charte: Solana Professional (Math-Style & Tech)
 %  Engine: XeLaTeX
-%  Version: 4.0 - Final Publisher-Grade
+%  Version: 5.0 - Professional Edition
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt, a4paper, oneside]{report}
@@ -97,7 +97,10 @@
 \usepackage{makecell}
 \usepackage{multirow}
 \usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{acro}
 \usepackage{wrapfig}
+\input{chapters/00_acronymes_defs.tex}
 \usepackage{pgfgantt}
 \usepackage{caption}
 \usepackage{float}
@@ -350,7 +353,12 @@
 % ----------------------------
 % Hyperref & Options
 % ----------------------------
-\usepackage[unicode=true, colorlinks=true, linkcolor=SolanaPurple!80!black, citecolor=SolanaGreen!70!black, urlcolor=SolanaBlue!70!black]{hyperref}
+\usepackage[unicode=true, colorlinks=true, linkcolor=SolanaPurple!80!black, citecolor=SolanaGreen!70!black, urlcolor=SolanaBlue!70!black,
+    pdftitle={Livre Blanc RBK 5.0 - Manifeste Senior-by-Design},
+    pdfauthor={Money Factory AI},
+    pdfsubject={Architecture de la Souveraineté Numérique},
+    pdfkeywords={Blockchain, Solana, Rust, Education, Tunisie, Web3}
+]{hyperref}
 \usepackage{bookmark}
 
 % ----------------------------
@@ -361,6 +369,12 @@
 \renewcommand{\cftsecfont}{\bfseries\large\color{BaseDark}}
 \renewcommand{\cftsubsecfont}{\normalsize\color{BaseDark!80}}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+% Fix numwidth to avoid Space-Glue
+% Increase width for numbers like "2.10" or "Annex A"
+\setlength{\cftsecnumwidth}{3.5em}
+\setlength{\cftsubsecnumwidth}{4.5em}
+\setlength{\cftchapnumwidth}{3em}
 
 \begin{document}
 
@@ -391,8 +405,10 @@
 % Guide de Lecture
 \input{chapters/00_guide_lecture.tex}
 
-% Liste des Acronymes
-\input{chapters/00_acronymes.tex}
+% Liste des Acronymes (Auto)
+\acuse{API,CAGR,CICD,CLI,DAO,DApp,DeFi,DePIN,DoD,EVM,ISA,KPI,L1L2,MVP,PDA,PoS,PR,ROI,RPC,SBT,SVM,TVL,UXUI}
+\printacronyms[name=Liste des Acronymes, heading=chapter*]
+\addcontentsline{toc}{chapter}{Liste des Acronymes}
 \newpage
 
 \newpage
