@@ -1,0 +1,96 @@
+\chapter{OFFRE COMMERCIALE \& MODALITÉS}
+
+\section{Le Pack RBK 2.0}
+
+Ce qui est inclus pour chaque étudiant retenu.
+
+\begin{center}
+    \textbf{Table: Détail de l'Offre} \\
+    \small
+    \begin{tabular}{|p{8cm}|c|c|}
+        \hline
+        \textbf{Service} & \textbf{Standard} & \textbf{Inclus ?} \\ \hline
+        Formation 48 semaines (N1+N2+N3) & 1800h+ & OUI \\ \hline
+        Mentorat Expert (Review code hebdo) & Senior & OUI \\ \hline
+        Certification SBT & On-chain & OUI \\ \hline
+        Accès Réseau Partenaires & Superteam & OUI \\ \hline
+        Hébergement (Piscine) & Optionnel & NON \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Pricing \& Conditions (Value Ladder)}
+
+Notre tarification est conçue pour réduire le risque à l'entrée via un système progressif.
+
+\begin{table}[H]
+    \caption{Grille Tarifaire (TND)}
+    \centering
+    \small
+    \rowcolors{2}{gray!5}{white}
+    \begin{tabularx}{\textwidth}{|l|l|l|X|}
+        \hline
+        \textbf{Niveau} & \textbf{Prix} & \textbf{Paiement} & \textbf{Inclus} \\ \hline
+        \textbf{Niveau 1} (12 sem) & 2 900 TND & 2x 1 450 TND & Piscine + Fondations \\ \hline
+        \textbf{Niveau 2} (16 sem) & 5 900 TND & 3x 1 966 TND & Spécialisation Track \\ \hline
+        \textbf{Niveau 3} (20 sem) & 8 900 TND & 4x 2 225 TND & Pro-Audit-Placement \\ \hline
+        \textbf{Pack Complet} & \textbf{15 900 TND} & \textbf{6x 2 650 TND} & \textbf{Tout inclus (N1-N3)} \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Mécanisme d'Incitation (Upgrade)}
+\begin{itemize}
+    \item \textbf{Crédit 100\% :} Si vous payez le N1 et décidez de continuer, les 2 900 TND sont déduits du Pack.
+    \item \textbf{Fenêtre 30 jours :} L'upgrade doit se faire sous 30 jours pour verrouiller le tarif global.
+\end{itemize}
+
+\subsection{Admission Directe (Passerelles)}
+\textbf{Accès direct N2 :} Possible via tests techniques obligatoires (Rust/Algo/Git). Frais de test : 200 TND (non remboursable, mais déduit si inscription).
+\textbf{Accès direct N3 :} Strictement réservé aux profils expérimentés (Portfolio Web3 solide + Audit check). Test + Entretien. Frais : 300 TND.
+
+\subsection{Offre ISA (Income Share Agreement)}
+\textbf{Périmètre :} Réservé aux "Top Talents" sur le **Pack Complet** ou **Niveau 3**. Sélection stricte (Dossier + Technique + Social).
+\textbf{Conditions Unifiées :}
+\begin{itemize}
+    \item \textbf{Partage :} 15\% du revenu brut mensuel.
+    \item \textbf{Déclencheur (Threshold) :} Salaire > 2 500 TND Brut.
+    \item \textbf{Durée :} 36 mensualités (paiements effectifs) maximum.
+    \item \textbf{Plafond (Cap) :} 20 000 TND total remboursé (Risk Premium inclus).
+    \item \textbf{Clause de pause :} Automatique en cas de chômage ou revenu < Seuil.
+    \item \textbf{Juridiction :} Droit Tunisien, contrat enregistré.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto,
+        block/.style={rectangle, draw, rounded corners, minimum height=1cm, align=center, fill=white, drop shadow},
+        arrow/.style={->, >=Stealth, thick}]
+        
+        \node[block, fill=SolanaBlue!10] (n1) {Niveau 1\\(2 900 TND)};
+        \node[block, fill=SolanaPurple!10, right=of n1] (n2) {Niveau 2\\(5 900 TND)};
+        \node[block, fill=SolanaGreen!10, right=of n2] (n3) {Niveau 3\\(8 900 TND)};
+        \node[block, fill=MF_Gold!20, right=of n3] (job) {EMPLOI\\(ISA 15\%)};
+        
+        \draw[arrow] (n1) -- node[above]{\footnotesize Conv. 60\%} (n2);
+        \draw[arrow] (n2) -- node[above]{\footnotesize Conv. 80\%} (n3);
+        \draw[arrow] (n3) -- (job);
+        
+        \node[above=0.8cm of n2] (bundle) {\textbf{PACK COMPLET (15 900 TND)}};
+        \draw[dashed, ->] (bundle) -| (n1);
+        \draw[dashed, ->] (bundle) -| (n3);
+    \end{tikzpicture}
+    \caption{Value Ladder et Parcours Étudiant}
+\end{figure}
+
+\section{Objections \& Réponses}
+\textbf{"C'est trop cher ?"}
+C'est le prix d'une voiture d'occasion pour une carrière internationale. L'option "Niveau 1" vous permet de tester pour un coût réduit.
+
+\textbf{"Pourquoi pas une fac publique ?"}
+La fac offre un diplôme académique. Nous offrons une certification technique industrielle et un accès direct au réseau Superteam.
+
+\section{Politique de Remboursement et Report}
+\begin{itemize}
+    \item \textbf{Satisfait ou Remboursé (N1) :} Remboursement intégral possible jusqu'à la fin de la 1ère semaine du Niveau 1.
+    \item \textbf{Report de Cohorte :} Possible une seule fois en cas de force majeure, sans frais, sous réserve de places disponibles.
+    \item \textbf{Non-Garanti :} RBK s'engage sur la qualité de la formation ("Obligation de Moyens") mais ne peut garantir contractuellement une embauche ou un niveau de salaire spécifique ("Obligation de Résultats"), ceux-ci dépendant du marché et de l'effort individuel.
+\end{itemize}

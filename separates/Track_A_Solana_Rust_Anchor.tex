@@ -1,0 +1,542 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Encodage / langue ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---------- Mise en page ----------
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+
+% ---------- Typo / utilitaires ----------
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+% ---------- Tableaux ----------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+% ---------- Figures / schémas ----------
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+% ---------- Encadrés ----------
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white, colframe=black!60, sharp corners, boxrule=0.6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+
+% ---------- Macros ----------
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\DoD}{\textbf{DoD}}
+\newcommand{\KPI}{\textbf{KPI}}
+
+\title{TRACK A --- Solana Smart Contract Engineer (Rust/Anchor)\\\large Détail exécutable (PDF séparé)}
+\author{RBK 2.0}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{6pt}
+
+% =========================================================
+\section{Résumé exécutif du track (1 page)}
+\label{sec:exec_summary}
+
+\paragraph{Positionnement.}
+Ce track forme un \textbf{Smart Contract Engineer Solana} capable de livrer des programmes \textbf{audit-ready}, conscients des contraintes \textbf{Account Model / CPI / compute units} et de la réalité \textbf{production} (observabilité, incidents, UX transactionnelle, reproductibilité). Le profil de sortie visé est le \textbf{Guardian} : un ingénieur qui sait \emph{concevoir, implémenter, tester, documenter, auditer, durcir et opérer} un smart contract Solana.
+
+\paragraph{Promesse mesurable.}
+À la fin du track, l'apprenant est capable de :
+\begin{itemize}
+  \item produire un \textbf{repo studio-grade} avec \textbf{tests automatisés}, \textbf{documentation}, \textbf{scripts reproductibles}, \textbf{CI} et \textbf{runbook},
+  \item présenter un \textbf{threat model} (STRIDE simplifié) et un \textbf{mini-audit report} (findings classés, correctifs, preuves),
+  \item maîtriser les patterns \textbf{PDA / seeds / constraints / CPI} et éviter les anti-patterns de sécurité,
+  \item livrer un \textbf{capstone de production} incluant observabilité, critères d'acceptation et performance budget (compute).
+\end{itemize}
+
+\paragraph{Pré-requis.}
+\begin{itemize}
+  \item Rust niveau intermédiaire (ownership/borrowing, Result, modules, tests).
+  \item Bases blockchain : transactions, signatures, état, events/logs.
+  \item Discipline d'ingénierie : Git, PRs, revue, documentation.
+\end{itemize}
+
+\paragraph{Différenciation pédagogique (non négociable).}
+\begin{itemize}
+  \item \textbf{Spec-first} : aucun lab sans spécification, critères d'acceptation et plan de tests.
+  \item \textbf{Security-first} : threat model et checklists à chaque jalon.
+  \item \textbf{Reproductibilité} : scripts de build/test, environnements et démos rejouables.
+  \item \textbf{Production mindset} : observabilité, runbook, erreurs explicites, UX transaction.
+\end{itemize}
+
+\begin{tcolorbox}[title={Ce que ce track n'est pas}]
+Ce track \textbf{n'est pas} un apprentissage ``rapide'' centré sur la syntaxe. Il vise la capacité à \textbf{livrer} des programmes Solana robustes, testés, documentés et \textbf{auditable} --- c'est-à-dire utilisables dans un contexte professionnel.
+\end{tcolorbox}
+
+% =========================================================
+\section{Objectifs mesurables et preuves attendues}
+\label{sec:objectifs}
+
+\paragraph{Règle.} Chaque compétence est évaluée par une \textbf{preuve vérifiable} (artefact), un \textbf{seuil minimal} et un \textbf{outil de vérification}.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{lY Y Y}
+\toprule
+\textbf{Domaine} & \textbf{Compétence} & \textbf{Preuve attendue} & \textbf{Outil \& seuil minimal} \\
+\midrule
+Solana Model & Account model correct (owners, signers, rent/lamports, sérialisation) &
+Schéma des comptes + tests de cas limites + logs explicites &
+Anchor/solana test + couverture tests \(\geq\) 70\% des branches critiques \\
+Anchor & PDAs/constraints robustes (seeds, bumps, ownership checks) &
+IDL + tests négatifs + checklist seeds/constraints signée &
+Anchor tests + revue ``security gate'' validée \\
+CPI & Composabilité via CPI sans fuite d'autorité &
+Schéma call-graph + tests CPI + restrictions d'authority &
+Tests d'intégration + audit checklist ``CPI safety'' \\
+Sécurité & Threat model (STRIDE) + findings &
+Document threat model + mini audit report (min 6 findings dont 2 ``High'') &
+Template audit + preuves (PoC tests) \\
+Qualité & CI/CD + reproductibilité &
+Pipeline CI + scripts build/test + README exécutable &
+CI verte + ``fresh clone works'' (checklist) \\
+Production & Observabilité + runbook incidents &
+Dashboard (métriques/alertes) + runbook + scénarios incidents simulés &
+PRR validée + MTTR cible simulée \(\leq\) 30 min \\
+Performance & Compute-aware + optimisation raisonnable &
+Benchmarks CU + justification + budget perf &
+Rapport perf + respect budget CU défini \\
+\bottomrule
+\end{tabularx}
+\caption{Compétences cibles vs preuves vérifiables}
+\label{tab:competences_preuves}
+\end{table}
+
+% =========================================================
+\section{Programme (12 semaines : Semaines 9--20) --- modules 1$\rightarrow$4}
+\label{sec:programme}
+
+\paragraph{Principe.} Chaque semaine produit un \textbf{artefact portfolio}. Chaque module se termine par un \textbf{jalon} avec \textbf{criteria gate} (Go/No-Go).
+
+\begin{longtable}{p{1.4cm}p{3.2cm}p{4.2cm}p{3.6cm}p{3.2cm}}
+\toprule
+\textbf{Semaine} & \textbf{Focus} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD (Definition of Done)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Semaine} & \textbf{Focus} & \textbf{Objectifs} & \textbf{Lab / livrable} & \textbf{\DoD (Definition of Done)} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\emph{Suite page suivante}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+S9 & Solana modèle (natif) &
+Transactions, instructions, comptes, signers, sérialisation &
+Lab A v0 : Message Board (natif) &
+Tests unit + tests négatifs + README exécutable \\
+
+S10 & Ownership / sécurité de base &
+Contrôles owner, signers, erreurs explicites, logs &
+Lab A v1 : Message Board + permissions &
+Checklist sécu module 1 signée + couverture cible \\
+
+S11 & Vault/Escrow natif &
+Gestion de dépôts, conditions de release, cas limites &
+Lab B : Mini-Escrow/Vault natif &
+Spec + tests e2e + schéma comptes + démo \\
+
+S12 & Anchor fundamentals &
+Macros, Accounts constraints, IDL, erreurs &
+Lab C : Counter+Vault (Anchor) &
+IDL propre + tests + events + doc ``API surface'' \\
+
+S13 & Anchor PDAs &
+Seeds/bump, authorities, constraints avancées &
+Lab D : Staking minimal (Anchor) &
+Tests de sécurité (négatifs) + audit checklist \\
+
+S14 & Anchor composabilité &
+Events, CPI simple, patterns robustes &
+Livrable module 2 : ``Anchor Pack'' &
+Gate module 2 : PR review + IDL + tests + doc \\
+
+S15 & Architectures avancées &
+CPI orchestrator, séparation programmes, invariants &
+Lab E : CPI composability challenge &
+Call graph + tests CPI + threat model \\
+
+S16 & Token standards / extensions &
+Token-2022 (ou équivalent selon stack), metadata patterns &
+Lab F : Token extension + policy &
+ADR + tests + doc d'intégration client \\
+
+S17 & Innovation / intégration &
+Indexation, UX tx, actions/blinks (si retenu) &
+Livrable module 3 : ``Composable System'' &
+Gate module 3 : PRR partielle + bench CU \\
+
+S18 & Hardening production &
+Runbook, logs, métriques, alerting, error taxonomy &
+Capstone v0 : PRR + monitoring &
+Checklist PRR 60\% + observabilité en place \\
+
+S19 & Performance + sécurité &
+Compute budget, optimisations, tests de charge &
+Capstone v1 : perf + security gate &
+Budget CU respecté + findings traités \\
+
+S20 & Release studio &
+CI, versioning, docs, démo, post-mortem simulé &
+Capstone final : release &
+Gate final : CI verte + audit report + demo \\
+
+\caption{Semaine $\rightarrow$ objectifs $\rightarrow$ lab $\rightarrow$ livrable $\rightarrow$ \DoD}
+\label{tab:programme_12semaines}
+\end{longtable}
+
+% =========================================================
+\section{Labs détaillés et critères d'acceptation}
+\label{sec:labs}
+
+\subsection*{Règles communes à tous les labs}
+\begin{itemize}
+  \item Chaque lab commence par une \textbf{spec} (fonctionnalités, comptes, invariants, erreurs).
+  \item Les tests incluent \textbf{cas nominaux} + \textbf{cas négatifs} (attaques triviales, permissions, double-spend, etc.).
+  \item Chaque livrable inclut : \textbf{README exécutable}, \textbf{scripts}, \textbf{schéma des comptes}, \textbf{journal des décisions} (ADR).
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab A --- Message Board (natif Solana)}
+\paragraph{Objectif.} Construire une primitive on-chain simple, mais \textbf{correcte} : stockage sérialisé, authorisation, erreurs explicites, logs.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Fonctionnalité} & \textbf{Entrées / Comptes} & \textbf{Tests attendus (mesurables)} \\
+\midrule
+Créer un message & signer auteur + compte message (PDA ou compte dédié) &
+création OK ; échec si auteur absent ; taille max contrôlée \\
+Modifier un message & signer auteur + compte message &
+échec si non-auteur ; logs explicites ; état cohérent \\
+Lister via indexation off-chain & events/logs + indexer (simulé) &
+events émis ; schéma d'event stable ; doc d'intégration \\
+Gestion erreurs & codes d'erreur + messages &
+tests sur erreurs attendues ; pas d'erreurs silencieuses \\
+\bottomrule
+\end{tabularx}
+\caption{Spécification Lab A (Message Board)}
+\label{tab:labA_spec}
+\end{table}
+
+\paragraph{Critères d'acceptation (Gate Lab A).}
+\begin{itemize}
+  \item README ``fresh clone'' : un clone vierge compile et passe les tests.
+  \item Tests : \(\geq\) 12 tests dont \(\geq\) 5 négatifs.
+  \item Documentation : schéma des comptes + table ``Instruction $\rightarrow$ comptes $\rightarrow$ erreurs''.
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab B --- Mini Escrow / Vault (natif Solana)}
+\paragraph{Objectif.} Implémenter un escrow/vault avec règles de release et \textbf{anti-abus}.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Règle} & \textbf{Invariants} & \textbf{Tests attendus} \\
+\midrule
+Dépôt & fonds conservés dans vault ; owner vérifié &
+dépôt OK ; échec si mauvais owner ; double dépôt contrôlé \\
+Release conditionnel & release uniquement si condition satisfaite &
+release OK ; échec si condition fausse ; reentrancy-like patterns (simulés) \\
+Cancel / timeout & cancel seulement par rôle autorisé / selon délai &
+cancel OK ; échec si rôle incorrect ; délais testés \\
+Journalisation & events pour opérations critiques &
+events présents ; payload stable ; doc d'event \\
+\bottomrule
+\end{tabularx}
+\caption{Invariants et tests Lab B (Escrow/Vault)}
+\label{tab:labB_invariants}
+\end{table}
+
+% ---------------------------
+\subsection*{Lab C --- Counter+Vault (Anchor fundamentals)}
+\paragraph{Objectif.} Maîtriser IDL, macros, constraints, events, error codes.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y Y}
+\toprule
+\textbf{Instruction} & \textbf{Comptes (résumé)} & \textbf{Erreurs \& tests} \\
+\midrule
+initialize & authority signer + state PDA &
+échec si déjà init ; seeds correctes \\
+increment & authority signer + state PDA &
+échec si non-authority ; event émis \\
+deposit/withdraw & user signer + vault + state &
+échec si fonds insuffisants ; logs ; invariants \\
+\bottomrule
+\end{tabularx}
+\caption{IDL et surface API Lab C}
+\label{tab:labC_idl}
+\end{table}
+
+% ---------------------------
+\subsection*{Lab D --- Staking minimal (Anchor PDAs \& constraints)}
+\paragraph{Objectif.} PDAs déterministes + constraints robustes + tests négatifs.
+
+\paragraph{Critères d'acceptation.}
+\begin{itemize}
+  \item Tous les accès sensibles protégé par checks explicites (authority/owner/signers).
+  \item Seeds documentées ; tests sur seeds ; ``bump mismatch'' géré.
+  \item Tests de retrait anticipé/illégitime \(\rightarrow\) échec explicite.
+\end{itemize}
+
+% ---------------------------
+\subsection*{Lab E --- CPI composability challenge (Architecture avancée)}
+\paragraph{Objectif.} Construire un orchestrateur qui appelle un programme ``service'' via CPI en conservant un modèle d'autorité sain.
+
+\begin{tcolorbox}[title={Exigences CPI (non négociables)}]
+\begin{itemize}
+  \item Aucun CPI ne doit introduire une autorité implicite ou réutilisable par un tiers.
+  \item Les comptes en CPI doivent être minimaux et vérifiés (owner, seeds, signers).
+  \item Le call-graph est documenté et testé.
+\end{itemize}
+\end{tcolorbox}
+
+% ---------------------------
+\subsection*{Lab F --- Token extension / policy (Token-2022 ou équivalent)}
+\paragraph{Objectif.} Démontrer la capacité à gérer des métadonnées/policies et leur validation (off-chain + on-chain checks).
+
+\paragraph{Livrables.}
+\begin{itemize}
+  \item ADR : choix d'extension/pattern.
+  \item Tests : policy enforcement (positifs + négatifs).
+  \item Guide intégration client (front) : ``how to verify''.
+\end{itemize}
+
+% =========================================================
+\section{Rubrique de notation (standard audit) --- total 100}
+\label{sec:rubrique}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l c Y}
+\toprule
+\textbf{Axe} & \textbf{Poids} & \textbf{Critères (exemples mesurables)} \\
+\midrule
+Sécurité \& threat model & 25 &
+threat model complet ; findings classés ; corrections justifiées ; tests ``négatifs'' \\
+Tests \& qualité & 20 &
+tests unit+int ; cas limites ; CI stable ; couverture sur chemins critiques \\
+Architecture \& invariants & 15 &
+invariants explicités ; schémas comptes ; call-graph CPI ; décisions ADR \\
+Production \& observabilité & 15 &
+runbook ; logs ; métriques ; alerting ; scénarios incidents simulés \\
+Performance (compute) & 10 &
+budget CU ; benchmarks ; choix d'optimisation argumentés \\
+Docs \& demo & 15 &
+README exécutable ; doc API ; diagrammes ; démo reproductible \\
+\bottomrule
+\end{tabularx}
+\caption{Rubrique d'évaluation Track A (100 points)}
+\label{tab:rubric_trackA}
+\end{table}
+
+\begin{tcolorbox}[title={Condition d'échec immédiate (Fail conditions)}]
+\begin{itemize}
+  \item absence de tests négatifs sur les chemins d'autorité,
+  \item absence de documentation des seeds/PDA sur un programme Anchor,
+  \item livrable non reproductible (fresh clone ne compile pas / tests KO),
+  \item absence de threat model sur capstone.
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Stack outillage et standards repo}
+\label{sec:stack}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Catégorie} & \textbf{Outils} & \textbf{Standard attendu (artefact)} \\
+\midrule
+Toolchain & Rust toolchain, Solana CLI, Anchor &
+scripts build/test ; versions documentées ; ``fresh clone'' \\
+Testing & anchor test, tests TS, tests Rust &
+unit + integration + négatifs ; rapports CI \\
+Qualité & fmt/clippy, lint, pre-commit &
+format stable ; lint clean ; conventions repo \\
+Observabilité & logs, métriques, dashboards (selon stack) &
+runbook + alert rules + tableau ``signaux'' \\
+Docs & README, schémas, ADR, threat model &
+dossier /docs ; templates remplis ; lien demo \\
+\bottomrule
+\end{tabularx}
+\caption{Stack Track A --- outillage et standards}
+\label{tab:stack_trackA}
+\end{table}
+
+\begin{tcolorbox}[title={Standards repo (minimum)}]
+\begin{itemize}
+  \item \texttt{/programs} (code on-chain), \texttt{/tests}, \texttt{/scripts}, \texttt{/docs}
+  \item \texttt{README.md} exécutable + prérequis + ``how to run tests''
+  \item \texttt{docs/architecture.md}, \texttt{docs/threat-model.md}, \texttt{docs/adr/}
+  \item CI : lint + tests + artefacts (rapport) ; badge de status
+\end{itemize}
+\end{tcolorbox}
+
+% =========================================================
+\section{Portfolio minimal et employability pack}
+\label{sec:portfolio}
+
+\paragraph{Portfolio minimal (obligatoire).}
+\begin{itemize}
+  \item \textbf{Repo 1 --- Solana Native Primitive} : Lab A/B finalisé, tests négatifs, doc comptes.
+  \item \textbf{Repo 2 --- Anchor Program} : IDL propre, PDAs/constraints robustes, guide intégration client.
+  \item \textbf{Repo 3 --- Capstone Studio} : hardening + observabilité + perf budget + audit report.
+  \item \textbf{1 mini audit report} : findings, sévérité, correctifs, preuves tests.
+  \item \textbf{1 runbook} : incidents types + actions + métriques/alerting.
+\end{itemize}
+
+\paragraph{Employability pack (recruteur-ready).}
+\begin{itemize}
+  \item 1 page ``\emph{What I shipped}'' (liens repos + démos).
+  \item 1 page ``\emph{Security posture}'' (threat model + checklists + exemples corrections).
+  \item 1 page ``\emph{Performance posture}'' (compute budgets, benches, arbitrages).
+\end{itemize}
+
+% =========================================================
+\section{Annexes du track (templates \& checklists)}
+\label{sec:annexes_trackA}
+
+\subsection*{A) Security checklist Solana/Anchor (réutilisable)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Y Y}
+\toprule
+\textbf{Contrôle} & \textbf{Comment vérifier (preuve)} \\
+\midrule
+Owner checks & asserts explicites + tests négatifs \\
+Signer checks & requires signer + tests ``missing signer'' \\
+PDA seeds/bump & seeds documentées + tests seeds + collisions évitées \\
+Account constraints (Anchor) & constraints justifiées + tests violations \\
+CPI safety & call-graph + accounts minimal + authority non escaladable \\
+Error taxonomy & erreurs explicites + mapping doc + logs \\
+Replay / double spend logique & invariants + tests de répétition \\
+Overflow / underflow (logique) & checks + tests limites \\
+State machine cohérente & diagramme + tests transitions invalides \\
+\bottomrule
+\end{tabularx}
+\caption{Security checklist Solana/Anchor}
+\label{tab:security_checklist_trackA}
+\end{table}
+
+\subsection*{B) Template ADR (Architecture Decision Record)}
+\begin{tcolorbox}[title={ADR Template (copier-coller)}]
+\textbf{Titre :} ADR-\#\# --- \emph{[Décision]}\\
+\textbf{Contexte :} \emph{[Problème, contraintes]}\\
+\textbf{Options :} \emph{[Option A / B / C]}\\
+\textbf{Décision :} \emph{[Choix]}\\
+\textbf{Rationale :} \emph{[Pourquoi]}\\
+\textbf{Conséquences :} \emph{[Trade-offs]}\\
+\textbf{Risques :} \emph{[Risques]}\\
+\textbf{Mitigations :} \emph{[Contrôles/tests]}\\
+\end{tcolorbox}
+
+\subsection*{C) Template Threat Model (STRIDE simplifié)}
+\begin{tcolorbox}[title={Threat Model Template (STRIDE simplifié)}]
+\textbf{Système :} \emph{[Nom + périmètre]}\\
+\textbf{Actifs critiques :} \emph{[fonds, autorisations, état]}\\
+\textbf{Hypothèses :} \emph{[RPC, indexer, user behavior]}\\
+\textbf{Surfaces d'attaque :} \emph{[instructions, CPI, accounts]}\\
+\textbf{Menaces (STRIDE) :}\\
+- Spoofing : \emph{[...]}\\
+- Tampering : \emph{[...]}\\
+- Repudiation : \emph{[...]}\\
+- Information disclosure : \emph{[...]}\\
+- Denial of service : \emph{[...]}\\
+- Elevation of privilege : \emph{[...]}\\
+\textbf{Contrôles :} \emph{[checks, constraints, tests]}\\
+\textbf{Tests associés :} \emph{[négatifs, invariants]}\\
+\end{tcolorbox}
+
+\subsection*{D) PRR --- Production Readiness Review (tableau)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Domaine} & \textbf{Critère} & \textbf{Preuve} \\
+\midrule
+Qualité & CI verte + tests + lint clean & logs CI + badge + rapports \\
+Sécurité & threat model + checklist signée & docs + PR review \\
+Docs & README exécutable + API surface & /docs + guide \\
+Observabilité & logs + métriques + alertes & dashboard + runbook \\
+Perf & budget CU + bench & rapport bench \\
+Release & versioning + changelog & tag + notes \\
+\bottomrule
+\end{tabularx}
+\caption{PRR (Production Readiness Review) --- Track A}
+\label{tab:prr_trackA}
+\end{table}
+
+% =========================================================
+\section{Figures indispensables (TikZ)}
+\label{sec:figures}
+
+\subsection*{Figure 1 --- Account model / instruction flow}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=10mm,
+  box/.style={draw, rounded corners, align=center, minimum width=34mm, minimum height=10mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (user) {Utilisateur\\(wallet)};
+\node[box, right=18mm of user] (tx) {Transaction\\+ signatures};
+\node[box, right=18mm of tx] (program) {Program\\Solana};
+\node[box, below=10mm of program] (accounts) {Accounts\\(state, vault, PDA)};
+\node[box, below=10mm of tx] (rpc) {RPC / Runtime};
+
+\draw[arr] (user) -- (tx);
+\draw[arr] (tx) -- (rpc);
+\draw[arr] (rpc) -- (program);
+\draw[arr] (program) -- (accounts);
+\draw[arr] (accounts) -- (program);
+\end{tikzpicture}
+\caption{Account model / instruction flow (vue simplifiée)}
+\label{fig:account_model_flow}
+\end{figure}
+
+\subsection*{Figure 2 --- CPI call graph (simplifié)}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=12mm,
+  box/.style={draw, rounded corners, align=center, minimum width=34mm, minimum height=10mm},
+  arr/.style={-Latex, thick}
+]
+\node[box] (A) {Programme A\\(Orchestrator)};
+\node[box, right=20mm of A] (B) {Programme B\\(Service)};
+\node[box, right=20mm of B] (T) {Token Program\\/ Sys Program};
+
+\draw[arr] (A) -- node[above]{CPI} (B);
+\draw[arr] (B) -- node[above]{CPI} (T);
+
+\node[below=8mm of A, align=left] (note) {\small \textbf{Règle :} comptes minimaux, owner checks,\\\small authority explicitement contrôlée.};
+\end{tikzpicture}
+\caption{CPI call graph (orchestrateur $\rightarrow$ service $\rightarrow$ programme système)}
+\label{fig:cpi_call_graph}
+\end{figure}
+
+\end{document}

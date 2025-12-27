@@ -1,0 +1,171 @@
+\chapter{FEUILLE DE ROUTE 120 JOURS}
+
+\section{Timeline des Opérations}
+
+Cette feuille de route couvre l'horizon critique de J-60 (Lancement des opérations juridiques) à J+120 (Fin de la première cohorte). Elle est conçue pour sécuriser les fondations avant d'accélérer sur l'acquisition et la production.
+Nos hypothèses de départ incluent : une équipe core opérationnelle (CEO, CTO, Lead Pédago), la disponibilité des mentors clés à J0, et la validation du modèle juridique ISA en amont.
+
+\paragraph{Fenêtre 1 : J-60 $\to$ J0 (Préparation \& Légal)}
+La priorité absolue est la sécurisation du cadre légal (Contrats ISA, Fonds de Garantie) et la structuration de l'offre.
+\textbf{Livrables Must-Have :}
+\begin{enumerate}
+    \item Contrats ISA validés par cabinet d'avocats et conformes à la loi locale.
+    \item Fonds de Garantie (50k TND) séquestré sur compte dédié.
+    \item Syllabus détaillé V1.0 (Modules 1-4) validé par le Lead Instructor.
+    \item Site Web "MVP" en ligne avec formulaire de candidature (Typeform/Tally).
+\end{enumerate}
+
+\paragraph{Fenêtre 2 : J1 $\to$ J60 (Production \& Infra)}
+Focus sur l'usine à contenu et l'infrastructure technique.
+\textbf{Livrables Must-Have :}
+\begin{enumerate}
+    \item LMS (Learning Management System) déployé et testé.
+    \item 100\% des Labs et Exercices de la Phase 1 (Fondations) produits et relus.
+    \item Pipeline CI/CD pour la correction automatique des exercices (Rust/Solidity).
+    \item Recrutement et Onboarding des 5 premiers Mentors "Core".
+\end{enumerate}
+
+\paragraph{Fenêtre 3 : J61 $\to$ J90 (Marketing \& Sélection)}
+Ouverture des vannes d'acquisition et filtrage impitoyable.
+\textbf{Livrables Must-Have :}
+\begin{enumerate}
+    \item Campagne "Building in Public" active (voir Chap. 9).
+    \item Simulateur ROI en ligne et tracké.
+    \item Piscine (4 semaines) exécutée avec succès (Target : 100 candidats $\to$ 25 élus).
+    \item Contrats ISA signés pour les 25 étudiants retenus.
+\end{enumerate}
+
+\paragraph{Fenêtre 4 : J91 $\to$ J120 (Lancement Opérationnel)}
+Le "Day 1" de la promo. Exécution sans faille.
+\textbf{Livrables Must-Have :}
+\begin{enumerate}
+    \item Onboarding physique/virtuel réussi (Kits, Accès, Outils).
+    \item Premier Sprint Pédagogique (Semaine 1) livré avec NPS > 50.
+    \item Mise en place des rituels de suivi (Demo Hebdo, Office Hours).
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[->, thick] (0,0) -- (12,0);
+        \foreach \x/\label in {0/J-60, 3/J0, 6/J60, 9/J90, 12/J120}
+            \draw (\x,0.1) -- (\x,-0.1) node[below] {\small \label};
+            
+        \node[align=center, font=\scriptsize, fill=SolanaBlue!10, rounded corners] at (1.5, 0.5) {PRÉPA\\(Légal, Offre)};
+        \node[align=center, font=\scriptsize, fill=SolanaGreen!10, rounded corners] at (4.5, 0.5) {PROD\\(Contenu, Infra)};
+        \node[align=center, font=\scriptsize, fill=MF_Gold!20, rounded corners] at (7.5, 0.5) {ACQUISITION\\(Piscine, Select)};
+        \node[align=center, font=\scriptsize, fill=BaseDark!10, rounded corners] at (10.5, 0.5) {LANCEMENT\\(Promo 1)};
+    \end{tikzpicture}
+    \caption{Timeline 120 jours (Vue Exécutive)}
+    \label{fig:timeline_120}
+\end{figure}
+
+\begin{table}[H]
+    \caption{Checklist Go/No-Go (Gates)}
+    \label{tab:gates_120}
+    \centering
+    \small
+    \rowcolors{2}{gray!10}{white}
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Gate} & \textbf{Validation} & \textbf{Critères Obligatoires} & \textbf{En cas de KO} \\ \hline
+        A (J-30) & Légal Ready & ISA conforme, Fonds bloqué, Assurances. & Report Lancement. \\ \hline
+        B (J0) & Infra Ready & Syllabus V1 figé, LMS opérationnel, Team Staffée. & Mode "Dégradé" (Contenu JIT). \\ \hline
+        C (J60) & Candidats & > 100 Inscrits Piscine qualifiés. & Extension période Marketing 2 sem. \\ \hline
+        D (J90) & Promo Ready & 25 Contrats signés, 0 contentieux. & Réduction taille promo. \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Jalons Clés \& Actions}
+
+Nous pilotons l'exécution par "Workstreams". Chaque action est priorisée (P0 Bloquant, P1 Critique, P2 Important).
+
+\subsubsection*{Workstream A : Juridique \& Conformité}
+\textbf{Owner :} COO / Legal. \textbf{Definition of Done :} Tous les contrats sont signés et stockés sécurisés.
+\begin{itemize}
+    \item P0 : Validation modèle ISA v3 avec cabinet spécialisé.
+    \item P0 : Création structure juridique porteuse (SPV ou LLC).
+    \item P1 : Rédaction CGV/CGU et Politique de Confidentialité (GDPR).
+\end{itemize}
+
+\subsubsection*{Workstream B : Produit Pédagogique}
+\textbf{Owner :} Lead Instructor. \textbf{Definition of Done :} Contenu accessible sur LMS et testé par un pairs.
+\begin{itemize}
+    \item P0 : Finalisation structure Chapitres 5-8 (Syllabus détaillé).
+    \item P1 : Création des "Golden Templates" (Repos de référence).
+    \item P1 : Banque de Quiz (300 questions) pour l'évaluation continue.
+\end{itemize}
+
+\subsubsection*{Workstream C : Stack \& Ops}
+\textbf{Owner :} CTO. \textbf{Definition of Done :} Infra stable, monitoring actif, zéro friction étudiant.
+\begin{itemize}
+    \item P0 : Configuration Workspace GitHub (Orga, Teams, Permissions).
+    \item P1 : Déploiement serveur Discord (Bots, Rôles, Channels).
+    \item P2 : Automatisation onboarding (Zapier/Make : Typeform $\to$ Notion $\to$ Discord).
+\end{itemize}
+
+\subsubsection*{Workstream D : Acquisition}
+\textbf{Owner :} CMO. \textbf{Definition of Done :} Pipeline rempli à 150\% des objectifs.
+\begin{itemize}
+    \item P0 : Lancement Site Web V1 (Landing, FAQ, Team).
+    \item P1 : Mise en ligne Simulateur ROI (Lead Magnet).
+    \item P1 : Campagne LinkedIn/Twitter "Building in Public" (Daily).
+\end{itemize}
+
+\begin{table}[H]
+    \caption{Backlog Opérationnel (Extrait Top Actions)}
+    \centering
+    \scriptsize
+    \begin{tabularx}{\textwidth}{|l|l|c|l|l|}
+        \hline
+        \textbf{ID} & \textbf{Action} & \textbf{Prio} & \textbf{Owner} & \textbf{Critère Acceptation} \\ \hline
+        LEG-01 & Validation ISA Avocat & P0 & Legal & Mémo juridique signé ("Safe to operate"). \\ \hline
+        LEG-02 & Setup Compte Séquestre & P0 & Finance & Iban fourni, 50k TND crédités. \\ \hline
+        PED-01 & Syllabus S1-S4 Ready & P0 & Lead Inst. & PDF + Markdown sur LMS. \\ \hline
+        OPS-01 & Invite Mentors Discord & P1 & Ops & Tous les mentors ont le rôle "Sensei". \\ \hline
+        ACQ-01 & Page Candidature Live & P0 & Mktg & Formulaire testé, data arrive dans CRM. \\ \hline
+    \end{tabularx}
+\end{table}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Risques Opérationnels Critiques à 120 Jours]
+\begin{itemize}
+    \item \textbf{Retard Légal (ISA) :} Blocage du modèle économique. $\to$ Mitigation : Modèle de repli "Upfront différé".
+    \item \textbf{Déficit Candidats Qualifiés :} Piscine vide. $\to$ Mitigation : Activation réseau partenaires (Bourses).
+    \item \textbf{Churn Mentors :} Départ en cours de route. $\to$ Mitigation : Roster de backup (Alumni experts).
+\end{itemize}
+\end{tcolorbox}
+
+\section{Diagramme de Gantt Macro}
+
+Ce diagramme de Gantt illustre le chemin critique. Les tâches \textbf{Juridiques} et \textbf{Production Pédagogique} sont les goulots d'étranglement initiaux.
+
+\begin{figure}[H]
+    \centering
+    \begin{ganttchart}[
+        hgrid,
+        vgrid,
+        expand chart=\textwidth,
+        time slot format=isodate
+    ]{2025-01-01}{2025-05-30}
+    
+    \gantttitlecalendar{year, month} \\
+    
+    % J-60 starts roughly Jan 2025
+    \ganttgroup{PRÉPARATION}{2025-01-01}{2025-02-28} \\
+    \ganttbar{Juridique ISA}{2025-01-01}{2025-02-15} \\
+    \ganttbar{Fonds Garantie}{2025-01-15}{2025-02-28} \\
+    
+    \ganttgroup{PRODUCTION}{2025-03-01}{2025-04-30} \\
+    \ganttbar{Contenu V1}{2025-03-01}{2025-04-15} \\
+    \ganttbar{Infra \& LMS}{2025-03-15}{2025-04-30} \\
+    
+    \ganttgroup{LANCEMENT}{2025-04-01}{2025-05-30} \\
+    \ganttbar{Marketing}{2025-04-01}{2025-05-15} \\
+    \ganttbar{Piscine}{2025-05-01}{2025-05-30}
+    
+    \ganttlink{elem1}{elem3} % Juridique -> Contenu
+    \ganttlink{elem3}{elem6} % Contenu -> Piscine
+    \end{ganttchart}
+    \caption{Gantt Macro (J-60 $\to$ J+120)}
+    \label{fig:gantt_macro}
+\end{figure}

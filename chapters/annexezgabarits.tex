@@ -1,0 +1,99 @@
+\chapter{Annexes — Gabarits opérationnels \& Stratégiques}
+\label{annexe:gabarits}
+
+Cette annexe regroupe les outils de pilotage stratégique pré-configurés pour le déploiement de RBK 2.0. Ils servent de référence pour les comités de pilotage et la gestion quotidienne.
+
+\section{Modèle de Matrice SWOT (Analyse Stratégique)}
+
+Ce modèle est utilisé pour évaluer le positionnement de nouvelles initiatives (ex: lancement d'une nouvelle Track spécialisée).
+
+\begin{SWOTMatrix}[Exemple : Lancement Track "Zero-Knowledge"]
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Expertise :} Équipe pédagogique déjà formée aux bases de la crypto.
+    \item \textbf{Marque :} RBK reconnu pour la difficulté technique.
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ressources :} Manque de spécialistes ZK seniors disponibles pour le mentorat.
+    \item \textbf{Matériel :} Nécessité de puissance de calcul élevée pour les preuves.
+\end{itemize}
+\\ \hline
+\rowcolor{SolanaBlue!10}\textbf{Opportunités} & \textbf{Menaces}\\ \hline
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Marché :} Demande explosive pour la confidentialité (Privacy).
+    \item \textbf{Financement :} Grants possibles de fondations (StarkWare, zkSync).
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Régulation :} Incertitude sur le statut des "Privacy Coins" et outils d'anonymisation.
+    \item \textbf{Complexité :} Barrière à l'entrée trop haute pour les juniors.
+\end{itemize}
+\\ \hline
+\end{SWOTMatrix}
+
+\newpage
+\section{Modèle de Priorisation MoSCoW}
+
+Utilisé pour définir le périmètre des MVP (Minimum Viable Products) développés par le Studio.
+
+\begin{MoSCoWTable}[Exemple : Plateforme Learning Management System (LMS) V3]
+\begin{itemize}[leftmargin=*]
+\item \textbf{Auth :} Login via Wallet (SBT Check).
+\item \textbf{Cours :} Viewer Markdown/Vidéo.
+\item \textbf{Tests :} Soumission Git automatisée.
+\end{itemize} &
+\begin{itemize}[leftmargin=*]
+\item \textbf{Social :} Profils publics élèves.
+\item \textbf{Gamification :} Leaderboard temps réel.
+\item \textbf{Admin :} Dashboard analytics basique.
+\end{itemize} &
+\begin{itemize}[leftmargin=*]
+\item \textbf{Marketplace :} Offres d'emploi intégrées.
+\item \textbf{Mobile :} App native iOS/Android.
+\end{itemize} &
+\begin{itemize}[leftmargin=*]
+\item \textbf{Metaverse :} Campus virtuel 3D.
+\item \textbf{AI :} Tuteur conversationnel vocal (Reporté V4).
+\end{itemize}
+\\ \hline
+\end{MoSCoWTable}
+
+\section{Matrice RACI (Responsabilités)}
+
+Standard pour clarifier les rôles sur les processus critiques.
+
+\begin{RACITable}[Exemple : Processus de Validation des Diplômes]{|Y|Z|Z|Z|Z|}
+\hline
+\rowcolor{SolanaBlue!10}\textbf{Tâche} & \textbf{Dir. Peda} & \textbf{Jury} & \textbf{Admin} & \textbf{CEO}\\ \hline
+Vérification des notes continues & \raciA & \raciC & \raciR & \raciI \\ \hline
+Soutenance finale (Capstone) & \raciC & \raciA & \raciI & \raciI \\ \hline
+Émission du certificat (NFT) & \raciC & \raciI & \raciA & \raciR \\ \hline
+Signature officielle & \raciI & \raciI & \raciR & \raciA \\ \hline
+\end{RACITable}
+
+\newpage
+\section{Registre des Risques (Risk Register)}
+
+Outil vivant de suivi des menaces potentielles.
+
+\begin{RiskRegister}[Extrait Registre des Risques - Opérations Courantes]
+\rowcolor{SolanaPurple!10}\textbf{Risque Scénario} & \textbf{P} & \textbf{I} & \textbf{Plan d'Action (Mitigation)} & \textbf{Resp.}\\ \hline
+Coupure Internet prolongée au Hub & 3 & 5 & Solution de failover 4G/5G + Starlink en backup & Ops Mgr\\ \hline
+Départ inopiné d'un Lead Instructor & 2 & 5 & Binômage systématique + Documentation à jour & CTO\\ \hline
+Virus/Ransomware sur parc machines & 3 & 4 & Vlan ségrégués, Deep Freeze, Backups immuables & SecOps\\ \hline
+Baisse drastique cours crypto (Bear) & 4 & 3 & Trésorerie en Stablecoins (USDC), Diversification & CFO\\ \hline
+Contentieux juridique ISA & 2 & 4 & Médiation préalable, Contrats validés par avocats & Legal\\ \hline
+\end{RiskRegister}
+
+\section{Tableau de Bord KPI \& ROI}
+
+Indicateurs clés de performance suivis mensuellement.
+
+\begin{KPITable}[Indicateurs de Santé du Programme]
+\rowcolor{SolanaGreen!12}\textbf{KPI} & \textbf{Définition} & \textbf{Cible} & \textbf{Fréquence}\\ \hline
+\textbf{NPS Apprenant} & Net Promoter Score (Satisfaction) & > 70 & Fin de module\\ \hline
+\textbf{Taux de Rétention} & \% d'élèves finissant le cursus & > 85\% & Cohorte\\ \hline
+\textbf{Dette Technique} & Tickets critiques ouverts > 1 mois & 0 & Hebdomadaire\\ \hline
+\textbf{Coût Acquisition} & Coût Marketing / Élève inscrit & < 500€ & Trimestriel\\ \hline
+\textbf{Taux de Placement} & CDI/Freelance < 3 mois post-formation & > 90\% & Semestriel\\ \hline
+\end{KPITable}

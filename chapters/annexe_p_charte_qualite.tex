@@ -1,0 +1,27 @@
+\chapter{ANNEXE — CHARTE DE QUALITÉ \& RÈGLES D'OR}
+\label{ann:charte}
+
+RBK 2.0 repose sur un socle de valeurs non négociables. Tout manquement à ces règles entraîne une exclusion immédiate.
+
+\section{Les 4 Commandements de l'Ingénieur RBK}
+\begin{enumerate}
+    \item \textbf{No Broken Windows :} Aucun code n'est mergé sur 'main' s'il contient des warnings de linter ou des TODOs non résolus.
+    \item \textbf{Don't Trust, Verify :} Chaque ligne de code générée par IA doit être auditée.
+    \item \textbf{Ships or Nothing :} Un projet non déployé n'existe pas.
+    \item \textbf{Leave No One Behind :} Le savoir ne vaut que s'il est partagé.
+\end{enumerate}
+
+\section{Matrice de Conformité (Sanctions)}
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|l|}
+        \hline
+        \textbf{Infraction} & \textbf{Exemple} & \textbf{Sanction} \\ \hline
+        Plagiat & Copie repo externe sans crédit & Exclusion \\ \hline
+        Négligence Sécurité & Commit de Private Key & Blâme + Reset Projet \\ \hline
+        Ghosting & Absence non justifiée > 48h & Avertissement \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Processus de Validation Qualité}
+Pipeline : Code Complete $\to$ Linter $\to$ Tests $\to$ Audit IA \& Humain $\to$ Merge.

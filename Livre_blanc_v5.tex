@@ -1,0 +1,459 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  MOTEUR GRAPHIQUE PREMIUM - PREAMBULE LATEX
+%  Projet: RBK 2.0 - L'Architecture de la Souveraineté Numérique
+%  Charte: Solana Professional (Math-Style & Tech)
+%  Engine: XeLaTeX
+%  Version: 4.0 - Final Publisher-Grade
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+% --- Géométrie ---
+\usepackage{geometry}
+\geometry{
+  top=2.8cm,
+  bottom=2.8cm,
+  left=3cm,
+  right=3cm,
+  headheight=25pt
+}
+
+% ----------------------------
+% Langue & microtypographie
+% ----------------------------
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{microtype}
+
+% ----------------------------
+% Fontes
+% ----------------------------
+\usepackage{fontspec}
+\newcommand{\HeadingFont}{\sffamily\bfseries}
+\newcommand{\HeadingFontLight}{\sffamily\mdseries}
+
+\IfFontExistsTF{Fira Code}
+  {\setmonofont{Fira Code}[Contextuals=Alternate, Scale=MatchLowercase]}
+  {\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]}
+
+\newcommand{\chaptertitlefont}{\HeadingFont\fontsize{24}{28}\selectfont}
+\newcommand{\chapternumberfont}{\HeadingFontLight\fontsize{120}{120}\selectfont}
+
+% ----------------------------
+% Couleurs
+% ----------------------------
+\usepackage[table]{xcolor}
+\definecolor{SolanaGreen}{HTML}{14F195}
+\definecolor{SolanaPurple}{HTML}{9945FF}
+\definecolor{SolanaBlue}{HTML}{03E1FF}
+\definecolor{BaseDark}{HTML}{0B0E14}
+\definecolor{DeepBlack}{HTML}{000000}
+\definecolor{TerminalDark}{HTML}{1A1D23}
+
+% FIX: Define uppercase aliases to handle header uppercasing issues
+\colorlet{SOLANAPURPLE}{SolanaPurple}
+\colorlet{SOLANAGREEN}{SolanaGreen}
+\colorlet{SOLANABLUE}{SolanaBlue}
+
+% Palette MF_* (compatibilité)
+\definecolor{MF_DeepNavy}{HTML}{0A0F1F}
+\definecolor{MF_Slate}{HTML}{2A2F3A}
+\definecolor{MF_Gold}{HTML}{D4AF37}
+\definecolor{MF_Light}{HTML}{E6E9EF}
+\definecolor{MF_Cyan}{HTML}{00E5FF}
+\definecolor{MF_Emerald}{HTML}{2ECC71}
+
+% ----------------------------
+% Packages généraux
+
+% --- Added for V5 (Strategic Tools) ---
+\usepackage{xparse}
+\usepackage{colortbl}
+\usepackage{pifont}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{fmtcount}
+% \usepackage{hyperref} % Already present
+\usepackage{cleveref}
+% ----------------------------
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz-timing}
+\usepackage{listings}
+\usepackage{pdflscape}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{pgfgantt}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{placeins}
+
+% ----------------------------
+% Commandes Personnalisées
+% ----------------------------
+\newcommand{\kpi}[1]{\textbf{\textcolor{SolanaGreen}{#1}}}
+\newcommand{\risk}[1]{\textbf{\textcolor{SolanaPurple}{#1}}}
+\newcommand{\newfeature}[1]{\textbf{\textcolor{SolanaBlue}{[NOUVEAU] #1}}}
+
+% ----------------------------
+% TikZ
+% ----------------------------
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,backgrounds,shadows.blur,fit,shadings,arrows.meta,shapes.geometric,shapes.symbols,shadows,fadings}
+
+% ----------------------------
+% Titlesec (Standard, non-explicit for robustness)
+% ----------------------------
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\HeadingFont}
+  {\hfill\chapternumberfont\color{SolanaPurple!20}\thechapter}
+  {-20pt}
+  {\chaptertitlefont\color{SolanaPurple}}
+  [\vspace{10pt}{\color{SolanaGreen}\titlerule[2pt]}]
+
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\HeadingFont}
+  {}
+  {0pt}
+  {\chaptertitlefont\color{SolanaPurple}}
+  [\vspace{10pt}{\color{SolanaGreen}\titlerule[2pt]}]
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\HeadingFont}
+  {\textcolor{SolanaPurple}{\thesection}}{1em}{}
+  [\vspace{-0.4em}{\color{SolanaGreen}\titlerule[1.2pt]}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\HeadingFont}
+  {\textcolor{SolanaBlue}{\thesubsection}}{1em}{}
+
+% ----------------------------
+% Boîtes premium
+% ----------------------------
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\usepackage{fontawesome5}
+
+\providecommand{\faPreselectedIcon}[2][]{\texorpdfstring{\faIcon{#2}}{#2}}
+
+\newtcolorbox{ceoBox}[1]{
+    enhanced, breakable, frame hidden, colback=white, boxsep=5pt, left=10mm,
+    title={#1}, coltitle=DeepBlack,
+    overlay unbroken and first={
+        \begin{tcbclipinterior}
+            \fill[shading=axis, left color=SolanaBlue!10, right color=white] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}
+        \node[anchor=west] at ([xshift=2mm, yshift=-3mm]frame.north west) {\color{SolanaBlue}\Huge\faLightbulb};
+    }
+}
+
+\newtcolorbox{techBox}[1]{
+    enhanced, breakable, colback=white!96!black, colframe=BaseDark!10, coltext=TerminalDark,
+    boxrule=0.5pt, sharp corners, left=3mm, right=3mm, top=2mm, bottom=2mm,
+    fontupper=\ttfamily, title={\HeadingFont\bfseries #1}, colbacktitle=BaseDark!5,
+    coltitle=BaseDark, borderline west={3pt}{0pt}{SolanaBlue}
+}
+
+\newtcolorbox{strategieBox}[1]{
+    enhanced, breakable, colback=white, colframe=SolanaPurple, boxrule=0.6pt, arc=2mm,
+    drop shadow, title={\HeadingFont\bfseries #1}, colbacktitle=SolanaPurple, coltitle=white
+}
+
+\newtcolorbox{alumniBox}[1]{
+    enhanced, breakable, colback=SolanaGreen!5, colframe=SolanaGreen, boxrule=0.5pt, sharp corners,
+    title={\faChartLine\ #1}, fonttitle=\bfseries, coltitle=SolanaGreen!80!black,
+    borderline west={2pt}{0pt}{SolanaGreen}
+}
+
+\newtcolorbox{kpiBox}[1]{
+    enhanced, breakable, colback=SolanaGreen!5, colframe=SolanaGreen, boxrule=0.5pt, sharp corners,
+    title={\faTrophy\ #1}, fonttitle=\bfseries, coltitle=SolanaGreen!80!black,
+    borderline west={2pt}{0pt}{SolanaGreen}
+}
+
+\newtcolorbox{roadmapBox}[1]{
+    enhanced, breakable, colback=SolanaPurple!5, colframe=SolanaPurple, boxrule=0.5pt, arc=2mm,
+    title={\faRoad\ #1}, fonttitle=\bfseries, coltitle=SolanaPurple,
+    drop fuzzy shadow={SolanaPurple!50!white}
+}
+
+% ----------------------------
+
+% ============================================================
+%  OUTILS STRATÉGIQUES — GABARITS TABLEAUX (SWOT / MoSCoW / RACI / RISQUES / KPI)
+% ============================================================
+
+% Colonnes tabularx
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+% \newcolumntype{C}{>{\centering\arraybackslash}m{1.25cm}} % Already defined as X centering in v4 preamble?
+% Checking v4 preamble: \newcolumntype{C}{>{\centering\arraybackslash}X}. 
+% We need a specific fixed width centering for RACI small columns probably, or stick to X but make sure table fits.
+% The prompt requested: \newcolumntype{C}{>{\centering\arraybackslash}m{1.25cm}}
+% I will redefine it locally or use a new name to avoid conflict if C is used elsewhere.
+% Actually v4 uses C as X centering. I should use a different letter or overwrite if I'm sure.
+% Let's use Z for the small fixed width column to be safe, or just use the prompt's definition but renamed to avoid conflict with 'C'.
+\newcolumntype{Z}{>{\centering\arraybackslash}m{1.25cm}} 
+
+% Petits marqueurs RACI
+\newcommand{\raciR}{\textbf{\color{SolanaPurple}R}}
+\newcommand{\raciA}{\textbf{\color{SolanaGreen!60!black}A}}
+\newcommand{\raciC}{\textbf{\color{SolanaBlue!70!black}C}}
+\newcommand{\raciI}{\textbf{\color{BaseDark}I}}
+
+% Boîte générique “tableau stratégique”
+\newtcolorbox{tableBox}[2]{
+  enhanced, breakable,
+  colback=#2!4, colframe=#2!70!black,
+  boxrule=0.6pt, arc=2mm,
+  title={\HeadingFont\bfseries #1},
+  coltitle=DeepBlack,
+  colbacktitle=#2!12,
+  drop shadow
+}
+
+% ---------- SWOT ----------
+\NewEnviron{SWOTMatrix}[1][Matrice SWOT]{
+  \begin{tableBox}{#1}{SolanaPurple}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|Y|}
+  \hline
+  \rowcolor{SolanaGreen!10}\textbf{Forces} & \textbf{Faiblesses}\\ \hline
+  \BODY
+  \end{tabularx}
+  \end{tableBox}
+}
+
+% ---------- MoSCoW ----------
+\NewEnviron{MoSCoWTable}[1][Priorisation MoSCoW]{
+  \begin{tableBox}{#1}{SolanaGreen}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|Y|Y|Y|}
+  \hline
+  \rowcolor{SolanaGreen!12}\textbf{Must have} &
+  \textbf{Should have} &
+  \textbf{Could have} &
+  \textbf{Won't have (for now)}\\ \hline
+  \BODY
+  \end{tabularx}
+  \end{tableBox}
+}
+
+% ---------- RACI ----------
+\NewEnviron{RACITable}[2][Matrice RACI]{
+  % #2 = spécification des colonnes tabularx
+  \begin{tableBox}{#1}{SolanaBlue}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{#2}
+  \BODY
+  \end{tabularx}
+  \end{tableBox}
+}
+
+% ---------- Registre des risques ----------
+\NewEnviron{RiskRegister}[1][Registre des risques]{
+  \begin{tableBox}{#1}{SolanaPurple}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|c|c|Y|Y|}
+  \hline
+  \rowcolor{SolanaPurple!10}\textbf{Risque} & \textbf{P} & \textbf{I} & \textbf{Mesures} & \textbf{Owner}\\ \hline
+  \BODY
+  \end{tabularx}
+  \end{tableBox}
+}
+
+% ---------- KPI / ROI ----------
+\NewEnviron{KPITable}[1][KPI \& ROI]{
+  \begin{tableBox}{#1}{SolanaGreen}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|Y|Y|Y|}
+  \hline
+  \rowcolor{SolanaGreen!12}\textbf{Indicateur} & \textbf{Définition} & \textbf{Cible} & \textbf{Mesure / Source}\\ \hline
+  \BODY
+  \end{tabularx}
+  \end{tableBox}
+}
+% En-têtes/Pieds
+% ----------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{SolanaPurple}\leftmark}
+\fancyfoot[R]{\color{SolanaBlue}RBK Whitepaper}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{{\color{SolanaPurple}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+
+% ----------------------------
+% Hyperref & Options
+% ----------------------------
+\usepackage[unicode=true, colorlinks=true, linkcolor=SolanaPurple!80!black, citecolor=SolanaGreen!70!black, urlcolor=SolanaBlue!70!black]{hyperref}
+\usepackage{bookmark}
+
+% ----------------------------
+% Custom TOC (Table des Matières)
+% ----------------------------
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{\bfseries\Large\color{SolanaPurple}}
+\renewcommand{\cftsecfont}{\bfseries\large\color{BaseDark}}
+\renewcommand{\cftsubsecfont}{\normalsize\color{BaseDark!80}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+\begin{document}
+
+% --- PAGE DE GARDE ---
+\begin{titlepage}
+    \centering
+    \pagecolor{white}
+    \vspace*{2cm}
+    {\fontsize{45}{54}\selectfont \bfseries \color{SolanaPurple} MANIFESTE RBK 2.0} \\[1cm]
+    {\Huge \bfseries \color{SolanaGreen!80!black} Le Paradigme «~Senior-by-Design~»} \\[3cm]
+    \vfill
+    {\Large \bfseries \color{BaseDark} Alaeddine BEN RHOUMA} \\
+    {\large \color{SolanaPurple!80!black} Cofondateur de Money Factory AI} \\[1cm]
+    \vfill
+    {\LARGE \bfseries \color{SolanaGreen!70!black} MONEY FACTORY AI} \\[0.5cm]
+    {\large \color{BaseDark} Web3 Expert Training Program} \\[2cm]
+    {\large \color{black!60} Version 4.0 — Janvier 2026 (Scale \& Impact)}
+\end{titlepage}
+
+\pagecolor{white}
+\nopagecolor
+
+% Custom TOC Name
+\renewcommand{\contentsname}{\hfill\bfseries\Huge\color{SolanaPurple} TABLE DES MATIÈRES \hfill}
+\tableofcontents
+\newpage
+
+% Guide de Lecture
+\input{chapters/00_guide_lecture.tex}
+
+% Liste des Acronymes
+\input{chapters/00_acronymes.tex}
+\newpage
+
+% 1. Executive Summary
+\input{chapters/00_executive_summary.tex}
+
+% --- CHAPITRES PRINCIPAUX ---
+% 1. Vision & Manifeste
+\input{chapters/01_vision.tex}
+\input{chapters/01a_note_cadrage.tex}
+
+% 2. Analyse du Contexte
+\input{chapters/02_contexte.tex}
+
+% 3. Arbitrage Technologique
+\input{chapters/03_arbitrage.tex}
+
+% 4. Méthodologie Cyborg 2.0
+\input{chapters/04_methodologie.tex}
+
+% 5. Structure du Cursus
+\input{chapters/05_structure.tex}
+
+% 6. Syllabus Technique Complet
+\input{chapters/06_syllabus_tronc_commun.tex}
+
+% 7. Track A : Solana
+\input{chapters/08_track_solana.tex}
+
+% 8. Track B : EVM
+\input{chapters/09_track_evm.tex}
+
+% 9. Track C : Product
+\input{chapters/09_track_c_product.tex}
+
+% 10. Soft Skills
+\input{chapters/07_soft_skills.tex}
+
+% 11. Capstones
+\input{chapters/11_capstones.tex}
+
+% 12. Fiches Métiers
+\input{chapters/10_fiches_metiers.tex}
+
+% 13. Business Plan
+\input{chapters/12_business_plan.tex}
+
+% 14. Marketing
+\input{chapters/13_marketing.tex}
+
+% 15. Analyse des Risques
+\input{chapters/14_risques.tex}
+
+% 16. Compliance Guide
+\input{chapters/16_compliance_guide.tex}
+
+% 17. Gouvernance & Éthique
+\input{chapters/18_gouvernance.tex}
+
+% 18. Impact & ODD
+\input{chapters/17_impact_odd.tex}
+
+% 19. Infrastructure SBT
+\input{chapters/19_infrastructure_sbt.tex}
+
+% 20. Roadmap 120 Jours
+\input{chapters/15_roadmap.tex}
+
+% 21. Roadmap Lancement (90 Jours)
+\input{chapters/20_roadmap_lancement.tex}
+
+% 22. Token Reput & Alumni
+\input{chapters/16_token_reputation.tex}
+
+% 23. Différenciation
+\input{chapters/21_differentiation.tex}
+
+% 24. Conclusion
+\input{chapters/22_conclusion.tex}
+
+% --- LISTES ---
+\listoffigures
+\listoftables
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{part}{ANNEXES}
+\appendix
+\input{chapters/annexezgabarits.tex}
+\input{chapters/annexe_a_syllabus_detaille.tex}
+\input{chapters/annexe_b_finance.tex}
+\input{chapters/annexe_c_juridique.tex}
+\input{chapters/annexe_d_audit.tex}
+\input{chapters/annexe_e_cockpit.tex}
+\input{chapters/annexe_f_isa.tex}
+\input{chapters/annexe_g_selection.tex}
+\input{chapters/annexe_h_sbt.tex}
+\input{chapters/annexe_i_dashboard.tex}
+\input{chapters/annexe_j_offre.tex}
+\input{chapters/annexe_k_glossaire.tex}
+\input{chapters/annexe_l_mentors.tex}
+\input{chapters/annexe_m_b2b.tex}
+\input{chapters/annexe_n_stack_technique.tex}
+\input{chapters/annexe_o_competences.tex}
+\input{chapters/annexe_p_charte_qualite.tex}
+\input{chapters/annexe_q_contrat_isa.tex}
+\input{chapters/annexe_r_hiring.tex}
+\input{chapters/annexe_s_kit_survie.tex}
+\input{chapters/99_changelog_v5.tex}
+\input{chapters/99_references.tex}
+
+\end{document}

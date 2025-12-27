@@ -1,0 +1,202 @@
+\chapter{TRACK A : SOLANA SMART CONTRACT ENGINEER (RUST/ANCHOR)}
+
+\section{Philosophie du Track : L'Excellence par Rust}
+
+Solana n'est pas une simple blockchain rapide ; c'est un système d'exploitation décentralisé massivement parallèle (Sealevel). Pour y développer, comprendre la syntaxe ne suffit pas. Il faut maîtriser la gestion mémoire, la concurrence d'accès aux données (Account Model) et l'optimisation des cycles CPU (Compute Units).
+Le choix de Rust n'est pas anodin : il impose une rigueur absolue (Safety) qui, combinée aux contraintes de Solana, forme des ingénieurs d'élite.
+Notre objectif est de former des "Guardians" : des développeurs obsédés par la sécurité des fonds, la performance du code et la résilience de l'architecture.
+
+\paragraph{Positionnement "Guardian"}
+Un Guardian ne se contente pas de coder une feature. Il pense "adversarial". Il sait comment une transaction peut échouer, comment un attaquant peut manipuler une instruction, et comment le réseau va réagir sous charge. C'est un profil hybride entre Architecte Système et Auditeur de Sécurité.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=NON NÉGOCIABLE : LE STANDARD QUALITÉ]
+\begin{itemize}
+    \item \textbf{Tests Systematiques :} Pas de PR sans tests (Unit + E2E). Coverage > 80\%.
+    \item \textbf{Reproductibilité :} Builds déterministes (Verifiable Builds).
+    \item \textbf{Audit-Readiness :} Code commenté, Documentation d'architecture jour 1, Threat Model explicite.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \node[draw, circle, fill=SolanaGreen!20, minimum size=2.2cm, align=center] (rust) at (0,0) {Rust\\Safety};
+        \node[draw, circle, fill=SolanaBlue!20, minimum size=2.2cm, align=center] (svm) at (4,0) {SVM\\Perf};
+        \node[draw, circle, fill=SolanaPurple!20, minimum size=2.2cm, align=center] (secu) at (2,-3.5) {Security};
+        \draw[<->, thick] (rust) -- (svm);
+        \draw[<->, thick] (svm) -- (secu);
+        \draw[<->, thick] (secu) -- (rust);
+        \node[font=\bfseries] at (2, -1.5) {The Guardian};
+    \end{tikzpicture}
+    \caption{Pourquoi Solana est un track d'excellence}
+    \label{fig:trackA_excellence}
+\end{figure}
+
+\begin{table}[H]
+    \caption{Compétences Cibles vs Preuves}
+    \centering
+    \small
+    \rowcolors{2}{gray!10}{white}
+    \begin{tabularx}{\textwidth}{|l|X|X|l|}
+        \hline
+        \textbf{Domaine} & \textbf{Compétence} & \textbf{Preuve Attendue} & \textbf{Standard} \\ \hline
+        Architecture & Gestion PDAs & Diagramme de dérivations & Pas de collision \\ \hline
+        Sécurité & Signer Checks & Tests d'invocation malveillante & 100\% checked \\ \hline
+        Performance & CU Optimization & Rapport profilage transaction & < 200k CU \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Structure Pédagogique : De l'Architecture au Produit (16 Semaines)}
+
+Le parcours est découpé en 4 modules progressifs. On commence par "souffrir" avec Rust natif pour comprendre la mécanique interne, puis on accélère avec Anchor, avant de plonger dans l'architecture complexe (CPI) et le durcissement pour la production.
+Chaque module se solde par un "Livrable Portfolio" qui prouve l'acquisition de la compétence.
+
+\begin{table}[H]
+    \caption{Carte des Modules (Résumé Exécutif)}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|l|X|l|l|}
+        \hline
+        \textbf{Module} & \textbf{Sem} & \textbf{Objectif} & \textbf{Lab Principal} & \textbf{Portfolio} \\ \hline
+        1. Native & 13-16 & Comprendre l'Account Model & Mini-Vault Natif & Repo "Raw" \\ \hline
+        2. Anchor & 17-20 & Productivité & Marketplace NFT & Program IDL \\ \hline
+        3. Arch & 21-24 & Composabilité & CPI Orchestrator & Diagramme Arch \\ \hline
+        4. Prod & 25-28 & Hardening & Full dApp & Audit Report \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{MODULE 1 : Le Modèle Solana \& Rust Natif (Semaines 13-16)}
+
+\paragraph{Objectifs Opérationnels}
+\begin{itemize}
+    \item Maîtriser la dé-sérialisation manuelle des données (Borsh).
+    \item Gérer le "Rent" et l'allocation d'espace (realloc).
+    \item Comprendre le cycle de vie d'une transaction (Signer, Writable).
+\end{itemize}
+
+\paragraph{Labs \& Livrables}
+\textbf{Lab A (Messagerie On-Chain)} : Créer un programme qui permet à des utilisateurs de poster des messages stockés dans des comptes dédiés.
+\textbf{Lab B (Mini-Escrow)} : Un contrat qui bloque des fonds jusqu'à validation par un tiers.
+\textbf{Livrable :} Repo GitHub structuré avec tests TS (Mocha/Chai) interagissant avec `solana-test-validator`.
+
+\begin{table}[H]
+    \caption{Checklist Sécurité Module 1}
+    \centering
+    \footnotesize
+    \begin{tabularx}{\textwidth}{|X|X|l|}
+        \hline
+        \textbf{Contrôle} & \textbf{Vérification} & \textbf{Fail Typique} \\ \hline
+        Owner Check & Vérifier que \texttt{account\_info.owner == program\_id} & Injection de données \\ \hline
+        Signer Check & Vérifier \texttt{account\_info.is\_signer} & Usurpation \\ \hline
+        Rent Exempt & Le compte est-il assez fondé ? & Compte purgé \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{MODULE 2 : Maîtrise du Framework Anchor (Semaines 17-20)}
+
+\paragraph{Objectifs Opérationnels}
+\begin{itemize}
+    \item Utiliser les macros Anchor pour sécuriser le code (\texttt{\#[account(...)]}).
+    \item Gérer les PDAs (Program Derived Addresses) de manière déterministe.
+    \item Émettre des Events pour l'indexation.
+\end{itemize}
+
+\paragraph{Labs \& Livrables}
+\textbf{Lab A (Counter PDA)} : Un compteur global et des compteurs user-specific utilisant des seeds.
+\textbf{Lab B (Staking Vault)} : Un utilisateur dépose des tokens, le programme tracking le solde et le temps.
+\textbf{Livrable :} Code Anchor propre, Tests TypeScript étendus, IDL publié.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \node[draw] (client) {Client (TS)};
+        \node[draw, right=of client] (idl) {IDL};
+        \node[draw, right=of idl] (prog) {Program (Rust)};
+        \node[draw, below=of prog] (acc) {Accounts (Data)};
+        \draw[->] (client) -- (idl);
+        \draw[->] (idl) -- (prog);
+        \draw[->] (prog) -- (acc);
+    \end{tikzpicture}
+    \caption{Flux Anchor}
+\end{figure}
+
+\subsection{MODULE 3 : Architectures Avancées \& Innovation (Semaines 21-24)}
+
+\paragraph{Objectifs Opérationnels}
+\begin{itemize}
+    \item CPI (Cross-Program Invocations) : Appeler un programme depuis un autre (ex: Transfert SPL Token).
+    \item Token Extensions (Token-2022) : Metadata, Transfer Hooks.
+    \item Architecture Modulaire : Séparer la logique métier du stockage.
+\end{itemize}
+
+\paragraph{Labs \& Livrables}
+\textbf{Lab A (CPI Challenge)} : Un programme "Master" qui contrôle un programme "Slave" via CPI signée (PDA Signer).
+\textbf{Livrable :} Architecture complexe documentée (C4 Model) et tests d'intégration multi-programmes.
+
+\subsection{MODULE 4 : Production Hardening \& UX Performance (Semaines 25-28)}
+
+\paragraph{Objectifs Opérationnels}
+\begin{itemize}
+    \item Optimisation des Compute Units (CU) pour réduire les coûts et la latence.
+    \item Gestion des erreurs custom et logs structurés.
+    \item Préparation à l'audit (Freeze Authority, Upgradeability).
+\end{itemize}
+
+\paragraph{Projet Final}
+Une dApp complète (ex: AMM simplifié ou DAO Voting) déployée sur Devnet, avec une UI fonctionnelle, une suite de tests CI/CD, et un rapport d'auto-audit.
+
+\begin{table}[H]
+    \caption{Production Readiness Review (PRR)}
+    \centering
+    \footnotesize
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Domaine} & \textbf{Critère} & \textbf{Preuve} & \textbf{Statut} \\ \hline
+        Sécurité & Fuzzing Tests & Corps de cas limites testés & Obligatoire \\ \hline
+        Ops & Multisig Upgrade & Clés gérées par Squads/Multisig & Obligatoire \\ \hline
+        Doc & Architecture & Diagramme Mermaid à jour & Obligatoire \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Stack Technique Spécifique}
+
+La stack Solana évolue vite. Nous imposons une version LTS (Long Term Support) et des outils standards.
+
+\begin{table}[H]
+    \caption{Stack Track A (Standard)}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|X|l|}
+        \hline
+        \textbf{Catégorie} & \textbf{Outils} & \textbf{Usage} \\ \hline
+        Core & Rust, Solana CLI, Anchor & Dev, Deploy, Test \\ \hline
+        Client & TypeScript, web3.js, Anchor.ts & Intégration Front/Tests \\ \hline
+        Security & Trident (Fuzzing), Soteria & Audit auto \\ \hline
+        DevOps & GitHub Actions, Solana Verify & CI/CD \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Profil de Sortie : Le « Guardian »}
+
+Le Guardian est un ingénieur rare. Il ne "bricole" pas des scripts. Il construit des infrastructures financières immuables. Il est capable de livrer un protocole DeFi sécurisé, documenté et performant en autonomie.
+Son employabilité est maximale car il maîtrise la chaîne de valeur complète : du bas niveau (Rust/BPF) au haut niveau (Architecture/Produit).
+
+\paragraph{Missions Types en Entreprise}
+\begin{itemize}
+    \item Construire un DEX (Decentralized Exchange) à haute fréquence.
+    \item Auditer un protocole de Lending pour détecter les failles de liquidité.
+    \item Optimiser les coûts de gas d'un programme NFT à fort volume (Compression).
+\end{itemize}
+
+\begin{table}[H]
+    \caption{Checklist Portfolio Guardian}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|X|l|}
+        \hline
+        \textbf{Artefact} & \textbf{Contenu} & \textbf{Critère} \\ \hline
+        3 Repos GitHub & Code Rust clean, Tests, CI & Green CI Badge \\ \hline
+        Audit Report & Analyse d'un protocole tiers & 3 failles identifiées \\ \hline
+        Demo Live & Vidéo Loom (3 min) expliquant l'arch & Clarté orale \\ \hline
+    \end{tabularx}
+\end{table}

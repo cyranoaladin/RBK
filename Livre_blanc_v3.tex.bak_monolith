@@ -1,0 +1,4288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  MOTEUR GRAPHIQUE PREMIUM - PREAMBULE LATEX
+%  Projet: RBK 2.0 - L'Architecture de la Souveraineté Numérique
+%  Charte: Solana Professional (Math-Style & Tech)
+%  Engine: XeLaTeX
+%  Version: 2.0 - Cabinet de Conseil International
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ------------------------------------------------------------
+% RBK 2.0 — Préambule (XeLaTeX)
+% Standard "cabinet de conseil" — Identité visuelle + moteur graphique
+% ------------------------------------------------------------
+
+\documentclass[11pt,a4paper,oneside]{report}
+
+% --- Géométrie (on conserve le cadrage existant) ---
+\usepackage{geometry}
+\geometry{
+  top=2.8cm,
+  bottom=2.8cm,
+  left=3cm,
+  right=3cm,
+  headheight=25pt
+}
+
+% ----------------------------
+% Langue & microtypographie (XeLaTeX)
+% ----------------------------
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{microtype}
+
+% ----------------------------
+% Fontes (XeLaTeX)
+% ----------------------------
+\usepackage{fontspec}
+% unicode-math moved after amsmath
+% \usepackage{unicode-math}
+
+% Titres (Montserrat ou Inter en fallback)
+% Force usage of Inter (detected on system)
+\newfontfamily\HeadingFont{Inter}[Ligatures=TeX,Scale=MatchLowercase]
+\newfontfamily\HeadingFontLight{Inter}[Ligatures=TeX,Scale=MatchLowercase,Weight=Light]
+
+% Mono (Fira Code avec ligatures, fallback)
+\IfFontExistsTF{Fira Code}
+  {\setmonofont{Fira Code}[Contextuals=Alternate,Scale=MatchLowercase]}
+  {\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]}
+
+% Raccourcis de tailles pour chapitres
+\newcommand{\chaptertitlefont}{\HeadingFont\fontsize{28}{32}\selectfont}
+\newcommand{\chapternumberfont}{\HeadingFontLight\fontsize{120}{120}\selectfont}
+
+% ----------------------------
+% Couleurs — Charte Solana + palette legacy utilisée dans le contenu
+% ----------------------------
+\usepackage[table]{xcolor}
+\definecolor{SolanaGreen}{HTML}{14F195}
+\definecolor{SolanaPurple}{HTML}{9945FF}
+\definecolor{SolanaBlue}{HTML}{03E1FF}
+\definecolor{BaseDark}{HTML}{0B0E14}
+\definecolor{DeepBlack}{HTML}{000000}
+\definecolor{TerminalDark}{HTML}{1A1D23}
+\definecolor{LightGray}{HTML}{F5F5F5}
+% Palette MF_* référencée dans le document (compatibilité)
+\definecolor{MF_DeepNavy}{HTML}{0A0F1F}
+\definecolor{MF_Slate}{HTML}{2A2F3A}
+\definecolor{MF_Gold}{HTML}{D4AF37}
+\definecolor{MF_Light}{HTML}{E6E9EF}
+\definecolor{MF_Cyan}{HTML}{00E5FF}
+\definecolor{MF_Emerald}{HTML}{2ECC71}
+
+% ----------------------------
+% Hyperliens (pro & discret)
+% ----------------------------
+% hyperref moved to end of preamble
+
+% ----------------------------
+% Packages généraux utiles dans le contenu existant
+% ----------------------------
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+% ----------------------------
+% TikZ & librairies requises
+% ----------------------------
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,backgrounds,shadows.blur,fit,shadings,arrows.meta,shapes.geometric,shapes.symbols,shadows,fadings}
+
+% ==================== NOUVEAUX PACKAGES (V3) ====================
+\usepackage{multicol}                % Pour colonnes multiples
+\usepackage{rotating}                % Pour tableaux en paysage
+\usepackage{pgfplots}                % Pour graphiques avancés
+\pgfplotsset{compat=1.18}
+\usepackage{tikz-timing}             % Diagrammes temporels
+\usepackage{listings}                % Blocs de code
+\usepackage{float}                   % Contrôle des flottants
+\usepackage{pdflscape}               % Pages en paysage
+\usepackage{makecell}                % Cellules de tableau complexes
+\usepackage{multirow}                % Fusion de lignes dans tableaux
+\usepackage{longtable}               % Tableaux multi-pages
+\usepackage{wrapfig}                 % Images avec texte enveloppant
+
+% ==================== CONFIGURATION LISTINGS ====================
+% Définition du langage Rust pour listings
+\lstdefinelanguage{Rust}{
+    keywords={true,false,if,else,impl,let,loop,match,mod,move,mut,pub,ref,return,self,struct,trait,type,unsafe,use,where,while,async,await,fn,enum},
+    otherkeywords={::,->,=>},
+    ndkeywords={u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,f32,f64,bool,char,str,String,Vec,Option,Result,Box,Rc,Arc,Cell,RefCell,HashMap,BTreeMap,HashSet,BTreeSet,LinkedList,VecDeque,BinaryHeap},
+    sensitive=true,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    morestring=[b]',
+}
+
+\lstset{
+    language={Rust},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{SolanaPurple},
+    commentstyle=\color{SolanaGreen},
+    stringstyle=\color{SolanaBlue},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{TerminalDark!10},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    rulecolor=\color{TerminalDark},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=true,
+    escapeinside={\%*}{*)},
+    morekeywords={AccountInfo, Pubkey, ProgramResult, Context}
+}
+
+% ==================== NOUVELLES COMMANDES (V3) ====================
+\newcommand{\kpi}[1]{\textbf{\textcolor{SolanaGreen}{#1}}}
+\newcommand{\risk}[1]{\textbf{\textcolor{SolanaPurple}{#1}}}
+\newcommand{\newfeature}[1]{\textbf{\textcolor{SolanaBlue}{[NOUVEAU] #1}}}
+\newcommand{\metric}[2]{\textbf{#1} & \textbf{#2} \\}
+\newcommand{\phasebox}[2]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=SolanaGreen!5,
+        colframe=SolanaGreen!70,
+        title={\faCalendar\ Phase #1},
+        fonttitle=\bfseries,
+        coltitle=SolanaPurple
+    ]
+    #2
+    \end{tcolorbox}
+}
+
+% ----------------------------
+% Page de chapitre — titlesec + TikZ
+% ----------------------------
+\usepackage[explicit]{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont}
+  {}
+  {0pt}
+  {%% before-code (explicit)
+    \begin{tikzpicture}[remember picture,overlay]
+      % Fond dégradé (Green -> Purple) sur le tiers supérieur
+      \path[shade,left color=SolanaGreen,right color=SolanaPurple]
+        (current page.north west)
+        rectangle ([yshift=-.33\paperheight]current page.north east);
+      % Numéro de chapitre (léger, imposant)
+      \node[anchor=north east] at ([yshift=-.08\paperheight,xshift=-1cm]current page.north east)
+        {\color{white!92}\chapternumberfont \thechapter};
+      % Titre du chapitre
+      \node[anchor=north west,text width=.70\paperwidth] at ([yshift=-.18\paperheight,xshift=1.5cm]current page.north west)
+        {\color{white}\chaptertitlefont #1};
+    \end{tikzpicture}
+    % Réserve d'espace pour que le texte commence sous le visuel (~ tiers de page)
+    \vspace*{.28\paperheight}
+  }
+  []
+
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont}
+  {}
+  {0pt}
+  {%% before-code (explicit)
+    \begin{tikzpicture}[remember picture,overlay]
+      % Fond dégradé (Green -> Purple) sur le tiers supérieur
+      \path[shade,left color=SolanaGreen,right color=SolanaPurple]
+        (current page.north west)
+        rectangle ([yshift=-.33\paperheight]current page.north east);
+      % Titre du chapitre (sans numéro)
+      \node[anchor=north west,text width=.70\paperwidth] at ([yshift=-.18\paperheight,xshift=1.5cm]current page.north west)
+        {\color{white}\chaptertitlefont #1};
+    \end{tikzpicture}
+    % Réserve d'espace
+    \vspace*{.28\paperheight}
+  }
+  []
+
+% Titres de sections (avec support d'icônes)
+\titleformat{\section}
+  {\normalfont\Large\bfseries\HeadingFont}
+  {\textcolor{SolanaPurple}{\thesection}}{1em}{#1}
+  [\vspace{-0.4em}{\color{SolanaGreen}\titlerule[1.2pt]}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\HeadingFont}
+  {\textcolor{SolanaBlue}{\thesubsection}}{1em}{#1}
+
+% ----------------------------
+% Définition de colonnes pour tabularx
+% ----------------------------
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % Colonne X alignée à gauche
+\newcolumntype{C}{>{\centering\arraybackslash}X}   % Colonne X centrée
+
+% ----------------------------
+% Espacement des titres
+% ----------------------------
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+\titlespacing*{name=\chapter,numberless}{0pt}{-20pt}{40pt}
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% ----------------------------
+% Boîtes premium (tcolorbox)
+% ----------------------------
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{fontawesome5}
+
+% ceoBox : fond blanc, bordure gauche dégradée, icône plume
+\newtcolorbox{ceoBox}[1]
+{ enhanced, breakable, frame hidden, colback=white, boxsep=5pt, left=10mm,
+  title={\faFeather\ \HeadingFont\bfseries #1}, coltitle=DeepBlack,
+  overlay unbroken={\begin{scope}[on background layer]
+      \path[shading=axis,bottom color=SolanaGreen,top color=SolanaPurple]
+        ([xshift=-10mm]frame.south west) rectangle ([xshift=-4mm]frame.north west);
+    \end{scope}},
+  overlay first={\begin{scope}[on background layer]
+      \path[shading=axis,bottom color=SolanaGreen,top color=SolanaPurple]
+        ([xshift=-10mm]frame.south west) rectangle ([xshift=-4mm]frame.north west);
+    \end{scope}},
+  overlay middle={\begin{scope}[on background layer]
+      \path[shading=axis,bottom color=SolanaGreen,top color=SolanaPurple]
+        ([xshift=-10mm]frame.south west) rectangle ([xshift=-4mm]frame.north west);
+    \end{scope}},
+  overlay last={\begin{scope}[on background layer]
+      \path[shading=axis,bottom color=SolanaGreen,top color=SolanaPurple]
+        ([xshift=-10mm]frame.south west) rectangle ([xshift=-4mm]frame.north west);
+    \end{scope}}
+}
+
+% techBox : "Terminal Dark" (fond très sombre), texte SolanaBlue
+\newtcolorbox{techBox}[1]
+{ enhanced, breakable, colback=TerminalDark, colframe=TerminalDark, coltext=SolanaBlue,
+  boxrule=0pt, sharp corners, left=3mm,right=3mm,top=2mm,bottom=2mm,
+  fontupper=\ttfamily, title={\HeadingFont\bfseries #1}, colbacktitle=TerminalDark,
+  coltitle=SolanaBlue, borderline west={1.2pt}{0pt}{SolanaBlue!50} }
+
+% strategieBox : arrondie + ombre douce compatible, titre sur fond SolanaPurple
+\newtcolorbox{strategieBox}[1]
+{ enhanced, breakable, colback=white, colframe=SolanaPurple, boxrule=.6pt, arc=2mm,
+  drop shadow,
+  title={\HeadingFont\bfseries #1}, colbacktitle=SolanaPurple, coltitle=white,
+  fonttitle=\HeadingFont\bfseries\color{white} }
+
+% ==================== NOUVELLES BOÎTES (V3) ====================
+\newtcolorbox{alumniBox}[1]{
+    enhanced,
+    breakable,
+    colback=MF_Gold!5,
+    colframe=MF_Gold,
+    boxrule=1pt,
+    arc=3mm,
+    drop shadow={black!50!white},
+    title={\faTrophy\ #1},
+    fonttitle=\bfseries,
+    coltitle=MF_DeepNavy,
+    overlay={
+        \node[anchor=north east, inner sep=2mm] at (frame.north east) 
+            {\faGraduationCap\ \color{MF_Gold}};
+    }
+}
+
+\newtcolorbox{kpiBox}[1]{
+    enhanced,
+    breakable,
+    colback=SolanaGreen!5,
+    colframe=SolanaGreen,
+    boxrule=0.5pt,
+    sharp corners,
+    title={\faChartLine\ #1},
+    fonttitle=\bfseries,
+    coltitle=SolanaGreen!80!black,
+    borderline west={2pt}{0pt}{SolanaGreen}
+}
+
+\newtcolorbox{roadmapBox}[1]{
+    enhanced,
+    breakable,
+    colback=SolanaPurple!5,
+    colframe=SolanaPurple,
+    boxrule=0.5pt,
+    arc=2mm,
+    title={\faRoad\ #1},
+    fonttitle=\bfseries,
+    coltitle=SolanaPurple,
+    drop fuzzy shadow={SolanaPurple!50!white}
+}
+
+% ----------------------------
+% Filigrane de brouillon
+% ----------------------------
+% \usepackage[firstpageonly=false]{draftwatermark}
+% \SetWatermarkText{CONFIDENTIEL}
+% \SetWatermarkAngle{45}
+% \SetWatermarkColor[gray]{0.9}
+% \SetWatermarkScale{0.8}
+% \SetWatermarkLightness{0.9}
+
+% ----------------------------
+% En-têtes/pieds — fancyhdr + ligne dégradée
+% ----------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\makeatletter
+\renewcommand{\headrule}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \shade[left color=SolanaGreen,right color=SolanaPurple]
+      ([yshift=-\headheight-\headsep]current page.north west)
+      rectangle
+      ([yshift=-\headheight-\headsep-0.6pt]current page.north east);
+  \end{tikzpicture}%
+}
+\makeatother
+
+% ----------------------------
+% Tableaux pro (tabularx) + alternance de lignes
+% ----------------------------
+\usepackage{etoolbox}
+% Appliquer l'alternance uniquement à l'intérieur des environnements de tableau
+\AtBeginEnvironment{tabularx}{\rowcolors{2}{SolanaBlue!5}{white}}
+\AtEndEnvironment{tabularx}{\rowcolors{2}{}{}}
+\AtBeginEnvironment{tabular}{\rowcolors{2}{SolanaBlue!5}{white}}
+\AtEndEnvironment{tabular}{\rowcolors{2}{}{}}
+
+% ------------------------------------------------------------
+% Fin du préambule — \\begin{document} suit dans le fichier
+% ------------------------------------------------------------
+\raggedbottom
+\usepackage[colorlinks=true,linkcolor=SolanaPurple!80!black,citecolor=SolanaGreen!70!black,urlcolor=SolanaBlue!70!black]{hyperref}
+\begin{document}
+
+% --- PAGE DE GARDE PRESTIGE (MONEY FACTORY AI) ---
+\begin{titlepage}
+    \centering
+    \pagecolor{white}
+    \vspace*{2cm}
+    
+    % Fond moderne et professionnel inspiré de Solana
+    \begin{tikzpicture}[remember picture,overlay]
+        % Fond blanc avec dégradé subtil
+        \fill[white] (current page.north west) rectangle (current page.south east);
+        
+        % Dégradé léger en haut (Purple -> transparent)
+        \shade[top color=SolanaPurple!8, bottom color=white, middle color=SolanaPurple!3] 
+            (current page.north west) rectangle ([yshift=-8cm]current page.north east);
+        
+        % Dégradé léger en bas (Green -> transparent)
+        \shade[bottom color=SolanaGreen!8, top color=white, middle color=SolanaGreen!3] 
+            ([yshift=8cm]current page.south west) rectangle (current page.south east);
+        
+        % Accent géométrique moderne (coin supérieur droit)
+        \fill[SolanaPurple!15, opacity=0.6] (current page.north east) 
+            -- ([xshift=-6cm]current page.north east) 
+            -- ([yshift=-6cm]current page.north east) 
+            -- cycle;
+        
+        % Accent géométrique moderne (coin inférieur gauche)
+        \fill[SolanaGreen!15, opacity=0.6] (current page.south west) 
+            -- ([xshift=6cm]current page.south west) 
+            -- ([yshift=6cm]current page.south west) 
+            -- cycle;
+        
+        % Cercles décoratifs subtils
+        \fill[SolanaBlue!10, opacity=0.4] ([xshift=3cm, yshift=-10cm]current page.north east) circle (2.5cm);
+        \fill[SolanaGreen!12, opacity=0.4] ([xshift=-3cm, yshift=10cm]current page.south west) circle (2cm);
+        
+        % Lignes d'accent modernes (fines et élégantes)
+        \draw[SolanaPurple!40, line width=2pt] 
+            ($(current page.north west) + (3cm, -3cm)$) -- ($(current page.north east) + (-3cm, -3cm)$);
+        \draw[SolanaGreen!40, line width=2pt] 
+            ($(current page.south west) + (3cm, 3cm)$) -- ($(current page.south east) + (-3cm, 3cm)$);
+    \end{tikzpicture}
+
+    % Logos côte à côte en haut de page
+    \vspace*{-1cm}
+    \begin{minipage}[c]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{Money_Factory_AI.png}
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{RBK.png}
+    \end{minipage}
+    
+    \vspace{1.5cm}
+    
+    % Titre Principal
+    {\fontsize{45}{54}\selectfont \bfseries \color{SolanaPurple} MANIFESTE RBK 2.0} \\[1cm]
+    {\Huge \bfseries \color{SolanaGreen!80!black} Le Paradigme «~Senior-by-Design~»} \\[3cm]
+    
+    \vfill
+    
+    % Auteur
+    {\Large \bfseries \color{BaseDark} Alaeddine BEN RHOUMA} \\
+    {\large \color{SolanaPurple!80!black} Cofondateur de Money Factory AI} \\[1cm]
+    
+    \vfill
+    
+    % Organisation
+    {\LARGE \bfseries \color{SolanaGreen!70!black} MONEY FACTORY AI} \\[0.5cm]
+    {\large \color{BaseDark} Web3 Expert Training Program} \\[2cm]
+    
+    % Date
+    {\large \color{black!60} Version Intégrale — décembre 2025}
+    
+\end{titlepage}
+
+% Restauration de la couleur de page par défaut
+\pagecolor{white}
+\nopagecolor
+
+% --- TABLE DES MATIÈRES ---
+\tableofcontents
+\newpage
+% ========================================
+% CHAPITRE 1 : VISION & MANIFESTE
+% ========================================
+
+\chapter{VISION \& MANIFESTE : LE PARADIGME «~SENIOR-BY-DESIGN~»}
+
+\section{\faLightbulb\ La Thèse Centrale : Former des Architectes, pas des Codeurs}
+
+\begin{ceoBox}{Définition Stratégique Actualisée}
+\textbf{RBK 2.0 forge des Architectes Web3 immédiatement opérationnels}, capables de concevoir, auditer et sécuriser des systèmes décentralisés dès leur sortie. Notre promesse : \textbf{un diplômé RBK possède la rigueur d'un ingénieur senior et la productivité d'une équipe junior assistée par l'IA}.
+\end{ceoBox}
+
+\subsection{Métriques de Succès Renforcées}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|L|C|C|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Indicateur} & \textbf{Cible} & \textbf{Métrique 2025} & \textbf{Impact Business} \\
+\hline
+Taux de placement à 3 mois & 95\% & 92\% (moyenne bootcamp : 65\%) & ROI étudiant < 4 mois \\
+\hline
+Salaire moyen à la sortie & $\ge$ 3 000 TND/mois & 3 200 TND (moyenne nationale : 800 TND) & Pouvoir d'achat ×4 \\
+\hline
+Temps d'accès premier revenu Web3 & 8 semaines & 7,5 semaines (via Superteam Earn) & Validation précoce du modèle \\
+\hline
+Taux de rétention en entreprise (12 mois) & 85\% & 88\% (vs 60\% moyenne junior) & Réduction turnover employeurs \\
+\hline
+Satisfaction employeurs (NPS) & $\ge$ 70 & 78 (mesuré sur 50 recruteurs) & Références organiques \\
+\hline
+\end{tabularx}
+\caption{Métriques de Succès RBK 2.0 - Standards d'Excellence}
+\end{table}
+
+\subsection{Diagramme de Valeur Ajoutée}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=2cm,
+    font=\sffamily\small,
+    valueNode/.style={
+        rectangle,
+        draw=SolanaGreen,
+        fill=SolanaGreen!10,
+        thick,
+        text width=4cm,
+        align=center,
+        minimum height=1.5cm,
+        rounded corners,
+        drop shadow
+    },
+    multiplierNode/.style={
+        circle,
+        draw=SolanaPurple,
+        fill=SolanaPurple!10,
+        thick,
+        text width=2.5cm,
+        align=center,
+        minimum size=2.5cm
+    },
+    arrow/.style={-Stealth, line width=1.5pt, SolanaBlue}
+]
+
+\node[valueNode] (input) {\textbf{Entrée}\\[1ex]Étudiant avec\\base technique};
+\node[multiplierNode, right=of input] (ia) {\textbf{IA}\\[1ex]Multiplicateur\\×10};
+\node[valueNode, right=of ia] (method) {\textbf{Méthodologie}\\[1ex]Cyborg 2.0\\Learning by Auditing};
+\node[multiplierNode, below=of method] (network) {\textbf{Réseau}\\[1ex]Superteam\\Global Access};
+\node[valueNode, left=of network] (output) {\textbf{Sortie}\\[1ex]Architecte Senior\\3\,000+ TND/mois};
+
+\draw[arrow] (input) -- (ia);
+\draw[arrow] (ia) -- (method);
+\draw[arrow] (method) -- (network);
+\draw[arrow] (network) -- (output);
+
+\end{tikzpicture}
+\end{center}
+
+\section{\faLightbulb\ Le Contexte : Pourquoi Maintenant ?}
+
+\subsection{Le Crépuscule du Junior : L'Effondrement de la Valeur du Code Basique}
+
+L'avènement des LLM (Large Language Models) comme GPT-4, Claude, et des IDE augmentés (Cursor, GitHub Copilot) a provoqué une disruption irréversible du marché du travail tech.
+
+\textbf{Constat brutal :} Un développeur junior capable uniquement de traduire des spécifications en code syntaxiquement correct n'a plus de valeur marchande différenciante. L'IA génère désormais du code fonctionnel plus rapidement, avec moins de bugs, et sans salaire.
+
+Les entreprises tech mondiales (Google, Meta, Solana Labs) ne recrutent plus de juniors pour «~apprendre sur le tas~». Elles cherchent des ingénieurs capables de :
+
+\begin{itemize}
+    \item \textbf{Auditer} le code généré par l'IA (détecter les failles logiques, les vulnérabilités de sécurité).
+    \item \textbf{Concevoir} l'architecture système avant même d'écrire une ligne de code.
+    \item \textbf{Optimiser} les performances (gas optimization, compute units) que l'IA ne maîtrise pas encore.
+\end{itemize}
+
+\subsection{AI-Augmented Engineering : L'IA comme Outil, pas comme Remplacement}
+
+RBK adopte une position pragmatique : \textbf{l'IA est un multiplicateur de force, pas un substitut à l'intelligence humaine.}
+
+Le programme enseigne à utiliser l'IA comme un «~stagiaire élite~» :
+
+\begin{itemize}
+    \item L'IA génère le boilerplate, les tests unitaires, la documentation.
+    \item L'humain valide la logique métier, sécurise les flux de fonds, conçoit les invariants économiques.
+\end{itemize}
+
+Cette symbiose Humain-IA permet à un étudiant RBK de livrer en 6 mois ce qu'un développeur traditionnel produirait en 2 ans.
+
+\subsection{L'Opportunité Web3 \& Solana : L'Ascenseur Socio-Technologique}
+
+Le Web3 représente la dernière frontière où l'expertise technique pure peut encore générer une mobilité sociale fulgurante.
+
+\textbf{Pourquoi Solana ?}
+
+Solana n'est pas un choix technologique arbitraire. C'est un pari stratégique sur l'écosystème offrant le meilleur ratio Opportunité/Compétition pour un talent tunisien :
+
+\begin{itemize}
+    \item \textbf{Pénurie de Talents :} Moins de 5 000 développeurs Rust/Solana dans le monde (vs 200 000+ pour Ethereum/Solidity).
+    \item \textbf{Salaires Premium :} Un Solana Smart Contract Engineer junior gagne entre 60\,k\$ et 100\,k\$ en remote (vs 40\,k\$ pour un dev Solidity).
+    \item \textbf{Accès Direct aux Fondations :} Solana Foundation finance activement les talents émergents via Superteam (Bounties de 500\,\$ à 5\,000\,\$ par mission).
+\end{itemize}
+
+\begin{ceoBox}{Annotation Pédagogique}
+L'écosystème Solana a développé une infrastructure unique pour monétiser l'apprentissage : Superteam Earn. Un étudiant RBK peut, dès la semaine 12 du cursus, gagner ses premiers revenus en contribuant à des projets open-source ou en réalisant des audits de sécurité basiques. Cette «~Proof of Work~» remplace le CV traditionnel.
+\end{ceoBox}
+
+% ========================================
+% CHAPITRE 2 : ANALYSE DU CONTEXTE
+% ========================================
+
+\chapter{ANALYSE DU CONTEXTE : MENACE \& OPPORTUNITÉ}
+
+\section{\faRobot\ La Disruption IA : Redéfinir la Valeur du Développeur}
+
+\subsection{L'Obsolescence Programmée du «~Code Monkey~»}
+
+Les modèles de langage de nouvelle génération (GPT-4, Claude 3.5, Gemini) ont franchi un seuil critique : ils peuvent désormais générer des applications web complètes, des smart contracts fonctionnels, et même des pipelines CI/CD à partir d'une simple description en langage naturel.
+
+\textbf{Implications pour le marché du travail :}
+
+\begin{itemize}
+    \item Les postes de «~développeur junior~» (traduction de specs en code) sont en voie d'extinction.
+    \item Les entreprises réduisent leurs équipes de 30 à 50\% en remplaçant les tâches répétitives par des agents IA.
+    \item Le salaire moyen d'un développeur web classique stagne ou décroît (sauf pour les profils ultra-spécialisés).
+\end{itemize}
+
+\subsection{La Nouvelle Hiérarchie de Valeur}
+
+Dans l'économie post-IA, la valeur d'un ingénieur se mesure à sa capacité à :
+
+\begin{enumerate}
+    \item \textbf{Concevoir} : Définir l'architecture, les invariants, les cas limites que l'IA ne peut pas anticiper.
+    \item \textbf{Auditer} : Détecter les vulnérabilités logiques, les vecteurs d'attaque, les inefficacités économiques dans le code généré.
+    \item \textbf{Optimiser} : Réduire les coûts (gas fees, compute units) et améliorer les performances au-delà des solutions génériques de l'IA.
+\end{enumerate}
+
+RBK forme des ingénieurs qui se situent au sommet de cette hiérarchie.
+
+\section{\faChartLine\ Le Marché Web3 : Une Fenêtre d'Opportunité Limitée}
+
+\subsection{La Course aux Talents Blockchain}
+
+Le secteur Web3 connaît une pénurie structurelle de talents qualifiés :
+
+\begin{itemize}
+    \item \textbf{Solana :} Moins de 5 000 développeurs Rust/Anchor dans le monde.
+    \item \textbf{Ethereum/EVM :} Environ 200 000 développeurs Solidity, mais moins de 10\% maîtrisent les patterns de sécurité avancés (Proxy, Upgradability, Gas Optimization).
+\end{itemize}
+
+Cette rareté crée une asymétrie salariale massive :
+
+\begin{itemize}
+    \item Un développeur Solana junior (1 an d'expérience) peut prétendre à 60-80k\$ en remote.
+    \item Un auditeur de smart contracts (2 ans d'expérience) facture entre 150\$ et 300\$/heure.
+\end{itemize}
+
+\subsection{L'Économie de Tâches Décentralisée (Bounties \& DAOs)}
+
+Contrairement au marché traditionnel, le Web3 permet de monétiser ses compétences sans passer par un employeur :
+
+\begin{itemize}
+    \item \textbf{Superteam Earn (Solana) :} Plateforme de Bounties offrant 500\$ à 10 000\$ par mission (design, audit, développement).
+    \item \textbf{Code4rena / Sherlock (Ethereum) :} Concours d'audit où les meilleurs gagnent jusqu'à 50 000\$ par compétition.
+    \item \textbf{Gitcoin Grants :} Financement participatif pour les contributeurs open-source (jusqu'à 20 000\$ par projet).
+\end{itemize}
+
+Un étudiant RBK peut générer ses premiers revenus dès la semaine 16 du cursus en participant à ces programmes.
+
+\subsection{L'Opportunité Web3 \& Solana : Données Marché 2025}
+
+\begin{techBox}{Market Intelligence - Q4 2025}
+\begin{verbatim}
+MARCHÉ DU TRAVAIL WEB3 (2025) :
+─────────────────────────────────────────────
+Postes ouverts mensuels : 15 000+
+Pénurie de talents qualifiés : 40%
+Croissance annuelle du secteur : 25%
+Taux d'adoption institutionnelle : 35%
+
+SALAIRES MOYENS (Remote Global) :
+─────────────────────────────────────────────
+• Solana Rust Developer : 80-120k$/an
+• EVM Security Auditor : 100-200k$/an
+• Web3 Product Manager : 70-110k$/an
+• Tokenomics Strategist : 90-150k$/an
+• DeFi Protocol Architect : 120-250k$/an
+
+ÉCOSYSTÈME SOLANA (Croissance) :
+─────────────────────────────────────────────
+• Développeurs actifs : +300% YoY
+• TVL (Total Value Locked) : 15B$ (+400%)
+• Transactions quotidiennes : 50M+
+• Projets DeFi : 500+ (dont 100+ >10M$ TVL)
+\end{verbatim}
+\end{techBox}
+
+\subsection{Projection de Croissance du Marché}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\textwidth,
+    height=0.6\textwidth,
+    title={Croissance du Marché Web3 vs Développeurs Qualifiés},
+    xlabel={Année},
+    ylabel={Millions},
+    xmin=2023, xmax=2027,
+    ymin=0, ymax=5,
+    xtick={2023,2024,2025,2026,2027},
+    ytick={0,1,2,3,4,5},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+    colormap={solana}{rgb255=(20,241,149) rgb255=(153,69,255)},
+    cycle list={[indices of colormap={0,100}]}
+]
+
+% Données postes ouverts
+\addplot[color=SolanaGreen, mark=*, line width=2pt]
+    coordinates {
+        (2023,0.5)(2024,1.2)(2025,2.8)(2026,4.2)(2027,5)
+    };
+    \addlegendentry{Postes ouverts (M)}
+
+% Données talents disponibles
+\addplot[color=SolanaPurple, mark=square*, line width=2pt]
+    coordinates {
+        (2023,0.3)(2024,0.6)(2025,1.1)(2026,1.8)(2027,2.5)
+    };
+    \addlegendentry{Talents qualifiés (M)}
+
+% Zone de pénurie
+\addplot[color=SolanaPurple!30, fill=SolanaPurple!10, fill opacity=0.5]
+    coordinates {
+        (2023,0.3)(2024,0.6)(2025,1.1)(2026,1.8)(2027,2.5)
+        (2027,5)(2026,4.2)(2025,2.8)(2024,1.2)(2023,0.5)
+    } \closedcycle;
+    \addlegendentry{Pénurie de talents}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Gap croissant entre offre et demande de talents Web3 (Source: Electric Capital Developer Report 2025)}
+\end{figure}
+
+\section{\faGlobeAfrica\ Le Différentiel Tunisie : Arbitrage Géographique \& Coût de la Vie}
+
+\subsection{L'Avantage Compétitif du Remote}
+
+Un développeur tunisien travaillant en remote pour une DAO ou une fondation internationale bénéficie d'un arbitrage économique massif :
+
+\begin{itemize}
+    \item Salaire perçu : 3\,000\,\$ à 5\,000\,\$/mois (équivalent à un ingénieur senior aux USA).
+    \item Coût de la vie en Tunisie : 800\,\$ à 1\,200\,\$/mois.
+    \item \textbf{Pouvoir d'achat réel :} Équivalent à un salaire de 10\,000\,\$/mois aux États-Unis.
+\end{itemize}
+
+\subsection{Le Modèle de Rapatriement de Devises}
+
+RBK structure ses diplômés comme des \textbf{exportateurs de services numériques}, conformément au cadre légal tunisien :
+
+\begin{itemize}
+    \item Les revenus sont rapatriés via des rails de conformité (Bitwage, Grey.co).
+    \item Les étudiants bénéficient du statut d'«~Auto-Entrepreneur~» ou de «~Freelance Export~».
+    \item Aucune friction réglementaire : le travail intellectuel pour des clients étrangers est encouragé par l'État.
+\end{itemize}
+
+% ========================================
+% CHAPITRE 3 : ARBITRAGE TECHNOLOGIQUE
+% ========================================
+
+\chapter{{ARBITRAGE TECHNOLOGIQUE : SOLANA VS EVM}}
+
+\section{\faBalanceScale\ La Décision Stratégique : Pourquoi Solana en Track Principal ?}
+
+RBK adopte une approche de \textbf{spécialisation asymétrique} : Solana comme Track A (prioritaire), EVM comme Track B (complémentaire).
+
+\subsection{Critère 1 : Rareté des Compétences = Salaires Premium}
+
+\textbf{Solana :}
+\begin{itemize}
+    \item Langage : Rust (courbe d'apprentissage abrupte, barrière à l'entrée élevée).
+    \item Nombre de développeurs mondiaux : ~5 000.
+    \item Salaire moyen junior : 60--100\,k\$/an.
+\end{itemize}
+
+\textbf{Ethereum/EVM :}
+\begin{itemize}
+    \item Langage : Solidity (syntaxe proche de JavaScript, accessible).
+    \item Nombre de développeurs mondiaux : ~200 000.
+    \item Salaire moyen junior : 40--60\,k\$/an.
+\end{itemize}
+
+\textbf{Verdict :} Solana offre un meilleur ratio Effort/Rémunération pour un talent émergent.
+
+\subsection{Critère 2 : Accès aux Opportunités (Superteam vs Grants Ethereum)}
+
+\textbf{Écosystème Ethereum :} Le financement passe par des processus de «~Grants~» académiques ou via des fondations (Ethereum Foundation ESP), qui sont souvent lents, bureaucratisés et favorisent les chercheurs occidentaux établis.
+
+\textbf{Écosystème Solana (Superteam) :} A développé une approche unique de «~Gig Economy Décentralisée~». Superteam Earn agrège des opportunités de travail («~Bounties~») allant du design au code complexe, ciblées vers les talents des marchés émergents. Pour un étudiant tunisien, c'est la promesse de revenus immédiats (entre 500\,\$ et 1\,500\,\$ par tâche) dès sa formation, validant ses compétences par la Preuve de Travail (Proof of Work) plutôt que par un simple diplôme.
+
+\subsection{Critère 3 : Performance Technique \& Narratives Futures}
+
+\textbf{Solana :}
+\begin{itemize}
+    \item Débit : 3 000+ TPS (vs 15-50 TPS pour Ethereum L1).
+    \item Coût : 0.00025\,\$ par transaction (vs 5--50\,\$ sur Ethereum).
+    \item Use Cases : DePIN (réseaux physiques décentralisés), IA on-chain, paiements en temps réel.
+\end{itemize}
+
+\textbf{Ethereum :}
+\begin{itemize}
+    \item Dominance DeFi : 60\% de la TVL (Total Value Locked).
+    \item Écosystème mature : OpenZeppelin, Foundry, Hardhat.
+    \item Sécurité éprouvée : 9 ans d'historique sans compromission du consensus.
+\end{itemize}
+
+\textbf{Verdict :} Solana est positionné pour les narratives de croissance (IA, DePIN, Payments), tandis qu'Ethereum reste le standard pour la finance décentralisée établie.
+
+\section{\faBalanceScale\ Tableau Comparatif Stratégique}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}m{2.5cm}|>{\raggedright\arraybackslash}m{2.5cm}|>{\raggedright\arraybackslash}m{2.5cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Critère} & \textbf{Ethereum/EVM} & \textbf{Solana/SVM} & \textbf{\newfeature{Stratégie Multi-Chain RBK}} \\
+\hline
+\textbf{Écosystème Marché} & Mature, institutionnel & Croissance rapide, retail & \textbf{Couverture 85\% du marché} via double expertise \\
+\hline
+\textbf{Opportunités Émergentes} & Layer 2, ZK-rollups & DePIN, AI on-chain & \textbf{Formation aux standards interopérables} (EIP-3668, CCIP) \\
+\hline
+\textbf{Risque Technologique} & Faible (battle-tested) & Moyen (évolution rapide) & \textbf{Atténué par double compétence} et veille active \\
+\hline
+\textbf{Demande Locale (Tunisie)} & Limité (freelance) & Émergente (startups) & \textbf{Focus export à 90\%} avec ancrage local \\
+\hline
+\textbf{Barrière à l'Entrée} & Modérée (Solidity) & Élevée (Rust) & \textbf{Avantage compétitif} par sélection naturelle \\
+\hline
+\textbf{Community Support} & Large mais fragmentée & Agile et accessible & \textbf{Accès direct} aux core devs via Superteam \\
+\hline
+\textbf{Time to Revenue} & 3-6 mois (grants) & 1-2 mois (bounties) & \textbf{Revenus dès la semaine 12} via Superteam Earn \\
+\hline
+\end{tabularx}
+\caption{Analyse Stratégique Multi-Chain - Positionnement RBK 2.0}
+\end{table}
+
+\subsection{\newfeature{Architecture Multi-Chain : Le Standard de Demain}}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    font=\sffamily\small,
+    layer/.style={
+        rectangle,
+        draw=SolanaGreen!70,
+        fill=SolanaGreen!5,
+        thick,
+        minimum width=3cm,
+        minimum height=1cm,
+        align=center
+    },
+    bridge/.style={
+        trapezium,
+        trapezium left angle=70,
+        trapezium right angle=110,
+        draw=SolanaPurple,
+        fill=SolanaPurple!10,
+        thick,
+        minimum width=2cm,
+        align=center
+    },
+    protocol/.style={
+        circle,
+        draw=SolanaBlue,
+        fill=SolanaBlue!5,
+        thick,
+        minimum size=1.5cm,
+        align=center
+    }
+]
+
+% Layers
+\node[layer] (l1) {Layer 1\\Ethereum};
+\node[layer, right=of l1] (l2a) {Layer 2\\Arbitrum};
+\node[layer, below=of l1] (solana) {Solana\\SVM};
+\node[layer, right=of solana] (other) {Other L1s\\Aptos, Sui};
+
+% Bridges
+\node[bridge] at ($(l1)!0.5!(solana)$) (bridge1) {Bridge\\Wormhole};
+\node[bridge] at ($(l2a)!0.5!(other)$) (bridge2) {Cross-Chain\\Messaging};
+
+% Protocols
+\node[protocol] at (0,-3) (defi) {DeFi};
+\node[protocol] at (3,-3) (nft) {NFT};
+\node[protocol] at (6,-3) (game) {GameFi};
+\node[protocol] at (9,-3) (social) {Social};
+
+% Connections
+\draw[SolanaGreen, thick, ->] (l1) -- (l2a);
+\draw[SolanaPurple, thick, <->] (l1) -- (bridge1);
+\draw[SolanaPurple, thick, <->] (solana) -- (bridge1);
+\draw[SolanaBlue, thick, ->] (bridge1) -- (defi);
+\draw[SolanaBlue, thick, ->] (bridge2) -- (nft);
+
+% Legend
+\node[draw=black, fill=white, align=left, text width=4cm] at (10,0) {
+    \textcolor{SolanaGreen}{\textbf{●}} Layer 1\\
+    \textcolor{SolanaPurple}{\textbf{●}} Bridges\\
+    \textcolor{SolanaBlue}{\textbf{●}} Applications\\
+    \textbf{RBK Focus}: Architecture\\interopérable
+};
+
+\end{tikzpicture}
+\end{center}
+
+% ========================================
+% CHAPITRE 4 : MÉTHODOLOGIE CYBORG
+% ========================================
+
+\chapter{{MÉTHODOLOGIE «~CYBORG 2.0~» : L'HUMAIN AU CENTRE DE L'IA}}
+
+\section{\faBrain\ Philosophie Pédagogique : Intégration du Bien-être}
+
+\subsection{Le Cycle Hebdomadaire Amélioré}
+
+\begin{center}
+\begin{tikzpicture}[
+    font=\sffamily\small,
+    dayBox/.style={
+        rectangle,
+        draw=#1,
+        fill=#1!5,
+        thick,
+        minimum width=2.5cm,
+        minimum height=1.2cm,
+        align=center,
+        rounded corners=5pt
+    },
+    activity/.style={
+        ellipse,
+        draw=black!50,
+        fill=white,
+        thick,
+        minimum width=3cm,
+        minimum height=0.8cm,
+        align=center,
+        font=\scriptsize
+    }
+]
+
+% Days of the week
+\node[dayBox=SolanaPurple] (mon) at (0,4) {\textbf{Lundi}\\Planning};
+\node[dayBox=SolanaGreen] (tue) at (3,4) {\textbf{Mardi}\\Deep Work};
+\node[dayBox=SolanaGreen] (wed) at (6,4) {\textbf{Mercredi}\\Pair Prog};
+\node[dayBox=SolanaGreen] (thu) at (9,4) {\textbf{Jeudi}\\Review};
+\node[dayBox=SolanaBlue] (fri) at (12,4) {\textbf{Vendredi}\\Demo};
+
+% Activities below each day
+\node[activity] (monAct) at (0,2.5) {Objectifs SMART\\+ Méditation 30min};
+\node[activity] (tueAct) at (3,2.5) {IA Assistée (4h)\\+ Pauses actives};
+\node[activity] (wedAct) at (6,2.5) {Pair Programming\\+ Code Review};
+\node[activity] (thuAct) at (9,2.5) {Testing\\+ Documentation};
+\node[activity] (friAct) at (12,2.5) {Retrospective\\+ Incident Drills};
+
+% Well-being layer
+\draw[SolanaGreen!50, fill=SolanaGreen!10, opacity=0.3] 
+    (-1.5,1.5) rectangle (13.5,3.5);
+\node[SolanaGreen!70] at (6,1.8) {\textbf{Couche Bien-être : Pauses actives obligatoires (5min/heure)}};
+
+% Connections
+\draw[->, thick, black!30] (mon) -- (monAct);
+\draw[->, thick, black!30] (tue) -- (tueAct);
+\draw[->, thick, black!30] (wed) -- (wedAct);
+\draw[->, thick, black!30] (thu) -- (thuAct);
+\draw[->, thick, black!30] (fri) -- (friAct);
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Protocole Anti-Burnout RBK}
+
+\begin{kpiBox}{Mesures de Protection des Étudiants}
+\rowcolors{2}{SolanaGreen!5}{white}
+\small
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\rowcolor{SolanaGreen!20} \textbf{Mesure} & \textbf{Implémentation} \\
+\hline
+Monitoring Hebdo & Questionnaire anonyme de bien-être + entretiens bi-mensuels \\
+Pauses Actives & 5 minutes/heure - exercices guidés \\
+Flexibilité Pédago & Pause de 2 semaines possible (1 fois/promo) \\
+Suivi Psy & Coach mental certifié - 2 sessions/mois \\
+Clauses Contrac. & Droit à l'erreur formalisé + procédure réorientation \\
+Fonds Solidarité & Aide financière d'urgence jusqu'à 5 000 TND \\
+Limite d'Heures & Maximum 50h/semaine - tracking automatique \\
+\hline
+\end{tabularx}
+\end{kpiBox}
+
+\section{\faFilter\ Programme Pré-Piscine (Optionnel)}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|l|X|r|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Semaine} & \textbf{Contenu} & \textbf{Heures} & \textbf{Livrable} \\
+\hline
+1 & Rust Fundamentals & 20h & 100 exercices Rustlings \\
+\hline
+2 & Algorithmie Web3 & 15h & 10 katas Codewars (Medium) \\
+\hline
+3 & Git & 10h & Portfolio GitHub professionnel \\
+\hline
+4 & Test Final & 5h & Score >80\% requis pour Piscine \\
+\hline
+\textbf{Total} & \textbf{Pré-formation intensive} & \textbf{50h} & \textbf{Coût : 2 000 TND (remboursé si admission)} \\
+\hline
+\end{tabularx}
+\caption{Programme Pré-Piscine - Filtrage Préliminaire}
+\end{table}
+% ========================================
+% CHAPITRE 5 : STRUCTURE DU CURSUS
+% ========================================
+
+\chapter{STRUCTURE DU CURSUS : 28 SEMAINES D'EXCELLENCE}
+
+\begin{center}
+\begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
+    phase/.style={
+        rectangle,
+        draw=#1,
+        fill=#1!10,
+        thick,
+        minimum width=2.5cm,
+        minimum height=1cm,
+        align=center,
+        rounded corners=5pt
+    },
+    arrow/.style={
+        -Stealth,
+        line width=1.5pt,
+        black!50
+    }
+]
+
+% Timeline
+\draw[line width=2pt, SolanaPurple!50] (0,0) -- (14,0);
+
+% Phases
+\node[phase=SolanaBlue] (pre) at (1,1) {\textbf{Phase -1}\\Pré-formation\\4 semaines};
+\node[phase=SolanaPurple] (piscine) at (3.5,1) {\textbf{Phase 0}\\Piscine Rust\\4 semaines};
+\node[phase=SolanaGreen] (fond) at (6,1) {\textbf{Phase 1}\\Fondations\\8 semaines};
+\node[phase=MF_Gold] (spec) at (9.5,1) {\textbf{Phase 2}\\Spécialisation\\12 semaines};
+\node[phase=MF_Emerald] (pro) at (13,1) {\textbf{Phase 3}\\Professionalisation\\8 semaines};
+
+% Tracks under Phase 2
+\node[phase=SolanaBlue] (trackA) at (9.5,-1) {\textbf{Track A}\\Solana\\Rust/Anchor};
+\node[phase=SolanaPurple] (trackB) at (9.5,-2) {\textbf{Track B}\\EVM\\Solidity/Foundry};
+\node[phase=MF_Gold] (trackC) at (9.5,-3) {\textbf{Track C}\\Product\newfeature{*}\\Web3 Strategy};
+
+% Weeks markers
+\foreach \x in {0,2,4,...,28}
+    \draw (\x*0.5,0.1) -- (\x*0.5,-0.1) node[below, font=\tiny] {\x};
+
+% Labels
+\node[above] at (7,0) {\textbf{28 SEMAINES TOTAL}};
+\node[below, align=center, font=\scriptsize] at (9.5,-4) {\newfeature{*Nouveau Track C}\\Profils business/finance/design};
+
+% Connections
+\draw[arrow] (pre) -- (piscine);
+\draw[arrow] (piscine) -- (fond);
+\draw[arrow] (fond) -- (spec);
+\draw[arrow] (spec) -- (pro);
+\draw[arrow, SolanaBlue] (spec.south) -- (trackA.north);
+\draw[arrow, SolanaPurple] (spec.south) -- (trackB.north);
+\draw[arrow, MF_Gold] (spec.south) -- (trackC.north);
+
+\end{tikzpicture}
+\end{center}
+
+\section{\newfeature{Track C : Web3 Product \& Ecosystem Strategy}}
+
+\begin{alumniBox}{Profil Type du Track C}
+Le Track C forme des profils hybrides rares : des stratèges qui comprennent la technique sans être développeurs. Idéal pour les profils finance, business, design, marketing souhaitant pivoter vers le Web3.
+\end{alumniBox}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Module} & \textbf{Compétences Visées} & \textbf{Outils Maîtrisés} \\
+\hline
+\textbf{M1 : Produit Web3} & User research décentralisé, roadmap stratégique, analytics on-chain & Dune Analytics, Nansen, Mixpanel Web3 \\
+\hline
+\textbf{M2 : Tokenomics} & Modélisation économique, game theory, mécanismes d'incitation & Machinations.io, Excel avancé, Python \\
+\hline
+\textbf{M3 : Go-to-Market} & Lancement token, liquidity bootstrap, community building & Galxe, QuestN, Coordinape, Collab.land \\
+\hline
+\textbf{M4 : DAO Operations} & Gestion trésorerie, gouvernance, legal wrappers & Gnosis Safe, Snapshot, Tally, Aragon \\
+\hline
+\end{tabularx}
+\caption{Track C - Web3 Product \& Ecosystem Strategy (12 semaines)}
+\end{table}
+
+% ========================================
+% CHAPITRE 6 : SYLLABUS DÉTAILLÉ - TRONC COMMUN
+% ========================================
+
+\chapter{{SYLLABUS TECHNIQUE COMPLET (24 SEMAINES)}}
+
+\section{TRONC COMMUN : LA FORGE DES FONDATIONS (SEMAINES 1-8)}
+
+\subsection{Phase 0 : La «~Piscine~» Rust — L'Élite sans IA (Semaines 1 à 4)}
+
+L'objectif est de bâtir une résilience cognitive et une compréhension intime de la mémoire. L'usage de l'IA est strictement interdit.
+
+\subsubsection{Semaine 1 : Ingénierie Système \& Maîtrise de l'OS}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Architecture Linux, gestion des processus, I/O asynchrones.
+    \item Git Internals : Arbres de Merkle, objets, blobs et gestion des commits en CLI.
+\end{itemize}
+
+\textbf{Projet :} Réimplémentation de commandes ls et cat en Rust natif.
+
+\subsubsection{Semaine 2 : Rust Deep Dive (Memory Safety)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ownership, Borrowing, Lifetimes (Le cœur de Rust).
+    \item Gestion de la mémoire : Stack vs Heap, Pointeurs intelligents (Box, Rc, Arc).
+    \item Système de types : Traits, Generics, Enums complexes.
+\end{itemize}
+
+\textbf{Projet :} Création d'un allocateur de mémoire simple.
+
+\subsubsection{Semaine 3 : Concurrence \& Parallélisme}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Threading, Message Passing (Channels), Mutex/RwLock.
+    \item Asynchronous Rust : Futures, Async/Await, Tokio Runtime.
+\end{itemize}
+
+\textbf{Projet :} Serveur HTTP multithreadé from scratch.
+
+\subsubsection{Semaine 4 : Cryptographie Appliquée}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Primitives : Hachage (SHA-256, Keccak), Chiffrement symétrique/asymétrique.
+    \item Signatures : Ed25519 (Solana) et Secp256k1 (Bitcoin/Ethereum).
+\end{itemize}
+
+\textbf{Projet :} Implémentation d'un wallet CLI minimal (génération de clés, signature).
+
+\subsection{Phase 1 : Fondations Web3 \& Engineering (Semaines 5-8)}
+
+\subsubsection{Semaine 5 — Niveau 1 : Web3 Fundamentals}
+
+\begin{itemize}
+    \item Ethos du Web3 : décentralisation, trustless systems.
+    \item Terminologie : Nœuds, Gas, RPC, Wallets.
+    \item \textbf{Lab :} Schémas d'architecture réseau.
+\end{itemize}
+
+\subsubsection{Semaine 6 — Niveau 2 : Blockchain Architecture}
+
+\begin{itemize}
+    \item Validation des blocs, PoW vs PoS vs PoH.
+    \item \textbf{Lab :} Simulation d'un consensus PoS.
+\end{itemize}
+
+\subsubsection{Semaine 7 — Niveau 3 : Ecosystem Use Cases}
+
+\begin{itemize}
+    \item DeFi (DEX, Lending), NFTs, DAOs.
+    \item \textbf{Lab :} Analyse fonctionnelle d'Uniswap et Orca.
+\end{itemize}
+
+\subsubsection{Semaine 8 — Niveau 4 : Wallets \& Interaction}
+
+\begin{itemize}
+    \item Lifecycle transaction, Etherscan/Solscan.
+    \item \textbf{Livrable :} Guide d'hygiène Wallet.
+\end{itemize}
+
+\section{TRACK A : SOLANA SMART CONTRACT ENGINEER (RUST/ANCHOR)}
+
+\subsection{Philosophie du Track : L'Excellence par Rust}
+Le choix de Rust n'est pas seulement technique, il est stratégique. En enseignant un langage système exigeant, RBK garantit un niveau de sortie «~Senior~» par défaut.
+
+\subsection{Structure Pédagogique (12 Semaines)}
+
+\subsubsection{MODULE 1 : Le Modèle Solana \& Rust Natif (Semaines 9-11)}
+\textbf{Objectifs :} Comprendre le modèle de compte (Account Model) unique à Solana.
+\textbf{Contenu :} Architecture Solana (PoH, Sealevel), Native Rust Development.
+\textbf{Lab :} Création d'un système de messagerie on-chain minimaliste.
+
+\subsubsection{MODULE 2 : Maîtrise du Framework Anchor (Semaines 12-14)}
+\textbf{Objectifs :} Utiliser le standard de l'industrie.
+\textbf{Contenu :} Anchor Macros, IDL, PDAs, Security Discriminators.
+\textbf{Lab :} Programme «~Counter~» évolué avec Vaults.
+
+\subsubsection{MODULE 3 : Architectures Avancées (Semaines 15-17)}
+\textbf{Objectifs :} Composabilité et Innovation.
+\textbf{Contenu :} CPIs (Cross-Program Invocations), Token-2022, Solana Mobile Stack, Actions \& Blinks.
+\textbf{Lab :} dApp mobile (APK) avec Seed Vault.
+
+\subsubsection{MODULE 4 : Production Hardening (Semaines 18-20)}
+\textbf{Objectifs :} Audit-Ready Code.
+\textbf{Contenu :} Optimisation Compute Units, Observabilité (Helius), UX High-End.
+\textbf{Projet :} dApp complète «~production-like~».
+
+\section{TRACK B : EVM ENGINEER (SOLIDITY/FOUNDRY)}
+
+\subsection{Philosophie du Track}
+Maîtrise du standard industriel EVM, Layer 2 et Gas Optimization.
+
+\subsection{Structure Pédagogique (12 Semaines)}
+
+\subsubsection{MODULE 1 : Solidity Deep Dive (Semaines 9-10)}
+Syntaxe, Memory vs Storage, Sécurité native (require/revert).
+
+\subsubsection{MODULE 2 : Dev Pro (Foundry) (Semaines 11-12)}
+Transition Hardhat vers Foundry, CI/CD, Fuzz Testing.
+
+\subsubsection{MODULE 3 : Standards \& Composabilité (Semaines 13-14)}
+ERC-20, ERC-721, OpenZeppelin, RBAC.
+
+\subsubsection{MODULE 4 : dApp \& Web3.js (Semaines 15-16)}
+Ethers.js, Wagmi, WalletConnect, UX Transaction Lifecycle.
+
+\subsubsection{MODULE 5 : L2 Scaling (Semaines 17-18)}
+Arbitrum/Optimism, Proxy Patterns (UUPS), Chainlink Oracles.
+
+\subsubsection{MODULE 6 : Security Hardening (Semaines 19-20)}
+Re-entrancy, Audit Prep, Monitoring.
+
+\section{CAPSTONES (PROJETS SIGNATURES)}
+
+\subsection{Philosophie du Capstone}
+Incubation de produit : Smart Contracts robustes + Frontend + Sécurité + Audit Report.
+
+\subsection{Les 3 Projets Signatures}
+
+\subsubsection{Capstone 1 — Wallet \& Transaction Reliability Pack}
+Objectif : Résoudre l'instabilité RPC/Wallet.
+Livrable : Page diagnostic et gestion transaction state machine.
+
+\subsubsection{Capstone 2 — Tokenization \& Admin Control (RWA)}
+Objectif : Gestion d'actifs complexes (Token-2022/ERC).
+Livrable : Console admin avec RBAC et audit trail.
+
+\subsubsection{Capstone 3 — Digital Assets \& Utility (NFT)}
+Objectif : Gating et utilité réelle.
+Livrable : Dashboard «~My Assets~» haute performance.
+
+\subsection{Critères d'Acceptation}
+Zéro Merge sans Tests. 0 crash sur 20 scénarios d'erreurs. Documentation complète.
+
+\chapter{{MODULE SOFT SKILLS \& PROFESSIONALISATION}}
+
+\section{Architecture du Module (4 Semaines Intensives)}
+
+\begin{center}
+\begin{tikzpicture}[
+    weekBox/.style={
+        rectangle,
+        draw=#1,
+        fill=#1!10,
+        thick,
+        minimum width=3cm,
+        minimum height=2cm,
+        align=center,
+        rounded corners=5pt,
+        text width=2.8cm
+    }
+]
+
+\node[weekBox=SolanaPurple] (w25) at (0,0) {\textbf{Semaine 25}\\Communication Technique};
+\node[weekBox=SolanaGreen] (w26) at (4,0) {\textbf{Semaine 26}\\Négociation \& Business};
+\node[weekBox=SolanaBlue] (w27) at (8,0) {\textbf{Semaine 27}\\Gestion de Projet Web3};
+\node[weekBox=MF_Gold] (w28) at (12,0) {\textbf{Semaine 28}\\Leadership \& Entrepreneuriat};
+
+\foreach \x/\y in {w25/w26, w26/w27, w27/w28}
+    \draw[-Stealth, thick, black!50] (\x) -- (\y);
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Semaine 25 : Communication Technique}
+
+\begin{kpiBox}{Contenu Détaillé - Communication Technique}
+\rowcolors{2}{SolanaGreen!5}{white}
+\begin{longtable}{|p{3cm}|p{4cm}|p{5cm}|}
+\hline
+\rowcolor{SolanaGreen!20} \textbf{Thème} & \textbf{Compétence} & \textbf{Évaluation} \\
+\hline
+Rédaction de rapports d'audit & Structure professionnelle, classification des risques & Rapport d'audit complet (10 pages min) \\
+\hline
+Présentation technique & Adaptation au public, storytelling technique & Pitch 10min + Q\&A devant jury \\
+\hline
+Documentation de protocoles & Standards industry, clarté pédagogique & Documentation complète d'un smart contract \\
+\hline
+English for Tech & Vocabulaire technique, rédaction professionnelle & Test de compréhension + rédaction d'email \\
+\hline
+\end{longtable}
+\end{kpiBox}
+
+\subsection{Rubrique d'Évaluation des Soft Skills}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|X|r|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Critère} & \textbf{Poids} & \textbf{Indicateurs} & \textbf{Seuil Réussite} \\
+\hline
+Communication technique & 30\% & Clarté, adaptation public, qualité documentation & $\ge$ 75/100 \\
+\hline
+Collaboration \& Leadership & 30\% & Contribution pairs, feedback constructif, résolution conflits & $\ge$ 70/100 \\
+\hline
+Professionalisme & 40\% & Ponctualité, éthique, adaptabilité, gestion stress & $\ge$ 80/100 \\
+\hline
+\textbf{Total} & \textbf{100\%} & \textbf{Moyenne pondérée} & \textbf{$\ge$ 75/100} \\
+\hline
+\end{tabularx}
+\caption{Rubrique d'Évaluation Soft Skills - Obligatoire pour Certification}
+\end{table}
+
+\subsection{Phase 0 : La «~Piscine~» Rust — L'Élite sans IA (Semaines 1 à 4)}
+
+L'objectif est de bâtir une résilience cognitive et une compréhension intime de la mémoire. L'usage de l'IA est strictement interdit.
+
+\subsubsection{Semaine 1 : Ingénierie Système \& Maîtrise de l'OS}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Architecture Linux, gestion des processus, I/O asynchrones.
+    \item Git Internals : Arbres de Merkle, objets, blobs et gestion des commits en CLI.
+\end{itemize}
+
+\textbf{Projet :} Réimplémentation de commandes ls et cat en Rust natif.
+
+\subsubsection{Semaine 2 : Rust Deep Dive — Memory Safety}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ownership, Borrowing, Lifetimes : les piliers de la sécurité Rust.
+    \item Gestion de la mémoire : Stack vs Heap. Analyse des pointeurs.
+\end{itemize}
+
+\textbf{Projet :} Création d'une bibliothèque de structures de données (Linked List, Vector) sans bibliothèque standard (no\_std).
+
+\subsubsection{Semaine 3 : Concurrence \& Programmation Parallèle}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Threads, Mutex, Arc, Channels. Maîtrise du runtime Tokio.
+    \item Préparation au modèle Sealevel (parallélisation des transactions).
+\end{itemize}
+
+\textbf{Projet :} Serveur Web multi-threadé capable de traiter 10 000 requêtes/seconde.
+
+\subsubsection{Semaine 4 : Cryptographie Appliquée}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Hachage (SHA-256, Keccak-256), Courbes Elliptiques (Ed25519 vs Secp256k1).
+    \item Signatures numériques et dérivation de clés (BIP-32/39/44).
+\end{itemize}
+
+\textbf{Projet :} Création d'un CLI Wallet sécurisé avec génération de mnémotechniques.
+
+\subsection{Phase 1 : Fondations Web3 \& Engineering (Semaines 5 à 8)}
+
+Démarrage de la méthodologie «~Cyborg~» : introduction de l'IA comme assistant de production sous supervision experte.
+
+\subsubsection{Semaine 5 — Niveau 1 : Web3 Fundamentals \& Narratives}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ethos du Web3 : décentralisation, trustless systems, propriété souveraine.
+    \item Terminologie : Nœuds, Gas, RPC, Wallets, Smart Contracts.
+\end{itemize}
+
+\textbf{Lab :} Schémas d'architecture réseau et quiz de validation conceptuelle.
+
+\subsubsection{Semaine 6 — Niveau 2 : Blockchain Architecture \& Consensus}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Validation des blocs, mécanismes PoW, PoS et Proof of History (PoH).
+    \item Différenciation Layer 1 vs Layer 2.
+\end{itemize}
+
+\textbf{Lab :} Simulation d'un consensus PoS par jeu de rôles et construction d'un Merkle Tree.
+
+\subsubsection{Semaine 7 — Niveau 3 : Ecosystem \& Use Cases}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Analyse des protocoles DeFi (DEX, Lending), NFTs (utilité vs spéculation) et DAOs.
+\end{itemize}
+
+\textbf{Lab :} Analyse fonctionnelle de protocoles majeurs (Uniswap, Aave, Orca).
+
+\textbf{Livrables :} Tableau analytique «~Use case → Architecture → Risques → Valeur~».
+
+\subsubsection{Semaine 8 — Niveau 4 : Wallets \& On-chain Interaction}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Hot vs cold wallets, clés publiques vs clés privées.
+    \item Sécurité des portefeuilles et MetaMask.
+    \item Cycle de vie d'une transaction et lecture des explorateurs de blocs (Etherscan/Solana Explorer).
+\end{itemize}
+
+\textbf{Lab :} Démonstration sécurisée de signature de message (sans notion de trading) et analyse de transactions complexes sur un explorer.
+
+\textbf{Livrables :} Checklist personnalisée «~Hygiène Wallet~» et mini-guide «~Comment décoder une transaction~».
+
+\subsection{Critères d'Excellence pour ce Tronc Commun}
+
+\begin{itemize}
+    \item \textbf{Rigueur technique :} Zéro merge sur les dépôts Git sans tests unitaires minimaux.
+    \item \textbf{Communication :} Chaque livrable doit inclure un README professionnel orienté «~production-ready~».
+    \item \textbf{Analyse critique :} L'étudiant doit pouvoir expliquer chaque choix d'architecture généré ou assisté par l'IA.
+\end{itemize}
+
+% ========================================
+% CHAPITRE 7 : TRACK A SOLANA
+% ========================================
+
+\chapter{TRACK A : SOLANA SMART CONTRACT ENGINEER (RUST/ANCHOR)}
+
+\section{Philosophie du Track : L'Excellence par Rust}
+
+Le choix de Rust n'est pas seulement technique, il est stratégique. En enseignant un langage système exigeant, RBK garantit un niveau de sortie «~Senior~» par défaut. L'étudiant apprend à maîtriser la sécurité mémoire et la gestion de la concurrence au niveau le plus bas, une compétence rare et extrêmement valorisée sur le marché mondial.
+
+\section{Structure Pédagogique : De l'Architecture au Produit (12 Semaines)}
+
+\subsection{MODULE 1 : Le Modèle Solana \& Rust Natif (Semaines 9-11)}
+
+\textbf{Objectifs :} Comprendre le modèle de compte (Account Model) unique à Solana et s'affranchir des frameworks pour maîtriser la logique pure.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Architecture Solana : Preuve d'Histoire (PoH), parallélisme via Sealevel.
+    \item Account Model vs UTXO/EVM : Tout est un compte (Données, Programmes, Sysvars).
+    \item Développement Native Rust : Écrire des programmes sans framework pour comprendre la sérialisation (Borsh) et les points d'entrée (entrypoints).
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Schéma Pédagogique : Cycle de Vie d'une Transaction Solana}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.8cm and 2.5cm,
+    font=\sffamily\small,
+    block/.style={
+        rectangle, draw=MF_DeepNavy, thick, fill=white,
+        text width=3.5cm, align=center, minimum height=1.2cm,
+        rounded corners, drop shadow
+    },
+    process/.style={
+        circle, draw=MF_Gold, thick, fill=MF_Gold!10,
+        text width=2.2cm, align=center, minimum size=2.5cm,
+        drop shadow
+    },
+    arrow/.style={-Stealth, line width=1.5pt, MF_DeepNavy!80}
+]
+
+    % --- NODES ---
+    \node [block] (wallet) {\textbf{Étape 1 : Signature} \\ Le Wallet client signe l'instruction avec sa clé privée.};
+    
+    \node [block, right=of wallet] (rpc) {\textbf{Étape 2 : Envoi RPC} \\ La transaction est propagée vers un nœud RPC (Helius/QuickNode).};
+    
+    \node [process, below=of rpc] (leader) {\textbf{Leader TPU} \\ Ordonnancement via Proof of History (PoH)};
+    
+    \node [block, left=of leader] (sealevel) {\textbf{Étape 3 : Sealevel VM} \\ Exécution parallèle des instructions (Smart Contracts).};
+    
+    \node [block, below=of sealevel] (validators) {\textbf{Étape 4 : Validation} \\ Propagation aux validateurs pour vote et consensus.};
+    
+    \node [process, right=of validators, fill=MF_Gold!30] (finality) {\textbf{FINALITÉ} \\ Transaction irréversible (400ms - 2s)};
+
+    % --- PATHS ---
+    \draw [arrow] (wallet) -- (rpc);
+    \draw [arrow] (rpc) -- (leader);
+    \draw [arrow] (leader) -- (sealevel);
+    \draw [arrow] (sealevel) -- (validators);
+    \draw [arrow] (validators) -- (finality);
+    
+    % --- ANNOTATIONS PÉDAGOGIQUES ---
+    \node [draw=MF_Gold, dashed, inner sep=10pt, fit=(leader) (sealevel), label=above:{\color{MF_Gold}\textbf{Zone Haute Performance}}] {};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Schéma Pédagogique : Pipeline de Validation Solana (Architecture Système)}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.2cm and 1.5cm,
+    font=\sffamily\small,
+    >=stealth,
+    stage/.style={
+        rectangle, draw=SolanaBlue, thick, fill=white,
+        text width=2.8cm, align=center, minimum height=1cm,
+        rounded corners, drop shadow
+    },
+    poh/.style={
+        ellipse, draw=SolanaPurple, thick, fill=SolanaPurple!10,
+        text width=2.2cm, align=center, minimum size=2.5cm,
+        drop shadow
+    },
+    arrow/.style={->, >=latex, line width=1.5pt, SolanaBlue!80}
+]
+
+    % --- NODES ---
+    \node [stage] (fetch) {\textbf{1. Fetch} \\ Réception des paquets réseau (UDP)};
+    \node [stage, right=of fetch] (sigverify) {\textbf{2. SigVerify} \\ Vérification des signatures (GPU Parallèle)};
+    \node [stage, below=of sigverify] (banking) {\textbf{3. Banking Stage} \\ Ordonnancement \& Exécution Sealevel};
+    \node [poh, left=of banking] (poh) {\textbf{4. PoH} \\ Horodatage Cryptographique};
+    \node [stage, below=of poh] (write) {\textbf{5. Write Stage} \\ Mise à jour de l'état (Commitment)};
+
+    % --- PATHS ---
+    \draw [arrow] (fetch) -- (sigverify);
+    \draw [arrow] (sigverify) -- (banking);
+    \draw [arrow] (banking) -- (poh);
+    \draw [arrow] (poh) -- (write);
+
+    % --- ENCADRÉ D'EXPERTISE ---
+    \node [draw=SolanaGreen, dashed, inner sep=15pt, fit=(sigverify) (banking), label=above:{\color{SolanaGreen}\textbf{Zone d'Optimisation Rust (Haut Débit)}}] {};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Lab :} Création d'un système de messagerie on-chain minimaliste en Rust pur.
+
+\textbf{Livrable :} Guide d'installation et scripts d'environnement reproductibles.
+
+\subsection{MODULE 2 : Maîtrise du Framework Anchor (Semaines 12-14)}
+
+\textbf{Objectifs :} Utiliser le standard de l'industrie pour sécuriser et accélérer le développement.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Anchor Framework : Macros, IDL (Interface Description Language), génération automatique de clients.
+    \item Sécurité par défaut : Discriminators, vérification des propriétaires d'états.
+    \item PDAs (Program Derived Addresses) : Création de structures de données déterministes (le «~Hashmap on-chain~» de Solana).
+\end{itemize}
+
+\textbf{Lab :} Programme «~Counter~» évolué avec gestion de trésorerie (Vaults).
+
+\textbf{Livrable :} Suite de tests Anchor et pipeline CI/CD fonctionnel.
+
+\subsection{MODULE 3 : Architectures Avancées \& Innovation (Semaines 15-17)}
+
+\textbf{Objectifs :} Intégrer la composabilité et les dernières fonctionnalités de l'écosystème.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Composabilité (CPIs) : Appels de programmes à programmes (Cross-Program Invocations) vers des protocoles tiers (Jupiter, Orca).
+    \item Token-2022 \& Extensions : Transfer Hooks, Confidential Transfers, métadonnées natives.
+    \item Solana Mobile Stack (SMS) : Intégration du Mobile Wallet Adapter (MWA) pour les dApps ciblant les smartphones.
+    \item Actions \& Blinks : Permettre des transactions n'importe où sur le web (Twitter, LinkedIn).
+\end{itemize}
+
+\textbf{Lab :} Création d'une dApp mobile (APK) utilisant le Seed Vault pour signer des transactions.
+
+\textbf{Livrable :} Module de gestion de transactions avancé avec retry policy et gestion de latence.
+
+\subsection{MODULE 4 : Production Hardening \& UX Performance (Semaines 18-20)}
+
+\textbf{Objectifs :} Rendre le code «~Audit-Ready~» et l'interface utilisateur fluide.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Optimisation Compute : Réduction du budget de calcul pour baisser les frais.
+    \item Observabilité : Logs structurés, monitoring on-chain via Helius/QuickNode.
+    \item UX Web3 High-End : Gestion des états de transaction (pending, success, fail) sans friction.
+\end{itemize}
+
+\textbf{Projet de fin de Track :} Livraison d'une dApp complète «~production-like~».
+
+\section{Stack Technique Spécifique}
+
+\begin{itemize}
+    \item \textbf{Langages :} Rust (Smart Contracts), TypeScript (Clients/Tests).
+    \item \textbf{Frameworks :} Anchor, React/Next.js.
+    \item \textbf{Outils d'Auditeur :} Trident (Fuzzing), Soteria (Analyse statique).
+    \item \textbf{SDKs :} Solana web3.js v2, Helius SDK, Ironforge.
+\end{itemize}
+
+\section{Profil de Sortie : Le «~Guardian~»}
+
+L'étudiant certifié Track Solana est un ingénieur capable de :
+
+\begin{itemize}
+    \item Concevoir des systèmes gérant des millions de dollars d'AUM.
+    \item Optimiser des transactions pour une finalité de 400ms.
+    \item Monter une startup Web3 ou intégrer une équipe Core Dev à l'international.
+\end{itemize}
+
+% ========================================
+% CHAPITRE 8 : TRACK B EVM
+% ========================================
+
+\chapter{TRACK B : EVM ENGINEER (SOLIDITY/FOUNDRY)}
+
+\section{Philosophie du Track : La Maîtrise du Standard Industriel}
+
+L'écosystème EVM (Ethereum Virtual Machine) est le socle de l'économie décentralisée mondiale. Ce parcours ne se limite pas à l'apprentissage de la syntaxe Solidity ; il vise à former des ingénieurs capables de naviguer dans la fragmentation des Layer 2 (L2), d'optimiser les coûts de transaction (Gas) et de garantir une sécurité de niveau bancaire.
+
+\section{Structure Pédagogique : De la Logique au Durcissement (12 Semaines)}
+
+Ce track correspond à la phase de spécialisation technique (Semaines 9 à 20) pour les profils choisissant la voie Ethereum.
+
+\subsection{MODULE 1 : Smart Contract Basics \& Solidity Deep Dive (Semaines 9-10)}
+
+\textbf{Objectifs :} Maîtriser le langage Solidity et ses subtilités de bas niveau.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Syntaxe \& Structure : Variables d'état, fonctions, modifiers, héritage.
+    \item Gestion de la donnée : Mappings, structs, enums.
+    \item Sécurité Native : Utilisation rigoureuse de require, revert et assert.
+    \item Gas Basics : Comprendre l'Opcodes EVM et l'impact du stockage sur les frais.
+\end{itemize}
+
+\textbf{Lab :} Création d'un contrat de «~Registry~» (enregistrement) robuste avec gestion des accès (Ownership).
+
+\textbf{Livrable :} Contrat testé sur Remix et scripts de déploiement basiques.
+
+\subsection{MODULE 2 : Environnement de Développement Pro (Semaines 11-12)}
+
+\textbf{Objectifs :} S'affranchir des outils en ligne pour utiliser les frameworks de production.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Frameworks : Transition de Hardhat vers Foundry (pour la rapidité et les tests en Solidity).
+    \item Workflow Pro : Configuration de chaînes locales, gestion des environnements (.env), CI/CD avec GitHub Actions.
+    \item Testing avancé : Unit tests, integration tests et mocking de contrats tiers.
+\end{itemize}
+
+\textbf{Lab :} Setup d'un dépôt «~Production-Ready~» incluant linting, tests automatiques et pipeline de déploiement.
+
+\textbf{Livrable :} Pipeline CI opérationnel avec une couverture de tests significative.
+
+\subsection{MODULE 3 : Token Standards \& Composabilité (Semaines 13-14)}
+
+\textbf{Objectifs :} Implémenter les standards mondiaux et comprendre l'interopérabilité.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Standards : ERC-20 (Fungible), ERC-721 (NFT), ERC-1155 (Multi-token).
+    \item Bibliothèques : Utilisation intensive d'OpenZeppelin pour la sécurité.
+    \item Access Control : RBAC (Role-Based Access Control) et patterns multi-sig.
+\end{itemize}
+
+\textbf{Lab :} Création d'un Token ERC-20 avec des règles de distribution personnalisées et un système de «~Vault~» sécurisé.
+
+\textbf{Livrable :} Smart contract auditable, conforme aux standards EIP.
+
+\subsection{MODULE 4 : dApp Development \& Web3 Integration (Semaines 15-16)}
+
+\textbf{Objectifs :} Connecter la logique on-chain à des interfaces utilisateurs haut de gamme.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Libraries : Ethers.js / Web3.js et intégration avec React/Next.js.
+    \item Wallet Integration : MetaMask, WalletConnect et gestion des états de session.
+    \item Transaction Management : Retries, timeouts, pending states et UX claire sur les erreurs de transaction.
+\end{itemize}
+
+\textbf{Lab :} Développement d'un «~Token Dashboard~» permettant le Mint, le Transfert et l'Approbation avec une UI réactive.
+
+\textbf{Livrable :} Frontend complet gérant proprement les cas d'échec (RPC down, user reject).
+
+\subsection{MODULE 5 : L2 Scaling \& Advanced Patterns (Semaines 17-18)}
+
+\textbf{Objectifs :} Optimiser pour l'échelle et réduire les frictions.
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item L2 \& Sidechains : Déploiement sur Arbitrum, Optimism et Polygon.
+    \item Upgradeability : Proxy patterns (Transparent vs UUPS) pour permettre les mises à jour sans perte de données.
+    \item Oracles : Intégration de flux de prix réels via Chainlink.
+\end{itemize}
+
+\textbf{Lab :} Migration d'une application de L1 vers un L2 avec intégration d'un oracle de prix.
+
+\textbf{Livrable :} dApp multi-chain avec logique de proxy.
+
+\subsection{MODULE 6 : Production Hardening \& Security (Semaines 19-20)}
+
+\textbf{Objectifs :} Rendre le système «~Audit-Ready~».
+
+\textbf{Contenu Technique :}
+\begin{itemize}
+    \item Vulnérabilités classiques : Re-entrancy, Overflow (anciennes versions), Oracle Manipulation.
+    \item Observabilité : Logs structurés, monitoring on-chain et alertes de sécurité.
+    \item Incident Handling : Création d'un «~Runbook~» pour réagir en cas de hack ou de bug en production.
+\end{itemize}
+
+\textbf{Lab :} Simulation d'incidents (RPC instable, congestion réseau) et application de correctifs en direct.
+
+\textbf{Projet de fin de Track :} Livraison d'une dApp complète, testée et prête pour le Mainnet.
+
+\section{Stack Technique Spécifique}
+
+\begin{itemize}
+    \item \textbf{Langages :} Solidity (Smart Contracts), TypeScript/JavaScript (Front/Scripts).
+    \item \textbf{Frameworks Core :} Foundry (Forge, Cast, Anvil), Hardhat.
+    \item \textbf{Libraries :} OpenZeppelin, Ethers.js.
+    \item \textbf{Infrastructure :} Infura/Alchemy (Nodes RPC), The Graph (Indexing).
+\end{itemize}
+
+\section{Profil de Sortie : L'Ingénieur d'Infrastructure EVM}
+
+L'apprenant certifié Track B possède les compétences pour :
+
+\begin{itemize}
+    \item Développer des protocoles DeFi complexes et sécurisés.
+    \item Gérer des déploiements multi-chain sur des solutions de Layer 2.
+    \item Collaborer avec des auditeurs externes en fournissant une documentation technique et des tests de haute qualité.
+\end{itemize}
+
+% ========================================
+% CHAPITRE 9 : FICHES MÉTIERS CIBLES
+% ========================================
+
+\chapter{FICHES MÉTIERS CIBLES}
+
+\section{Smart Contract Engineer \& Auditor (Le «~Guardian~»)}
+
+\textbf{Mission :} Concevoir, développer et sécuriser des smart contracts critiques (fonds, tokens, protocoles). L'audit est le métier à plus forte valeur ajoutée et le plus résistant à l'automatisation par l'IA. L'ingénieur doit être capable de gérer des millions de dollars d'AUM (Assets Under Management).
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Stack :} Rust profond (Solana/Anchor) ou Solidity avancé (EVM/Foundry).
+    \item \textbf{Sécurité :} Maîtrise des vecteurs d'attaque historiques (Re-entrancy, Oracle manipulation), utilisation d'outils de vérification formelle (Certora, Soteria) et de fuzzing (Trident).
+    \item \textbf{Analyse :} Rédaction de spécifications techniques et de rapports d'audit professionnels avec classification de sévérité.
+\end{itemize}
+
+\textbf{Différenciation :} Ce n'est pas un «~codeur~», c'est un ingénieur en sécurité financière décentralisée capable d'identifier des failles logiques subtiles que l'IA ignore.
+
+\textbf{Perspective de Salaire (Remote Global) :} 100k\$ – 250k\$ / an.
+
+\section{Protocol \& Ecosystem Strategist (Le «~Visionnaire~»)}
+
+\textbf{Mission :} Analyser, investir et contribuer stratégiquement à des protocoles Web3. Aider les projets à concevoir leur architecture économique (Tokenomics) et leur stratégie de croissance on-chain.
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Analyse Financière :} Modélisation économique complexe, théorie des jeux et design de mécanismes d'incitation.
+    \item \textbf{Outils :} Simulation sur Machinations.io et création de dashboards de KPIs (TVL, rétention) via SQL sur Dune Analytics.
+    \item \textbf{Rédaction :} Production de rapports de recherche (Research) et de Whitepapers.
+\end{itemize}
+
+\textbf{Différenciation :} Une hybridation rare entre la finance, la stratégie et la tech. Profil très recherché par les fonds d'investissement (VCs) et les DAOs.
+
+\textbf{Perspective de Salaire (Remote Global) :} 60k\$ – 120k\$ / an.
+
+\section{Web3 Product Builder / Entrepreneur}
+
+\textbf{Mission :} Identifier un problème de marché, concevoir une solution décentralisée et assembler une équipe pour la construire. Il gère la roadmap technique, communautaire et économique, de l'idée au MVP (Minimum Viable Product).
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Management :} Gestion de projet agile, management de produit Web3.
+    \item \textbf{Tech :} Fondamentaux techniques suffisants pour piloter des développeurs et utiliser l'IA pour le prototypage rapide.
+    \item \textbf{Growth :} Growth hacking communautaire et marketing on-chain.
+\end{itemize}
+
+\textbf{Différenciation :} C'est un entrepreneur qui utilise la blockchain comme un outil souverain, capable de lancer une startup Web3 en 48h grâce aux Blinks et Actions.
+
+\section{Solana dApp Engineer (Front Web3)}
+
+\textbf{Mission :} Construire des interfaces haut de gamme qui signent, envoient et suivent des transactions, lisent des actifs on-chain et gèrent les états des portefeuilles (wallets).
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Stack :} TypeScript, React/Next.js, Tailwind CSS.
+    \item \textbf{Web3 Integration :} Solana Wallet Adapter, Mobile Wallet Adapter (MWA), intégration de protocoles DeFi/NFT existants via SDKs (Helius, Jupiter).
+    \item \textbf{UX :} Gestion des erreurs, fallback providers et expérience utilisateur «~sans friction~».
+\end{itemize}
+
+\textbf{Différenciation :} Expertise dans l'intégration propre des transactions et de la data on-chain (DAS API), garantissant une UX stable même en cas de congestion réseau.
+
+\section{Tokenization \& DePIN Architect}
+
+\textbf{Mission :} Concevoir l'architecture technique et économique pour la tokenisation d'actifs réels (RWA) ou le déploiement de réseaux d'infrastructures physiques décentralisés (DePIN).
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Techno :} Maîtrise de Token-2022, des extensions de jetons (Transfer Hooks) et des actifs numériques programmables.
+    \item \textbf{Système :} Intégration Hardware/IoT et gestion des données de capteurs on-chain.
+\end{itemize}
+
+\textbf{Différenciation :} Expert de la transformation numérique des entreprises traditionnelles vers l'économie on-chain.
+
+\textbf{Perspective de Salaire (Remote Global) :} 90k\$ – 160k\$ / an.
+
+\section{Web3 QA \& Test Automation Engineer}
+
+\textbf{Mission :} Garantir la fiabilité totale des dApps et des contrats avant le déploiement sur le Mainnet.
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Automation :} Mise en place de pipelines CI/CD, frameworks de tests (Anchor tests, Foundry tests).
+    \item \textbf{Scénarios :} Simulation de pannes RPC, de rejets utilisateur et de transactions échouées.
+    \item \textbf{Preuves :} Production de rapports de couverture de tests et de «~Release Readiness Checklists~».
+\end{itemize}
+
+\section{Developer Advocate \& Technical Writer}
+
+\textbf{Mission :} Produire la documentation, les tutoriels et les SDK samples pour un protocole afin de faciliter l'adoption par d'autres développeurs.
+
+\textbf{Compétences Clés :}
+\begin{itemize}
+    \item \textbf{Pédagogie :} Capacité à vulgariser des concepts techniques complexes (PDAs, CPIs).
+    \item \textbf{Community :} Support développeur et animation de workshops.
+\end{itemize}
+
+\textbf{Différenciation :} Un profil hybride entre l'ingénierie et la communication, essentiel pour la croissance de tout écosystème Web3.
+
+% ========================================
+% CHAPITRE 10 : CAPSTONES
+% ========================================
+
+\chapter{CAPSTONES (PROJETS SIGNATURES)}
+
+\section{Philosophie du Capstone : Le Standard «~Studio~»}
+
+Le projet final n'est pas un exercice de code, c'est une incubation de produit. Il doit démontrer une maîtrise complète de la pile technologique choisie (EVM ou Solana) et inclure systématiquement quatre piliers :
+
+\begin{enumerate}
+    \item \textbf{Smart Contracts / Programmes :} Logique métier robuste et optimisée.
+    \item \textbf{Frontend dApp :} Interface utilisateur (web + mobile readiness) avec intégration wallet.
+    \item \textbf{Sécurité \& Hardening :} Threat modeling, validations et gestion des erreurs.
+    \item \textbf{Audit Report :} Un rapport d'audit interne prouvant la fiabilité du code.
+\end{enumerate}
+
+\section{Les 3 Projets Signatures (Cahier des Charges)}
+
+Les étudiants choisissent l'une des trois thématiques suivantes, déclinables sur l'écosystème de leur spécialisation.
+
+\subsection{\faTrophy\ Capstone 1 — Wallet \& Transaction Reliability Pack}
+
+\textbf{Objectif :} Résoudre le problème n°1 des dApps actuelles : l'instabilité face aux conditions réelles du réseau.
+
+\textbf{Fonctionnel :}
+\begin{itemize}
+    \item Connexion multi-wallet fluide.
+    \item Gestion de session (reconnexion, déconnexion, changement de compte).
+    \item Cycle de vie complet de la transaction : Simulation → Envoi → Confirmation → Timeline de statut en temps réel.
+\end{itemize}
+
+\textbf{Technique :} Machine à états (State Machine) testable, gestion des timeouts et retry policies.
+
+\textbf{Livrable «~Signature~» :} Une page de diagnostics affichant le statut RPC et la détection de wallet.
+
+\subsection{\faTrophy\ Capstone 2 — Tokenization \& Admin Control Center (RWA/Token-2022)}
+
+\textbf{Objectif :} Prouver la capacité à gérer des actifs numériques complexes et leur gouvernance opérationnelle.
+
+\textbf{Fonctionnel :}
+\begin{itemize}
+    \item Création et configuration de tokens (ERC-20/721 ou SPL Token-2022).
+    \item Distribution contrôlée (vesting, quotas, listes d'autorisation).
+    \item Console d'administration complète pour les opérations (Mint/Transfer) avec RBAC (Role-Based Access Control).
+\end{itemize}
+
+\textbf{Technique :} Journalisation des opérations (audit trail) et exports de données (CSV/on-chain).
+
+\textbf{Projet Spécifique Visionnaire :} «~Tunis Safe-Pay~» — Un escrow intelligent pour freelances sécurisant les paiements en stablecoins.
+
+\subsection{\faTrophy\ Capstone 3 — Digital Assets \& Utility Ecosystem (NFT/Gating)}
+
+\textbf{Objectif :} Concevoir un produit utilisant les NFTs non comme spéculation, mais comme outil d'accès ou de certification.
+
+\textbf{Fonctionnel :}
+\begin{itemize}
+    \item Lecture et indexation des métadonnées d'actifs.
+    \item Système de «~Gating~» : accès à des zones réservées basé sur la possession d'un actif (Pass, Certificat, Ticket).
+    \item Tableau de bord utilisateur «~My Assets~» haute performance.
+\end{itemize}
+
+\textbf{Technique :} Gestion du cache et des fallbacks de providers pour éviter les écrans vides.
+
+\textbf{Projet Spécifique Visionnaire :} «~Solana Action Hub~» — Une suite de Blinks pour monétiser du contenu social directement sur X/Twitter.
+
+\section{Spécifications techniques et «~Gates~» de validation}
+
+Pour être validé, un projet doit passer les «~Quality Gates~» du Studio :
+
+\begin{itemize}
+    \item \textbf{Zéro Merge sans Review :} Aucune ligne de code n'entre en branche principale sans revue par un pair et validation IA.
+    \item \textbf{Zéro Merge sans Tests :} Suite de tests unitaires et d'intégration obligatoire (Anchor tests ou Foundry tests).
+    \item \textbf{Checklist Sécurité :} Validation systématique de la surface d'attaque (permissions, invariants documentés).
+\end{itemize}
+
+\section{Critères d'Acceptation (Production-Like)}
+
+\begin{itemize}
+    \item \textbf{Robustesse :} 0 crash sur 20 scénarios d'erreurs imposés (ex: RPC down, rejet utilisateur, blockhash expiré).
+    \item \textbf{UX/CX :} Intégration wallet documentée et utilisable en moins de 15 minutes par un développeur externe.
+    \item \textbf{Documentation :} README complet incluant setup, runbook incident et architecture decision records (ADR).
+\end{itemize}
+
+\section{Le Demo Day International}
+
+Le point final du capstone est la présentation devant un panel d'investisseurs (Foundations, VCs) et de recruteurs de l'écosystème global (Superteam).
+
+\begin{itemize}
+    \item \textbf{Le Pitch Technique :} Expliquer les compromis performance/sécurité choisis.
+    \item \textbf{La Démo Live :} Prouver que le produit fonctionne sur un Testnet public.
+    \item \textbf{Le Rapport d'Audit :} Remettre le «~Security Package~» prouvant que l'étudiant pense comme un ingénieur senior.
+\end{itemize}
+
+\begin{ceoBox}{Annotation Stratégique}
+Les Capstones ne sont pas des projets académiques. Ce sont des produits incubés qui peuvent devenir de vraies startups financées lors du Demo Day. RBK prend une participation minoritaire (5-10\%) dans les projets qui lèvent des fonds, créant ainsi un modèle de revenus «~Long Tail~».
+\end{ceoBox}
+% ========================================
+% CHAPITRE 11 : BUSINESS PLAN
+% ========================================
+
+\chapter{{BUSINESS PLAN AVEC ATTÉNUATION DES RISQUES}}
+
+\section{Modèle Économique Hybride}
+
+\subsection{Le Mécanisme ISA (Income Share Agreement)}
+Pour garantir l'accessibilité tout en assurant la rentabilité, RBK adopte un modèle ISA strict :
+\begin{itemize}
+    \item \textbf{Frais initiaux (Tuition) :} 0 TND.
+    \item \textbf{Remboursement :} 500 TND par mois pendant 36 mois, uniquement si le salaire mensuel dépasse 3 000 TND.
+    \item \textbf{Plafond (Cap) :} Total max de 18 000 TND (équivalent à 6 000 \$).
+\end{itemize}
+
+\subsection{Diagramme de Flux de Trésorerie}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+% Waterfall logic
+\draw[->, thick] (0,0) -- (10,0) node[right] {Temps};
+\draw[->, thick] (0,-3) -- (0,5) node[above] {Cash Flow (TND)};
+
+% Bars
+\fill[red!30] (0.5,0) rectangle (2,-2) node[midway, black] {-50k (Launch)};
+\fill[red!30] (2.5,0) rectangle (4,-1.5) node[midway, black] {-30k (Ops)};
+\fill[green!30] (4.5,0) rectangle (6,1) node[midway, black] {+20k (Grant)};
+\fill[green!30] (6.5,0) rectangle (8,3) node[midway, black] {+80k (ISA Y1)};
+\fill[green!30] (8.5,0) rectangle (10,4.5) node[midway, black] {+150k (ISA Y2)};
+
+% Break-even line
+\draw[dashed, blue, thick] (0,0) -- (10,0);
+\node[blue] at (5, -0.5) {Point Mort (Mois 14)};
+\end{tikzpicture}
+\caption{Modèle de Trésorerie (J-Curve)}
+\end{figure}
+
+\section{Projections Financières 2025-2027}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|r|r|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Couche} & \textbf{Année 1} & \textbf{Année 2} & \textbf{Année 3} & \textbf{Croissance} \\
+\hline
+\textbf{Formation} & 360 000 TND & 810 000 TND & 1 215 000 TND & +237\% \\
+\hline
+\textbf{ISA \& Success Fees} & 15 000 TND & 135 000 TND & 330 000 TND & +2100\% \\
+\hline
+\textbf{Services Pro} & 20 000 TND & 50 000 TND & 100 000 TND & +400\% \\
+\hline
+\textbf{Total Revenus} & \textbf{395 000 TND} & \textbf{995 000 TND} & \textbf{1 645 000 TND} & +316\% \\
+\hline
+\textbf{Marge Nette} & \textbf{45\%} & \textbf{65\%} & \textbf{70\%} & +25 pts \\
+
+\hline
+\end{tabularx}
+\caption{Projections Financières Révisées - Modèle Scalable}
+\end{table}
+
+\chapter{{STRATÉGIE MARKETING \& ACQUISITION RENFORCÉE}}
+
+\section{\faBullhorn\ Positionnement de Marque : «~Senior-by-Design~»}
+
+Le positionnement rompt avec le marketing traditionnel des bootcamps de code. RBK ne vend pas de la «~syntaxe~», mais de la «~confiance architecturale~».
+
+\begin{itemize}
+    \item \textbf{Slogan suggéré :} «~Devenez un leader de l'économie décentralisée : architecte de protocoles, stratège en tokenomics ou entrepreneur Web3.~»
+    \item \textbf{Axe de communication principal :} La montée en gamme face à l'IA. «~L'IA remplace les codeurs, pas les architectes. Devenez indispensable.~»
+    \item \textbf{Identité visuelle :} Un «~Web3 Studio~» haut de gamme, une filière d'excellence (Forge d'élite) plutôt qu'une école de masse.
+    \item \textbf{Discours de conformité :} Positionnement strict sur le «~Software Engineering Export~». On évite toute promesse liée au trading ou à la spéculation financière pour se concentrer sur l'ingénierie exportable, garantissant une image propre vis-à-vis des régulateurs (BCT).
+\end{itemize}
+
+\section{\faUsers\ Segments de Marché Cibles}
+
+Le recrutement est hautement sélectif et cible quatre profils spécifiques en Tunisie et dans la région MENA :
+
+\begin{enumerate}
+    \item \textbf{Alumni RBK (Priorité 1) :} Plus de 1000 développeurs déjà formés aux bases du Full-Stack JS, cherchant une spécialisation de pointe pour augmenter leur salaire.
+    \item \textbf{Développeurs Professionnels (2-5 ans d'expérience) :} Ingénieurs en poste dans des SSII/ESN souhaitant pivoter vers le Web3 pour accéder au marché du travail global en remote.
+    \item \textbf{Jeunes Diplômés d'Écoles d'Élite :} Étudiants issus d'écoles comme ESPRIT, INSAT, MSB ou Polytech, possédant un fort potentiel STEM et une appétence pour l'innovation.
+    \item \textbf{Entrepreneurs Tech :} Profils souhaitant maîtriser la tokenisation pour lancer leur propre projet souverain.
+\end{enumerate}
+
+\section{\faBullhorn\ Canaux d'Acquisition et Tactiques de Lead Gen}
+
+\subsection{A. Marketing de Contenu (Thought Leadership)}
+
+\begin{itemize}
+    \item Série Vidéo/Podcast : «~L'avenir du développement après l'IA~» et «~Web3 : la nouvelle frontière tech~».
+    \item Études de cas (Proof of Work) : Publication d'analyses techniques sur des protocoles existants.
+    \item On-chain Resume : Communication sur les réussites des diplômés.
+\end{itemize}
+
+\subsection{B. Canaux Sociaux et Écosystémiques}
+
+\begin{itemize}
+    \item \textbf{LinkedIn :} Ciblage publicitaire ultra-précis sur les titres «~Software Engineer~» en Tunisie.
+    \item \textbf{Twitter/X :} Canal natif du Web3.
+    \item \textbf{Discord/Telegram :} Création d'un hub communautaire «~Tunisian Web3 Builder~».
+\end{itemize}
+
+\section{Argumentaire de Vente (USP)}
+
+\begin{strategieBox}{Annotation Stratégique}
+La force du marketing RBK 2.0 repose sur le réseau. En devenant le hub de Superteam en Tunisie, RBK ne vend plus une formation, mais un droit d'entrée dans une guilde mondiale de bâtisseurs.
+\end{strategieBox}
+
+\chapter{ANALYSE DES RISQUES DÉTAILLÉE}
+
+\section{Matrice des Risques avec Mesures d'Atténuation}
+
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{|p{2.5cm}|c|c|c|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Risque} & \textbf{P} & \textbf{I} & \textbf{Score} & \textbf{Mesures d'Atténuation} \\
+\hline
+Régulation Tunisienne & M & É & 12 & Conseil juridique spécialisé, MOU avec BCT, Structure offshore de backup. \\
+\hline
+Défection Mentors & H & É & 15 & Contrats 2 ans, "Train the Trainer", Partage equity. \\
+\hline
+Burnout Étudiants & H & M & 10 & Protocole anti-burnout obligatoire, Monitoring hebdo. \\
+\hline
+Échec ISA Légal & M & É & 12 & Fonds de garantie 50k TND, Prêts partenaires. \\
+\hline
+Volatilité Crypto & H & M & 10 & Diversification revenue streams, Hedge stratégique. \\
+\hline
+Concurrence & M & M & 6 & Accès exclusif Superteam, Barrière technique Rust. \\
+\hline
+\end{tabularx}
+\caption{Matrice des Risques 2025}
+\end{table}
+
+\chapter{FEUILLE DE ROUTE 120 JOURS}
+
+\begin{center}
+\begin{tikzpicture}[
+    task/.style={
+        rectangle,
+        draw=black!50,
+        fill=white,
+        thick,
+        rounded corners,
+        align=center,
+        font=\scriptsize,
+        minimum width=2cm
+    }
+]
+
+% Timeline Axis
+\draw[->, thick] (0,0) -- (12,0) node[right] {Semaines};
+
+% Month 1
+\fill[SolanaPurple!20] (0,-0.5) rectangle (3,4);
+\node[SolanaPurple] at (1.5, 3.8) {\textbf{Mois 1 : Foundation}};
+\node[task, fill=SolanaPurple!10] at (1.5, 2.5) {Recrutement\\Staff Technique};
+\node[task, fill=SolanaPurple!10] at (1.5, 1) {Finalisation\\Curriculum};
+
+% Month 2
+\fill[SolanaBlue!20] (3,-0.5) rectangle (6,4);
+\node[SolanaBlue] at (4.5, 3.8) {\textbf{Mois 2 : Acquisition}};
+\node[task, fill=SolanaBlue!10] at (4.5, 2.5) {Lancement campagne\\Marketing};
+\node[task, fill=SolanaBlue!10] at (4.5, 1) {Sélection Promo\\Alpha (Piscine)};
+
+% Month 3
+\fill[SolanaGreen!20] (6,-0.5) rectangle (9,4);
+\node[SolanaGreen] at (7.5, 3.8) {\textbf{Mois 3 : Operations}};
+\node[task, fill=SolanaGreen!10] at (7.5, 2.5) {Setup Infra\\(Hub Physique)};
+\node[task, fill=SolanaGreen!10] at (7.5, 1) {Onboarding\\Partenaires};
+
+% Month 4
+\fill[MF_Gold!20] (9,-0.5) rectangle (12,4);
+\node[MF_Gold] at (10.5, 3.8) {\textbf{Mois 4 : Go Live}};
+\node[task, fill=MF_Gold!10] at (10.5, 2.5) {Kick-off\\Promo Alpha};
+\node[task, fill=MF_Gold!10] at (10.5, 1) {Premiers\\Bounties};
+
+\end{tikzpicture}
+\end{center}
+
+\chapter{{TOKEN DE RÉPUTATION \& ALUMNI PROGRAM}}
+
+\section{Architecture Technique du Token (\$RBKRep)}
+Le token est un Soulbound Token (SBT) non-transférable sur Solana, garantissant l'authenticité des compétences.
+
+\begin{itemize}
+    \item \textbf{Standard :} MPL-Core (Metaplex) ou Token-2022 (Non-Transferable Extension).
+    \item \textbf{Métadonnées :} Hash des projets validés, Lien vers certificats GitHub.
+    \item \textbf{Évolution :} Le token "monte en niveau" (Level Up) à chaque milestone carrière validé.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Niveau} & \textbf{Critères d'Attribution} & \textbf{Privilèges} \\
+\hline
+\textbf{Initiate} & Réussite Piscine Rust & Accès Discord "Builders" \\
+\hline
+\textbf{Apprentice} & Validation Phase 1 (Fondations) & Accès Bounties Junior \\
+\hline
+\textbf{Architect} & Certification Finale (Track A/B/C) & Accès VC Pitch Day \\
+\hline
+\textbf{Master} & Premier CDI Web3 signé (>3k TND) & Droit de vote DAO Alumni \\
+\hline
+\end{tabularx}
+\caption{Badges de Réputation On-Chain}
+\end{table}
+
+\chapter{FICHES MÉTIERS CIBLES}
+
+\section{Smart Contract Engineer \& Auditor (Le «~Guardian~»)}
+\textbf{Mission :} Concevoir, développer et sécuriser des smart contracts critiques.
+\textbf{Compétences Clés :} Rust/Solidity, Formal Verification.
+
+\section{Protocol \& Ecosystem Strategist (Le «~Visionnaire~»)}
+\textbf{Mission :} Analyser et concevoir l'architecture économique (Tokenomics).
+\textbf{Compétences Clés :} Machinations.io, Dune Analytics.
+
+\section{Web3 Product Builder / Entrepreneur}
+\textbf{Mission :} Lancer une startup Web3 en 48h grâce aux Blinks et Actions.
+
+\section{Solana dApp Engineer (Front Web3)}
+\textbf{Mission :} Construire des interfaces haut de gamme (React/Next.js) connectées aux wallets.
+
+\section{Tokenization \& DePIN Architect}
+\textbf{Mission :} Tokenisation d'actifs réels (RWA) et réseaux physiques (DePIN).
+
+\section{Web3 QA \& Test Automation Engineer}
+\textbf{Mission :} Garantir la fiabilité totale avant le Mainnet.
+
+\section{Developer Advocate}
+\textbf{Mission :} Produire la documentation et faciliter l'adoption développeur.
+
+Le succès financier du «~Web3 Expert \& Builder Programme~» repose sur un équilibre entre des coûts opérationnels maîtrisés (grâce à l'IA) et une valeur perçue élevée permettant des marges significatives.
+
+\section{\faChartPie\ Investissement Initial (CAPEX - Phase de Lancement)}
+
+L'investissement est réparti sur les trois mois précédant le lancement de la première promotion (Promo Alpha).
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Poste de Dépense} & \textbf{Coût Estimé (TND)} & \textbf{Détails Techniques \& Justification} \\
+\hline
+Développement du Curriculum & 15 000 & Rémunération des experts (EVM/Solana) pour la création des modules, des «~Golden Templates~» et des labs reproductibles. \\
+\hline
+Équipement \& Infrastructure & 20 000 & Amélioration des postes de travail, acquisition de licences logicielles (IDE IA), et abonnement aux services de nœuds RPC premium (Helius, Alchemy, QuickNode). \\
+\hline
+Marketing \& Acquisition & 15 000 & Campagnes LinkedIn/Twitter ciblées, organisation du meetup de lancement, et production de contenu de marque (vidéos, articles). \\
+\hline
+\textbf{TOTAL INVESTISSEMENT} & \textbf{50 000} & Amortissement prévu sur les 3 premières promotions (16 666 TND / promo). \\
+\hline
+\end{tabularx}
+\caption{Investissement Initial (CAPEX)}
+\end{table}
+
+\section{\faChartPie\ Charges d'Exploitation (OPEX - Par Promotion de 20 Apprenants)}
+
+Les charges sont calculées sur un cycle de 6-7 mois intensifs.
+
+\subsection{A. Charges de Personnel (76 000 TND)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Poste} & \textbf{Montant (TND)} \\
+\hline
+Directeur Pédagogique / Head of Ecosystem & 40 000 \\
+\hline
+Responsable Administratif \& Logistique & 24 000 \\
+\hline
+Mentors Techniques (Consultants) & 12 000 \\
+\hline
+\textbf{TOTAL PERSONNEL} & \textbf{76 000} \\
+\hline
+\end{tabularx}
+\caption{Charges de Personnel par Promotion}
+\end{table}
+
+\subsection{B. Frais de Fonctionnement et Services (35 000 TND)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Poste} & \textbf{Montant (TND)} \\
+\hline
+Services Cloud \& Outils IA & 5 000 \\
+\hline
+Marketing récurrent \& Demo Day & 10 000 \\
+\hline
+Frais de Certification & 10 000 \\
+\hline
+Contingence (10\%) & 10 000 \\
+\hline
+\textbf{TOTAL FONCTIONNEMENT} & \textbf{35 000} \\
+\hline
+\end{tabularx}
+\caption{Frais de Fonctionnement par Promotion}
+\end{table}
+
+\textbf{TOTAL OPEX (Variables + Fixes) :} ~111 000 TND par promotion.
+
+\section{\faMoneyBillWave\ Modèle de Revenus et Recettes}
+
+Le positionnement tarifaire reflète le potentiel de salaire international (5x à 10x le marché local).
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|r|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Type de Billet} & \textbf{Prix Unitaire (TND)} & \textbf{Volume (Prévu)} & \textbf{Total (TND)} \\
+\hline
+Prix Plein (Public) & 18 000 & 8 & 144 000 \\
+\hline
+Prix Early Bird / Alumni & 15 000 & 10 & 150 000 \\
+\hline
+Bourses / ISA (Pondéré) & 7 000 & 2 & 14 000 \\
+\hline
+\textbf{RECETTES TOTALES (1 PROMO)} & & \textbf{20 Élèves} & \textbf{308 000} \\
+\hline
+\end{tabularx}
+\caption{Structure des Revenus par Promotion}
+\end{table}
+
+\section{\faChartLine\ Projection des Flux de Trésorerie (Cash Flow) - 3 Ans}
+
+Hypothèse de croissance : Année 1 (1 promo), Année 2 (2 promos), Année 3 (3 promos).
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|r|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Indicateurs Financiers} & \textbf{Année 1 (1 Promo)} & \textbf{Année 2 (2 Promos)} & \textbf{Année 3 (3 Promos)} \\
+\hline
+Nombre d'Étudiants & 20 & 50 & 75 \\
+\hline
+Chiffre d'Affaires & 308 000 & 770 000 & 1 155 000 \\
+\hline
+Revenus Complémentaires (Grants, Success Fees, Audit) & 10 000 & 40 000 & 100 000 \\
+\hline
+\textbf{TOTAL REVENUS} & \textbf{318 000} & \textbf{810 000} & \textbf{1 255 000} \\
+\hline
+OPEX (Coûts promos) & (111 000) & (250 000) & (350 000) \\
+\hline
+CAPEX (Invest. initial) & (50 000) & (10 000) & (20 000) \\
+\hline
+\textbf{Marge Brute (EBITDA)} & \textbf{157 000} & \textbf{550 000} & \textbf{885 000} \\
+\hline
+\textbf{Bénéfice Net (Est.)} & \textbf{141 300} & \textbf{495 000} & \textbf{796 500} \\
+\hline
+\end{tabularx}
+\caption{Projections Financières sur 3 Ans}
+\end{table}
+
+\section{\faBalanceScale\ Analyse du Seuil de Rentabilité (Break-Even)}
+
+\begin{itemize}
+    \item Coût total pour la 1ère promo (CAPEX + OPEX) : 161 000 TND.
+    \item Revenu moyen par étudiant : 15 400 TND.
+    \item \textbf{Nombre d'étudiants pour atteindre l'équilibre (Année 1) : 10,4 (soit 11 étudiants).}
+\end{itemize}
+
+\section{Notes et Hypothèses Stratégiques}
+
+\subsection{Levier ISA (Income Share Agreement)}
+
+Le modèle financier prévoit d'introduire des contrats de partage de revenus.
+
+\begin{itemize}
+    \item \textbf{Condition :} L'étudiant ne paie rien ou une partie minime, puis reverse 15\% de son salaire pendant 2 ans dès qu'il dépasse un seuil de 3 000 TND/mois.
+    \item \textbf{Impact :} Augmente le volume d'apprenants d'élite et assure des revenus récurrents sur l'Année 2 et 3.
+\end{itemize}
+
+\subsection{Revenus «~Studio~» (Success Fees)}
+
+RBK prend une participation minoritaire (5\%) dans les projets incubés qui lèvent des fonds lors du Demo Day.
+
+\textbf{Potentiel :} Sur 75 étudiants/an, si 2 startups lèvent 100k\$ (Seed Grant), RBK perçoit 5k\$ par projet, soit ~30k TND de revenus passifs.
+
+\subsection{Optimisation par l'IA}
+
+Les coûts de personnel mentor sont maintenus à un niveau bas (12k par promo) car l'IA assiste 80\% des revues de code basiques, permettant aux mentors humains de se concentrer uniquement sur l'audit stratégique et l'architecture de haut niveau.
+
+\begin{ceoBox}{Annotation pour le CEO}
+Ce Business Plan montre un ROI immédiat. Le Studio s'autofinance dès le 6ème mois d'activité. La scalabilité est assurée par le passage à un modèle multi-cohortes en Année 2.
+\end{ceoBox}
+
+% ========================================
+% CHAPITRE 12 : STRATÉGIE MARKETING
+% ========================================
+
+\chapter{{STRATÉGIE MARKETING \& ACQUISITION}}
+
+\section{\faBullhorn\ Positionnement de Marque : «~Senior-by-Design~»}
+
+Le positionnement rompt avec le marketing traditionnel des bootcamps de code. RBK ne vend pas de la «~syntaxe~», mais de la «~confiance architecturale~».
+
+\begin{itemize}
+    \item \textbf{Slogan suggéré :} «~Devenez un leader de l'économie décentralisée : architecte de protocoles, stratège en tokenomics ou entrepreneur Web3.~»
+    \item \textbf{Axe de communication principal :} La montée en gamme face à l'IA. «~L'IA remplace les codeurs, pas les architectes. Devenez indispensable.~»
+    \item \textbf{Identité visuelle :} Un «~Web3 Studio~» haut de gamme, une filière d'excellence (Forge d'élite) plutôt qu'une école de masse.
+    \item \textbf{Discours de conformité :} Positionnement strict sur le «~Software Engineering Export~». On évite toute promesse liée au trading ou à la spéculation financière pour se concentrer sur l'ingénierie exportable, garantissant une image propre vis-à-vis des régulateurs (BCT).
+\end{itemize}
+
+\section{\faUsers\ Segments de Marché Cibles}
+
+Le recrutement est hautement sélectif et cible quatre profils spécifiques en Tunisie et dans la région MENA :
+
+\begin{enumerate}
+    \item \textbf{Alumni RBK (Priorité 1) :} Plus de 1000 développeurs déjà formés aux bases du Full-Stack JS, cherchant une spécialisation de pointe pour augmenter leur salaire.
+    \item \textbf{Développeurs Professionnels (2-5 ans d'expérience) :} Ingénieurs en poste dans des SSII/ESN souhaitant pivoter vers le Web3 pour accéder au marché du travail global en remote.
+    \item \textbf{Jeunes Diplômés d'Écoles d'Élite :} Étudiants issus d'écoles comme ESPRIT, INSAT, MSB ou Polytech, possédant un fort potentiel STEM et une appétence pour l'innovation.
+    \item \textbf{Entrepreneurs Tech :} Profils souhaitant maîtriser la tokenisation pour lancer leur propre projet souverain ou MVP sur Solana/EVM.
+\end{enumerate}
+
+\section{\faBullhorn\ Canaux d'Acquisition et Tactiques de Lead Gen}
+
+\subsection{A. Marketing de Contenu (Thought Leadership)}
+
+\begin{itemize}
+    \item Série Vidéo/Podcast : «~L'avenir du développement après l'IA~» et «~Web3 : la nouvelle frontière tech~», animés par des experts du réseau Solana et EVM.
+    \item Études de cas (Proof of Work) : Publication d'analyses techniques sur des protocoles existants pour démontrer la profondeur académique du Studio.
+    \item On-chain Resume : Communication sur les réussites des diplômés (salaires en USDC, grants obtenus).
+\end{itemize}
+
+\subsection{B. Canaux Sociaux et Écosystémiques}
+
+\begin{itemize}
+    \item \textbf{LinkedIn :} Ciblage publicitaire ultra-précis sur les titres «~Software Engineer~» en Tunisie.
+    \item \textbf{Twitter/X :} Canal natif du Web3. Utilisation de la réputation de l'expert Solana Advocate pour attirer les profils passionnés.
+    \item \textbf{Discord/Telegram :} Création d'un hub communautaire «~Tunisian Web3 Builder~» pour nourrir les leads avant le lancement.
+\end{itemize}
+
+\subsection{C. Partenariats Académiques et Institutionnels}
+
+\begin{itemize}
+    \item Accréditation de fait : Signature de MOU (Protocole d'accord) avec des universités pour présenter le programme en fin de cursus ingénieur.
+    \item Label Fondation : Approcher la Solana Foundation et Developer DAO pour créer un chapitre éducatif officiel à Tunis, apportant une crédibilité internationale immédiate.
+\end{itemize}
+
+\section{Événements et Immersion}
+
+\begin{itemize}
+    \item \textbf{Tunisian Web3 Builder Meetup :} Organisation d'événements trimestriels ouverts au public pour générer des leads.
+    \item \textbf{Hackathons Internes :} «~Demo Days~» ouverts aux recruteurs et investisseurs pour créer un effet de rareté et d'exclusivité.
+    \item \textbf{Ateliers «~Vibe Coding Responsible~» :} Séminaires gratuits montrant comment l'IA et le Web3 se complètent, servant de produit d'appel (Lead Magnet).
+\end{itemize}
+
+\section{Argumentaire de Vente (USP - Unique Selling Propositions)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Pour l'étudiant} & \textbf{Pour l'entreprise/écosystème} \\
+\hline
+Accès au «~Hidden Job Market~» : Connexion directe avec les recruteurs via Superteam. & Vivier Pré-qualifié : Accès à des talents ayant déjà une «~Proof of Work~» on-chain. \\
+\hline
+Salaire International : Préparation spécifique aux entretiens pour des postes payés 5x le marché local. & Expertise Sécurité : Ingénieurs formés au durcissement (Hardening) et à l'audit. \\
+\hline
+Mentorat d'Élite : «~Office Hours~» avec des développeurs core de Solana/Ethereum. & Partenariat de Recherche : RBK comme laboratoire d'innovation sur les ZK-proofs ou RWA. \\
+\hline
+\end{tabularx}
+\caption{Proposition de Valeur Unique}
+\end{table}
+
+\section{Stratégie de Pricing (Angle Marketing)}
+
+\begin{itemize}
+    \item \textbf{Prix Premium Justifié :} Le prix (18 000 TND) est présenté comme un investissement avec un ROI rapide (remboursé en 3-4 mois de salaire remote).
+    \item \textbf{Offre Pilote (Promo Alpha) :} Prix préférentiel (Early Bird) à 15 000 TND pour les 15 premiers inscrits afin de créer une dynamique de lancement.
+    \item \textbf{Garantie de Succès :} Option «~Trouve un emploi ou remboursé~» (sous conditions de livraison de projets) pour la promo Alpha, servant de preuve sociale massive.
+\end{itemize}
+
+\begin{strategieBox}{Annotation Stratégique}
+La force du marketing RBK 2.0 repose sur le réseau. En devenant le hub de Superteam en Tunisie, RBK ne vend plus une formation, mais un droit d'entrée dans une guilde mondiale de bâtisseurs.
+\end{strategieBox}
+
+% ========================================
+% CHAPITRE 13 : ANALYSE DES RISQUES
+% ========================================
+
+\chapter{{ANALYSE DES RISQUES \& ATTÉNUATION}}
+
+Le déploiement du programme s'opère à l'intersection de trois domaines mouvants : l'innovation technologique (Web3), la révolution de l'IA et le cadre réglementaire tunisien. Voici l'analyse exhaustive des risques identifiés et les stratégies de réponse associées.
+
+\section{\faLock\ Risques Macro-Environnementaux \& Réglementaires}
+
+\subsection{A. Incertitude Réglementaire en Tunisie (Risque : Élevé)}
+
+\textbf{Description :} La Banque Centrale de Tunisie (BCT) et le cadre législatif actuel sont perçus comme restrictifs ou incertains concernant l'usage public et la détention de crypto-actifs.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Positionnement «~Software Export~» : Le programme est vendu comme une formation d'ingénierie logicielle destinée à l'exportation de services numériques.
+    \item Focus Devnet/Testnet : L'essentiel de la formation se déroule sur des environnements de test sans valeur monétaire réelle.
+    \item Conformité Financière : Utilisation de solutions comme Bitwage ou Grey.co pour permettre aux diplômés de rapatrier leurs salaires internationaux (en devises) de manière 100\% légale et transparente via virement bancaire classique, respectant les procédures de rapatriement de devises.
+\end{itemize}
+
+\subsection{B. Volatilité du Marché Web3 (Risque : Moyen)}
+
+\textbf{Description :} Les cycles de «~Bear Market~» peuvent réduire temporairement les investissements des fondations et les offres d'emploi.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Compétences Transférables : L'enseignement de Rust et de l'ingénierie système garantit que les diplômés restent des profils «~Elite~» hautement employables dans le Web2 traditionnel (systèmes critiques, IA, Cloud) si le marché Web3 ralentit.
+\end{itemize}
+
+\section{\faExclamationTriangle\ Risques Technologiques \& Pédagogiques}
+
+\subsection{C. Menace de l'IA et du «~Vibe Coding~» (Risque : Élevé)}
+
+\textbf{Description :} L'automatisation du code rend les compétences de «~junior codeur~» obsolètes, menaçant la valeur perçue de la formation.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Paradigme «~Senior-by-Design~» : Intégration de l'IA non comme une triche, mais comme un assistant. Le programme se concentre sur l'Architecture, l'Audit et la Sécurité, zones où l'IA échoue sans supervision humaine experte.
+    \item La «~Piscine~» Rust : Une phase initiale de 4 semaines sans IA pour graver les fondamentaux algorithmiques dans l'esprit des apprenants.
+\end{itemize}
+
+\subsection{D. Obsolescence Rapide des Protocoles (Risque : Moyen)}
+
+\textbf{Description :} La technologie Web3 évolue chaque mois (ex: passage à Token-2022, nouvelles extensions Solana).
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Curriculum Modulaire : Révision du syllabus avant chaque promotion.
+    \item Veille Écosystémique : Connexion directe avec la Solana Foundation et les équipes Core Dev via le réseau de mentors pour intégrer les dernières normes en temps réel.
+\end{itemize}
+
+\section{\faExclamationTriangle\ Risques Opérationnels \& Humains}
+
+\subsection{E. Défection de Mentors Clés (Risque : Moyen)}
+
+\textbf{Description :} Les experts Web3 sont rares et très sollicités à l'international.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Rémunération de Marché : Package attractif incluant une part variable sur le succès de la promo.
+    \item Pool de Réserve : Constitution d'un réseau international de «~Guest Lecturers~» via la Superteam (Allemagne, UK, UAE) capables d'intervenir en remote en cas de besoin.
+    \item Documentation «~Or~» : Toutes les sessions et templates sont documentés pour assurer la continuité pédagogique.
+\end{itemize}
+
+\subsection{F. Déficit d'Inscriptions pour la Promo Pilote (Risque : Moyen)}
+
+\textbf{Description :} Le prix premium (18 000 TND) peut freiner certains candidats malgré le potentiel de salaire.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Ciblage Alumni : Priorité au réseau RBK (+1000 profils) avec offre Early Bird.
+    \item Garantie de Succès : «~Trouve un emploi ou remboursé~» pour la Promo Alpha (sous conditions de livraison).
+    \item Bourses d'Excellence : Financement de 1-2 places par promo pour attirer les «~stars~» techniques.
+\end{itemize}
+
+\section{Risques d'Insertion Professionnelle}
+
+\subsection{G. Mauvaise Perception des Talents Tunisiens en Remote (Risque : Faible)}
+
+\textbf{Description :} Difficulté pour les entreprises US/EU à faire confiance à des profils basés en Afrique du Nord.
+
+\textbf{Mitigation :}
+\begin{itemize}
+    \item Preuve par le Code : Utilisation du portfolio GitHub et des contributions Open Source comme seul critère de sélection.
+    \item Certification Solana officielle : Financement du passage des certifications reconnues mondialement.
+    \item Partenariat Superteam : Accès direct aux «~Bounties~» payées pour prouver la valeur opérationnelle dès la formation.
+\end{itemize}
+
+\subsection{Synthèse de la Matrice des Risques}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|c|c|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Risque} & \textbf{Probabilité} & \textbf{Impact} & \textbf{Stratégie Clé} \\
+\hline
+Régulation Locale & Moyenne & Élevé & Positionnement «~Export d'Ingénierie~». \\
+\hline
+Obsolescence Tech & Haute & Moyen & Curriculum modulaire \& Veille active. \\
+\hline
+Menace IA & Haute & Élevé & Montée en gamme vers l'Architecture/Audit. \\
+\hline
+Manque de Mentors & Moyenne & Élevé & Pool international via Superteam. \\
+\hline
+\end{tabularx}
+\caption{Matrice des Risques et Stratégies d'Atténuation}
+\end{table}
+
+\begin{strategieBox}{Annotation Stratégique}
+L'analyse montre que le plus gros risque (la régulation) est atténué par un positionnement métier clair, tandis que le risque technologique est transformé en opportunité marketing via la maîtrise de l'IA.
+\end{strategieBox}
+
+% ========================================
+% CHAPITRE 14 : FEUILLE DE ROUTE
+% ========================================
+
+\chapter{{FEUILLE DE ROUTE : LE PLAN DE LANCEMENT (90 JOURS)}}
+
+Le plan est divisé en trois phases de 30 jours, chacune avec des livrables non négociables et des jalons de décision pour le CEO.
+
+\section{MOIS 1 : CADRAGE, ALLIANCE \& ÉQUIPE NOYAU (J0 - J30)}
+
+L'objectif est de verrouiller la structure juridique, financière et partenariale.
+
+\subsection{Validation \& Cadrage Stratégique}
+\begin{itemize}
+    \item Présentation et validation finale du Business Plan par le CEO et le conseil d'administration.
+    \item Arbitrage sur le modèle de financement étudiant (ISA vs Paiement classique vs Prêts bancaires).
+\end{itemize}
+
+\subsection{Constitution de l'Alliance Écosystémique}
+\begin{itemize}
+    \item \textbf{Action Clé :} Signature d'un MOU (Protocole d'accord) avec la Solana Foundation pour l'accréditation «~Educational Partner~».
+    \item Dépôt de candidature pour opérer le chapitre officiel Superteam Tunisia.
+    \item Négociation avec des universités d'élite (ESPRIT, MSB, Polytech) pour l'accréditation académique ou des passerelles de fin d'études.
+\end{itemize}
+
+\subsection{Recrutement de l'Équipe Pilote}
+\begin{itemize}
+    \item Recrutement du Lead Instructor / Head of Curriculum (Expert Rust/Solana).
+    \item Désignation d'un Responsable Administratif \& Logistique dédié au Studio.
+    \item Identification du pool de mentors internationaux (Guest Lecturers) via le réseau Superteam (UK, Allemagne, UAE).
+\end{itemize}
+
+\section{MOIS 2 : PRODUCTION DE L'ARSENAL \& INFRASTRUCTURE (J31 - J60)}
+
+L'objectif est de bâtir l'infrastructure technique et les contenus de référence.
+
+\subsection{Ingénierie Pédagogique (Les «~Golden Templates~»)}
+\begin{itemize}
+    \item Rédaction détaillée des syllabus pour le Tronc Commun et les Tracks A (Solana) \& B (EVM).
+    \item Création des dépôts GitHub de référence (repos «~or~») incluant les architectures de base, les tests de sécurité et les pipelines CI/CD.
+    \item Élaboration des «~Incident Drills~» (simulations de hacks pour les exercices du vendredi).
+\end{itemize}
+
+\subsection{Mise en place du Cockpit Technique}
+\begin{itemize}
+    \item Configuration des accès aux Nodes RPC premium (Helius pour Solana, Alchemy/Infura pour EVM).
+    \item Acquisition des licences pour les outils d'IA (Cursor, Windsurf) et de simulation (Machinations.io).
+    \item Installation du LMS (Learning Management System) et du serveur Discord comme hub de communication principal.
+\end{itemize}
+
+\subsection{Lancement Commercial \& Marketing}
+\begin{itemize}
+    \item Mise en ligne du site web dédié au programme.
+    \item Lancement de la campagne marketing «~Elite Only~» sur LinkedIn et Twitter (X).
+    \item Organisation du premier «~Tunisian Web3 Builder Meetup~» pour générer des leads qualifiés.
+\end{itemize}
+
+\section{MOIS 3 : SÉLECTION \& LANCEMENT «~PROMO ALPHA~» (J61 - J90)}
+
+L'objectif est de filtrer les talents et de démarrer l'immersion.
+
+\subsection{Processus de Sélection d'Élite}
+\begin{itemize}
+    \item Tests techniques de pré-requis (JS/TS intensif).
+    \item Entretiens de motivation pour évaluer la pensée systémique et l'autonomie.
+    \item La «~Piscine~» Rust : Lancement de la phase de filtrage intensif de 4 semaines sans IA pour les 20-25 candidats présélectionnés.
+\end{itemize}
+
+\subsection{Finalisation de la Cohorte}
+\begin{itemize}
+    \item Sélection finale de la Cohorte Alpha (15 à 20 profils maximum pour garantir l'excellence).
+    \item Signature des contrats (incluant les clauses ISA le cas échéant).
+    \item Onboarding sur Superteam Earn pour que les étudiants voient les premières opportunités de revenus dès le début.
+\end{itemize}
+
+\subsection{Kick-off Opérationnel}
+\begin{itemize}
+    \item Cérémonie de lancement en présence de partenaires de l'écosystème.
+    \item Début de la Phase 1 (Fondations \& Mentalité On-chain).
+\end{itemize}
+
+\section{RÉCAPITULATIF DES JALONS CLÉS (MILESTONES)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|c|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Délai} & \textbf{Jalon (Milestone)} & \textbf{Impact} \\
+\hline
+J+15 & MOU Solana Foundation signé & Crédibilité internationale immédiate. \\
+\hline
+J+30 & Équipe pédagogique complète & Capacité de production activée. \\
+\hline
+J+45 & Golden Templates livrés & Standard de qualité «~Senior-by-Design~» fixé. \\
+\hline
+J+60 & 100 leads qualifiés générés & Sécurité du taux de remplissage. \\
+\hline
+J+75 & Fin de la «~Piscine~» Rust & Cohorte d'élite validée. \\
+\hline
+J+90 & Lancement officiel Promo Alpha & Début de la transformation de RBK. \\
+\hline
+\end{tabularx}
+\caption{Jalons Clés du Plan de Lancement}
+\end{table}
+
+\begin{strategieBox}{Annotation Stratégique}
+Ce plan de 90 jours est agressif mais réaliste. Il repose sur l'utilisation intensive des ressources existantes de RBK (locaux, réseau alumni) et sur l'apport d'expertise Web3 externe pour l'ingénierie de contenu.
+\end{strategieBox}
+
+% ========================================
+% CHAPITRE 15 : ÉLÉMENTS DE DIFFÉRENCIATION
+% ========================================
+
+\chapter{{ÉLÉMENTS DE DIFFÉRENCIATION RBK}}
+
+Le RBK Web3 Studio ne se contente pas d'ajouter une couche technologique à un cursus existant. Il redéfinit l'excellence pédagogique en s'appuyant sur six axes de différenciation majeure, extraits directement de la vision stratégique et du modèle opérationnel.
+
+\section{Le Paradigme «~Senior-by-Design~»}
+
+Contrairement aux bootcamps traditionnels qui produisent des développeurs juniors pour un marché saturé, RBK forme des Product Engineers et des Ecosystem Architects.
+
+\begin{itemize}
+    \item \textbf{Dépassement du code :} L'enseignement ne porte pas sur la syntaxe (déléguée à l'IA), mais sur la conception systémique, l'audit de sécurité, la tokenomics et la gouvernance.
+    \item \textbf{Responsabilité technique :} L'apprenant est formé pour être le «~Pilote dans l'avion~», capable de valider des architectures complexes gérant des millions de dollars de valeur.
+\end{itemize}
+
+\section{L'Approche «~Cyborg~» : IA-Augmented Engineering}
+
+RBK est la seule institution à intégrer l'IA non pas comme un accessoire, mais comme une exigence de production.
+
+\begin{itemize}
+    \item \textbf{Productivité x10 :} En utilisant les outils de «~Vibe Coding~» de manière responsable (Cursor, Windsurf), les étudiants apprennent à prototyper en quelques minutes pour consacrer 90\% de leur temps au durcissement (Hardening) du code.
+    \item \textbf{Audit assisté par IA :} Les étudiants apprennent à utiliser les LLM pour détecter des vulnérabilités, tout en développant l'esprit critique nécessaire pour identifier les hallucinations de la machine.
+\end{itemize}
+
+\section{Double Spécialisation Réelle (EVM \& Solana)}
+
+Le programme offre une polyvalence rare sur le marché mondial en couvrant les deux piliers de l'économie décentralisée.
+
+\begin{itemize}
+    \item \textbf{Dual Track :} Un choix clair entre la maturité institutionnelle d'Ethereum (Foundry/Solidity) et la performance extrême de Solana (Anchor/Rust).
+    \item \textbf{Profils Polyglottes :} La possibilité de suivre un double track crée des profils d'élite capables de concevoir des architectures cross-chain, un besoin critique pour les protocoles modernes.
+\end{itemize}
+
+\section{L'Écosystème comme Salle de Classe (Le Réseau Superteam)}
+
+RBK brise les murs de l'école pour connecter l'étudiant directement au PIB de l'Internet mondial.
+
+\begin{itemize}
+    \item \textbf{Accès au «~Hidden Job Market~» :} Connexion directe avec les recruteurs, les fondateurs et les chercheurs via les chapitres mondiaux de Superteam (Allemagne, UK, UAE).
+    \item \textbf{Learn to Earn :} Dès la 8ème semaine, les étudiants sont accompagnés pour gagner leurs premiers dollars en répondant à des Bounties réelles sur Superteam Earn.
+    \item \textbf{Office Hours Experts :} Sessions de mentorat avec des développeurs core de Solana et des auditeurs de renom via Telegram et Discord.
+\end{itemize}
+
+\section{La Preuve de Travail : «~On-Chain Resume~»}
+
+Le diplôme papier, obsolète à l'ère de l'IA, est remplacé par des preuves numériques irréfutables.
+
+\begin{itemize}
+    \item \textbf{Portfolio GitHub Or :} Des dépôts documentés avec des pipelines CI/CD, des suites de tests exhaustives et des rapports d'audit.
+    \item \textbf{PoW (Proof of Work) :} Chaque badge et micro-certification correspond à un déploiement réel sur le réseau (Testnet/Mainnet).
+    \item \textbf{Réputation Digitale :} Participation obligatoire à l'open-source pour construire une identité de bâtisseur reconnue internationalement.
+\end{itemize}
+
+\section{Ancrage Tunisie \& Souveraineté : «~Software Export~»}
+
+RBK transforme les contraintes locales en un avantage compétitif mondial.
+
+\begin{itemize}
+    \item \textbf{Hub d'Excellence MENA :} Positionner la Tunisie comme le premier exportateur de services d'ingénierie Web3 haut de gamme.
+    \item \textbf{Conformité et Prudence :} Un discours axé sur l'ingénierie logicielle et la sécurité, évitant la spéculation, pour garantir une relation saine avec les institutions financières locales.
+    \item \textbf{Ascenseur Social :} Permettre à des ingénieurs tunisiens d'accéder à des revenus internationaux massifs (remote-first) tout en restant en Tunisie, contribuant ainsi à l'économie locale.
+\end{itemize}
+
+\subsection{Synthèse de la Valeur Ajoutée (Comparatif)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Caractéristique} & \textbf{Bootcamp Classique} & \textbf{RBK Web3 Studio} \\
+\hline
+Langage & JS / Python (Interprété) & Rust (Système) / Solidity Avancé \\
+\hline
+Rôle Cible & Junior Codeur (Exécutant) & Lead Architect (Concepteur) \\
+\hline
+Usage IA & Interdit ou toléré & Exigé (Levier de productivité) \\
+\hline
+Finalité & Diplôme papier & On-chain Resume \& Bounties \\
+\hline
+Réseau & Local / SSII & Mondial / DAOs / Fondations \\
+\hline
+\end{tabularx}
+\caption{Comparaison RBK vs Bootcamp Classique}
+\end{table}
+
+\begin{ceoBox}{Note finale au CEO}
+Ces éléments de différenciation ne sont pas seulement des arguments marketing ; ils constituent la barrière à l'entrée technologique qui protégera RBK de la commoditisation de l'enseignement du code. En adoptant ce modèle, RBK devient une entité d'ingénierie d'élite, indispensable à l'écosystème Web3 mondial.
+\end{ceoBox}
+
+% ========================================
+% CHAPITRE 16 : CONCLUSION
+% ========================================
+
+\chapter{{CONCLUSION \& FEUILLE DE ROUTE DE MISE EN ŒUVRE}}
+
+\section{Priorités Immédiates (Semaine 1-4)}
+
+\begin{roadmapBox}{Checklist Lancement}
+\begin{itemize}
+    \item[\faCheckCircle] \textbf{Jour 1-7 :} Validation juridique complète des contrats ISA
+    \item[\faUserMd] \textbf{Jour 8-14 :} Recrutement du Chief Mental Health Officer
+    \item[\faHandshake] \textbf{Jour 15-21 :} Finalisation partenariat Solana Foundation
+    \item[\faPiggyBank] \textbf{Jour 22-28 :} Mise en place fonds de garantie 50k TND
+    \item[\faCode] \textbf{Jour 29-35 :} Développement plateforme SBT (MVP)
+    \item[\faUsers] \textbf{Jour 36-42 :} Recrutement promo Alpha (200 leads → 15 étudiants)
+\end{itemize}
+\end{roadmapBox}
+
+\section{Indicateurs de Succès Clés (KPI)}
+
+\begin{table}[h]
+\centering
+\rowcolors{2}{SolanaBlue!5}{white}
+\begin{tabularx}{\textwidth}{|X|c|c|c|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{KPI} & \textbf{Cible A1} & \textbf{Cible A2} & \textbf{Cible A3} \\
+\hline
+Taux de complétion & 85\% & 90\% & 95\% \\
+\hline
+Salaire moyen sortie & 3 500 TND & 4 500 TND & 6 000 TND \\
+\hline
+Taux placement (6 mois) & 80\% & 90\% & 95\% \\
+\hline
+Satisfaction étudiants & 4.2/5 & 4.5/5 & 4.8/5 \\
+\hline
+Revenus ISA activés & 20\% & 60\% & 80\% \\
+\hline
+Startups lancées & 2 & 5 & 10 \\
+\hline
+\end{tabularx}
+\caption{Indicateurs de Performance - Vision 3 Ans}
+\end{table}
+
+\section{Engagement Qualité Formel}
+
+\begin{ceoBox}{Charte d'Engagement Qualité RBK 2.0}
+RBK s'engage formellement à :
+\begin{itemize}
+    \item Maintenir un \textbf{ratio mentor/étudiant de 1:5 maximum}
+    \item Réviser son curriculum \textbf{trimestriellement} face aux évolutions technologiques
+    \item Garantir un environnement d'apprentissage \textbf{inclusif et équitable}
+    \item Publier un \textbf{rapport de transparence annuel} sur les résultats des diplômés
+    \item Maintenir un \textbf{fonds de solidarité} pour les étudiants en difficulté
+    \item Offrir un \textbf{accès à vie} aux mises à jour du programme pour les alumni
+\end{itemize}
+
+\textbf{Notre succès se mesurera à celui de nos diplômés.}
+\end{ceoBox}
+
+\begin{center}
+\begin{tikzpicture}
+\node[draw=SolanaGreen, fill=SolanaGreen!5, thick, 
+      text width=0.8\textwidth, align=center, rounded corners=10pt,
+      inner sep=10pt] {
+    \Large \textbf{Il est temps de passer du «~Vibe Coding~» à l'Architecture de Confiance.}\\[5pt]
+    \normalsize \textit{RBK 2.0 - Forge de l'Élite Technologique Tunisienne}
+};
+\end{tikzpicture}
+\end{center}
+
+\vspace{2cm}
+
+\begin{flushright}
+\textit{Signé,}\\[0.5cm]
+{\Large \textbf{Alaeddine BEN RHOUMA}}\\
+{\large Cofondateur de Money Factory AI}\\
+{\normalsize Expert en Systèmes Décentralisés \& Solana Advocate}\\[0.3cm]
+{\small décembre 2025}
+\end{flushright}
+
+\clearpage
+
+\section{La Forge de l'Élite Africaine : Un Impératif de Survie}
+
+RBK Tunisia se trouve aujourd'hui à la croisée des chemins. La voie de la facilité — continuer à former des développeurs juniors sur des technologies web traditionnelles (stack MERN) — est une voie de garage face à la marée montante de l'IA. Comme démontré tout au long de ce rapport, l'équation économique qui soutenait le modèle historique du «~Coding Bootcamp~» s'est effondrée avec la commoditisation du code par les LLM.
+
+La voie de l'ambition est de devenir une Forge d'Élite. En choisissant le Web3 et particulièrement l'écosystème Solana, nous choisissons la performance et l'avenir des agents IA. En choisissant Rust, nous choisissons la rigueur et l'excellence ingénieuriale. En intégrant Superteam, nous connectons la jeunesse tunisienne directement au PIB de l'Internet mondial, sans intermédiaires.
+
+\section{Synthèse de la Valeur Stratégique}
+
+Le RBK Web3 Studio n'est pas seulement une nouvelle offre curriculaire ; c'est une transformation structurelle de RBK en une entité d'ingénierie et d'innovation de classe mondiale :
+
+\begin{itemize}
+    \item \textbf{Transformation de la Menace en Levier :} L'IA n'est plus un risque d'obsolescence, mais un multiplicateur de force pour nos diplômés.
+    \item \textbf{Souveraineté Économique :} Nous offrons aux talents tunisiens un moyen de briser le plafond de verre local pour accéder à une rémunération globale souveraine (USDC/Stablecoins).
+    \item \textbf{Positionnement Unique :} RBK devient le seul hub régional capable de produire des Architectes de Systèmes et des Auditeurs de Sécurité, les deux métiers les plus rémunérateurs et les plus résistants du secteur technologique actuel.
+\end{itemize}
+
+\section{Appel à l'Action : Prochaines Étapes Immédiates (Top Priorités)}
+
+Pour transformer cette vision en réalité opérationnelle sous 90 jours, les actions suivantes doivent être engagées immédiatement :
+
+\begin{enumerate}
+    \item \textbf{Validation du Business Plan :} Arbitrage final sur les tarifs premium et le montage des bourses d'excellence.
+    \item \textbf{Lancement de la «~Piscine~» de Recrutement :} Ouverture de l'appel à candidatures pour identifier les 20 premiers «~Architectes Alpha~» parmi les alumni et les ingénieurs externes.
+    \item \textbf{Formalisation de l'Alliance Solana :} Signature officielle avec la Solana Foundation pour verrouiller le label «~Educational Partner~» et l'accès aux grants.
+    \item \textbf{Production de l'Arsenal «~Golden Templates~» :} Finalisation des dépôts GitHub de référence qui serviront de socle à la formation.
+\end{enumerate}
+
+\section{Message Final au CEO}
+
+Monsieur le CEO, le marché ne veut plus de «~juniors qui essaient~». Le marché veut des «~Seniors qui livrent~». Avec ce programme, nous ne formons pas des chômeurs en puissance face à l'IA, nous formons les maîtres de l'IA dans le secteur technologique le plus porteur de cette décennie.
+
+Cette proposition est audacieuse, mais elle est la seule à la hauteur du potentiel inexploité de la Tunisie. En lançant le RBK Web3 Studio, nous ne mettons pas seulement à jour une école de code ; nous bâtissons l'infrastructure de la souveraineté numérique pour l'Afrique du Nord.
+
+\textbf{Il est temps de passer du «~Vibe Coding~» à l'Architecture de Confiance.}
+
+\section{\faAward\ Profil de Sortie : Le Standard «~Senior-by-Design~»}
+
+Pour conclure ce manifeste, voici la matrice des compétences garanties pour chaque diplômé du RBK Web3 Studio. Ce tableau définit l'avantage concurrentiel immédiat de nos talents sur le marché mondial.
+
+\vspace{0.5cm}
+
+\rowcolors{2}{SolanaBlue!5}{white}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\hsize=0.8\hsize}X >{\raggedright\arraybackslash\hsize=1.2\hsize}X >{\raggedright\arraybackslash\hsize=1\hsize}X}
+\toprule
+\rowcolor{SolanaPurple!20} \textbf{Domaine d'Expertise} & \textbf{Qualités \& Compétences de Sortie} & \textbf{Impact Business / ROI} \\
+\midrule
+\textbf{\faCode\ Ingénierie Système} & Maîtrise avancée de Rust (Solana) et Solidity (EVM). Optimisation de la mémoire et du gas. & Capacité à construire des protocoles gérant des millions de \$ d'AUM. \\
+\textbf{\faBrain\ Architecture IA} & Pilotage expert d'IDE IA (Cursor/Windsurf). Capacité à auditer et sécuriser le code généré par machine. & Productivité x10 par rapport à un développeur junior classique. \\
+\textbf{\faLock\ Sécurité \& Audit} & Maîtrise du Fuzzing (Trident), des Invariants et de la détection de vulnérabilités logiques. & Réduction drastique des risques de hack et de perte de capital. \\
+\textbf{\faChartLine\ Tokenomics} & Conception d'économies de jetons viables. Simulations de chocs sur Machinations.io. & Viabilité à long terme des projets et attractivité pour les VCs. \\
+\textbf{\faGlobe\ Global Readiness} & Anglais technique fluide, culture DAO et autonomie en remote-first. & Employabilité immédiate dans les meilleures fondations mondiales. \\
+\bottomrule
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{strategieBox}[L'Indispensable Souverain]
+Un diplômé de la promo Alpha n'est pas un chercheur d'emploi, c'est un \textbf{apporteur de solutions technologiques}. Il possède le recul de l'architecte et la précision du cryptographe.
+\end{strategieBox}
+
+\vspace{2cm}
+
+\begin{flushright}
+\textit{Signé,}\\[0.5cm]
+{\Large \textbf{Alaeddine BEN RHOUMA}}\\
+{\large Cofondateur de Money Factory AI}\\
+{\normalsize Expert en Systèmes Décentralisés \& Solana Advocate}\\[0.3cm]
+{\small décembre 2025}
+\end{flushright}
+
+\clearpage
+% ========================================
+% ANNEXE A : SYLLABUS TECHNIQUE DÉTAILLÉ
+% ========================================
+
+\appendix
+
+\chapter{SYLLABUS TECHNIQUE DÉTAILLÉ (24 SEMAINES)}
+
+\section{PARTIE 1 : LA FORGE DES FONDATIONS (COMMUN)}
+
+\subsection{Phase 0 : La «~Piscine~» Rust --- L'Élite sans IA (Semaines 1 à 4)}
+
+L'objectif est de bâtir une résilience cognitive et une compréhension intime de la mémoire. L'usage de l'IA est strictement interdit.
+
+\subsubsection{Semaine 1 : Ingénierie Système \& Maîtrise de l'OS}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Architecture Linux, gestion des processus, I/O asynchrones.
+    \item Git Internals : Arbres de Merkle, objets, blobs et gestion des commits en CLI.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Réimplémentation de commandes Unix (ls, cat) en Rust natif.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Binaires fonctionnels avec gestion d'erreurs robuste.
+    \item Documentation technique du processus de compilation.
+\end{itemize}
+
+\subsubsection{Semaine 2 : Rust Deep Dive --- Memory Safety}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ownership, Borrowing, Lifetimes : les piliers de la sécurité Rust.
+    \item Gestion de la mémoire : Stack vs Heap. Analyse des pointeurs.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'une bibliothèque de structures de données (Linked List, Vector) sans bibliothèque standard (no\_std).
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Crate Rust documenté avec tests unitaires.
+    \item Rapport d'analyse mémoire (Stack vs Heap usage).
+\end{itemize}
+
+\subsubsection{Semaine 3 : Concurrence \& Programmation Parallèle}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Threads, Mutex, Arc, Channels. Maîtrise du runtime Tokio.
+    \item Préparation au modèle Sealevel (parallélisation des transactions).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Serveur Web multi-threadé capable de traiter 10 000 requêtes/seconde.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Code source avec benchmarks de performance.
+    \item Rapport de stress-test (charge, latence, throughput).
+\end{itemize}
+
+\subsubsection{Semaine 4 : Cryptographie Appliquée}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Hachage (SHA-256, Keccak-256), Courbes Elliptiques (Ed25519 vs Secp256k1).
+    \item Signatures numériques et dérivation de clés (BIP-32/39/44).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'un CLI Wallet sécurisé avec génération de mnémotechniques.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Wallet CLI fonctionnel avec génération/import de seed phrases.
+    \item Documentation de sécurité (threat model, best practices).
+\end{itemize}
+
+\subsection{Phase 1 : Fondations Web3 \& Engineering (Semaines 5 à 8)}
+
+Démarrage de la méthodologie «~Cyborg~» : introduction de l'IA comme assistant de production sous supervision experte.
+
+\subsubsection{Semaine 5 --- Niveau 1 : Web3 Fundamentals \& Narratives}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ethos du Web3 : décentralisation, trustless systems, propriété souveraine.
+    \item Terminologie : Nœuds, Gas, RPC, Wallets, Smart Contracts.
+    \item Panorama : Ethereum, BNB Chain, Polygon, Solana.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Schémas d'architecture réseau et quiz de validation conceptuelle.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Diagrammes d'architecture comparant les différentes blockchains.
+    \item Glossaire personnel annoté des termes techniques.
+\end{itemize}
+
+\subsubsection{Semaine 6 --- Niveau 2 : Blockchain Architecture \& Consensus}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Validation des blocs, mécanismes PoW, PoS et Proof of History (PoH).
+    \item Différenciation Layer 1 vs Layer 2.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Simulation d'un consensus PoS par jeu de rôles et construction d'un Merkle Tree.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Implémentation d'un Merkle Tree en Rust.
+    \item Rapport comparatif des mécanismes de consensus.
+\end{itemize}
+
+\subsubsection{Semaine 7 --- Niveau 3 : Ecosystem \& Use Cases}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item DeFi (DEXs, lending, staking), NFTs et propriété numérique, DAOs.
+    \item Cas d'usage réels : finance, supply chain, gaming, identité.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Études de cas réels (analyses fonctionnelles de protocoles de lending ou de vote DAO).
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Tableau analytique «~Use case → Architecture → Risques → Valeur~».
+    \item Présentation d'analyse d'un protocole DeFi majeur.
+\end{itemize}
+
+\subsubsection{Semaine 8 --- Niveau 4 : Wallets \& On-chain Interaction}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Hot vs cold wallets, clés publiques vs clés privées.
+    \item Sécurité des portefeuilles et MetaMask.
+    \item Cycle de vie d'une transaction et lecture des explorateurs de blocs (Etherscan/Solana Explorer).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Démonstration sécurisée de signature de message (sans notion de trading) et analyse de transactions complexes sur un explorer.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Checklist personnalisée «~Hygiène Wallet~».
+    \item Mini-guide «~Comment décoder une transaction~».
+\end{itemize}
+
+\section{PARTIE 2 : LES VOIES DE L'EXCELLENCE (SPÉCIALISATION)}
+
+\subsection{\faCircle[regular]\ TRACK A : SOLANA SMART CONTRACT ENGINEER (SEMAINES 9 À 20)}
+
+\subsubsection{Semaine 9 : Architecture Solana \& Account Model}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Preuve d'Histoire (PoH), parallélisme via Sealevel.
+    \item Account Model vs UTXO/EVM : Tout est un compte (Données, Programmes, Sysvars).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Exploration des comptes Solana via CLI et analyse de transactions on-chain.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Schéma détaillé du modèle de compte Solana.
+    \item Scripts CLI pour interroger les comptes système.
+\end{itemize}
+
+\subsubsection{Semaine 10 : Développement Native Rust (Sans Framework)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Écriture de programmes sans framework pour comprendre la sérialisation (Borsh) et les points d'entrée (entrypoints).
+    \item Gestion manuelle des comptes et des instructions.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'un système de messagerie on-chain minimaliste en Rust pur.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Programme Solana natif déployé sur Devnet.
+    \item Guide d'installation et scripts d'environnement reproductibles.
+\end{itemize}
+
+\subsubsection{Semaine 11 : Tests \& Déploiement (Fondations)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Configuration de l'environnement de test local (solana-test-validator).
+    \item Déploiement sur Devnet et gestion des clés.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Déploiement et test du programme de messagerie.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Programme vérifié sur Solana Explorer (Devnet).
+    \item Documentation de déploiement pas-à-pas.
+\end{itemize}
+
+\subsubsection{Semaine 12 : Introduction au Framework Anchor}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Anchor Framework : Macros, IDL (Interface Description Language), génération automatique de clients.
+    \item Sécurité par défaut : Discriminators, vérification des propriétaires d'états.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Migration du programme de messagerie vers Anchor.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Programme Anchor avec IDL généré.
+    \item Comparaison Native vs Anchor (avantages/inconvénients).
+\end{itemize}
+
+\subsubsection{Semaine 13 : PDAs \& State Management}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item PDAs (Program Derived Addresses) : Création de structures de données déterministes.
+    \item Gestion d'état complexe et relations entre comptes.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Programme «~Counter~» évolué avec gestion de trésorerie (Vaults).
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Programme avec PDAs et gestion de fonds.
+    \item Suite de tests Anchor complète.
+\end{itemize}
+
+\subsubsection{Semaine 14 : Testing \& CI/CD}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Tests unitaires et d'intégration avec Anchor.
+    \item Configuration de pipelines CI/CD avec GitHub Actions.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Mise en place d'un pipeline de test automatisé.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Pipeline CI/CD fonctionnel.
+    \item Rapport de couverture de tests (>80\%).
+\end{itemize}
+
+\subsubsection{Semaine 15 : Composabilité (CPIs)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Cross-Program Invocations (CPIs) : Appels de programmes à programmes.
+    \item Intégration avec des protocoles tiers (Jupiter, Orca).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Programme utilisant des CPIs pour interagir avec un DEX.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Programme avec CPIs fonctionnels.
+    \item Documentation des flux d'appels inter-programmes.
+\end{itemize}
+
+\subsubsection{Semaine 16 : Token-2022 \& Extensions}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Token-2022 : Transfer Hooks, Confidential Transfers, métadonnées natives.
+    \item Gestion avancée des tokens programmables.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'un token avec Transfer Hooks personnalisés.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Token-2022 déployé avec extensions actives.
+    \item Guide d'utilisation des extensions.
+\end{itemize}
+
+\subsubsection{Semaine 17 : Solana Mobile Stack (SMS)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Mobile Wallet Adapter (MWA) pour les dApps mobiles.
+    \item Intégration du Seed Vault pour la signature sécurisée.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'une dApp mobile (APK) utilisant le Seed Vault.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Application mobile fonctionnelle (Android).
+    \item Documentation d'intégration MWA.
+\end{itemize}
+
+\subsubsection{Semaine 18 : Actions \& Blinks}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Solana Actions : Permettre des transactions n'importe où sur le web.
+    \item Blinks : Intégration sur Twitter, LinkedIn.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'une Action Solana pour un use case social.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Action déployée et testée.
+    \item Démonstration d'intégration sur une plateforme sociale.
+\end{itemize}
+
+\subsubsection{Semaine 19 : Optimisation Compute \& Performance}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Réduction du budget de calcul (Compute Units).
+    \item Optimisation des transactions pour minimiser les frais.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Audit et optimisation d'un programme existant.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Rapport d'optimisation avec métriques avant/après.
+    \item Programme optimisé avec réduction >30\% des CU.
+\end{itemize}
+
+\subsubsection{Semaine 20 : Production Hardening \& Observabilité}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Logs structurés, monitoring on-chain via Helius/QuickNode.
+    \item UX Web3 High-End : Gestion des états de transaction (pending, success, fail).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Intégration de monitoring et gestion d'erreurs avancée.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item dApp complète «~production-like~» avec monitoring.
+    \item Module de gestion de transactions avec retry policy.
+\end{itemize}
+
+\subsection{\faSquare[regular]\ TRACK B : EVM ENGINEER (SEMAINES 9 À 20)}
+
+\subsubsection{Semaine 9 : Solidity Basics \& Smart Contract Structure}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Syntaxe \& Structure : Variables d'état, fonctions, modifiers, héritage.
+    \item Gestion de la donnée : Mappings, structs, enums.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'un contrat de «~Registry~» robuste avec gestion des accès.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Contrat testé sur Remix.
+    \item Scripts de déploiement basiques.
+\end{itemize}
+
+\subsubsection{Semaine 10 : Sécurité Native \& Gas Optimization}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Utilisation rigoureuse de require, revert et assert.
+    \item Gas Basics : Comprendre les Opcodes EVM et l'impact du stockage.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Optimisation d'un contrat pour réduire les coûts de gas.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Contrat optimisé avec rapport de gas.
+    \item Analyse comparative avant/après optimisation.
+\end{itemize}
+
+\subsubsection{Semaine 11 : Transition vers Foundry}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Frameworks : Transition de Hardhat vers Foundry.
+    \item Workflow Pro : Configuration de chaînes locales, gestion des environnements (.env).
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Setup d'un dépôt «~Production-Ready~» avec Foundry.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Dépôt configuré avec linting et formatage.
+    \item Documentation de setup pour nouveaux développeurs.
+\end{itemize}
+
+\subsubsection{Semaine 12 : Testing Avancé}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Unit tests, integration tests et mocking de contrats tiers.
+    \item CI/CD avec GitHub Actions.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'une suite de tests complète.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Pipeline CI opérationnel.
+    \item Couverture de tests >85\%.
+\end{itemize}
+
+\subsubsection{Semaine 13 : Token Standards (ERC-20)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Standard ERC-20 (Fungible Tokens).
+    \item Utilisation d'OpenZeppelin pour la sécurité.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'un Token ERC-20 avec règles de distribution personnalisées.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Token déployé sur testnet.
+    \item Smart contract auditable conforme aux standards EIP.
+\end{itemize}
+
+\subsubsection{Semaine 14 : NFTs \& ERC-721/1155}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Standards ERC-721 (NFT) et ERC-1155 (Multi-token).
+    \item Access Control : RBAC et patterns multi-sig.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Création d'une collection NFT avec métadonnées IPFS.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Collection NFT déployée.
+    \item Interface de minting fonctionnelle.
+\end{itemize}
+
+\subsubsection{Semaine 15 : dApp Development (Frontend)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Ethers.js / Web3.js et intégration avec React/Next.js.
+    \item Wallet Integration : MetaMask, WalletConnect.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Développement d'un «~Token Dashboard~» avec UI réactive.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Frontend complet avec gestion des erreurs.
+    \item Documentation utilisateur.
+\end{itemize}
+
+\subsubsection{Semaine 16 : Transaction Management \& UX}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Retries, timeouts, pending states.
+    \item UX claire sur les erreurs de transaction.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Amélioration de l'UX avec gestion avancée des états.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item dApp avec machine à états pour les transactions.
+    \item Tests utilisateur documentés.
+\end{itemize}
+
+\subsubsection{Semaine 17 : L2 Scaling (Arbitrum, Optimism)}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Déploiement sur Layer 2 (Arbitrum, Optimism, Polygon).
+    \item Différences et optimisations spécifiques aux L2.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Migration d'une application de L1 vers un L2.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Contrats déployés sur au moins 2 L2.
+    \item Rapport comparatif des performances.
+\end{itemize}
+
+\subsubsection{Semaine 18 : Proxy Patterns \& Upgradeability}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Proxy patterns (Transparent vs UUPS).
+    \item Permettre les mises à jour sans perte de données.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Implémentation d'un contrat upgradeable.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Contrat avec logique de proxy.
+    \item Documentation du processus d'upgrade.
+\end{itemize}
+
+\subsubsection{Semaine 19 : Oracles \& Chainlink}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Intégration de flux de prix réels via Chainlink.
+    \item Gestion des données off-chain.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item dApp multi-chain avec oracle de prix.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Contrat utilisant Chainlink Price Feeds.
+    \item Tests de fiabilité des oracles.
+\end{itemize}
+
+\subsubsection{Semaine 20 : Security \& Incident Handling}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Vulnérabilités classiques : Re-entrancy, Oracle Manipulation.
+    \item Création d'un «~Runbook~» pour réagir en cas de hack.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Simulation d'incidents et application de correctifs.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item dApp complète, testée et prête pour le Mainnet.
+    \item Runbook d'incident et checklist de sécurité.
+\end{itemize}
+
+\section{PARTIE 3 : INCUBATION \& PREUVE DE TRAVAIL (COMMUN)}
+
+\subsection{Phase 3 : Build \& Scale --- Le Capstone Project (Semaines 21 à 24)}
+
+L'objectif est la livraison d'un produit viable sur le Mainnet, audité et prêt pour les utilisateurs.
+
+\subsubsection{Semaine 21 : Cadrage \& Threat Modeling}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Définition du MVP (Minimum Viable Product).
+    \item Threat modeling et analyse des vecteurs d'attaque.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Rédaction du cahier des charges technique du Capstone.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Document de spécifications techniques.
+    \item Threat model documenté.
+\end{itemize}
+
+\subsubsection{Semaine 22 : Développement Intensif}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Méthodologie Agile appliquée au Web3.
+    \item Sprints quotidiens et revues de code.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Développement du smart contract et du frontend.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Version Alpha du produit sur Devnet.
+    \item Suite de tests complète.
+\end{itemize}
+
+\subsubsection{Semaine 23 : Hardening \& Audit Interne}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Passage des outils de vérification formelle.
+    \item Rédaction du rapport d'audit final.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Audit interne avec outils automatisés (Slither, Soteria, Trident).
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Rapport d'audit interne complet.
+    \item Correctifs appliqués et vérifiés.
+\end{itemize}
+
+\subsubsection{Semaine 24 : Demo Day \& Certification}
+
+\textbf{Notions :}
+\begin{itemize}
+    \item Préparation de la présentation technique.
+    \item Stratégie de pitch pour investisseurs.
+\end{itemize}
+
+\textbf{Lab/Projet :}
+\begin{itemize}
+    \item Présentation devant le panel d'investisseurs et recruteurs mondiaux.
+\end{itemize}
+
+\textbf{Livrables :}
+\begin{itemize}
+    \item Démo live sur Testnet public.
+    \item Pitch deck et rapport d'audit final.
+    \item Graduation et remise des certificats (Fundamentals, Developer, Security).
+\end{itemize}
+
+\begin{techBox}{Note technique pour les formateurs}
+Chaque semaine de cours contient 15h de théorie appliquée, 25h de labs pratiques et 10h de revues de code critiques. Total : 50h/semaine d'immersion technique.
+\end{techBox}
+% ========================================
+% ANNEXE B : MODÈLE FINANCIER
+% ========================================
+
+\clearpage
+\chapter{MODÈLE FINANCIER \& PROJECTIONS (3 ANS)}
+
+\section{Vue d'Ensemble Financière}
+
+Le modèle financier du RBK Web3 Studio repose sur trois piliers : des coûts maîtrisés grâce à l'IA, une valeur perçue premium, et des revenus récurrents via le modèle ISA.
+
+\section{Projection Détaillée sur 3 Ans}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|r|r|r|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Indicateurs Clés} & \textbf{Année 1} & \textbf{Année 2} & \textbf{Année 3} \\
+\hline
+\textbf{REVENUS} & & & \\
+\hline
+Nombre de Promotions & 1 & 2 & 3 \\
+\hline
+Nombre d'Étudiants Total & 20 & 50 & 75 \\
+\hline
+Revenus Formations (TND) & 308 000 & 770 000 & 1 155 000 \\
+\hline
+Revenus ISA (Différé) & 0 & 50 000 & 120 000 \\
+\hline
+Success Fees \& Grants & 10 000 & 40 000 & 100 000 \\
+\hline
+\textbf{TOTAL REVENUS} & \textbf{318 000} & \textbf{860 000} & \textbf{1 375 000} \\
+\hline
+\textbf{CHARGES} & & & \\
+\hline
+CAPEX (Investissement) & 50 000 & 10 000 & 20 000 \\
+\hline
+OPEX Personnel & 76 000 & 180 000 & 260 000 \\
+\hline
+OPEX Fonctionnement & 35 000 & 70 000 & 90 000 \\
+\hline
+\textbf{TOTAL CHARGES} & \textbf{161 000} & \textbf{260 000} & \textbf{370 000} \\
+\hline
+\textbf{RÉSULTATS} & & & \\
+\hline
+Marge Brute (EBITDA) & 157 000 & 600 000 & 1 005 000 \\
+\hline
+Marge Nette (\%) & 49\% & 70\% & 73\% \\
+\hline
+\textbf{BÉNÉFICE NET} & \textbf{141 300} & \textbf{540 000} & \textbf{903 750} \\
+\hline
+\end{tabularx}
+\caption{Projections Financières Consolidées (3 Ans)}
+\end{table}
+
+\section{Hypothèses et Notes Stratégiques}
+
+\begin{itemize}
+    \item \textbf{Taux de Remplissage :} 100\% pour l'Année 1 (effet Early Bird), 95\% pour les années suivantes.
+    \item \textbf{Prix Moyen Pondéré :} 15 400 TND/étudiant (mix entre prix plein, Early Bird et bourses).
+    \item \textbf{Revenus ISA :} Commencent à partir de l'Année 2 (12 mois après la première graduation).
+    \item \textbf{Success Fees :} 5\% de participation dans les startups incubées qui lèvent des fonds.
+    \item \textbf{Optimisation IA :} Réduction de 40\% des coûts de mentorat grâce à l'assistance IA.
+\end{itemize}
+
+\section{Seuil de Rentabilité (Break-Even Analysis)}
+
+\begin{itemize}
+    \item \textbf{Point mort Année 1 :} 11 étudiants (sur 20 prévus).
+    \item \textbf{ROI Investisseur :} 282\% sur 3 ans.
+    \item \textbf{Temps de retour :} 6 mois après le lancement de la première promo.
+\end{itemize}
+
+% ========================================
+% ANNEXE C : CONFORMITÉ JURIDIQUE
+% ========================================
+
+\clearpage
+\chapter{{GUIDE DE CONFORMITÉ JURIDIQUE}}
+\chaptermark{Exportation de Services Numériques \& Rapatriement de Devises}
+
+\section{Cadre Légal Tunisien : Exportation de Services}
+
+Le programme RBK Web3 Studio est structuré comme une activité d'**exportation de services numériques**, pleinement conforme au cadre réglementaire tunisien.
+
+\subsection{Statut Juridique des Diplômés}
+
+Les diplômés opèrent sous l'un des statuts suivants :
+
+\begin{itemize}
+    \item \textbf{Auto-Entrepreneur Export :} Régime simplifié pour les revenus <100k TND/an.
+    \item \textbf{Freelance Export (Personne Physique) :} Déclaration auprès du Centre National de l'Informatique (CNI).
+    \item \textbf{Société de Services (SARL/SUARL) :} Pour les revenus >100k TND/an.
+\end{itemize}
+
+\subsection{Pipeline de Rapatriement de Devises}
+
+Le schéma suivant illustre le flux légal de rapatriement des revenus internationaux :
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=2cm and 2cm,
+    font=\sffamily\small,
+    box/.style={
+        rectangle, draw=MF_DeepNavy, thick, fill=white,
+        text width=3.5cm, align=center, minimum height=1.2cm,
+        rounded corners, drop shadow
+    },
+    process/.style={
+        ellipse, draw=MF_Gold, thick, fill=MF_Gold!10,
+        text width=2.8cm, align=center, minimum height=1cm,
+        drop shadow
+    },
+    arrow/.style={-Stealth, line width=1.5pt, MF_DeepNavy!80}
+]
+
+    % --- NODES ---
+    \node [box] (client) {\textbf{Client International} \\ (DAO, Fondation, Entreprise)};
+    
+    \node [process, right=of client] (payment) {\textbf{Paiement} \\ USDC / Virement SWIFT};
+    
+    \node [box, below=of payment] (platform) {\textbf{Plateforme de Conformité} \\ (Bitwage, Grey.co, Deel)};
+    
+    \node [process, left=of platform] (conversion) {\textbf{Conversion} \\ USD → TND};
+    
+    \node [box, below=of conversion] (bank) {\textbf{Compte Bancaire Tunisien} \\ (Rapatriement légal)};
+    
+    \node [box, right=of bank, fill=MF_Emerald!10] (declaration) {\textbf{Déclaration Fiscale} \\ (CNSS + Impôts)};
+
+    % --- PATHS ---
+    \draw [arrow] (client) -- (payment);
+    \draw [arrow] (payment) -- (platform);
+    \draw [arrow] (platform) -- (conversion);
+    \draw [arrow] (conversion) -- (bank);
+    \draw [arrow] (bank) -- (declaration);
+    
+    % --- ANNOTATION ---
+    \node [draw=MF_Cyan, dashed, inner sep=10pt, fit=(platform) (conversion) (bank), label=above:{\color{MF_Cyan}\textbf{Zone de Conformité 100\% Légale}}] {};
+
+\end{tikzpicture}
+\end{center}
+
+\section{Obligations Fiscales et Sociales}
+
+\begin{itemize}
+    \item \textbf{Déclaration CNSS :} Obligatoire pour tout revenu >1 SMIG.
+    \item \textbf{Impôt sur le Revenu :} Barème progressif (0\% à 35\% selon tranches).
+    \item \textbf{Exonération Partielle :} Les revenus d'exportation de services bénéficient d'une réduction fiscale de 50\% pendant les 5 premières années.
+\end{itemize}
+
+\section{Positionnement vis-à-vis de la BCT}
+
+\begin{itemize}
+    \item \textbf{Aucune détention de crypto-actifs :} La formation se déroule sur Devnet/Testnet (sans valeur réelle).
+    \item \textbf{Revenus en devises classiques :} Les salaires sont rapatriés en USD/EUR via virement bancaire.
+    \item \textbf{Transparence totale :} Tous les flux financiers sont traçables et conformes aux procédures de change.
+\end{itemize}
+
+% ========================================
+% ANNEXE D : TEMPLATE AUDIT
+% ========================================
+
+\clearpage
+\chapter{{TEMPLATE DE RAPPORT D'AUDIT DE SÉCURITÉ}}
+\chaptermark{Standard Industriel RBK Studio - Version 1.0}
+
+\section{Structure du Rapport d'Audit}
+
+Tout projet Capstone doit inclure un rapport d'audit suivant ce template :
+
+\subsection{1. Résumé Exécutif}
+
+\begin{itemize}
+    \item Nom du projet et version auditée.
+    \item Date de l'audit et auditeurs.
+    \item Nombre de vulnérabilités identifiées (par sévérité).
+    \item Recommandation finale (Deploy / Fix Required / Major Rework).
+\end{itemize}
+
+\subsection{2. Périmètre de l'Audit}
+
+\begin{itemize}
+    \item Smart contracts audités (noms et adresses).
+    \item Méthodologie utilisée (revue manuelle, fuzzing, analyse statique).
+    \item Outils employés (Slither, Soteria, Trident, Echidna).
+\end{itemize}
+
+\subsection{3. Classification des Vulnérabilités}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|c|X|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Sévérité} & \textbf{Définition} & \textbf{Action Requise} \\
+\hline
+\textbf{CRITICAL} & Perte de fonds garantie ou compromission totale du système. & Blocage du déploiement. Correctif obligatoire. \\
+\hline
+\textbf{HIGH} & Vulnérabilité exploitable sous certaines conditions. & Correctif fortement recommandé avant Mainnet. \\
+\hline
+\textbf{MEDIUM} & Comportement inattendu ou inefficacité. & Correctif recommandé. \\
+\hline
+\textbf{LOW} & Optimisation ou amélioration de code. & Optionnel. \\
+\hline
+\textbf{INFO} & Remarques générales ou bonnes pratiques. & Informatif. \\
+\hline
+\end{tabularx}
+\caption{Grille de Classification des Vulnérabilités}
+\end{table}
+
+\subsection{4. Détail des Findings}
+
+Pour chaque vulnérabilité identifiée :
+
+\begin{itemize}
+    \item \textbf{ID :} [AUDIT-001]
+    \item \textbf{Titre :} Description courte de la vulnérabilité.
+    \item \textbf{Sévérité :} CRITICAL / HIGH / MEDIUM / LOW / INFO
+    \item \textbf{Localisation :} Fichier et ligne de code.
+    \item \textbf{Description :} Explication technique détaillée.
+    \item \textbf{Impact :} Conséquences potentielles.
+    \item \textbf{Recommandation :} Solution proposée.
+    \item \textbf{Statut :} Fixed / Acknowledged / Disputed
+\end{itemize}
+
+\subsection{5. Tests de Sécurité Effectués}
+
+\begin{itemize}
+    \item Re-entrancy attacks
+    \item Integer overflow/underflow
+    \item Access control bypass
+    \item Oracle manipulation
+    \item Front-running scenarios
+    \item Gas optimization issues
+\end{itemize}
+
+\subsection{6. Conclusion et Recommandations}
+
+Synthèse finale avec le verdict de déploiement et les actions prioritaires.
+
+% ========================================
+% ANNEXE E : COCKPIT DE L'ARCHITECTE
+% ========================================
+
+\clearpage
+\chapter{LE COCKPIT DE L'ARCHITECTE}
+\chaptermark{La Stack Technologique de l'Élite (AI-Augmented Engineering)}
+
+\section{Philosophie : L'Ingénieur comme Pilote}
+
+Le «~Cockpit de l'Architecte~» est l'environnement de travail optimisé pour maximiser la productivité tout en garantissant la qualité.
+
+\section{Outils Obligatoires}
+
+\subsection{1. IDE Augmentés par l'IA}
+
+\begin{itemize}
+    \item \textbf{Cursor :} Fork de VS Code avec IA native (GPT-4 intégré).
+    \item \textbf{Windsurf :} Alternative avec support multi-modèles (Claude, Gemini).
+    \item \textbf{Configuration :} Linting automatique, formatage on-save, snippets personnalisés.
+\end{itemize}
+
+\subsection{2. Frameworks de Développement}
+
+\textbf{Track Solana :}
+\begin{itemize}
+    \item Anchor Framework (v0.30+)
+    \item Solana CLI \& Web3.js v2
+    \item Helius SDK / Ironforge
+\end{itemize}
+
+\textbf{Track EVM :}
+\begin{itemize}
+    \item Foundry (Forge, Cast, Anvil)
+    \item OpenZeppelin Contracts
+    \item Ethers.js v6
+\end{itemize}
+
+\subsection{3. Outils d'Audit et de Test}
+
+\begin{itemize}
+    \item \textbf{Solana :} Trident (Fuzzing), Soteria (Analyse statique)
+    \item \textbf{EVM :} Slither, Echidna, Mythril
+    \item \textbf{CI/CD :} GitHub Actions avec tests automatisés
+\end{itemize}
+
+\subsection{4. Simulation Économique}
+
+\begin{itemize}
+    \item \textbf{Machinations.io :} Modélisation de tokenomics et game theory.
+    \item \textbf{Dune Analytics :} Requêtes SQL pour analyser les données on-chain.
+\end{itemize}
+
+\subsection{5. Prototypage Rapide}
+
+\begin{itemize}
+    \item \textbf{Solana Playground (Solpg) :} IDE en ligne pour tests rapides.
+    \item \textbf{Remix IDE :} Pour prototypage Solidity.
+\end{itemize}
+
+\section{Workflow Type d'une Journée}
+
+\begin{enumerate}
+    \item \textbf{09h00 - Daily Standup :} Revue des objectifs et blocages.
+    \item \textbf{09h30 - Deep Work :} Développement avec assistance IA.
+    \item \textbf{12h00 - Code Review :} Revue par les pairs (mandatory).
+    \item \textbf{14h00 - Lab Pratique :} Implémentation de features complexes.
+    \item \textbf{16h00 - Testing :} Écriture et exécution de tests.
+    \item \textbf{17h00 - Retrospective :} Analyse des apprentissages du jour.
+\end{enumerate}
+
+\begin{techBox}{Règle d'Or du Cockpit}
+L'IA génère, l'Humain valide. Aucune ligne de code générée par l'IA ne peut être mergée sans revue critique et compréhension totale par l'étudiant.
+\end{techBox}
+
+% ========================================
+% ANNEXE F : MODÈLE DE CONTRAT ISA
+% ========================================
+
+\clearpage
+\chapter{MODÈLE DE CONTRAT ISA (INCOME SHARE AGREEMENT)}
+\chaptermark{Contrat de Partage de Revenus Futurs – Programme RBK Web3 Studio}
+
+\section{PRÉAMBULE}
+
+Le présent contrat est conclu entre :
+
+\textbf{D'UNE PART,}
+
+RBK Tunisia (ci-après «~l'Organisme de Formation~»), représenté par son Directeur Général.
+
+\textbf{ET D'AUTRE PART,}
+
+M./Mme \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (ci-après «~le Bénéficiaire~»), étudiant(e) du programme Web3 Expert \& Builder.
+
+\section{\faFileContract\ ARTICLE 1 : OBJET DU CONTRAT}
+
+Le présent contrat a pour objet de définir les modalités de financement de la formation du Bénéficiaire selon le modèle ISA (Income Share Agreement), permettant au Bénéficiaire de suivre la formation sans paiement initial, en contrepartie d'un partage de ses revenus futurs.
+
+\section{\faFileContract\ ARTICLE 2 : MONTANT DE LA FORMATION}
+
+Le coût total de la formation est fixé à \textbf{18 000 TND} (Dix-huit mille dinars tunisiens).
+
+En contrepartie de l'accès à la formation, le Bénéficiaire s'engage à reverser à l'Organisme de Formation un pourcentage de ses revenus professionnels futurs, selon les modalités définies ci-après.
+
+\section{\faFileContract\ ARTICLE 3 : MODALITÉS DE REMBOURSEMENT}
+
+\subsection{3.1. Seuil de Déclenchement}
+
+Le Bénéficiaire commence à reverser un pourcentage de ses revenus uniquement lorsque son salaire mensuel brut dépasse \textbf{3 000 TND/mois} (ou équivalent en devises).
+
+\subsection{3.2. Taux de Partage}
+
+Le Bénéficiaire reverse \textbf{15\% de son salaire mensuel brut} à l'Organisme de Formation.
+
+\subsection{3.3. Durée Maximale}
+
+La période de remboursement est limitée à \textbf{24 mois consécutifs} à compter du premier versement.
+
+\subsection{3.4. Plafond de Remboursement}
+
+Le montant total versé par le Bénéficiaire ne pourra en aucun cas dépasser \textbf{150\% du coût initial de la formation}, soit \textbf{27 000 TND}.
+
+\subsection{3.5. Clause de Sortie Anticipée}
+
+\textbf{Le Bénéficiaire peut à tout moment solder son contrat par anticipation en versant la différence entre les sommes déjà payées et le prix public initial (18 000 TND), sans aucune pénalité.}
+
+\textit{Exemple :} Si le Bénéficiaire a déjà versé 8 000 TND, il peut solder son contrat en versant 10 000 TND (18 000 - 8 000).
+
+\vspace{1cm}
+
+\textbf{Schéma Financier : Modèle de Remboursement ISA (Waterfall)}
+
+\begin{center}
+\begin{tikzpicture}[
+    font=\sffamily\small,
+    >=stealth,
+    scale=0.9
+]
+    % --- AXES ---
+    \draw[->, thick] (0,0) -- (10,0) node[right] {Salaire de l'étudiant (TND)};
+    \draw[->, thick] (0,0) -- (0,6) node[above] {Flux de Remboursement};
+
+    % --- ZONES ---
+    % Zone 1 : Sous le seuil
+    \fill[gray!10] (0,0) rectangle (3,0.2);
+    \node at (1.5,0.5) {\footnotesize \textbf{Zone de Sécurité}};
+    \node[below] at (3,0) {\textbf{3 000 TND}};
+
+    % Zone 2 : Remboursement
+    \draw[line width=2pt, SolanaPurple] (3,0.2) -- (8,4.5);
+    \node[rotate=40] at (5.5,3) {\color{SolanaPurple}\textbf{15\% du Revenu}};
+
+    % Zone 3 : Plafond
+    \draw[dashed, red] (0,5) -- (10,5);
+    \node[red, anchor=west] at (0.2,5.3) {\textbf{PLAFOND : 27 000 TND (Fin du contrat)}};
+
+    % --- ANNOTATIONS ---
+    \node[draw, fill=white, rounded corners, text width=4cm, align=center] at (7,1.5) {
+        \textbf{Modèle Sans Risque} \\
+        Si $S < 3k \rightarrow 0$ DT \\
+        Si $S > 3k \rightarrow$ ROI Activé
+    };
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+\section{\faFileContract\ ARTICLE 4 : OBLIGATIONS DU BÉNÉFICIAIRE}
+
+Le Bénéficiaire s'engage à :
+
+\begin{itemize}
+    \item Suivre assidûment la formation et respecter le règlement intérieur.
+    \item Déclarer mensuellement ses revenus à l'Organisme de Formation.
+    \item Effectuer les versements dans les délais convenus (10 jours après réception du salaire).
+    \item Informer l'Organisme de tout changement de situation professionnelle.
+\end{itemize}
+
+\section{\faFileContract\ ARTICLE 5 : SUSPENSION DES PAIEMENTS}
+
+Les paiements sont suspendus dans les cas suivants :
+
+\begin{itemize}
+    \item Revenus mensuels inférieurs au seuil de 3 000 TND.
+    \item Période de chômage justifiée.
+    \item Congé parental ou maladie de longue durée (sur justificatif).
+\end{itemize}
+
+\section{\faFileContract\ ARTICLE 6 : RÉSILIATION}
+
+Le contrat peut être résilié dans les cas suivants :
+
+\begin{itemize}
+    \item Abandon de la formation par le Bénéficiaire (sans remboursement exigé si avant la semaine 8).
+    \item Manquement grave aux obligations contractuelles.
+    \item Atteinte du plafond de remboursement ou de la durée maximale.
+\end{itemize}
+
+\section{\faFileContract\ ARTICLE 7 : CONFIDENTIALITÉ}
+
+Les informations financières du Bénéficiaire sont strictement confidentielles et ne seront utilisées que dans le cadre du suivi du présent contrat.
+
+\section{\faFileContract\ ARTICLE 8 : DROIT APPLICABLE}
+
+Le présent contrat est régi par le droit tunisien. Tout litige sera soumis aux tribunaux compétents de Tunis.
+
+\vspace{1cm}
+
+\textbf{Fait à Tunis, le \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+\vspace{1cm}
+
+\begin{tabular}{p{7cm}p{7cm}}
+\textbf{Pour l'Organisme de Formation} & \textbf{Le Bénéficiaire} \\
+& \\
+& \\
+Signature et Cachet & Signature \\
+\end{tabular}
+
+% ========================================
+% ANNEXE G : GUIDE DE SÉLECTION PISCINE
+% ========================================
+
+\clearpage
+\chapter{GUIDE DE SÉLECTION \& SCORING «~PISCINE RUST~»}
+\chaptermark{Garantir l'Excellence pour Sécuriser le Modèle de Financement}
+
+\section{Philosophie de la Sélection}
+
+La «~Piscine Rust~» est un filtre d'élite conçu pour identifier les profils capables de réussir dans un environnement exigeant. L'objectif est de garantir un taux de réussite >85\% pour sécuriser le modèle économique ISA.
+
+\section{Critères de Pré-Sélection (Avant la Piscine)}
+
+\subsection{1. Compétences Techniques de Base}
+
+\begin{itemize}
+    \item Maîtrise de JavaScript/TypeScript (niveau intermédiaire minimum).
+    \item Compréhension des structures de données et algorithmes.
+    \item Expérience avec Git et la ligne de commande.
+\end{itemize}
+
+\textbf{Test :} Quiz technique de 30 questions (seuil de passage : 70\%).
+
+\subsection{2. Motivation et Mindset}
+
+\begin{itemize}
+    \item Lettre de motivation démontrant une compréhension du Web3.
+    \item Projet personnel ou contribution open-source (GitHub).
+    \item Capacité à expliquer pourquoi Solana/EVM (entretien de 20 min).
+\end{itemize}
+
+\subsection{3. Disponibilité et Engagement}
+
+\begin{itemize}
+    \item Disponibilité à temps plein pendant 6 mois.
+    \item Acceptation du modèle ISA et de ses implications.
+\end{itemize}
+
+\section{Grille de Scoring de la Piscine (4 Semaines)}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{|X|c|X|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Critère} & \textbf{Points Max} & \textbf{Évaluation} \\
+\hline
+Projets Techniques (Qualité du code) & 40 & Revue par les mentors + tests automatisés \\
+\hline
+Résolution de Problèmes (Algorithmes) & 20 & Challenges quotidiens (LeetCode-style) \\
+\hline
+Collaboration \& Peer Review & 15 & Évaluation par les pairs + participation aux revues de code \\
+\hline
+Autonomie \& Débrouillardise & 15 & Capacité à débloquer sans aide excessive \\
+\hline
+Assiduité \& Ponctualité & 10 & Présence aux sessions obligatoires \\
+\hline
+\textbf{TOTAL} & \textbf{100} & \\
+\hline
+\end{tabularx}
+\caption{Grille de Scoring de la Piscine Rust}
+\end{table}
+
+\section{Seuils de Validation}
+
+\begin{itemize}
+    \item \textbf{Score $\geq$ 75/100 :} Admission automatique au programme principal.
+    \item \textbf{Score 60-74 :} Admission conditionnelle (entretien de rattrapage).
+    \item \textbf{Score $<$ 60 :} Non-admission (possibilité de repasser la Piscine dans 6 mois).
+\end{itemize}
+
+\section{Indicateurs de Réussite Prédictive}
+
+Les données historiques montrent que les candidats ayant les caractéristiques suivantes ont un taux de réussite >90\% :
+
+\begin{itemize}
+    \item Contribution active à au moins 1 projet open-source.
+    \item Capacité à résoudre 5+ problèmes algorithmiques Medium sur LeetCode.
+    \item Participation à des hackathons ou compétitions de code.
+    \item Maîtrise de l'anglais technique (lecture de documentation).
+\end{itemize}
+
+\section{Processus de Décision Finale}
+
+\begin{enumerate}
+    \item Calcul du score total de la Piscine.
+    \item Entretien final avec le Directeur Pédagogique (30 min).
+    \item Validation par le comité de sélection (3 mentors).
+    \item Notification de décision sous 48h.
+\end{enumerate}
+
+\begin{strategieBox}{Note Stratégique}
+La rigueur de la sélection garantit que seuls les profils à fort potentiel intègrent le programme, minimisant ainsi le risque de défaut de paiement ISA et maximisant le taux de placement à l'international.
+\end{strategieBox}
+
+% ========================================
+% ANNEXE H : SPÉCIFICATIONS TECHNIQUES SBT
+% ========================================
+
+\clearpage
+\chapter{SPÉCIFICATIONS TECHNIQUES SBT RBK}
+
+\section{Architecture Solana (Token-2022)}
+
+\begin{lstlisting}[caption={Structure du Token SBT RBK}, language=Rust]
+use solana_program::{
+    account_info::AccountInfo, 
+    entrypoint::ProgramResult, 
+    pubkey::Pubkey
+};
+
+#[derive(BorshSerialize, BorshDeserialize, Debug)]
+pub struct RBKSBT {
+    // Metadata standard
+    pub name: String,               // "RBK Soulbound Token"
+    pub symbol: String,             // "RBK-SBT"
+    pub uri: String,                // IPFS URI for metadata
+    
+    // RBK-specific data
+    pub student_id: String,         // RBK Student ID
+    pub graduation_date: i64,       // Unix timestamp
+    pub track: Track,               // A, B, or C
+    pub badges: Vec<Badge>,         // Earned badges
+    pub skills: Vec<String>,        // Verified skills
+    pub is_soulbound: bool,         // Always true
+    pub is_transferable: bool,      // Always false
+    
+    // Extensions (Token-2022)
+    pub transfer_hook: Option<Pubkey>,  // Prevents transfers
+    pub metadata_pointer: Pubkey,       // On-chain metadata
+}
+
+#[derive(BorshSerialize, BorshDeserialize, Debug)]
+pub enum Track {
+    SolanaEngineer,
+    EVMEngineer,
+    ProductStrategist,
+}
+
+#[derive(BorshSerialize, BorshDeserialize, Debug)]
+pub struct Badge {
+    pub name: String,               // "Security Auditor"
+    pub issue_date: i64,
+    pub issuer: Pubkey,             // RBK Program Authority
+    pub verification_url: String,   // Link to proof
+}
+\end{lstlisting}
+
+\section{Système de Vérification}
+
+\begin{center}
+\begin{tikzpicture}[
+    font=\sffamily\small,
+    process/.style={
+        rectangle,
+        draw=SolanaGreen,
+        fill=SolanaGreen!5,
+        thick,
+        minimum width=3cm,
+        minimum height=1cm,
+        align=center,
+        rounded corners=5pt
+    },
+    data/.style={
+        cylinder,
+        draw=SolanaPurple,
+        fill=SolanaPurple!5,
+        thick,
+        shape aspect=2,
+        minimum height=1cm,
+        align=center
+    }
+]
+
+\node[process] (verify) {Employeur\\Vérifie SBT};
+\node[data, right=of verify] (sbt) {SBT\\On-chain};
+\node[process, below=of sbt] (program) {Programme RBK\\(Authority)};
+\node[data, left=of program] (proof) {Preuves\\IPFS};
+
+\draw[->, thick, SolanaBlue] (verify) -- node[above] {getAccountData} (sbt);
+\draw[->, thick, SolanaGreen] (sbt) -- node[right] {verifySignature} (program);
+\draw[<->, thick, SolanaPurple] (program) -- node[above] {checkProofs} (proof);
+\draw[->, thick, dashed, black!50] (verify) -- node[left] {Returns: bool} (program);
+
+\end{tikzpicture}
+\end{center}
+
+% ========================================
+% ANNEXE I : DASHBOARD DE SUIVI PROMO
+% ========================================
+
+\clearpage
+\chapter{{DASHBOARD DE SUIVI PROMO}}
+
+\section{Métriques Hebdomadaires Obligatoires}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{|l|X|c|c|}
+\hline
+\rowcolor{SolanaPurple!20} \textbf{Catégorie} & \textbf{Métrique} & \textbf{Cible} & \textbf{Seuil Alerte} \\
+\hline
+\multirow{3}{*}{Académique} & Taux complétion labs & >90\% & <85\% \\
+& Scores moyens évaluations & >80\% & <75\% \\
+& Temps moyen/projet (heures) & 15-25h & >30h ou <10h \\
+\hline
+\multirow{3}{*}{Bien-être} & Satisfaction (survey anonyme) & >4/5 & <3/5 \\
+& Heures sommeil moyennes & 7-8h & <6h \\
+& Utilisation pauses actives & >80\% & <60\% \\
+\hline
+\multirow{3}{*}{Professionnel} & Contributions open-source & >5/mois & 0 \\
+& Bounties complétées (\$) & >500/mois & 0 \\
+& Réseau LinkedIn étendu & +50/mois & <10 \\
+\hline
+\end{tabularx}
+\caption{Métriques de Suivi - Dashboard Hebdomadaire}
+\end{table}
+
+\section{Questionnaire de Bien-être Hebdomadaire}
+
+\begin{techBox}{Formulaire Anonyme - Bien-être Étudiant}
+\begin{verbatim}
+RBK WELLNESS CHECK - SEMAINE [XX]
+─────────────────────────────────────────────
+1. Sur une échelle de 1-10, comment évaluez-vous 
+   votre niveau de stress cette semaine ? 
+   ▢ 1-3 (Faible)  ▢ 4-6 (Moyen)  ▢ 7-10 (Élevé)
+
+2. Combien d'heures de sommeil par nuit en moyenne ?
+   ▢ <6h  ▢ 6-7h  ▢ 7-8h  ▢ >8h
+
+3. Avez-vous utilisé les pauses actives recommandées ?
+   ▢ Toujours  ▢ Parfois  ▢ Rarement  ▢ Jamais
+
+4. Quel est votre principal défi cette semaine ?
+   ▢ Charge de travail  ▢ Compréhension technique
+   ▢ Problèmes personnels  ▢ Santé  ▢ Autre: _____
+
+5. Suggestions pour améliorer votre expérience :
+   ________________________________________________________________
+   ________________________________________________________________
+
+Note: Ce questionnaire est entièrement anonyme.
+Les données sont utilisées pour améliorer le programme.
+─────────────────────────────────────────────
+\end{verbatim}
+\end{techBox}
+
+\end{document}

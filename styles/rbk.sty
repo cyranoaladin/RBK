@@ -1,0 +1,27 @@
+% Package personnalisé RBK 2.0
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rbk}[2025/12/01 RBK 2.0 Styles]
+
+% Couleurs RBK
+\RequirePackage{xcolor}
+\definecolor{rbkgreen}{HTML}{14F195}
+\definecolor{rbkpurple}{HTML}{9945FF}
+\definecolor{rbkblue}{HTML}{03E1FF}
+\definecolor{rbkdark}{HTML}{0A0F1F}
+\definecolor{rbkgold}{HTML}{D4AF37}
+
+% Commandes personnalisées
+\newcommand{\rbk}[1]{\textbf{\textcolor{rbkpurple}{#1}}}
+\newcommand{\kpi}[1]{\textbf{\textcolor{rbkgreen}{#1}}}
+\newcommand{\risk}[1]{\textbf{\textcolor{rbkblue}{#1}}}
+
+% Environnements personnalisés
+\newenvironment{rbkwarning}
+  {\begin{tcolorbox}[colback=rbkgold!5,colframe=rbkgold,title=Warning]}
+  {\end{tcolorbox}}
+
+\newenvironment{rbktip}
+  {\begin{tcolorbox}[colback=rbkgreen!5,colframe=rbkgreen,title=Tip]}
+  {\end{tcolorbox}}
+
+\endinput

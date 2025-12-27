@@ -1,0 +1,151 @@
+\chapter{MÉTHODOLOGIE CYBORG 2.0}
+\label{chap:methodologie}
+
+\section{Philosophie Pédagogique : Intégration du Bien-être}
+
+La méthodologie RBK 2.0 ne se contente pas de former des techniciens ; elle forge des \textit{athlètes cognitifs}. Conscients de la charge mentale intense imposée par l'apprentissage du développement blockchain (Rust, Zero-Knowledge Proofs, audits de sécurité), nous avons intégré une dimension \textbf{santé mentale et résilience} au cœur même du curriculum.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        scale=0.9,
+        every node/.style={scale=0.9},
+        day/.style={rectangle, draw=SolanaPurple, fill=white, rounded corners, minimum width=2.5cm, minimum height=3cm, align=center, drop shadow},
+        arrow/.style={->, >=Stealth, thick, SolanaBlue},
+        label/.style={font=\bfseries\small, color=BaseDark}
+    ]
+        % Nodes
+        \node[day] (lundi) at (0,0) {\textbf{LUNDI}\\\footnotesize Planning\\Stratégique\\\faBrain\ Focus};
+        \node[day] (mardi) at (3.5,0) {\textbf{MARDI}\\\footnotesize Deep Work\\(IA Assisted)\\\faLaptopCode\ Dev};
+        \node[day] (mercredi) at (7,0) {\textbf{MERCREDI}\\\footnotesize Pair\\Programming\\\faUserFriends\ Collab};
+        \node[day] (jeudi) at (10.5,0) {\textbf{JEUDI}\\\footnotesize Audit \&\\Review\\\faBug\ Quality};
+        \node[day] (vendredi) at (14,0) {\textbf{VENDREDI}\\\footnotesize Débrief \&\\Resilience\\\faHeartbeat\ Santé};
+
+        % Arrows
+        \draw[arrow] (lundi) -- (mardi);
+        \draw[arrow] (mardi) -- (mercredi);
+        \draw[arrow] (mercredi) -- (jeudi);
+        \draw[arrow] (jeudi) -- (vendredi);
+
+        % Brace
+        \draw[decorate, decoration={brace, amplitude=10pt}, thick, color=SolanaGreen] (0,1.7) -- (14,1.7) node[midway, above=15pt, color=SolanaGreen, font=\bfseries] {CYCLE HEBDOMADAIRE "SUSTAINABLE PERFORMANCE"};
+
+    \end{tikzpicture}
+    \caption{Le Cycle Hebdomadaire RBK 2.0}
+\end{figure}
+
+\subsubsection{Le Contrat de Performance Durable}
+Nous imposons un cadre strict pour éviter le surmenage :
+\begin{enumerate}
+    \item \textbf{Deep Work Timeboxé :} Maximum 6 heures de code pur par jour. Au-delà, la productivité et la qualité du code chutent (bugs).
+    \item \textbf{No-Code Weekend :} Interdiction de pousser du code sur GitHub du samedi 12h au lundi 8h (sauf Hackathon exceptionnel).
+    \item \textbf{Rituel de Décompression :} Session de sport ou méditation obligatoire le vendredi après-midi.
+\end{enumerate}
+
+\subsubsection{Cadre d'Usage de l'IA (Cyborg Policy)}
+L'IA est un levier, pas une béquille. Son usage est régulé :
+
+\paragraph{Niveau 0 (Piscine) : Interdiction Totale}
+L'étudiant doit développer ses modèles mentaux sans assistance. Copilot est désactivé. Toute détection de code généré entraîne une disqualification.
+
+\paragraph{Niveau 1+ (Cursus) : Assistance Supervisée}
+L'IA est autorisée pour :
+\begin{itemize}
+    \item Générer des tests unitaires (TDD).
+    \item Expliquer des messages d'erreur obscurs.
+    \item Produire du boilerplate (structs, imports).
+\end{itemize}
+Elle est \textbf{interdite} pour :
+\begin{itemize}
+    \item Résoudre l'exercice à la place de l'étudiant.
+    \item Générer la logique core sans audit manuel ligne par ligne.
+\end{itemize}
+
+\section{La « Piscine » Rust : Programme Pré-Piscine}
+
+Pour maximiser les chances de succès et réduire le taux d'abandon, RBK 2.0 intègre une phase préparatoire structurée.
+
+\subsubsection{Objectif : Filtrer la Rigueur}
+La Piscine Rust n'évalue pas le niveau informatique initial (nous acceptons les débutants brillants), mais la capacité d'apprentissage rapide et la résilience à l'échec. C'est un test de caractère.
+
+\subsubsection{Rubrique d'Évaluation (Scoring)}
+Nous utilisons une grille précise pour objectiver la sélection :
+
+\begin{table}[H]
+    \caption{Critères de Sélection Pré-Piscine}
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{l X c c}
+        \toprule
+        \textbf{Critère} & \textbf{Description} & \textbf{Poids} & \textbf{Seuil Min.} \\
+        \midrule
+        \textbf{Rustlings} & Complétion des 80 exercices de syntaxe & 30\% & 100\% \\
+        \textbf{Algo (Codewars)} & Résolution de problèmes logiques (Katas) & 30\% & Rank 5kyu \\
+        \textbf{Git Hygiene} & Qualité des commits (Atomicité, Messages) & 20\% & Pro \\
+        \textbf{Discipline} & Régularité des pushs (Green Dots) & 20\% & Quotidien \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Anti-Triche et Preuve de Travail}
+Pour garantir que c'est bien l'étudiant qui code :
+\begin{itemize}
+    \item \textbf{Entretiens Flash :} Le mentor demande d'expliquer une ligne de code aléatoire en direct.
+    \item \textbf{Live Coding :} Une épreuve finale surveillée (proctored) sans IA.
+    \item \textbf{Analyse Stylométrique :} Détection des changements brusques de style de code (indiquant un copier-coller).
+\end{itemize}
+
+\section{Protocole Anti-Burnout}
+
+Nous avons industrialisé la protection de nos étudiants via un protocole strict.
+
+\subsubsection{Monitoring Hebdomadaire}
+Chaque vendredi, les étudiants remplissent un "Wellness Check" anonymisé de 5 questions :
+\begin{enumerate}
+    \item Qualité du sommeil (1-5).
+    \item Niveau de stress perçu (1-5).
+    \item Sentiment de compétence (Impostor Syndrome) (1-5).
+\end{enumerate}
+
+\subsubsection{Seuils et Escalade (Traffic Light Protocol)}
+
+\begin{table}[H]
+    \caption{Matrice d'Intervention Santé Mentale}
+    \centering
+    \small
+    \rowcolors{2}{red!5}{white}
+    \begin{tabularx}{\textwidth}{l X l l}
+        \toprule
+        \textbf{Zone} & \textbf{Critère Déclencheur} & \textbf{Action Immédiate} & \textbf{Responsable} \\
+        \midrule
+        \textbf{\textcolor{green}{VERT}} & Score > 4/5 & Rien à signaler & Mentor \\
+        \textbf{\textcolor{orange}{ORANGE}} & Score < 3/5 ou Retard livrables & Entretien 1-on-1 & Student Success \\
+        \textbf{\textcolor{red}{ROUGE}} & Score < 2/5 ou "Panic Attack" & \textbf{Arrêt forcé 48h} & Head of Ed \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Plan de Remédiation}
+En cas de zone rouge persistante, nous activons la "Pause Fusible" :
+\begin{itemize}
+    \item \textbf{Semaine Off :} L'étudiant coupe tout écran pendant 7 jours sans pénalité.
+    \item \textbf{Rattrapage :} Il réintègre la cohorte avec un plan allégé ou bascule sur la cohorte suivante (Roll-over) si nécessaire.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.8, node distance=2cm]
+        \node[draw, rectangle, rounded corners] (quest) {Questionnaire Hebdo};
+        \node[draw, diamond, aspect=2, below of=quest] (score) {Scoring Auto};
+        \node[draw, rectangle, fill=green!20, below left of=score, xshift=-1cm] (ok) {Continue};
+        \node[draw, rectangle, fill=orange!20, below of=score] (warn) {Alerte Mentor};
+        \node[draw, rectangle, fill=red!20, below right of=score, xshift=1cm] (stop) {STOP URGENCE};
+
+        \draw[->] (quest) -- (score);
+        \draw[->] (score) -| node[near start, above] {> 4} (ok);
+        \draw[->] (score) -- node[near start, right] {2 - 4} (warn);
+        \draw[->] (score) -| node[near start, above] {< 2} (stop);
+    \end{tikzpicture}
+    \caption{Algorithme de Décision Anti-Burnout}
+\end{figure}

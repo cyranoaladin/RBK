@@ -1,0 +1,180 @@
+\chapter{CAPSTONES (PROJETS SIGNATURES)}
+
+\section{Philosophie du Capstone : Le Standard « Studio »}
+
+Chez RBK, un Capstone n'est pas un projet d'école. C'est un produit "Mainnet-Ready" qui respecte les standards d'un studio de développement professionnel.
+Il ne s'agit pas de prouver que "ça marche", mais que "ça ne peut pas casser".
+
+\begin{table}[H]
+    \caption{Studio-Grade Checklist (Non-Négociable)}
+    \centering
+    \small
+    \begin{tabular}{|l|p{8cm}|l|}
+        \hline
+        \textbf{Catégorie} & \textbf{Exigence} & \textbf{Preuve} \\ \hline
+        Sécurité & Threat Model formalisé AVANT le code & Doc STRIDE \\ \hline
+        Qualité & Zéro warning linter, coverage > 80\% & Rapport CI \\ \hline
+        Ops & Déploiement scripté et reproductible & Makefile / Taskfile \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Les 3 Projets Signatures (Cahier des Charges)}
+
+L'étudiant choisit UN projet parmi les 3 suivants. Chaque projet adresse une compétence critique du marché.
+
+\subsection{Capstone 1 — Wallet \& Transaction Reliability Pack}
+
+Ce projet vise à résoudre le problème n°1 du Web3 : l'UX désastreuse des transactions échouées.
+
+\paragraph{A) Problème \& Contexte}
+Les utilisateurs abandonnent les dApps car ils ne savent pas si leur transaction a réussi, échoué ou si elle est "perdue". Le développeur doit gérer l'instabilité des RPC et fournir un feedback temps-réel.
+
+\paragraph{B) User Stories}
+\begin{itemize}
+    \item "As a user, I want to see a clear 'Sending...' spinner so I know something is happening."
+    \item "As a user, I want an automatic retry if the RPC is busy, without clicking again."
+    \item "As a dev, I want a log of all failed tx attempts to debug slippage issues."
+\end{itemize}
+
+\paragraph{C) Architecture Cible}
+Une librairie Frontend (React Hook) connectée à plusieurs RPCs (Failover) et un backend léger d'indexation pour vérifier le statut final.
+
+\paragraph{D) Spécification Tech}
+\begin{itemize}
+    \item \textbf{State Machine :} Idle $\to$ Signing $\to$ Sending $\to$ Confirming $\to$ Success/Fail.
+    \item \textbf{Retry Logic :} Exponential backoff (max 3 retries).
+\end{itemize}
+
+\paragraph{E) Threat Model}
+\begin{itemize}
+    \item \textbf{Spoofing :} Un faux site simule une tx réussie ? $\to$ Vérif signature on-chain.
+    \item \textbf{DoS :} RPC spam ? $\to$ Rate limiting client-side.
+\end{itemize}
+
+\paragraph{J) Livrables}
+Un package NPM (ou crate Rust client), une Demo App, et un rapport d'analyse de fiabilité.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \node[draw, circle] (idle) {Idle};
+        \node[draw, circle, right=of idle] (sign) {Signing};
+        \node[draw, circle, right=of sign] (send) {Sending};
+        \node[draw, circle, right=of send] (confirm) {Confirming};
+        \node[draw, circle, above=of confirm] (success) {Success};
+        \node[draw, circle, below=of confirm] (fail) {Fail};
+        
+        \draw[->] (idle) -- (sign);
+        \draw[->] (sign) -- (send);
+        \draw[->] (send) -- (confirm);
+        \draw[->] (confirm) -- (success);
+        \draw[->] (confirm) -- (fail);
+        \draw[->, dotted] (fail) to[bend left] (send);
+    \end{tikzpicture}
+    \caption{State Machine Transaction}
+\end{figure}
+
+\subsection{Capstone 2 — Tokenization \& Admin Control Center}
+
+Ce projet simule une infrastructure pour une banque ou une institution émettant des actifs réels (RWA) sur la blockchain.
+
+\paragraph{A) Problème \& Contexte}
+Les entreprises ont besoin de contrôler leurs actifs : geler un compte suspect, forcer un transfert (justice), ou mettre à jour les règles de conformité.
+
+\paragraph{B) User Stories}
+\begin{itemize}
+    \item "As an Admin, I want to freeze a user wallet so they cannot move funds."
+    \item "As an Auditor, I want to see who authorized the minting of 1M tokens."
+\end{itemize}
+
+\paragraph{D) Spécification Smart Contracts}
+Utilisation de Token-2022 (Transfer Hooks) ou d'un programme Proxy.
+\textbf{Invariants :} La somme des balances = Total Supply (sauf burn autorisé). Seul l'Admin peut changer les rôles.
+
+\paragraph{I) Critères d'Acceptation}
+\begin{itemize}
+    \item RBAC complet fonctionnel (Admin vs Operator).
+    \item Audit Trail : chaque action admin émet un Event indexable.
+    \item Tests : 100\% coverage sur les fonctions admin.
+\end{itemize}
+
+\subsection{Capstone 3 — Digital Assets \& Utility Ecosystem}
+
+Création d'un système de NFT utilitaires (Ticketing, Gaming, Loyalty) avec une mécanique de "Gating".
+
+\paragraph{A) Problème \& Contexte}
+Les NFTs ne sont pas que des JPEGs. Ils doivent débloquer des services. Le défi est la vérification rapide et sécurisée de la possession.
+
+\paragraph{C) Architecture}
+Contrat NFT (Metaplex Core ou Anchor), Backend de vérification (Signature), Frontend "My Dashboard".
+
+\paragraph{E) Threat Model}
+\begin{itemize}
+    \item \textbf{Replay Attack :} Réutiliser une signature passée ? $\to$ Nonce/Timestamp obligatoire.
+    \item \textbf{Front-Running :} Acheter le NFT juste avant le snapshot ? $\to$ Logique de détention minimale.
+\end{itemize}
+
+\section{La "Golden Rule" : Security First}
+
+\paragraph{Principe}
+Pas de feature sans modèle de menace. Si vous ne pouvez pas expliquer comment on peut casser votre feature, vous ne devez pas la coder.
+
+\begin{table}[H]
+    \caption{Golden Rule Checklist}
+    \centering
+    \small
+    \begin{tabular}{|l|p{8cm}|}
+        \hline
+        \textbf{Principe} & \textbf{Mise en Oeuvre} \\ \hline
+        Least Privilege & Les admins ne doivent pas avoir tous les pouvoirs (Multisig ou TimeLock). \\ \hline
+        Fail-Safe Defaults & Si ça plante, ça doit se verrouiller (pas s'ouvrir). \\ \hline
+        Explicit Invariants & Vérifier \texttt{balance\_before + amount == balance\_after}. \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Grille d'Évaluation (Standard Audit)}
+
+Le jury évalue le projet comme un audit de sécurité.
+
+\begin{table}[H]
+    \caption{Rubric Standard Audit (Total 100)}
+    \centering
+    \small
+    
+    \begin{tabular}{|l|c|p{4cm}|l|}
+        \hline
+        \textbf{Catégorie} & \textbf{Poids} & \textbf{Indicateurs} & \textbf{Fail Condition} \\ \hline
+        Sécurité & 25 & Threat Model complet, mitigations actives. & Vulnérabilité critique. \\ \hline
+        Tests & 20 & Unit + Integration + Fuzzing. & Tests rouges en CI. \\ \hline
+        Architecture & 15 & Modularité, clarté diagrams. & Code spaghetti. \\ \hline
+        Observabilité & 15 & Logs structurés, Metric dashboard. & "Black box". \\ \hline
+        Doc & 15 & README pro, Audit report. & Doc absente. \\ \hline
+        UX & 10 & Gestion erreurs, feedback. & UI bloquante. \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Délivrables de Sortie (Le "Package")}
+
+Chaque étudiant doit remettre un "Package" zippé (ou repo public) contenant :
+1. \textbf{Le Code :} Clean, commenté, testé.
+2. \textbf{La Documentation :} Architecture, Setup, API.
+3. \textbf{Le Rapport d'Auto-Audit :} "J'ai cherché à me hacker, voici ce que j'ai trouvé".
+4. \textbf{La Vidéo Démo :} 3 minutes max, scénarisée.
+
+Ce package est votre passeport pour l'emploi. Il remplace le CV.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \node[draw] (code) {Code};
+        \node[draw, right=of code] (test) {Test};
+        \node[draw, right=of test] (audit) {Audit Doc};
+        \node[draw, right=of audit] (release) {Release};
+        \node[draw, right=of release] (demo) {Demo};
+        \draw[->] (code) -- (test);
+        \draw[->] (test) -- (audit);
+        \draw[->] (audit) -- (release);
+        \draw[->] (release) -- (demo);
+    \end{tikzpicture}
+    \caption{Pipeline Packaging}
+\end{figure}

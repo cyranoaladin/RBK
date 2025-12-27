@@ -1,0 +1,16 @@
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+!Livre_blanc_v5.pdf
+!Livre_blanc_v4.pdf
+!RBK_Whitepaper.pdf
+_minted*
+*.bak
+*.tmp

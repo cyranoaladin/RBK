@@ -1,0 +1,52 @@
+\chapter{ANNEXE — Modèle ISA (Income Share Agreement)}
+\label{ann:isa}
+
+\section{Objet et Principes}
+L'ISA est un mécanisme de financement sélectif destiné à aligner l'école et l'étudiant : l'étudiant ne paie que s'il dépasse un seuil de revenu, et l'école accepte un risque. L'ISA est réservé aux profils validés Top Talent.
+
+\section{Éligibilité (Gating)}
+\begin{itemize}
+    \item \textbf{Périmètre :} réservé au parcours complet (N1+N2+N3).
+    \item \textbf{Quota :} nombre de places ISA limité par cohorte (ex : 30\% max).
+    \item \textbf{Sélection :} top performance + validation par comité.
+\end{itemize}
+
+\section{Définitions Normalisées (Net/Brut)}
+\begin{itemize}
+    \item \textbf{Revenu Net Mensuel (RNM) :} Montant net effectivement perçu et traçable.
+    \item \textbf{Seuil de Déclenchement :} 3 000 TND nets / mois.
+    \item \textbf{Taux de Partage :} 15\% du RNM (si > Seuil).
+    \item \textbf{Cap (Plafond) :} 20 000 TND total.
+    \item \textbf{Durée Maximale :} 36 mensualités de paiement maximum ou 60 mois calendaires.
+\end{itemize}
+
+\section{Règles de Pause, Chômage, Variabilité}
+\begin{itemize}
+    \item \textbf{Pause automatique :} si RNM <= 3 000, paiement = 0.
+    \item \textbf{Reprise :} dès que RNM > 3 000.
+    \item \textbf{Variabilité :} aucun rattrapage sur les mois faibles.
+\end{itemize}
+
+\section{Cas Limites (Edge Cases)}
+\begin{enumerate}
+    \item \textbf{RNM fluctuant :} paiement déclenché uniquement les mois > Seuil.
+    \item \textbf{Plusieurs revenus :} RNM = somme des nets traçables.
+    \item \textbf{Départ à l'étranger :} conversion en TND au taux mensuel.
+\end{enumerate}
+
+\section{Conformité Éthique (Musharaka)}
+Le modèle est compatible finance participative : Partage de Risque (Perte pour l'école si échec) et Partage de Profit minoritaire.
+
+\section{Exemples Chiffrés (Seuil 3 000 net, Taux 15\%)}
+\begin{table}[H]
+    \caption{Scénarios de Remboursement}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|l|l|X|}
+        \hline
+        \textbf{Scénario} & \textbf{RNM} & \textbf{Mensualité} & \textbf{Statut Final} \\ \hline
+        A. Junior local & 3 500 & 525 & Arrêt à 36 mois (< Cap) \\ \hline
+        B. Profil solide & 5 000 & 750 & Cap atteint au 27ème mois \\ \hline
+        C. Remote & 6 000 & 900 & Cap atteint au 23ème mois \\ \hline
+        D. Chômage & 0 & 0 & Drop-off à 60 mois (0 TND) \\ \hline
+    \end{tabularx}
+\end{table}

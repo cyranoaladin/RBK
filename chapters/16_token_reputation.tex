@@ -1,0 +1,130 @@
+\chapter{TOKEN DE RÉPUTATION \& ALUMNI PROGRAM}
+
+\section{RBK Soulbound Tokens (SBTs)}
+
+Le diplôme papier est obsolète. RBK 2.0 certifie les compétences via des \textbf{Soulbound Tokens (SBTs)} : des jetons numériques non-transférables, infalsifiables, et vérifiables instantanément sur la blockchain.
+Ce n'est pas un actif financier (pas de prix, pas de marché secondaire). C'est un \textbf{CV cryptographique}. Chaque SBT représente une compétence acquise ("Rust Ace"), une réalisation ("Capstone Winner") ou un rôle ("Mentor").
+
+\paragraph{Architecture Technique \& Privacy}
+Notre système respecte la confidentialité des étudiants.
+\begin{itemize}
+    \item \textbf{Issuer :} Un wallet Multisig (RBK Board) signe l'émission des badges.
+    \item \textbf{Données :} Aucune donnée personnelle (Nom/Email) n'est stockée on-chain. Le SBT contient uniquement un Hash de la preuve (ex: hash du commit git ou du certificat PDF).
+    \item \textbf{Vérification :} L'employeur utilise une dApp RBK pour vérifier la possession du badge et révéler le contenu associé si l'étudiant donne son accord (Signature).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto]
+        \node[draw, rectangle, rounded corners] (student) {Étudiant (Wallet)};
+        \node[draw, rectangle, right of=student, xshift=2cm] (lms) {LMS (Résultats)};
+        \node[draw, diamond, below of=lms] (engine) {Moteur Règles};
+        \node[draw, circle, below of=engine] (issuer) {Multisig Issuer};
+        \node[draw, cloud, left of=issuer, xshift=-2cm] (chain) {Blockchain (SBT)};
+
+        \draw[->] (student) -- (lms);
+        \draw[->] (lms) -- (engine);
+        \draw[->] (engine) -- node {Valid?} (issuer);
+        \draw[->] (issuer) -- node {Mint} (chain);
+        \draw[dotted] (chain) -- (student);
+    \end{tikzpicture}
+    \caption{Architecture d'Émission SBT}
+\end{figure}
+
+\begin{table}[H]
+    \caption{Catalogue des Badges SBT (Extrait)}
+    \centering
+    \footnotesize
+    \rowcolors{2}{gray!10}{white}
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Badge} & \textbf{Niveau} & \textbf{Critères} & \textbf{Valeur Employeur} \\ \hline
+        \textbf{RS-Elite} & Gold & Top 5\% Piscine Rust. & Capacité cognitive, résilience. \\ \hline
+        \textbf{Solana-Arch} & Silver & Capstone validé avec Audit Clean. & "Production-Ready" Engineer. \\ \hline
+        \textbf{Auditor-Jr} & Bronze & 3 Rapports de vulnérabilité soumis. & Conscience sécurité. \\ \hline
+        \textbf{Team-Lead} & Silver & A géré une squad de 4 devs. & Soft skills, Management. \\ \hline
+    \end{tabularx}
+\end{table}
+
+\begin{tcolorbox}[colback=SolanaBlue!5!white,colframe=SolanaBlue!75!black,title=Conformité \& Anti-Spéculation]
+Les SBT RBK sont strictement incessibles. Si un wallet est compromis, le SBT est "brûlé" (revoked) et réémis vers une nouvelle adresse après vérification d'identité (KYC). Ils n'ont aucune valeur monétaire et ne donnent droit à aucun dividende.
+\end{tcolorbox}
+
+\section{Usages des SBT}
+
+Les SBT ne sont pas des objets de collection, ce sont des clés d'accès ("Token Gating").
+
+\paragraph{1. Vérification Employeur Instantanée}
+Plus besoin d'appeler l'école pour vérifier un diplôme. L'employeur scanne l'adresse publique du candidat et voit instantanément ses certifications.
+
+\begin{ceoBox}{Story : La Vérification en 3 secondes}
+\textbf{Avant :} Un recruteur reçoit un PDF, doit appeler l'école, attendre 24h pour confirmer qu'il n'est pas falsifié. Coût : Temps + Risque.
+\textbf{Avec RBK SBT :} Le recruteur colle l'adresse du candidat sur l'Explorer RBK. Le badge "Certified Graduate" apparaît instantanément avec la signature cryptographique de l'école et le lien vers le code du Capstone.
+\textbf{Résultat :} Coût 0\$, 3 secondes, Confiance Absolue.
+\end{ceoBox}
+
+\paragraph{2. Accès au Job Board Premium}
+Seuls les détenteurs du badge "Ready-to-Deploy" (cursus validé) peuvent voir les offres d'emploi exclusives de nos partenaires "Gold". Cela garantit aux recruteurs une qualité de candidature 100\% filtrée.
+
+\paragraph{3. Gouvernance Alumni}
+Le poids de vote dans la DAO Alumni est pondéré par les badges. Un "Senior Mentor" a plus de voix qu'un "New Grad" sur les décisions pédagogiques (mais pas financières).
+
+\begin{table}[H]
+    \caption{Usages et Bénéfices des SBT}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|X|l|l|}
+        \hline
+        \textbf{Usage} & \textbf{Bénéfice} & \textbf{SBT Requis} & \textbf{Mécanisme} \\ \hline
+        Job Board & Accès offres VIP & Certified Dev & Token Gating (Web3 Auth) \\ \hline
+        Mentoring & Droit de devenir Mentor & Senior + Pedago & Whitelist Manuelle \\ \hline
+        Bounties & Accès missions audit & Auditor Level 1 & Accès GitHub Repo privé \\ \hline
+        Events & Tickets conférence gratuits & Active Member & Airdrop Ticket NFT \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Alumni Program Structuré}
+
+L'Alumni Program est notre "Moat". C'est un réseau structuré qui continue d'apporter de la valeur des années après la sortie.
+
+\paragraph{Structure en Tiers (Niveaux)}
+L'engagement est gamifié via des statuts qui offrent des avantages croissants.
+\begin{itemize}
+    \item \textbf{Tier Bronze (New Grad) :} Accès Discord Alumni, Job Board, Annuaire. \textit{Condition : Diplômé.}
+    \item \textbf{Tier Argent (Contributor) :} Accès Bounties rémunérés, Invitations Events VIP. \textit{Condition : A parrainé 1 étudiant OU donné 10h de mentorat.}
+    \item \textbf{Tier Or (Legend) :} Accès Fonds Ventures, Siège au Conseil Pédago. \textit{Condition : A recruté un Alumni OU créé une startup RBK.}
+\end{itemize}
+
+\paragraph{Gouvernance}
+Le Conseil Alumni (5 membres élus pour 6 mois) gère le budget "Community" (financé par 1\% des revenus de l'école). Ils décident des apéros, des workshops invités et des partenariats.
+Règle Anti-Sybil : Seuls les wallets avec un SBT "Certified" actif depuis > 3 mois peuvent voter.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (6,0);
+        \coordinate (C) at (3,5);
+        \draw[fill=SolanaGreen!10] (A) -- (B) -- (C) -- cycle;
+        \node at (3,1) {\textbf{Bronze (Masse)}};
+        \node at (3,2.5) {\textbf{Argent (Actifs)}};
+        \node at (3,4) {\textbf{Or (Elite)}};
+        \draw (1.8, 1.8) -- (4.2, 1.8);
+        \draw (2.4, 3.2) -- (3.6, 3.2);
+    \end{tikzpicture}
+    \caption{Pyramide des Tiers Alumni}
+\end{figure}
+
+\begin{table}[H]
+    \caption{Roadmap Alumni (Année 1)}
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Trimestre} & \textbf{Initiative} & \textbf{KPI} & \textbf{Owner} \\ \hline
+        Q1 & Lancement Discord & 100\% promo inscrite & Community Mgr \\ \hline
+        Q2 & Premier Apéro Physique & 30 participants & Conseil Alumni \\ \hline
+        Q3 & Programme Mentoring & 10 binômes actifs & Lead Pédago \\ \hline
+        Q4 & Annuaire On-Chain & 100\% profils mintés & Tech Lead \\ \hline
+    \end{tabularx}
+\end{table}

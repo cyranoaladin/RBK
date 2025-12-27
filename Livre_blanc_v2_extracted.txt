@@ -1,0 +1,4553 @@
+                                            EL
+                                 TI
+     MANIFESTE
+             EN
+      RBK 2.0
+        Le Paradigme
+     « Senior-by-Design »
+   ID
+ NF
+
+
+       Alaeddine BEN RHOUMA
+        Cofondateur de Money Factory AI
+CO
+
+
+
+
+       MONEY FACTORY AI
+         Web3 Expert Training Program
+
+
+
+
+        Version Intégrale — Décembre 2025
+                                                                                           0
+
+
+
+                                                                            EL
+ Table des matières
+
+
+
+
+                                                           TI
+                                    EN
+    1 VISION & MANIFESTE : LE PARADIGME « SENIOR-BY-DESIGN » 2
+      1.1 Ď La Thèse Centrale : Former des Architectes, pas des Codeurs . . . . . . . 2
+      1.2 Ď Le Contexte : Pourquoi Maintenant ? . . . . . . . . . . . . . . . . . . . . 2
+          1.2.1 Le Crépuscule du Junior : L’Effondrement de la Valeur du Code
+                Basique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+   ID
+          1.2.2 AI-Augmented Engineering : L’IA comme Outil, pas comme Rem-
+                placement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+          1.2.3 L’Opportunité Web3 & Solana : L’Ascenseur Socio-Technologique . 3
+
+    2 ANALYSE DU CONTEXTE : MENACE & OPPORTUNITÉ                                           4
+      2.1 ˎ La Disruption IA : Redéfinir la Valeur du Développeur . . . . . . . . . .      4
+          2.1.1 L’Obsolescence Programmée du « Code Monkey » . . . . . . . . . .           4
+ NF
+
+
+          2.1.2 La Nouvelle Hiérarchie de Valeur . . . . . . . . . . . . . . . . . . . .   4
+      2.2 ƥ Le Marché Web3 : Une Fenêtre d’Opportunité Limitée . . . . . . . . . .         5
+          2.2.1 La Course aux Talents Blockchain . . . . . . . . . . . . . . . . . . .     5
+          2.2.2 L’Économie de Tâches Décentralisée (Bounties & DAOs) . . . . . . .         5
+      2.3 ̆ Le Différentiel Tunisie : Arbitrage Géographique & Coût de la Vie . . . .      5
+          2.3.1 L’Avantage Compétitif du Remote . . . . . . . . . . . . . . . . . . .      5
+          2.3.2 Le Modèle de Rapatriement de Devises . . . . . . . . . . . . . . . .       5
+CO
+
+
+
+
+    3 ARBITRAGE TECHNOLOGIQUE : SOLANA VS EVM                                              6
+      3.1 Ǒ La Décision Stratégique : Pourquoi Solana en Track Principal ? . . . . .       6
+          3.1.1 Critère 1 : Rareté des Compétences = Salaires Premium . . . . . . .        6
+          3.1.2 Critère 2 : Accès aux Opportunités (Superteam vs Grants Ethereum)          6
+          3.1.3 Critère 3 : Performance Technique & Narratives Futures . . . . . . .       7
+      3.2 Ǒ Tableau Comparatif Stratégique . . . . . . . . . . . . . . . . . . . . . .     7
+
+
+
+
+                                               1
+ 4 MÉTHODOLOGIE « CYBORG » : L’IA COMME SPARRING PART-
+   NER                                                                                   8
+   4.1 ͓ Philosophie Pédagogique : « Learning by Auditing » . . . . . . . . . . . 8
+       4.1.1 Le Paradoxe de l’IA : Trop Facile pour Apprendre, Indispensable
+             pour Produire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+
+
+
+                                                                             EL
+       4.1.2 Vibe Coding Responsable . . . . . . . . . . . . . . . . . . . . . . . . 8
+   4.2 ê La « Piscine » Rust : Le Filtre d’Élite sans IA . . . . . . . . . . . . . . . 9
+       4.2.1 L’Interdiction de l’IA . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+       4.2.2 Contenu Technique . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+   4.3 Ð L’Environnement Technique de l’Architecte (Le Cockpit) . . . . . . . . 9
+   4.4 ͜ Modalités Pédagogiques « Studio » et Immersion Totale . . . . . . . . . 10
+       4.4.1 Rituels de l’Équipe Senior . . . . . . . . . . . . . . . . . . . . . . . . 10
+       4.4.2 Incident Drills (Simulations de crise) . . . . . . . . . . . . . . . . . . 10
+
+
+
+
+                                                          TI
+       4.4.3 Peer-Review Mandatory . . . . . . . . . . . . . . . . . . . . . . . . . 10
+       4.4.4 Contribution Open-Source . . . . . . . . . . . . . . . . . . . . . . . . 10
+   4.5 Ô Gamification et Évaluation par l’Impact . . . . . . . . . . . . . . . . . . 10
+
+ 5 STRUCTURE DU CURSUS (24 SEMAINES)                                                       11
+   5.1 ê Phase 0 : La « Piscine » Rust (Filtrage d’Élite) . . . . . . . . . . . . . .
+                                  EN                                                       11
+       5.1.1 Contenu Technique . . . . . . . . . . . . . . . . . . . . . . . . . . . .     11
+   5.2 ͜ Phase 1 : Fondations Web3 & Engineering (Semaines 5-8) . . . . . . . .            12
+       5.2.1 Semaine 5 — Niveau 1 : Web3 Fundamentals & Narratives . . . . .               12
+       5.2.2 Semaine 6 — Niveau 2 : Blockchain Architecture & Consensus . . .              12
+       5.2.3 Semaine 7 — Niveau 3 : Ecosystem & Use Cases . . . . . . . . . . .            12
+       5.2.4 Semaine 8 — Niveau 4 : Wallets & On-chain Interaction . . . . . . .           12
+
+ 6 SYLLABUS DÉTAILLÉ : TRONC COMMUN (SEMAINES 1-8)                                         13
+   ID
+   6.1 PHASE 1 : LA FORGE DES FONDATIONS (COMMUN) . . . . . . . . .                        13
+       6.1.1 Phase 0 : La « Piscine » Rust — L’Élite sans IA (Semaines 1 à 4) .            13
+       6.1.2 Phase 1 : Fondations Web3 & Engineering (Semaines 5 à 8) . . . . .            14
+       6.1.3 Critères d’Excellence pour ce Tronc Commun . . . . . . . . . . . . .          15
+
+ 7 TRACK A : SOLANA SMART CONTRACT ENGINEER (RUST/AN-
+   CHOR)                                                                                    16
+ NF
+
+
+   7.1 Philosophie du Track : L’Excellence par Rust . . . . . . . . . . . . . . . . . 16
+   7.2 Structure Pédagogique : De l’Architecture au Produit (12 Semaines) . . . . 16
+       7.2.1 MODULE 1 : Le Modèle Solana & Rust Natif (Semaines 9-11) . . . 16
+       7.2.2 MODULE 2 : Maîtrise du Framework Anchor (Semaines 12-14) . . . 18
+       7.2.3 MODULE 3 : Architectures Avancées & Innovation (Semaines 15-17) 18
+       7.2.4 MODULE 4 : Production Hardening & UX Performance (Semaines
+               18-20) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+   7.3 Stack Technique Spécifique . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+CO
+
+
+
+
+   7.4 Profil de Sortie : Le « Guardian » . . . . . . . . . . . . . . . . . . . . . . . 19
+
+ 8 TRACK B : EVM ENGINEER (SOLIDITY/FOUNDRY)                                             20
+   8.1 Philosophie du Track : La Maîtrise du Standard Industriel . . . . . . . . . . 20
+   8.2 Structure Pédagogique : De la Logique au Durcissement (12 Semaines) . . . 20
+       8.2.1 MODULE 1 : Smart Contract Basics & Solidity Deep Dive (Se-
+              maines 9-10) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+       8.2.2 MODULE 2 : Environnement de Développement Pro (Semaines 11-12) 21
+       8.2.3 MODULE 3 : Token Standards & Composabilité (Semaines 13-14) . 21
+
+
+                                              2
+              8.2.4   MODULE 4 : dApp Development & Web3 Integration (Semaines
+                      15-16) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   21
+              8.2.5 MODULE 5 : L2 Scaling & Advanced Patterns (Semaines 17-18) . .                   21
+              8.2.6 MODULE 6 : Production Hardening & Security (Semaines 19-20) .                    22
+        8.3   Stack Technique Spécifique . . . . . . . . . . . . . . . . . . . . . . . . . . .       22
+
+
+
+
+                                                                         IE
+        8.4   Profil de Sortie : L’Ingénieur d’Infrastructure EVM . . . . . . . . . . . . . .        22
+
+     9 FICHES MÉTIERS CIBLES                                                                         23
+       9.1 Smart Contract Engineer & Auditor (Le « Guardian ») . . . . . . . . . . .                 23
+       9.2 Protocol & Ecosystem Strategist (Le « Visionnaire ») . . . . . . . . . . . .              23
+       9.3 Web3 Product Builder / Entrepreneur . . . . . . . . . . . . . . . . . . . . .             24
+       9.4 Solana dApp Engineer (Front Web3) . . . . . . . . . . . . . . . . . . . . . .             24
+
+
+
+
+                                                                        T
+       9.5 Tokenization & DePIN Architect . . . . . . . . . . . . . . . . . . . . . . . .            24
+       9.6 Web3 QA & Test Automation Engineer . . . . . . . . . . . . . . . . . . . .                25
+       9.7 Developer Advocate & Technical Writer . . . . . . . . . . . . . . . . . . . .             25
+
+     10 CAPSTONES (PROJETS SIGNATURES)                                                           26
+
+
+
+
+                                                        N
+        10.1 Philosophie du Capstone : Le Standard « Studio » . . . . . . . . . . . . . . 26
+        10.2 Les 3 Projets Signatures (Cahier des Charges) . . . . . . . . . . . . . . . . . 26
+             10.2.1 Ô Capstone 1 — Wallet & Transaction Reliability Pack . . . . . . . 26
+             10.2.2 Ô Capstone 2 — Tokenization & Admin Control Center (RWA/Token-
+                     2022) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+             10.2.3 Ô Capstone 3 — Digital Assets & Utility Ecosystem (NFT/Gating) 27
+                                        E
+        10.3 Spécifications techniques et « Gates » de validation . . . . . . . . . . . . . . 27
+        10.4 Critères d’Acceptation (Production-Like) . . . . . . . . . . . . . . . . . . . 28
+        10.5 Le Demo Day International . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+                        D
+     11 BUSINESS PLAN : VOLET FINANCIER                                                              29
+        11.1 Ƥ Investissement Initial (CAPEX - Phase de Lancement) . . . . . . . . . .               29
+        11.2 Ƥ Charges d’Exploitation (OPEX - Par Promotion de 20 Apprenants) . . .                  29
+             11.2.1 A. Charges de Personnel (76 000 TND) . . . . . . . . . . . . . . . .             29
+             11.2.2 B. Frais de Fonctionnement et Services (35 000 TND) . . . . . . . .              29
+        11.3 ˄ Modèle de Revenus et Recettes . . . . . . . . . . . . . . . . . . . . . . .           29
+     FI
+
+
+        11.4 ƥ Projection des Flux de Trésorerie (Cash Flow) - 3 Ans . . . . . . . . . .             29
+        11.5 Ǒ Analyse du Seuil de Rentabilité (Break-Even) . . . . . . . . . . . . . . .            29
+        11.6 Notes et Hypothèses Stratégiques . . . . . . . . . . . . . . . . . . . . . . . .        30
+             11.6.1 Levier ISA (Income Share Agreement) . . . . . . . . . . . . . . . . .            30
+             11.6.2 Revenus « Studio » (Success Fees) . . . . . . . . . . . . . . . . . . .          30
+             11.6.3 Optimisation par l’IA . . . . . . . . . . . . . . . . . . . . . . . . . .        31
+ N
+
+
+
+     12 STRATÉGIE MARKETING & ACQUISITION                                                            33
+        12.1 Ý Positionnement de Marque : « Senior-by-Design » . . . . . . . . . . . . .             33
+        12.2 í Segments de Marché Cibles . . . . . . . . . . . . . . . . . . . . . . . . .           33
+        12.3 Ý Canaux d’Acquisition et Tactiques de Lead Gen . . . . . . . . . . . . . .             34
+             12.3.1 A. Marketing de Contenu (Thought Leadership) . . . . . . . . . . .               34
+ O
+
+
+
+
+             12.3.2 B. Canaux Sociaux et Écosystémiques . . . . . . . . . . . . . . . . .            34
+             12.3.3 C. Partenariats Académiques et Institutionnels . . . . . . . . . . . .           34
+        12.4 Événements et Immersion . . . . . . . . . . . . . . . . . . . . . . . . . . . .         34
+        12.5 Argumentaire de Vente (USP - Unique Selling Propositions) . . . . . . . . .             34
+        12.6 Stratégie de Pricing (Angle Marketing) . . . . . . . . . . . . . . . . . . . . .        34
+C
+
+
+
+
+                                                    3
+ 13 ANALYSE DES RISQUES & ATTÉNUATION                                                           36
+    13.1 } Risques Macro-Environnementaux & Réglementaires . . . . . . . . . . .                36
+         13.1.1 A. Incertitude Réglementaire en Tunisie (Risque : Élevé) . . . . . . .          36
+         13.1.2 B. Volatilité du Marché Web3 (Risque : Moyen) . . . . . . . . . . . .           36
+    13.2 Á Risques Technologiques & Pédagogiques . . . . . . . . . . . . . . . . . .            37
+
+
+
+
+                                                                                EL
+         13.2.1 C. Menace de l’IA et du « Vibe Coding » (Risque : Élevé) . . . . . .            37
+         13.2.2 D. Obsolescence Rapide des Protocoles (Risque : Moyen) . . . . . .              37
+    13.3 Á Risques Opérationnels & Humains . . . . . . . . . . . . . . . . . . . . .            37
+         13.3.1 E. Défection de Mentors Clés (Risque : Moyen) . . . . . . . . . . . .           37
+         13.3.2 F. Déficit d’Inscriptions pour la Promo Pilote (Risque : Moyen) . . .           37
+    13.4 Risques d’Insertion Professionnelle . . . . . . . . . . . . . . . . . . . . . . .      38
+         13.4.1 G. Mauvaise Perception des Talents Tunisiens en Remote (Risque :
+                Faible) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   38
+
+
+
+
+                                                             TI
+         13.4.2 Synthèse de la Matrice des Risques . . . . . . . . . . . . . . . . . . .        38
+
+ 14 FEUILLE DE ROUTE : LE PLAN DE LANCEMENT (90 JOURS)                                          39
+    14.1 MOIS 1 : CADRAGE, ALLIANCE & ÉQUIPE NOYAU (J0 - J30) . . . . .                         39
+         14.1.1 Validation & Cadrage Stratégique . . . . . . . . . . . . . . . . . . .          39
+         14.1.2 Constitution de l’Alliance Écosystémique . . . . . . . . . . . . . . .
+                                   EN                                                           39
+         14.1.3 Recrutement de l’Équipe Pilote . . . . . . . . . . . . . . . . . . . . .        39
+    14.2 MOIS 2 : PRODUCTION DE L’ARSENAL & INFRASTRUCTURE (J31
+         - J60) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   40
+         14.2.1 Ingénierie Pédagogique (Les « Golden Templates ») . . . . . . . . .             40
+         14.2.2 Mise en place du Cockpit Technique . . . . . . . . . . . . . . . . . .          40
+         14.2.3 Lancement Commercial & Marketing . . . . . . . . . . . . . . . . . .            40
+    14.3 MOIS 3 : SÉLECTION & LANCEMENT « PROMO ALPHA » (J61 - J90)                             40
+         14.3.1 Processus de Sélection d’Élite . . . . . . . . . . . . . . . . . . . . . .      40
+   ID
+         14.3.2 Finalisation de la Cohorte . . . . . . . . . . . . . . . . . . . . . . . .      41
+         14.3.3 Kick-off Opérationnel . . . . . . . . . . . . . . . . . . . . . . . . . .       41
+    14.4 RÉCAPITULATIF DES JALONS CLÉS (MILESTONES) . . . . . . . . . .                         41
+
+ 15 ÉLÉMENTS DE DIFFÉRENCIATION RBK                                                             42
+    15.1 Le Paradigme « Senior-by-Design » . . . . . . . . . . . . . . . . . . . . . . .        42
+    15.2 L’Approche « Cyborg » : IA-Augmented Engineering . . . . . . . . . . . . .             42
+ NF
+
+
+    15.3 Double Spécialisation Réelle (EVM & Solana) . . . . . . . . . . . . . . . . .          43
+    15.4 L’Écosystème comme Salle de Classe (Le Réseau Superteam) . . . . . . . .               43
+    15.5 La Preuve de Travail : « On-Chain Resume » . . . . . . . . . . . . . . . . .           43
+    15.6 Ancrage Tunisie & Souveraineté : « Software Export » . . . . . . . . . . . .           43
+         15.6.1 Synthèse de la Valeur Ajoutée (Comparatif) . . . . . . . . . . . . . .          43
+
+ 16 CONCLUSION & APPEL À L’ACTION                                                               45
+    16.1 La Forge de l’Élite Africaine : Un Impératif de Survie . . . . . . . . . . . .         45
+CO
+
+
+
+
+    16.2 Synthèse de la Valeur Stratégique . . . . . . . . . . . . . . . . . . . . . . . .      45
+    16.3 Appel à l’Action : Prochaines Étapes Immédiates (Top Priorités) . . . . . .            46
+    16.4 Message Final au CEO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       46
+    16.5 ˣ Profil de Sortie : Le Standard « Senior-by-Design » . . . . . . . . . . . .          46
+
+
+
+
+                                                4
+ A SYLLABUS TECHNIQUE DÉTAILLÉ (24 SEMAINES)                                                 48
+   A.1 PARTIE 1 : LA FORGE DES FONDATIONS (COMMUN) . . . . . . . . .                         48
+       A.1.1 Phase 0 : La « Piscine » Rust — L’Élite sans IA (Semaines 1 à 4) .              48
+       A.1.2 Phase 1 : Fondations Web3 & Engineering (Semaines 5 à 8) . . . . .              49
+   A.2 PARTIE 2 : LES VOIES DE L’EXCELLENCE (SPÉCIALISATION) . . . .                         51
+
+
+
+
+                                                                             EL
+       A.2.1 f TRACK A : SOLANA SMART CONTRACT ENGINEER (SE-
+             MAINES 9 À 20) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        51
+       A.2.2 ` TRACK B : EVM ENGINEER (SEMAINES 9 À 20) . . . . . . .                        55
+   A.3 PARTIE 3 : INCUBATION & PREUVE DE TRAVAIL (COMMUN) . . . .                            59
+       A.3.1 Phase 3 : Build & Scale — Le Capstone Project (Semaines 21 à 24)                59
+
+ B MODÈLE FINANCIER & PROJECTIONS (3 ANS)                                                    61
+   B.1 Vue d’Ensemble Financière . . . . . . . . . . . . . . . . . . . . . . . . . . .       61
+
+
+
+
+                                                           TI
+   B.2 Projection Détaillée sur 3 Ans . . . . . . . . . . . . . . . . . . . . . . . . . .    61
+   B.3 Hypothèses et Notes Stratégiques . . . . . . . . . . . . . . . . . . . . . . . .      62
+   B.4 Seuil de Rentabilité (Break-Even Analysis) . . . . . . . . . . . . . . . . . .        62
+
+ C GUIDE DE CONFORMITÉ JURIDIQUE                                                             63
+   C.1 Cadre Légal Tunisien : Exportation de Services . . . . . . . . . . . . . . . .        63
+                                  EN
+       C.1.1 Statut Juridique des Diplômés . . . . . . . . . . . . . . . . . . . . .
+       C.1.2 Pipeline de Rapatriement de Devises . . . . . . . . . . . . . . . . . .
+   C.2 Obligations Fiscales et Sociales . . . . . . . . . . . . . . . . . . . . . . . . .
+   C.3 Positionnement vis-à-vis de la BCT . . . . . . . . . . . . . . . . . . . . . . .
+                                                                                             63
+                                                                                             63
+                                                                                             64
+                                                                                             64
+
+ D TEMPLATE DE RAPPORT D’AUDIT DE SÉCURITÉ                                                   65
+   D.1 Structure du Rapport d’Audit . . . . . . . . . . . . . . . . . . . . . . . . . .      65
+       D.1.1 1. Résumé Exécutif . . . . . . . . . . . . . . . . . . . . . . . . . . . .      65
+       D.1.2 2. Périmètre de l’Audit . . . . . . . . . . . . . . . . . . . . . . . . . .     65
+   ID
+       D.1.3 3. Classification des Vulnérabilités . . . . . . . . . . . . . . . . . . .      65
+       D.1.4 4. Détail des Findings . . . . . . . . . . . . . . . . . . . . . . . . . .      65
+       D.1.5 5. Tests de Sécurité Effectués . . . . . . . . . . . . . . . . . . . . . .      66
+       D.1.6 6. Conclusion et Recommandations . . . . . . . . . . . . . . . . . . .          66
+
+ E LE COCKPIT DE L’ARCHITECTE                                                                67
+ NF
+
+
+   E.1 Philosophie : L’Ingénieur comme Pilote . . . . . . . . . . . . . . . . . . . .        67
+   E.2 Outils Obligatoires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   67
+       E.2.1 1. IDE Augmentés par l’IA . . . . . . . . . . . . . . . . . . . . . . .         67
+       E.2.2 2. Frameworks de Développement . . . . . . . . . . . . . . . . . . . .          67
+       E.2.3 3. Outils d’Audit et de Test . . . . . . . . . . . . . . . . . . . . . . .      68
+       E.2.4 4. Simulation Économique . . . . . . . . . . . . . . . . . . . . . . . .        68
+       E.2.5 5. Prototypage Rapide . . . . . . . . . . . . . . . . . . . . . . . . . .       68
+   E.3 Workflow Type d’une Journée . . . . . . . . . . . . . . . . . . . . . . . . . .       68
+CO
+
+
+
+
+ F MODÈLE DE CONTRAT ISA (INCOME SHARE AGREEMENT)                                            69
+   F.1 PRÉAMBULE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         69
+   F.2 ˶ ARTICLE 1 : OBJET DU CONTRAT . . . . . . . . . . . . . . . . . . .                  69
+   F.3 ˶ ARTICLE 2 : MONTANT DE LA FORMATION . . . . . . . . . . . . .                       69
+   F.4 ˶ ARTICLE 3 : MODALITÉS DE REMBOURSEMENT . . . . . . . . . .                          69
+       F.4.1 3.1. Seuil de Déclenchement . . . . . . . . . . . . . . . . . . . . . . .       69
+       F.4.2 3.2. Taux de Partage . . . . . . . . . . . . . . . . . . . . . . . . . . .      70
+       F.4.3 3.3. Durée Maximale . . . . . . . . . . . . . . . . . . . . . . . . . . .       70
+
+
+                                               5
+           F.4.4 3.4. Plafond de Remboursement . . . . . . . . . . . . . . . . . . . . .     70
+           F.4.5 3.5. Clause de Sortie Anticipée . . . . . . . . . . . . . . . . . . . . .   70
+     F.5   ˶ ARTICLE 4 : OBLIGATIONS DU BÉNÉFICIAIRE . . . . . . . . . . . .                 70
+     F.6   ˶ ARTICLE 5 : SUSPENSION DES PAIEMENTS . . . . . . . . . . . . . .                71
+     F.7   ˶ ARTICLE 6 : RÉSILIATION . . . . . . . . . . . . . . . . . . . . . . . . .       71
+
+
+
+
+                                                                             EL
+     F.8   ˶ ARTICLE 7 : CONFIDENTIALITÉ . . . . . . . . . . . . . . . . . . . . .           71
+     F.9   ˶ ARTICLE 8 : DROIT APPLICABLE . . . . . . . . . . . . . . . . . . . .            71
+
+ G GUIDE DE SÉLECTION & SCORING « PISCINE RUST »                                             72
+   G.1 Philosophie de la Sélection . . . . . . . . . . . . . . . . . . . . . . . . . . . .   72
+   G.2 Critères de Pré-Sélection (Avant la Piscine) . . . . . . . . . . . . . . . . . .      72
+       G.2.1 1. Compétences Techniques de Base . . . . . . . . . . . . . . . . . .           72
+       G.2.2 2. Motivation et Mindset . . . . . . . . . . . . . . . . . . . . . . . .        72
+
+
+
+
+                                                           TI
+       G.2.3 3. Disponibilité et Engagement . . . . . . . . . . . . . . . . . . . . .        72
+   G.3 Grille de Scoring de la Piscine (4 Semaines) . . . . . . . . . . . . . . . . . .      73
+   G.4 Seuils de Validation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    73
+   G.5 Indicateurs de Réussite Prédictive . . . . . . . . . . . . . . . . . . . . . . .      73
+   G.6 Processus de Décision Finale . . . . . . . . . . . . . . . . . . . . . . . . . .      73
+                                   EN
+   ID
+ NF
+CO
+
+
+
+
+                                               6
+                                                                                                   1
+
+
+                                                                               EL
+ VISION & MANIFESTE : LE PARADIGME
+ « SENIORBYDESIGN »
+
+
+
+
+                                                             TI
+    1.1
+                                     EN
+          Ď La Thèse Centrale : Former des Architectes, pas des Codeurs
+        RBK 2.0 n’est pas une école de code traditionnelle. C’est un laboratoire d’ingénierie
+    de haut niveau conçu pour produire des Architectes Web3 capables de concevoir, auditer
+    et déployer des systèmes financiers décentralisés à l’échelle mondiale.
+        Le paradigme « Senior-by-Design » repose sur une conviction radicale : un étudiant
+   ID
+    formé selon les standards de l’élite mondiale peut, dès sa sortie, rivaliser avec
+    des ingénieurs ayant 3 à 5 ans d’expérience.
+        Cette approche inverse la logique classique de l’éducation tech. Au lieu de former des
+    juniors destinés à stagner dans des rôles subalternes, RBK construit des profils immédiate-
+    ment opérationnels sur des missions critiques (audits de sécurité, conception de tokenomics,
+    architecture de protocoles DeFi).
+ NF
+
+
+           ʷ
+
+           Annotation Stratégique pour le CEO Ce positionnement « Senior-by-Design »
+           n’est pas un slogan marketing. C’est une promesse contractuelle. Si un diplômé
+           RBK ne peut pas justifier d’un salaire de 3 000 TND/mois (ou équivalent en
+           remote), le modèle ISA (Income Share Agreement) garantit qu’il ne paiera rien.
+           Nous alignons notre rentabilité sur leur succès.
+CO
+
+
+
+
+    1.2   Ď Le Contexte : Pourquoi Maintenant ?
+    1.2.1 Le Crépuscule du Junior : L’Effondrement de la Valeur du Code Basique
+
+        L’avènement des LLM (Large Language Models) comme GPT-4, Claude, et des IDE
+    augmentés (Cursor, GitHub Copilot) a provoqué une disruption irréversible du marché du
+    travail tech.
+        Constat brutal : Un développeur junior capable uniquement de traduire des spécifi-
+
+
+                                                 7
+ cations en code syntaxiquement correct n’a plus de valeur marchande différenciante. L’IA
+ génère désormais du code fonctionnel plus rapidement, avec moins de bugs, et sans salaire.
+     Les entreprises tech mondiales (Google, Meta, Solana Labs) ne recrutent plus de juniors
+ pour « apprendre sur le tas ». Elles cherchent des ingénieurs capables de :
+
+
+
+
+                                                                            EL
+   • Auditer le code généré par l’IA (détecter les failles logiques, les vulnérabilités de
+     sécurité).
+
+   • Concevoir l’architecture système avant même d’écrire une ligne de code.
+
+   • Optimiser les performances (gas optimization, compute units) que l’IA ne maîtrise
+     pas encore.
+
+
+
+
+                                                          TI
+ 1.2.2 AIAugmented Engineering : L’IA comme Outil, pas comme Remplacement
+
+    RBK adopte une position pragmatique : l’IA est un multiplicateur de force, pas
+ un substitut à l’intelligence humaine.
+    Le programme enseigne à utiliser l’IA comme un « stagiaire élite » :
+
+   • L’IA génère le boilerplate, les tests unitaires, la documentation.
+                                  EN
+   • L’humain valide la logique métier, sécurise les flux de fonds, conçoit les invariants
+     économiques.
+
+    Cette symbiose Humain-IA permet à un étudiant RBK de livrer en 6 mois ce qu’un
+ développeur traditionnel produirait en 2 ans.
+
+ 1.2.3 L’Opportunité Web3 & Solana : L’Ascenseur Socio-Technologique
+   ID
+     Le Web3 représente la dernière frontière où l’expertise technique pure peut encore
+ générer une mobilité sociale fulgurante.
+     Pourquoi Solana ?
+     Solana n’est pas un choix technologique arbitraire. C’est un pari stratégique sur l’éco-
+ système offrant le meilleur ratio Opportunité/Compétition pour un talent tunisien :
+
+   • Pénurie de Talents : Moins de 5 000 développeurs Rust/Solana dans le monde (vs
+ NF
+
+
+     200 000+ pour Ethereum/Solidity).
+
+   • Salaires Premium : Un Solana Smart Contract Engineer junior gagne entre 60k$
+     et 100k$ en remote (vs 40k$ pour un dev Solidity).
+
+   • Accès Direct aux Fondations : Solana Foundation finance activement les talents
+     émergents via Superteam (Bounties de 500$ à 5 000$ par mission).
+CO
+
+
+
+
+        ʷ
+
+        Annotation Pédagogique L’écosystème Solana a développé une infrastructure
+        unique pour monétiser l’apprentissage : Superteam Earn. Un étudiant RBK
+        peut, dès la semaine 12 du cursus, gagner ses premiers revenus en contribuant
+        à des projets open-source ou en réalisant des audits de sécurité basiques. Cette
+        « Proof of Work » remplace le CV traditionnel.
+
+
+
+
+                                              8
+                                                         EL
+                                                       TI
+                                    EN
+ 2.1     ˎ La Disruption IA : Redéfinir la Valeur du Développeur
+ 2.1.1 L’Obsolescence Programmée du « Code Monkey »
+
+    Les modèles de langage de nouvelle génération (GPT-4, Claude 3.5, Gemini) ont franchi
+                          D
+ un seuil critique : ils peuvent désormais générer des applications web complètes, des smart
+ contracts fonctionnels, et même des pipelines CI/CD à partir d’une simple description en
+ langage naturel.
+    Implications pour le marché du travail :
+              FI
+
+   • Les postes de « développeur junior » (traduction de specs en code) sont en voie
+     d’extinction.
+   • Les entreprises réduisent leurs équipes de 30 à 50% en remplaçant les tâches répéti-
+ N
+
+
+
+     tives par des agents IA.
+   • Le salaire moyen d’un développeur web classique stagne ou décroît (sauf pour les
+     profils ultra-spécialisés).
+ O
+
+
+
+
+ 2.1.2 La Nouvelle Hiérarchie de Valeur
+
+       Dans l’économie post-IA, la valeur d’un ingénieur se mesure à sa capacité à :
+C
+
+
+
+
+   1. Concevoir : Définir l’architecture, les invariants, les cas limites que l’IA ne peut
+      pas anticiper.
+   2. Auditer : Détecter les vulnérabilités logiques, les vecteurs d’attaque, les ineﬀicacités
+      économiques dans le code généré.
+   3. Optimiser : Réduire les coûts (gas fees, compute units) et améliorer les perfor-
+      mances au-delà des solutions génériques de l’IA.
+       RBK forme des ingénieurs qui se situent au sommet de cette hiérarchie.
+
+                                               9
+ 2.2   ƥ Le Marché Web3 : Une Fenêtre d’Opportunité Limitée
+ 2.2.1 La Course aux Talents Blockchain
+
+     Le secteur Web3 connaît une pénurie structurelle de talents qualifiés :
+   • Solana : Moins de 5 000 développeurs Rust/Anchor dans le monde.
+
+
+
+
+                                                                           EL
+   • Ethereum/EVM : Environ 200 000 développeurs Solidity, mais moins de 10%
+     maîtrisent les patterns de sécurité avancés (Proxy, Upgradability, Gas Optimization).
+     Cette rareté crée une asymétrie salariale massive :
+   • Un développeur Solana junior (1 an d’expérience) peut prétendre à 60-80k$ en re-
+     mote.
+
+
+
+
+                                                           TI
+   • Un auditeur de smart contracts (2 ans d’expérience) facture entre 150$ et 300$/heure.
+
+ 2.2.2 L’Économie de Tâches Décentralisée Bounties & DAOs)
+
+    Contrairement au marché traditionnel, le Web3 permet de monétiser ses compétences
+ sans passer par un employeur :
+                                  EN
+   • Superteam Earn (Solana) : Plateforme de Bounties offrant 500$ à 10 000$ par
+     mission (design, audit, développement).
+   • Code4rena / Sherlock (Ethereum) : Concours d’audit où les meilleurs gagnent
+     jusqu’à 50 000$ par compétition.
+   • Gitcoin Grants : Financement participatif pour les contributeurs open-source (jus-
+     qu’à 20 000$ par projet).
+    Un étudiant RBK peut générer ses premiers revenus dès la semaine 16 du cursus en
+   ID
+ participant à ces programmes.
+
+ 2.3   ̆ Le Différentiel Tunisie : Arbitrage Géographique & Coût de la Vie
+ 2.3.1 L’Avantage Compétitif du Remote
+
+    Un développeur tunisien travaillant en remote pour une DAO ou une fondation inter-
+ NF
+
+
+ nationale bénéficie d’un arbitrage économique massif :
+   • Salaire perçu : 3 000$ à 5 000$/mois (équivalent à un ingénieur senior aux USA).
+   • Coût de la vie en Tunisie : 800$ à 1 200$/mois.
+   • Pouvoir d’achat réel : Équivalent à un salaire de 10 000$/mois aux États-Unis.
+
+ 2.3.2 Le Modèle de Rapatriement de Devises
+CO
+
+
+
+
+    RBK structure ses diplômés comme des exportateurs de services numériques,
+ conformément au cadre légal tunisien :
+   • Les revenus sont rapatriés via des rails de conformité (Bitwage, Grey.co).
+   • Les étudiants bénéficient du statut d’« Auto-Entrepreneur » ou de « Freelance Ex-
+     port ».
+   • Aucune friction réglementaire : le travail intellectuel pour des clients étrangers est
+     encouragé par l’État.
+
+
+                                             10
+                                                                           EL
+                                                          TI
+ 3.1
+                                   EN
+        Ǒ La Décision Stratégique : Pourquoi Solana en Track Principal ?
+     RBK adopte une approche de spécialisation asymétrique : Solana comme Track A
+ (prioritaire), EVM comme Track B (complémentaire).
+   ID
+ 3.1.1 Critère 1 : Rareté des Compétences = Salaires Premium
+
+       Solana :
+   • Langage : Rust (courbe d’apprentissage abrupte, barrière à l’entrée élevée).
+
+   • Nombre de développeurs mondiaux : 5 000.
+
+   • Salaire moyen junior : 60-100k$/an.
+ NF
+
+
+       Ethereum/EVM :
+   • Langage : Solidity (syntaxe proche de JavaScript, accessible).
+
+   • Nombre de développeurs mondiaux : 200 000.
+
+   • Salaire moyen junior : 40-60k$/an.
+       Verdict : Solana offre un meilleur ratio Effort/Rémunération pour un talent émergent.
+CO
+
+
+
+
+ 3.1.2 Critère 2 : Accès aux Opportunités Superteam vs Grants Ethereum)
+
+     Écosystème Ethereum : Le financement passe par des processus de « Grants »
+ académiques ou via des fondations (Ethereum Foundation ESP), qui sont souvent lents,
+ bureaucratisés et favorisent les chercheurs occidentaux établis.
+     Écosystème Solana (Superteam) : A développé une approche unique de « Gig
+ Economy Décentralisée ». Superteam Earn agrège des opportunités de travail (« Boun-
+ ties ») allant du design au code complexe, ciblées vers les talents des marchés émergents.
+
+                                              11
+ Pour un étudiant tunisien, c’est la promesse de revenus immédiats (entre 500$ et 1500$
+ par tâche) dès sa formation, validant ses compétences par la Preuve de Travail (Proof of
+ Work) plutôt que par un simple diplôme.
+
+ 3.1.3 Critère 3 : Performance Technique & Narratives Futures
+
+
+
+
+                                                                         EL
+     Solana :
+
+   • Débit : 3 000+ TPS (vs 15-50 TPS pour Ethereum L1).
+
+   • Coût : 0.00025$ par transaction (vs 5-50$ sur Ethereum).
+
+   • Use Cases : DePIN (réseaux physiques décentralisés), IA on-chain, paiements en
+     temps réel.
+
+
+
+
+                                                          TI
+     Ethereum :
+
+   • Dominance DeFi : 60% de la TVL (Total Value Locked).
+
+   • Écosystème mature : OpenZeppelin, Foundry, Hardhat.
+
+   • Sécurité éprouvée : 9 ans d’historique sans compromission du consensus.
+                                EN
+    Verdict : Solana est positionné pour les narratives de croissance (IA, DePIN, Pay-
+ ments), tandis qu’Ethereum reste le standard pour la finance décentralisée établie.
+
+ 3.2   Ǒ Tableau Comparatif Stratégique
+
+  Critère             Ethereum / EVM          Solana / SVM         Verdict pour RBK
+  Langage             Solidity (Haut          Rust (Bas niveau,    Solana (Rust forme de
+   ID
+  Principal           niveau)                 Système)             meilleurs ingénieurs).
+  Courbe              Modérée                 Abrupte (Filtre      Solana (Garantit un
+  apprentissage                               naturel)             niveau Expert).
+  Performance         15-50 TPS (L1)          3,000+ TPS           Solana (Prêt pour IA
+  Réseau                                                           et DePIN).
+  Modèle              Subventions (Grants)   Économie de Tâches    Solana (Revenus
+  Économique                                 (Superteam Earn)      accessibles aux
+ NF
+
+
+                                                                   étudiants).
+  Coût                Marché saturé de        Pénurie de profils   Solana (Salaires plus
+  opportunité         juniors                 compétents           élevés à embauche).
+
+           Tab. 3.1 : Comparaison stratégique Ethereum vs Solana pour RBK
+CO
+
+
+
+
+                                             12
+                                                                                              4
+
+
+
+                                                                                EL
+ MÉTHODOLOGIE « CYBORG » : L’IA
+ COMME SPARRING PARTNER
+
+
+
+
+                                                              TI
+                                      EN
+        RBK 2.0 transcende le modèle classique de l’école de code pour devenir un laboratoire
+    de symbiose Humain-Machine. La méthodologie ne consiste pas à ignorer ou interdire
+    l’Intelligence Artificielle, mais à l’intégrer au cœur de la pédagogie comme une exigence
+    de productivité et de rigueur.
+   ID
+    4.1     ͓ Philosophie Pédagogique : « Learning by Auditing »
+    4.1.1   Le Paradoxe de l’IA : Trop Facile pour Apprendre, Indispensable pour Produire
+
+       L’IA générative (ChatGPT, Claude, Cursor) permet de générer du code fonctionnel
+    en quelques secondes. Mais cette facilité crée un piège pédagogique : l’étudiant qui
+    utilise l’IA sans maîtriser les fondamentaux devient dépendant, incapable de
+ NF
+
+
+    déboguer ou d’optimiser.
+       RBK résout ce paradoxe par une approche en deux phases :
+
+       1. Phase 0 (Piscine Rust - 4 semaines) : Interdiction totale de l’IA. L’étudiant code
+          en Rust pur, gère la mémoire manuellement, implémente des structures de données
+          from scratch. Objectif : Bâtir une compréhension intime de la machine.
+
+       2. Phases 1-3 (20 semaines) : Usage obligatoire de l’IA, mais sous supervision cri-
+          tique. L’étudiant génère du code avec l’IA, puis l’audite ligne par ligne pour détecter
+CO
+
+
+
+
+          les failles logiques, les ineﬀicacités, les vulnérabilités.
+
+    4.1.2 Vibe Coding Responsable
+
+       La méthodologie impose de créer des prototypes en quelques minutes avec l’IA, pour
+    ensuite consacrer 90% du temps au « Hardening » (durcissement) et à la sécurisation du
+    code.
+
+
+
+
+                                                  13
+ Le Cycle Cyborg : Interaction Humain-IA
+
+
+                                                      Zone d’Apprentissage Actif
+
+
+
+                                                                                   L’IA
+                                            L’ÉTUDIANT                        (Stagiaire Élite)
+                                                           Prompting Stratégique
+                                           (Lead Architect)                      Génération
+                                           Définit la logique                  de syntaxe &
+
+
+
+
+                                                         EL
+                                           & les contraintes                     Boilerplate
+
+
+                            Correction & Hardening
+
+
+
+                                           AUDIT HUMAIN
+
+
+
+
+                                                       TI
+   PRODUIT FINAL                             (Code Review)
+   Production-Ready                           Validation lo-
+                                                                Ingestion
+                                                                               CODE BRUT
+   Garanti sans failles                     gique & Sécurité                   (Vibe Coding)
+                                   EN                                          10x plus rapide
+
+
+
+ 4.2   ê La « Piscine » Rust : Le Filtre d’Élite sans IA
+     Inspirée par les modèles de l’École 42 et Holberton, cette phase initiale de 4 semaines
+ sert de test de résilience.
+
+ 4.2.1 L’Interdiction de l’IA
+                          D
+    Durant la Piscine, l’usage de l’IA est strictement interdit. L’objectif est de garantir
+ que les fondamentaux cognitifs et l’algorithmique système sont acquis avant d’utiliser l’IA
+ comme outil de productivité.
+            FI
+
+
+ 4.2.2 Contenu Technique
+
+     Les étudiants travaillent sur du Rust natif sans frameworks, réimplémentant des com-
+ N
+
+
+ mandes Unix (ls, cat, grep) pour maîtriser la gestion de la mémoire (Stack vs Heap) que
+ l’IA abstrait souvent.
+
+ 4.3   Ð L’Environnement Technique de l’Architecte Le Cockpit)
+ O
+
+
+
+
+    L’apprenant opère dans un cockpit d’ingénierie moderne utilisant des outils de pointe :
+
+   • IDE Augmentés : Utilisation de Cursor ou Windsurf (forks de VS Code avec IA
+C
+
+
+
+
+     native intégrée) pour le développement assisté.
+
+   • Prototypage Rapide : Usage de Solana Playground (Solpg) pour tester des pro-
+     grammes sans configuration lourde.
+
+   • Analyse on-chain : Utilisation de Dune Analytics pour extraire des données et
+     comprendre l’impact réel du code sur la blockchain.
+
+   • Simulation Économique : Maîtrise de Machinations.io pour modéliser les incita-
+     tions de tokenomics avant toute phase de codage.
+
+                                              14
+ 4.4     ͜ Modalités Pédagogiques « Studio » et Immersion Totale
+    Le programme adopte une approche « Learning by Building » (LBB) où la théorie est
+ immédiatement appliquée à la création et à la contribution.
+
+ 4.4.1   Rituels de l’Équipe Senior
+
+
+
+
+                                                                             EL
+     L’organisation suit des cycles de production professionnels :
+
+   • Lundi : Planning, tickets et revue de design (Design Review).
+
+   • Mardi-Jeudi : Développement en Pair Programming et revues de PR (Pull Request)
+     quotidiennes.
+
+
+
+
+                                                           TI
+   • Vendredi : Release, démo, rétrospective et sessions d’« Incident Drills ».
+
+ 4.4.2 Incident Drills Simulations de crise)
+
+     Chaque vendredi, un hack ou une congestion réseau est simulé. L’étudiant doit patcher
+ le système en direct sous pression.
+
+ 4.4.3 Peer-Review Mandatory
+                                      EN
+     Aucune ligne de code ne peut être fusionnée (merge) sans une revue par un pair et une
+ validation critique des suggestions de l’IA.
+
+ 4.4.4   Contribution Open-Source
+
+    Les étudiants doivent contribuer à des projets existants (documentation, correctifs)
+ pour construire leur réputation internationale.
+   ID
+ 4.5     Ô Gamification et Évaluation par l’Impact
+   • Organisation en Tribus : Les étudiants sont regroupés en guildes spécialisées
+     (Sécurité, DeFi, NFT).
+
+   • Points d’Expérience (XP) : La progression est notée selon la qualité des contri-
+ NF
+
+
+     butions GitHub, la profondeur des analyses de protocoles et, surtout, par les revenus
+     réels générés via des Bounties Superteam.
+
+   • Validation par les Pairs : Le modèle de Peer Learning permet aux meilleurs
+     étudiants des promos précédentes de coacher les nouveaux, renforçant la transmission
+     de la culture d’excellence.
+
+         ʷ
+CO
+
+
+
+
+         Annotation Pédagogique Finale La méthodologie Cyborg transforme l’IA d’une
+         menace en un levier stratégique. Un diplômé RBK ne craint pas l’automatisa-
+         tion : il la maîtrise. Il sait exactement quand déléguer à l’IA et quand reprendre
+         le contrôle pour garantir la sécurité et l’excellence.
+
+
+
+
+                                                15
+                                                                                                  5
+
+
+
+                                                                                  EL
+ STRUCTURE DU CURSUS 24 SE
+ MAINES
+
+
+
+
+                                                               TI
+                                         EN
+       Le programme est divisé en trois phases majeures de progression technique et straté-
+    gique, complétées par une phase finale d’accompagnement carrière.
+
+     Phase                     Durée          Focus Stratégique           Objectif de Sortie
+     Phase 0 : La Piscine      4 sem.         Résilience & Logique Pure   Filtrage des meilleurs ta-
+                                                                          lents (zéro IA)
+   ID
+     Phase 1 : Fondations      4 sem.         Ingénierie Système &        Maîtrise de la boîte noire
+                                              Crypto                      logicielle
+     Phase 2 : Spécialisa-     12 sem.        Expertise Track (A, B ou    Capacité de production de
+     tion                                     C)                          niveau Senior
+     Phase 3 : Build & Scale   4 sem.         MVP & Lancement Main-       Incubation de produit et
+                                              net                         Proof of Work
+ NF
+
+
+                         Tab. 5.1 : Vue d’ensemble du parcours de formation
+
+
+    5.1     ê Phase 0 : La « Piscine » Rust Filtrage d’Élite)
+          Inspirée de l’École 42, cette étape pré-cursus est un test de survie technique.
+
+      • Durée : 4 semaines intensives.
+CO
+
+
+
+
+      • Règle d’or : Interdiction totale de l’IA (ChatGPT, Cursor, Copilot).
+
+      • Objectif : Identifier les profils capables de penser en systèmes et de gérer la mémoire
+        manuellement.
+
+    5.1.1 Contenu Technique
+
+      • Semaine 1 : Ingénierie Système & Maîtrise de l’OS (Architecture Linux, Git Inter-
+        nals, réimplémentation de commandes Unix).
+
+                                                   16
+   • Semaine 2 : Rust Deep Dive (Ownership, Borrowing, Lifetimes, Stack vs Heap).
+
+   • Semaine 3 : Concurrence & Programmation Parallèle (Threads, Mutex, Arc, To-
+     kio).
+
+   • Semaine 4 : Cryptographie Appliquée (Hachage, Courbes Elliptiques, Signatures
+
+
+
+
+                                                                        EL
+     numériques).
+
+ 5.2   ͜ Phase 1 : Fondations Web3 & Engineering Semaines 58
+    Démarrage de la méthodologie « Cyborg » : introduction de l’IA comme assistant de
+ production sous supervision experte.
+
+ 5.2.1 Semaine 5 — Niveau 1 : Web3 Fundamentals & Narratives
+
+
+
+
+                                                       TI
+   • Ethos du Web3 : décentralisation, trustless systems, propriété souveraine.
+
+   • Terminologie : Nœuds, Gas, RPC, Wallets, Smart Contracts.
+
+   • Lab : Schémas d’architecture réseau et quiz de validation conceptuelle.
+                                EN
+ 5.2.2 Semaine 6 — Niveau 2 : Blockchain Architecture & Consensus
+
+   • Validation des blocs, mécanismes PoW, PoS et Proof of History (PoH).
+
+   • Différenciation Layer 1 vs Layer 2.
+
+   • Lab : Simulation d’un consensus PoS par jeu de rôles et construction d’un Merkle
+     Tree.
+   ID
+ 5.2.3 Semaine 7 — Niveau 3 : Ecosystem & Use Cases
+
+   • Analyse des protocoles DeFi (DEX, Lending), NFTs (utilité vs spéculation) et DAOs.
+
+   • Lab : Analyse fonctionnelle de protocoles majeurs (Uniswap, Aave, Orca).
+
+ 5.2.4 Semaine 8 — Niveau 4 : Wallets & On-chain Interaction
+ NF
+
+
+   • Lifecycle d’une transaction. Lecture avancée des explorateurs (Etherscan, Solscan).
+
+   • Livrable : Guide d’hygiène Wallet et module de signature de messages off-chain.
+CO
+
+
+
+
+                                           17
+                                                                          EL
+                                                           TI
+                                   EN
+ 6.1 PHASE 1 : LA FORGE DES FONDATIONS COMMUN
+ 6.1.1 Phase 0 : La « Piscine » Rust — L’Élite sans IA Semaines 1 à 4
+
+    L’objectif est de bâtir une résilience cognitive et une compréhension intime de la mé-
+ moire. L’usage de l’IA est strictement interdit.
+   ID
+ Semaine 1 : Ingénierie Système & Maîtrise de l’OS
+     Notions :
+
+   • Architecture Linux, gestion des processus, I/O asynchrones.
+ NF
+
+
+   • Git Internals : Arbres de Merkle, objets, blobs et gestion des commits en CLI.
+
+     Projet : Réimplémentation de commandes ls et cat en Rust natif.
+
+ Semaine 2 : Rust Deep Dive — Memory Safety
+     Notions :
+
+   • Ownership, Borrowing, Lifetimes : les piliers de la sécurité Rust.
+CO
+
+
+
+
+   • Gestion de la mémoire : Stack vs Heap. Analyse des pointeurs.
+
+    Projet : Création d’une bibliothèque de structures de données (Linked List, Vector)
+ sans bibliothèque standard (no_std).
+
+ Semaine 3 : Concurrence & Programmation Parallèle
+     Notions :
+
+   • Threads, Mutex, Arc, Channels. Maîtrise du runtime Tokio.
+
+                                              18
+   • Préparation au modèle Sealevel (parallélisation des transactions).
+
+     Projet : Serveur Web multi-threadé capable de traiter 10 000 requêtes/seconde.
+
+ Semaine 4 : Cryptographie Appliquée
+
+
+
+
+                                                                          EL
+     Notions :
+
+   • Hachage (SHA-256, Keccak-256), Courbes Elliptiques (Ed25519 vs Secp256k1).
+
+   • Signatures numériques et dérivation de clés (BIP-32/39/44).
+
+     Projet : Création d’un CLI Wallet sécurisé avec génération de mnémotechniques.
+
+
+
+
+                                                        TI
+ 6.1.2 Phase 1 : Fondations Web3 & Engineering Semaines 5 à 8
+
+    Démarrage de la méthodologie « Cyborg » : introduction de l’IA comme assistant de
+ production sous supervision experte.
+
+ Semaine 5 — Niveau 1 : Web3 Fundamentals & Narratives
+     Notions :
+                                 EN
+   • Ethos du Web3 : décentralisation, trustless systems, propriété souveraine.
+
+   • Terminologie : Nœuds, Gas, RPC, Wallets, Smart Contracts.
+
+     Lab : Schémas d’architecture réseau et quiz de validation conceptuelle.
+
+ Semaine 6 — Niveau 2 : Blockchain Architecture & Consensus
+   ID
+     Notions :
+
+   • Validation des blocs, mécanismes PoW, PoS et Proof of History (PoH).
+
+   • Différenciation Layer 1 vs Layer 2.
+
+    Lab : Simulation d’un consensus PoS par jeu de rôles et construction d’un Merkle
+ NF
+
+
+ Tree.
+
+ Semaine 7 — Niveau 3 : Ecosystem & Use Cases
+     Notions :
+
+   • Analyse des protocoles DeFi (DEX, Lending), NFTs (utilité vs spéculation) et DAOs.
+
+     Lab : Analyse fonctionnelle de protocoles majeurs (Uniswap, Aave, Orca).
+CO
+
+
+
+
+     Livrables : Tableau analytique « Use case → Architecture → Risques → Valeur ».
+
+
+
+
+                                            19
+ Semaine 8 — Niveau 4 : Wallets & On-chain Interaction
+     Notions :
+
+   • Hot vs cold wallets, clés publiques vs clés privées.
+
+
+
+
+                                                                         EL
+   • Sécurité des portefeuilles et MetaMask.
+
+   • Cycle de vie d’une transaction et lecture des explorateurs de blocs (Etherscan/Solana
+     Explorer).
+
+    Lab : Démonstration sécurisée de signature de message (sans notion de trading) et
+ analyse de transactions complexes sur un explorer.
+    Livrables : Checklist personnalisée « Hygiène Wallet » et mini-guide « Comment
+
+
+
+
+                                                            TI
+ décoder une transaction ».
+
+ 6.1.3 Critères d’Excellence pour ce Tronc Commun
+
+   • Rigueur technique : Zéro merge sur les dépôts Git sans tests unitaires minimaux.
+
+   • Communication : Chaque livrable doit inclure un README professionnel orienté
+     « production-ready ».
+                                 EN
+   • Analyse critique : L’étudiant doit pouvoir expliquer chaque choix d’architecture
+     généré ou assisté par l’IA.
+   ID
+ NF
+CO
+
+
+
+
+                                            20
+                                                                                            7
+
+
+                                                                            EL
+ TRACK A : SOLANA SMART CONTRACT
+ ENGINEER RUST/ANCHOR
+
+
+
+
+                                                          TI
+                                   EN
+   7.1 Philosophie du Track : L’Excellence par Rust
+      Le choix de Rust n’est pas seulement technique, il est stratégique. En enseignant un
+   langage système exigeant, RBK garantit un niveau de sortie « Senior » par défaut. L’étu-
+   diant apprend à maîtriser la sécurité mémoire et la gestion de la concurrence au niveau le
+   plus bas, une compétence rare et extrêmement valorisée sur le marché mondial.
+   ID
+   7.2 Structure Pédagogique : De l’Architecture au Produit 12 Semaines)
+   7.2.1 MODULE 1 : Le Modèle Solana & Rust Natif Semaines 911
+
+       Objectifs : Comprendre le modèle de compte (Account Model) unique à Solana et
+   s’affranchir des frameworks pour maîtriser la logique pure.
+ NF
+
+
+       Contenu Technique :
+
+     • Architecture Solana : Preuve d’Histoire (PoH), parallélisme via Sealevel.
+
+     • Account Model vs UTXO/EVM : Tout est un compte (Données, Programmes, Sys-
+       vars).
+
+     • Développement Native Rust : Écrire des programmes sans framework pour com-
+       prendre la sérialisation (Borsh) et les points d’entrée (entrypoints).
+CO
+
+
+
+
+      Schéma Pédagogique : Cycle de Vie d’une Transaction Solana
+
+
+
+
+                                              21
+                                                         Étape 2 : Envoi RPC
+                 Étape 1 : Signature
+                                                            La transaction
+                   Le Wallet client
+                                                           est propagée vers
+                  signe l’instruction
+                                                            un nœud RPC
+                  avec sa clé privée.
+                                                          (Helius/QuickNode).
+
+
+
+
+                                                                              EL
+                                  Zone Haute Performance
+
+
+                      Étape 3 : Sea-
+                                                             Leader TPU
+                        level VM
+                                                             Ordonnancement
+                    Exécution parallèle
+                                                              via Proof of
+
+
+
+
+                                                            TI
+                     des instructions
+                                                             History (PoH)
+                    (Smart Contracts).
+
+
+
+
+                                  EN
+                   Étape 4 : Validation                        FINALITÉ
+                      Propagation aux                          Transaction
+                      validateurs pour                         irréversible
+                     vote et consensus.                       (400ms - 2s)
+
+
+
+
+    Schéma Pédagogique : Pipeline de Validation Solana (Architecture Sys-
+ tème)
+   ID
+                                     Zone d’Optimisation Rust (Haut Débit)
+
+
+                       1. Fetch                      2. SigVerify
+                       Réception                     Vérification
+                      des paquets                   des signatures
+                     réseau (UDP)                  (GPU Parallèle)
+ NF
+
+
+                       4. PoH                     3. Banking Stage
+                     Horodatage                    Ordonnancement
+                       Crypto-                       & Exécution
+                      graphique                        Sealevel
+CO
+
+
+
+
+                   5. Write Stage
+                    Mise à jour de
+                     l’état (Com-
+                       mitment)
+
+
+
+     Lab : Création d’un système de messagerie on-chain minimaliste en Rust pur.
+
+                                             22
+     Livrable : Guide d’installation et scripts d’environnement reproductibles.
+
+ 7.2.2 MODULE 2 : Maîtrise du Framework Anchor Semaines 1214
+
+    Objectifs : Utiliser le standard de l’industrie pour sécuriser et accélérer le développe-
+ ment.
+
+
+
+
+                                                                            EL
+    Contenu Technique :
+
+   • Anchor Framework : Macros, IDL (Interface Description Language), génération au-
+     tomatique de clients.
+
+   • Sécurité par défaut : Discriminators, vérification des propriétaires d’états.
+
+   • PDAs (Program Derived Addresses) : Création de structures de données détermi-
+
+
+
+
+                                                          TI
+     nistes (le « Hashmap on-chain » de Solana).
+
+     Lab : Programme « Counter » évolué avec gestion de trésorerie (Vaults).
+     Livrable : Suite de tests Anchor et pipeline CI/CD fonctionnel.
+
+ 7.2.3 MODULE 3 : Architectures Avancées & Innovation Semaines 1517
+
+
+     Contenu Technique :
+                                  EN
+     Objectifs : Intégrer la composabilité et les dernières fonctionnalités de l’écosystème.
+
+
+   • Composabilité (CPIs) : Appels de programmes à programmes (Cross-Program Invo-
+     cations) vers des protocoles tiers (Jupiter, Orca).
+
+   • Token-2022 & Extensions : Transfer Hooks, Confidential Transfers, métadonnées
+     natives.
+   ID
+   • Solana Mobile Stack (SMS) : Intégration du Mobile Wallet Adapter (MWA) pour
+     les dApps ciblant les smartphones.
+
+   • Actions & Blinks : Permettre des transactions n’importe où sur le web (Twitter,
+     LinkedIn).
+
+     Lab : Création d’une dApp mobile (APK) utilisant le Seed Vault pour signer des
+ NF
+
+
+ transactions.
+     Livrable : Module de gestion de transactions avancé avec retry policy et gestion de
+ latence.
+
+ 7.2.4 MODULE 4 : Production Hardening & UX Performance Semaines 1820
+
+     Objectifs : Rendre le code « Audit-Ready » et l’interface utilisateur fluide.
+     Contenu Technique :
+CO
+
+
+
+
+   • Optimisation Compute : Réduction du budget de calcul pour baisser les frais.
+
+   • Observabilité : Logs structurés, monitoring on-chain via Helius/QuickNode.
+
+   • UX Web3 High-End : Gestion des états de transaction (pending, success, fail) sans
+     friction.
+
+     Projet de fin de Track : Livraison d’une dApp complète « production-like ».
+
+
+
+
+                                             23
+ 7.3 Stack Technique Spécifique
+   • Langages : Rust (Smart Contracts), TypeScript (Clients/Tests).
+
+   • Frameworks : Anchor, React/Next.js.
+
+
+
+
+                                                                      EL
+   • Outils d’Auditeur : Trident (Fuzzing), Soteria (Analyse statique).
+
+   • SDKs : Solana web3.js v2, Helius SDK, Ironforge.
+
+ 7.4 Profil de Sortie : Le « Guardian »
+     L’étudiant certifié Track Solana est un ingénieur capable de :
+
+   • Concevoir des systèmes gérant des millions de dollars d’AUM.
+
+
+
+
+                                                         TI
+   • Optimiser des transactions pour une finalité de 400ms.
+
+   • Monter une startup Web3 ou intégrer une équipe Core Dev à l’international.
+
+
+                                  EN
+   ID
+ NF
+CO
+
+
+
+
+                                             24
+                                                                                            8
+
+
+                                                                                 EL
+ TRACK B : EVM ENGINEER SOLIDITY/-
+ FOUNDRY
+
+
+
+
+                                                            TI
+                                    EN
+    8.1 Philosophie du Track : La Maîtrise du Standard Industriel
+        L’écosystème EVM (Ethereum Virtual Machine) est le socle de l’économie décentralisée
+    mondiale. Ce parcours ne se limite pas à l’apprentissage de la syntaxe Solidity ; il vise
+    à former des ingénieurs capables de naviguer dans la fragmentation des Layer 2 (L2),
+    d’optimiser les coûts de transaction (Gas) et de garantir une sécurité de niveau bancaire.
+   ID
+    8.2 Structure Pédagogique : De la Logique au Durcissement 12 Semaines)
+       Ce track correspond à la phase de spécialisation technique (Semaines 9 à 20) pour les
+    profils choisissant la voie Ethereum.
+ NF
+
+
+    8.2.1 MODULE 1 : Smart Contract Basics & Solidity Deep Dive Semaines 910
+
+       Objectifs : Maîtriser le langage Solidity et ses subtilités de bas niveau.
+       Contenu Technique :
+
+      • Syntaxe & Structure : Variables d’état, fonctions, modifiers, héritage.
+
+      • Gestion de la donnée : Mappings, structs, enums.
+
+      • Sécurité Native : Utilisation rigoureuse de require, revert et assert.
+CO
+
+
+
+
+      • Gas Basics : Comprendre l’Opcodes EVM et l’impact du stockage sur les frais.
+
+       Lab : Création d’un contrat de « Registry » (enregistrement) robuste avec gestion des
+    accès (Ownership).
+       Livrable : Contrat testé sur Remix et scripts de déploiement basiques.
+
+
+
+
+                                                25
+ 8.2.2 MODULE 2 : Environnement de Développement Pro Semaines 1112
+
+     Objectifs : S’affranchir des outils en ligne pour utiliser les frameworks de production.
+     Contenu Technique :
+
+   • Frameworks : Transition de Hardhat vers Foundry (pour la rapidité et les tests en
+
+
+
+
+                                                                            EL
+     Solidity).
+
+   • Workflow Pro : Configuration de chaînes locales, gestion des environnements (.env),
+     CI/CD avec GitHub Actions.
+
+   • Testing avancé : Unit tests, integration tests et mocking de contrats tiers.
+
+    Lab : Setup d’un dépôt « Production-Ready » incluant linting, tests automatiques et
+
+
+
+
+                                                          TI
+ pipeline de déploiement.
+    Livrable : Pipeline CI opérationnel avec une couverture de tests significative.
+
+ 8.2.3 MODULE 3 : Token Standards & Composabilité Semaines 1314
+
+     Objectifs : Implémenter les standards mondiaux et comprendre l’interopérabilité.
+     Contenu Technique :          EN
+   • Standards : ERC-20 (Fungible), ERC-721 (NFT), ERC-1155 (Multi-token).
+
+   • Bibliothèques : Utilisation intensive d’OpenZeppelin pour la sécurité.
+
+   • Access Control : RBAC (Role-Based Access Control) et patterns multi-sig.
+
+    Lab : Création d’un Token ERC-20 avec des règles de distribution personnalisées et
+ un système de « Vault » sécurisé.
+    Livrable : Smart contract auditable, conforme aux standards EIP.
+   ID
+ 8.2.4 MODULE 4 : dApp Development & Web3 Integration Semaines 1516
+
+     Objectifs : Connecter la logique on-chain à des interfaces utilisateurs haut de gamme.
+     Contenu Technique :
+
+   • Libraries : Ethers.js / Web3.js et intégration avec React/Next.js.
+ NF
+
+
+   • Wallet Integration : MetaMask, WalletConnect et gestion des états de session.
+
+   • Transaction Management : Retries, timeouts, pending states et UX claire sur les
+     erreurs de transaction.
+
+     Lab : Développement d’un « Token Dashboard » permettant le Mint, le Transfert et
+ l’Approbation avec une UI réactive.
+     Livrable : Frontend complet gérant proprement les cas d’échec (RPC down, user
+CO
+
+
+
+
+ reject).
+
+ 8.2.5 MODULE 5 : L2 Scaling & Advanced Patterns Semaines 1718
+
+     Objectifs : Optimiser pour l’échelle et réduire les frictions.
+     Contenu Technique :
+
+   • L2 & Sidechains : Déploiement sur Arbitrum, Optimism et Polygon.
+
+
+
+                                              26
+   • Upgradeability : Proxy patterns (Transparent vs UUPS) pour permettre les mises à
+     jour sans perte de données.
+
+   • Oracles : Intégration de flux de prix réels via Chainlink.
+
+     Lab : Migration d’une application de L1 vers un L2 avec intégration d’un oracle de
+
+
+
+
+                                                                          EL
+ prix.
+     Livrable : dApp multi-chain avec logique de proxy.
+
+ 8.2.6 MODULE 6 : Production Hardening & Security Semaines 1920
+
+     Objectifs : Rendre le système « Audit-Ready ».
+     Contenu Technique :
+
+
+
+
+                                                        TI
+   • Vulnérabilités classiques : Re-entrancy, Overflow (anciennes versions), Oracle Mani-
+     pulation.
+
+   • Observabilité : Logs structurés, monitoring on-chain et alertes de sécurité.
+
+   • Incident Handling : Création d’un « Runbook » pour réagir en cas de hack ou de
+     bug en production.          EN
+     Lab : Simulation d’incidents (RPC instable, congestion réseau) et application de cor-
+ rectifs en direct.
+     Projet de fin de Track : Livraison d’une dApp complète, testée et prête pour le
+ Mainnet.
+
+ 8.3 Stack Technique Spécifique
+   • Langages : Solidity (Smart Contracts), TypeScript/JavaScript (Front/Scripts).
+   ID
+   • Frameworks Core : Foundry (Forge, Cast, Anvil), Hardhat.
+
+   • Libraries : OpenZeppelin, Ethers.js.
+
+   • Infrastructure : Infura/Alchemy (Nodes RPC), The Graph (Indexing).
+ NF
+
+
+ 8.4 Profil de Sortie : L’Ingénieur d’Infrastructure EVM
+     L’apprenant certifié Track B possède les compétences pour :
+
+   • Développer des protocoles DeFi complexes et sécurisés.
+
+   • Gérer des déploiements multi-chain sur des solutions de Layer 2.
+
+   • Collaborer avec des auditeurs externes en fournissant une documentation technique
+     et des tests de haute qualité.
+CO
+
+
+
+
+                                            27
+                                                                            EL
+                                                          TI
+                                 EN
+ 9.1 Smart Contract Engineer & Auditor Le « Guardian »)
+     Mission : Concevoir, développer et sécuriser des smart contracts critiques (fonds,
+ tokens, protocoles). L’audit est le métier à plus forte valeur ajoutée et le plus résistant
+ à l’automatisation par l’IA. L’ingénieur doit être capable de gérer des millions de dollars
+ d’AUM (Assets Under Management).
+   ID
+     Compétences Clés :
+
+   • Stack : Rust profond (Solana/Anchor) ou Solidity avancé (EVM/Foundry).
+
+   • Sécurité : Maîtrise des vecteurs d’attaque historiques (Re-entrancy, Oracle mani-
+     pulation), utilisation d’outils de vérification formelle (Certora, Soteria) et de fuzzing
+     (Trident).
+ NF
+
+
+   • Analyse : Rédaction de spécifications techniques et de rapports d’audit profession-
+     nels avec classification de sévérité.
+
+    Différenciation : Ce n’est pas un « codeur », c’est un ingénieur en sécurité financière
+ décentralisée capable d’identifier des failles logiques subtiles que l’IA ignore.
+    Perspective de Salaire (Remote Global) : 100k$ – 250k$ / an.
+CO
+
+
+
+
+ 9.2 Protocol & Ecosystem Strategist Le « Visionnaire »)
+    Mission : Analyser, investir et contribuer stratégiquement à des protocoles Web3.
+ Aider les projets à concevoir leur architecture économique (Tokenomics) et leur stratégie
+ de croissance on-chain.
+    Compétences Clés :
+
+   • Analyse Financière : Modélisation économique complexe, théorie des jeux et de-
+     sign de mécanismes d’incitation.
+
+
+
+                                             28
+    • Outils : Simulation sur Machinations.io et création de dashboards de KPIs (TVL,
+      rétention) via SQL sur Dune Analytics.
+    • Rédaction : Production de rapports de recherche (Research) et de Whitepapers.
+     Différenciation : Une hybridation rare entre la finance, la stratégie et la tech. Profil
+ très recherché par les fonds d’investissement (VCs) et les DAOs.
+     Perspective de Salaire (Remote Global) : 60k$ – 120k$ / an.
+
+ 9.3 Web3 Product Builder / Entrepreneur
+
+
+
+
+                                                         EL
+     Mission : Identifier un problème de marché, concevoir une solution décentralisée et
+ assembler une équipe pour la construire. Il gère la roadmap technique, communautaire et
+ économique, de l’idée au MVP (Minimum Viable Product).
+     Compétences Clés :
+    • Management : Gestion de projet agile, management de produit Web3.
+
+
+
+
+                                                       TI
+    • Tech : Fondamentaux techniques suﬀisants pour piloter des développeurs et utiliser
+      l’IA pour le prototypage rapide.
+    • Growth : Growth hacking communautaire et marketing on-chain.
+                                   EN
+    Différenciation : C’est un entrepreneur qui utilise la blockchain comme un outil
+ souverain, capable de lancer une startup Web3 en 48h grâce aux Blinks et Actions.
+
+ 9.4 Solana dApp Engineer Front Web3
+    Mission : Construire des interfaces haut de gamme qui signent, envoient et suivent
+ des transactions, lisent des actifs on-chain et gèrent les états des portefeuilles (wallets).
+                        D
+    Compétences Clés :
+    • Stack : TypeScript, React/Next.js, Tailwind CSS.
+    • Web3 Integration : Solana Wallet Adapter, Mobile Wallet Adapter (MWA), inté-
+            FI
+
+      gration de protocoles DeFi/NFT existants via SDKs (Helius, Jupiter).
+    • UX : Gestion des erreurs, fallback providers et expérience utilisateur « sans fric-
+      tion ».
+ N
+
+
+
+    Différenciation : Expertise dans l’intégration propre des transactions et de la data
+ on-chain (DAS API), garantissant une UX stable même en cas de congestion réseau.
+ O
+
+
+
+
+ 9.5 Tokenization & DePIN Architect
+     Mission : Concevoir l’architecture technique et économique pour la tokenisation d’ac-
+ tifs réels (RWA) ou le déploiement de réseaux d’infrastructures physiques décentralisés
+ (DePIN).
+C
+
+
+
+
+     Compétences Clés :
+    • Techno : Maîtrise de Token-2022, des extensions de jetons (Transfer Hooks) et des
+      actifs numériques programmables.
+    • Système : Intégration Hardware/IoT et gestion des données de capteurs on-chain.
+     Différenciation : Expert de la transformation numérique des entreprises tradition-
+ nelles vers l’économie on-chain.
+     Perspective de Salaire (Remote Global) : 90k$ – 160k$ / an.
+
+                                              29
+ 9.6 Web3 QA & Test Automation Engineer
+     Mission : Garantir la fiabilité totale des dApps et des contrats avant le déploiement
+ sur le Mainnet.
+     Compétences Clés :
+
+
+
+
+                                                                         EL
+   • Automation : Mise en place de pipelines CI/CD, frameworks de tests (Anchor tests,
+     Foundry tests).
+
+   • Scénarios : Simulation de pannes RPC, de rejets utilisateur et de transactions
+     échouées.
+
+   • Preuves : Production de rapports de couverture de tests et de « Release Readiness
+     Checklists ».
+
+
+
+
+                                                        TI
+ 9.7 Developer Advocate & Technical Writer
+     Mission : Produire la documentation, les tutoriels et les SDK samples pour un proto-
+ cole afin de faciliter l’adoption par d’autres développeurs.
+     Compétences Clés :
+                                 EN
+   • Pédagogie : Capacité à vulgariser des concepts techniques complexes (PDAs, CPIs).
+
+   • Community : Support développeur et animation de workshops.
+
+    Différenciation : Un profil hybride entre l’ingénierie et la communication, essentiel
+ pour la croissance de tout écosystème Web3.
+   ID
+ NF
+CO
+
+
+
+
+                                            30
+                                                                                     10
+
+
+                                                                              EL
+ CAPSTONES PROJETS SIGNATURES
+
+
+
+
+                                                            TI
+                                    EN
+   10.1 Philosophie du Capstone : Le Standard « Studio »
+       Le projet final n’est pas un exercice de code, c’est une incubation de produit. Il doit
+   démontrer une maîtrise complète de la pile technologique choisie (EVM ou Solana) et
+   inclure systématiquement quatre piliers :
+   ID
+      1. Smart Contracts / Programmes : Logique métier robuste et optimisée.
+
+      2. Frontend dApp : Interface utilisateur (web + mobile readiness) avec intégration
+         wallet.
+
+      3. Sécurité & Hardening : Threat modeling, validations et gestion des erreurs.
+ NF
+
+
+      4. Audit Report : Un rapport d’audit interne prouvant la fiabilité du code.
+
+   10.2 Les 3 Projets Signatures Cahier des Charges)
+      Les étudiants choisissent l’une des trois thématiques suivantes, déclinables sur l’écosys-
+   tème de leur spécialisation.
+
+   10.2.1   Ô Capstone 1 — Wallet & Transaction Reliability Pack
+CO
+
+
+
+
+       Objectif : Résoudre le problème n°1 des dApps actuelles : l’instabilité face aux condi-
+   tions réelles du réseau.
+       Fonctionnel :
+
+      • Connexion multi-wallet fluide.
+
+      • Gestion de session (reconnexion, déconnexion, changement de compte).
+
+      • Cycle de vie complet de la transaction : Simulation → Envoi → Confirmation →
+        Timeline de statut en temps réel.
+
+                                                31
+     Technique : Machine à états (State Machine) testable, gestion des timeouts et retry
+ policies.
+     Livrable « Signature » : Une page de diagnostics aﬀichant le statut RPC et la
+ détection de wallet.
+
+
+
+
+                                                                           EL
+ 10.2.2   Ô Capstone 2 — Tokenization & Admin Control Center RWA/Token-2022
+    Objectif : Prouver la capacité à gérer des actifs numériques complexes et leur gouver-
+ nance opérationnelle.
+    Fonctionnel :
+
+   • Création et configuration de tokens (ERC-20/721 ou SPL Token-2022).
+
+   • Distribution contrôlée (vesting, quotas, listes d’autorisation).
+
+
+
+
+                                                         TI
+   • Console d’administration complète pour les opérations (Mint/Transfer) avec RBAC
+     (Role-Based Access Control).
+
+     Technique : Journalisation des opérations (audit trail) et exports de données (CSV/on-
+ chain).
+     Projet Spécifique Visionnaire : « Tunis Safe-Pay » — Un escrow intelligent pour
+                                 EN
+ freelances sécurisant les paiements en stablecoins.
+
+ 10.2.3   Ô Capstone 3 — Digital Assets & Utility Ecosystem NFT/Gating)
+    Objectif : Concevoir un produit utilisant les NFTs non comme spéculation, mais
+ comme outil d’accès ou de certification.
+    Fonctionnel :
+   ID
+   • Lecture et indexation des métadonnées d’actifs.
+
+   • Système de « Gating » : accès à des zones réservées basé sur la possession d’un actif
+     (Pass, Certificat, Ticket).
+
+   • Tableau de bord utilisateur « My Assets » haute performance.
+
+    Technique : Gestion du cache et des fallbacks de providers pour éviter les écrans
+ NF
+
+
+ vides.
+    Projet Spécifique Visionnaire : « Solana Action Hub » — Une suite de Blinks
+ pour monétiser du contenu social directement sur X/Twitter.
+
+ 10.3 Spécifications techniques et « Gates » de validation
+     Pour être validé, un projet doit passer les « Quality Gates » du Studio :
+CO
+
+
+
+
+   • Zéro Merge sans Review : Aucune ligne de code n’entre en branche principale
+     sans revue par un pair et validation IA.
+
+   • Zéro Merge sans Tests : Suite de tests unitaires et d’intégration obligatoire (An-
+     chor tests ou Foundry tests).
+
+   • Checklist Sécurité : Validation systématique de la surface d’attaque (permissions,
+     invariants documentés).
+
+
+
+
+                                             32
+ 10.4 Critères d’Acceptation Production-Like)
+   • Robustesse : 0 crash sur 20 scénarios d’erreurs imposés (ex : RPC down, rejet
+     utilisateur, blockhash expiré).
+
+   • UX/CX : Intégration wallet documentée et utilisable en moins de 15 minutes par
+
+
+
+
+                                                                         EL
+     un développeur externe.
+
+   • Documentation : README complet incluant setup, runbook incident et architec-
+     ture decision records (ADR).
+
+ 10.5 Le Demo Day International
+    Le point final du capstone est la présentation devant un panel d’investisseurs (Foun-
+
+
+
+
+                                                       TI
+ dations, VCs) et de recruteurs de l’écosystème global (Superteam).
+
+   • Le Pitch Technique : Expliquer les compromis performance/sécurité choisis.
+
+   • La Démo Live : Prouver que le produit fonctionne sur un Testnet public.
+
+   • Le Rapport d’Audit : Remettre le « Security Package » prouvant que l’étudiant
+                                EN
+     pense comme un ingénieur senior.
+
+        ʷ
+
+        Annotation Stratégique Les Capstones ne sont pas des projets académiques.
+        Ce sont des produits incubés qui peuvent devenir de vraies startups financées
+        lors du Demo Day. RBK prend une participation minoritaire (5-10%) dans les
+        projets qui lèvent des fonds, créant ainsi un modèle de revenus « Long Tail ».
+   ID
+ NF
+CO
+
+
+
+
+                                           33
+                                                                                       11
+
+
+
+                                                                             EL
+ BUSINESS PLAN : VOLET FINANCIER
+
+
+
+
+                                                            TI
+                                    EN
+        Le succès financier du « Web3 Expert & Builder Programme » repose sur un équi-
+    libre entre des coûts opérationnels maîtrisés (grâce à l’IA) et une valeur perçue élevée
+    permettant des marges significatives.
+
+    11.1   Ƥ Investissement Initial CAPEX - Phase de Lancement)
+   ID
+       L’investissement est réparti sur les trois mois précédant le lancement de la première
+    promotion (Promo Alpha).
+
+    11.2   Ƥ Charges d’Exploitation OPEX - Par Promotion de 20 Apprenants)
+       Les charges sont calculées sur un cycle de 6-7 mois intensifs.
+ NF
+
+
+    11.2.1 A. Charges de Personnel 76 000 TND
+
+    11.2.2 B. Frais de Fonctionnement et Services 35 000 TND
+
+       TOTAL OPEX (Variables + Fixes) : 111 000 TND par promotion.
+
+    11.3   ˄ Modèle de Revenus et Recettes
+       Le positionnement tarifaire reflète le potentiel de salaire international (5x à 10x le
+CO
+
+
+
+
+    marché local).
+
+    11.4   ƥ Projection des Flux de Trésorerie Cash Flow) - 3 Ans
+       Hypothèse de croissance : Année 1 (1 promo), Année 2 (2 promos), Année 3 (3 promos).
+
+    11.5   Ǒ Analyse du Seuil de Rentabilité Break-Even)
+      • Coût total pour la 1ère promo (CAPEX + OPEX) : 161 000 TND.
+
+
+                                                34
+  Poste de Dépense                Coût Estimé (TND)         Détails Techniques & Jus-
+                                                            tification
+  Développement du Curricu-                        15 000   Rémunération des experts
+  lum                                                       (EVM/Solana) pour la créa-
+                                                            tion des modules, des « Gol-
+
+
+
+
+                                                                          EL
+                                                            den Templates » et des labs
+                                                            reproductibles.
+  Équipement & Infrastructure                      20 000   Amélioration des postes de
+                                                            travail, acquisition de li-
+                                                            cences logicielles (IDE IA),
+                                                            et abonnement aux services
+                                                            de nœuds RPC premium (He-
+                                                            lius, Alchemy, QuickNode).
+
+
+
+
+                                                         TI
+  Marketing & Acquisition                          15 000   Campagnes LinkedIn/Twit-
+                                                            ter ciblées, organisation du
+                                                            meetup de lancement, et
+                                                            production de contenu de
+                                                            marque (vidéos, articles).
+  TOTAL        INVESTISSE-       EN               50 000    Amortissement prévu sur les
+  MENT                                                      3 premières promotions (16
+                                                            666 TND / promo).
+
+                        Tab. 11.1 : Investissement Initial (CAPEX)
+
+  Poste                                                               Montant (TND)
+  Directeur Pédagogique / Head of Ecosystem                                    40 000
+  Responsable Administratif & Logistique                                       24 000
+   ID
+  Mentors Techniques (Consultants)                                             12 000
+  TOTAL PERSONNEL                                                             76 000
+
+                     Tab. 11.2 : Charges de Personnel par Promotion
+
+   • Revenu moyen par étudiant : 15 400 TND.
+ NF
+
+
+   • Nombre d’étudiants pour atteindre l’équilibre (Année 1) : 10,4 (soit 11
+     étudiants).
+
+ 11.6 Notes et Hypothèses Stratégiques
+ 11.6.1 Levier ISA Income Share Agreement)
+
+     Le modèle financier prévoit d’introduire des contrats de partage de revenus.
+CO
+
+
+
+
+   • Condition : L’étudiant ne paie rien ou une partie minime, puis reverse 15% de son
+     salaire pendant 2 ans dès qu’il dépasse un seuil de 3 000 TND/mois.
+
+   • Impact : Augmente le volume d’apprenants d’élite et assure des revenus récurrents
+     sur l’Année 2 et 3.
+
+ 11.6.2 Revenus « Studio » Success Fees)
+
+    RBK prend une participation minoritaire (5%) dans les projets incubés qui lèvent des
+ fonds lors du Demo Day.
+
+                                            35
+  Poste                                                               Montant (TND)
+  Services Cloud & Outils IA                                                    5 000
+  Marketing récurrent & Demo Day                                               10 000
+  Frais de Certification                                                       10 000
+  Contingence (10%)                                                            10 000
+
+
+
+
+                                                                           EL
+  TOTAL FONCTIONNEMENT                                                        35 000
+
+                    Tab. 11.3 : Frais de Fonctionnement par Promotion
+
+  Type de Billet      Prix Unitaire (TND)            Volume (Prévu)        Total (TND)
+  Prix Plein (Public)                18 000                       8              144 000
+  Prix Early Bird /                  15 000                      10              150 000
+  Alumni
+
+
+
+
+                                                         TI
+  Bourses / ISA (Pon-                 7 000                            2           14 000
+  déré)
+  RECETTES TO-                                               20 Élèves           308 000
+  TALES (1 PRO-
+  MO)
+                                 EN
+                     Tab. 11.4 : Structure des Revenus par Promotion
+
+
+    Potentiel : Sur 75 étudiants/an, si 2 startups lèvent 100k$ (Seed Grant), RBK perçoit
+ 5k$ par projet, soit 30k TND de revenus passifs.
+
+ 11.6.3 Optimisation par l’IA
+
+     Les coûts de personnel mentor sont maintenus à un niveau bas (12k par promo) car l’IA
+ assiste 80% des revues de code basiques, permettant aux mentors humains de se concentrer
+   ID
+ uniquement sur l’audit stratégique et l’architecture de haut niveau.
+
+        ʷ
+
+        Annotation pour le CEO Ce Business Plan montre un ROI immédiat. Le Stu-
+        dio s’autofinance dès le 6ème mois d’activité. La scalabilité est assurée par le
+ NF
+
+
+        passage à un modèle multi-cohortes en Année 2.
+CO
+
+
+
+
+                                            36
+                                                                   EL
+ IndicateursAnnée 1 (1 Promo)      Année 2 (2 Promos)        Année 3 (3 Promos)
+ Finan-
+ ciers
+ Nombre                      20                         50                   75
+
+
+
+
+                                                    TI
+ d’Étu-
+ diants
+ Chiffre                308 000                    770 000             1 155 000
+ d’Affaires
+ Revenus                 10 000                     40 000               100 000
+ Com-
+ plémen-                     EN
+ taires
+ (Grants,
+ Success
+ Fees, Au-
+ dit)
+ TOTAL                 318 000                   810 000              1 255 000
+ REVE-
+ NUS
+   ID
+ OPEX                 (111 000)                  (250 000)             (350 000)
+ (Coûts
+ promos)
+ CAPEX                 (50 000)                   (10 000)              (20 000)
+ (Invest.
+ initial)
+ NF
+
+
+ Marge                 157 000                   550 000                885 000
+ Brute
+ (EBIT-
+ DA)
+ Bénéfice              141 300                   495 000                796 500
+ Net
+ (Est.)
+CO
+
+
+
+
+                   Tab. 11.5 : Projections Financières sur 3 Ans
+
+
+
+
+                                        37
+                                                                                    12
+
+
+                                                                             EL
+ STRATÉGIE MARKETING & ACQUISI
+ TION
+
+
+
+
+                                                            TI
+    12.1
+                                    EN
+           Ý Positionnement de Marque : « Senior-by-Design »
+       Le positionnement rompt avec le marketing traditionnel des bootcamps de code. RBK
+    ne vend pas de la « syntaxe », mais de la « confiance architecturale ».
+
+      • Slogan suggéré : « Devenez un leader de l’économie décentralisée : architecte de
+   ID
+        protocoles, stratège en tokenomics ou entrepreneur Web3. »
+
+      • Axe de communication principal : La montée en gamme face à l’IA. « L’IA
+        remplace les codeurs, pas les architectes. Devenez indispensable. »
+
+      • Identité visuelle : Un « Web3 Studio » haut de gamme, une filière d’excellence
+        (Forge d’élite) plutôt qu’une école de masse.
+ NF
+
+
+      • Discours de conformité : Positionnement strict sur le « Software Engineering
+        Export ». On évite toute promesse liée au trading ou à la spéculation financière pour
+        se concentrer sur l’ingénierie exportable, garantissant une image propre vis-à-vis des
+        régulateurs (BCT).
+
+    12.2   í Segments de Marché Cibles
+       Le recrutement est hautement sélectif et cible quatre profils spécifiques en Tunisie et
+CO
+
+
+
+
+    dans la région MENA :
+
+      1. Alumni RBK (Priorité 1) : Plus de 1000 développeurs déjà formés aux bases du
+         Full-Stack JS, cherchant une spécialisation de pointe pour augmenter leur salaire.
+
+      2. Développeurs Professionnels (2-5 ans d’expérience) : Ingénieurs en poste
+         dans des SSII/ESN souhaitant pivoter vers le Web3 pour accéder au marché du
+         travail global en remote.
+
+
+
+                                               38
+   3. Jeunes Diplômés d’Écoles d’Élite : Étudiants issus d’écoles comme ESPRIT,
+      INSAT, MSB ou Polytech, possédant un fort potentiel STEM et une appétence pour
+      l’innovation.
+
+   4. Entrepreneurs Tech : Profils souhaitant maîtriser la tokenisation pour lancer leur
+      propre projet souverain ou MVP sur Solana/EVM.
+
+
+
+
+                                                                          EL
+ 12.3   Ý Canaux d’Acquisition et Tactiques de Lead Gen
+ 12.3.1 A. Marketing de Contenu Thought Leadership)
+
+   • Série Vidéo/Podcast : « L’avenir du développement après l’IA » et « Web3 : la
+     nouvelle frontière tech », animés par des experts du réseau Solana et EVM.
+
+
+
+
+                                                         TI
+   • Études de cas (Proof of Work) : Publication d’analyses techniques sur des protocoles
+     existants pour démontrer la profondeur académique du Studio.
+
+   • On-chain Resume : Communication sur les réussites des diplômés (salaires en USDC,
+     grants obtenus).
+
+ 12.3.2 B. Canaux Sociaux et Écosystémiques
+                                EN
+   • LinkedIn : Ciblage publicitaire ultra-précis sur les titres « Software Engineer » en
+     Tunisie.
+
+   • Twitter/X : Canal natif du Web3. Utilisation de la réputation de l’expert Solana
+     Advocate pour attirer les profils passionnés.
+
+   • Discord/Telegram : Création d’un hub communautaire « Tunisian Web3 Builder »
+     pour nourrir les leads avant le lancement.
+   ID
+ 12.3.3 C. Partenariats Académiques et Institutionnels
+
+   • Accréditation de fait : Signature de MOU (Protocole d’accord) avec des universités
+     pour présenter le programme en fin de cursus ingénieur.
+
+   • Label Fondation : Approcher la Solana Foundation et Developer DAO pour créer un
+ NF
+
+
+     chapitre éducatif oﬀiciel à Tunis, apportant une crédibilité internationale immédiate.
+
+ 12.4   Événements et Immersion
+   • Tunisian Web3 Builder Meetup : Organisation d’événements trimestriels ouverts
+     au public pour générer des leads.
+
+   • Hackathons Internes : « Demo Days » ouverts aux recruteurs et investisseurs
+     pour créer un effet de rareté et d’exclusivité.
+CO
+
+
+
+
+   • Ateliers « Vibe Coding Responsible » : Séminaires gratuits montrant comment
+     l’IA et le Web3 se complètent, servant de produit d’appel (Lead Magnet).
+
+ 12.5 Argumentaire de Vente USP - Unique Selling Propositions)
+ 12.6 Stratégie de Pricing Angle Marketing)
+   • Prix Premium Justifié : Le prix (18 000 TND) est présenté comme un investis-
+     sement avec un ROI rapide (remboursé en 3-4 mois de salaire remote).
+
+                                            39
+ Pour l’étudiant                               Pour l’entreprise/écosystème
+ Accès au « Hidden Job Market » :              Vivier Pré-qualifié : Accès à des talents
+ Connexion directe avec les recruteurs via     ayant déjà une « Proof of Work » on-chain.
+ Superteam.
+ Salaire International : Préparation spéci-    Expertise Sécurité : Ingénieurs formés au
+
+
+
+
+                                                                          EL
+ fique aux entretiens pour des postes payés    durcissement (Hardening) et à l’audit.
+ 5x le marché local.
+ Mentorat d’Élite : « Oﬀice Hours » avec       Partenariat de Recherche : RBK comme
+ des développeurs core de Solana/Ethe-         laboratoire d’innovation sur les ZK-proofs
+ reum.                                         ou RWA.
+
+                       Tab. 12.1 : Proposition de Valeur Unique
+
+
+
+
+                                                        TI
+  • Offre Pilote (Promo Alpha) : Prix préférentiel (Early Bird) à 15 000 TND pour
+    les 15 premiers inscrits afin de créer une dynamique de lancement.
+
+  • Garantie de Succès : Option « Trouve un emploi ou remboursé » (sous conditions
+    de livraison de projets) pour la promo Alpha, servant de preuve sociale massive.
+                               EN
+  Annotation Stratégique La force du marketing RBK 2.0 repose sur le réseau. En
+  devenant le hub de Superteam en Tunisie, RBK ne vend plus une formation, mais
+  un droit d’entrée dans une guilde mondiale de bâtisseurs.
+   ID
+ NF
+CO
+
+
+
+
+                                          40
+                                                                                      13
+
+
+                                                                               EL
+ ANALYSE DES RISQUES & ATTÉNUA
+ TION
+
+
+
+
+                                                             TI
+                                     EN
+        Le déploiement du programme s’opère à l’intersection de trois domaines mouvants :
+    l’innovation technologique (Web3), la révolution de l’IA et le cadre réglementaire tunisien.
+    Voici l’analyse exhaustive des risques identifiés et les stratégies de réponse associées.
+
+    13.1   } Risques Macro-Environnementaux & Réglementaires
+   ID
+    13.1.1 A. Incertitude Réglementaire en Tunisie Risque : Élevé)
+
+        Description : La Banque Centrale de Tunisie (BCT) et le cadre législatif actuel sont
+    perçus comme restrictifs ou incertains concernant l’usage public et la détention de crypto-
+    actifs.
+        Mitigation :
+ NF
+
+
+      • Positionnement « Software Export » : Le programme est vendu comme une formation
+        d’ingénierie logicielle destinée à l’exportation de services numériques.
+
+      • Focus Devnet/Testnet : L’essentiel de la formation se déroule sur des environnements
+        de test sans valeur monétaire réelle.
+
+      • Conformité Financière : Utilisation de solutions comme Bitwage ou Grey.co pour
+        permettre aux diplômés de rapatrier leurs salaires internationaux (en devises) de
+CO
+
+
+
+
+        manière 100% légale et transparente via virement bancaire classique, respectant les
+        procédures de rapatriement de devises.
+
+    13.1.2 B. Volatilité du Marché Web3 Risque : Moyen)
+
+        Description : Les cycles de « Bear Market » peuvent réduire temporairement les
+    investissements des fondations et les offres d’emploi.
+        Mitigation :
+
+
+
+
+                                                41
+   • Compétences Transférables : L’enseignement de Rust et de l’ingénierie système ga-
+     rantit que les diplômés restent des profils « Elite » hautement employables dans le
+     Web2 traditionnel (systèmes critiques, IA, Cloud) si le marché Web3 ralentit.
+
+ 13.2   Á Risques Technologiques & Pédagogiques
+
+
+
+
+                                                                           EL
+ 13.2.1 C. Menace de l’IA et du « Vibe Coding » Risque : Élevé)
+
+    Description : L’automatisation du code rend les compétences de « junior codeur »
+ obsolètes, menaçant la valeur perçue de la formation.
+    Mitigation :
+
+   • Paradigme « Senior-by-Design » : Intégration de l’IA non comme une triche, mais
+     comme un assistant. Le programme se concentre sur l’Architecture, l’Audit et la
+
+
+
+
+                                                          TI
+     Sécurité, zones où l’IA échoue sans supervision humaine experte.
+
+   • La « Piscine » Rust : Une phase initiale de 4 semaines sans IA pour graver les
+     fondamentaux algorithmiques dans l’esprit des apprenants.
+
+ 13.2.2 D. Obsolescence Rapide des Protocoles Risque : Moyen)
+
+
+ nouvelles extensions Solana).
+    Mitigation :
+                                  EN
+    Description : La technologie Web3 évolue chaque mois (ex : passage à Token-2022,
+
+
+
+   • Curriculum Modulaire : Révision du syllabus avant chaque promotion.
+
+   • Veille Écosystémique : Connexion directe avec la Solana Foundation et les équipes
+     Core Dev via le réseau de mentors pour intégrer les dernières normes en temps réel.
+   ID
+ 13.3   Á Risques Opérationnels & Humains
+ 13.3.1 E. Défection de Mentors Clés Risque : Moyen)
+
+     Description : Les experts Web3 sont rares et très sollicités à l’international.
+     Mitigation :
+ NF
+
+
+   • Rémunération de Marché : Package attractif incluant une part variable sur le succès
+     de la promo.
+
+   • Pool de Réserve : Constitution d’un réseau international de « Guest Lecturers »
+     via la Superteam (Allemagne, UK, UAE) capables d’intervenir en remote en cas de
+     besoin.
+
+   • Documentation « Or » : Toutes les sessions et templates sont documentés pour
+     assurer la continuité pédagogique.
+CO
+
+
+
+
+ 13.3.2 F. Déficit d’Inscriptions pour la Promo Pilote Risque : Moyen)
+
+     Description : Le prix premium (18 000 TND) peut freiner certains candidats malgré
+ le potentiel de salaire.
+     Mitigation :
+
+   • Ciblage Alumni : Priorité au réseau RBK (+1000 profils) avec offre Early Bird.
+
+
+
+                                             42
+   • Garantie de Succès : « Trouve un emploi ou remboursé » pour la Promo Alpha (sous
+     conditions de livraison).
+
+   • Bourses d’Excellence : Financement de 1-2 places par promo pour attirer les « stars »
+     techniques.
+
+
+
+
+                                                                          EL
+ 13.4 Risques d’Insertion Professionnelle
+ 13.4.1 G. Mauvaise Perception des Talents Tunisiens en Remote Risque : Faible)
+
+    Description : Diﬀiculté pour les entreprises US/EU à faire confiance à des profils
+ basés en Afrique du Nord.
+    Mitigation :
+
+
+
+
+                                                           TI
+   • Preuve par le Code : Utilisation du portfolio GitHub et des contributions Open
+     Source comme seul critère de sélection.
+
+   • Certification Solana oﬀicielle : Financement du passage des certifications reconnues
+     mondialement.
+
+   • Partenariat Superteam : Accès direct aux « Bounties » payées pour prouver la valeur
+                                 EN
+     opérationnelle dès la formation.
+
+ 13.4.2 Synthèse de la Matrice des Risques
+
+
+  Risque                         Probabilité      Impact   Stratégie Clé
+  Régulation Locale               Moyenne          Élevé   Positionnement « Export
+                                                           d’Ingénierie ».
+  Obsolescence Tech                  Haute        Moyen    Curriculum modulaire &
+   ID
+                                                           Veille active.
+  Menace IA                          Haute         Élevé   Montée en gamme vers l’Ar-
+                                                           chitecture/Audit.
+  Manque de Mentors                Moyenne         Élevé   Pool international via Super-
+                                                           team.
+ NF
+
+
+               Tab. 13.1 : Matrice des Risques et Stratégies d’Atténuation
+
+
+
+    Annotation Stratégique L’analyse montre que le plus gros risque (la régulation) est
+    atténué par un positionnement métier clair, tandis que le risque technologique est
+    transformé en opportunité marketing via la maîtrise de l’IA.
+CO
+
+
+
+
+                                             43
+                                                                                        14
+
+
+                                                                                  EL
+ FEUILLE DE ROUTE : LE PLAN DE LANCE
+ MENT 90 JOURS
+
+
+
+
+                                                               TI
+                                      EN
+        Le plan est divisé en trois phases de 30 jours, chacune avec des livrables non négociables
+    et des jalons de décision pour le CEO.
+
+    14.1     MOIS 1 : CADRAGE, ALLIANCE & ÉQUIPE NOYAU J0 - J30
+        L’objectif est de verrouiller la structure juridique, financière et partenariale.
+   ID
+    14.1.1   Validation & Cadrage Stratégique
+
+       • Présentation et validation finale du Business Plan par le CEO et le conseil d’admi-
+         nistration.
+
+       • Arbitrage sur le modèle de financement étudiant (ISA vs Paiement classique vs Prêts
+ NF
+
+
+         bancaires).
+
+    14.1.2 Constitution de l’Alliance Écosystémique
+
+       • Action Clé : Signature d’un MOU (Protocole d’accord) avec la Solana Foundation
+         pour l’accréditation « Educational Partner ».
+
+       • Dépôt de candidature pour opérer le chapitre oﬀiciel Superteam Tunisia.
+CO
+
+
+
+
+       • Négociation avec des universités d’élite (ESPRIT, MSB, Polytech) pour l’accrédita-
+         tion académique ou des passerelles de fin d’études.
+
+    14.1.3 Recrutement de l’Équipe Pilote
+
+       • Recrutement du Lead Instructor / Head of Curriculum (Expert Rust/Solana).
+
+       • Désignation d’un Responsable Administratif & Logistique dédié au Studio.
+
+
+
+                                                  44
+   • Identification du pool de mentors internationaux (Guest Lecturers) via le réseau
+     Superteam (UK, Allemagne, UAE).
+
+ 14.2 MOIS 2 : PRODUCTION DE L’ARSENAL & INFRASTRUCTURE J31 - J60
+     L’objectif est de bâtir l’infrastructure technique et les contenus de référence.
+
+
+
+
+                                                                             EL
+ 14.2.1 Ingénierie Pédagogique Les « Golden Templates »)
+
+   • Rédaction détaillée des syllabus pour le Tronc Commun et les Tracks A (Solana) &
+     B (EVM).
+
+   • Création des dépôts GitHub de référence (repos « or ») incluant les architectures de
+     base, les tests de sécurité et les pipelines CI/CD.
+
+
+
+
+                                                           TI
+   • Élaboration des « Incident Drills » (simulations de hacks pour les exercices du ven-
+     dredi).
+
+ 14.2.2 Mise en place du Cockpit Technique
+
+   • Configuration des accès aux Nodes RPC premium (Helius pour Solana, Alchemy/In-
+                                   EN
+     fura pour EVM).
+
+   • Acquisition des licences pour les outils d’IA (Cursor, Windsurf) et de simulation
+     (Machinations.io).
+
+   • Installation du LMS (Learning Management System) et du serveur Discord comme
+     hub de communication principal.
+   ID
+ 14.2.3 Lancement Commercial & Marketing
+
+   • Mise en ligne du site web dédié au programme.
+
+   • Lancement de la campagne marketing « Elite Only » sur LinkedIn et Twitter (X).
+
+   • Organisation du premier « Tunisian Web3 Builder Meetup » pour générer des leads
+     qualifiés.
+ NF
+
+
+ 14.3 MOIS 3 : SÉLECTION & LANCEMENT « PROMO ALPHA » J61 - J90
+     L’objectif est de filtrer les talents et de démarrer l’immersion.
+
+ 14.3.1 Processus de Sélection d’Élite
+
+   • Tests techniques de pré-requis (JS/TS intensif).
+CO
+
+
+
+
+   • Entretiens de motivation pour évaluer la pensée systémique et l’autonomie.
+
+   • La « Piscine » Rust : Lancement de la phase de filtrage intensif de 4 semaines sans
+     IA pour les 20-25 candidats présélectionnés.
+
+
+
+
+                                              45
+ 14.3.2 Finalisation de la Cohorte
+
+   • Sélection finale de la Cohorte Alpha (15 à 20 profils maximum pour garantir l’excel-
+     lence).
+
+   • Signature des contrats (incluant les clauses ISA le cas échéant).
+
+
+
+
+                                                                          EL
+   • Onboarding sur Superteam Earn pour que les étudiants voient les premières oppor-
+     tunités de revenus dès le début.
+
+ 14.3.3 Kick-off Opérationnel
+
+   • Cérémonie de lancement en présence de partenaires de l’écosystème.
+
+
+
+
+                                                         TI
+   • Début de la Phase 1 (Fondations & Mentalité On-chain).
+
+ 14.4     RÉCAPITULATIF DES JALONS CLÉS MILESTONES
+
+  Délai    Jalon (Milestone)                       Impact
+  J+15     MOU Solana Foundation signé
+                                 EN                Crédibilité internationale immédiate.
+  J+30     Équipe pédagogique complète             Capacité de production activée.
+  J+45     Golden Templates livrés                 Standard de qualité « Senior-by-
+                                                   Design » fixé.
+  J+60     100 leads qualifiés générés             Sécurité du taux de remplissage.
+  J+75     Fin de la « Piscine » Rust              Cohorte d’élite validée.
+  J+90     Lancement oﬀiciel Promo Alpha           Début de la transformation de RBK.
+
+                      Tab. 14.1 : Jalons Clés du Plan de Lancement
+   ID
+    Annotation Stratégique Ce plan de 90 jours est agressif mais réaliste. Il repose sur
+    l’utilisation intensive des ressources existantes de RBK (locaux, réseau alumni) et
+    sur l’apport d’expertise Web3 externe pour l’ingénierie de contenu.
+ NF
+CO
+
+
+
+
+                                            46
+                                                                                       15
+
+
+                                                                                EL
+ ÉLÉMENTS DE DIFFÉRENCIATION RBK
+
+
+
+
+                                                             TI
+                                     EN
+        Le RBK Web3 Studio ne se contente pas d’ajouter une couche technologique à un cursus
+    existant. Il redéfinit l’excellence pédagogique en s’appuyant sur six axes de différenciation
+    majeure, extraits directement de la vision stratégique et du modèle opérationnel.
+
+    15.1   Le Paradigme « Senior-by-Design »
+   ID
+       Contrairement aux bootcamps traditionnels qui produisent des développeurs juniors
+    pour un marché saturé, RBK forme des Product Engineers et des Ecosystem Architects.
+
+      • Dépassement du code : L’enseignement ne porte pas sur la syntaxe (déléguée
+        à l’IA), mais sur la conception systémique, l’audit de sécurité, la tokenomics et la
+        gouvernance.
+ NF
+
+
+      • Responsabilité technique : L’apprenant est formé pour être le « Pilote dans
+        l’avion », capable de valider des architectures complexes gérant des millions de dollars
+        de valeur.
+
+    15.2 L’Approche « Cyborg » : IAAugmented Engineering
+       RBK est la seule institution à intégrer l’IA non pas comme un accessoire, mais comme
+    une exigence de production.
+CO
+
+
+
+
+      • Productivité x10 : En utilisant les outils de « Vibe Coding » de manière respon-
+        sable (Cursor, Windsurf), les étudiants apprennent à prototyper en quelques minutes
+        pour consacrer 90% de leur temps au durcissement (Hardening) du code.
+
+      • Audit assisté par IA : Les étudiants apprennent à utiliser les LLM pour détecter
+        des vulnérabilités, tout en développant l’esprit critique nécessaire pour identifier les
+        hallucinations de la machine.
+
+
+
+                                                 47
+ 15.3 Double Spécialisation Réelle EVM & Solana)
+     Le programme offre une polyvalence rare sur le marché mondial en couvrant les deux
+ piliers de l’économie décentralisée.
+
+   • Dual Track : Un choix clair entre la maturité institutionnelle d’Ethereum (Foun-
+
+
+
+
+                                                                           EL
+     dry/Solidity) et la performance extrême de Solana (Anchor/Rust).
+   • Profils Polyglottes : La possibilité de suivre un double track crée des profils d’élite
+     capables de concevoir des architectures cross-chain, un besoin critique pour les pro-
+     tocoles modernes.
+
+ 15.4 L’Écosystème comme Salle de Classe Le Réseau Superteam)
+    RBK brise les murs de l’école pour connecter l’étudiant directement au PIB de l’Inter-
+
+
+
+
+                                                         TI
+ net mondial.
+
+   • Accès au « Hidden Job Market » : Connexion directe avec les recruteurs, les
+     fondateurs et les chercheurs via les chapitres mondiaux de Superteam (Allemagne,
+     UK, UAE).
+   • Learn to Earn : Dès la 8ème semaine, les étudiants sont accompagnés pour gagner
+                                 EN
+     leurs premiers dollars en répondant à des Bounties réelles sur Superteam Earn.
+   • Oﬀice Hours Experts : Sessions de mentorat avec des développeurs core de Solana
+     et des auditeurs de renom via Telegram et Discord.
+
+ 15.5 La Preuve de Travail : « On-Chain Resume »
+     Le diplôme papier, obsolète à l’ère de l’IA, est remplacé par des preuves numériques
+ irréfutables.
+   ID
+   • Portfolio GitHub Or : Des dépôts documentés avec des pipelines CI/CD, des
+     suites de tests exhaustives et des rapports d’audit.
+   • PoW (Proof of Work) : Chaque badge et micro-certification correspond à un
+     déploiement réel sur le réseau (Testnet/Mainnet).
+   • Réputation Digitale : Participation obligatoire à l’open-source pour construire
+ NF
+
+
+     une identité de bâtisseur reconnue internationalement.
+
+ 15.6 Ancrage Tunisie & Souveraineté : « Software Export »
+     RBK transforme les contraintes locales en un avantage compétitif mondial.
+
+   • Hub d’Excellence MENA : Positionner la Tunisie comme le premier exportateur
+     de services d’ingénierie Web3 haut de gamme.
+   • Conformité et Prudence : Un discours axé sur l’ingénierie logicielle et la sécu-
+CO
+
+
+
+
+     rité, évitant la spéculation, pour garantir une relation saine avec les institutions
+     financières locales.
+   • Ascenseur Social : Permettre à des ingénieurs tunisiens d’accéder à des revenus
+     internationaux massifs (remote-first) tout en restant en Tunisie, contribuant ainsi à
+     l’économie locale.
+
+ 15.6.1 Synthèse de la Valeur Ajoutée Comparatif)
+
+
+
+                                            48
+ Caractéristique              Bootcamp Classique           RBK Web3 Studio
+ Langage                      JS / Python (Interprété)     Rust (Système) / Solidity
+                                                           Avancé
+ Rôle Cible                   Junior Codeur (Exécutant)    Lead Architect (Concep-
+                                                           teur)
+
+
+
+
+                                                                        EL
+ Usage IA                     Interdit ou toléré           Exigé (Levier de producti-
+                                                           vité)
+ Finalité                     Diplôme papier               On-chain Resume & Boun-
+                                                           ties
+ Réseau                       Local / SSII                 Mondial / DAOs / Fonda-
+                                                           tions
+
+                 Tab. 15.1 : Comparaison RBK vs Bootcamp Classique
+
+
+
+
+                                                      TI
+       ʷ
+
+       Note finale au CEO Ces éléments de différenciation ne sont pas seulement des
+       arguments marketing ; ils constituent la barrière à l’entrée technologique qui
+                               EN
+       protégera RBK de la commoditisation de l’enseignement du code. En adop-
+       tant ce modèle, RBK devient une entité d’ingénierie d’élite, indispensable à
+       l’écosystème Web3 mondial.
+   ID
+ NF
+CO
+
+
+
+
+                                             49
+                                                                                     16
+
+
+                                                                              EL
+ CONCLUSION & APPEL À L’ACTION
+
+
+
+
+                                                            TI
+                                    EN
+    16.1 La Forge de l’Élite Africaine : Un Impératif de Survie
+       RBK Tunisia se trouve aujourd’hui à la croisée des chemins. La voie de la facilité —
+   continuer à former des développeurs juniors sur des technologies web traditionnelles (stack
+   MERN) — est une voie de garage face à la marée montante de l’IA. Comme démontré
+   tout au long de ce rapport, l’équation économique qui soutenait le modèle historique du
+   ID
+   « Coding Bootcamp » s’est effondrée avec la commoditisation du code par les LLM.
+       La voie de l’ambition est de devenir une Forge d’Élite. En choisissant le Web3 et par-
+   ticulièrement l’écosystème Solana, nous choisissons la performance et l’avenir des agents
+   IA. En choisissant Rust, nous choisissons la rigueur et l’excellence ingénieuriale. En inté-
+   grant Superteam, nous connectons la jeunesse tunisienne directement au PIB de l’Internet
+   mondial, sans intermédiaires.
+ NF
+
+
+    16.2 Synthèse de la Valeur Stratégique
+       Le RBK Web3 Studio n’est pas seulement une nouvelle offre curriculaire ; c’est une
+    transformation structurelle de RBK en une entité d’ingénierie et d’innovation de classe
+    mondiale :
+
+      • Transformation de la Menace en Levier : L’IA n’est plus un risque d’obsoles-
+        cence, mais un multiplicateur de force pour nos diplômés.
+CO
+
+
+
+
+      • Souveraineté Économique : Nous offrons aux talents tunisiens un moyen de bri-
+        ser le plafond de verre local pour accéder à une rémunération globale souveraine
+        (USDC/Stablecoins).
+
+      • Positionnement Unique : RBK devient le seul hub régional capable de produire
+        des Architectes de Systèmes et des Auditeurs de Sécurité, les deux métiers les plus
+        rémunérateurs et les plus résistants du secteur technologique actuel.
+
+
+
+                                               50
+ 16.3 Appel à l’Action : Prochaines Étapes Immédiates Top Priorités)
+    Pour transformer cette vision en réalité opérationnelle sous 90 jours, les actions sui-
+ vantes doivent être engagées immédiatement :
+
+   1. Validation du Business Plan : Arbitrage final sur les tarifs premium et le montage
+
+
+
+
+                                                                            EL
+      des bourses d’excellence.
+
+   2. Lancement de la « Piscine » de Recrutement : Ouverture de l’appel à candi-
+      datures pour identifier les 20 premiers « Architectes Alpha » parmi les alumni et les
+      ingénieurs externes.
+
+   3. Formalisation de l’Alliance Solana : Signature oﬀicielle avec la Solana Founda-
+      tion pour verrouiller le label « Educational Partner » et l’accès aux grants.
+
+
+
+
+                                                          TI
+   4. Production de l’Arsenal « Golden Templates » : Finalisation des dépôts Gi-
+      tHub de référence qui serviront de socle à la formation.
+
+ 16.4 Message Final au CEO
+     Monsieur le CEO, le marché ne veut plus de « juniors qui essaient ». Le marché veut
+                                  EN
+ des « Seniors qui livrent ». Avec ce programme, nous ne formons pas des chômeurs en
+ puissance face à l’IA, nous formons les maîtres de l’IA dans le secteur technologique le
+ plus porteur de cette décennie.
+     Cette proposition est audacieuse, mais elle est la seule à la hauteur du potentiel inex-
+ ploité de la Tunisie. En lançant le RBK Web3 Studio, nous ne mettons pas seulement à
+ jour une école de code ; nous bâtissons l’infrastructure de la souveraineté numérique pour
+ l’Afrique du Nord.
+     Il est temps de passer du « Vibe Coding » à l’Architecture de Confiance.
+   ID
+ 16.5   ˣ Profil de Sortie : Le Standard « Senior-by-Design »
+     Pour conclure ce manifeste, voici la matrice des compétences garanties pour chaque
+ diplômé du RBK Web3 Studio. Ce tableau définit l’avantage concurrentiel immédiat de
+ nos talents sur le marché mondial.
+ NF
+CO
+
+
+
+
+                                             51
+     Domaine                 Qualités & Compétences de        Impact Business / ROI
+     d’Expertise             Sortie
+     Ĳ Ingénierie      Maîtrise avancée de Rust               Capacité à construire des
+     Système           (Solana) et Solidity (EVM).            protocoles gérant des
+                       Optimisation de la mémoire et          millions de $ d’AUM.
+
+
+
+
+                                                                       EL
+                       du gas.
+     ͓ Architecture IA Pilotage expert d’IDE IA               Productivité x10 par
+                       (Cursor/Windsurf). Capacité à          rapport à un développeur
+                       auditer et sécuriser le code           junior classique.
+                       généré par machine.
+     } Sécurité &      Maîtrise du Fuzzing (Trident),         Réduction drastique des
+     Audit             des Invariants et de la détection      risques de hack et de perte
+
+
+
+
+                                                     TI
+                       de vulnérabilités logiques.            de capital.
+     ƥ Tokenomics      Conception d’économies de              Viabilité à long terme des
+                       jetons viables. Simulations de         projets et attractivité pour
+                       chocs sur Machinations.io.             les VCs.
+     ç Global          Anglais technique fluide, culture      Employabilité immédiate
+     Readiness         DAO et autonomie en                    dans les meilleures
+                               EN
+                       remote-first.                          fondations mondiales.
+
+
+
+ L’Indispensable Souverain
+
+ Un diplômé de la promo Alpha n’est pas un chercheur d’emploi, c’est un apporteur
+ de solutions technologiques. Il possède le recul de l’architecte et la précision du
+ cryptographe.
+   ID
+ NF
+
+
+                                                                                 Signé,
+
+                                              Alaeddine BEN RHOUMA
+                                                 Cofondateur de Money Factory AI
+                                  Expert en Systèmes Décentralisés & Solana Advocate
+
+                                                                         Décembre 2025
+CO
+
+
+
+
+                                         52
+                                                                                          A
+
+
+                                                                             EL
+ SYLLABUS TECHNIQUE DÉTAILLÉ 24
+ SEMAINES
+
+
+
+
+                                                              TI
+                                     EN
+    A.1 PARTIE 1 : LA FORGE DES FONDATIONS COMMUN
+    A.1.1 Phase 0 : La « Piscine » Rust — L’Élite sans IA Semaines 1 à 4
+
+       L’objectif est de bâtir une résilience cognitive et une compréhension intime de la mé-
+    moire. L’usage de l’IA est strictement interdit.
+   ID
+    Semaine 1 : Ingénierie Système & Maîtrise de l’OS
+       Notions :
+      • Architecture Linux, gestion des processus, I/O asynchrones.
+ NF
+
+
+      • Git Internals : Arbres de Merkle, objets, blobs et gestion des commits en CLI.
+       Lab/Projet :
+      • Réimplémentation de commandes Unix (ls, cat) en Rust natif.
+       Livrables :
+      • Binaires fonctionnels avec gestion d’erreurs robuste.
+CO
+
+
+
+
+      • Documentation technique du processus de compilation.
+
+    Semaine 2 : Rust Deep Dive — Memory Safety
+       Notions :
+      • Ownership, Borrowing, Lifetimes : les piliers de la sécurité Rust.
+
+      • Gestion de la mémoire : Stack vs Heap. Analyse des pointeurs.
+       Lab/Projet :
+
+                                                 53
+   • Création d’une bibliothèque de structures de données (Linked List, Vector) sans
+     bibliothèque standard (no_std).
+
+     Livrables :
+
+   • Crate Rust documenté avec tests unitaires.
+
+
+
+
+                                                                          EL
+   • Rapport d’analyse mémoire (Stack vs Heap usage).
+
+ Semaine 3 : Concurrence & Programmation Parallèle
+     Notions :
+
+   • Threads, Mutex, Arc, Channels. Maîtrise du runtime Tokio.
+
+
+
+
+                                                       TI
+   • Préparation au modèle Sealevel (parallélisation des transactions).
+
+     Lab/Projet :
+
+   • Serveur Web multi-threadé capable de traiter 10 000 requêtes/seconde.
+
+     Livrables :                EN
+   • Code source avec benchmarks de performance.
+
+   • Rapport de stress-test (charge, latence, throughput).
+
+ Semaine 4 : Cryptographie Appliquée
+     Notions :
+   ID
+   • Hachage (SHA-256, Keccak-256), Courbes Elliptiques (Ed25519 vs Secp256k1).
+
+   • Signatures numériques et dérivation de clés (BIP-32/39/44).
+
+     Lab/Projet :
+
+   • Création d’un CLI Wallet sécurisé avec génération de mnémotechniques.
+ NF
+
+
+     Livrables :
+
+   • Wallet CLI fonctionnel avec génération/import de seed phrases.
+
+   • Documentation de sécurité (threat model, best practices).
+
+ A.1.2 Phase 1 : Fondations Web3 & Engineering Semaines 5 à 8
+
+    Démarrage de la méthodologie « Cyborg » : introduction de l’IA comme assistant de
+CO
+
+
+
+
+ production sous supervision experte.
+
+
+
+
+                                           54
+ Semaine 5 — Niveau 1 : Web3 Fundamentals & Narratives
+     Notions :
+
+   • Ethos du Web3 : décentralisation, trustless systems, propriété souveraine.
+
+
+
+
+                                                                         EL
+   • Terminologie : Nœuds, Gas, RPC, Wallets, Smart Contracts.
+
+   • Panorama : Ethereum, BNB Chain, Polygon, Solana.
+
+     Lab/Projet :
+
+   • Schémas d’architecture réseau et quiz de validation conceptuelle.
+
+     Livrables :
+
+
+
+
+                                                        TI
+   • Diagrammes d’architecture comparant les différentes blockchains.
+
+   • Glossaire personnel annoté des termes techniques.
+
+ Semaine 6 — Niveau 2 : Blockchain Architecture & Consensus
+     Notions :
+                                EN
+   • Validation des blocs, mécanismes PoW, PoS et Proof of History (PoH).
+
+   • Différenciation Layer 1 vs Layer 2.
+
+     Lab/Projet :
+
+   • Simulation d’un consensus PoS par jeu de rôles et construction d’un Merkle Tree.
+   ID
+     Livrables :
+
+   • Implémentation d’un Merkle Tree en Rust.
+
+   • Rapport comparatif des mécanismes de consensus.
+
+ Semaine 7 — Niveau 3 : Ecosystem & Use Cases
+ NF
+
+
+     Notions :
+
+   • DeFi (DEXs, lending, staking), NFTs et propriété numérique, DAOs.
+
+   • Cas d’usage réels : finance, supply chain, gaming, identité.
+
+     Lab/Projet :
+
+   • Études de cas réels (analyses fonctionnelles de protocoles de lending ou de vote
+CO
+
+
+
+
+     DAO).
+
+     Livrables :
+
+   • Tableau analytique « Use case → Architecture → Risques → Valeur ».
+
+   • Présentation d’analyse d’un protocole DeFi majeur.
+
+
+
+
+                                            55
+ Semaine 8 — Niveau 4 : Wallets & On-chain Interaction
+     Notions :
+   • Hot vs cold wallets, clés publiques vs clés privées.
+   • Sécurité des portefeuilles et MetaMask.
+
+
+
+
+                                                                         EL
+   • Cycle de vie d’une transaction et lecture des explorateurs de blocs (Etherscan/Solana
+     Explorer).
+     Lab/Projet :
+   • Démonstration sécurisée de signature de message (sans notion de trading) et analyse
+     de transactions complexes sur un explorer.
+
+
+
+
+                                                            TI
+     Livrables :
+   • Checklist personnalisée « Hygiène Wallet ».
+   • Mini-guide « Comment décoder une transaction ».
+
+ A.2 PARTIE 2 : LES VOIES DE L’EXCELLENCE SPÉCIALISATION
+                                 EN
+ A.2.1   f TRACK A : SOLANA SMART CONTRACT ENGINEER SEMAINES 9 À 20
+ Semaine 9 : Architecture Solana & Account Model
+     Notions :
+   • Preuve d’Histoire (PoH), parallélisme via Sealevel.
+   • Account Model vs UTXO/EVM : Tout est un compte (Données, Programmes, Sys-
+   ID
+     vars).
+     Lab/Projet :
+   • Exploration des comptes Solana via CLI et analyse de transactions on-chain.
+     Livrables :
+   • Schéma détaillé du modèle de compte Solana.
+ NF
+
+
+   • Scripts CLI pour interroger les comptes système.
+
+ Semaine 10 : Développement Native Rust (Sans Framework)
+     Notions :
+   • Écriture de programmes sans framework pour comprendre la sérialisation (Borsh) et
+     les points d’entrée (entrypoints).
+CO
+
+
+
+
+   • Gestion manuelle des comptes et des instructions.
+     Lab/Projet :
+   • Création d’un système de messagerie on-chain minimaliste en Rust pur.
+     Livrables :
+   • Programme Solana natif déployé sur Devnet.
+   • Guide d’installation et scripts d’environnement reproductibles.
+
+                                            56
+ Semaine 11 : Tests & Déploiement (Fondations)
+     Notions :
+
+   • Configuration de l’environnement de test local (solana-test-validator).
+
+
+
+
+                                                                           EL
+   • Déploiement sur Devnet et gestion des clés.
+
+     Lab/Projet :
+
+   • Déploiement et test du programme de messagerie.
+
+     Livrables :
+
+   • Programme vérifié sur Solana Explorer (Devnet).
+
+
+
+
+                                                         TI
+   • Documentation de déploiement pas-à-pas.
+
+ Semaine 12 : Introduction au Framework Anchor
+     Notions :
+
+
+     tomatique de clients.
+                                 EN
+   • Anchor Framework : Macros, IDL (Interface Description Language), génération au-
+
+
+   • Sécurité par défaut : Discriminators, vérification des propriétaires d’états.
+
+     Lab/Projet :
+
+   • Migration du programme de messagerie vers Anchor.
+
+     Livrables :
+   ID
+   • Programme Anchor avec IDL généré.
+
+   • Comparaison Native vs Anchor (avantages/inconvénients).
+
+ Semaine 13 : PDAs & State Management
+ NF
+
+
+     Notions :
+
+   • PDAs (Program Derived Addresses) : Création de structures de données détermi-
+     nistes.
+
+   • Gestion d’état complexe et relations entre comptes.
+
+     Lab/Projet :
+
+   • Programme « Counter » évolué avec gestion de trésorerie (Vaults).
+CO
+
+
+
+
+     Livrables :
+
+   • Programme avec PDAs et gestion de fonds.
+
+   • Suite de tests Anchor complète.
+
+
+
+
+                                            57
+ Semaine 14 : Testing & CI/CD
+     Notions :
+
+   • Tests unitaires et d’intégration avec Anchor.
+
+
+
+
+                                                                      EL
+   • Configuration de pipelines CI/CD avec GitHub Actions.
+
+     Lab/Projet :
+
+   • Mise en place d’un pipeline de test automatisé.
+
+     Livrables :
+
+   • Pipeline CI/CD fonctionnel.
+
+
+
+
+                                                        TI
+   • Rapport de couverture de tests (>80%).
+
+ Semaine 15 : Composabilité (CPIs)
+     Notions :
+                                EN
+   • Cross-Program Invocations (CPIs) : Appels de programmes à programmes.
+
+   • Intégration avec des protocoles tiers (Jupiter, Orca).
+
+     Lab/Projet :
+
+   • Programme utilisant des CPIs pour interagir avec un DEX.
+
+     Livrables :
+   ID
+   • Programme avec CPIs fonctionnels.
+
+   • Documentation des flux d’appels inter-programmes.
+
+ Semaine 16 : Token-2022 & Extensions
+     Notions :
+ NF
+
+
+   • Token-2022 : Transfer Hooks, Confidential Transfers, métadonnées natives.
+
+   • Gestion avancée des tokens programmables.
+
+     Lab/Projet :
+
+   • Création d’un token avec Transfer Hooks personnalisés.
+
+     Livrables :
+CO
+
+
+
+
+   • Token-2022 déployé avec extensions actives.
+
+   • Guide d’utilisation des extensions.
+
+
+
+
+                                           58
+ Semaine 17 : Solana Mobile Stack (SMS)
+     Notions :
+
+   • Mobile Wallet Adapter (MWA) pour les dApps mobiles.
+
+
+
+
+                                                                       EL
+   • Intégration du Seed Vault pour la signature sécurisée.
+
+     Lab/Projet :
+
+   • Création d’une dApp mobile (APK) utilisant le Seed Vault.
+
+     Livrables :
+
+   • Application mobile fonctionnelle (Android).
+
+
+
+
+                                                       TI
+   • Documentation d’intégration MWA.
+
+ Semaine 18 : Actions & Blinks
+     Notions :
+                                  EN
+   • Solana Actions : Permettre des transactions n’importe où sur le web.
+
+   • Blinks : Intégration sur Twitter, LinkedIn.
+
+     Lab/Projet :
+
+   • Création d’une Action Solana pour un use case social.
+
+     Livrables :
+   ID
+   • Action déployée et testée.
+
+   • Démonstration d’intégration sur une plateforme sociale.
+
+ Semaine 19 : Optimisation Compute & Performance
+     Notions :
+ NF
+
+
+   • Réduction du budget de calcul (Compute Units).
+
+   • Optimisation des transactions pour minimiser les frais.
+
+     Lab/Projet :
+
+   • Audit et optimisation d’un programme existant.
+
+     Livrables :
+CO
+
+
+
+
+   • Rapport d’optimisation avec métriques avant/après.
+
+   • Programme optimisé avec réduction >30% des CU.
+
+
+
+
+                                           59
+ Semaine 20 : Production Hardening & Observabilité
+     Notions :
+
+   • Logs structurés, monitoring on-chain via Helius/QuickNode.
+
+
+
+
+                                                                         EL
+   • UX Web3 High-End : Gestion des états de transaction (pending, success, fail).
+
+     Lab/Projet :
+
+   • Intégration de monitoring et gestion d’erreurs avancée.
+
+     Livrables :
+
+   • dApp complète « production-like » avec monitoring.
+
+
+
+
+                                                            TI
+   • Module de gestion de transactions avec retry policy.
+
+ A.2.2   ` TRACK B : EVM ENGINEER SEMAINES 9 À 20
+ Semaine 9 : Solidity Basics & Smart Contract Structure
+     Notions :                   EN
+   • Syntaxe & Structure : Variables d’état, fonctions, modifiers, héritage.
+
+   • Gestion de la donnée : Mappings, structs, enums.
+
+     Lab/Projet :
+
+   • Création d’un contrat de « Registry » robuste avec gestion des accès.
+   ID
+     Livrables :
+
+   • Contrat testé sur Remix.
+
+   • Scripts de déploiement basiques.
+
+ Semaine 10 : Sécurité Native & Gas Optimization
+ NF
+
+
+     Notions :
+
+   • Utilisation rigoureuse de require, revert et assert.
+
+   • Gas Basics : Comprendre les Opcodes EVM et l’impact du stockage.
+
+     Lab/Projet :
+
+   • Optimisation d’un contrat pour réduire les coûts de gas.
+CO
+
+
+
+
+     Livrables :
+
+   • Contrat optimisé avec rapport de gas.
+
+   • Analyse comparative avant/après optimisation.
+
+
+
+
+                                             60
+ Semaine 11 : Transition vers Foundry
+     Notions :
+
+   • Frameworks : Transition de Hardhat vers Foundry.
+
+
+
+
+                                                                       EL
+   • Workflow Pro : Configuration de chaînes locales, gestion des environnements (.env).
+
+     Lab/Projet :
+
+   • Setup d’un dépôt « Production-Ready » avec Foundry.
+
+     Livrables :
+
+   • Dépôt configuré avec linting et formatage.
+
+
+
+
+                                                        TI
+   • Documentation de setup pour nouveaux développeurs.
+
+ Semaine 12 : Testing Avancé
+     Notions :
+
+
+
+   • CI/CD avec GitHub Actions.
+
+     Lab/Projet :
+                                  EN
+   • Unit tests, integration tests et mocking de contrats tiers.
+
+
+
+
+   • Création d’une suite de tests complète.
+
+     Livrables :
+   ID
+   • Pipeline CI opérationnel.
+
+   • Couverture de tests >85%.
+
+ Semaine 13 : Token Standards (ERC-20)
+     Notions :
+ NF
+
+
+   • Standard ERC-20 (Fungible Tokens).
+
+   • Utilisation d’OpenZeppelin pour la sécurité.
+
+     Lab/Projet :
+
+   • Création d’un Token ERC-20 avec règles de distribution personnalisées.
+
+     Livrables :
+CO
+
+
+
+
+   • Token déployé sur testnet.
+
+   • Smart contract auditable conforme aux standards EIP.
+
+
+
+
+                                            61
+ Semaine 14 : NFTs & ERC-721/1155
+     Notions :
+
+   • Standards ERC-721 (NFT) et ERC-1155 (Multi-token).
+
+
+
+
+                                                                EL
+   • Access Control : RBAC et patterns multi-sig.
+
+     Lab/Projet :
+
+   • Création d’une collection NFT avec métadonnées IPFS.
+
+     Livrables :
+
+   • Collection NFT déployée.
+
+
+
+
+                                                        TI
+   • Interface de minting fonctionnelle.
+
+ Semaine 15 : dApp Development (Frontend)
+     Notions :
+                                EN
+   • Ethers.js / Web3.js et intégration avec React/Next.js.
+
+   • Wallet Integration : MetaMask, WalletConnect.
+
+     Lab/Projet :
+
+   • Développement d’un « Token Dashboard » avec UI réactive.
+
+     Livrables :
+   ID
+   • Frontend complet avec gestion des erreurs.
+
+   • Documentation utilisateur.
+
+ Semaine 16 : Transaction Management & UX
+     Notions :
+ NF
+
+
+   • Retries, timeouts, pending states.
+
+   • UX claire sur les erreurs de transaction.
+
+     Lab/Projet :
+
+   • Amélioration de l’UX avec gestion avancée des états.
+
+     Livrables :
+CO
+
+
+
+
+   • dApp avec machine à états pour les transactions.
+
+   • Tests utilisateur documentés.
+
+
+
+
+                                           62
+ Semaine 17 : L2 Scaling (Arbitrum, Optimism)
+     Notions :
+
+   • Déploiement sur Layer 2 (Arbitrum, Optimism, Polygon).
+
+
+
+
+                                                              EL
+   • Différences et optimisations spécifiques aux L2.
+
+     Lab/Projet :
+
+   • Migration d’une application de L1 vers un L2.
+
+     Livrables :
+
+   • Contrats déployés sur au moins 2 L2.
+
+
+
+
+                                                         TI
+   • Rapport comparatif des performances.
+
+ Semaine 18 : Proxy Patterns & Upgradeability
+     Notions :
+                                 EN
+   • Proxy patterns (Transparent vs UUPS).
+
+   • Permettre les mises à jour sans perte de données.
+
+     Lab/Projet :
+
+   • Implémentation d’un contrat upgradeable.
+
+     Livrables :
+   ID
+   • Contrat avec logique de proxy.
+
+   • Documentation du processus d’upgrade.
+
+ Semaine 19 : Oracles & Chainlink
+     Notions :
+ NF
+
+
+   • Intégration de flux de prix réels via Chainlink.
+
+   • Gestion des données off-chain.
+
+     Lab/Projet :
+
+   • dApp multi-chain avec oracle de prix.
+
+     Livrables :
+CO
+
+
+
+
+   • Contrat utilisant Chainlink Price Feeds.
+
+   • Tests de fiabilité des oracles.
+
+
+
+
+                                             63
+ Semaine 20 : Security & Incident Handling
+     Notions :
+
+   • Vulnérabilités classiques : Re-entrancy, Oracle Manipulation.
+
+
+
+
+                                                                           EL
+   • Création d’un « Runbook » pour réagir en cas de hack.
+
+     Lab/Projet :
+
+   • Simulation d’incidents et application de correctifs.
+
+     Livrables :
+
+   • dApp complète, testée et prête pour le Mainnet.
+
+
+
+
+                                                         TI
+   • Runbook d’incident et checklist de sécurité.
+
+ A.3 PARTIE 3 : INCUBATION & PREUVE DE TRAVAIL COMMUN
+ A.3.1 Phase 3 : Build & Scale — Le Capstone Project Semaines 21 à 24
+
+     L’objectif est la livraison d’un produit viable sur le Mainnet, audité et prêt pour les
+                                 EN
+ utilisateurs.
+
+ Semaine 21 : Cadrage & Threat Modeling
+     Notions :
+
+   • Définition du MVP (Minimum Viable Product).
+
+   • Threat modeling et analyse des vecteurs d’attaque.
+   ID
+     Lab/Projet :
+
+   • Rédaction du cahier des charges technique du Capstone.
+
+     Livrables :
+
+   • Document de spécifications techniques.
+ NF
+
+
+   • Threat model documenté.
+
+ Semaine 22 : Développement Intensif
+     Notions :
+
+   • Méthodologie Agile appliquée au Web3.
+CO
+
+
+
+
+   • Sprints quotidiens et revues de code.
+
+     Lab/Projet :
+
+   • Développement du smart contract et du frontend.
+
+     Livrables :
+
+   • Version Alpha du produit sur Devnet.
+
+   • Suite de tests complète.
+
+                                             64
+ Semaine 23 : Hardening & Audit Interne
+     Notions :
+
+   • Passage des outils de vérification formelle.
+
+
+
+
+                                                                          EL
+   • Rédaction du rapport d’audit final.
+
+     Lab/Projet :
+
+   • Audit interne avec outils automatisés (Slither, Soteria, Trident).
+
+     Livrables :
+
+   • Rapport d’audit interne complet.
+
+
+
+
+                                                        TI
+   • Correctifs appliqués et vérifiés.
+
+ Semaine 24 : Demo Day & Certification
+     Notions :
+                                 EN
+   • Préparation de la présentation technique.
+
+   • Stratégie de pitch pour investisseurs.
+
+     Lab/Projet :
+
+   • Présentation devant le panel d’investisseurs et recruteurs mondiaux.
+
+     Livrables :
+   ID
+   • Démo live sur Testnet public.
+
+   • Pitch deck et rapport d’audit final.
+
+   • Graduation et remise des certificats (Fundamentals, Developer, Security).
+
+  Note technique pour les formateurs Chaque semaine de cours contient 15h de
+ NF
+
+
+  théorie appliquée, 25h de labs pratiques et 10h de revues de code critiques.
+  Total : 50h/semaine d'immersion technique.
+CO
+
+
+
+
+                                              65
+MODÈLE FINANCIER & PROJECTIONS 3
+                                                                                         B
+ANS
+
+
+
+
+                                                        EL
+                                                      TI
+                                   EN
+   B.1 Vue d’Ensemble Financière
+      Le modèle financier du RBK Web3 Studio repose sur trois piliers : des coûts maîtrisés
+   grâce à l’IA, une valeur perçue premium, et des revenus récurrents via le modèle ISA.
+                         D
+   B.2 Projection Détaillée sur 3 Ans
+
+    Indicateurs Clés                                  Année 1     Année 2       Année 3
+             FI
+
+    REVENUS
+    Nombre de Promotions                                      1           2            3
+    Nombre d’Étudiants Total                                 20          50           75
+    Revenus Formations (TND)                            308 000     770 000    1 155 000
+   N
+
+
+
+    Revenus ISA (Différé)                                     0      50 000      120 000
+    Success Fees & Grants                                10 000      40 000      100 000
+    TOTAL REVENUS                                      318 000     860 000    1 375 000
+    CHARGES
+ O
+
+
+
+
+    CAPEX (Investissement)                               50 000      10 000        20 000
+    OPEX Personnel                                       76 000     180 000       260 000
+    OPEX Fonctionnement                                  35 000      70 000        90 000
+C
+
+
+
+
+    TOTAL CHARGES                                      161 000     260 000       370 000
+    RÉSULTATS
+    Marge Brute (EBITDA)                                157 000     600 000     1 005 000
+    Marge Nette (%)                                        49%         70%           73%
+    BÉNÉFICE NET                                       141 300     540 000       903 750
+
+                   Tab. B.1 : Projections Financières Consolidées (3 Ans)
+
+
+
+
+                                             66
+ B.3 Hypothèses et Notes Stratégiques
+   • Taux de Remplissage : 100% pour l’Année 1 (effet Early Bird), 95% pour les
+     années suivantes.
+
+   • Prix Moyen Pondéré : 15 400 TND/étudiant (mix entre prix plein, Early Bird et
+
+
+
+
+                                                                       EL
+     bourses).
+
+   • Revenus ISA : Commencent à partir de l’Année 2 (12 mois après la première
+     graduation).
+
+   • Success Fees : 5% de participation dans les startups incubées qui lèvent des fonds.
+
+   • Optimisation IA : Réduction de 40% des coûts de mentorat grâce à l’assistance
+     IA.
+
+
+
+
+                                                      TI
+ B.4 Seuil de Rentabilité Break-Even Analysis)
+   • Point mort Année 1 : 11 étudiants (sur 20 prévus).
+
+   • ROI Investisseur : 282% sur 3 ans.
+                               EN
+   • Temps de retour : 6 mois après le lancement de la première promo.
+   ID
+ NF
+CO
+
+
+
+
+                                          67
+                                                                                          C
+
+
+
+                                                                             EL
+ GUIDE DE CONFORMITÉ JURIDIQUE
+
+
+
+
+                                                           TI
+                                    EN
+    C.1 Cadre Légal Tunisien : Exportation de Services
+        Le programme RBK Web3 Studio est structuré comme une activité d’**exportation
+    de services numériques**, pleinement conforme au cadre réglementaire tunisien.
+   ID
+    C.1.1 Statut Juridique des Diplômés
+
+       Les diplômés opèrent sous l’un des statuts suivants :
+
+      • Auto-Entrepreneur Export : Régime simplifié pour les revenus <100k TND/an.
+
+      • Freelance Export (Personne Physique) : Déclaration auprès du Centre National
+        de l’Informatique (CNI).
+ NF
+
+
+      • Société de Services (SARL/SUARL) : Pour les revenus >100k TND/an.
+
+    C.1.2 Pipeline de Rapatriement de Devises
+
+       Le schéma suivant illustre le flux légal de rapatriement des revenus internationaux :
+CO
+
+
+
+
+                                                68
+                 Client International                   Paiement
+                     (DAO, Fonda-                      USDC / Vire-
+                   tion, Entreprise)                   ment SWIFT
+
+
+
+
+                                                                        EL
+                            Zone de Conformité 100% Légale
+
+                                                      Plateforme de
+                     Conversion                        Conformité
+                    USD → TND                            (Bitwage,
+                                                      Grey.co, Deel)
+
+
+
+
+                                                     TI
+                    Compte Ban-
+                                                  Déclaration Fiscale
+                   caire Tunisien
+                                                   (CNSS + Impôts)
+                 (Rapatriement légal)
+                                EN
+ C.2 Obligations Fiscales et Sociales
+   • Déclaration CNSS : Obligatoire pour tout revenu >1 SMIG.
+
+   • Impôt sur le Revenu : Barème progressif (0% à 35% selon tranches).
+
+   • Exonération Partielle : Les revenus d’exportation de services bénéficient d’une
+   ID
+     réduction fiscale de 50% pendant les 5 premières années.
+
+ C.3 Positionnement vis-à-vis de la BCT
+   • Aucune détention de crypto-actifs : La formation se déroule sur Devnet/Testnet
+     (sans valeur réelle).
+
+   • Revenus en devises classiques : Les salaires sont rapatriés en USD/EUR via
+ NF
+
+
+     virement bancaire.
+
+   • Transparence totale : Tous les flux financiers sont traçables et conformes aux
+     procédures de change.
+CO
+
+
+
+
+                                         69
+                                                                                    D
+
+
+
+                                                                             EL
+ TEMPLATE DE RAPPORT D’AUDIT DE SÉ
+ CURITÉ
+
+
+
+
+                                                           TI
+    D.1 Structure du Rapport d’Audit
+                                     EN
+       Tout projet Capstone doit inclure un rapport d’audit suivant ce template :
+
+    D.1.1 1. Résumé Exécutif
+   ID
+      • Nom du projet et version auditée.
+
+      • Date de l’audit et auditeurs.
+
+      • Nombre de vulnérabilités identifiées (par sévérité).
+
+      • Recommandation finale (Deploy / Fix Required / Major Rework).
+ NF
+
+
+    D.1.2 2. Périmètre de l’Audit
+
+      • Smart contracts audités (noms et adresses).
+
+      • Méthodologie utilisée (revue manuelle, fuzzing, analyse statique).
+
+      • Outils employés (Slither, Soteria, Trident, Echidna).
+CO
+
+
+
+
+    D.1.3 3. Classification des Vulnérabilités
+
+    D.1.4 4. Détail des Findings
+
+       Pour chaque vulnérabilité identifiée :
+
+      • ID : [AUDIT-001]
+
+      • Titre : Description courte de la vulnérabilité.
+
+      • Sévérité : CRITICAL / HIGH / MEDIUM / LOW / INFO
+
+                                                 70
+   Sévérité        Définition                            Action Requise
+  CRITICAL         Perte de fonds garantie ou compro-    Blocage du déploiement. Correctif
+                   mission totale du système.            obligatoire.
+     HIGH          Vulnérabilité exploitable sous cer-   Correctif fortement recommandé
+                   taines conditions.                    avant Mainnet.
+
+
+
+
+                                                                             EL
+   MEDIUM          Comportement inattendu ou inef-       Correctif recommandé.
+                   ficacité.
+      LOW          Optimisation ou amélioration de       Optionnel.
+                   code.
+      INFO         Remarques générales ou bonnes         Informatif.
+                   pratiques.
+
+                    Tab. D.1 : Grille de Classification des Vulnérabilités
+
+
+
+
+                                                           TI
+   • Localisation : Fichier et ligne de code.
+
+   • Description : Explication technique détaillée.
+
+   • Impact : Conséquences potentielles.
+                                  EN
+   • Recommandation : Solution proposée.
+
+   • Statut : Fixed / Acknowledged / Disputed
+
+ D.1.5 5. Tests de Sécurité Effectués
+
+   • Re-entrancy attacks
+
+   • Integer overflow/underflow
+   ID
+   • Access control bypass
+
+   • Oracle manipulation
+
+   • Front-running scenarios
+
+   • Gas optimization issues
+ NF
+
+
+ D.1.6 6. Conclusion et Recommandations
+
+     Synthèse finale avec le verdict de déploiement et les actions prioritaires.
+CO
+
+
+
+
+                                              71
+                                                                                            E
+
+
+                                                                            EL
+ LE COCKPIT DE L’ARCHITECTE
+
+
+
+
+                                                           TI
+                                      EN
+    E.1 Philosophie : L’Ingénieur comme Pilote
+        Le « Cockpit de l’Architecte » est l’environnement de travail optimisé pour maximiser
+    la productivité tout en garantissant la qualité.
+
+    E.2 Outils Obligatoires
+   ID
+    E.2.1 1. IDE Augmentés par l’IA
+
+      • Cursor : Fork de VS Code avec IA native (GPT-4 intégré).
+
+      • Windsurf : Alternative avec support multi-modèles (Claude, Gemini).
+ NF
+
+
+      • Configuration : Linting automatique, formatage on-save, snippets personnalisés.
+
+    E.2.2 2. Frameworks de Développement
+
+       Track Solana :
+
+      • Anchor Framework (v0.30+)
+
+      • Solana CLI & Web3.js v2
+CO
+
+
+
+
+      • Helius SDK / Ironforge
+
+       Track EVM :
+
+      • Foundry (Forge, Cast, Anvil)
+
+      • OpenZeppelin Contracts
+
+      • Ethers.js v6
+
+
+
+                                               72
+ E.2.3 3. Outils d’Audit et de Test
+
+   • Solana : Trident (Fuzzing), Soteria (Analyse statique)
+
+   • EVM : Slither, Echidna, Mythril
+
+
+
+
+                                                                      EL
+   • CI/CD : GitHub Actions avec tests automatisés
+
+ E.2.4 4. Simulation Économique
+
+   • Machinations.io : Modélisation de tokenomics et game theory.
+
+   • Dune Analytics : Requêtes SQL pour analyser les données on-chain.
+
+
+
+
+                                                      TI
+ E.2.5 5. Prototypage Rapide
+
+   • Solana Playground (Solpg) : IDE en ligne pour tests rapides.
+
+   • Remix IDE : Pour prototypage Solidity.
+
+ E.3 Workflow Type d’une Journée  EN
+   1. 09h00 - Daily Standup : Revue des objectifs et blocages.
+
+   2. 09h30 - Deep Work : Développement avec assistance IA.
+
+   3. 12h00 - Code Review : Revue par les pairs (mandatory).
+
+   4. 14h00 - Lab Pratique : Implémentation de features complexes.
+
+   5. 16h00 - Testing : Écriture et exécution de tests.
+   ID
+   6. 17h00 - Retrospective : Analyse des apprentissages du jour.
+
+
+   Règle d'Or du Cockpit L'IA génère, l'Humain valide. Aucune ligne de code générée
+   par l'IA ne peut être mergée sans revue critique et compréhension totale par
+   l'étudiant.
+ NF
+CO
+
+
+
+
+                                          73
+                                                                            EL
+                                                          TI
+ F.1 PRÉAMBULE
+                                  EN
+    Le présent contrat est conclu entre :
+    D’UNE PART,
+    RBK Tunisia (ci-après « l’Organisme de Formation »), représenté par son Directeur
+ Général.
+   ID
+    ET D’AUTRE PART,
+    M./Mme ____________________ (ci-après « le Bénéficiaire »), étudiant(e)
+ du programme Web3 Expert & Builder.
+
+ F.2     ˶ ARTICLE 1 : OBJET DU CONTRAT
+ NF
+
+
+     Le présent contrat a pour objet de définir les modalités de financement de la formation
+ du Bénéficiaire selon le modèle ISA (Income Share Agreement), permettant au Bénéficiaire
+ de suivre la formation sans paiement initial, en contrepartie d’un partage de ses revenus
+ futurs.
+
+ F.3     ˶ ARTICLE 2 : MONTANT DE LA FORMATION
+     Le coût total de la formation est fixé à 18 000 TND (Dix-huit mille dinars tunisiens).
+     En contrepartie de l’accès à la formation, le Bénéficiaire s’engage à reverser à l’Orga-
+CO
+
+
+
+
+ nisme de Formation un pourcentage de ses revenus professionnels futurs, selon les modalités
+ définies ci-après.
+
+ F.4     ˶ ARTICLE 3 : MODALITÉS DE REMBOURSEMENT
+ F.4.1   3.1. Seuil de Déclenchement
+
+    Le Bénéficiaire commence à reverser un pourcentage de ses revenus uniquement lorsque
+ son salaire mensuel brut dépasse 3 000 TND/mois (ou équivalent en devises).
+
+
+                                             74
+ F.4.2 3.2. Taux de Partage
+
+     Le Bénéficiaire reverse 15% de son salaire mensuel brut à l’Organisme de Forma-
+ tion.
+
+ F.4.3 3.3. Durée Maximale
+
+     La période de remboursement est limitée à 24 mois consécutifs à compter du premier
+ versement.
+
+
+
+
+                                                            EL
+ F.4.4   3.4. Plafond de Remboursement
+
+    Le montant total versé par le Bénéficiaire ne pourra en aucun cas dépasser 150% du
+ coût initial de la formation, soit 27 000 TND.
+
+ F.4.5 3.5. Clause de Sortie Anticipée
+
+
+
+
+                                                          TI
+     Le Bénéficiaire peut à tout moment solder son contrat par anticipation en
+ versant la différence entre les sommes déjà payées et le prix public initial (18
+ 000 TND), sans aucune pénalité.
+     Exemple : Si le Bénéficiaire a déjà versé 8 000 TND, il peut solder son contrat en
+                                   EN
+ versant 10 000 TND (18 000 - 8 000).
+
+
+    Schéma Financier : Modèle de Remboursement ISA (Waterfall)
+
+ Flux de Remboursement
+                         D
+              PLAFOND : 27 000 TND (Fin du contrat)
+            FI
+
+                                                     nu
+                                                  ve
+                                               Re
+                                          du
+                                      %
+                                    15    Modèle Sans Risque
+ N
+
+
+                                           Si 𝑆 < 3𝑘 → 0 DT
+                                         Si 𝑆 > 3𝑘 → ROI Activé
+             Zone de Sécurité
+                                                                    Salaire de l’étudiant (TND)
+                       3 000 TND
+ O
+C
+
+
+
+
+ F.5     ˶ ARTICLE 4 : OBLIGATIONS DU BÉNÉFICIAIRE
+    Le Bénéficiaire s’engage à :
+   • Suivre assidûment la formation et respecter le règlement intérieur.
+   • Déclarer mensuellement ses revenus à l’Organisme de Formation.
+   • Effectuer les versements dans les délais convenus (10 jours après réception du salaire).
+   • Informer l’Organisme de tout changement de situation professionnelle.
+
+                                                 75
+ F.6     ˶ ARTICLE 5 : SUSPENSION DES PAIEMENTS
+       Les paiements sont suspendus dans les cas suivants :
+
+   • Revenus mensuels inférieurs au seuil de 3 000 TND.
+
+
+
+
+                                                                              EL
+   • Période de chômage justifiée.
+
+   • Congé parental ou maladie de longue durée (sur justificatif).
+
+ F.7     ˶ ARTICLE 6 : RÉSILIATION
+       Le contrat peut être résilié dans les cas suivants :
+
+   • Abandon de la formation par le Bénéficiaire (sans remboursement exigé si avant la
+
+
+
+
+                                                              TI
+     semaine 8).
+
+   • Manquement grave aux obligations contractuelles.
+
+   • Atteinte du plafond de remboursement ou de la durée maximale.
+
+ F.8     ˶ ARTICLE 7 : CONFIDENTIALITÉ
+                                     EN
+     Les informations financières du Bénéficiaire sont strictement confidentielles et ne seront
+ utilisées que dans le cadre du suivi du présent contrat.
+
+ F.9     ˶ ARTICLE 8 : DROIT APPLICABLE
+    Le présent contrat est régi par le droit tunisien. Tout litige sera soumis aux tribunaux
+ compétents de Tunis.
+   ID
+       Fait à Tunis, le ____________________
+
+
+        Pour l’Organisme de Formation                 Le Bénéficiaire
+ NF
+
+
+        Signature et Cachet                           Signature
+CO
+
+
+
+
+                                                76
+                                                       EL
+                                                     TI
+                                  EN
+ G.1 Philosophie de la Sélection
+    La « Piscine Rust » est un filtre d’élite conçu pour identifier les profils capables de
+ réussir dans un environnement exigeant. L’objectif est de garantir un taux de réussite
+ >85% pour sécuriser le modèle économique ISA.
+                        D
+ G.2 Critères de Pré-Sélection Avant la Piscine)
+ G.2.1 1. Compétences Techniques de Base
+            FI
+
+   • Maîtrise de JavaScript/TypeScript (niveau intermédiaire minimum).
+
+   • Compréhension des structures de données et algorithmes.
+ N
+
+
+   • Expérience avec Git et la ligne de commande.
+
+    Test : Quiz technique de 30 questions (seuil de passage : 70%).
+ O
+
+
+
+
+ G.2.2 2. Motivation et Mindset
+
+   • Lettre de motivation démontrant une compréhension du Web3.
+
+   • Projet personnel ou contribution open-source (GitHub).
+C
+
+
+
+
+   • Capacité à expliquer pourquoi Solana/EVM (entretien de 20 min).
+
+ G.2.3 3. Disponibilité et Engagement
+
+   • Disponibilité à temps plein pendant 6 mois.
+
+   • Acceptation du modèle ISA et de ses implications.
+
+
+
+                                            77
+  Critère                        Points Max              Évaluation
+  Projets Techniques (Qualité du     40                  Revue par les mentors + tests au-
+  code)                                                  tomatisés
+  Résolution de Problèmes (Algo-     20                  Challenges quotidiens (LeetCode-
+  rithmes)                                               style)
+
+
+
+
+                                                                             EL
+  Collaboration & Peer Review        15                  Évaluation par les pairs + partici-
+                                                         pation aux revues de code
+  Autonomie & Débrouillardise                 15         Capacité à débloquer sans aide ex-
+                                                         cessive
+  Assiduité & Ponctualité                     10         Présence aux sessions obligatoires
+  TOTAL                                      100
+
+                       Tab. G.1 : Grille de Scoring de la Piscine Rust
+
+
+
+
+                                                           TI
+ G.3 Grille de Scoring de la Piscine 4 Semaines)
+ G.4   Seuils de Validation
+   • Score ≥ 75/100 : Admission automatique au programme principal.
+                                  EN
+   • Score 60-74 : Admission conditionnelle (entretien de rattrapage).
+
+   • Score < 60 : Non-admission (possibilité de repasser la Piscine dans 6 mois).
+
+ G.5 Indicateurs de Réussite Prédictive
+    Les données historiques montrent que les candidats ayant les caractéristiques suivantes
+ ont un taux de réussite >90% :
+   ID
+   • Contribution active à au moins 1 projet open-source.
+
+   • Capacité à résoudre 5+ problèmes algorithmiques Medium sur LeetCode.
+
+   • Participation à des hackathons ou compétitions de code.
+
+   • Maîtrise de l’anglais technique (lecture de documentation).
+ NF
+
+
+ G.6 Processus de Décision Finale
+   1. Calcul du score total de la Piscine.
+
+   2. Entretien final avec le Directeur Pédagogique (30 min).
+
+   3. Validation par le comité de sélection (3 mentors).
+
+   4. Notification de décision sous 48h.
+CO
+
+
+
+
+    Note Stratégique La rigueur de la sélection garantit que seuls les profils à fort poten-
+    tiel intègrent le programme, minimisant ainsi le risque de défaut de paiement ISA
+    et maximisant le taux de placement à l’international.
+
+
+
+
+                                              78
+

@@ -1,0 +1,107 @@
+\chapter{SYLLABUS TECHNIQUE COMPLET (48 SEMAINES)}
+
+\textit{Note : Ce chapitre détaille l'exécution technique. L'intégration des Soft Skills (S45-S48) est traitée au Chapitre 7.}
+
+\section{Calendrier Pédagogique Global}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[xscale=0.55, every node/.style={font=\scriptsize, align=center}]
+        % Hauteur des blocs augmentée à 1.5cm pour tenir sur 2 lignes
+        \draw[fill=SolanaBlue!20] (0,0) rectangle (8,1.5) node[midway] {\textbf{FONDATIONS}\\(S1-S12)};
+        \draw[fill=SolanaPurple!20] (8,0) rectangle (20,1.5) node[midway] {\textbf{TRACK SPÉCIALISÉ}\\(S13-S28)};
+        \draw[fill=SolanaGreen!20] (20,0) rectangle (24,1.5) node[midway] {\textbf{CAPSTONE}\\(S29-S44)};
+        \draw[fill=MF_Gold!20] (24,0) rectangle (28,1.5) node[midway] {\textbf{CAREER}\\(S45-S48)};
+        
+        % Descriptions sous les blocs
+        \node[below=2pt] at (4,0) {\tiny Rust, Crypto, CS};
+        \node[below=2pt] at (14,0) {\tiny Solana/Anchor ou EVM/Solidity};
+        \node[below=2pt] at (22,0) {\tiny Build \& Audit};
+        \node[below=2pt] at (26,0) {\tiny Interview Prep};
+    \end{tikzpicture}
+    \caption{Timeline Macro du Cursus}
+\end{figure}
+
+\begin{center}\colorbox{SolanaBlue!20}{\parbox{\textwidth}{\centering \Large \textbf{NIVEAU 1 : PISCINE \& FONDATIONS (S1-S12)}}}\end{center}
+
+\section{TRONC COMMUN : LA FORGE (S1-S12)}
+
+\begin{table}[H]
+    \caption{Synthèse Phase 0 \& 1}
+    \centering
+    \small
+    \rowcolors{2}{SolanaBlue!5}{white}
+    \begin{tabularx}{\textwidth}{l X X l}
+        \toprule
+        \textbf{Sem.} & \textbf{Focus Technique} & \textbf{Livrable Pivot} & \textbf{Gate Qualité} \\
+        \midrule
+        \midrule
+        S1 & OS \& Git Internals & Réplique `ls -la` en Rust & Git Clean \\
+        S2 & Memory Safety & Custom Allocator & No Leaks \\
+        S3 & Concurrence & HTTP Server Multi-thread & Benchmarks \\
+        S4 & Cryptographie & CLI Wallet (Ed25519) & Signatures valides \\
+        \midrule
+        S5-S6 & Web3 Protocol & Architecture Diagram & C4 Model \\
+        S7-S8 & Consensus & Simulation PoS (Python/Rust) & Slashing rules \\
+        S9-S10 & Tokenomics & Whitepaper d'un DEX & Math verified \\
+        S11-S12 & Wallet Interaction & Connect Wallet (React) & UX smooth \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{techBox}{La Stack du Vainqueur}
+    \begin{itemize}
+        \item \textbf{Rust} : Langage système, sécurité mémoire garantie sans Garbage Collector.
+        \item \textbf{Anchor} : Framework de développement Solana qui sécurise et accélère le code.
+        \item \textbf{Solidity} : Langage historique des Smart Contracts (EVM).
+        \item \textbf{Foundry} : Outil de test et déploiement Ethereum écrit en Rust.
+    \end{itemize}
+\end{techBox}
+
+\subsection{Détail des Semaines Critiques}
+
+\subsubsection{Semaine 1 : Ingénierie Système}
+\begin{kpiBox}{S1 : Git Internals}
+    \textbf{Objectif :} Manipuler les blobs/trees Git en Rust sans `git`. \\
+    \textbf{Livrable :} Outil CLI `my-git`. \\
+    \textbf{Politique IA :} \textcolor{red}{\textbf{INTERDITE}}.
+\end{kpiBox}
+
+\subsubsection{Semaine 4 : Cryptographie}
+\begin{kpiBox}{S4 : Primitives Crypto}
+    \textbf{Objectif :} Implémenter SHA-256 et Ed25519 (Signatures). \\
+    \textbf{Livrable :} CLI Wallet. \\
+    \textbf{Politique IA :} \textcolor{red}{\textbf{INTERDITE}}.
+\end{kpiBox}
+
+\newpage
+\begin{center}\colorbox{SolanaPurple!20}{\parbox{\textwidth}{\centering \Large \textbf{NIVEAU 2 : SPÉCIALISATION (S13-S28)}}}\end{center}
+
+\section{TRACKS SPÉCIALISÉS (A/B/C)}
+\textit{Le détail des tracks (Solana, EVM, Product) est disponible dans les chapitres dédiés.}
+
+\newpage
+\begin{center}\colorbox{SolanaGreen!20}{\parbox{\textwidth}{\centering \Large \textbf{EXTENSIONS \& OPTIONS}}}\end{center}
+
+\section{Modules de Diversification (Electifs)}
+
+Pour les étudiants souhaitant élargir leur spectre technique, RBK 2.0 propose des modules intensifs accessibles en parallèle ou post-cursus.
+
+\subsection{Module ZK : Zero-Knowledge Proofs (8 semaines)}
+\begin{itemize}
+    \item \textbf{Contenu :} Arithmétisation, R1CS, Plonk, Langage Noir et Circom.
+    \item \textbf{Projet :} Concevoir un mélangeur de tokens (Mixer) compliant (Privacy Pools).
+    \item \textbf{Pré-requis :} Niveau Mathématique A+ (Algèbre linéaire).
+\end{itemize}
+
+\subsection{Module DePIN : Decentralized Physical Infra (6 semaines)}
+\begin{itemize}
+    \item \textbf{Contenu :} Helium Network, Filecoin, IoT Integration, Proof of Coverage.
+    \item \textbf{Projet :} Déployer un réseau de capteurs LoRaWAN incentivé par token.
+\end{itemize}
+
+\subsection{Module Cross-Chain \& Interop (4 semaines)}
+\begin{itemize}
+    \item \textbf{Contenu :} Wormhole, LayerZero, Axelar. Design de messages asynchrones.
+    \item \textbf{Projet :} Bridge NFT Solana $\leftrightarrow$ Ethereum.
+\end{itemize}

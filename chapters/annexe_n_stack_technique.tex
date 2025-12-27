@@ -1,0 +1,42 @@
+\chapter{ANNEXE — OUTILLAGE \& STACK TECHNIQUE}
+\label{ann:stack}
+
+\section{Stack de Développement (Cyborg-Ready)}
+
+\subsection{Environnement Local}
+\begin{itemize}
+    \item \textbf{OS :} Linux (Ubuntu/Pop!\_OS) ou macOS. Windows via WSL2 uniquement.
+    \item \textbf{IDE :} VSCode (Profile RBK : Rust, Solidity, GitLens, Copilot).
+    \item \textbf{Terminal :} Alacritty + Tmux + Starship.
+\end{itemize}
+
+\subsection{Chain Stack}
+\begin{itemize}
+    \item \textbf{Solana :} Rust 1.75+, Anchor 0.29+, Solana CLI 1.18+.
+    \item \textbf{EVM :} Foundry (Forge, Cast, Anvil).
+    \item \textbf{Indexing :} The Graph (EVM), Helius/Shyft (Solana).
+\end{itemize}
+
+\section{Outils de Productivité \& IA}
+
+\begin{table}[H]
+    \caption{Matrice des Outils IA Autorisés}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|l|X|}
+        \hline
+        \textbf{Usage} & \textbf{Outil Validé} & \textbf{Politique d'Usage} \\ \hline
+        Coding Assistant & GitHub Copilot & Autorisé pour boilerplate/tests. Interdit pour algo critique. \\ \hline
+        Docs Search & Perplexity / Phind & Recommandé pour la recherche contextuelle. \\ \hline
+        Review & CodeRabbit & Pré-analyse des PRs avant review humaine. \\ \hline
+        Diagrams & Mermaid.js & "Diagrams as Code" obligatoire. \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Infrastructure CI/CD (Github Actions)}
+Tout repo étudiant doit inclure un workflow \texttt{.github/workflows/ci.yml} standardisé :
+\begin{itemize}
+    \item Lint : \texttt{cargo clippy} / \texttt{solhint}
+    \item Test : \texttt{cargo test} / \texttt{forge test}
+    \item Audit : \texttt{cargo audit}
+    \item Format : \texttt{cargo fmt --check}
+\end{itemize}

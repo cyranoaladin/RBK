@@ -1,0 +1,36 @@
+\chapter{TEMPLATE DE RAPPORT D'AUDIT DE SÉCURITÉ}
+
+Un rapport d'audit professionnel doit être clair, complet et actionnable.
+
+\section{Structure du Rapport}
+\begin{enumerate}
+    \item \textbf{Executive Summary :} Résumé pour les décideurs (Score, Risque global).
+    \item \textbf{Scope :} Liste des fichiers audités et Commit Hash.
+    \item \textbf{Findings :} Liste des vulnérabilités classées par sévérité.
+    \item \textbf{Recommendations :} Conseils d'architecture généraux.
+\end{enumerate}
+
+\section{Classification des Risques}
+
+\begin{center}
+    \textbf{Table: Échelle de Sévérité} \\
+    \small
+    \begin{tabular}{|l|l|p{6cm}|}
+        \hline
+        \textbf{Niveau} & \textbf{Impact} & \textbf{Exemple} \\ \hline
+        \textbf{CRITICAL} & Perte de fonds directe, Gel définitif & Reentrancy, Owner Key compromise \\ \hline
+        \textbf{HIGH} & Dégradation sévère du service, Perte partielle & DoS, Price Oracle manipulation \\ \hline
+        \textbf{MEDIUM} & Grief mineur, Coût Gas élevé & Griefing attack, Unbounded Loop \\ \hline
+        \textbf{LOW/INFO} & Bonnes pratiques, Lisibilité & Typo, Dead code \\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Fiche Finding Type}
+
+\begin{tcolorbox}[title=ID-01 : Unchecked External Call (H-01)]
+\textbf{Sévérité :} HIGH \\
+\textbf{Fichier :} \texttt{vault.rs} \\
+\textbf{Description :} L'appel CPI vers le programme Token ne vérifie pas le code retour.
+\textbf{Impact :} Un attaquant peut forcer l'échec silencieux du transfert et créditer son solde interne.
+\textbf{Recommandation :} Utiliser \texttt{anchor\_lang::solana\_program::program::invoke\_signed} et gérer le \texttt{Result}.
+\end{tcolorbox}
