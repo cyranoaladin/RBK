@@ -98,3 +98,70 @@ Career services (portfolio, entretiens blancs, placements) & Career & HoP & Ment
 Organisation Demo Day (panel, format, scoring, invitations) & Career & CEO & HoP, Mkt, Mentors & Ops, Students \\ \hline
 Suivi post-cohorte (KPIs, feedback, itérations curriculum) & HoP & CEO & Ops, Career, TechLeads & Mentors, Students \\
 }
+
+\newpage
+\section{Gabarits Studio (Ops \& Technique)}
+
+Ces modèles sont utilisés quotidiennement dans le cadre des rituels "Studio".
+
+\subsection{Template : Incident Drill Postmortem}
+À remplir après chaque simulation d'attaque du Jeudi (War Room).
+
+\begin{tcolorbox}[colback=white,colframe=red!75!black,title=Incident Postmortem \#ID]
+\textbf{Date :} JJ/MM/AAAA \hfill \textbf{Severity :} Critical / High / Medium \\
+\textbf{Reporter :} @StudentName \hfill \textbf{Duration :} 45min
+
+\textbf{1. Le Scénario (What happened?)} \\
+\textit{Exemple : Le smart contract permettait de retirer plus que le solde disponible (underflow).}
+
+\textbf{2. Impact (Si Mainnet)} \\
+\textit{Exemple : Perte totale des fonds du pool de liquidité (TVL = \$50k).}
+
+\textbf{3. Root Cause Analysis (The "Why")} \\
+\textit{Exemple : Utilisation de \texttt{unchecked} block dans Solidity 0.8+ sans vérification préalable.}
+
+\textbf{4. Le Fix (Patch)} \\
+\textit{Exemple : Retrait du bloc unchecked et ajout d'un \texttt{revert CustomError()}.}
+
+\textbf{5. Lessons Learned (Prevention)} \\
+\textit{Exemple : Ajouter un test Fuzzing qui tente des retraits massifs aléatoires.}
+\end{tcolorbox}
+
+\subsection{Standard Repo Structure (Template)}
+Tout repository étudiant doit suivre cette structure pour être auditable.
+
+\begin{verbatim}
+/project-root
+│
+├── /docs               # Architecture Decision Records (ADR)
+│   ├── ADR-001-Language-Choice.md
+│   └── Architecture.png
+│
+├── /src                # Code Source
+│   ├── /program        # Smart Contract (Rust/Solidity)
+│   └── /client         # SDK / Frontend
+│
+├── /tests              # Tests d'intégration & Fuzzing
+│
+├── .github/workflows   # CI Scripts
+│   ├── test.yml        # Unit Tests
+│   └── lint.yml        # Rustfmt / Clippy
+│
+├── Makefile            # Commandes standard (build, test, deploy)
+└── README.md           # Entry point (Install, Usage, Credits)
+\end{verbatim}
+
+\subsection{Template : Architecture Decision Record (ADR)}
+Pour justifier les choix techniques structurants.
+
+\begin{itemize}
+    \item \textbf{Titre :} Choisir Anchor vs Native Rust
+    \item \textbf{Statut :} Accepté
+    \item \textbf{Contexte :} Nous avons besoin de développer rapidement un MVP standard.
+    \item \textbf{Décision :} Utiliser Anchor Framework.
+    \item \textbf{Conséquences :}
+    \begin{itemize}
+        \item (+) Développement plus rapide, sécurité par défaut (discriminators).
+        \item (-) Abstraction magique, binaire plus lourd.
+    \end{itemize}
+\end{itemize}

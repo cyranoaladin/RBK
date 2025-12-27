@@ -65,19 +65,34 @@ Elle est \textbf{interdite} pour :
 
 RBK simule un environnement de travail "Production-Grade" dès la semaine 1.
 
-\subsection{Definition of Done (DoD)}
-Aucune tâche n'est validée sans respecter ces critères :
+\subsection{Definition of Done (DoD) Globale}
+Pour qu'une tâche soit considérée comme terminée sur le Kanban, elle doit valider IMPÉRATIVEMENT :
 \begin{enumerate}
-    \item \textbf{Code :} Fonctionnel, formatté (`cargo fmt`), sans warnings.
-    \item \textbf{Tests :} Tests unitaires passants + 1 Test d'intégration critique.
-    \item \textbf{Compil :} Pipeline CI (GitHub Actions) au vert.
-    \item \textbf{Doc :} README à jour (Install, Run, Test).
+    \item \textbf{Code :} Propre, formaté (\texttt{cargo fmt}), sans linter warnings (\texttt{cargo clippy}).
+    \item \textbf{Tests :} Tests unitaires verts (Coverage > 80\%), test d'intégration critique passant.
+    \item \textbf{Review :} PR approuvée par au moins 1 pair ou mentor.
+    \item \textbf{CI :} Pipeline GitHub Actions vert (Build + Test + Lint).
+    \item \textbf{Release :} Tag de version créé (SemVer) si applicable.
 \end{enumerate}
+
+\subsection{Politique PR/CI Studio (Flow Technique)}
+Nous imposons le workflow "Feature Branch" strict :
+\begin{itemize}
+    \item \textbf{Branching :} \texttt{main} est protégé. Tout dev se fait sur \texttt{feat/ma-feature}.
+    \item \textbf{Commits :} Conventionnelle (ex: \texttt{feat: add user login}, \texttt{fix: overflow error}).
+    \item \textbf{PR Template :}
+    \begin{itemize}
+        \item \textit{What :} Description des changements.
+        \item \textit{Why :} Lien vers la User Story ou l'Issue.
+        \item \textit{How to Test :} Commandes pour vérifier que ça marche.
+        \item \textit{Screenshots :} Preuve visuelle (si UI).
+    \end{itemize}
+\end{itemize}
 
 \subsection{Rituels "Agile Web3"}
 \begin{itemize}
     \item \textbf{Daily Stand-up (Async)} : Status update sur Discord (Blockers/Progress).
-    \item \textbf{Weekly Incident Drill} : Simulation de hack (le jeudi), post-mortem obligatoire.
+    \item \textbf{Weekly Incident Drill} : Simulation d'attaque le jeudi (voir Annexe Gabarits pour Postmortem).
     \item \textbf{Demo Day (Vendredi)} : Présentation produit (pas de slides, code only) 5 min.
 \end{itemize}
 
