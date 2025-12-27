@@ -1,99 +1,100 @@
 \chapter{Annexes — Gabarits opérationnels \& Stratégiques}
 \label{annexe:gabarits}
 
-Cette annexe regroupe les outils de pilotage stratégique pré-configurés pour le déploiement de RBK 2.0. Ils servent de référence pour les comités de pilotage et la gestion quotidienne.
+Cette annexe présente les matrices stratégiques validées pour le déploiement de RBK 2.0.
 
-\section{Modèle de Matrice SWOT (Analyse Stratégique)}
-
-Ce modèle est utilisé pour évaluer le positionnement de nouvelles initiatives (ex: lancement d'une nouvelle Track spécialisée).
-
-\begin{SWOTMatrix}[Exemple : Lancement Track "Zero-Knowledge"]
+\paragraph{Légende des rôles (RACI).}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Expertise :} Équipe pédagogique déjà formée aux bases de la crypto.
-    \item \textbf{Marque :} RBK reconnu pour la difficulté technique.
+  \item \textbf{CEO} : Direction RBK (décisions stratégiques / arbitrage).
+  \item \textbf{HoP} : Head of Program / Directeur pédagogique (qualité, curriculum, delivery).
+  \item \textbf{TechLead-EVM} : Référent technique EVM (Solidity, tooling, patterns, sécurité).
+  \item \textbf{TechLead-SOL} : Référent technique Solana (Rust/Anchor, tooling, sécurité).
+  \item \textbf{SecLead} : Référent sécurité/audit (méthodologie, checklists, hardening).
+  \item \textbf{Ops} : Opérations (planning, salles, outils, LMS, comptes, supports).
+  \item \textbf{Career} : Career services (coaching, portfolio, placements, partenariats RH).
+  \item \textbf{Mkt} : Marketing \& admissions (funnel, contenus, événements, conversion).
+  \item \textbf{Legal} : Conseil conformité (disclaimer, scénarios opératoires, risques).
+  \item \textbf{Mentors} : intervenants/mentors externes (reviews, office hours, panels).
+  \item \textbf{Students} : apprenants (delivery, repo, docs, demo, éthique).
 \end{itemize}
-&
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Ressources :} Manque de spécialistes ZK seniors disponibles pour le mentorat.
-    \item \textbf{Matériel :} Nécessité de puissance de calcul élevée pour les preuves.
-\end{itemize}
-\\ \hline
-\rowcolor{SolanaBlue!10}\textbf{Opportunités} & \textbf{Menaces}\\ \hline
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Marché :} Demande explosive pour la confidentialité (Privacy).
-    \item \textbf{Financement :} Grants possibles de fondations (StarkWare, zkSync).
-\end{itemize}
-&
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Régulation :} Incertitude sur le statut des "Privacy Coins" et outils d'anonymisation.
-    \item \textbf{Complexité :} Barrière à l'entrée trop haute pour les juniors.
-\end{itemize}
-\\ \hline
-\end{SWOTMatrix}
 
 \newpage
-\section{Modèle de Priorisation MoSCoW}
+\section{Matrice SWOT (Forces, Faiblesses, Opportunités, Menaces)}
 
-Utilisé pour définir le périmètre des MVP (Minimum Viable Products) développés par le Studio.
-
-\begin{MoSCoWTable}[Exemple : Plateforme Learning Management System (LMS) V3]
-\begin{itemize}[leftmargin=*]
-\item \textbf{Auth :} Login via Wallet (SBT Check).
-\item \textbf{Cours :} Viewer Markdown/Vidéo.
-\item \textbf{Tests :} Soumission Git automatisée.
-\end{itemize} &
-\begin{itemize}[leftmargin=*]
-\item \textbf{Social :} Profils publics élèves.
-\item \textbf{Gamification :} Leaderboard temps réel.
-\item \textbf{Admin :} Dashboard analytics basique.
-\end{itemize} &
-\begin{itemize}[leftmargin=*]
-\item \textbf{Marketplace :} Offres d'emploi intégrées.
-\item \textbf{Mobile :} App native iOS/Android.
-\end{itemize} &
-\begin{itemize}[leftmargin=*]
-\item \textbf{Metaverse :} Campus virtuel 3D.
-\item \textbf{AI :} Tuteur conversationnel vocal (Reporté V4).
-\end{itemize}
-\\ \hline
-\end{MoSCoWTable}
-
-\section{Matrice RACI (Responsabilités)}
-
-Standard pour clarifier les rôles sur les processus critiques.
-
-\begin{RACITable}[Exemple : Processus de Validation des Diplômes]{|Y|Z|Z|Z|Z|}
-\hline
-\rowcolor{SolanaBlue!10}\textbf{Tâche} & \textbf{Dir. Peda} & \textbf{Jury} & \textbf{Admin} & \textbf{CEO}\\ \hline
-Vérification des notes continues & \raciA & \raciC & \raciR & \raciI \\ \hline
-Soutenance finale (Capstone) & \raciC & \raciA & \raciI & \raciI \\ \hline
-Émission du certificat (NFT) & \raciC & \raciI & \raciA & \raciR \\ \hline
-Signature officielle & \raciI & \raciI & \raciR & \raciA \\ \hline
-\end{RACITable}
+\RBKSWOT{
+  \textbullet~Positionnement \textbf{premium} : ``Senior-by-Design'' (engineering, sécurité, production). \par
+  \textbullet~\textbf{DualTrack EVM/Solana} : double crédibilité et employabilité internationale. \par
+  \textbullet~Méthodologie \textbf{Studio} : sprints, PR reviews, CI, tests, incident drills, demo days. \par
+  \textbullet~Production d'un \textbf{portfolio vérifiable} : repos, releases, docs, rubrics, capstones. \par
+  \textbullet~Adossement possible à un \textbf{réseau mentors} (diaspora, builders, écosystèmes).
+}{
+  \textbullet~Risque de \textbf{sur-ambition} : contenu trop large si non modularisé (fatigue, dilution). \par
+  \textbullet~Dépendance à des \textbf{experts rares} (Rust/Anchor, audit), risque de disponibilité. \par
+  \textbullet~Exigence élevée : peut réduire le volume d’inscrits si admissions trop strictes ou discours mal cadré. \par
+  \textbullet~Nécessité d’une \textbf{cohérence chiffrée} stricte (durées, prix, KPI) pour crédibilité business/investisseurs. \par
+  \textbullet~Contexte local : \textbf{sensibilité réglementaire} autour des actifs numériques (communication à cadrer).
+}{
+  \textbullet~\textbf{Marché remote} Web3 : opportunités globales (teams distribuées, rémunérations supérieures). \par
+  \textbullet~Demande croissante pour \textbf{profils sécurité / audit-readiness} (IA = plus de vulnérabilités). \par
+  \textbullet~\textbf{Partenariats} (protocols, infra, wallets, analytics) : crédibilité + projets réels + recrutement. \par
+  \textbullet~RBK peut devenir un \textbf{hub régional} (Afrique du Nord / francophonie) avec cohorte pilote forte. \par
+  \textbullet~Monétisation additionnelle : \textbf{B2B} (formations entreprise), \textbf{studio services}, incubation.
+}{
+  \textbullet~Volatilité Web3 : cycles de marché \& narratives (risque sur marketing et perception). \par
+  \textbullet~\textbf{Risque réputationnel} : confusion ``formation dev'' vs ``promesse crypto'' si branding imprécis. \par
+  \textbullet~Risques sécurité : un capstone mal cadré peut exposer à des \textbf{mauvaises pratiques} (à prévenir). \par
+  \textbullet~Concurrence MOOC/bootcamps internationaux : différenciation doit être \textbf{preuves + mentoring + studio}. \par
+  \textbullet~Réglementaire : incertitudes locales (paiements, communications), besoin d’un \textbf{modèle opératoire compliant}.
+}
 
 \newpage
-\section{Registre des Risques (Risk Register)}
+\section{Priorisation MoSCoW (Must, Should, Could, Won't)}
 
-Outil vivant de suivi des menaces potentielles.
+\RBKMoSCoW{
+  \textbullet~Programme \textbf{DualTrack} : choix \textbf{EVM} ou \textbf{Solana} avec tronc commun + spécialisation. \par
+  \textbullet~\textbf{Zéro réduction de contenu} : restructuration/ordonnancement sans suppression. \par
+  \textbullet~Méthode \textbf{Studio obligatoire} : PR reviews, CI, tests minimaux, conventions repo, releases. \par
+  \textbullet~\textbf{Capstones} (3) + 1 projet final : livrables, critères d’acceptation, rubric de notation. \par
+  \textbullet~\textbf{Note de cadrage remplie} : SWOT/MoSCoW/RACI/registre de risques \emph{non vides} dans le corps du doc. \par
+  \textbullet~\textbf{Cohérence chiffrée} : une page ``Factsheet'' unique (durée, cohorte, prérequis, prix, KPIs). \par
+  \textbullet~\textbf{Conformité/Éthique} : disclaimers, anti-trading, scénarios opératoires (Tunisie / export) + risques. \par
+  \textbullet~\textbf{Employabilité} : portfolio, coaching, entretiens blancs, demo day, pipeline bounties/placements.
+}{
+  \textbullet~Micro-certifications (badges) : critères vérifiables (repo + CI + tests + doc + demo). \par
+  \textbullet~Réseau mentors : office hours mensuels + reviews structurées + panels demo day. \par
+  \textbullet~Outillage standardisé : templates PR, issues, ADR, runbooks, checklists sécurité. \par
+  \textbullet~Ajout de listes automatiques : \textbf{Liste des figures/tableaux} + \textbf{liste des acronymes}. \par
+  \textbullet~Bibliographie / sources : section ``Sources \& hypothèses'' (marché, salaires, ROI, funnel).
+}{
+  \textbullet~Simulation ``incident drills'' hebdomadaire + postmortems documentés. \par
+  \textbullet~Module ``Security/Audit Readiness'' avancé (option premium) : fuzzing, invariants, audit package. \par
+  \textbullet~Programme ``B2B Corporate'' dérivé (formations courtes : wallet/tx, audit prep, tokenization). \par
+  \textbullet~Offre ``Incubation légère'' : accompagnement 6–8 semaines post-demo day pour top projets. \par
+  \textbullet~Chapitre ``Scénarios de scalabilité'' : 2/3 promos par an + ressources + QA.
+}{
+  \textbullet~Contenus orientés \textbf{trading/spéculation} ou promesses de gains. \par
+  \textbullet~Contenus expliquant le contournement légal/réglementaire ou l’évasion fiscale. \par
+  \textbullet~``Tout apprendre sur tout'' sans critères de sortie : pas de fluff, pas de slides-only. \par
+  \textbullet~Déploiements mainnet non audités comme exigence pédagogique (testnet/devnet par défaut).
+}
 
-\begin{RiskRegister}[Extrait Registre des Risques - Opérations Courantes]
-\rowcolor{SolanaPurple!10}\textbf{Risque Scénario} & \textbf{P} & \textbf{I} & \textbf{Plan d'Action (Mitigation)} & \textbf{Resp.}\\ \hline
-Coupure Internet prolongée au Hub & 3 & 5 & Solution de failover 4G/5G + Starlink en backup & Ops Mgr\\ \hline
-Départ inopiné d'un Lead Instructor & 2 & 5 & Binômage systématique + Documentation à jour & CTO\\ \hline
-Virus/Ransomware sur parc machines & 3 & 4 & Vlan ségrégués, Deep Freeze, Backups immuables & SecOps\\ \hline
-Baisse drastique cours crypto (Bear) & 4 & 3 & Trésorerie en Stablecoins (USDC), Diversification & CFO\\ \hline
-Contentieux juridique ISA & 2 & 4 & Médiation préalable, Contrats validés par avocats & Legal\\ \hline
-\end{RiskRegister}
+\newpage
+\section{Matrice RACI (Responsable, Accountable, Consulted, Informed)}
 
-\section{Tableau de Bord KPI \& ROI}
-
-Indicateurs clés de performance suivis mensuellement.
-
-\begin{KPITable}[Indicateurs de Santé du Programme]
-\rowcolor{SolanaGreen!12}\textbf{KPI} & \textbf{Définition} & \textbf{Cible} & \textbf{Fréquence}\\ \hline
-\textbf{NPS Apprenant} & Net Promoter Score (Satisfaction) & > 70 & Fin de module\\ \hline
-\textbf{Taux de Rétention} & \% d'élèves finissant le cursus & > 85\% & Cohorte\\ \hline
-\textbf{Dette Technique} & Tickets critiques ouverts > 1 mois & 0 & Hebdomadaire\\ \hline
-\textbf{Coût Acquisition} & Coût Marketing / Élève inscrit & < 500€ & Trimestriel\\ \hline
-\textbf{Taux de Placement} & CDI/Freelance < 3 mois post-formation & > 90\% & Semestriel\\ \hline
-\end{KPITable}
+\RBKRACI{
+Définir la vision/positionnement (RBK Web3 Studio) & CEO & CEO & HoP, Mkt, Legal & Ops, Mentors, Students \\ \hline
+Figer la ``Factsheet'' (durée, cohorte, prix, KPIs, tracks) & HoP & CEO & Ops, Career, Legal & Mkt, Students \\ \hline
+Concevoir le tronc commun (objectifs, labs, DoD) & HoP & HoP & TechLead-EVM, TechLead-SOL, SecLead & CEO, Ops \\ \hline
+Concevoir Track EVM (syllabus, labs, tooling) & TechLead-EVM & HoP & SecLead, Mentors & CEO, Ops \\ \hline
+Concevoir Track Solana (syllabus, labs, tooling) & TechLead-SOL & HoP & SecLead, Mentors & CEO, Ops \\ \hline
+Définir rubrics d’évaluation (PR, capstones, examens) & SecLead & HoP & TechLeads, Mentors & CEO, Students \\ \hline
+Définir capstones (specs, critères d’acceptation, scoring) & HoP & HoP & TechLeads, SecLead, Career & CEO, Mkt \\ \hline
+Mettre en place l’infra (LMS, repos templates, CI, comptes outils) & Ops & HoP & TechLeads & CEO, Students \\ \hline
+Admissions (test d’entrée, entretiens, sélection cohorte) & Mkt & CEO & HoP, TechLeads, Career & Ops, Students \\ \hline
+Encadrement hebdo (sprints, reviews, incident drills) & HoP & HoP & TechLeads, SecLead, Mentors & CEO, Ops \\ \hline
+Assurance qualité (cohérence doc, ToC, versioning, build LaTeX) & Ops & HoP & SecLead & CEO, Mkt \\ \hline
+Conformité \& communication (disclaimers, scénario opératoire) & Legal & CEO & HoP, Ops & Mkt, Students \\ \hline
+Career services (portfolio, entretiens blancs, placements) & Career & HoP & Mentors, TechLeads & CEO, Mkt \\ \hline
+Organisation Demo Day (panel, format, scoring, invitations) & Career & CEO & HoP, Mkt, Mentors & Ops, Students \\ \hline
+Suivi post-cohorte (KPIs, feedback, itérations curriculum) & HoP & CEO & Ops, Career, TechLeads & Mentors, Students \\
+}

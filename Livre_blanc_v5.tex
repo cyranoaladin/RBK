@@ -79,7 +79,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amsthm}
 \usepackage{unicode-math}
-\setmathfont{Latin Modern Math}
+\setmathfont{XITS Math}
 \usepackage{enumitem}
 \usepackage{array}
 \usepackage{booktabs}
@@ -289,13 +289,60 @@
   \end{tabularx}
   \end{tableBox}
 }
+
+% ============================================================
+%  MACROS HAUT NIVEAU (Direct Implementation)
+% ============================================================
+
+\newcommand{\RBKSWOT}[4]{
+  \begin{tableBox}{SWOT — Analyse Stratégique RBK 2.0}{SolanaPurple}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|Y|}
+  \hline
+  \rowcolor{SolanaGreen!10}\textbf{Forces} & \textbf{Faiblesses}\\ \hline
+    \begin{minipage}[t]{\linewidth}#1\end{minipage} & \begin{minipage}[t]{\linewidth}#2\end{minipage} \\ \hline
+    \rowcolor{SolanaBlue!10}\textbf{Opportunités} & \textbf{Menaces}\\ \hline
+    \begin{minipage}[t]{\linewidth}#3\end{minipage} & \begin{minipage}[t]{\linewidth}#4\end{minipage} \\ \hline
+  \end{tabularx}
+  \end{tableBox}
+}
+
+\newcommand{\RBKMoSCoW}[4]{
+  \begin{tableBox}{Priorisation MoSCoW — Fonctionnalités \& Exigences}{SolanaGreen}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|Y|Y|Y|Y|}
+  \hline
+  \rowcolor{SolanaGreen!12}\textbf{Must have} &
+  \textbf{Should have} &
+  \textbf{Could have} &
+  \textbf{Won't have (for now)}\\ \hline
+    \begin{minipage}[t]{\linewidth}#1\end{minipage} & 
+    \begin{minipage}[t]{\linewidth}#2\end{minipage} & 
+    \begin{minipage}[t]{\linewidth}#3\end{minipage} & 
+    \begin{minipage}[t]{\linewidth}#4\end{minipage} \\ \hline
+  \end{tabularx}
+  \end{tableBox}
+}
+
+\newcommand{\RBKRACI}[1]{
+  \begin{tableBox}{Matrice RACI — Rôles \& Responsabilités}{SolanaBlue}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabularx}{\textwidth}{|p{4.5cm}|p{2cm}|p{2cm}|Y|Y|}
+    \hline
+    \rowcolor{SolanaBlue!10}\textbf{Activité} & \textbf{R} & \textbf{A} & \textbf{C} & \textbf{I}\\ \hline
+    #1
+    \hline
+  \end{tabularx}
+  \end{tableBox}
+}
+
 % En-têtes/Pieds
 % ----------------------------
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\color{SolanaPurple}\leftmark}
-\fancyfoot[R]{\color{SolanaBlue}RBK Whitepaper}
+\fancyfoot[R]{\color{SolanaBlue}RBK Whitepaper v5.0}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\headrule}{{\color{SolanaPurple}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
@@ -330,7 +377,7 @@
     \vfill
     {\LARGE \bfseries \color{SolanaGreen!70!black} MONEY FACTORY AI} \\[0.5cm]
     {\large \color{BaseDark} Web3 Expert Training Program} \\[2cm]
-    {\large \color{black!60} Version 4.0 — Janvier 2026 (Scale \& Impact)}
+    {\large \color{black!60} Version 5.0 — Janvier 2026 (Scale \& Impact)}
 \end{titlepage}
 
 \pagecolor{white}
@@ -346,6 +393,12 @@
 
 % Liste des Acronymes
 \input{chapters/00_acronymes.tex}
+\newpage
+
+\newpage
+
+% Factsheet RBK 2.0 (Single Source of Truth)
+\input{chapters/00_factsheet.tex}
 \newpage
 
 % 1. Executive Summary

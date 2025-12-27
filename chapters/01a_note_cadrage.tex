@@ -21,32 +21,71 @@ L'enjeu est triple :
 
 \section{Enjeux (Stratégiques, Opérationnels, Réglementaires)}
 
-\begin{SWOTMatrix}[SWOT — Enjeux de la Transformation RBK 2.0]
+\paragraph{Légende des rôles (RACI).}
 \begin{itemize}[leftmargin=*]
-    \item Positionnement unique "Dual-Track" en Afrique.
-    \item Pédagogie immersive ("Cyborg Methodology").
-    \item Modèle économique aligné (ISA).
+  \item \textbf{CEO} : Direction RBK (décisions stratégiques).
+  \item \textbf{HoP} : Head of Program (qualité, curriculum).
+  \item \textbf{TechLeads} : Référents techniques (EVM/Solana).
+  \item \textbf{SecLead} : Référent sécurité/audit.
+  \item \textbf{Ops} : Opérations & \textbf{Career} : Carrière.
 \end{itemize}
-&
-\begin{itemize}[leftmargin=*]
-    \item Complexité technique élevée (Rust, ZK-Proofs).
-    \item Intensité du programme (risque de décrochage).
-\end{itemize}
-\\ \hline
-\rowcolor{SolanaBlue!10}\textbf{Opportunités} & \textbf{Menaces}\\ \hline
-\begin{itemize}[leftmargin=*]
-    \item Demande mondiale croissante pour Solana/EVM.
-    \item Partenariats institutionnels (banques, gouvernements).
-    \item Vide concurrentiel sur le segment "Senior".
-\end{itemize}
-&
-\begin{itemize}[leftmargin=*]
-    \item Volatilité du marché crypto/Web3.
-    \item Fuite des cerveaux sans retour sur investissement local.
-    \item Évolution rapide des stacks techniques.
-\end{itemize}
-\\ \hline
-\end{SWOTMatrix}
+
+\section{Matrice SWOT (Synthèse)}
+
+\RBKSWOT{
+  \textbullet~Positionnement \textbf{premium} : ``Senior-by-Design''. \par
+  \textbullet~\textbf{DualTrack EVM/Solana}. \par
+  \textbullet~Méthodologie \textbf{Studio} (PR reviews, CI). \par
+  \textbullet~Production d'un \textbf{portfolio vérifiable}. \par
+  \textbullet~Réseau mentors (diaspora, builders).
+}{
+  \textbullet~Risque de \textbf{sur-ambition} (contenu dense). \par
+  \textbullet~Dépendance à des \textbf{experts rares}. \par
+  \textbullet~Exigence élevée (sélectivité). \par
+  \textbullet~Nécessité d'une \textbf{cohérence chiffrée} stricte. \par
+  \textbullet~Sensibilité réglementaire locale.
+}{
+  \textbullet~\textbf{Marché remote} Web3 global. \par
+  \textbullet~Demande profils \textbf{sécurité / audit}. \par
+  \textbullet~\textbf{Partenariats} protocols/infra. \par
+  \textbullet~Hub régional (Afrique du Nord). \par
+  \textbullet~Opportunités B2B \& Studio.
+}{
+  \textbullet~Volatilité Web3 (cycles marché). \par
+  \textbullet~\textbf{Risque réputationnel} (confusion crypto/trading). \par
+  \textbullet~Risques sécurité (mauvaises pratiques). \par
+  \textbullet~Concurrence internationale. \par
+  \textbullet~Incertitudes réglementaires.
+}
+
+\section{Priorisation MoSCoW (Fonctionnalités Clés)}
+
+\RBKMoSCoW{
+  \textbullet~Programme \textbf{DualTrack}. \par
+  \textbullet~\textbf{Méthode Studio} obligatoire. \par
+  \textbullet~\textbf{Capstones} (3) + Projet Final. \par
+  \textbullet~Note de cadrage remplie. \par
+  \textbullet~Factsheet unique. \par
+  \textbullet~Conformité/Éthique (Disclaimers). \par
+  \textbullet~Employabilité (Portfolio).
+}{
+  \textbullet~Micro-certifications (Badges). \par
+  \textbullet~Réseau Mentors structuré. \par
+  \textbullet~Outillage standardisé (Templates). \par
+  \textbullet~Listes automatiques (Figures/Acronymes). \par
+  \textbullet~Bibliographie sourcée.
+}{
+  \textbullet~Incident Drills hebdos. \par
+  \textbullet~Module Security Avancé. \par
+  \textbullet~Offre B2B Corporate. \par
+  \textbullet~Incubation légère (post-demo). \par
+  \textbullet~Scénarios de scalabilité.
+}{
+  \textbullet~Trading / Spéculation. \par
+  \textbullet~Contournement fiscal. \par
+  \textbullet~Contenu "Fluff" sans pratique. \par
+  \textbullet~Mainnet non audité obligatoire.
+}
 
 \section{Objectifs SMART}
 
@@ -125,20 +164,24 @@ Bugs critiques en prod (Factory) & 2 & 5 & Audits croisés, Bounties, Assurance 
 \end{RiskRegister}
 \textit{Légende : P = Probabilité (1-5), I = Impact (1-5).}
 
+
 \section{Gouvernance \& pilotage}
 
 \subsection{Méthodologie}
 Le pilotage suit une approche Agile/Scrum adaptée à la pédagogie. Des sprints de 2 semaines rythment l'apprentissage et la production.
 
-\begin{RACITable}[Matrice RACI — Gouvernance RBK 2.0]{|Y|Z|Z|Z|Z|}
-\hline
-\rowcolor{SolanaBlue!10}\textbf{Activité} & \textbf{CEO} & \textbf{CTO} & \textbf{Lead Instr.} & \textbf{Ops}\\ \hline
-Définition Stratégie & \raciA & \raciR & \raciC & \raciI \\ \hline
-Validation Syllabus & \raciI & \raciA & \raciR & \raciI \\ \hline
-Recrutement Cohorte & \raciI & \raciC & \raciC & \raciA \\ \hline
-Suivi Qualité & \raciC & \raciA & \raciR & \raciI \\ \hline
-Partenariats B2B & \raciA & \raciR & \raciC & \raciR \\ \hline
-\end{RACITable}
+\section{Matrice RACI (Responsabilités Macro)}
+
+\RBKRACI{
+Définir la vision/positionnement & CEO & CEO & HoP, Legal & Ops \\ \hline
+Figer la ``Factsheet'' & HoP & CEO & Ops, Legal & Students \\ \hline
+Concevoir les Tracks (EVM/Solana) & TechLeads & HoP & SecLead & CEO \\ \hline
+Définir rubrics \& Capstones & SecLead & HoP & TechLeads & CEO \\ \hline
+Admissions \& Sélection & Mkt & CEO & HoP, TechLeads & Ops \\ \hline
+Encadrement hebdo (Sprints) & HoP & HoP & TechLeads, Mentors & Ops \\ \hline
+Conformité \& Légal & Legal & CEO & HoP & Students \\ \hline
+Demo Day \& Carrière & Career & CEO & HoP, Mentors & Ops \\
+}
 
 \section{Planification, budget, indicateurs}
 
