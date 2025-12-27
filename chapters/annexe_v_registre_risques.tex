@@ -1,0 +1,290 @@
+\chapter{ANNEXE — Registre des Risques Détaillé (v1)}
+\label{ann:registre_risques}
+
+Cette annexe présente le registre des risques opérationnels validé pour le lancement du Studio.
+
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\subsection*{Registre de risques v1 (version opérationnelle)}
+\paragraph{Échelle (P, I).}
+\begin{itemize}
+  \item \textbf{P=1} rare ; \textbf{P=3} plausible ; \textbf{P=5} très probable.
+  \item \textbf{I=1} impact mineur (retard local, peu d’effet) ; \textbf{I=3} impact significatif (dégradation qualité / retards majeurs) ; \textbf{I=5} impact critique (arrêt, réputation, financier, conformité).
+\end{itemize}
+
+\begin{landscape}
+\begin{longtable}{P{0.9cm} P{2.0cm} P{4.5cm} c c c P{1.9cm} P{2.2cm} P{3.8cm} P{4.2cm} P{4.2cm} P{3.4cm} P{1.8cm}}
+\caption{Registre de risques v1 — RBK Web3 Studio (DualTrack EVM/Solana)}\label{tab:rbk-risk-register-v1}\\
+\toprule
+\textbf{ID} & \textbf{Cat.} & \textbf{Risque (énoncé)} & \textbf{P} & \textbf{I} & \textbf{Score} & \textbf{Niveau} & \textbf{Owner} & \textbf{Déclencheurs / signaux} & \textbf{Mesures préventives (contrôles)} & \textbf{Plan de contingence (réponse)} & \textbf{Suivi / KPI} & \textbf{Statut}\\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{ID} & \textbf{Cat.} & \textbf{Risque (énoncé)} & \textbf{P} & \textbf{I} & \textbf{Score} & \textbf{Niveau} & \textbf{Owner} & \textbf{Déclencheurs / signaux} & \textbf{Mesures préventives (contrôles)} & \textbf{Plan de contingence (réponse)} & \textbf{Suivi / KPI} & \textbf{Statut}\\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{13}{r}{\textit{Suite page suivante}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+R-01 & STRAT/MKT &
+Sous-remplissage de la cohorte pilote (inscriptions insuffisantes pour lancer). &
+3 & 5 & 15 & Élevé &
+Mkt + CEO &
+Taux de conversion en baisse, peu de leads qualifiés, abandons après entretien. &
+Funnel admissions documenté (ICP clair), campagne alumni, webinaires, partenariats écoles, early-bird, preuves (capstones). &
+Réduire taille cohorte, basculer format part-time, lancer 1 track d’abord, renforcer offres bourses/financement. &
+Leads/semaine, CVR lead→entretien, CVR entretien→admis, coût par lead (CPL). &
+Ouvert \\
+
+R-02 & FIN &
+Dérive budgétaire (experts, outils, infra) réduisant la marge et la crédibilité du business plan. &
+3 & 4 & 12 & Élevé &
+CEO + Ops &
+Dépenses outils > prévision, honoraires mentors imprévus, achats hors budget. &
+Budget base + réserve (10–15\%), politique d’achat, liste outils “Must/Should”, contrats-cadres mentors. &
+Geler options “Could”, renégocier licences, basculer sur alternatives, réduire interventions non critiques. &
+Variance budget (\%), burn-rate mensuel, coût/étudiant, marge brute. &
+Ouvert \\
+
+R-03 & OPS/PLANNING &
+Retard de production pédagogique (labs, templates, rubrics, repos) avant démarrage. &
+3 & 4 & 12 & Élevé &
+HoP + Ops &
+Absence de “starter kits”, modules incomplets, QA doc non faite à J-30. &
+Plan 90 jours, jalons hebdo, “golden repos” minimalistes, QA LaTeX/ToC, checklists. &
+Décaler lancement, réduire périmètre initial (1 track), intensifier production en sprint, mobiliser mentors. &
+\% modules prêts (DoD), nb labs testés, nb repos templates validés. &
+Ouvert \\
+
+R-04 & HR &
+Indisponibilité/défection d’un expert clé (Rust/Anchor, Audit, EVM tooling). &
+3 & 4 & 12 & Élevé &
+CEO + HoP &
+Annulations répétées, latence réponses, surcharge d’un seul formateur. &
+Pool de remplaçants (2 niveaux), sessions enregistrées, documentation complète, contrats avec SLA. &
+Remplacer par mentor backup, basculer certaines sessions en asynchrone, réduire scope module avancé. &
+Heures mentors livrées vs prévues, taux d’annulation, satisfaction apprenants (NPS module). &
+Ouvert \\
+
+R-05 & PED/QUAL &
+Hétérogénéité du niveau des apprenants (écart trop grand) → ralentissement ou décrochage. &
+4 & 4 & 16 & Critique &
+HoP &
+Beaucoup de “rattrapage”, PR refusées massivement, labs non terminés. &
+Test d’entrée + entretien technique, “Bridge” 2–4 semaines, exigences TS/Git, regroupement par binômes. &
+Séparer en deux sous-groupes, augmenter TA, réduire features, rallonger sprint, coaching individuel. &
+Taux completion labs, nb PR rework, taux d’absentéisme, churn apprenant (\%). &
+Ouvert \\
+
+R-06 & PED/QUAL &
+Méthode “Studio” non appliquée (merges sans review/tests) → perte de différenciation et baisse qualité. &
+3 & 5 & 15 & Élevé &
+HoP + SecLead &
+CI rouge ignorée, PR sans rubric, livrables non documentés. &
+Gates stricts : zero-merge sans review + tests, templates PR, codeowners, rubric PR. &
+Bloquer merges, “freeze” releases, séance de remediation QA, rework obligatoire avant capstone. &
+Taux PR conformes (\%), CI pass rate, nb merges directs, dette technique (issues). &
+Ouvert \\
+
+R-07 & TECH/INFRA &
+Pannes/instabilités RPC (EVM/Solana) pendant labs → pertes de temps, démo cassée. &
+4 & 3 & 12 & Élevé &
+Ops + TechLeads &
+Timeouts, erreurs blockhash expiré, rate-limit, impossibilité de confirmer tx. &
+Multi-providers, stratégie fallback, cache, mocks locaux, quotas, “incident drills” planifiés. &
+Basculer sur environnement local/mocks, déplacer labs, prolonger sprint, publier runbook. &
+Taux erreurs RPC, latence moyenne, incidents/semaine, temps moyen de reprise (MTTR). &
+Ouvert \\
+
+R-08 & SEC &
+Capstone contient une vulnérabilité grave (contrat ou logique wallet/tx) → risque réputationnel. &
+3 & 5 & 15 & Élevé &
+SecLead + HoP &
+Findings critiques en review, tests d’abus échouent, logique d’authz fragile. &
+Checklist sécurité, threat model obligatoire, “security review sprint”, tests d’abus minimaux. &
+Bloquer livraison, exiger patch + re-audit, démo sur testnet, documenter limitations. &
+Nb findings High/Critical, couverture tests sécurité, temps de remédiation. &
+Ouvert \\
+
+R-09 & LEGAL/REP &
+Confusion publique : programme perçu comme “formation à gagner de l’argent avec crypto/trading”. &
+3 & 5 & 15 & Élevé &
+CEO + Legal + Mkt &
+Messages/ads ambigus, questions trading, commentaires négatifs, presse locale. &
+Charte de communication, disclaimers, “software engineering export”, interdits explicites (trading). &
+Rectificatif public, retrait contenus, FAQ officielle, formation interne marketing, validation Legal. &
+Nb incidents comm, taux de questions trading, sentiment réseau social. &
+Ouvert \\
+
+R-10 & LEGAL/OPS &
+Incertitudes réglementaires locales impactant paiements/communication/partenariats. &
+3 & 4 & 12 & Élevé &
+Legal + CEO &
+Blocage banque, partenaires frileux, refus sponsor, avis contradictoires. &
+Operating model par scénarios (local/export/hybride), paiements classiques, docs juridiques. &
+Basculer sur modèle export + facturation service, limiter mentions, renforcer disclaimers. &
+Nb blocages paiement, time-to-contract, retours juridiques, incidents conformité. &
+Ouvert \\
+
+R-11 & FIN/FX &
+Risque change / inflation (coûts outils en devise, recettes en TND) impactant marge. &
+3 & 3 & 9 & Modéré &
+CEO + Ops &
+Hausse coûts SaaS, factures en USD/EUR, variation TND. &
+Hedging “soft” : buffer, pricing révisable, négociation annuelle, alternatives open-source. &
+Augmenter prix prochaines cohortes, réduire outils non critiques, contractualiser en TND si possible. &
+Part coûts en devise (\%), variance coût outil, marge/étudiant. &
+Ouvert \\
+
+R-12 & OPS/PROC &
+Absence de processus documentaire (versioning, sources, changelog) → incohérences du livre blanc. &
+3 & 4 & 12 & Élevé &
+Ops + HoP &
+Chiffres contradictoires, sections dupliquées, ToC erronée, inputs manquants. &
+Single source of truth (Factsheet), CHANGELOG, build CI doc, règles d’édition. &
+Gel rédaction, nettoyage, audit complet, réémission PDF, checklist qualité. &
+Nb incohérences détectées, build LaTeX green, temps correction. &
+Ouvert \\
+
+R-13 & PARTNERS &
+Promesses de partenariats (ecosystem, mentors, sponsors) non concrétisées → baisse crédibilité. &
+3 & 3 & 9 & Modéré &
+CEO + HoP &
+Absence de logos/letters, annulations, délais de réponse. &
+Pipeline partenariats (tiers), MOU simples, calendrier office hours, transparence “targets vs signed”. &
+Remplacer par mentors locaux/diaspora, décaler annonce, recentrer sur preuves internes. &
+Nb partenariats signés, heures mentors réelles, taux présence invités. &
+Ouvert \\
+
+R-14 & CAREER &
+Insertion pro insuffisante (remote/bounties/placements) → promesse d’employabilité affaiblie. &
+3 & 5 & 15 & Élevé &
+Career + HoP &
+Peu d’offres, apprenants sans portfolio, faible activité contributions. &
+Service carrière structuré : portfolio GitHub, mock interviews, bounties encadrées, demo day panel. &
+Prolonger accompagnement, booster “bounties sprints”, mentorat CV/LinkedIn, partenariats RH. &
+Taux placement 3/6 mois, nb bounties, taux portfolio “ready”, offres reçues. &
+Ouvert \\
+
+R-15 & PED/ETHICS &
+Usage irresponsable de l’IA (vibe coding) : plagiat, compréhension faible, code non maîtrisé. &
+4 & 4 & 16 & Critique &
+HoP + SecLead &
+PR “copiées”, incapacité expliquer code, bugs répétés, triche sur tests. &
+Règles IA : “IA = stagiaire”, explication obligatoire, oral defense, journaux décisions (ADR). &
+Évaluations orales, rewriting en live, sanctions pédagogiques, rework obligatoire. &
+Taux échec oral defense, taux rework PR, similarité code, incidents de triche. &
+Ouvert \\
+
+R-16 & TECH/SEC &
+Gestion secrets / clés (API keys, wallets) mal cadrée → exposition accidentelle. &
+3 & 5 & 15 & Élevé &
+SecLead + Ops &
+Secrets commités, clés partagées sur chat, env non sécurisé. &
+Politique secrets, scans (gitleaks), .env.example, rotation clés, sandbox devnet/testnet. &
+Rotation immédiate, suppression historique, incident report, formation express. &
+Nb fuites détectées, temps rotation, conformité scans repo. &
+Ouvert \\
+
+R-17 & OPS/LMS &
+Dépendance à un outil unique (LMS/Discord/Git) ou indisponibilité → perte continuité. &
+3 & 3 & 9 & Modéré &
+Ops &
+Panne service, perte accès, suppression accidentelle. &
+Backups, miroirs, exports hebdo, documentation accès, comptes admin multiples. &
+Basculer canal secours, restaurer backup, replanifier deadlines. &
+Temps indisponibilité, MTTR, nb backups réussis. &
+Ouvert \\
+
+R-18 & SCOPE &
+Programme trop dense (effet “tout sur tout”) → fatigue, baisse qualité, abandon. &
+4 & 4 & 16 & Critique &
+HoP + CEO &
+Backlog qui explose, labs non terminés, sprints débordent. &
+Modularisation strict Must/Should/Could, DoD clair, gating, rythme réaliste. &
+Couper “Could”, étaler sur semaines supplémentaires, proposer option “Elite” séparée. &
+Taux completion, heures sup, NPS, backlog carry-over. &
+Ouvert \\
+
+R-19 & REP/QUALITY &
+Document (livre blanc) manque de cohérence pro (typo, tables, figures) → impact crédibilité investisseurs/partenaires. &
+3 & 4 & 12 & Élevé &
+Ops + HoP &
+ToC incorrecte, césures, tables mal alignées, figures sans légendes. &
+QA éditorial : build CI doc, checklist, styles, latex templates, relectures croisées. &
+Gel + refonte mise en page, réémission PDF, validation finale “Go/No-Go”. &
+Nb défauts QA, temps correction, retours reviewers externes. &
+Ouvert \\
+
+R-20 & FIN/MODEL &
+Modèle ISA/bourses mal cadré (contrats, recouvrement, perception) → risque légal/réputation. &
+2 & 4 & 8 & Modéré &
+Legal + CEO &
+Ambiguïtés contractuelles, litiges, incompréhensions candidats. &
+Option ISA “à l’étude”, contrats clairs, seuils, transparence, alternatives (échelonnement). &
+Retirer ISA de l’offre pilote, basculer sur paiement échelonné + bourses limitées. &
+Nb demandes ISA, litiges, taux impayés, satisfaction candidats. &
+Ouvert \\
+
+R-21 & IP/LEGAL &
+Propriété intellectuelle des capstones (RBK vs étudiants) mal définie → conflits. &
+3 & 3 & 9 & Modéré &
+Legal + CEO &
+Refus de publier code, désaccord sur réutilisation, tensions à demo day. &
+Clauses IP simples (open-source par défaut pour pédagogie) + exceptions, consentement écrit. &
+Retirer code sensible, publier version anonymisée, accord spécifique projet incubé. &
+Nb incidents IP, taux repos publics, accords signés. &
+Ouvert \\
+
+R-22 & SEC/OPS &
+Absence de PCA/PRA minimum (continuité) en cas d’incident majeur (perte données, indispo). &
+2 & 4 & 8 & Modéré &
+Ops + CEO &
+Perte repos, indispo outils, corruption fichiers, vol matériel. &
+Backups, accès MFA, PRA doc, duplication dépôts, droits minimaux. &
+Restauration, bascule miroirs, replanification, communication apprenants. &
+RPO/RTO atteints, tests restauration, incidents sécurité. &
+Ouvert \\
+
+R-23 & TECH/EVM &
+Changements tooling EVM (Hardhat/Foundry, forks, L2) perturbent modules. &
+3 & 3 & 9 & Modéré &
+TechLead-EVM &
+Breaking changes, erreurs compilation, docs obsolètes. &
+Lock versions, images docker, guides reproductibles, veille mensuelle. &
+Patch starter kit, session “upgrade”, bascule sur versions stables. &
+Nb incidents build, temps fix, fréquence updates. &
+Ouvert \\
+
+R-24 & TECH/SOL &
+Évolution rapide Solana/Anchor (versions, APIs) cassant labs/tests. &
+3 & 3 & 9 & Modéré &
+TechLead-SOL &
+Erreurs Anchor, IDL mismatch, changements CLI, docs divergentes. &
+Lock versions, starter kits, CI, notes migration, veille. &
+Migration encadrée, bascule versions, gel sur release stable promo. &
+Nb incidents, temps patch, stabilité CI Anchor. &
+Ouvert \\
+
+R-25 & SECURITY/CULTURE &
+Culture “security-first” insuffisamment intégrée (les étudiants optimisent la démo, pas la sûreté). &
+3 & 4 & 12 & Élevé &
+SecLead + HoP &
+Retours “ça marche mais…”, absence threat model, faibles tests abus. &
+Rubric pénalisante sécurité, week “audit sprint”, oral defense sur risques, checklists. &
+Refus validation capstone, sprint de remédiation, re-audit croisé. &
+Score sécurité moyen, nb findings, taux capstones “pass security gate”. &
+Ouvert \\
+
+\end{longtable}
+\end{landscape}
+
+\paragraph{Note d’exploitation.}
+Ce registre v1 est conçu pour être \textbf{vivant} : à chaque COPIL/COSUI (hebdo ou bi-hebdo),
+mettre à jour \emph{P, I, statut, actions} et reporter les décisions dans le \textbf{CHANGELOG} (et/ou un journal de pilotage).
