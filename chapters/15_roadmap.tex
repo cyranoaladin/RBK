@@ -21,7 +21,7 @@ Focus sur l'usine à contenu et l'infrastructure technique.
 \begin{enumerate}
     \item LMS (Learning Management System) déployé et testé.
     \item 100\% des Labs et Exercices de la Phase 1 (Fondations) produits et relus.
-    \item Pipeline CI/CD pour la correction automatique des exercices (Rust/Solidity).
+    \item Pipeline \RBKTerm{ci_cd} pour la correction automatique des exercices (Rust/Solidity).
     \item Recrutement et Onboarding des 5 premiers Mentors "Core".
 \end{enumerate}
 
@@ -50,7 +50,7 @@ Le "Day 1" de la promo. Exécution sans faille.
         \draw[->, thick] (0,0) -- (12,0);
         \foreach \x/\label in {0/J-60, 3/J0, 6/J60, 9/J90, 12/J120}
             \draw (\x,0.1) -- (\x,-0.1) node[below] {\small \label};
-            
+
         \node[align=center, font=\scriptsize, fill=SolanaBlue!10, rounded corners] at (1.5, 0.5) {PRÉPA\\(Légal, Offre)};
         \node[align=center, font=\scriptsize, fill=SolanaGreen!10, rounded corners] at (4.5, 0.5) {PROD\\(Contenu, Infra)};
         \node[align=center, font=\scriptsize, fill=MF_Gold!20, rounded corners] at (7.5, 0.5) {ACQUISITION\\(Piscine, Select)};
@@ -81,7 +81,7 @@ Le "Day 1" de la promo. Exécution sans faille.
 Nous pilotons l'exécution par "Workstreams". Chaque action est priorisée (P0 Bloquant, P1 Critique, P2 Important).
 
 \subsubsection*{Workstream A : Juridique \& Conformité}
-\textbf{Owner :} COO / Legal. \textbf{Definition of Done :} Tous les contrats sont signés et stockés sécurisés.
+\textbf{Owner :} COO / Legal. \textbf{\RBKTerm{dod} :} Tous les contrats sont signés et stockés sécurisés.
 \begin{itemize}
     \item P0 : Validation modèle ISA v3 avec cabinet spécialisé.
     \item P0 : Création structure juridique porteuse (SPV ou LLC).
@@ -99,7 +99,7 @@ Nous pilotons l'exécution par "Workstreams". Chaque action est priorisée (P0 B
 \subsubsection*{Workstream C : Stack \& Ops}
 \textbf{Owner :} CTO. \textbf{Definition of Done :} Infra stable, monitoring actif, zéro friction étudiant.
 \begin{itemize}
-    \item P0 : Configuration Workspace GitHub (Orga, Teams, Permissions).
+    \item P0 : Configuration Workspace \RBKTerm{github} (Orga, Teams, Permissions).
     \item P1 : Déploiement serveur Discord (Bots, Rôles, Channels).
     \item P2 : Automatisation onboarding (Zapier/Make : Typeform $\to$ Notion $\to$ Discord).
 \end{itemize}
@@ -109,14 +109,18 @@ Nous pilotons l'exécution par "Workstreams". Chaque action est priorisée (P0 B
 \begin{itemize}
     \item P0 : Lancement Site Web V1 (Landing, FAQ, Team).
     \item P1 : Mise en ligne Simulateur ROI (Lead Magnet).
-    \item P1 : Campagne LinkedIn/Twitter "Building in Public" (Daily).
+    \item P1 : Campagne \RBKTerm{linkedin}/Twitter "Building in Public" (Daily).
 \end{itemize}
+
+Les actions opérationnelles s’appuient sur une coordination \RBKTerm[Ops]{ops} et un suivi \RBKTerm{crm} pour tracer l’acquisition et la montée en charge.
 
 \begin{table}[H]
     \caption{Backlog Opérationnel (Extrait Top Actions)}
     \centering
-    \scriptsize
-    \begin{tabularx}{\textwidth}{|l|l|c|l|l|}
+    \renewcommand{\arraystretch}{1.4}
+    \rowcolors{2}{gray!10}{white}
+    \small
+    \begin{tabularx}{\textwidth}{|l|l|c|l|X|}
         \hline
         \textbf{ID} & \textbf{Action} & \textbf{Prio} & \textbf{Owner} & \textbf{Critère Acceptation} \\ \hline
         LEG-01 & Validation ISA Avocat & P0 & Legal & Mémo juridique signé ("Safe to operate"). \\ \hline
@@ -147,22 +151,22 @@ Ce diagramme de Gantt illustre le chemin critique. Les tâches \textbf{Juridique
         expand chart=\textwidth,
         time slot format=isodate
     ]{2025-01-01}{2025-05-30}
-    
+
     \gantttitlecalendar{year, month} \\
-    
+
     % J-60 starts roughly Jan 2025
     \ganttgroup{PRÉPARATION}{2025-01-01}{2025-02-28} \\
     \ganttbar{Juridique ISA}{2025-01-01}{2025-02-15} \\
     \ganttbar{Fonds Garantie}{2025-01-15}{2025-02-28} \\
-    
+
     \ganttgroup{PRODUCTION}{2025-03-01}{2025-04-30} \\
     \ganttbar{Contenu V1}{2025-03-01}{2025-04-15} \\
     \ganttbar{Infra \& LMS}{2025-03-15}{2025-04-30} \\
-    
+
     \ganttgroup{LANCEMENT}{2025-04-01}{2025-05-30} \\
     \ganttbar{Marketing}{2025-04-01}{2025-05-15} \\
     \ganttbar{Piscine}{2025-05-01}{2025-05-30}
-    
+
     \ganttlink{elem1}{elem3} % Juridique -> Contenu
     \ganttlink{elem3}{elem6} % Contenu -> Piscine
     \end{ganttchart}

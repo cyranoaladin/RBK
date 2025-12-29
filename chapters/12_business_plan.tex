@@ -11,11 +11,11 @@ RBK 2.0 repose sur une diversification des sources de revenus pour garantir sa p
         \draw[fill=SolanaPurple!20] (0,0) circle (2cm);
         \node at (0,0.5) {\textbf{B2C (70\%)}};
         \node at (0,-0.5) {\footnotesize Formation Initiale};
-        
+
         \draw[fill=SolanaBlue!20] (3,0) circle (1.5cm);
         \node at (3,0.5) {\textbf{ISA (20\%)}};
         \node at (3,-0.5) {\footnotesize Success Fees};
-        
+
         \draw[fill=SolanaGreen!20] (5.5,0) circle (1cm);
         \node at (5.5,0.3) {\textbf{B2B (10\%)}};
         \node at (5.5,-0.3) {\footnotesize Corporate};
@@ -23,34 +23,34 @@ RBK 2.0 repose sur une diversification des sources de revenus pour garantir sa p
     \caption{Mix Revenus Cible (Année 3)}
 \end{figure}
 
-\section{Hypothèses & Sources du Modèle}
+\section{Hypothèses \& Sources du Modèle}
 
 Ce modèle repose sur des données de marché comparables (Bootcamps Web3, Market Research 2024-2025).
 
 \subsection{Hypothèses Clés}
 \begin{itemize}
-    \item \textbf{CAC (Coût d'Acquisition Client)} : Estimé à \textbf{250 TND / étudiant converti} (Campagnes LinkedIn/FB ciblées + SEO).
+    \item \textbf{\RBKTerm{cac} (Coût d'Acquisition Client)} : Estimé à \textbf{250 TND / étudiant converti} (Campagnes LinkedIn/FB ciblées + SEO).
     \item \textbf{Salaire de Sortie Moyen} : Conservateur à \textbf{2 500 TND Net/Mois} (Marché local Senior) ou \textbf{1 500 \$} (Remote Junior Global).
-    \item \textbf{Taux de Chute (Churn)} : 15\% entre chaque niveau (filtrage de qualité).
-    \item \textbf{Taux de Placement} : 80\% à 6 mois (standard industrie pour formations sélectives).
+    \item \textbf{Taux de Chute (\RBKTerm{churn})} : 15\% entre chaque niveau (filtrage de qualité).
+    \item \textbf{Taux de Placement} : 80\% sur le cycle du programme (\ProgramWeeks~semaines) (standard industrie pour formations sélectives).
 \end{itemize}
 
 \subsection{Structure des Coûts Directs}
 \begin{itemize}
     \item \textbf{Mentorat} : Ratio 1:10. Rémunération horaire ou forfaitaire (Variable).
-    \item \textbf{Infra} : Coût fixe LMS + Cloud (AWS/RPC) = 5\% du CA.
-    \item \textbf{Légal/Admin} : 5\% du CA.
+    \item \textbf{Infra} : Coût fixe LMS + Cloud (AWS/RPC) = 5\% du \RBKTerm{ca}.
+    \item \textbf{Légal/Admin} : 5\% du \RBKTerm{ca}.
 \end{itemize}
 
-\section{Funnel d'Acquisition & Sourcing}
+\section{Funnel d'Acquisition \& Sourcing}
 
 Le modèle de rentabilité dépend de la sélectivité en entrée (qualité des profils = placement garanti).
 
 \begin{enumerate}
-    \item \textbf{Top of Funnel (Leads)} : 1000 Inscrits Webinaire / Downloads Livre Blanc.
-    \item \textbf{Middle of Funnel (Applicants)} : 200 Candidats passent le test technique Python/JS.
-    \item \textbf{Bottom of Funnel (Selection)} : 50 Admissibles après entretien.
-    \item \textbf{Conversion (Cohorte)} : 30 Inscrits payants (ou boursiers validés).
+    \item \textbf{Top of \RBKTerm{funnel} (Leads)} : 1000 Inscrits Webinaire / Downloads Livre Blanc.
+    \item \textbf{Middle of \RBKTerm{funnel} (Applicants)} : 200 Candidats passent le test technique Python/JS.
+    \item \textbf{Bottom of \RBKTerm{funnel} (Selection)} : 50 Admissibles après entretien.
+    \item \textbf{\RBKTerm{conversion_rate} (Cohorte)} : 30 Inscrits payants (ou boursiers validés).
 \end{enumerate}
 
 Le ratio cible est de \textbf{3\% de conversion Lead $\to$ Client}, assurant une densité de talents élevée.
@@ -88,7 +88,9 @@ La trésorerie est le nerf de la guerre. Notre modèle prend en compte le "Cash 
     \centering
     \small
     \rowcolors{2}{gray!5}{white}
-    \begin{tabularx}{\textwidth}{|l|r|r|r|}
+    \renewcommand{\arraystretch}{1.15}
+    % Colonne 1 en X (large) puis 3 colonnes fixes pour éviter le débordement
+    \begin{tabularx}{\textwidth}{|X|>{\raggedleft\arraybackslash}p{2.7cm}|>{\raggedleft\arraybackslash}p{2.7cm}|>{\raggedleft\arraybackslash}p{2.7cm}|}
         \hline
         \textbf{Indicateur} & \textbf{Année 1 (Amorçage)} & \textbf{Année 2 (Scale)} & \textbf{Année 3 (Maturité)} \\ \hline
         \textbf{CA FORMATION (L1+L2+L3)} & \textbf{311 800} & \textbf{623 600} & \textbf{935 400} \\ \hline

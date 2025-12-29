@@ -1,0 +1,95 @@
+% =========================
+% Annexe — Change Control (SSOT & Release Gate)
+% =========================
+\section{Annexe Y — Change Control (SSOT \& Release Gate)}
+\label{annexe:change-control}
+
+\noindent\textbf{Objet.} Cette annexe définit un mécanisme de \emph{contrôle des changements} des paramètres contractuels et des sections sensibles du livre blanc. Elle vise un statut \emph{audit-ready} : toute évolution est tracée, justifiée, et prouvée par des contrôles automatisés (local + CI).
+
+\vspace{0.5em}
+\noindent\textbf{Périmètre.} Est considéré comme \textbf{changement contrôlé} toute modification de :
+\begin{itemize}
+  \item la \RBKTerm{ssot} \texttt{tex/params.tex} (durée programme, ISA : seuil/taux/cap/durée max, helpers de texte) ;
+  \item les scripts de contrôles \texttt{scripts/verify\_params.sh} et \texttt{scripts/verify\_no\_hardcode.sh} ;
+  \item le pipeline CI \texttt{.github/workflows/doc-release-checks.yml} ;
+  \item les sections contractuelles / financières exposant les paramètres (factsheet, offre, ISA, contrat ISA, finance).
+\end{itemize}
+
+\vspace{0.5em}
+\noindent\textbf{Règle SSOT.} Toute valeur contractuelle est définie \emph{uniquement} dans \texttt{tex/params.tex}. Toute occurrence en dur (hors \RBKTerm{ssot}) dans les fichiers critiques constitue un \textbf{\RBKTerm[NO-GO]{release_gate}}.
+
+\vspace{0.75em}
+\noindent\textbf{Procédure obligatoire (avant merge / release).}
+\begin{enumerate}
+  \item Mettre à jour la \RBKTerm{ssot} (si applicable) et/ou les sections concernées \emph{uniquement via macros}.
+  \item Exécuter la preuve locale : \texttt{make release-check}.
+  \item Vérifier la preuve CI : workflow \texttt{doc-release-checks} vert + artefact PDF.
+  \item Enregistrer le changement dans la table ci-dessous (une ligne par changement).
+\end{enumerate}
+
+\vspace{0.75em}
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{3.5pt}
+
+\begin{tabularx}{\textwidth}{%
+  >{\raggedright\arraybackslash}p{1.6cm}%
+  >{\raggedright\arraybackslash}p{2.4cm}%
+  >{\raggedright\arraybackslash}p{2.6cm}%
+  >{\raggedright\arraybackslash}X%
+  >{\raggedright\arraybackslash}p{2.4cm}%
+  >{\raggedright\arraybackslash}p{1.9cm}}
+\hline
+\textbf{Date} &
+\textbf{Élément} &
+\textbf{Macro / Fichier} &
+\textbf{Justification \& impact (sections)} &
+\textbf{Preuves} &
+\textbf{Gate}\\
+\hline
+
+\textit{AAAA-MM-JJ} &
+Paramètre contractuel &
+\texttt{\textbackslash ISARate} / \texttt{tex/params.tex} &
+Raison : \textit{(ex : alignement offre commerciale)}. \newline
+Impact : Factsheet, Offre, ISA, Contrat ISA, Finance. &
+make release-check OK ; CI verte ; commit \textit{(hash)} &
+GO / WARN / NO-GO\\
+\hline
+
+\textit{AAAA-MM-JJ} &
+Contrôle documentaire &
+\texttt{verify\_no\_hardcode.sh} &
+Raison : \textit{(ex : ajout d’un fichier critique)}. \newline
+Impact : périmètre anti-régression. &
+make release-check OK ; CI verte ; commit \textit{(hash)} &
+GO / WARN / NO-GO\\
+\hline
+
+\textit{AAAA-MM-JJ} &
+Pipeline CI &
+\texttt{doc-release-checks.yml} &
+Raison : \textit{(ex : fiabilisation build)}. \newline
+Impact : reproductibilité + artefact PDF. &
+CI verte ; artefact PDF ; commit \textit{(hash)} &
+GO / WARN / NO-GO\\
+\hline
+\end{tabularx}
+\endgroup
+
+\vspace{0.75em}
+\noindent\textbf{Définition des gates.}
+\begin{itemize}
+  \item \textbf{GO} : build OK ; \texttt{verify\_params} PASSED ; \texttt{verify\_no\_hardcode} PASSED ; CI verte + artefact PDF.
+  \item \textbf{\RBKTerm[WARN]{release_gate}} : tout OK, mais warnings LaTeX non contractuels (typographie, overfull hbox).
+  \item \textbf{\RBKTerm[NO-GO]{release_gate}} : build KO ; ou scripts en échec ; ou hardcode contractuel détecté ; ou incohérence brut/net.
+\end{itemize}
+
+\vspace{0.4em}
+\noindent\textbf{Note.} Les valeurs contractuelles elles-mêmes restent dans la \RBKTerm{ssot}. Les preuves doivent pointer vers le commit et le run CI correspondant.
+
+\vspace{0.6em}
+\noindent\textbf{Sign-off.}\newline
+Owner (responsable documentaire) : \rule{6cm}{0.4pt}\hfill Date : \rule{3cm}{0.4pt}\newline
+Reviewer (sponsor / direction) : \rule{6cm}{0.4pt}\hfill Date : \rule{3cm}{0.4pt}

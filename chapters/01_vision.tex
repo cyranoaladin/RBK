@@ -32,7 +32,7 @@ Concrètement, un architecte RBK maîtrise :
 
 \subsubsection{Pourquoi le "code basique" ne suffit plus à l'ère des LLM}
 
-L'avènement des LLMs (GPT-4, Claude 3.5 Sonnet) a commoditisé la production de code syntaxique. Générer un ERC-20 ou un programme Anchor standard prend désormais 30 secondes et coûte 0.01\$. La valeur ajoutée du "codeur" qui traduit une spec en fonctions s'effondre.
+L'avènement des LLMs (GPT-4, Claude 3.5 Sonnet) a commoditisé la production de code syntaxique. Générer un \RBKTerm{erc20} ou un programme Anchor standard prend désormais 30 secondes et coûte 0.01\$. La valeur ajoutée du "codeur" qui traduit une spec en fonctions s'effondre.
 
 Cependant, l'IA ne sait pas \textbf{raisonner sur l'intention}. Elle peut générer un code qui compile parfaitement mais qui contient des failles logiques dévastatrices.
 
@@ -107,7 +107,7 @@ Nous ne vendons pas du rêve, nous vendons des résultats mesurables.
         \draw[->, thick] (ia) -- (cyborg);
         \draw[->, thick] (cyborg) -- (reseau);
         \draw[->, thick] (reseau) -- (sortie);
-        
+
         \node[below of=cyborg, yshift=1cm, node distance=1.5cm] {\textit{Méthode \& Rigueur}};
         \node[below of=sortie, yshift=1cm, node distance=1.5cm] {\textit{Preuves : Portfolio, Audit}};
     \end{tikzpicture}
@@ -115,6 +115,8 @@ Nous ne vendons pas du rêve, nous vendons des résultats mesurables.
 \end{figure}
 
 \section{Pourquoi RBK 2.0 ?}
+
+RBK 2.0 répond à un décalage structurel entre l'offre éducative classique et les exigences d'architectes Web3 seniors : nous cadrons ici le "pourquoi" avant de détailler les sous-piliers.
 
 \subsubsection{Diagnostic : L'Écart de Compétence (Skills Gap)}
 
@@ -153,17 +155,19 @@ RBK 2.0 est une "School of Engineering" accélérée, positionnée entre le boot
 \begin{table}[H]
     \caption{Le Changement de Paradigme RBK 2.0 (Détaillé)}
     \centering
+    \renewcommand{\arraystretch}{1.4} % Aère les lignes
     \rowcolors{2}{SolanaBlue!5}{white}
-    \tiny
-    \begin{tabularx}{\textwidth}{L X X l}
+    \small % Augmentation de la taille de police (était \tiny)
+    \begin{tabularx}{\textwidth}{|>{\bfseries}l|X|X|l|}
+        \hline
         \rowcolor{SolanaPurple!20} \textbf{Dimension} & \textbf{Ancien Monde (Univ/Bootcamps)} & \textbf{RBK 2.0 (Senior-by-Design)} & \textbf{Signal Recruteur} \\
-        \toprule
+        \hline
         Objectif & Valider des modules & Livrer de la valeur & GitHub Activity \\
         Outils & Interdits (Pas d'IA) & Obligatoires (Cursor, Copilot) & Vitesse d'exécution \\
         Rythme & Linéaire, théorique & Cyclique, intense, pratique & Résilience \\
         Sécurité & Optionnelle / Théorique & \textbf{By Design (Audit Flow)} & Portfolio d'audits \\
         Santé & Ignorée & \textbf{Gérée (Protocole Anti-Burnout)} & Stabilité émotionnelle \\
         Sortie & Stage sous-payé & Consultance / CDI Senior / Grant & Contrats signés \\
-        \bottomrule
+        \hline
     \end{tabularx}
 \end{table}

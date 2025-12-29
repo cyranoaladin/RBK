@@ -54,10 +54,12 @@ Le risque principal de Solana est sa jeunesse (pannes historiques, changements d
 
 \section{Stratégie Multi-Chain \& Interopérabilité}
 
+Nous introduisons ici le cadre interopérable qui évite les silos et prépare les étudiants aux architectures \RBKTerm{cross_chain} modernes.
+
 \subsubsection{Interopérabilité : Notions Essentielles}
 L'avenir n'est pas "Winner Takes All", mais "Cross-Chain"\footnote{\textbf{Cross-Chain :} Architecture permettant l'interopérabilité et la communication entre des blockchains indépendantes, essentielle pour éviter les silos de liquidité.}. Un architecte doit comprendre comment déplacer de la valeur et de l'information entre des réseaux hétérogènes.
 \begin{itemize}
-    \item \textbf{Bridge (Lock \& Mint)}\footnote{\textbf{Bridge :} Protocole ou infrastructure permettant de transférer des actifs (Tokens) d'une blockchain à une autre.} : Verrouiller un actif sur la chaîne A pour en créer une représentation sur la chaîne B.
+    \item \textbf{\RBKTerm{bridge} (Lock \& Mint)}\footnote{\textbf{Bridge :} Protocole ou infrastructure permettant de transférer des actifs (Tokens) d'une blockchain à une autre.} : Verrouiller un actif sur la chaîne A pour en créer une représentation sur la chaîne B.
     \item \textbf{Messaging (General Passing) :} Envoyer une instruction arbitraire d'une chaîne à l'autre (ex: Vote DAO sur Eth -> Exécution sur Sol).
     \item \textbf{Finality :} Le temps nécessaire pour garantir qu'une transaction ne sera jamais annulée (Solana: ~400ms, Eth: ~12min).
 \end{itemize}
@@ -73,8 +75,8 @@ Les "Bridges" sont historiquement les cibles les plus hackées (>2 Mrd\$ volés)
 \subsubsection{Livrables Étudiants}
 Pour valider le module interopérabilité, l'étudiant doit livrer :
 \begin{itemize}
-    \item Un schéma d'architecture cross-chain (flux des actifs).
-    \item Une implémentation de transfert de message (ex: "Hello World" cross-chain).
+    \item Un schéma d'architecture \RBKTerm{cross_chain} (flux des actifs).
+    \item Une implémentation de transfert de message (ex: "Hello World" \RBKTerm{cross_chain}).
     \item Une analyse des risques spécifiques à son architecture.
 \end{itemize}
 
@@ -89,19 +91,21 @@ Pour valider le module interopérabilité, l'étudiant doit livrer :
         % Zones
         \node[chain, label=below:\textbf{EVM}] (evm) at (0,0) {Smart\\Contract\\(Source)};
         \node[chain, label=below:\textbf{SVM}] (svm) at (10,0) {Program\\(Dest.)};
-        
+
         % Bridge Components
-        \node[component] (relayer) at (5, 2) {Relayer / Oracle\\(Off-chain)};
-        \node[component] (guardian) at (5, -2) {Guardian Network\\(Consensus)};
-        
+        \node[component] (relayer) at (5, 2.5) {Relayer / Oracle\\(Off-chain)};
+        \node[component] (guardian) at (5, -2.5) {Guardian Network\\(Consensus)};
+
         % Flows
-        \draw[link] (evm) -- node[midway, left] {1. Emit Event} (relayer);
-        \draw[link] (relayer) -- node[midway, right] {2. Submit Proof} (svm);
-        \draw[link, dashed] (evm) -- node[midway, left] {Verify} (guardian);
-        \draw[link, dashed] (guardian) -- node[midway, right] {Sign VAA} (svm);
-        
+        % Labels positioned along the path, sloped for readability
+        \draw[link] (evm) -- node[above, sloped, font=\footnotesize, pos=0.5, yshift=2pt] {1. Emit Event} (relayer);
+        \draw[link] (relayer) -- node[above, sloped, font=\footnotesize, pos=0.5, yshift=2pt] {2. Submit Proof} (svm);
+
+        \draw[link, dashed] (evm) -- node[below, sloped, font=\footnotesize, pos=0.5, yshift=-2pt] {Verify} (guardian);
+        \draw[link, dashed] (guardian) -- node[below, sloped, font=\footnotesize, pos=0.5, yshift=-2pt] {Sign VAA} (svm);
+
         % Legend
-        \node[draw, fill=white, align=left] at (5,0) {\tiny \textbf{Légende :}\\ \textcolor{SolanaBlue}{$\rightarrow$} Flux de Données\\ \textcolor{BaseDark}{---} Zone de Trust};
+        \node[draw, fill=white, align=left] at (5,0) {\scriptsize \textbf{Légende :}\\ \textcolor{SolanaBlue}{$\rightarrow$} Flux de Données\\ \textcolor{BaseDark}{---} Zone de Trust};
 
     \end{tikzpicture}
     \caption{Architecture Cross-Chain : Flux de Vérification}

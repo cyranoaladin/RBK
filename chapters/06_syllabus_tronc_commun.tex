@@ -5,21 +5,21 @@
 \section{Calendrier Pédagogique Global}
 
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}[xscale=0.55, every node/.style={font=\scriptsize, align=center}]
-        % Hauteur des blocs augmentée à 1.5cm pour tenir sur 2 lignes
-        \draw[fill=SolanaBlue!20] (0,0) rectangle (8,1.5) node[midway] {\textbf{FONDATIONS}\\(S1-S12)};
-        \draw[fill=SolanaPurple!20] (8,0) rectangle (20,1.5) node[midway] {\textbf{TRACK SPÉCIALISÉ}\\(S13-S28)};
-        \draw[fill=SolanaGreen!20] (20,0) rectangle (24,1.5) node[midway] {\textbf{CAPSTONE}\\(S29-S44)};
-        \draw[fill=MF_Gold!20] (24,0) rectangle (28,1.5) node[midway] {\textbf{CAREER}\\(S45-S48)};
-        
-        % Descriptions sous les blocs
-        \node[below=2pt] at (4,0) {\tiny Rust, Crypto, CS};
-        \node[below=2pt] at (14,0) {\tiny Solana/Anchor ou EVM/Solidity};
-        \node[below=2pt] at (22,0) {\tiny Build \& Audit};
-        \node[below=2pt] at (26,0) {\tiny Interview Prep};
-    \end{tikzpicture}
-    \caption{Timeline Macro du Cursus}
+	\centering
+	\begin{tikzpicture}[xscale=0.55, every node/.style={font=\scriptsize, align=center}]
+		% Hauteur des blocs augmentée à 1.5cm pour tenir sur 2 lignes
+		\draw[fill=SolanaBlue!20] (0,0) rectangle (8,1.5) node[midway] {\textbf{FONDATIONS}\\(S1-S12)};
+		\draw[fill=SolanaPurple!20] (8,0) rectangle (20,1.5) node[midway] {\textbf{TRACK SPÉCIALISÉ}\\(S13-S28)};
+		\draw[fill=SolanaGreen!20] (20,0) rectangle (24,1.5) node[midway] {\textbf{CAPSTONE}\\(S29-S44)};
+		\draw[fill=MF_Gold!20] (24,0) rectangle (28,1.5) node[midway] {\textbf{CAREER}\\(S45-S48)};
+
+		% Descriptions sous les blocs
+		\node[below=2pt] at (4,0) {\tiny Rust, Crypto, CS};
+		\node[below=2pt] at (14,0) {\tiny Solana/Anchor ou EVM/Solidity};
+		\node[below=2pt] at (22,0) {\tiny Build \& Audit};
+		\node[below=2pt] at (26,0) {\tiny Interview Prep};
+	\end{tikzpicture}
+	\caption{Timeline Macro du Cursus}
 \end{figure}
 
 \begin{center}\colorbox{SolanaBlue!20}{\parbox{\textwidth}{\centering \Large \textbf{NIVEAU 1 : PISCINE \& FONDATIONS (S1-S12)}}}\end{center}
@@ -27,58 +27,135 @@
 \section{TRONC COMMUN : LA FORGE (S1-S12)}
 
 \begin{table}[H]
-    \caption{Synthèse Phase 0 \& 1}
-    \centering
-    \small
-    \rowcolors{2}{SolanaBlue!5}{white}
-    \begin{tabularx}{\textwidth}{l X X l}
-        \toprule
-        \textbf{Sem.} & \textbf{Focus Technique} & \textbf{Livrable Pivot} & \textbf{Gate Qualité} \\
-        \midrule
-        \midrule
-        S1 & OS \& Git Internals & Réplique `ls -la` en Rust & Git Clean \\
-        S2 & Memory Safety & Custom Allocator & No Leaks \\
-        S3 & Concurrence & HTTP Server Multi-thread & Benchmarks \\
-        S4 & Cryptographie & CLI Wallet (Ed25519) & Signatures valides \\
-        \midrule
-        S5-S6 & Web3 Protocol & Architecture Diagram & C4 Model \\
-        S7-S8 & Consensus & Simulation PoS (Python/Rust) & Slashing rules \\
-        S9-S10 & Tokenomics & Whitepaper d'un DEX & Math verified \\
-        S11-S12 & Wallet Interaction & Connect Wallet (React) & UX smooth \\
-        \bottomrule
-    \end{tabularx}
+	\caption{Synthèse Macro N1}
+	\centering
+	\small
+	\rowcolors{2}{SolanaBlue!5}{white}
+	\begin{tabularx}{\textwidth}{l X X l}
+		\toprule
+		\textbf{Sem.} & \textbf{Focus Technique} & \textbf{Livrable Pivot}      & \textbf{Gate Qualité} \\
+		\midrule
+		S1            & OS \& Git Internals      & Réplique `ls -la` en Rust    & Git Clean             \\
+		S2            & Memory Safety            & Custom Allocator             & No Leaks              \\
+		S3            & Concurrence              & HTTP Server Multi-thread     & Benchmarks            \\
+		S4            & Cryptographie            & \RBKTerm{cli} Wallet (Ed25519)         & Signatures valides    \\
+		\midrule
+		S5-S6         & Web3 Protocol            & Architecture Diagram         & C4 Model              \\
+		S7-S8         & Consensus                & Simulation PoS (Python/Rust) & Slashing rules        \\
+		S9-S10        & \RBKTerm{tokenomics}               & Whitepaper d'un DEX          & Math verified         \\
+		S11-S12       & Wallet Interaction       & Connect Wallet (React)       & UX smooth             \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
 \begin{techBox}{La Stack du Vainqueur}
-    \begin{itemize}
-        \item \textbf{Rust} : Langage système, sécurité mémoire garantie sans Garbage Collector.
-        \item \textbf{Anchor} : Framework de développement Solana qui sécurise et accélère le code.
-        \item \textbf{Solidity} : Langage historique des Smart Contracts (EVM).
-        \item \textbf{Foundry} : Outil de test et déploiement Ethereum écrit en Rust.
-    \end{itemize}
+	\begin{itemize}
+		\item \textbf{Rust} : Langage système, sécurité mémoire garantie sans Garbage Collector.
+		\item \textbf{Anchor} : Framework de développement Solana qui sécurise et accélère le code.
+		\item \textbf{Solidity} : Langage historique des \RBKTerm[Smart Contracts]{smart_contract} (EVM).
+		\item \textbf{Foundry} : Outil de test et déploiement Ethereum écrit en Rust.
+	\end{itemize}
 \end{techBox}
 
-\subsection{Détail des Semaines Critiques}
 
-\subsubsection{Semaine 1 : Ingénierie Système}
-\begin{kpiBox}{S1 : Git Internals}
-    \textbf{Objectif :} Manipuler les blobs/trees Git en Rust sans `git`. \\
-    \textbf{Livrable :} Outil CLI `my-git`. \\
-    \textbf{Politique IA :} \textcolor{red}{\textbf{INTERDITE}}.
-\end{kpiBox}
 
-\subsubsection{Semaine 4 : Cryptographie}
-\begin{kpiBox}{S4 : Primitives Crypto}
-    \textbf{Objectif :} Implémenter SHA-256 et Ed25519 (Signatures). \\
-    \textbf{Livrable :} CLI Wallet. \\
-    \textbf{Politique IA :} \textcolor{red}{\textbf{INTERDITE}}.
-\end{kpiBox}
+\subsection{Plan d'Exécution Détaillé N1 (S01-S12)}
+
+\footnotesize
+Les passages de jalons sont structurés autour de \RBKTerm[GATE]{release_gate} et des contrôles \RBKTerm[CD]{ci_cd}, pour ancrer les exigences de qualité dès la formation.
+\begin{longtable}{|p{0.8cm}|>{\raggedright\arraybackslash}p{3.8cm}|>{\raggedright\arraybackslash}p{3.8cm}|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{3cm}|}
+	\hline
+\rowcolor{SolanaBlue!20} \textbf{Sem} & \textbf{Cours (Objectifs)}               & \textbf{Labs (TP Guidés)}        & \textbf{Livrable (Preuve)} & \textbf{Critères (DoD)}    \\ \hline
+	\endfirsthead
+	\hline
+	\rowcolor{SolanaBlue!20} \textbf{Sem} & \textbf{Cours (Objectifs)}               & \textbf{Labs (TP Guidés)}        & \textbf{Livrable (Preuve)} & \textbf{Critères (DoD)}    \\ \hline
+	\endhead
+	S01                                   & Linux/\RBKTerm{cli}, Git workflow, structure repo  & Setup env, Makefile, PR template & Repo "foundation"          & CI verte, \RBKTerm{readme} exec      \\ \hline
+	S02                                   & \RBKTerm{rust} bases : ownership, types, erreurs   & Parsing, validation, erreurs     & \RBKTerm{cli} \RBKTerm{rust} v1                & Zéro panic, tests $\ge$ 10 \\ \hline
+	S03                                   & Rust avancé : traits, generics, modules  & Refactor API, crate, rustdoc     & Crate réutilisable         & Doc rustdoc, API clean     \\ \hline
+	S04                                   & Crypto 1 : hash, encoding, serialization & SHA/Merkle, vectors tests        & "crypto-toolkit"           & Vectors tests, determ.     \\ \hline
+	S05                                   & Crypto 2 : signatures, keys, threats     & Sign/verify, key mgmt            & Module signature           & Keys safe, threat note     \\ \hline
+S06                                   & Blockchain 1 : tx, \RBKTerm{rpc}, finality         & Client \RBKTerm{rpc}, parsing tx           & "explorer" \RBKTerm{cli}             & Robustesse réseau          \\ \hline
+S07                                   & API Design : REST, cache, limits         & API endpoints, \RBKTerm{openapi}           & Micro-API + Spec           & OpenApi valid, err codes   \\ \hline
+	S08                                   & Indexation : events, storage local       & Indexer minimal, backfill        & Indexer + Wallet API       & Data cohérente             \\ \hline
+	S09                                   & \RBKTerm{ux} Wallet : signature, pending, errors   & Flow connect/sign/read           & Mini front/\RBKTerm{cli} \RBKTerm{ux}          & \RBKTerm{ux} claire, erreurs gérées  \\ \hline
+	S10                                   & Tokenomics 1 : supply, incentives        & Simu simple, stress tests        & "tokenomics memo"          & Hypothèses explicites      \\ \hline
+	S11                                   & Intégration E2E : vertical slice         & 1 user story complète            & Mini-dApp E2E              & Démo fonct., tests E2E     \\ \hline
+	S12                                   & \textbf{GATE N1} : Consolidation         & Nettoyage, docs, release         & \textbf{PACK N1}           & \textbf{GO/\RBKTerm[NO-GO]{release_gate} Jury}     \\ \hline
+\end{longtable}
+\normalsize
 
 \newpage
 \begin{center}\colorbox{SolanaPurple!20}{\parbox{\textwidth}{\centering \Large \textbf{NIVEAU 2 : SPÉCIALISATION (S13-S28)}}}\end{center}
 
-\section{TRACKS SPÉCIALISÉS (A/B/C)}
-\textit{Le détail des tracks (Solana, EVM, Product) est disponible dans les chapitres dédiés.}
+\section{TRACKS A / B / C (S13-S28)}
+
+\textit{Tracks : A (Solana), B (EVM), C (Product). Les semaines sont synchronisées pour le rythme Studio.}
+
+\scriptsize
+\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{4.0cm}|>{\raggedright\arraybackslash}p{4.0cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{2.8cm}|}
+	\hline
+	\rowcolor{SolanaPurple!20} \textbf{Sem} & \textbf{Cours (A/B/C)}                                     & \textbf{Labs (A/B/C)}                         & \textbf{Livrable}         & \textbf{DoD}           \\ \hline
+	\endfirsthead
+	\hline
+	\rowcolor{SolanaPurple!20} \textbf{Sem} & \textbf{Cours (A/B/C)}                                     & \textbf{Labs (A/B/C)}                         & \textbf{Livrable}         & \textbf{DoD}           \\ \hline
+	\endhead
+	S13                                     & A: Modèle Solana / B: Solidity bases / C: Discovery        & A: Prog natif / B: \RBKTerm{erc} min / C: User Stories  & Repo S13 (Tracké)         & Tests + \RBKTerm{readme}         \\ \hline
+	S14                                     & A: Sérialisation, Budget / B: Gas, Erreurs / C: Wireframes & A: Constraints / B: Events / C: Proto.        & PR + ADR \#1              & ADR clair, reviewable  \\ \hline
+	S15                                     & A: Sécurité Auth. / B: Access Ctrl / C: KPIs               & A: Auth. / B: Roles / C: Metrics Plan         & "Module pack" v1          & Checklist sécu         \\ \hline
+	S16                                     & A: Tests (Locaux) / B: Foundry Intro / C: PRD Final        & A: Tests état / B: Fuzz intro / C: Roadmap    & \textbf{PRD/Tool Gate}    & Pipeline test OK       \\ \hline
+	S17                                     & A: Anchor IDL / B: Foundry Mastery / C: Tokenomics         & A: Refactor Anchor / B: Fuzz / C: Incentives  & Repo S17                  & Tests exec, doc        \\ \hline
+	S18                                     & A: Anchor Constraints / B: ERC Stds / C: Simu.             & A: Seeds/PDA / B: ERCs / C: Scénarios         & "Simu pack"               & Résultats repro.       \\ \hline
+	S19                                     & A: CPI / B: Architecture / C: Risques                      & A: CPI / B: Timelocks / C: Mitigations        & ADR \#2 + PR              & Menaces listées        \\ \hline
+	S20                                     & A: Hardening / B: Invariants / C: Paper                    & A: Edge cases / B: Coverage / C: Paper v1     & \textbf{Module 2 Clôture} & Audit notes            \\ \hline
+S21                                     & A: \RBKTerm{defi} Primitives / B: DApp Intég. / C: Analytics         & A: Vault / B: Sign Flow / C: Tracking         & Repo S21                  & Log/Erreurs OK         \\ \hline
+	S22                                     & A: Pricing / B: Oracles / C: Dashboards                    & A: Calculs / B: Oracle mock / C: Dash v1      & Dash/Indexer v1           & Métriques lisibles     \\ \hline
+	S23                                     & A: Indexation / B: Events / C: Cohortes                    & A: Events / B: Endpoints / C: Funnels         & "Data pack"               & Schéma doc             \\ \hline
+S24                                     & A: \RBKTerm{defi} Pack / B: L2 Scale / C: Analytics Final            & A: Stable / B: Archi. L2 / C: Final Instr.    & \textbf{Module 3 Clôture} & Démo 10 min            \\ \hline
+S25                                     & A: Prod Perf / B: Sec Hardening / C: Gouv. Design          & A: Bench / B: \RBKTerm{threat_model} / C: Rules         & Repo S25 + TM             & TM présent, CI verte   \\ \hline
+S26                                     & A: Monitoring / B: Correction \& Preuve / C: GTM           & A: Metrics / B: Fix findings / C: Launch plan & "Ops pack"                & \RBKTerm{runbook} incidents      \\ \hline
+	S27                                     & A: Wallet Intég. / B: Audit Notes / C: Playbook            & A: Adapters / B: Audit pack / C: Metrics      & Release Cand.             & Tag RC, Changelog      \\ \hline
+	S28                                     & \textbf{GATE N2} : PRR + JURY                              & Stabilisation + Docs                          & \textbf{PACK N2}          & \textbf{GO/WARN/\RBKTerm[NO-GO]{release_gate}} \\ \hline
+\end{longtable}
+\normalsize
+
+\newpage
+\begin{center}\colorbox{SolanaGreen!20}{\parbox{\textwidth}{\centering \ Large \textbf{NIVEAU 3 : STUDIO \& PROFESSIONNALISATION (S29-S48)}}}\end{center}
+
+\section{STUDIO DE PRODUCTION (S29-S48)}
+
+\textit{Objectif : Livrer des artefacts employables (Capstones) et préparer l'audit.}
+
+\scriptsize
+\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{4.0cm}|>{\raggedright\arraybackslash}p{4.0cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{2.8cm}|}
+	\hline
+	\rowcolor{SolanaGreen!20} \textbf{Sem} & \textbf{Objectifs (Sprint)}       & \textbf{Labs (Production)}  & \textbf{Livrable}         & \textbf{DoD}         \\ \hline
+	\endfirsthead
+	\hline
+	\rowcolor{SolanaGreen!20} \textbf{Sem} & \textbf{Objectifs (Sprint)}       & \textbf{Labs (Production)}  & \textbf{Livrable}         & \textbf{DoD}         \\ \hline
+	\endhead
+	S29                                    & Capstone 1 : Reliability, ADR, TM & ADR \#3, Threat Model, Spec & Spec + ADR + TM           & Menaces mitigées     \\ \hline
+	S30                                    & Sessions, RPC Fallback            & Impl. fallback, retries     & Module Session            & Pas de blocage       \\ \hline
+	S31                                    & Tx Builder, Simulation            & Builder, Idempotence        & Tx Pipeline v1            & Scénarios test       \\ \hline
+	S32                                    & Observabilité, Support            & Metrics, Traces, Playbook   & Obs. Pack                 & Dashboards           \\ \hline
+	S33                                    & \textbf{GATE CAPSTONE 1}          & Tests E2E, Démo filmée      & \textbf{Reliability Pack} & Démo stable          \\ \hline
+	S34                                    & Capstone 2 : Protocole On-chain   & Invariants, Cas limites     & Spec + Invariants         & Stratégie tests      \\ \hline
+	S35                                    & Implémentation Core               & Core v1, Unit tests         & Core v1                   & CI verte             \\ \hline
+	S36                                    & Sécurité                          & Simu attaques, Mitigations  & Security Checklist        & Preuves fixes        \\ \hline
+	S37                                    & Audit Readiness                   & Scripts repro, Diagrammes   & Audit Pack v1             & Repro 1 cmd          \\ \hline
+	S38                                    & \textbf{GATE CAPSTONE 2}          & Hardening, Perf             & \textbf{RC + Audit Pack}  & RC Tag               \\ \hline
+	S39                                    & Capstone 3 : Ops, SLO             & SLO, Alerting               & SLO + Dashboards          & Alertes utiles       \\ \hline
+	S40                                    & Incident Simu                     & Chaos monkey, Drill         & Postmortem Simulé         & Actions corr.        \\ \hline
+	S41                                    & Deploy Prod-like                  & Pipeline, Migration         & Ops Playbook v1           & Rollback doc         \\ \hline
+	S42                                    & Perf \& Cout                      & Profiling, Optim            & Rapport Perf              & Mesures              \\ \hline
+	S43                                    & \textbf{GATE CAPSTONE 3}          & Go-live simulé              & \textbf{Go-Live Pack}     & Runbook              \\ \hline
+	S44                                    & Placement 1 : \RBKTerm{github}              & Nettoyage, \RBKTerm{readme}           & Portfolio Pack            & Proof links          \\ \hline
+	S45                                    & Placement 2 : CV/LinkedIn         & "Project one-liners"        & CV + LinkedIn             & Claims vérifiables   \\ \hline
+	S46                                    & Placement 3 : Demos               & Script, Vidéo, Slides       & Demo Kit                  & Timing respecté      \\ \hline
+	S47                                    & Placement 4 : Interviews          & Mock, System Design         & Interview Notes           & Réponses rigoureuses \\ \hline
+	S48                                    & \textbf{GATE FINAL N3}            & Soutenance                  & \textbf{PACK FINAL}       & \textbf{GO MARCHÉ}   \\ \hline
+\end{longtable}
+\normalsize
 
 \newpage
 \begin{center}\colorbox{SolanaGreen!20}{\parbox{\textwidth}{\centering \Large \textbf{EXTENSIONS \& OPTIONS}}}\end{center}
@@ -89,19 +166,19 @@ Pour les étudiants souhaitant élargir leur spectre technique, RBK 2.0 propose 
 
 \subsection{Module ZK : Zero-Knowledge Proofs (8 semaines)}
 \begin{itemize}
-    \item \textbf{Contenu :} Arithmétisation, R1CS, Plonk, Langage Noir et Circom.
-    \item \textbf{Projet :} Concevoir un mélangeur de tokens (Mixer) compliant (Privacy Pools).
-    \item \textbf{Pré-requis :} Niveau Mathématique A+ (Algèbre linéaire).
+	\item \textbf{Contenu :} Arithmétisation, R1CS, Plonk, Langage Noir et Circom.
+	\item \textbf{Projet :} Concevoir un mélangeur de tokens (Mixer) compliant (Privacy Pools).
+	\item \textbf{Pré-requis :} Niveau Mathématique A+ (Algèbre linéaire).
 \end{itemize}
 
 \subsection{Module DePIN : Decentralized Physical Infra (6 semaines)}
 \begin{itemize}
-    \item \textbf{Contenu :} Helium Network, Filecoin, IoT Integration, Proof of Coverage.
-    \item \textbf{Projet :} Déployer un réseau de capteurs LoRaWAN incentivé par token.
+	\item \textbf{Contenu :} Helium Network, Filecoin, IoT Integration, Proof of Coverage.
+	\item \textbf{Projet :} Déployer un réseau de capteurs LoRaWAN incentivé par token.
 \end{itemize}
 
 \subsection{Module Cross-Chain \& Interop (4 semaines)}
 \begin{itemize}
-    \item \textbf{Contenu :} Wormhole, LayerZero, Axelar. Design de messages asynchrones.
-    \item \textbf{Projet :} Bridge NFT Solana $\leftrightarrow$ Ethereum.
+	\item \textbf{Contenu :} Wormhole, LayerZero, Axelar. Design de messages asynchrones.
+	\item \textbf{Projet :} Bridge NFT Solana $\leftrightarrow$ Ethereum.
 \end{itemize}

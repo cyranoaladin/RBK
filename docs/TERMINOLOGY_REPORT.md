@@ -1,0 +1,343 @@
+# Terminology Gaps Report
+_Generated: 2025-12-29 14:19:51_
+_Root: /home/alaeddine/Documents/RBK_
+_Commit: 6e8b50e_
+_Report version: 4.7_
+
+## Résumé
+- Keys déclarées : 210
+- Keys utilisées : 53
+- Unknown keys : 0
+- Declared but unused : 157
+- Acronymes suspects non couverts (uniques) : 191
+- Tokens techniques suspects non couverts (uniques) : 421
+
+## A — UNKNOWN KEYS (critique)
+_Aucune entrée._
+
+## B — DECLARED BUT UNUSED (warning)
+- `ab_test`
+- `adr`
+- `alerting`
+- `amm`
+- `anchor`
+- `api_gateway`
+- `arpu`
+- `arr`
+- `audit_trail`
+- `backlog`
+- `block_explorer`
+- `blue_green`
+- `break_even`
+- `bug_bounty`
+- `burn_rate`
+- `business_continuity`
+- `canary_release`
+- `cashflow`
+- `ceo`
+- `change_control`
+- `change_request`
+- `cohort`
+- `compliance_by_design`
+- `cpi`
+- `cspm`
+- `cu`
+- `cwpp`
+- `dapp`
+- `data_retention`
+- `ddd`
+- `ddos_mitigation`
+- `depin`
+- `dex`
+- `dor`
+- `dora`
+- `dos`
+- `dpa`
+- `drp`
+- `due_diligence`
+- `epic`
+- `event_stream`
+- `feature_flag`
+- `feature_toggle`
+- `gas_fee`
+- `gitops`
+- `governance_token`
+- `graphql`
+- `gtm`
+- `hardware_wallet`
+- `hexagonal`
+- `hsm`
+- `ia`
+- `iam`
+- `icp`
+- `id`
+- `idl`
+- `incident_response`
+- `iso27001`
+- `jwt`
+- `kms`
+- `latex`
+- `layer1`
+- `layer2`
+- `liquidity_pool`
+- `llm`
+- `lms`
+- `ltv`
+- `mempool`
+- `metaplex`
+- `mfa`
+- `microservices`
+- `monitoring`
+- `monolith`
+- `mrr`
+- `mttr`
+- `nft`
+- `oauth`
+- `observability`
+- `offchain`
+- `okr`
+- `optimistic_rollup`
+- `oracle`
+- `pda`
+- `pii`
+- `playbook`
+- `poc`
+- `postmortem`
+- `pr`
+- `pricing_model`
+- `privacy_by_design`
+- `program_solana`
+- `proofs`
+- `prr`
+- `qa`
+- `quality_gate`
+- `rag`
+- `rate_limit`
+- `rbk`
+- `release_check`
+- `rest`
+- `retrospective`
+- `revenue_share`
+- `risk_matrix`
+- `roadmap`
+- `roas`
+- `rollout_progressive`
+- `rollup`
+- `rpo`
+- `rto`
+- `runway`
+- `sam`
+- `sbt`
+- `sdk`
+- `secret_management`
+- `seed_phrase`
+- `segregation_of_duties`
+- `service_mesh`
+- `shift_left`
+- `siem`
+- `sign_off`
+- `signing_authority`
+- `siws`
+- `sla`
+- `slashing`
+- `sli`
+- `slo`
+- `soar`
+- `soc2`
+- `som`
+- `sprint`
+- `sre`
+- `stablecoin`
+- `stride`
+- `svm`
+- `tam`
+- `test_coverage`
+- `tnd`
+- `tos`
+- `tps`
+- `traceability`
+- `traceability_matrix`
+- `uat`
+- `ui`
+- `umi`
+- `unit_economics`
+- `user_story`
+- `usp`
+- `utility_token`
+- `uups`
+- `validator`
+- `waf`
+- `wallet`
+- `webhook`
+- `yield_farming`
+- `zero_trust`
+- `zk_proof`
+- `zk_rollup`
+
+## C — Acronymes suspects NON COUVERTS (top)
+- `US` — 9 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/19_risques_bis.tex:79; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:29; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:31
+- `TVL` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:489; /home/alaeddine/Documents/RBK/chapters/annexe_k_glossaire.tex:70; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:149
+- `TS` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:376; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:85; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:117
+- `IP` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/14_risques.tex:24; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:238; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:243
+- `OPEX` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/14_risques.tex:50; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:4; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:74
+- `NPS` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:43; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:75; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:215
+- `CV` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:174; /home/alaeddine/Documents/RBK/chapters/13_marketing.tex:93; /home/alaeddine/Documents/RBK/chapters/21_differentiation.tex:98
+- `INC` — 7 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:473; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:543; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:549
+- `AI` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:393; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:42; /home/alaeddine/Documents/RBK/chapters/21_differentiation.tex:10
+- `TRACK` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_B_EVM_Solidity_Foundry.tex:29; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:37; /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:1
+- `BCT` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:13; /home/alaeddine/Documents/RBK/chapters/14_risques.tex:17; /home/alaeddine/Documents/RBK/chapters/19_risques_bis.tex:11
+- `COPIL` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:291; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:300; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:383
+- `TOTAL` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:22; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:46; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:68
+- `TM` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:266; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:137; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:220
+- `ETE` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:5; /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:12; /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:24
+- `SWOT` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:245; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:311; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:64
+- `BODY` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:251; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:266; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:277
+- `JS` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:21; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:70; /home/alaeddine/Documents/RBK/chapters/21_differentiation.tex:145
+- `ZK` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:72; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:85; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:106
+- `SOL` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/14_risques.tex:61; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:268; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:11
+- `CTO` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:6; /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:100; /home/alaeddine/Documents/RBK/chapters/18_gouvernance.tex:11
+- `TA` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:84; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:58; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:71
+- `PACK` — 5 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_j_offre.tex:77; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:156; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:463
+- `CAGR` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:489; /home/alaeddine/Documents/RBK/chapters/00_acronymes_defs.tex:2; /home/alaeddine/Documents/RBK/chapters/00_executive_summary.tex:10
+- `PM` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:97; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:543; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:549
+- `MOU` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:48; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:163; /home/alaeddine/Documents/RBK/chapters/20_roadmap_lancement.tex:16
+- `AAAA` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:52; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:61; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:70
+- `MM` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:52; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:61; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:70
+- `JJ` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:52; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:61; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:70
+- `NON` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:11; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:12; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:11
+- `DE` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/14_risques.tex:1; /home/alaeddine/Documents/RBK/chapters/00_guide_lecture.tex:3; /home/alaeddine/Documents/RBK/chapters/12_business_plan.tex:1
+- `PED` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:128; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:78; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:88
+- `CVR` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:45; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:227; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:229
+- `TECH` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:98; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:188; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:258
+- `SEC` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:108; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:188; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:248
+- `EUR` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:142; /home/alaeddine/Documents/RBK/chapters/annexe_n_compliance.tex:17; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:33
+- `RH` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:174; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:284; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:14
+- `COSUI` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:291; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:390; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:393
+- `CAPEX` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:4; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:118; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:131
+- `EBITDA` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:120; /home/alaeddine/Documents/RBK/chapters/12_business_plan.tex:103; /home/alaeddine/Documents/RBK/chapters/12_business_plan.tex:121
+- `CR` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:86; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:159; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:400
+- `CDI` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/01_vision.tex:75; /home/alaeddine/Documents/RBK/chapters/01_vision.tex:170; /home/alaeddine/Documents/RBK/chapters/00_factsheet.tex:56
+- `PRD` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/05_structure.tex:161; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:254; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:106
+- `RC` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:117; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:146; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:489
+- `ESN` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:22; /home/alaeddine/Documents/RBK/chapters/12_business_plan.tex:60; /home/alaeddine/Documents/RBK/chapters/annexe_m_b2b.tex:5
+- `USDC` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/18_marketing_bis.tex:34; /home/alaeddine/Documents/RBK/chapters/02_contexte.tex:15; /home/alaeddine/Documents/RBK/chapters/annexe_s_kit_survie.tex:26
+- `CGV` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:88; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:43; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:104
+- `FAQ` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:110; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:124; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:40
+- `IPFS` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/19_infrastructure_sbt.tex:68; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:100; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:133
+- `FIN` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:48; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:138; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:228
+- `LEGAL` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:118; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:128; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:238
+- `PRA` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:249; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:253; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:174
+- `MTTA` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:533; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:543; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:549
+- `RB` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:575; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:589; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:603
+- `IS` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:5; /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:16; /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:37
+- `SUARL` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:53; /home/alaeddine/Documents/RBK/chapters/annexe_n_compliance.tex:9; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:32
+- `APII` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:64; /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:65; /home/alaeddine/Documents/RBK/chapters/annexe_s_kit_survie.tex:16
+- `OUI` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_j_offre.tex:13; /home/alaeddine/Documents/RBK/chapters/annexe_j_offre.tex:14; /home/alaeddine/Documents/RBK/chapters/annexe_j_offre.tex:16
+- `OU` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_q_contrat_isa.tex:13; /home/alaeddine/Documents/RBK/chapters/16_token_reputation.tex:94; /home/alaeddine/Documents/RBK/chapters/16_token_reputation.tex:95
+- `NIVEAU` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:25; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:89; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:123
+- `VC` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:110; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:111; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:117
+- `THREAT` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:49; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:399; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:429
+- `NNNN` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:100; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:165; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:400
+- `ODD` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/17_impact_odd.tex:8; /home/alaeddine/Documents/RBK/chapters/17_impact_odd.tex:9; /home/alaeddine/Documents/RBK/chapters/17_impact_odd.tex:10
+- `DES` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:430; /home/alaeddine/Documents/RBK/chapters/14_risques.tex:1
+- `UXUI` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:489; /home/alaeddine/Documents/RBK/chapters/00_acronymes_defs.tex:23
+- `CICD` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:489; /home/alaeddine/Documents/RBK/chapters/00_acronymes_defs.tex:3
+- `DB` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:245; /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:36
+- `CMO` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:108; /home/alaeddine/Documents/RBK/chapters/22_conclusion.tex:15
+- `LEG` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:126; /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:127
+- `ET` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/19_infrastructure_sbt.tex:74; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:248
+- `SMART` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:1; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:96
+- `GUIDE` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/00_guide_lecture.tex:3; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:1
+- `CPL` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:45; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:233
+- `QUAL` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:78; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:88
+- `REP` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:118; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:218
+- `CAREER` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:168; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:14
+- `TJM` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:12; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:63
+- `SOW` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:12; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:48
+- `TDD` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/04_methodologie.tex:54; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:13
+
+## D — Tokens techniques suspects NON COUVERTS (top)
+- `EVM/Solana` — 6 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:99; /home/alaeddine/Documents/RBK/chapters/17_fiches_metiers_bis.tex:16; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:26
+- `PoS` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:489; /home/alaeddine/Documents/RBK/chapters/00_acronymes_defs.tex:16; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:44
+- `call-graph` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:100; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:312; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:342
+- `Token-2022` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:177; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:317; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:133
+- `Solana/Anchor` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:423; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:269; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:13
+- `ci-dessous` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:27; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:148; /home/alaeddine/Documents/RBK/chapters/02_contexte.tex:56
+- `SaaS` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:53; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:142; /home/alaeddine/Documents/RBK/chapters/annexe_b_finance.tex:53
+- `Must-Have` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:10; /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:20; /home/alaeddine/Documents/RBK/chapters/15_roadmap.tex:30
+- `open-source` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:143; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:243; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:57
+- `DualTrack` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:26; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:60; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:39
+- `YouTube` — 4 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/13_marketing.tex:43; /home/alaeddine/Documents/RBK/chapters/13_marketing.tex:92; /home/alaeddine/Documents/RBK/chapters/13_marketing.tex:101
+- `DeepBlack` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v4.tex:148; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:171; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:239
+- `RaggedRight` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:217; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:6; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:9
+- `MoSCoWTable` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:257; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:125; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:144
+- `RiskRegister` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:283; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:164; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:170
+- `mint/burn` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:184; /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:210; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:69
+- `audit-ready` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:51; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:7; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:8
+- `build/test` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:73; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:106; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:375
+- `A/B` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:405; /home/alaeddine/Documents/RBK/chapters/99_changelog_v5.tex:11; /home/alaeddine/Documents/RBK/chapters/05_structure.tex:136
+- `AAAA-MM-JJ` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:52; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:61; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:70
+- `GitBook` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:52; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:11; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:108
+- `DevOps` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:180; /home/alaeddine/Documents/RBK/chapters/annexe_o_competences.tex:20; /home/alaeddine/Documents/RBK/chapters/02_contexte.tex:33
+- `Must/Should` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:53; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:213; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:49
+- `rate-limit` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:102; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:273; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:582
+- `re-audit` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:114; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:284; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:264
+- `Go/No` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:224; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:44; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:231
+- `Date/Heure` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_p_crise.tex:7; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:543; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:549
+- `OpenZeppelin` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:6; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:119; /home/alaeddine/Documents/RBK/chapters/01_vision.tex:54
+- `Dual-Track` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:1; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:127; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:221
+- `Audit-Ready` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/00_factsheet.tex:69; /home/alaeddine/Documents/RBK/chapters/22_conclusion.tex:32; /home/alaeddine/Documents/RBK/chapters/22_conclusion.tex:59
+- `post-cursus` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/02_contexte.tex:89; /home/alaeddine/Documents/RBK/chapters/02_contexte.tex:90; /home/alaeddine/Documents/RBK/chapters/06_syllabus_tronc_commun.tex:165
+- `KO-Repro` — 3 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:74; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:337; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:404
+- `DejaVu` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v4.tex:37; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:37
+- `unicode-math` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v4.tex:71; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:80
+- `tikz-timing` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v4.tex:84; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:95
+- `TerminalDark` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v4.tex:158; /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:181
+- `tex/params` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/Livre_blanc_v5.tex:115; /home/alaeddine/Documents/RBK/chapters/annexe_y_change_control.tex:54
+- `security-first` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_B_EVM_Solidity_Foundry.tex:41; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:279
+- `Vault/Escrow` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_B_EVM_Solidity_Foundry.tex:67; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:151
+- `Studio-grade` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:28; /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:42
+- `re-sign` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:143; /home/alaeddine/Documents/RBK/separates/Capstones_Projets_Signatures.tex:145
+- `studio-grade` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:56; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:245
+- `events/logs` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:65; /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:230
+- `Mini-Escrow` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:153; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:84
+- `post-mortem` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:197; /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:13
+- `pre-commit` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:378; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:601
+- `threat-model` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:394; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:37
+- `docs/threat` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:394; /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:37
+- `copier-coller` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:446; /home/alaeddine/Documents/RBK/chapters/04_methodologie.tex:132
+- `Trade-offs` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/separates/Track_A_Solana_Rust_Anchor.tex:452; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:117
+- `TanStack` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:32; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:36
+- `Front-end` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:65; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:120
+- `React/Next` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_c_product.tex:65; /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:78
+- `crypto-actifs` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/14_risques.tex:11; /home/alaeddine/Documents/RBK/chapters/19_risques_bis.tex:11
+- `TypeScript` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:112; /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:178
+- `Cross-Program` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/08_track_solana.tex:132; /home/alaeddine/Documents/RBK/chapters/annexe_k_glossaire.tex:52
+- `part-time` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:44; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:231
+- `PED/QUAL` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:78; /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:88
+- `carry-over` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:215; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:153
+- `PCA/PRA` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_v_registre_risques.tex:249; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:174
+- `OtterSec` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/07_soft_skills.tex:10; /home/alaeddine/Documents/RBK/chapters/01_vision.tex:54
+- `anti-trading` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:40; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:66
+- `JS/TS` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:70; /home/alaeddine/Documents/RBK/chapters/20_roadmap_lancement.tex:58
+- `post-parcours` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:284; /home/alaeddine/Documents/RBK/chapters/00_factsheet.tex:56
+- `au-dessus` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:378; /home/alaeddine/Documents/RBK/chapters/03_arbitrage.tex:34
+- `users/ops` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:543; /home/alaeddine/Documents/RBK/chapters/annexe_w_kpi_actions.tex:549
+- `Checks-Effects-Interactions` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/09_track_evm.tex:101; /home/alaeddine/Documents/RBK/chapters/11_capstones.tex:77
+- `TechLead-EVM` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:10; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:112
+- `TechLead-SOL` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:11; /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:113
+- `sur-ambition` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:31; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:44
+- `Micro-certifications` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexezgabarits.tex:70; /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:74
+- `Re-entrancy` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/01_vision.tex:20; /home/alaeddine/Documents/RBK/chapters/03_arbitrage.tex:30
+- `Anti-Burnout` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/01_vision.tex:169; /home/alaeddine/Documents/RBK/chapters/annexe_l_mentors.tex:15
+- `Rust/Solana` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/01a_note_cadrage.tex:19; /home/alaeddine/Documents/RBK/chapters/20_roadmap_lancement.tex:22
+- `garde-fous` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_c_juridique.tex:86; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:314
+- `EUR/USD` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/annexe_n_compliance.tex:17; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:33
+- `ci-dessus` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/00_factsheet.tex:41; /home/alaeddine/Documents/RBK/chapters/16_compliance_guide.tex:98
+- `N/A` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/10_fiches_metiers.tex:231; /home/alaeddine/Documents/RBK/chapters/annexe_a_syllabus_detaille.tex:54
+- `Solana/Rust` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/03_arbitrage.tex:12; /home/alaeddine/Documents/RBK/chapters/22_conclusion.tex:65
+- `ERC-721` — 2 occurrence(s) — /home/alaeddine/Documents/RBK/chapters/03_arbitrage.tex:34; /home/alaeddine/Documents/RBK/chapters/annexe_h_sbt.tex:5
+
+## Notes
+- Ignorés pour les suspects : terminology_entries.tex, terminology_core.tex, et dossiers build/out/node_modules/dist/_minted-*.
+- Réduire les faux positifs : ajouter \\RBKTerm{...} autour du terme ou l’ajouter au lexique.
