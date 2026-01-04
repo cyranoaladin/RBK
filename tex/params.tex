@@ -1,0 +1,69 @@
+% tex/params.tex — SSOT (Single Source of Truth)
+% Ne pas mettre de valeurs contractuelles ailleurs que dans ce fichier.
+
+% Durées officielles
+\newcommand{\ProgramWeeks}{48}
+\newcommand{\NOneWeeks}{13}
+\newcommand{\NTwoWeeks}{16}
+\newcommand{\NThreeWeeks}{20}
+\newcommand{\LaunchpadOptionalWeeks}{4}
+\newcommand{\GenesisPoolWeeks}{\NOneWeeks}
+\newcommand{\ExplorerWeeks}{\NTwoWeeks}
+\newcommand{\BatisseurWeeks}{12}
+\newcommand{\ArchitecteCoreWeeks}{8}
+
+% ISA — norme unique (Annexe K)
+\newcommand{\ISAThresholdTND}{2500}          % seuil en TND brut
+\newcommand{\ISARate}{15\%}                  % taux en % du brut
+\newcommand{\ISACapTND}{20000}               % cap total en TND
+\newcommand{\ISAMaxPaidMonths}{36}           % mensualités payées max
+\newcommand{\ISABasis}{revenu brut mensuel}  % base de calcul
+
+% Helpers réutilisables (phrases)
+\newcommand{\ProgramDurationText}{\ProgramWeeks~semaines (N1 \NOneWeeks~+ N2 \NTwoWeeks~+ N3 \NThreeWeeks{})}
+
+% Modèle économique Nexus
+\newcommand{\AnnualTuitionTND}{15\,000~\text{TND}}
+\newcommand{\NexusFlatFeeTND}{3\,300~\text{TND}}
+\newcommand{\NexusRevenueShare}{30\%}
+\newcommand{\NOneFeeTND}{2\,900~\text{TND}}
+\newcommand{\NTwoFeeTND}{5\,100~\text{TND}}
+\newcommand{\NThreeFeeTND}{7\,000~\text{TND}}
+\newcommand{\GenesisFeeTND}{\NOneFeeTND}
+\newcommand{\ExplorerFeeTND}{\NTwoFeeTND}
+\newcommand{\ArchitecteFeeTND}{\NThreeFeeTND}
+\newcommand{\FullPackFeeTND}{15\,000~\text{TND}}
+\newcommand{\MonthlyManagementFeeTND}{4\,500~\text{TND}}
+\newcommand{\MonthlyAcquisitionBudgetTND}{3\,000~\text{TND}}
+\newcommand{\ISATermsText}{Seuil~: \ISAThresholdTND~TND brut ; Partage~: \ISARate{} du brut ; Cap~: \ISACapTND~TND ; Durée~: \ISAMaxPaidMonths~mensualités payées max.}
+
+% Hypothèses financières — scénarios
+\newcommand{\CACPrudentTND}{800~\text{TND}}
+\newcommand{\CACRealisticTND}{500~\text{TND}}
+\newcommand{\CACAmbitiousTND}{300~\text{TND}}
+\newcommand{\PlacementRatePrudent}{40\%}
+\newcommand{\PlacementRateRealistic}{70\%}
+\newcommand{\PlacementRateAmbitious}{85\%}
+\newcommand{\SalaryPrudentTND}{2\,000~\text{TND}}
+\newcommand{\SalaryRealisticTND}{3\,000~\text{TND}}
+\newcommand{\SalaryAmbitiousTND}{4\,000~\text{TND}}
+\newcommand{\ISAFinanceSharePrudent}{50\%}
+\newcommand{\ISAFinanceShareRealistic}{40\%}
+\newcommand{\ISAFinanceShareAmbitious}{30\%}
+
+% Hypothèses pédagogiques
+\newcommand{\NOneToTwoConversionRate}{70\%}
+\newcommand{\NTwoToThreeConversionRate}{60\%}
+
+% Budgets et protections
+\newcommand{\SprintZeroBudgetTND}{75\,000~\text{TND}}
+\newcommand{\ISAFundInitialTND}{150\,000~\text{TND}}
+\newcommand{\ISAFundTopupTND}{30\,000~\text{TND}}
+\newcommand{\PlacementBonusTND}{1\,000~\text{TND}}
+\newcommand{\RBKOpsYearOneTND}{240\,000~\text{TND}}
+\newcommand{\RBKOpsIncrementTND}{30\,000~\text{TND}}
+\newcommand{\CorporateSeatPriceTND}{15\,000~\text{TND}}
+\newcommand{\MarketingRunRateYearTwoTND}{30\,000~\text{TND}}
+\newcommand{\MarketingRunRateYearThreeTND}{45\,000~\text{TND}}
+\newcommand{\RBKOpsYearTwoTND}{270\,000~\text{TND}}
+\newcommand{\RBKOpsYearThreeTND}{320\,000~\text{TND}}
