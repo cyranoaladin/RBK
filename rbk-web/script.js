@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentDiv = document.getElementById('content');
   const links = document.querySelectorAll('aside nav a');
 
+  if (window.lucide) {
+    try { lucide.createIcons(); } catch { }
+  }
+
   // Mapping strict: data-page == nom de fichier sans extension
   const pages = {
     // 00. Cadrage & Synthèse
@@ -22,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     "06_syllabus": "chapters/06_syllabus.html",
     "07_soft_skills": "chapters/07_soft_skills.html",
     "08_track_solana": "chapters/08_track_solana.html",
+    "track_solana_manifest": "chapters/track_solana_manifest.html",
+    "track_solana_n1": "chapters/track_solana_n1.html",
+    "track_solana_n2": "chapters/track_solana_n2.html",
+    "track_solana_n3": "chapters/track_solana_n3.html",
     "09_track_evm": "chapters/09_track_evm.html",
     "09_track_product": "chapters/09_track_product.html",
     "10_metiers": "chapters/10_metiers.html",
@@ -72,12 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
     "annexe_u_risques": "chapters/annexe_u_risques.html",
     "annexe_v_pilotage": "chapters/annexe_v_pilotage.html",
     "annexe_w_glossaire": "chapters/annexe_w_glossaire.html",
-    "annexezgabarits": "chapters/annexezgabarits.html"
+    "annexe_z_gabarits": "chapters/annexe_z_gabarits.html"
   };
 
   async function ensureMermaid() {
     if (window.mermaid) {
-      try { window.mermaid.initialize({ startOnLoad: false, theme: 'dark', fontFamily: 'JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' }); } catch {}
+      try { window.mermaid.initialize({ startOnLoad: false, theme: 'dark', fontFamily: 'JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' }); } catch { }
       return window.mermaid;
     }
     await new Promise((resolve, reject) => {
@@ -87,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       s.onerror = reject;
       document.head.appendChild(s);
     });
-    try { window.mermaid.initialize({ startOnLoad: false, theme: 'dark', fontFamily: 'JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' }); } catch {}
+    try { window.mermaid.initialize({ startOnLoad: false, theme: 'dark', fontFamily: 'JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' }); } catch { }
     return window.mermaid;
   }
 
@@ -105,12 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
       Chart.defaults.color = '#cbd5e1';
       Chart.defaults.borderColor = 'rgba(148, 163, 184, 0.15)';
       Chart.defaults.font.family = 'Inter, ui-sans-serif, system-ui, sans-serif';
-    } catch {}
+    } catch { }
     return window.Chart;
   }
 
   function cleanupCharts() {
-    (window._rbkCharts || []).forEach((ch) => { try { ch.destroy(); } catch {} });
+    (window._rbkCharts || []).forEach((ch) => { try { ch.destroy(); } catch { } });
     window._rbkCharts = [];
   }
 
@@ -119,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const c2 = root.querySelector('#chartJobIndex');
     if (c1) {
       const ctx = c1.getContext('2d');
-      const labels = ['2021','2022','2023','2024','2025'];
+      const labels = ['2021', '2022', '2023', '2024', '2025'];
       const chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -143,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (c2) {
       const ctx = c2.getContext('2d');
-      const labels = ['2021','2022','2023','2024','2025'];
+      const labels = ['2021', '2022', '2023', '2024', '2025'];
       const chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -166,8 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Formation Initiale','ISA (Success Fees)','B2B (Corporate)'],
-          datasets: [{ data: [70,20,10], backgroundColor: ['#10b981','#a78bfa','#6366f1'], borderWidth: 0 }]
+          labels: ['Formation Initiale', 'ISA (Success Fees)', 'B2B (Corporate)'],
+          datasets: [{ data: [70, 20, 10], backgroundColor: ['#10b981', '#a78bfa', '#6366f1'], borderWidth: 0 }]
         },
         options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
       });
@@ -289,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
       a.classList.contains('bg-white/10') || (a.classList.contains('text-white') && a.classList.contains('border-indigo-500'))
     );
     if (active && nav) {
-      try { active.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch {}
+      try { active.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch { }
     }
   }
 
@@ -311,36 +319,18 @@ document.addEventListener('DOMContentLoaded', () => {
     (firstSection || root).appendChild(container);
   }
 
-  function injectBizFlow(root) {
-    const pre = document.createElement('pre');
-    pre.className = 'mermaid text-[11px]';
-    pre.textContent = `flowchart LR\n  A[Upfront (Tuition)] --> T[Revenus Totaux]\n  B[ISA (Différé)] --> T\n  C[B2B Corporate] --> T\n  T --> D{Coûts}\n  D -->|Nexus + Mentors| E[(Coûts Directs)]\n  D -->|Ops + Marketing| F[(Coûts Opérationnels)]\n  T --> G[Dotation Fonds de Garantie]\n  T -.->|36 mois| H((Résultat Ops))`;
-    const target = root.querySelector('section');
-    if (target) target.appendChild(pre);
-  }
+  // function injectBizFlow(root) {
+  //   // Désactivé (Mermaid) pour éviter le flash de code + erreurs de parsing.
+  //   return;
+  // }
 
   function injectFinancePie(pageId, root) {
-    // 12: Sources de revenus (70/20/10)
-    if (pageId === '12_business_plan') {
-      const pre = document.createElement('pre');
-      pre.className = 'mermaid text-[11px]';
-      pre.textContent = `pie showData\n  title Sources de Revenus (Modèle Hybride)\n  "Formation Initiale" : 70\n  "ISA (Success Fees)" : 20\n  "B2B (Corporate)" : 10`;
-      const target = root.querySelector('section');
-      if (target) target.appendChild(pre);
-    }
-
-    // Annexe B: Répartition (Scénario B) – valeurs issues du tableau
-    if (pageId === 'annexe_b_finance') {
-      const pre = document.createElement('pre');
-      pre.className = 'mermaid text-[11px]';
-      pre.textContent = `pie showData\n  title Scénario B — P&L (Annuel)\n  "Mentors Pool" : 53560\n  "Frais Nexus (Delivery+Mgmt)" : 79708\n  "Marketing (Budget Acquisition)" : 36000\n  "Marge Nette (Résiduel RBK)" : 64971`;
-      const after = root.querySelector('section:nth-of-type(2)');
-      (after || root).appendChild(pre);
-    }
+    // Désactivé : on s'appuie sur Chart.js pour ces vues afin d'éviter les erreurs Mermaid.
+    return;
   }
 
   function injectTechStackContext(pageId, root) {
-    if (pageId !== 'annexe_n_stack' && pageId !== '14_tech_stack') return;
+    if (pageId !== 'annexe_n_stack') return;
     const pre = document.createElement('pre');
     pre.className = 'mermaid text-[11px]';
     pre.textContent = `flowchart LR\n  DEV[VSCode (Local)] --> GH[GitHub (CI/CD)]\n  GH --> SOL[Solana (Devnet/Mainnet)]\n  GH --> EVM[EVM (Testnet/Mainnet)]\n  style DEV fill:#0b1220,stroke:#38bdf8,color:#e2e8f0\n  style GH fill:#0b1220,stroke:#64748b,color:#e2e8f0\n  style SOL fill:#0b1220,stroke:#22c55e,color:#e2e8f0\n  style EVM fill:#0b1220,stroke:#f59e0b,color:#e2e8f0`;
@@ -355,6 +345,20 @@ document.addEventListener('DOMContentLoaded', () => {
     pre.textContent = `gantt\n  title Macro Parcours — Sprint 0 → Piscine → Lab → Launch\n  dateFormat  YYYY-MM-DD\n  axisFormat  %d %b\n  section Trajectoire\n  Sprint 0 (Cadrage)    :s0, 2026-01-01, 30d\n  Piscine (4 semaines)  :p1, after s0, 28d\n  Lab (16 semaines)     :l1, after p1, 112d\n  Launch                :milestone, ln, after l1, 1d`;
     const target = root.querySelector('section');
     if (target) target.appendChild(pre);
+  }
+
+  function runMermaidSafely() {
+    try {
+      const blocks = document.querySelectorAll('.mermaid');
+      if (!blocks.length) return;
+      if (!window.mermaid) return;
+      window.mermaid.run({ querySelector: '.mermaid' })
+        .catch(() => {
+          // On erreur de parsing, on n’empêche pas le reste de l’UI
+        });
+    } catch {
+      // Fallback silencieux
+    }
   }
 
   // ---------- UX Premium helpers ----------
@@ -398,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (next) wrapper.appendChild(makeBtn('Suivant', next));
 
     root.appendChild(wrapper);
-    if (window.lucide) try { lucide.createIcons(); } catch {}
+    if (window.lucide) try { lucide.createIcons(); } catch { }
   }
 
   function initProgressBarOnce() {
@@ -415,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const pct = Math.min(1, Math.max(0, scroller.scrollTop / max));
       bar.style.width = `${pct * 100}%`;
     };
-    ['scroll','resize'].forEach(ev => scroller.addEventListener(ev, update, { passive: true }));
+    ['scroll', 'resize'].forEach(ev => scroller.addEventListener(ev, update, { passive: true }));
     window.addEventListener('resize', update, { passive: true });
     setTimeout(update, 50);
   }
@@ -423,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyHeroIfExecSummary(pageId, root) {
     if (pageId !== '00_executive_summary' && !/executive_summary/.test(pageId)) return;
     const h1 = root.querySelector('h1');
-    if (h1) h1.classList.add('text-transparent','bg-clip-text','bg-gradient-to-r','from-white','to-slate-400','text-5xl','md:text-6xl','font-black');
+    if (h1) h1.classList.add('text-transparent', 'bg-clip-text', 'bg-gradient-to-r', 'from-white', 'to-slate-400', 'text-5xl', 'md:text-6xl', 'font-black');
   }
 
   function styleCodeBlocks(root) {
@@ -435,13 +439,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const bar = document.createElement('div');
       bar.className = 'flex items-center gap-1 px-3 py-2 bg-[#0b0b0b] border-b border-white/10';
-      ['bg-red-500','bg-yellow-500','bg-green-500'].forEach(cls => {
+      ['bg-red-500', 'bg-yellow-500', 'bg-green-500'].forEach(cls => {
         const dot = document.createElement('div');
         dot.className = `w-2.5 h-2.5 rounded-full ${cls}`;
         bar.appendChild(dot);
       });
 
-      pre.classList.add('bg-[#050505]','text-slate-200','p-4','font-mono','text-[12px]','overflow-x-auto');
+      pre.classList.add('bg-[#050505]', 'text-slate-200', 'p-4', 'font-mono', 'text-[12px]', 'overflow-x-auto');
 
       pre.parentElement.insertBefore(wrap, pre);
       wrap.appendChild(bar);
@@ -453,12 +457,12 @@ document.addEventListener('DOMContentLoaded', () => {
     root.querySelectorAll('blockquote').forEach((bq) => {
       if (bq.dataset.styled) return;
       bq.dataset.styled = '1';
-      bq.classList.add('relative','p-4','border-l-4','border-indigo-500','bg-indigo-500/5','rounded-r-xl');
+      bq.classList.add('relative', 'p-4', 'border-l-4', 'border-indigo-500', 'bg-indigo-500/5', 'rounded-r-xl');
       const icon = document.createElement('i');
-      icon.setAttribute('data-lucide','quote');
+      icon.setAttribute('data-lucide', 'quote');
       icon.className = 'absolute -top-2 -left-2 w-16 h-16 text-indigo-900/20 pointer-events-none';
       bq.appendChild(icon);
-      if (window.lucide) try { lucide.createIcons(); } catch {}
+      if (window.lucide) try { lucide.createIcons(); } catch { }
     });
   }
 
@@ -513,20 +517,21 @@ document.addEventListener('DOMContentLoaded', () => {
       // Diagrams
       try {
         if (pageId === '15_roadmap' || pageId === '20_roadmap_lancement') injectGanttForRoadmap(pageId, contentDiv);
-        if (pageId === '12_business_plan') injectBizFlow(contentDiv);
-        // Visual QA injections
-        if (pageId === '12_business_plan' || pageId === 'annexe_b_finance') injectFinancePie(pageId, contentDiv);
-        if (pageId === 'annexe_n_stack' || pageId === '14_tech_stack') injectTechStackContext(pageId, contentDiv);
+        // Mermaid désactivé pour les sections finance/business afin d’éviter le flash de code/erreurs
+        if (pageId === 'annexe_n_stack') injectTechStackContext(pageId, contentDiv);
         if (pageId === '06_syllabus') injectSyllabusGantt(pageId, contentDiv);
-        const mermaid = await ensureMermaid();
-        if (mermaid) mermaid.run({ querySelector: '.mermaid' });
+        await ensureMermaid();
+        runMermaidSafely();
 
         // Chart.js charts
         await ensureChartJS();
         cleanupCharts();
         if (pageId === '02_contexte') renderContextCharts(contentDiv);
-        if (pageId === '12_business_plan') renderBusinessCharts(contentDiv);
-      } catch {}
+        if (pageId === '12_business_plan') {
+          renderBusinessCharts(contentDiv);
+          injectNexusSimulator('nexus-simulator-area');
+        }
+      } catch { }
 
       window.scrollTo(0, 0);
     } catch (error) {
@@ -535,6 +540,108 @@ document.addEventListener('DOMContentLoaded', () => {
         <p>${error.message}</p>
         <p class="text-xs mt-4 text-slate-500">Vérifiez que le fichier existe bien dans le dossier chapters/.</p>
       </div>`;
+    }
+  }
+
+  function injectNexusSimulator(targetId) {
+    const container = document.getElementById(targetId);
+    if (!container) return;
+
+    const html = `
+    <div class="glass-card p-6 mt-0 border border-indigo-500/30">
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="activity" class="text-indigo-400"></i>
+            Simulateur de Ventilation : RBK vs Nexus
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div>
+                    <label class="text-xs uppercase text-indigo-300 font-bold">1. Revenus (Encaissés par RBK)</label>
+                    <p class="text-[10px] text-slate-500 mb-2">Frais scolarité, Subventions, Sponsorings</p>
+                    <input type="range" min="100000" max="1000000" step="50000" value="500000" id="sim-ca" class="w-full accent-indigo-500">
+                    <div class="text-right font-mono text-indigo-300" id="val-ca">500,000 TND</div>
+                </div>
+                <div>
+                    <label class="text-xs uppercase text-emerald-300 font-bold">2. Coûts Service Nexus (Estimés)</label>
+                    <p class="text-[10px] text-slate-500 mb-2">Salaires Formateurs, R&D Contenu, Plateformes Tech</p>
+                    <input type="range" min="50000" max="800000" step="10000" value="350000" id="sim-costs" class="w-full accent-emerald-500">
+                    <div class="text-right font-mono text-emerald-300" id="val-costs">350,000 TND</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center space-y-4 bg-slate-900/50 p-4 rounded-xl border border-white/5">
+                
+                <div class="pb-2 border-b border-white/10">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-slate-400">Facture Nexus (Dont 10% Marge Ops)</span>
+                        <span class="font-bold font-mono text-emerald-400" id="res-nexus">385,000 TND</span>
+                    </div>
+                    <p class="text-[9px] text-slate-500 mt-1 text-right">Couvre : Staffing Tech, Outils, Venture Engine</p>
+                </div>
+
+                <div class="pb-2 border-b border-white/10">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-indigo-400 font-bold">Reste pour RBK</span>
+                        <span class="font-bold font-mono text-indigo-400 text-lg" id="res-rbk">115,000 TND</span>
+                    </div>
+                    <p class="text-[9px] text-slate-500 mt-1 text-right">Pour payer : Loyers, Marketing, Admin</p>
+                </div>
+                
+                <div class="w-full h-4 bg-slate-800 rounded-full overflow-hidden flex mt-2">
+                    <div id="bar-nexus" class="h-full bg-emerald-500/80 transition-all duration-500" style="width: 77%"></div>
+                    <div id="bar-rbk" class="h-full bg-indigo-500/80 transition-all duration-500" style="width: 23%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `;
+
+    container.innerHTML += html;
+    if (window.lucide) lucide.createIcons();
+
+    // Logic
+    const inputs = ['sim-ca', 'sim-costs'];
+    inputs.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('input', updateSim);
+    });
+
+    function updateSim() {
+      const ca = parseInt(document.getElementById('sim-ca').value);
+      const costs = parseInt(document.getElementById('sim-costs').value);
+
+      // Marge Ops Nexus 10% sur les coûts techniques
+      const nexusMarginRate = 0.10;
+      let invoiceNexus = costs * (1 + nexusMarginRate);
+
+      let rbkNet = ca - invoiceNexus;
+
+      // Mise à jour DOM
+      document.getElementById('val-ca').innerText = ca.toLocaleString() + ' TND';
+      document.getElementById('val-costs').innerText = costs.toLocaleString() + ' TND';
+      document.getElementById('res-nexus').innerText = invoiceNexus.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
+
+      const rbkEl = document.getElementById('res-rbk');
+      rbkEl.innerText = rbkNet.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
+
+      // Alerte si RBK est en déficit (Loyer non couvert)
+      if (rbkNet < 0) {
+        rbkEl.classList.remove('text-indigo-400');
+        rbkEl.classList.add('text-rose-500');
+        rbkEl.innerText += " (Déficit)";
+      } else {
+        rbkEl.classList.remove('text-rose-500');
+        rbkEl.classList.add('text-indigo-400');
+      }
+
+      // Update Bar
+      const total = Math.max(ca, invoiceNexus);
+      const pctNexus = Math.min((invoiceNexus / total) * 100, 100);
+      const pctRbk = rbkNet > 0 ? (rbkNet / total) * 100 : 0;
+
+      document.getElementById('bar-nexus').style.width = pctNexus + '%';
+      document.getElementById('bar-rbk').style.width = pctRbk + '%';
     }
   }
 
