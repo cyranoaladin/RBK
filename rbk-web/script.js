@@ -174,8 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Formation Initiale', 'ISA (Success Fees)', 'B2B (Corporate)'],
-          datasets: [{ data: [70, 20, 10], backgroundColor: ['#10b981', '#a78bfa', '#6366f1'], borderWidth: 0 }]
+          labels: ['Formation Initiale (Cash)', 'ISA (Excellence)', 'B2B (Corporate)'],
+          datasets: [{ data: [85, 5, 10], backgroundColor: ['#ffffff', '#14F195', '#6366f1'], borderWidth: 0 }]
         },
         options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
       });
@@ -548,25 +548,29 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
 
     const html = `
-    <div class="glass-card p-6 mt-0 border border-indigo-500/30">
+    <div class="glass-card p-6 mt-0 border border-emerald-500/30">
         <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-            <i data-lucide="activity" class="text-indigo-400"></i>
-            Simulateur de Ventilation : RBK vs Nexus
+            <i data-lucide="landmark" class="text-emerald-400"></i>
+            Simulateur : Modèle Premium (Cash Flow)
         </h3>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="space-y-6">
                 <div>
-                    <label class="text-xs uppercase text-indigo-300 font-bold">1. Revenus (Encaissés par RBK)</label>
-                    <p class="text-[10px] text-slate-500 mb-2">Frais scolarité, Subventions, Sponsorings</p>
-                    <input type="range" min="100000" max="1000000" step="50000" value="500000" id="sim-ca" class="w-full accent-indigo-500">
-                    <div class="text-right font-mono text-indigo-300" id="val-ca">500,000 TND</div>
+                    <label class="text-xs uppercase text-emerald-300 font-bold">1. Chiffre d'Affaires (CASH)</label>
+                    <p class="text-[10px] text-slate-500 mb-2">95% payé upfront (Clients Solvables)</p>
+                    <input type="range" min="100000" max="2000000" step="50000" value="850000" id="sim-ca" class="w-full accent-emerald-500">
+                    <div class="text-right font-mono text-emerald-300" id="val-ca">850,000 TND</div>
                 </div>
                 <div>
-                    <label class="text-xs uppercase text-emerald-300 font-bold">2. Coûts Service Nexus (Estimés)</label>
-                    <p class="text-[10px] text-slate-500 mb-2">Salaires Formateurs, R&D Contenu, Plateformes Tech</p>
-                    <input type="range" min="50000" max="800000" step="10000" value="350000" id="sim-costs" class="w-full accent-emerald-500">
-                    <div class="text-right font-mono text-emerald-300" id="val-costs">350,000 TND</div>
+                    <label class="text-xs uppercase text-indigo-300 font-bold">2. Coûts Service Nexus (Facture)</label>
+                    <p class="text-[10px] text-slate-500 mb-2">Technologie, Staffing & R&D</p>
+                    <input type="range" min="50000" max="1000000" step="10000" value="595000" id="sim-costs" class="w-full accent-indigo-500">
+                    <div class="text-right font-mono text-indigo-300" id="val-costs">595,000 TND</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded border border-white/10 opacity-60">
+                     <label class="text-xs uppercase text-slate-400 font-bold">3. Impact ISA (Excellence)</label>
+                     <p class="text-[10px] text-slate-500">Plafonné à 2 étudiants (Volume négligeable)</p>
                 </div>
             </div>
 
@@ -574,23 +578,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="pb-2 border-b border-white/10">
                     <div class="flex justify-between items-center">
-                        <span class="text-sm text-slate-400">Facture Nexus (Dont 10% Marge Ops)</span>
-                        <span class="font-bold font-mono text-emerald-400" id="res-nexus">385,000 TND</span>
+                        <span class="text-sm text-slate-400">Sortie Cash (Vers Nexus)</span>
+                        <span class="font-bold font-mono text-indigo-400" id="res-nexus">595,000 TND</span>
                     </div>
-                    <p class="text-[9px] text-slate-500 mt-1 text-right">Couvre : Staffing Tech, Outils, Venture Engine</p>
                 </div>
 
                 <div class="pb-2 border-b border-white/10">
                     <div class="flex justify-between items-center">
-                        <span class="text-sm text-indigo-400 font-bold">Reste pour RBK</span>
-                        <span class="font-bold font-mono text-indigo-400 text-lg" id="res-rbk">115,000 TND</span>
+                        <span class="text-sm text-emerald-400 font-bold">Marge Brute RBK (Immédiate)</span>
+                        <span class="font-bold font-mono text-emerald-400 text-lg" id="res-rbk">255,000 TND</span>
                     </div>
-                    <p class="text-[9px] text-slate-500 mt-1 text-right">Pour payer : Loyers, Marketing, Admin</p>
+                    <p class="text-[9px] text-slate-500 mt-1 text-right">Trésorerie disponible J+1</p>
                 </div>
                 
                 <div class="w-full h-4 bg-slate-800 rounded-full overflow-hidden flex mt-2">
-                    <div id="bar-nexus" class="h-full bg-emerald-500/80 transition-all duration-500" style="width: 77%"></div>
-                    <div id="bar-rbk" class="h-full bg-indigo-500/80 transition-all duration-500" style="width: 23%"></div>
+                    <div id="bar-nexus" class="h-full bg-indigo-500/80 transition-all duration-500" style="width: 70%"></div>
+                    <div id="bar-rbk" class="h-full bg-emerald-500/80 transition-all duration-500" style="width: 30%"></div>
                 </div>
             </div>
         </div>
@@ -611,33 +614,32 @@ document.addEventListener('DOMContentLoaded', () => {
       const ca = parseInt(document.getElementById('sim-ca').value);
       const costs = parseInt(document.getElementById('sim-costs').value);
 
-      // Marge Ops Nexus 10% sur les coûts techniques
-      const nexusMarginRate = 0.10;
-      let invoiceNexus = costs * (1 + nexusMarginRate);
-
-      let rbkNet = ca - invoiceNexus;
+      // Dans ce nouveau modèle, Nexus coute ce qu'il coute (input), pas de marge complexe calculée ici
+      // On simplifie pour montrer la soustraction CASH - FACTURE
+      const nexusBill = costs;
+      let rbkNet = ca - nexusBill;
 
       // Mise à jour DOM
       document.getElementById('val-ca').innerText = ca.toLocaleString() + ' TND';
       document.getElementById('val-costs').innerText = costs.toLocaleString() + ' TND';
-      document.getElementById('res-nexus').innerText = invoiceNexus.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
+      document.getElementById('res-nexus').innerText = nexusBill.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
 
       const rbkEl = document.getElementById('res-rbk');
       rbkEl.innerText = rbkNet.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
 
-      // Alerte si RBK est en déficit (Loyer non couvert)
+      // Alerte si RBK est en déficit
       if (rbkNet < 0) {
-        rbkEl.classList.remove('text-indigo-400');
+        rbkEl.classList.remove('text-emerald-400');
         rbkEl.classList.add('text-rose-500');
         rbkEl.innerText += " (Déficit)";
       } else {
         rbkEl.classList.remove('text-rose-500');
-        rbkEl.classList.add('text-indigo-400');
+        rbkEl.classList.add('text-emerald-400');
       }
 
       // Update Bar
-      const total = Math.max(ca, invoiceNexus);
-      const pctNexus = Math.min((invoiceNexus / total) * 100, 100);
+      const total = Math.max(ca, nexusBill); // Base 100 on the largest to fit bar
+      const pctNexus = Math.min((nexusBill / total) * 100, 100);
       const pctRbk = rbkNet > 0 ? (rbkNet / total) * 100 : 0;
 
       document.getElementById('bar-nexus').style.width = pctNexus + '%';
