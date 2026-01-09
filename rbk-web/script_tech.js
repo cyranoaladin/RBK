@@ -6,24 +6,45 @@ document.addEventListener('DOMContentLoaded', () => {
     try { lucide.createIcons(); } catch { }
   }
 
-  // Mapping strict: data-page == nom de fichier sans extension
-  const pages = {
-    tech_00_home: "chapters/tech_00_home.html",
-    tech_intro: "chapters/tech_00_intro.html",
-    tech_methodology: "chapters/tech_01_methodology.html",
-    tech_syllabus: "chapters/tech_02_syllabus.html",
-    tech_stack: "chapters/tech_03_stack.html",
-    tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide.html",
-    tech_soft_skills: "chapters/tech_05_soft_skills.html",
-    tech_solana_hub: "chapters/tech_06_solana_hub.html",
-    tech_solana_n1: "chapters/tech_06a_solana_n1.html",
-    tech_solana_n2: "chapters/tech_06b_solana_n2.html",
-    tech_solana_n3: "chapters/tech_06c_solana_n3.html",
-    tech_evm_hub: "chapters/tech_07_evm_hub.html",
-    tech_capstones: "chapters/tech_08_capstones.html",
-    tech_competencies: "chapters/tech_09_competencies.html",
-    tech_mentor_guide: "chapters/tech_10_mentor_guide.html"
+  // Mapping strict par langue
+  const pagesByLang = {
+    fr: {
+      tech_00_home: "chapters/tech_00_home.html",
+      tech_intro: "chapters/tech_00_intro.html",
+      tech_methodology: "chapters/tech_01_methodology.html",
+      tech_syllabus: "chapters/tech_02_syllabus.html",
+      tech_stack: "chapters/tech_03_stack.html",
+      tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide.html",
+      tech_soft_skills: "chapters/tech_05_soft_skills.html",
+      tech_solana_hub: "chapters/tech_06_solana_hub.html",
+      tech_solana_n1: "chapters/tech_06a_solana_n1.html",
+      tech_solana_n2: "chapters/tech_06b_solana_n2.html",
+      tech_solana_n3: "chapters/tech_06c_solana_n3.html",
+      tech_evm_hub: "chapters/tech_07_evm_hub.html",
+      tech_capstones: "chapters/tech_08_capstones.html",
+      tech_competencies: "chapters/tech_09_competencies.html",
+      tech_mentor_guide: "chapters/tech_10_mentor_guide.html"
+    },
+    en: {
+      tech_00_home: "chapters/tech_00_home_en.html",
+      tech_intro: "chapters/tech_00_intro_en.html",
+      tech_methodology: "chapters/tech_01_methodology_en.html",
+      tech_syllabus: "chapters/tech_02_syllabus_en.html",
+      tech_stack: "chapters/tech_03_stack_en.html",
+      tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide_en.html",
+      tech_soft_skills: "chapters/tech_05_soft_skills_en.html",
+      tech_solana_hub: "chapters/tech_06_solana_hub_en.html",
+      tech_solana_n1: "chapters/tech_06a_solana_n1_en.html",
+      tech_solana_n2: "chapters/tech_06b_solana_n2_en.html",
+      tech_solana_n3: "chapters/tech_06c_solana_n3_en.html",
+      tech_evm_hub: "chapters/tech_07_evm_hub_en.html",
+      tech_capstones: "chapters/tech_08_capstones_en.html",
+      tech_competencies: "chapters/tech_09_competencies_en.html",
+      tech_mentor_guide: "chapters/tech_10_mentor_guide_en.html"
+    }
   };
+
+  let currentLang = localStorage.getItem('wb_lang') || 'fr';
 
   async function ensureMermaid() {
     if (window.mermaid) {
@@ -458,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Loader ----------
   async function loadPage(pageId) {
-    const file = pages[pageId];
+    const file = pagesByLang[currentLang]?.[pageId];
     if (!file) return;
 
     setActiveLink(pageId);
@@ -524,6 +545,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Charge la page d'accueil par défaut si pas de hash
-  const initialPage = window.location.hash.substring(1) || 'tech_00_home';
-  loadPage(initialPage);
+    const initialPage = window.location.hash.substring(1) || 'tech_00_home';
+    loadPage(initialPage);
 });
