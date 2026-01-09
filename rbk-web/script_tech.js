@@ -408,6 +408,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function imageFallbacks(root) {
+  function initLanguageToggle(pageId, root) {
+    if (pageId !== 'tech_00_home') return;
+    if (root.dataset.langBound === '1') return;
+    const fr = root.querySelector('#content-fr');
+    const en = root.querySelector('#content-en');
+    const btnFr = root.querySelector('#btn-fr');
+    const btnEn = root.querySelector('#btn-en');
+    if (!fr || !en || !btnFr || !btnEn) return;
+
+    const setLang = (lang) => {
+      const isFr = lang === 'fr';
+      fr.classList.toggle('hidden', !isFr);
+      en.classList.toggle('hidden', isFr);
+
+      btnFr.classList.toggle('bg-white/10', isFr);
+      btnFr.classList.toggle('text-white', isFr);
+      btnFr.classList.toggle('shadow-sm', isFr);
+      btnFr.classList.toggle('text-slate-500', !isFr);
+
+      btnEn.classList.toggle('bg-white/10', !isFr);
+      btnEn.classList.toggle('text-white', !isFr);
+      btnEn.classList.toggle('shadow-sm', !isFr);
+      btnEn.classList.toggle('text-slate-500', isFr);
+
+      if (window.lucide) try { lucide.createIcons(); } catch { }
+    };
+
+    btnFr.addEventListener('click', () => setLang('fr'));
+    btnEn.addEventListener('click', () => setLang('en'));
+    setLang('fr');
+    root.dataset.langBound = '1';
+  }
+
     root.querySelectorAll('img').forEach((img) => {
       if (img.dataset.fallbackBound) return;
       img.dataset.fallbackBound = '1';
@@ -454,6 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
       imageFallbacks(contentDiv);
       injectNextPrev(pageId, contentDiv);
       initProgressBarOnce();
+      initLanguageToggle(pageId, contentDiv);
 
       // Diagrams
       try {
