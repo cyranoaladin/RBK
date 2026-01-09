@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mapping strict: data-page == nom de fichier sans extension
   const pages = {
+    tech_00_home: "chapters/tech_00_home.html",
     tech_intro: "chapters/tech_00_intro.html",
     tech_methodology: "chapters/tech_01_methodology.html",
     tech_syllabus: "chapters/tech_02_syllabus.html",
@@ -489,6 +490,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Charge la page d'accueil par défaut si pas de hash
-  const initialPage = window.location.hash.substring(1) || 'tech_intro';
+  const initialPage = window.location.hash.substring(1) || 'tech_00_home';
   loadPage(initialPage);
 });
