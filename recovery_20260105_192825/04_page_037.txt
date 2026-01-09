@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                      Chapitre 1. Vision & Manifeste
+
+
+
+   Indicateur clé       RBK 1.0 (historique)                RBK 2.0 (modèle Nexus)              Signal pour RBK
+   CA moyen par         Parcours courts modulaires (ticket Offre architecte premium facturée Revenus récurrents structurés sur 12
+   apprenant            moyen < 2500 TND, forte volatili- 15 900 TND avec jalons Genesis/Ex- mois
+                        té bourses)                        plorer/Architecte
+   Taux de placement Empiriquement < 50% sur les co- Cible 65% sécurisée par accords Justifie ISA et bonus/malus Nexus
+   6 mois            hortes Web2 (absence d’offres par- Superteam/MFAI et Launchpad op-
+                     tenaires dédiées)                  tionnel
+   Marge                Capex lourd internalisé, dépen- Nexus absorbe le coût pédagogique Marge nette positive Cohorte 2 (voir
+   opérationnelle       dance subventions ponctuelles   (R sur delivery), RBK concentre sa Chap. 15)
+
+
+
+
+                                                                    EL
+                                                        marge sur commercial et ISA
+
+
+
+
+                                                                 TI
+   Coût d’acquisition   Campagnes génériques, CAC non Playbook    performance dédié Visibilité CAC/LTV dans les dash-
+                        suivi, dérive > 800 TND       (GROWTH SQUAD, 500 TND cible) boards
+
+
+
+
+                                                           EN
+                                                      + budget 3 000 TND
+
+
+
+
+                                                      D
+   Protection de        Qualité hétérogène selon mentors, SLA pédagogiques, audits conjoints RBK garde la signature et valide
+
+
+
+
+                                                   FI
+   marque               absence de normes QA              et protocole anti-burnout          chaque livrable
+   Positionnement
+                                                 N
+                        Bootcamp généraliste perçu « full- École d’Architectes Web3 senior-by- Renforce le capital réputation RBK
+                                          CO
+   marché               stack junior »                     design avec preuves on-chain
+   Relation             Relation opportuniste,    peu   de Account management structuré (Ta- Fidélise les partenaires corporate RBK
+   employeurs           comptes stratégiques               lent Partners, Career Studio) + re-
+                                                           porting mensuel
+   Contrôle financier   Flux mentors internalisés peu tra- RBK encaisse 100% et redistribue Traçabilité et auditabilité renforcées
+                        çables, ISA ad hoc                 selon jalons, fonds ISA séquestré
+                                                           150 000 TND
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 36 sur 316
+

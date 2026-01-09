@@ -1,0 +1,51 @@
+RBK 2.0 — Whitepaper Architecte Web3                                          Chapitre 24. TOKEN DE RÉPUTATION & ALUMNI PROGRAM
+
+
+
+
+                                                              Or (Elite)
+
+
+                                                           Argent (Actifs)
+
+
+                                                           Bronze (Masse)
+
+
+                                                 FIG. 24.2 : Pyramide des Tiers Alumni
+
+
+
+
+                                                                    EL
+                                                TAB. 24.5 : Roadmap Alumni (Année 1)
+
+
+
+
+                                                                 TI
+                                                           EN
+                                  Trimestre Initiative             KPI                 Owner
+                                  Q1        Lancement Discord      100% promo inscrite Community Mgr
+
+
+
+
+                                                       D
+                                  Q2        Premier Apéro Physique 30 participants     Conseil Alumni
+
+
+
+
+                                                    FI
+                                  Q3        Programme Mentoring 10 binômes actifs      Lead Pédago
+                                  Q4
+                                                N
+                                            Annuaire On-Chain      100% profils mintés Tech Lead
+                                          CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                              Page 187 sur 316
+

@@ -1,0 +1,39 @@
+U | Registre des risques opérationnels
+
+
+       Cette annexe présente le registre des risques opérationnels validé pour le lancement du Studio. Les impacts financiers sont évalués en TND1 et les plans d’action
+sont pilotés par les équipes Ops.
+
+
+
+
+                                                                                      EL
+                                                                                    TI
+Registre de risques v1 (version opérationnelle)
+
+
+
+
+                                                                            N
+                                                                          DE
+Échelle (P, I).
+       • P=1 rare ; P=3 plausible ; P=5 très probable.
+
+
+
+
+                                                                    FI
+                                                                   N
+       • I=1 impact mineur (retard local, peu d’effet) ; I=3 impact significatif (dégradation qualité / retards majeurs) ; I=5 impact critique (arrêt, réputation, financier,
+         conformité).
+                                                            CO
+
+
+
+
+   1
+       Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+                                                                                     275
+

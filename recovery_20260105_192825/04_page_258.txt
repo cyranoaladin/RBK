@@ -1,0 +1,53 @@
+L | STRATÉGIE MENTORAT & TRAIN-THE-TRAINER
+
+
+  La qualité de RBK 2.0 repose sur la qualité de son encadrement humain. Nous ne recrutons pas des ”profs”, mais des ”Tech Leads” capables de guider des juniors.
+
+
+
+
+                                                                                EL
+L.1 Programme ”Mentor-in-a-Box”
+
+
+
+
+                                                                              TI
+                                                                      N
+  • Captation systématique : chaque masterclass, revue de code et Block Check est enregistrée (audio + vidéo + notes) puis indexée dans Venture Engine. Les
+
+
+
+
+                                                                    DE
+    artefacts sont tagués par module, niveau et difficultés rencontrées.
+
+  • Knowledge base exploitable : les meilleurs segments sont transformés en micro-capsules (10 minutes) et en fiches ”anti-patterns” accessibles aux mentors et
+
+
+
+
+                                                              FI
+    aux apprenants avancés.
+
+
+                                                             N
+                                                      CO
+  • Playbooks de remédiation : pour toute alerte burnout ou difficulté technique récurrente, un ”pack” Mentor-in-a-Box est déployé (vidéo explicative, exercices
+    guidés, scripts de coaching).
+
+  • Contrôle qualité : le Responsable Bien-être & Résilience vérifie chaque trimestre que les sessions critiques ont bien été captées et auditées.
+
+
+
+L.2 Le Pipeline ”Train the Trainer”
+  Pour assurer la scalabilité sans perte de qualité, RBK forme ses propres mentors parmi les meilleurs Alumni.
+
+ 1. Sourcing : Top 10% des diplômés (Score Tech > 90/100 + Soft Skills A).
+
+ 2. Shadowing (1 cohorte) : L’aspirant-mentor suit un mentor Senior pendant 3 mois, produit des fiches ”Takeaways” après chaque sprint et contribue au dépôt
+    Mentor-in-a-Box.
+
+
+                                                                              256
+

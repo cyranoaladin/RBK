@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                   Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+14.8.2 Ce qui compose réellement la rémunération (important)
+   • Salaire fixe (base).
+
+   • Tokens/Equity (souvent vestés, risqués) : valeur dépendante du marché.
+
+   • Bonus / bounties (audit findings, bug bounty, delivery).
+
+   • Freelance/consulting : facturation au livrable, souvent plus lucrative si portfolio solide.
+
+
+14.8.3 Comment atteindre le palier
+
+
+
+
+                                                                        EL
+Palier commun ”RBK Ready”
+
+
+
+
+                                                                     TI
+   • Portfolio GitHub : 3 repos studio-grade (tests, docs, CI, releases).
+
+
+
+
+                                                               EN
+   • 1 démo rejouable + 1 runbook (post-prod).
+
+   • Communication pro : README, changelog, versioning, tickets/PR propres.
+
+
+
+
+                                                          D
+                                                       FI
+   • Preuves : pas ”j’ai fait”, mais ”voici les artefacts, reproductibles, audités”.
+
+                                                   N
+                                            CO
+Preuves par métier
+
+   • Guardian : threat model + audit report + tests négatifs + fuzz/invariants.
+
+   • Visionnaire : simulation paramétrique + stress tests + risk register + governance spec.
+
+   • Builder : PRD + backlog + releases + métriques + rollback plan.
+
+   • dApp : tx state machine + error taxonomy + failover RPC + e2e.
+
+   • Token Arch : asset model + RBAC/policy + audit trail + runbooks compliance.
+
+   • QA : CI gates + fork suite + fuzz/invariants + anti-flakiness.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 130 sur 316
+

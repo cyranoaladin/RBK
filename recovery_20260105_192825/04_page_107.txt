@@ -1,0 +1,47 @@
+12 | MODULE SOFT SKILLS & PROFESSIONNALISATION
+
+
+
+
+                                                                      EL
+12.1 Structure du Module (4 semaines)
+    Ce module de 4 semaines (Phase 3) est le pont critique entre l’étudiant et le professionnel. Dans un marché où la compétence technique
+
+
+
+
+                                                                   TI
+est un pré-requis, c’est la ”Seniorité Attitude” qui déclenche l’embauche. Nous ne formons pas seulement des codeurs, mais des ingénieurs
+
+
+
+
+                                                            EN
+capables de gérer des incidents, de communiquer avec des stakeholders non-techniques, et de vendre leur valeur. C’est l’étape finale de
+transformation ”Senior-by-Design”.
+
+
+
+
+                                                        D
+                                                     FI
+Livrables Finaux du Module (Obligatoires pour Certification)        Pour valider cette phase, l’étudiant doit produire et faire valider :
+
+                                                 N
+  1. Rapport d’Audit Professionnel : Basé sur le template Code4rena/OtterSec, analysant un protocole réel.
+                                           CO
+  2. Documentation Technique (GitBook) : Une documentation utilisateur et développeur complète pour leur Capstone.
+
+  3. Package Freelance : Une proposition commerciale (SOW) type, une grille tarifaire (TJM) et un contrat de service.
+
+  4. Board Projet (Jira/Notion) : L’historique des sprints, user stories, et une rétrospective écrite post-mortem.
+
+  5. Pitch Deck (10 slides) & Démo : Une présentation vidéo (3-5 min) et un pitch deck investisseur.
+
+  6. Profil Public : GitHub (Green dots, Readme profil) et LinkedIn (Headline, About, Featured) optimisés.
+
+
+
+
+                                                                   106
+

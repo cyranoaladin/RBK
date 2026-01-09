@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                           Chapitre 16. Stratégie marketing & acquisition
+
+
+Gouvernance budgétaire Chaque dépense est tracée dans le cockpit marketing (Google Sheet de référence), relié aux playbooks détaillés
+dans le document Marketing Strategy - Nexus x RBK 2024. Les arbitrages sont pilotés mensuellement en comité Funnel avec un reporting
+CAC vs. placement signé par Nexus Réussite.
+
+
+16.5.1 Discord : Le cœur communautaire de la pré-sélection
+   Discord concentre 80% de notre énergie Sprint 0. Il assure la qualification des leads, la montée en confiance et la détection des talents
+”builders”.
+
+Cadence opérationnelle
+
+
+
+
+                                                                       EL
+    • Weekly Office Hours animées par Nexus Réussite pour répondre aux questions admissions et expliquer la trajectoire Genesis →
+      Explorer.
+
+
+
+
+                                                                    TI
+                                                             EN
+    • Challenge ”Ship or Die” bi-hebdomadaire : mini-sprints 48h avec jury RBK, publiés dans le canal #build-in-public.
+
+    • Canal #ask-mentor modéré par les mentors Launchpad afin de créer le réflexe pair → pair dès la pré-inscription.
+
+
+
+
+                                                         D
+                                                      FI
+    • Onboarding automatisé (Notion Checklist + Skill Mirror) pour orienter immédiatement vers les ressources Genesis Pool.
+
+KPIs suivis                                       N
+                                            CO
+    • Taux de conversion lead → candidature complète (≥ 40%).
+
+    • Nombre de builders actifs (au moins 3 commits ou prototypes/mois).
+
+    • Temps moyen de réponse mentor < 12 heures.
+
+    Les apprentissages issus de Discord sont intégrés dans les campagnes LinkedIn/X la semaine suivante afin de garder le storytelling
+aligné sur les objections réelles du terrain.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 148 sur 316
+

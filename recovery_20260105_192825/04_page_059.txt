@@ -1,0 +1,73 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 4. ANALYSE DU CONTEXTE
+
+
+
+   Programme             Durée/Format           Modèle                 Gaps vs RBK 2.0
+                                                économique
+   Encode Club Solana    12 semaines, remote    Gratuit (ISA 17%       Parcours court, charte santé absente, pas de transfert gouvernance pour partenaires lo-
+   Fellowship            intensif               sur 24 mois si         caux
+                                                placement)
+   01Founders x          9 mois, hybride        Stipend +              Capacité limitée (40 places), absence d’ISA MENA, pas de pipeline DePIN
+   Solana Foundation     Londres/Remote         recrutement ∼70%
+   ChainShot             16 semaines,           Tuition 3 800$ +       Scope smart contract EVM uniquement, pas de gouvernance partagée, santé non adressée
+   (Alchemy) relaunch    bootcamp contract      hiring network
+   Holberton x Smart     12 mois, présentiel    ISA 17% (contrat       Curriculum Web2 généraliste, peu d’ancrage Solana, pas d’audit sécurité avancé
+   Tunisia                                      local)
+
+
+
+
+                                                                                EL
+   Simplon Tunisia       4 mois, bootcamp       Subvention             Focus JS/React, pas de portfolio on-chain, pas d’offre architecte senior
+   Web3                  intensif               publique + bourses
+
+
+
+
+                                                                              TI
+   Platzi Web3 School    6 mois,                Subscription           Faible sélectivité, parcours self-paced, pas de garanties placement
+
+
+
+
+                                                                       N
+                         asynchronous           (29$/mois)
+
+
+
+
+                                                                     DE
+   Superteam Africa      8 semaines, remote     Bounties + grants      Excellent tremplin sortie, nécessite pipeline formation amont (complément RBK 2.0)
+   Residency             cohort
+
+
+
+
+                                                                FI
+   RBK 2.0 (RBK ×        48 semaines, hybride Tuition 15 900 TND       Gouvernance co-pilotée, SLA qualité, transfert savoir-faire, plan continuité, pipeline em-
+
+
+
+                                                               N
+   Nexus)                présentiel/remote    + ISA + forfait
+                                                      CO               ployeurs signé RBK
+                                              Nexus
+
+Sources : Encode Club 2025 Impact Report, Solana Foundation Talent Update 2025, Alchemy ChainShot relaunch note 2024, Holberton Tunisia ISA deck 2024,
+Simplon Tunisie Web3 brochure 2024, Platzi Investor Deck 2025, Superteam Africa Residency recap 2024.
+
+   Lecture pour la direction RBK
+
+   RBK 2.0 occupe la niche ”Architecte senior-by-design” en combinant durée longue, charte santé, ISA robuste et co-gouvernance. Aucun concurrent ne propose
+   simultanément transfert de savoir-faire, plan de continuité et pipeline employeurs sécurisés en Afrique du Nord.
+
+
+
+4.2.0.2 Hypothèses de Lecture (TND vs USD)
+   Les chiffres présentés ci-dessous sont exprimés en USD brut annuel. Pour un talent tunisien en remote :
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 58 sur 316
+

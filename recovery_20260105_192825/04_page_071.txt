@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                   Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+
+
+                                TAB. 6.1 : Architecture pédagogique alignée sur le modèle 42 adapté RBK
+
+
+ Phase                Durée     Objectifs opérationnels                                   Validation (Block Check)
+ Genesis Pool         4 sem.    Sélection intensive, culture Dev DAO, maîtrise Rust de    Skill Mirror x3 + Block Check “Genesis” (NFT Skills “Ac-
+                                base sans assistance IA.                                  cess”).
+ Explorer             12 sem.   Fondamentaux Web3, pipelines Git, culture protocolaire,   Block Check “Explorer” (NFT Skills “Core”).
+                                autonomie sur mini-projets.
+ Bâtisseur            16 sem.   Projets pairés, spécialisation Solana/EVM/Product,        Block Check “Build” + audit croisé Skill Mirror.
+                                contribution Dev DAO.
+ Architecte           16 sem.   Leadership technique, mentorat des Explorer/Bâtisseur,    Block Check “Architecte” (NFT Skills “Launch Proof”).
+
+
+
+
+                                                                       EL
+                                industrialisation.
+
+
+
+
+                                                                     TI
+ Launchpad (option)   4 sem.    Incubation projet et levée de fonds, accompagnement       Launch Proof pitch + accord revenue share (30%
+
+
+
+
+                                                                N
+                                Nexus.                                                    Nexus).
+
+
+
+
+                                                              DE
+                                                       FI
+6.2.1 Cycle Skill Mirror & Block Check
+
+
+                                                      N
+                                                 CO
+                                                                   Mercredi
+                                        Lundi        Mardi                           Jeudi         Vendredi
+                                                                   Dev DAO
+                                       PO Sync     Dev Deep                       Skill Mirror   Block Check
+                                                                    Sprint
+
+
+
+                                                                                                  Vendredi 2
+                                       Lundi 2      Mardi 2       Mercredi 2        Jeudi 2
+                                                                                                 Retro Launch
+                                   Mentor Sync     Lab Work       Office Hour     Skill Mirror
+                                                                                                     Proof
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 70 sur 316
+

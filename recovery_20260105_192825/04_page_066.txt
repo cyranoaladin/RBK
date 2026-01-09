@@ -1,0 +1,68 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Chapitre 5. Architecture de Partenariat
+
+
+
+   Sous-performance      Pénalité financière automatique (malus) et revue CEC extraordinaire ; Nexus doit présenter plan de rattrapage RBK peut imposer gel
+   opérationnelle :      + staffing de réserve                                                                                         des nouvelles
+   SLA mentors non                                                                                                                     cohortes et activer
+   tenus (fill rate                                                                                                                    recours prestataires
+   < 95%) ou budget                                                                                                                    tiers listés en annexe
+   acquisition                                                                                                                         D
+   dépassement
+   > 15%
+   Incident critique :   Clause de suspension immédiate (45 jours) + transfert des accès clés (LMS, data) ; audit externe déclenché par RBK arbitre maintien
+   manquement            RBK                                                                                                            ou résiliation ; Nexus
+   conformité, fuite                                                                                                                    doit assister à la
+   données, litige                                                                                                                      transition complète
+
+
+
+
+                                                                                EL
+   juridique majeur
+   Divergence            Obligation de passage en Comité Stratégique (CEC mensuel) avec vote RBK double voix                            RBK conserve veto et
+
+
+
+
+                                                                              TI
+   stratégique :                                                                                                                        peut rebasculer la
+
+
+
+
+                                                                      N
+   changement de                                                                                                                        priorisation produit
+
+
+
+
+                                                                    DE
+   roadmap produit
+   imposé par Nexus
+
+
+
+
+                                                              FI
+   sans accord RBK
+
+
+
+                                                             N
+                                                      CO
+ Ď Transfert progressif de savoir-faire (24 mois)
+       • Binômage systématique : chaque fonction critique Nexus (Head of Curriculum, Lead Mentor, Ops ISA) possède un homologue RBK shadowé 2
+         jours/semaine ; rotation des binômes tous les 6 mois documentée.
+       • Playbooks propriétaires : production trimestrielle de dossiers HOW WE RUN (curriculum, QA, comités) validés par RBK et stockés dans le référentiel
+         interne (voir Annexe D).
+       • Certification mentors RBK : objectif 60% des mentors labellisés Certification mentor RBKa en 18 mois, permettant à RBK de redéployer l’offre sans
+         Nexus.
+       • Handover planifié : jalons T0, T+12, T+24 mois définissant le passage progressif de la responsabilité pédagogique (R 𝑖𝑔ℎ𝑡𝑎𝑟𝑟𝑜𝑤 A) vers RBK si
+         décision d’internalisation.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 65 sur 316
+

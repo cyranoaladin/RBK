@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Annexe G. Modèle ISA (Income Share Agreement)
+
+
+    • Taux de partage : 15% du brut mensuel (si > seuil).
+
+    • Cap (plafond) : 20000 total.
+
+    • Durée maximale : 36 mensualités payées (pas de rattrapage).
+
+
+
+G.4 Règles de Pause, Chômage, Variabilité
+    • Pause automatique : si revenu brut mensuel ≤ 2500, paiement = 0.
+
+    • Reprise : dès que revenu brut > 2500.
+
+    • Variabilité : aucun rattrapage sur les mois faibles.
+
+
+
+
+                                                                                  EL
+                                                                                TI
+G.5 Cas Limites (Edge Cases)
+
+
+
+
+                                                                        N
+  1. Revenu fluctuant : paiement déclenché uniquement les mois > Seuil.
+
+
+
+
+                                                                      DE
+  2. Plusieurs revenus : revenu = somme des montants bruts traçables.
+
+
+
+
+                                                               FI
+  3. Départ à l’étranger : conversion en TND au taux mensuel.
+
+
+
+                                                              N
+                                                        CO
+G.6 Conformité Éthique (Musharaka)
+   Le modèle est compatible finance participative : Partage de Risque (Perte pour l’école si échec) et Partage de Profit minoritaire.
+
+
+
+G.7 Exemples Chiffrés (Seuil 2500, Taux 15%)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 245 sur 316
+

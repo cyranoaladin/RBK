@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                          Liste des tableaux
+
+
+   9.9 Stack Track A (Standard) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      94
+   9.11 Itinéraire Validator (6 semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    95
+   9.13 Checklist Portfolio Guardian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     96
+
+   10.1 Carte des Modules Track B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+   10.3 Security Checklist EVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+   10.5 Stack Track B (Foundry) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+   10.7 Matrice Compétences Infra EVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+
+   11.3 Matrice Compétences Product . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+
+   12.1 Vue d’ensemble du module (4 semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+
+
+
+
+                                                                         EL
+   12.3 Rubrique d’Évaluation des Soft Skills . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+
+
+
+
+                                                                      TI
+   13.1 Studio-Grade Checklist (Non-Négociable) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+
+
+
+
+                                                               EN
+   13.2 Rubric d’Évaluation Studio (100 pts) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+
+   14.7 Revenus Indicatifs (2025)      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+
+
+
+
+                                                          D
+                                                       FI
+   15.2 Projection financière — scénario réaliste (TND) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+
+                                                    N
+   15.4 Analyse de sensibilité sur le scénario réaliste . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+                                             CO
+   16.1 Calendrier Éditorial Type (Cycle 12 Semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+   16.3 Roadmap éditoriale Sprint 0 (90 jours détaillés) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+   16.5 ROI Comparatif par Option (Sortie Junior : 2 500 TND brut/mois) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+   16.7 Allocation budgétaire et objectifs CAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+   16.9 Catalogue des Incentives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 150
+
+   17.1 Matrice des Risques — Référentiel Commun (RBK – Nexus Réussite) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+   17.3 Nouvelle Matrice des Risques (Version 2026) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+   17.5 Déclencheurs et plans de continuité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
+   17.7 Top 5 Risques et Mitigations (2026) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 200 sur 316
+

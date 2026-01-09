@@ -1,0 +1,40 @@
+8 | SYLLABUS TECHNIQUE COMPLET
+             (48 SEMAINES)
+
+
+
+
+                                                                                                EL
+   Note : Ce chapitre détaille l’exécution technique. L’intégration des Soft Skills (S45-S48) est traitée au Chapitre 7.
+
+
+
+
+                                                                                     TI
+                                                                                    N
+8.1 Calendrier Pédagogique Global
+
+
+
+
+                                                                                 DE
+                                                                                 FI
+                                                                         N
+                                    Genesis Pool               Explorer                Bâtisseur            Architecte               Launchpad*
+                                      (S1-S4)                  (S5-S16)                (S17-S32)            (S33-S48)                 (S49-S52)
+                                                              CO
+                                  Sélection, Skill Mirror   Rust, Web3, GitOps     Solana/EVM, Dev DAO   Mentorat, Audits, Ops   Incubation, revenue share
+
+
+
+                                                                        FIG. 8.1 : Timeline Macro du Cursus
+
+* Activation Launchpad conditionnée à la validation du dossier Nexus (pacte 30% / 70%).
+
+                                                                         GENESIS POOL (S1-S4)
+
+8.2 Genesis Pool : Sélection Intensives (S1-S4)
+
+
+                                                                                           80
+

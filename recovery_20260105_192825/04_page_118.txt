@@ -1,0 +1,47 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                         Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+
+                                           Sécurité          Tests négatifs auth/PDA/CPI       CI Checklist
+                                           Audit mindset     Audit report protocole tiers      Markdown
+                                           Fuzz / Invariants Campagne fuzz + rapport           Trident/Foundry
+                                           Hardening         Quality gates bloquants           CI/CD
+                                           Perf budget       Profiling compute/gas             CLI / Gas report
+                                           Post-prod ops     Runbook + war-room drill          Simulation
+
+
+
+                                                  Spec             Threat Model              Code
+
+
+
+
+                                                                              EL
+                                                                           TI
+                                                   Deploy             Review             Tests (Fuzz)
+
+
+
+
+                                                               D    EN
+                                                            FI
+                                                                     Monitor             Incident Drill
+
+
+                                                         N
+                                                      FIG. 14.1 : Boucle Guardian (SecDevOps)
+                                                CO
+
+14.2 Fiche Métier 2 : Protocol & Ecosystem Strategist (Le « Visionnaire »)
+Résumé métier Le Visionnaire transforme une idée en système incitatif robuste. Il conçoit la Tokenomics2 , les règles de gouvernance
+(DAO), les mécanismes d’incitation, et encadre les risques (techniques, économiques, réglementaires, réputationnels). Il ne code pas le
+”comment” : il rend le ”quoi” mesurable, testable et défendable.
+  2
+    Web3/Blockchain — Token economics (tokenomics) : conception économique d’un token couvrant émission, distribution, utilité, incitations et mécanismes de
+capture de valeur.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                       Page 117 sur 316
+

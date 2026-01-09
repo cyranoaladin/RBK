@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                              Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Mission et périmètre
+
+   • Définir le design économique complet d’un protocole : émissions, distributions, sinks/sources, capture de valeur, mécanismes anti-
+     manipulation.
+
+   • Construire des modèles paramétriques (sheets / notebooks) et des scénarios (stress tests, bank-run, depeg, oracle failure).
+
+   • Spécifier la gouvernance : rôles, pouvoirs d’urgence, timelocks, quorum, garde-fous, processus de décision.
+
+   • Fournir le cadre Go-to-market : bootstrap liquidité, incentives, grants, programmes builders, partenariats.
+
+Responsabilités cœur (opérationnelles)
+
+
+
+
+                                                                      EL
+  1. Tokenomics Design : émission (inflation/désinflation), distribution, vesting, allocations, lockups, mécanismes de burn/buyback.
+
+
+
+
+                                                                   TI
+  2. Incentive Modeling : boucles positives vs boucles toxiques (mercenaires), design anti-sybil, anti-wash, anti-farming.
+
+
+
+
+                                                            EN
+  3. Market Microstructure : liquidité (AMM/CLMM), slippage, profondeur, LTV, impact du liquidity mining.
+
+
+
+
+                                                        D
+  4. Governance & Control Plane : quorum, délégation, timelocks, emergency powers, procédures d’upgrade.
+
+
+
+
+                                                     FI
+                                                 N
+  5. Risk Framing : depeg, bank-run, oracle manipulation, MEV, bridge risk, dépendances offchain.
+                                          CO
+  6. GTM & Ecosystem : incentives calendar, budget, KPIs d’adoption, programmes devs/communauté.
+
+Trajectoire Carrière & Mission
+
+   • Junior (0–2 ans) : produit des modèles, supporte le PM/Builder, rédige un litepaper clair. Mission : modéliser un staking + emissions
+     schedule + stress tests.
+
+   • Senior (3+ ans) : arbitre la cohérence globale, définit la gouvernance, pilote crises économiques. Mission : redesign tokenomics après
+     attaque d’incentives / mercenary liquidity.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 118 sur 316
+

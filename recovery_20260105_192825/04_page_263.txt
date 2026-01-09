@@ -1,0 +1,49 @@
+N | Outillage & stack technique
+
+
+N.1 Stack de Développement (Cyborg-Ready)
+
+
+
+
+                                                                                 EL
+  Nous listons ici la toolchain de base à installer pour reproduire l’environnement ”Cyborg” utilisé dans le cursus.
+
+
+
+
+                                                                               TI
+                                                                       N
+N.1.1 Environnement Local
+
+
+
+
+                                                                     DE
+  • OS : Linux (Ubuntu/Pop !_OS) ou macOS. Windows via WSL2 uniquement.
+
+
+
+
+                                                              FI
+  • IDE : VSCode (Profile RBK : Rust, Solidity, GitLens, Copilot).
+
+
+
+                                                             N
+  • Terminal : Alacritty + Tmux + Starship.
+                                                       CO
+N.1.2 Chain Stack
+  • Solana : Rust 1.75+, Anchor 0.29+, Solana CLI 1.18+.
+
+  • EVM : Foundry (Forge, Cast, Anvil).
+
+  • Indexing : The Graph (EVM), Helius/Shyft (Solana).
+
+
+
+N.2 Outils de Productivité & IA
+
+
+                                                                               261
+

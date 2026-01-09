@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                     Chapitre 13. CAPSTONES (PROJETS SIGNATURES)
+
+
+13.2.1.1 Spécifications Fonctionnelles (User Stories)
+
+  1. US.1 (Feedback) : ”En tant qu’utilisateur, je veux voir un feedback précis (Spinner, Toast) pour chaque état de transaction (Signing,
+     Sending, Confirming, Finalized).”
+
+  2. US.2 (Retry) : ”En tant qu’utilisateur, si le RPC échoue, je veux que l’app réessaie automatiquement (Backoff exponentiel) sans que
+     je reclique.”
+
+  3. US.3 (history) : ”En tant que dev, je veux un log persistant des transactions échouées pour debugger.”
+
+13.2.1.2 Spécifications Techniques
+
+
+
+
+                                                                       EL
+   • Stack : React (Next.js), TanStack Query, Viem (EVM) ou Solana Web3.js.
+
+
+
+
+                                                                    TI
+   • State Machine : Implémentation stricte (Idle → Signing → Broadcasting → Confirming).
+
+
+
+
+                                                              EN
+   • Failover : Configuration d’au moins 2 RPC (Primaire + Fallback).
+
+
+
+
+                                                           D
+13.2.1.3 Checklist Sécurité & Qualité
+
+
+
+
+                                                        FI
+     Pas de Private Key stockée (Wallet Adapter Only).
+                                                    N
+                                             CO
+     Sanitize des inputs utilisateurs (Adresses, Montants).
+
+     Gestion du ”Slippage” (Tolérance affichée).
+
+13.2.1.4 Critères d’Acceptation & CI
+
+   • Test : Simulation de coupure réseau (Mock RPC) → le Retry fonctionne.
+
+   • CI : Linting strict (ESLint), Prettier, Build success.
+
+   • Doc : README avec diagramme de séquence (Mermaid).
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 111 sur 316
+

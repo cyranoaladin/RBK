@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 2. Stratégie : Note de Cadrage
+
+
+2.7.2 Architecture Technique du Studio
+    L’architecture du studio repose sur des principes de ”DevOps-first”. Chaque apprenant opère dans un conteneurisé, avec des pipelines CI/CD imposant des standards
+de qualité (linting, tests unitaires, couverture). L’observabilité est assurée par un dashboard centralisé suivant la progression des compétences (Skill Tree).
+
+
+
+2.8 Évaluation des risques
+    La gestion des risques est intégrée dès la conception du programme (”Risk-by-Design”).
+
+   Registre des Risques Prioritaires
+
+
+
+                          Risque                                 P   I   Mesures d’atténuation                             Owner
+
+
+
+
+                                                                                  EL
+                          Saturation cognitive des apprenants    4   5   Coaching mental, Pauses actives, Suivi psy        Chief Happiness
+
+
+
+
+                                                                                TI
+                          Obsolescence technique rapide          5   4   Veille hebdo, Mises à jour syllabus en continu    Tech Lead
+                          Défaut de paiement ISA                 3   4   Sélection rigoureuse, Cadre juridique fort        Legal / Finance
+
+
+
+
+                                                                        N
+                                                                      DE
+                          Bugs critiques en prod (Factory)       2   5   Audits croisés, Bounties, Assurance               QA Lead
+
+
+
+
+                                                                 FI
+    Légende : P = Probabilité (1-5), I = Impact (1-5).
+
+
+
+                                                                N
+                                                         CO
+2.9 Gouvernance & pilotage
+    Nous posons les mécanismes de pilotage et de coordination nécessaires pour exécuter le plan sans dette organisationnelle.
+
+
+2.9.1 Méthodologie
+    Le pilotage suit une approche Agile/Scrum adaptée à la pédagogie. Des sprints de 2 semaines rythment l’apprentissage et la production.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 46 sur 316
+

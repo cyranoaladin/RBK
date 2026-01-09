@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                        Chapitre 1. Vision & Manifeste
+
+
+  Bouclier de Marque RBK
+
+  Ownership relation apprenant : RBK conserve la signature contractuelle, l’encaissement et la communication officielle ; Nexus
+  opère en marque blanche sous SLA qualité. Standards éditoriaux unifiés : tout contenu pédagogique ou marketing passe par un
+  comité RBK, garantissant cohérence de ton et conformité compliance (voir Chap. 18). Traçabilité des décisions : procès-verbaux
+  des comités, audits trimestriels et Skill Mirror créent un historique opposable en cas de litige ou de due diligence investisseurs.
+
+
+1.2.0.3 Ce que RBK 2.0 n’est pas
+
+   Il est crucial d’aligner les attentes. RBK 2.0 n’est :
+
+
+
+
+                                                                     EL
+   • Pas un cours vidéo passif : L’apprentissage se fait par la pratique douloureuse et gratifiante (Hard Fun).
+
+   • Pas un bootcamp JavaScript : Nous formons des ingénieurs système (Rust/Solidity), pas des développeurs frontend React (bien
+
+
+
+
+                                                                  TI
+     que ce soit une compétence annexe).
+
+
+
+
+                                                            EN
+   • Pas une promesse magique : L’ISA et le placement dépendent à 100% de l’engagement de l’étudiant.
+
+
+
+
+                                                           D
+  Positionnement Stratégique
+
+
+
+
+                                                        FI
+  RBK 2.0 est une ”School of Engineering” accélérée, positionnée entre le bootcamp d’élite (type 42) et l’incubateur de startups Web3.
+
+                                                     N
+                                              CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 38 sur 316
+

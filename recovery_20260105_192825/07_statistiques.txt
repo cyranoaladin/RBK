@@ -1,0 +1,26 @@
+=== STATISTIQUES DU DOCUMENT ===
+Pages: 318
+Lignes totales: 16865
+Mots total: 96934
+
+Motifs fréquents:
+    859 RBK
+    318 TI
+    318 EL
+    316 FI
+    302 CO
+    260 PROJET
+    260 CONFIDENTIEL
+    208 DE
+    187 EN
+    181 TND
+    127 ISA
+    117 CI
+    113 T0
+     93 KPI
+     88 EVM
+     79 GO
+     67 TAB
+     61 CEO
+     53 SBT
+     48 RPC

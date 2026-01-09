@@ -1,0 +1,39 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                    Annexe S. Kit de survie juridique
+
+
+
+S.3 Guide Visuel : Recevoir un Salaire en Crypto
+   Stratégie de Réception :
+
+  1. Option Simple : Passerelle (Grey/Bitwage) → Conversion Auto → Virement TND.
+
+  2. Option Expert : Wallet Pro (USDC) → Comptabilité Devises → Cession Manuelle BCT.
+
+
+
+S.4 Red Flags (Vigilance)
+    • Refus de contrat écrit.
+
+    • Paiement en token volatile inconnu.
+
+
+
+
+                                                                         EL
+    • Demande de ”frais d’avance”.
+
+
+
+
+                                                                       TI
+                                                                 N
+                                                               DE
+                                                         FI
+                                                        N
+                                                  CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 271 sur 316
+

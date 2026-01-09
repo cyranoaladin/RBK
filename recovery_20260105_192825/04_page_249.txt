@@ -1,0 +1,48 @@
+H | GUIDE DE SÉLECTION & SCORING « PISCINE RUST »
+
+
+  La Piscine n’est pas un cours, c’est un filtre.
+
+
+
+
+                                                                                  EL
+H.1 Grille de Scoring
+
+
+
+
+                                                                                TI
+                                                                      N
+  Le score final (sur 100) détermine l’admission. Seuil d’admission : 75/100.
+
+
+
+
+                                                                    DE
+                                                      TAB. H.1 : Critères de sélection Piscine Rust
+
+
+
+
+                                                              FI
+                                                             N
+                                     Critère           Poids Indicateurs
+                                                      CO
+                                     Aptitude Tech     40%     Progression sur les exercices Rust, Qualité du code final.
+                                     Résilience        30%     Capacité à rebondir après échec, Constance de l’effort.
+                                     Collaboration     20%     Aide apportée aux autres (Peer-learning).
+                                     Communication 10%         Clarté des questions posées, Respect des mentors.
+
+
+
+
+H.1.1 Test d’Entrée Explorer (Bypass Genesis Pool)
+  Pré-requis : Maîtrise prouvée de Rust ou C++ et des concepts Blockchain de base.
+
+  1. Théorie (45 min) : QCM statique sur l’Account Model, le Memory Management (Stack/Heap) et la Complexité Algorithmique.
+
+
+
+                                                                                247
+

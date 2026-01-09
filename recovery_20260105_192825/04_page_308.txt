@@ -1,0 +1,64 @@
+W | Glossaire des termes, acronymes et jargon
+
+
+     Cette annexe centralise les termes techniques, acronymes et notions de gouvernance utilisés dans le livre blanc. Chaque entrée est définie à la première occurrence via note de bas de page et rappelée
+
+ici pour consultation rapide.
+
+
+
+
+                                                                                                    EL
+                     Terme
+                                                Domaine                            Définition
+
+
+
+
+                                                                                                  TI
+                   /Acronyme
+
+
+
+
+                                                                                         N
+      SSOT                                                                         Single Source of Truth (SSOT) : garantit que les paramètres contractuels et références sen-
+
+
+
+
+                                                                                       DE
+                                                                                   sibles sont définis en un point unique.
+
+      IP                                                                           Intellectual Property (IP) : droits protégeant créations, marques, contenus et logiciels, enca-
+
+
+
+
+                                                                              FI
+                                                                                   drant licence, cession ou exceptions.
+
+
+
+                                                                             N
+      TS                                                                           TypeScript (TS) : sur-ensemble typé de JavaScript offrant vérification statique et tooling
+                                                                     CO
+                                                                                   pour des applications fiables.
+
+      IA                                                                           Intelligence Artificielle (IA) : modèles statistiques ou LLM appliqués aux produits pour auto-
+                                                                                   matiser ou augmenter des parcours et décisions.
+
+      open-source                                                                  Modèle de diffusion de logiciel dont le code source est accessible, réutilisable et modifiable
+                                                                                   sous licence ouverte.
+
+      USD                                                                          United States Dollar (USD) : devise de référence utilisée pour exprimer des coûts, revenus
+                                                                                   ou comparaisons internationales.
+
+      SaaS                                                                         Software as a Service (SaaS) : logiciel opéré et facturé comme un service en abonnement,
+                                                                                   hébergé et maintenu par le fournisseur.
+
+
+
+
+                                                                                                   306
+

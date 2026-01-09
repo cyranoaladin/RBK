@@ -1,0 +1,49 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                          Chapitre 13. CAPSTONES (PROJETS SIGNATURES)
+
+
+                                               TAB. 13.2 : Rubric d’Évaluation Studio (100 pts)
+
+
+Pilier      Pts Critères Évalués                                                                    Fail Condition
+Engineering 40 Architecture propre, Code modulaire, Gestion d’erreurs (Option/Result), Choix de Code monolithique, ”Unwrap” sauvages.
+                structures de données.
+Sécurité    30 Respect du Threat Model, Validation des inputs, Access Control, Tests de cas limites Vulnérabilité critique, Clé privée dans repo.
+                (Fuzzing basic).
+Delivery    20 CI/CD fonctionnel, Git Flow propre (Branches, Commits), README complet, Dé- Pas de doc, Build cassé.
+                ploiement reproductible.
+Comms       10 Vidéo démo claire, Pitch deck concis, Capacité à expliquer les choix techniques Démo illisible, Incapable de justifier un choix.
+                (Trade-offs).
+
+
+
+
+                                                                         EL
+                                                                      TI
+                                                               EN
+13.4 Délivrables de Sortie (Le ”Package”)
+    Chaque étudiant doit remettre un ”Package” zippé (ou repo public) contenant : 1. Le Code : Clean, commenté, testé. 2. La Documen-
+
+
+
+
+                                                          D
+tation : Architecture, Setup, API. 3. Le Rapport d’Auto-Audit : ”J’ai cherché à me hacker, voici ce que j’ai trouvé”. 4. La Vidéo Démo :
+
+
+
+
+                                                       FI
+3 minutes max, scénarisée.
+
+                                                    N
+    Ce package est votre passeport pour l’emploi. Il remplace le CV.
+                                             CO
+                                        Code         Test       Audit Doc          Release        Demo
+
+                                                        FIG. 13.1 : Pipeline Packaging
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 114 sur 316
+

@@ -1,0 +1,70 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                     Chapitre 8. SYLLABUS TECHNIQUE
+
+
+                     Sem     Cours (Objectifs)                    Labs (TP Guidés)                   Livrable (Preuve)        Critères (Skill Mirror
+                                                                                                                              / DoD)
+                     S05     Crypto 2 : signatures, keys,         Sign/verify, key mgmt              Module signature         Skill Mirror “Crypto”
+                             threats                                                                                          validée, gestion clés OK
+                     S06     Blockchain 1 : tx, RPC2 , finality   Client RPC, parsing tx             ”explorer” CLI           Résilience réseau, Skill
+                                                                                                                              Mirror “Explorer”
+                     S07     API Design : REST, cache, limits     API endpoints, OpenAPI3            Micro-API + Spec         OpenAPI validée,
+                                                                                                                              latence < 200ms
+                     S08     Indexation : events, storage local   Indexer minimal, backfill          Indexer + Wallet API     Données cohérentes,
+                                                                                                                              Skill Mirror “Data”
+                     S09     UX4 Wallet : signature, pending,     Flow connect/sign/read             Mini front/CLI UX        Tests UI automatisés,
+                             errors                                                                                           satisfaction pair > 4/5
+
+
+
+
+                                                                                             EL
+                     S10     Tokenomics 1 : supply,               Simu simple, stress tests          ”tokenomics memo”        Hypothèses explicites,
+                             incentives                                                                                       revue croisée validée
+
+
+
+
+                                                                                          TI
+                     S11     Intégration E2E : vertical slice     1 user story complète              Mini-dApp E2E            Démo fonctionnelle,
+                                                                                                                              tests E2E OK
+
+
+
+
+                                                                                EN
+                     S12     Observabilité de base, métriques     Logs structurés, dashboards        Dashboard Grafana        Alertes configurées,
+                                                                                                                              Skill Mirror “Observ”
+
+
+
+
+                                                                          D
+                     S13     Sécurité applicative (OWASP          Threat modeling, lint sécurité     Threat Model v1          Validation mentor, zéro
+                             Web3)                                                                                            faille critique
+
+
+
+
+                                                                       FI
+                     S14     Product Delivery cadence             Retro Dev DAO, velocity tracking   Rapport Dev DAO          Velocity stable,
+
+                                                                   N                                                          feedback pair > 4/5
+                                                            CO
+                     S15     Préparation Block Check              Hardening, documentation           Release Candidate        Tous tests verts, doc
+                             Explorer                                                                Explorer                 audit prête
+                     S16     Block Check “Explorer”               Soutenance, panel pairs/mentors    NFT Skills Explorer      Score ≥ 88/100 (tech
+                                                                                                     Core                     + soft), vote mentor
+
+
+
+
+  2
+    Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+  3
+    Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+  4
+    Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 82 sur 316
+

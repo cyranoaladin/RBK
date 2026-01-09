@@ -1,0 +1,30 @@
+RBK 2.0 — Whitepaper Architecte Web3                                        Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+
+
+                                            TAB. 17.7 : Top 5 Risques et Mitigations (2026)
+
+
+                  Risque              Prob. Imp. Plan de Mitigation
+                  Défaut Paiement ISA 3/5 5/5 Sélection stricte (Top 30%), Fonds de Garantie ISA (120k TND), Assurance.
+                  Obsolescence Tech    4/5 3/5 Comité Pédagogique trimestriel, Track Agnostique (Focus Fundamentals).
+                  Fuite des Mentors    2/5 4/5 Programme ”Train the Trainer”, Satisfaction Index, Bonus Performance.
+                  Cyber-attaque École 3/5 4/5 Infra isolée, 2FA Hardware (Yubikey) pour staff, Audit annuel.
+                  Perte Réputation     2/5 5/5 Transparence totale (Building in Public), Charte Éthique stricte.
+
+
+
+
+                                                                     EL
+                                                                  TI
+                                                       D    EN
+                                                    FI
+                                                 N
+                                          CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 157 sur 316
+

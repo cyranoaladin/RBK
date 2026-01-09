@@ -1,0 +1,34 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                        Annexe A. Gabarits opérationnels & stratégiques
+
+
+  Matrice RACI — Run & Opérations (2/2)
+
+
+       Activité                                                            R      A    C                        I
+       Admissions (test d’entrée, entretiens, sélection cohorte)           Mkt    CEO HoP, TechLeads, Career Ops, Students
+       Encadrement hebdo (sprints, reviews, incident drills)               HoP    HoP TechLeads, SecLead        CEO, Ops
+       Assurance qualité (cohérence doc, ToC, versioning, build LaTeX) Ops        HoP SecLead                   CEO, Mkt
+       Conformité & communication (disclaimers, scénario opératoire) Legal        CEO HoP, Ops                  Mkt, Students
+       Career services (portfolio, entretiens blancs, placements)          Career HoP Mentors, TechLeads        CEO, Mkt
+
+
+
+
+                                                                        EL
+       Organisation Demo Day (panel, format, scoring, invitations)         Career CEO HoP, Mkt, Mentors         Ops, Students
+       Suivi post-cohorte (KPIs, feedback, itérations curriculum)          HoP    CEO Ops, Career, TechLeads Mentors, Students
+
+
+
+
+                                                                     TI
+                                                        D    EN
+                                                     FI
+                                                  N
+                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 208 sur 316
+

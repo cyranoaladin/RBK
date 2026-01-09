@@ -1,0 +1,52 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                    Chapitre 9. Track A : Solana Engineer
+
+
+
+   NON NÉGOCIABLE : LE STANDARD QUALITÉ
+      • Tests Systematiques : Pas de PR sans tests (Unit + E2E). Coverage > 80%.
+
+      • Reproductibilité : Builds déterministes (Verifiable Builds).
+
+      • Audit-Readiness : Code commenté, Documentation d’architecture jour 1, Threat Model explicite.
+
+
+
+
+                                                                              EL
+                                                        Rust                      SVM
+                                                       Safety                     Perf
+
+
+
+
+                                                                           TI
+                                                                The Guardian
+
+
+
+
+                                                                 EN
+                                                                   Security
+
+
+
+
+                                                      D
+                                                    FI
+                                           FIG. 9.1 : Pourquoi Solana est un track d’excellence
+                                          N
+                                         O
+                                                TAB. 9.1 : Compétences Cibles vs Preuves
+                                       C
+
+
+                                Domaine      Compétence     Preuve Attendue                 Standard
+                                Architecture Gestion PDAs   Diagramme de dérivations        Pas de collision
+                                Sécurité     Signer Checks  Tests d’invocation malveillante 100% checked
+                                Performance CU Optimization Rapport profilage transaction < 200k CU
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 90 sur 316
+

@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                               Chapitre 22. FEUILLE DE ROUTE 120 JOURS
+
+
+Principe de réserve : aucune campagne marketing ou annonce publique tant que les livrables Sprint 0 ne sont pas validés en Comité
+Exécutif Conjoint.
+
+Phase 1 : J1 → J60 (Production & Industrialisation)       Objectif : transformer le MVP pédagogique en usine ”Senior-by-Design” prête à
+scaler. Livrables Must-Have :
+
+  1. LMS (Learning Management System) durci : 100% des labs Tronc Commun (S1-S12) relus, scripts d’évaluation automatisés.
+
+  2. Pipeline CI/CD et contrôles sécurité (lint, fuzzing) actifs sur les repos Golden Templates.
+
+  3. Playbooks Wellbeing déployés : questionnaires hebdo, tableaux de bord santé, protocole d’escalade testé.
+
+
+
+
+                                                                      EL
+  4. Roster mentors complété (5 ”Core” + bench alumni) et contrats Nexus signés.
+
+
+
+
+                                                                   TI
+  5. Kit marketing préparé mais non diffusé : landing page, simulateur ROI, série Building in Public relue.
+
+
+
+
+                                                             EN
+Phase 2 : J61 → J90 (Pré-lancement & Sélection) Objectif : ouvrir la Piscine et sélectionner la cohorte Alpha en mode acquisition
+
+
+
+
+                                                        D
+disciplinée. Livrables Must-Have :
+
+
+
+
+                                                     FI
+  1. Campagne Building in Public activée (Discord public, Office Hours, challenges Ship or Die).
+
+                                                  N
+  2. Simulateur ROI live et connecté au CRM pour scorer chaque lead.
+                                           CO
+  3. Piscine Rust (4 semaines) exécutée avec +100 candidats et reporting de fatigue partagé.
+
+  4. 20 à 25 candidats ”Alpha” signés, contrats CPPS (ISA) émis et archivés.
+
+Phase 3 : J91 → J120 (Lancement Opérationnel)            Objectif : livrer une expérience cohorte irréprochable dès le jour 1. Livrables
+Must-Have :
+
+  1. Onboarding physique/virtuel orchestré (kits, accès, chartes) avec audit qualité Nexus.
+
+  2. Sprint pédagogique Semaine 1 livré (Genesis Pool) avec NPS > 50 et incident log ”zéro critique”.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 174 sur 316
+

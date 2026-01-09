@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                        Table des figures
+
+
+   14.5 Cycle de vie tokenisé + Audit Trail (Tokenization & DePIN Architect) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+
+   15.1 Mix Revenus Cible (Année 3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+   15.2 Fonds de Garantie ISA (Cash Collateral) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+   15.3 Modèle de Revenus Multi-Couches . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+
+   16.1 Maquette LinkedIn (placeholder visuel) — livrable D-21 avant lancement . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+   16.2 Wireframe landing page (placeholder) — référentiel product marketing . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+   16.3 Storyboard vidéo (placeholder) — diffusion multi-canale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+   16.4 Flywheel Building in Public . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+   16.5 Funnel d’Acquisition Simplifié . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+
+
+
+
+                                                                      EL
+   21.1 Workflow d’Émission Automatisé      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 171
+
+
+
+
+                                                                   TI
+   22.1 Timeline 120 jours (Vue Exécutive) — Sprint 0 inclus . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+
+
+
+
+                                                             EN
+   22.2 Gantt Macro aligné sur les phases Sprint 0 & Cohorte Alpha . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+
+   24.1 Architecture d’Émission SBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+
+
+
+
+                                                        D
+   24.2 Pyramide des Tiers Alumni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+
+
+
+
+                                                     FI
+                                                  N
+   25.1 Transformation Codeur → Architecte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+                                           CO
+   K.1 Value Ladder et Parcours Étudiant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 198 sur 316
+

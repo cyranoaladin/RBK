@@ -1,0 +1,52 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                Chapitre 11. Track C : Product Engineer
+
+
+
+11.2 Structure Pédagogique : Fondations communes, spécialisations binômes (16
+            Semaines)
+   Le Track C se compose de six semaines de fondations techniques partagées, puis de deux parcours complémentaires : Web3 Product
+Manager et Web3 Full-Stack Engineer. Les apprenants avancent en binômes mixtes, garantissant un transfert croisé des compétences
+avant le Capstone final.
+
+
+11.2.1 Bloc Fondations (Semaines 13-18)
+
+  Fondations communes Track C
+
+
+
+
+                                                                        EL
+                                                                     TI
+   Semaines Module                     Objectifs clefs                                Livrable
+     13-15     Web3 Connectivity Wallet adapters (RainbowKit/Solana), gestion Universal   Profile              Viewer      multi-chain
+
+
+
+
+                                                              EN
+               & State           d’état asynchrone (TanStack Query), résilience (EVM+SVM)
+               Management        UX
+
+
+
+
+                                                            D
+     16-17     Indexing & Data         Pipelines The Graph/Goldsky, sync Postgres, stra- Subgraph performant (<100ms) sur un DEX exis-
+
+
+
+
+                                                         FI
+               Layer                   tégies reorg                                      tant
+       18      Analytics Temps
+                                                    N
+                                       Dune/Flipside, SQL analytique, instrumentation Tableau ”Whale Watcher” avec alerting Slack
+                                              CO
+               Réel                    produit
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 103 sur 316
+

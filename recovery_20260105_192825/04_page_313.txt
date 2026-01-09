@@ -1,0 +1,73 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Annexe W. Glossaire des termes, acronymes et jargon
+
+
+                Terme
+                                     Domaine    Définition
+              /Acronyme
+    MVP                                         Minimum Viable Product (MVP) : produit minimum viable permettant de valider une hypo-
+                                                thèse avec l’effort minimal avant itérations.
+
+    DeFi                                        Decentralized Finance (DeFi) : finance décentralisée construite sur des smart contracts,
+                                                offrant prêts, échanges et rendements sans intermédiaire bancaire traditionnel.
+
+    ERC-20                                      Ethereum Request for Comments 20 (ERC-20) : standard définissant l’interface minimale
+                                                d’un jeton fongible (transfert, approbation, total supply).
+
+    Senior-by-Design                            Principe de conception du programme visant à inculquer dès la formation les réflexes et
+                                                standards d’un profil senior.
+
+    Architecte Web3                             Ingénieur capable de concevoir des systèmes décentralisés complets (Smart Contracts +
+
+
+
+
+                                                               EL
+                                                Frontend + Indexing), en maîtrisant les enjeux de sécurité, de coût (Gas) et de perfor-
+                                                mance.
+
+
+
+
+                                                             TI
+    Web3                                        Web 3.0 (Web3) : génération d’Internet décentralisée basée sur la propriété numérique via
+
+
+
+
+                                                      N
+                                                la blockchain, redonnant le contrôle aux utilisateurs.
+
+
+
+
+                                                    DE
+    Illustration Concrete                       Exemple concret illustratif utilisé pour faciliter la compréhension d’un concept.
+
+
+
+
+                                                FI
+    KPI                                         Key Performance Indicator (KPI) : indicateur clé mesurant l’atteinte d’un objectif straté-
+
+
+
+                                               N
+                                                gique ou opérationnel.
+                                               CO
+    Contrat de Partenariat Pédago-              Accord conditionnant le remboursement à l’obtention d’un revenu dans le périmètre Web3,
+    gique                                       encadrant droits, obligations et procédures de recours pour les apprenants RBK.
+
+    ISA                                         Income Share Agreement (ISA) : contrat où l’étudiant rembourse une part de revenu selon
+                                                des paramètres centralisés dans la SSOT.
+
+    Fonds de Garantie ISA                       Compte séquestré capitalisant les contributions RBK/ISA pour couvrir défauts temporaires,
+                                                avances de bourses et incidents de paiement, gouverné conjointement avec Nexus.
+
+    Maître d’œuvre pédagogique                  Partenaire responsable contractuellement de la conception, de l’exécution et de la qualité
+                                                pédagogique au nom de RBK, avec obligations de moyens renforcées et reporting dédié.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                        Page 311 sur 316
+

@@ -1,0 +1,59 @@
+                                                                                                                      Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         DÉTAILLÉ ET STANDARDS
+
+
+Niveau 1 : Piscine & Fondations (S01-S12)
+
+                  Sem    Cours (Objectifs)                     Labs (TP Guidés)                Livrable (Preuve)         Critères (DoD)
+                  S01    Linux/CLI, Git workflow, structure Setup env, Makefile, PR template   Repo ”foundation”         CI verte, README exec
+                         repo
+                  S02    Rust bases : ownership, types, er- Parsing, validation, erreurs       CLI Rust v1               Zéro panic, tests ≥ 10
+                         reurs
+                  S03    Rust avancé : traits, generics, mo- Refactor API, crate, rustdoc      Crate réutilisable        Doc rustdoc, API clean
+                         dules
+                  S04    Crypto 1 : hash, encoding, serializa- SHA/Merkle, vectors tests       ”crypto-toolkit”          Vectors tests, determ.
+                         tion
+                  S05    Crypto 2 : signatures, keys, threats Sign/verify, key mgmt            Module signature          Keys safe, threat note
+
+
+
+
+                                                                                    EL
+                  S06    Blockchain 1 : tx, RPC, finality      Client RPC, parsing tx          ”explorer CLI”            Robustesse réseau
+                  S07    API Design : REST, cache, limits      API endpoints, OpenAPI          Micro-API + Spec          OpenApi valid, err codes
+
+
+
+
+                                                                                  TI
+                  S08    Indexation : events, storage local    Indexer minimal, backfill       Indexer + Wallet API      Data cohérente
+
+
+
+
+                                                                          N
+                  S09    UX Wallet : signature, pending, er- Flow connect/sign/read            Mini front/CLI UX         UX claire, erreurs gérées
+
+
+
+
+                                                                        DE
+                         rors
+                  S10    Tokenomics 1 : supply, incentives Simu simple, stress tests           ”tokenomics memo”         Hypothèses explicites
+
+
+
+
+                                                                  FI
+                  S11    Intégration E2E : vertical slice      1 user story complète           Mini-dApp E2E             Démo fonct., tests E2E
+                  S12    Block Check “Genesis”                 Nettoyage, docs, release        PACK Genesis              GO/NO-GO Jury
+
+
+                                                                 N
+                                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                     Page 226 sur 316
+

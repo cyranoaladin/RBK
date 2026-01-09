@@ -1,0 +1,30 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                   Chapitre 18. Guide Compliance Web3
+
+
+18.6.1 Le Guide de l’Ingénieur-Exportateur
+    Les revenus en crypto sont des revenus en devises étrangères. Le statut ETE (Entreprise Totalement Exportatrice) est la clé de l’optimi-
+sation légale.
+
+
+18.6.2 Flux Financier Recommandé
+  1. Réception : Client → Passerelle (Grey.co/Bitwage) → Virement TND.
+
+  2. Comptabilité : Enregistrement au taux du jour BCT.
+
+  3. Déclaration : Trimestrielle auprès de la banque centrale.
+
+
+
+
+                                                                      EL
+                                                                   TI
+                                                        D    EN
+                                                     FI
+                                                  N
+                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 164 sur 316
+

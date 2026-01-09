@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                     Annexe C. Annexe B — Modèle financier
+
+
+C.1.2 Synthèse des montants contractuels (TND)
+
+
+                                                  TAB. C.1 : Conversion locale des principaux montants
+
+
+                            Poste                        Montant TND           Commentaires
+                            Tuition annuelle cycle       15 900 TND            Inclut Genesis, Explorer, Bâtisseur et Architecte.
+                            complet
+                            Forfait Nexus                3 300 TND             Payable à l’entrée, complémentaire au partage 30%.
+                            Launchpad
+                            Management Fee               4 500 TND             Facturation fixe pour le pilotage sur 12 mois.
+                            mensuel
+
+
+
+
+                                                                                  EL
+                            Budget acquisition           3 000 TND             Dépenses marketing approuvées et remboursables.
+
+
+
+
+                                                                                TI
+                            mensuel
+
+
+
+
+                                                                         N
+                                                                       DE
+                                                                FI
+C.2 Cohorte 1 — Paramètres imposés + Minimum garanti
+
+
+                                                               N
+   Taille minimale contractuelle de cohorte (Genesis Pool) : 15 apprenants.
+                                                        CO
+   En cas de souscription inférieure à 15 apprenants, RBK paiera à Nexus un ”ajustement minimum” défini comme suit :
+
+
+                                                           Ajustement = (15 − Genesisréel ) × 2 900 TND
+
+   Payable au démarrage de la Genesis Pool. Objectif : assurer la viabilité du delivery et éliminer le risque ”petite cohorte”.
+
+
+
+C.3 Rémunération de Nexus — Structure à 4 composantes
+   Le modèle de compensation RBK → Nexus Réussite comprend 4 briques contractuelles, toutes obligatoires :
+   (1) Management Fee (forfait de pilotage)
+
+    • 4 500 TND/mois, pendant 12 mois (cohorte 48 semaines)
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 230 sur 316
+

@@ -1,0 +1,52 @@
+26 | CONCLUSION & FEUILLE DE ROUTE
+
+
+26.1 Priorités Immédiates (Semaine 1–4)
+
+
+
+
+                                                                        EL
+ Le compte à rebours est lancé. Voici le plan d’attaque pour les 30 premiers jours post-validation de ce Whitepaper.
+
+
+
+
+                                                               TI
+                                                      Table : Plan 4 Semaines
+
+
+
+
+                                                              N
+                                                        DE
+                              Semaine Objectif Actions Clés                                 Owner
+                              S1      Légal     Validation Contrats ISA + Setup Bancaire    CEO
+
+
+
+
+                                                    FI
+                              S2      Tech      Déploiement LMS + Setup Github Org          CTO
+
+
+                                                 N
+                              S3      Marketing Lancement Landing Page + Campagne ”Genesis” CMO
+                                           CO
+                              S4      Ops       Ouverture Candidatures (Piscine Beta)       Ops
+
+
+
+26.2 KPI de Succès
+ Nous ne pilotons pas à vue. 12 indicateurs clés définissent la santé du projet.
+
+                                                  Table : KPI Dictionary (Extrait)
+
+                                      KPI         Définition                Cible S12 Seuil Alerte
+                                      Selectivity % Candidats admis piscine < 10%     > 20%
+
+
+
+
+                                                                  193
+

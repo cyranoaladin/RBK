@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                              Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+
+Modèle de Compte Rendu — COPIL / COSUI (RBK Web3 Studio)
+Type de comité : COPIL        ou      COSUI
+
+Projet : RBK Web3 Studio — Dual Track (EVM / Solana)
+
+Date :                                    Heure :                      Lieu / visio :
+
+Animateur :                                              Rédacteur :
+
+Référence CR : RBK-W3S-CR-                        Version :
+
+
+
+
+1. Participants
+
+                                               Nom                                      Rôle                       Organisation             Présence
+
+
+
+
+                                                                                                                  EL
+                                                                                                                                            Présent / Excusé
+                                                                                                                                            Présent / Excusé
+
+
+
+
+                                                                                                            TI
+                                                                                                                                            Présent / Excusé
+
+
+
+
+                                                                                                          N
+                                                                                                     DE
+                                                                                                   FI
+2. Ordre du jour
+
+
+
+                                                                                                 N
+1. Revue KPI & Heatmap (semaine                   )
+                                                                                           CO
+2. Avancement (pédagogie, contenus, tracks, capstones)
+
+3. Risques / incidents / décisions sécurité
+
+4. Budget & ressources (mentors, outils, infra)
+
+5. Carrière (placements, bounties, demo day)
+
+6. Décisions / arbitrages / actions
+
+7. Prochain comité
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                  Page 296 sur 316
+

@@ -1,0 +1,59 @@
+                                                                                                           Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                              DÉTAILLÉ ET STANDARDS
+
+
+B.5.2 Checklist de Questions Fixes
+   Le jury doit obligatoirement poser les questions suivantes pour valider la profondeur de la maîtrise.
+
+1. Produit / Fonctionnel
+
+   • Quelle est la user story principale et comment la validez-vous ?
+
+   • Montrez un cas d’erreur réel (ex : RPC down, Transaction fail) et votre gestion d’erreur.
+
+2. Reproductibilité
+
+
+
+
+                                                                       EL
+   • À partir d’un laptop vierge : quelles commandes exactes pour exécuter le projet ?
+
+
+
+
+                                                                    TI
+   • Quelles variables d’environnement sont indispensables et pourquoi ?
+
+
+
+
+                                                             EN
+3. Architecture
+
+
+
+
+                                                        D
+   • Quelles décisions d’architecture sont irréversibles ? (Citer les ADRs)
+
+
+
+
+                                                     FI
+                                                  N
+   • Quelles alternatives avez-vous rejetées et pourquoi ?
+                                           CO
+4. Sécurité
+
+   • Quelles sont vos 3 menaces les plus graves (impact business/tech) ?
+
+   • Où sont les preuves que vos mitigations fonctionnent ? (Tests, garde-fous)
+
+   • Quels risques résiduels acceptez-vous ?
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 220 sur 316
+

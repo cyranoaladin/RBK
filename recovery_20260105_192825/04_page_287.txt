@@ -1,0 +1,88 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                            Action                                           Dé- Éché-             Livrable        Dépend- Preuve
+                                Act. Risque                      Type      Prio Owner                    Statut
+                                            (verbe + livrable)                               but ance              (DoD)           ances   (Trace)
+                                ID
+                                A- R-12     Mettre CHANGE-       Préventif P2   Ops          T0-30 T0-14 À faire   CHANGELOG Repo doc Fichiers
+                                034         LOG + règles                                                           + CONTRIBU-
+                                            contribution (docs)                                                    TING
+                                A- R-13     Pipeline partena-    Préventif P2   CEO + HoP T0-60 T0-30 À faire      Tableau pipe- Réseau Tableau
+                                035         riats (Target/Con-                                                     line + owners
+                                            tacted/Signed)
+                                A- R-13     Obtenir 2 lettres    Préventif P2   HoP          T0-45 T0-20 À faire   2 emails/LOI    A-035      PDFs
+                                036         d’intention men-
+                                            tors/invités
+                                A- R-14     Définir “Career      Préventif P1   Career + HoP T0-45 T0-14 À faire   Kit complet + –            Pack PDF
+                                037         Pack” (portfolio,                                                      calendrier
+                                            mock interviews,
+                                            bounties)
+                                A- R-14     Instaurer “Bounties Préventif P2    Career       T0+ T0+ À faire       1 bounty/étu- Réseau       Table bounties
+                                038         Sprint” encadré                                  35    49              diant min
+
+
+
+
+                                                                                                 EL
+                                            (semaine 8+)
+                                A- R-14     Mettre tableau       Correctif P2   Career       T0+ T0+ À faire       Dashboard       CRM        Dashboard
+
+
+
+
+                                                                                             TI
+                                039         placements (S1–                                  60    180             placements
+
+
+
+
+                                                                                         N
+                                            S24 / S25–S48) +
+
+
+
+
+                                                                                  DE
+                                            relances
+                                A- R-15     Politique IA (ce qui Préventif P1   HoP          T0-30 T0-14 À faire   Règles IA       –          Politique
+
+
+
+
+                                                                                FI
+                                040         est autorisé/inter-                                                    signées +
+                                            dit) + oral defense                                                    grille orale
+
+
+
+
+                                                                             N
+                                A- R-15     Mettre “ADR obli- Préventif P2      Tech Lead    T0+ T0+ À faire       ADR template Repo          ADRs
+                                041         gatoire” pour déci-
+                                            sions majeures             CO       SecLead
+                                                                                             0     90              + usage vérifié
+
+
+                                A- R-16     Mettre scan secrets Préventif P1                 T0-30 T0-14 À faire   Scan actif en CI A-018     CI logs
+                                                                                + Ops
+                                042         (gitleaks) + règles                                                    + doc
+                                            .env.example
+                                                                                Sec
+                                A- R-16     Session “keys hy-    Préventif P2                T0+ T0+7 À faire      Support +       –          Résultats quiz
+                                                                                Lead
+                                043         giene” (30 min) +                                0                     quiz
+                                            quiz
+                                A- R-17     Mettre backups       Préventif P2   Ops          T0-30 T0-10 À faire   Backup + test Accès        Log restore
+                                044         hebdo (repos/docs)                                                     restore       admin
+                                            + procédure restore
+                                A- R-18     Appliquer MoSCoW Préventif P1       HoP          T0+ T0+ À faire       MoSCoW          Tem-       Tickets
+                                045         à chaque sprint +                                0     90              présent sur     plates
+                                            gating Must                                                            tickets
+                                                                                                                                            Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 285 sur 316
+

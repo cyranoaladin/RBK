@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                Chapitre 5. Architecture de Partenariat
+
+
+
+5.5 Matrice RACI macro révisée
+  Matrice RACI — Partenariat RBK ↔ Nexus
+
+
+
+                           Activité clé                            RBK (Opérateur)        Nexus Réussite       Money Factory AI
+                                                                                         (Maître d’œuvre        (Fournisseur)
+                                                                                          pédagogique)
+                           Marketing & acquisition                        AR                     C                      I
+                           Contrats apprenants & ISA                      AR                      I                     I
+                           Conception syllabus & standards                 C                    AR                      C
+                           Recrutement & paiement des mentors               I                   AR                      I
+
+
+
+
+                                                                              EL
+                           Animation cours & Block Checks                   I                   AR                      I
+
+
+
+
+                                                                            TI
+                           Qualité pédagogique & audits internes           A                     R                      I
+
+
+
+
+                                                                     N
+                           Plateforme LMS & support                         I                    A                     R
+
+
+
+
+                                                                   DE
+                           Gestion des données & conformité DPA           AR                     R                      C
+                           Recouvrement ISA & bonus anticipé              AR                     C                      I
+
+
+
+
+                                                               FI
+                           Reporting KPI & comités                         A                     R                      I
+
+
+                                                              N
+                                                       CO
+                           Plan de continuité pédagogique                  A                     R                      C
+                           Gestion incidents technologiques                 I                    C                     AR
+
+
+  Articulation contractuelle
+
+  Chaque activité listée est adossée à un livrable contractuel explicitement décrit dans l’Annexe D. Les indicateurs de performance (NPS, taux de placement,
+  respect des SLA) conditionnent les bonus/malus appliqués sur la facturation Nexus.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                         Page 68 sur 316
+

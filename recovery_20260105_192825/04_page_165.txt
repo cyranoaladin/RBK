@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                Chapitre 18. Guide Compliance Web3
+
+
+  3. Preuve (Proof) : Pour accéder à un protocole, le portefeuille génère une preuve ZK : ”J’ai +18 ans et je ne suis pas résident US”,
+     sans révéler l’identité réelle.
+
+
+18.4.3 Stack Pratique Enseignée
+   • Polygon ID : Création de contrats de staking avec gating géographique via VC.
+
+   • Civic Pass : Protection anti-sybil pour les airdrops.
+
+   • Sismo : Badges ZK pour la réputation (gouvernance DAO).
+
+
+
+
+                                                                      EL
+18.5 GDPR & Données On-Chain
+
+
+
+
+                                                                   TI
+   Nous clarifions ici comment respecter le RGPD dans un contexte d’immuabilité on-chain en privilégiant des patterns sûrs.
+
+
+
+
+                                                             EN
+18.5.1 Le Conflit Immuabilité vs Droit à l’Oubli
+
+
+
+
+                                                        D
+                                                     FI
+   Règle d’or : Jamais de PII (Personally Identifiable Information) on-chain.
+
+
+                                                  N
+                                           CO
+18.5.2 Patterns Architecturaux
+   • Hash-Only : Stocker keccak256(data) on-chain. La donnée réelle est off-chain avec contrôle d’accès.
+
+   • Chiffrement Asymétrique : Données chiffrées avec la clé publique du destinataire.
+
+   • Pointeurs IPFS : Stocker uniquement le CID (Content ID) sur la blockchain.
+
+
+18.6 Fiscalité Crypto & Statut ETE
+   Ce segment résume le chemin financier recommandé pour rester conforme tout en optimisant le statut exportateur.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 163 sur 316
+

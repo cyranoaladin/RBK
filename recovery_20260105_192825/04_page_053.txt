@@ -1,0 +1,51 @@
+4 | ANALYSE DU CONTEXTE
+
+
+4.1 L’Opportunité Web3 & Solana
+
+
+
+
+                                                                                    EL
+      Avant de comparer les verticales, nous posons ici le cadre de lecture du marché Web3 et de la position singulière de Solana.
+
+
+
+
+                                                                                  TI
+                                                                          N
+4.1.0.1 Définitions Minimales (Lexique Opérationnel)
+
+
+
+
+                                                                        DE
+      Pour comprendre l’arbitrage RBK, il faut maîtriser le vocabulaire du marché :
+
+
+
+
+                                                                  FI
+      • Web3 : Un internet où les utilisateurs possèdent leurs données et leurs actifs, sécurisé par des réseaux décentralisés (Blockchains).
+
+
+
+
+                                                                 N
+      • Solana (SVM) : La blockchain la plus performante à ce jour (65k TPS théoriques), optimisée pour des applications grand public (Payments, Gaming, DePIN).
+                                                          CO
+      • DeFi (Decentralized Finance) : Services financiers (prêt, échange) sans intermédiaire bancaire.
+      • DePIN (Decentralized Physical Infrastructure) : Réseaux physiques (Wifi, GPU) gérés par des incitations crypto.
+      • Bounty : Mission à la tâche rémunérée en stablecoins1 (USDC), souvent premier revenu d’un étudiant.
+
+
+4.1.0.2 Segmentation de la Demande
+      Le marché ne cherche pas ”un dev blockchain”, mais des spécialistes par verticale.
+  1
+      Web3/Blockchain — Stablecoin : actif numérique cherchant à maintenir une parité stable via collatéral, algorithme ou réserves hors chaîne auditées.
+
+
+
+
+                                                                                   52
+

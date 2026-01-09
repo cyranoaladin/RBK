@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Chapitre 2. Stratégie : Note de Cadrage
+
+
+
+2.3 Matrice SWOT (Synthèse)
+  SWOT — Analyse Stratégique RBK 2.0
+
+
+    Forces                                                           Faiblesses
+   • Positionnement premium : “Senior-by-Design”.                    • Risque de sur-ambition (contenu dense).
+   • DualTrack EVM/Solana.                                           • Dépendance à des experts rares.
+   • Méthodologie Studio (PR reviews, CI).                           • Exigence élevée (sélectivité).
+   • Production d’un portfolio vérifiable.                           • Nécessité d’une cohérence chiffrée stricte.
+   • Réseau mentors (diaspora, builders).                            • Sensibilité réglementaire locale.
+
+
+
+
+                                                                     EL
+    Opportunités                                                     Menaces
+
+
+
+
+                                                                  TI
+   • Marché remote Web3 global.                                      • Volatilité Web3 (cycles marché).
+
+
+
+
+                                                            EN
+   • Demande profils sécurité / audit.                               • Risque réputationnel (confusion crypto/trading).
+   • Partenariats protocols/infra.                                   • Risques sécurité (mauvaises pratiques).
+
+
+
+
+                                                       D
+   • Hub régional (Afrique du Nord).                                 • Concurrence internationale.
+
+
+
+
+                                                    FI
+   • Opportunités B2B & Studio.                                      • Incertitudes réglementaires.
+
+
+                                                 N
+                                          CO
+SWOT dynamique et trajectoire d’atténuation
+
+  Tableau dynamique SWOT (90 jours & 12 mois)
+
+
+    Axe              Situation Q1 2025                     Cap 90 jours                           Cap 12 mois
+    Forces           DualTrack industrialisé sur 3 modules Finaliser ”Golden Repos” & lancer QA   Transition RBKops →RBK autonome
+                     Genesis/Explorer, mentors seniors ali- labs (actions A-010/011)              (shadowing Nexus, handover mentors)
+                     gnés
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 42 sur 316
+

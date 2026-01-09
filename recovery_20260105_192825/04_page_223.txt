@@ -1,0 +1,65 @@
+                                                                                                          Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                             DÉTAILLÉ ET STANDARDS
+
+
+5. Qualité & Ops
+
+   • Montrez la stratégie de tests (Unit/Integ/E2E) et la couverture de chaque couche.
+
+   • Si le système tombe en panne demain, que fait l’opérateur ? (Runbook, Logs).
+
+   • Quel est votre plus gros compromis technique (Dette) ?
+
+6. Traçabilité
+
+   • Où est votre ledger de preuves (PROOFS.md) ?
+
+
+
+
+                                                                       EL
+   • Quels tags/releases et changelogs permettent de suivre la progression ?
+
+
+
+
+                                                                    TI
+B.5.3 Barème de Décision (GO / WARN / NO-GO)
+
+
+
+
+                                                             EN
+   Le score est calculé sur la Grille /100 (Annexe B.4). Au-delà du score, des conditions éliminatoires s’appliquent.
+
+
+
+
+                                                        D
+  Conditions KO (Éliminatoires)
+
+
+
+
+                                                     FI
+      • KO-Repro : Impossible de lancer (setup/test/run) en conditions normales.
+
+                                                 N
+                                           CO
+      • KO-Sécurité : Absence de Threat Model ou mitigations non démontrées.
+
+      • KO-Qualité : Pas de CI, pas de tests, aucune stratégie crédible.
+
+
+Verdict
+
+   • GO : Score ≥ 80/100, Aucun KO, Max 2 faiblesses mineures.
+
+   • WARN : Score 70–79 OU 1 faiblesse critique (non KO). Plan de remédiation obligatoire.
+
+   • NO-GO : Score < 70 OU Condition KO OU Incohérence majeure.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 221 sur 316
+

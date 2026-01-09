@@ -1,0 +1,67 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Annexe C. Annexe B — Modèle financier
+
+
+    • Prix Bâtisseur/Architecte : 8 900 TND
+
+    • Total catalogue : 15 900 TND
+
+    • Delivery Fee : 12% du CA_Booked
+
+    • CAP MentorPool : 25% du CA_Booked
+
+    • Management Fee : 4 500 TND/mois × 12 mois = 54 000 TND
+
+    • Acquisition : 3 000 TND/mois × 12 mois = 36 000 TND
+
+
+
+C.6 Clauses comptables & fiscales (sans chiffres hasardeux)
+
+
+
+
+                                                                                    EL
+    • Tous montants : HT (hors taxes) ; TVA selon régime applicable
+
+
+
+
+                                                                                  TI
+    • Clause ”gross-up” : toute retenue à la source est supportée par RBK afin que Nexus reçoive le net égal au montant facturé HT
+
+
+
+
+                                                                        N
+    • Délai de paiement : 15 jours ouvrés
+
+
+
+
+                                                                      DE
+    • Pénalités de retard : 1%/mois + suspension du delivery en cas de défaut > 30 jours
+
+
+
+
+                                                                FI
+    • Droit d’audit : RBK peut auditer les justificatifs mentors ; Nexus peut auditer le calcul CA_Booked/CA_Eligible
+
+
+
+                                                               N
+                                                        CO
+C.7 Garanties & protections contractuelles
+    • Clause de ”minimum garanti” (cf. section 2) : protection contre petite cohorte
+
+    • CAP MentorPool : limitation du risque de surcoût personnel
+
+    • Franchise_RBK : allocation préférentielle des charges fixes d’acquisition
+
+    • Modalités de reporting : reporting mensuel détaillé des indicateurs financiers clés
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 234 sur 316
+

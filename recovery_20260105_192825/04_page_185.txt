@@ -1,0 +1,43 @@
+24 | TOKEN DE RÉPUTATION & ALUMNI PROGRAM
+
+
+
+
+                                                                      EL
+24.1 RBK Soulbound Tokens (SBTs)
+   Le diplôme papier est obsolète. RBK 2.0 certifie les compétences via des Soulbound Tokens (SBTs) : des jetons numériques non-
+
+
+
+
+                                                                   TI
+transférables, infalsifiables, et vérifiables instantanément sur la blockchain. Ce n’est pas un actif financier (pas de prix, pas de marché
+
+
+
+
+                                                             EN
+secondaire). C’est un CV cryptographique. Chaque SBT représente une compétence acquise (”Rust Ace”), une réalisation (”Capstone
+Winner”) ou un rôle (”Mentor”).
+
+
+
+
+                                                        D
+                                                     FI
+Architecture Technique & Privacy       Notre système respecte la confidentialité des étudiants.
+
+                                                  N
+   • Issuer : Un wallet Multisig (RBK Board) signe l’émission des badges.
+                                           CO
+   • Données : Aucune donnée personnelle (Nom/Email) n’est stockée On-chain. Le SBT contient uniquement un Hash de la preuve (ex :
+     hash du commit git ou du certificat PDF).
+
+   • Vérification : L’employeur utilise une dApp RBK pour vérifier la possession du badge et révéler le contenu associé si l’étudiant donne
+     son accord (Signature).
+
+
+
+
+                                                                   183
+

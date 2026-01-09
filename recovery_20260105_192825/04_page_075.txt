@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                             Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+6.5.1 Organigramme de Monitoring
+
+                                          Comité exécutif
+                                          conjoint (RBK/-
+                                           Nexus/MFAI)
+
+
+
+
+                                        Responsable Bien-être
+                                                                                    Escalade vers cellule psychologique partenaire si besoin
+                                        & Résilience (Nexus)
+
+
+
+
+                                                                               EL
+                                                                             TI
+                    Mentors référents                        RBK Ops & Carrière
+
+
+
+
+                                                                    N
+                     (daily check)                           (soutien logistique)
+
+
+
+
+                                                                  DE
+                                         Squads apprenants
+                                          & délégués santé
+
+
+
+
+                                                             FI
+                                                            N
+6.5.2 Tableau de bord hebdomadaire
+                                                    CO
+  Monitoring santé cohorte
+
+
+
+                 Indicateur                    Seuil GO         Seuil Alerte    Action Responsable Bien-être
+                 Score bien-être moyen         ≤ 5/10             ≥ 7/10        Pause 24h, coaching individuel, ajustement backlog.
+                 Heures de sommeil               ≥ 6h           ≤ 5h trois      Mise en ”mode sécurité” : pas de livrable critique sous 48h.
+                 auto-reportées                                    nuits
+                 Présence rituels               ≥ 90%             ≤ 80%         Entretien croisé mentor + RBK Ops, adaptation planning.
+                 obligatoires
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                        Page 74 sur 316
+

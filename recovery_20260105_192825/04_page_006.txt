@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+              9.2.2               MODULE 2 : Maîtrise du Framework Anchor (Semaines 17-20) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
+              9.2.3               MODULE 3 : Architectures Avancées & Innovation (Semaines 21-24) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+              9.2.4               MODULE 4 : Production Hardening & UX Performance (Semaines 25-28) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+      9.3     Stack Technique Spécifique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+      9.4     RBK Solana Validator Track . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+      9.5     Profil de Sortie : Le « Guardian » . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+
+10    Track B : EVM Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+      10.1    Philosophie du Track : La Maîtrise du Standard Industriel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+      10.2    Structure Pédagogique : De la Logique au Durcissement (16 Semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+
+
+
+
+                                                                                                                          EL
+              10.2.1              MODULE 1 : Smart Contract Basics & Solidity Deep Dive (Semaines 13-15) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+              10.2.2              MODULE 2 : Environnement de Développement Pro (Semaines 16-18) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+
+
+
+
+                                                                                                                       TI
+              10.2.3              MODULE 3 : Token Standards & Composabilité (Semaines 19-21) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+
+
+
+
+                                                                                                          EN
+              10.2.4              MODULE 4 : dApp Development & Web3 Integration (Semaines 22-24) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+              10.2.5              MODULE 5 : L2 Scaling & Advanced Patterns (Semaines 25-26) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+
+
+
+
+                                                                                              D
+              10.2.6              MODULE 6 : Production Hardening & Security (Semaines 27-28) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+
+
+
+
+                                                                                           FI
+      10.3    Stack Technique Spécifique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+              Profil de Sortie : L’Ingénieur d’Infrastructure EVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+                                                                                    N
+      10.4
+                                                                       CO
+11    Track C : Product Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+      11.1    Philosophie du Track : Le ”Product Builder” Complet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+      11.2    Structure Pédagogique : Fondations communes, spécialisations binômes (16 Semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+              11.2.1              Bloc Fondations (Semaines 13-18) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+              11.2.2              Parcours de spécialisation (Semaines 19-28) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+      11.3    Profil de Sortie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+
+12    MODULE SOFT SKILLS & PROFESSIONNALISATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+      12.1    Structure du Module (4 semaines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+      12.2    Rubrique d’Évaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                Page 5 sur 316
+

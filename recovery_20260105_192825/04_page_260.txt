@@ -1,0 +1,35 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                              Annexe L. Stratégie mentorat
+
+
+
+   Qualité & reporting       Mise à jour hebdomadaire de la base Mentor-in-a-Box, participation aux comités qualité et respect des process Block Check.
+   Bien-être & conformité    Acceptation du protocole Anti-Burnout : obligation de remonter toute alerte et d’appliquer les décisions du Responsable Bien-être.
+
+
+
+
+L.5 Plan de Relève et Continuité
+   Pour éviter le ”Bus Factor” (départ d’un instructeur clé) :
+
+    • Binômes Rotatifs : Chaque module critique (ex : Rust Advanced) est maîtrisé par au moins 2 mentors Seniors.
+
+    • Documentation ”Playbook” : Chaque cours dispose d’un guide ”Teacher’s Notes” détaillant les points de friction habituels et les métaphores clés.
+
+    • Guest Lecturers : Bassin de 5 experts externes (CTO partenaires) activables pour des masterclasses ponctuelles ou des remplacements d’urgence.
+
+
+
+
+                                                                                EL
+                                                                              TI
+                                                                       N
+                                                                     DE
+                                                                  FI
+                                                                 N
+                                                        CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 258 sur 316
+

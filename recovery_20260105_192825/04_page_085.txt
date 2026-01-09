@@ -1,0 +1,70 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 8. SYLLABUS TECHNIQUE
+
+
+                           Sem Cours (A/B/C)                       Labs (A/B/C)                    Livrable                  DoD / Skill Mirror
+                           S17 A : Modèle Solana / B :             A : Prog natif / B : ERC5 min / Repo S17 (Tracké)         Tests + README6 ,
+                               Solidity bases / C : Discovery      C : User Stories                                          Skill Mirror
+                                                                                                                             “Kick-off”
+                            S18 A : Sérialisation, Budget / B : A : Constraints / B : Events / PR + ADR #1                   ADR clair,
+                                Gas, Erreurs / C : Wireframes C : Proto.                                                     reviewable
+                            S19 A : Sécurité Auth. / B : Access A : Auth. / B : Roles / C :        ”Module pack” v1          Checklist sécu, Skill
+                                Ctrl / C : KPIs                  Metrics Plan                                                Mirror “Security”
+                            S20 A : Tests (Locaux) / B :         A : Tests état / B : Fuzz intro / PRD/Tool Gate             Pipeline test OK
+                                Foundry Intro / C : PRD Final C : Roadmap
+                            S21 A : Anchor IDL / B : Foundry A : Refactor Anchor / B : Fuzz Repo S21                          Tests exec, doc
+
+
+
+
+                                                                                             EL
+                                Mastery / C : Tokenomics         / C : Incentives
+                            S22 A : Anchor Constraints / B :     A : Seeds/PDA / B : ERCs / C : ”Simu pack”                   Résultats repro., Skill
+
+
+
+
+                                                                                      TI
+                                ERC Stds / C : Simu.             Scénarios                                                    Mirror “Architecture”
+
+
+
+
+                                                                                     N
+                            S23 A : CPI / B : Architecture / C : A : CPI / B : Timelocks / C :     ADR #2 + PR                Menaces listées
+
+
+
+
+                                                                              DE
+                                Risques                          Mitigations
+                            S24 A : Hardening / B : Invariants A : Edge cases / B : Coverage / Module 2 Clôture               Audit notes
+
+
+
+
+                                                                          FI
+                                / C : Paper                      C : Paper v1
+
+
+                                                                      N
+                            S25 A : DeFi Primitives / B : DApp A : Vault / B : Sign Flow / C : Repo S25                       Logs propres, Skill
+                                Intég. / C : Analytics           Tracking                                                     Mirror “Analytics”
+                                                               CO
+                            S26 A : Pricing / B : Oracles / C : A : Calculs / B : Oracle mock / Dash/Indexer v1               Métriques lisibles
+                                Dashboards                       C : Dash v1
+                            S27 A : Indexation / B : Events /    A : Events / B : Endpoints / C : ”Data pack”                 Schéma doc, Skill
+                                C : Cohortes                     Funnels                                                      Mirror “Data Ops”
+                            S28 A : DeFi Pack / B : L2 Scale / A : Stable / B : Archi. L2 / C : Module 3 Clôture              Démo 10 min, vote
+                                C : Analytics Final              Final Instr.                                                 mentors
+
+
+
+
+  5
+      Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+  6
+      Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 84 sur 316
+

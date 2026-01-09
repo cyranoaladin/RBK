@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                                                            Chapitre 4. ANALYSE DU CONTEXTE
+
+
+                                                                                               Index Offres d’Emploi Web3 vs Web2 (2021-2026)
+                                                   450
+  Index du Volume d’Offres (Base 100 = Jan 2021)           Lecture du Graphique :
+                                                           100 = Volume de référence (2021)
+                                                   400     200 = x2 (Doublement du volume)
+                                                           300 = x3 (Triplement)
+
+                                                   350
+
+                                                                                                                               Adoption
+                                                   300
+                                                                                                                            Institutionnelle
+
+                                                   250
+
+
+
+
+                                                                                                                                   EL
+                                                   200
+
+
+
+
+                                                                                                                                 TI
+                                                   150
+
+
+
+
+                                                                                                                   N
+                                                                                                                 DE
+                                                   100
+
+
+
+
+                                                                                                     FI
+                                                    2021                            2022                    2023                                              2024                2025                  2026
+
+
+
+                                                                                                    N
+                                                                                                                                     Année
+                                                                                              CO
+                                                                                                       Web3 (Rust/Solidity) - Hypothèse Croissance
+                                                                                                              Web2 (Marché IT Classique)
+
+
+
+
+                                                                                              Source : Projection interne basée sur Electric Capital Reports & LinkedIn Data.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                         Page 61 sur 316
+

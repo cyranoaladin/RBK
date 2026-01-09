@@ -1,0 +1,77 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Chapitre 16. Stratégie marketing & acquisition
+
+
+                                              TAB. 16.3 : Roadmap éditoriale Sprint 0 (90 jours détaillés)
+
+                                   Semaine    Livrable              Owner principal      KPI de validation
+                                   S1         Article    ”Pourquoi CEO & Content Lead    3k vues blog, 20 partages X
+                                              RBK 2.0” + thread
+                                              X
+                                   S2         Live Discord ”Ask Me Head of Program & Ca- 80 participants, 30 questions qualifiées
+                                              Anything”             reer Studio
+                                   S3         Landing page MVP Growth Squad              Taux de conversion ≥ 5%
+                                              mise en ligne
+                                   S4         Carousel     LinkedIn Design Studio        150 leads MQL, 5 commentaires partenaires
+                                              (maquette ci-dessus)
+                                   S5         Vidéo 60s (story- Production Squad         Script validé, plan de tournage verrouillé
+                                              board finalisé)
+
+
+
+
+                                                                                      EL
+                                   S6         Webinar ”Security Security Lead & Nexus 100 inscrits, 40 restream YouTube
+                                              Sprint”               Réussite
+                                   S7         Campagne         paid Growth Squad         CAC ≤ objectif prudent (Annexe F)
+
+
+
+
+                                                                                   TI
+                                              ”Builders”
+                                   S8         Témoignages alumni Career Studio           3 témoignages finalisés, satisfaction ≥ 4.5/5
+
+
+
+
+                                                                          EN
+                                              (capsules vidéo)
+                                   S9         Rapport KPI public Ops & Data              Dashboard publié, 200 vues uniques
+                                              (GitHub)
+
+
+
+
+                                                                   D
+                                   S10        Étude de cas DePIN Product Track           3 téléchargements corporate, 1 demande rendez-vous
+
+
+
+
+                                                                FI
+                                              (PDF)
+                                   S11        Sprint bounty com- Career Studio           30 participations, 10 bounties clos
+
+
+
+                                                            N
+                                              munautaire
+                                   S12        Demo Day simulé Nexus Réussite             5 employeurs présents, 2 LOI signées
+                                                   CO
+                                              (live)
+
+
+
+
+16.3 Simulateur de ROI Interactif
+   Pour contrer l’objection du prix, nous proposons un outil permettant de comparer 3 scénarios d’investissement. L’objectif est de montrer
+que le risque est nul si on commence petit et de rendre le ROI1 explicite dès le premier contact.
+
+Les 3 Options du Simulateur
+  1
+      Finance/Juridique/Compliance — Return on Investment (ROI) : rapport entre gain généré et investissement engagé.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 145 sur 316
+

@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                        Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+                             TAB. 17.1 : Matrice des Risques — Référentiel Commun (RBK – Nexus Réussite)
+
+
+Risque                                               Impact Probabilité Score Mitigation
+Technique
+Mauvaise estimation de la complexité Solana           Élevé     Moyen         12   Approche itérative, prototypage, veille technique ac-
+                                                                                   tive
+Mismatch d’API entre versions                        Modéré      Élevé        15   Ancrage sur versions LTS, tests d’intégration, CI auto-
+                                                                                   matique
+Atteinte de performance (QoS)                         Élevé     Faible        6    Benchmarks, profiling, optimisation continue
+Pédagogique
+
+
+
+
+                                                                    EL
+Taux de chute élevé (>40%)                            Élevé     Faible        6    Suivi individualisé, soutien psychologique, adapta-
+                                                                                   tion du rythme
+
+
+
+
+                                                                 TI
+Non-alignement avec le marché                         Élevé     Modéré        12   Veille métier, feedbacks industriels, itération conti-
+
+
+
+
+                                                          EN
+                                                                                   nue
+Manque de diversité pédagogique                      Modéré     Modéré        9    Mix pédagogique (pairs, projets, mentors), rotation
+
+
+
+
+                                                      D
+                                                                                   du staff
+
+
+
+
+                                                   FI
+Commercial
+Absence de débouchés (placement <70%)                 Élevé     Faible        6    Partenariats entreprises, réseau alumni, événements
+                                                N                                  networking
+                                          CO
+Mauvaise perception du marché                        Modéré     Faible        3    Communication proactive, résultats transparents,
+                                                                                   preuves sociales
+Financier
+Retard de la mise en place ISA                        Élevé     Faible        3    Processus juridique en amont, test de faisabilité
+Insolvabilité d’un grand partenaire                   Élevé   Très faible     1    Diversification des partenaires, contrats avec garantie
+Réglementaire
+Changements législatifs (crypto)                     Modéré     Faible        2    Veille juridique, conseils externes, conformité proac-
+                                                                                   tive
+Problèmes de conformité ISA                          Modéré     Faible        2    Suivi juridique, audit externe, mise à jour régulière
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                              Page 153 sur 316
+

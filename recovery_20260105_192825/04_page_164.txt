@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Chapitre 18. Guide Compliance Web3
+
+
+18.3.2 Obligations (Green Lines)
+       • Disclaimer Systématique : ”Ceci n’est pas un conseil financier” sur chaque contenu.
+
+       • Pédagogie du Risque : Rappeler que ”Code is Law” implique aussi ”Bugs are loss”.
+
+       • Testnet First : Toutes les démos se font sur Testnet (argent fictif) sauf nécessité absolue de Mainnet (avec petits montants).
+
+   Avertissement
+   Ce document ne constitue pas un avis juridique. Les scénarios ci-dessus sont des modèles types donnés à titre informatif. Chaque
+   situation entrepreneuriale est unique et nécessite la consultation d’un expert-comptable et d’un avocat spécialisé en droit des affaires
+   tunisien et international.
+
+
+
+
+                                                                                 EL
+                                                                              TI
+18.4 KYC/AML Décentralisé – La Conformité par la Technologie
+
+
+
+
+                                                                       EN
+       Cette section introduit l’approche privacy-by-design appliquée au KYC1 /AML2 pour concilier conformité et protection des données.
+
+
+
+
+                                                                 D
+                                                              FI
+18.4.1 Philosophie du ”Privacy by Design”
+
+                                                          N
+   Nous enseignons à passer du KYC centralisé (documents stockés sur serveur vulnérable) à l’Identité Auto-Souveraine (SSI) et aux Preuves
+                                                  CO
+à Divulgation Nulle de Connaissance (ZK-Proofs).
+
+
+18.4.2 Architecture Technique
+   1. Vérification (Claim) : L’utilisateur se vérifie une fois auprès d’un Issuer (ex : Civic) et reçoit une ”Verifiable Credential” (VC).
+
+   2. Stockage (Wallet) : La VC est stockée localement dans le portefeuille de l’utilisateur.
+   1
+    Sécurité/Infra/Ops — Know Your Customer (KYC) : processus de connaissance client vérifiant l’identité avant d’accéder à un service financier ou réglementé.
+   2
+    Sécurité/Infra/Ops — Anti-Money Laundering (AML) : lutte contre le blanchiment d’argent couvrant surveillance des flux, filtrage des sanctions et déclarations
+aux autorités.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 162 sur 316
+

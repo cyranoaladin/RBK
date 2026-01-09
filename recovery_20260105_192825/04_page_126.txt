@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                 Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Responsabilités cœur (opérationnelles)
+
+  1. Asset Modeling : définir l’actif, le droit représenté, le lien juridique, et les événements de cycle de vie.
+
+  2. RBAC & Policy : rôles (issuer, admin, compliance, operator), séparation des pouvoirs, journalisation.
+
+  3. Compliance by Design : règles (transfers allowed/blocked), listes (allow/deny), preuves, audits internes.
+
+  4. Lifecycle Ops : procédures mint/burn/freeze, délais, approbations, runbooks.
+
+  5. DePIN Considerations : data provenance, attestations capteurs, anti-fraude, slashing/incentives.
+
+Trajectoire Carrière & Mission
+
+
+
+
+                                                                         EL
+   • Junior : modélise un actif simple, implémente RBAC + audit trail. Mission : tokeniser des ”credits” internes avec plafonds et logs.
+
+
+
+
+                                                                  TI
+                                                                 N
+   • Senior : conçoit une architecture RWA/DePIN complète + procédures conformité. Mission : mettre en production un système de
+
+
+
+
+                                                           DE
+     tokenisation avec freeze, recovery et gouvernance.
+
+
+
+
+                                                       FI
+Interactions Visionnaire (incitations / économie), Guardian (contrôles d’accès, upgradeability), Legal/Compliance, Ops, dApp Engineer
+
+
+                                                    N
+(UX transfert/gel).
+                                              CO
+Livrables standard    ASSET_MODEL.md, RBAC_SPEC.md, POLICY_ENGINE.md, COMPLIANCE_RUNBOOK.md, AUDIT_TRAIL_SPEC.md, procédures
+freeze/burn.
+
+KPIs Incidents conformité, traçabilité complète (audit trail), taux d’erreurs opérationnelles (mint/freeze), temps de réponse incident,
+alignement policy vs implémentation.
+
+                                                      Table : Matrice RBAC (Extrait)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 125 sur 316
+

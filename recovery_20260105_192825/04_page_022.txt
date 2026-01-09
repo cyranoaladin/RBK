@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+L1/L2 Layer 1 (Blockchain de base) / Layer 2 (Couche de mise à l’échelle)
+
+MVP Minimum Viable Product
+
+PDA Program Derived Address (Solana)
+
+PoS Proof of Stake
+
+PR Pull Request
+
+ROI Return on Investment
+
+RPC Remote Procedure Call
+
+
+
+
+                                                                   EL
+SBT Soulbound Token
+
+
+
+
+                                                                TI
+SVM Solana Virtual Machine
+
+
+
+
+                                                          EN
+TVL Total Value Locked
+
+
+
+
+                                                      D
+UX/UI User Experience / User Interface
+
+
+
+
+                                                   FI
+                                                N
+                                         CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                              Page 21 sur 316
+

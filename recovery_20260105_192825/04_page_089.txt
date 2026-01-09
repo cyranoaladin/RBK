@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                  Chapitre 8. SYLLABUS TECHNIQUE
+
+
+
+                                                EXTENSIONS & OPTIONS
+
+8.5 Modules de Diversification (Electifs)
+   Pour les étudiants souhaitant élargir leur spectre technique, RBK 2.0 propose des modules intensifs accessibles en parallèle ou post-
+cursus.
+
+
+8.5.1 Module ZK : Zero-Knowledge Proofs (8 semaines)
+   • Contenu : Arithmétisation, R1CS, Plonk, Langage Noir et Circom.
+
+
+
+
+                                                                    EL
+   • Projet : Concevoir un mélangeur de tokens (Mixer) compliant (Privacy Pools).
+
+
+
+
+                                                                 TI
+   • Pré-requis : Niveau Mathématique A+ (Algèbre linéaire).
+
+
+
+
+                                                           EN
+8.5.2 Module DePIN : Decentralized Physical Infra (6 semaines)
+
+
+
+
+                                                       D
+                                                    FI
+   • Contenu : Helium Network, Filecoin, IoT Integration, Proof of Coverage.
+
+
+                                                N
+   • Projet : Déployer un réseau de capteurs LoRaWAN incentivé par token.
+                                          CO
+8.5.3 Module Cross-Chain & Interop (4 semaines)
+   • Contenu : Wormhole, LayerZero, Axelar. Design de messages asynchrones.
+
+   • Projet : Bridge NFT Solana ↔ Ethereum.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 88 sur 316
+

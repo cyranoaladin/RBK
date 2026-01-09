@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                           Chapitre 12. MODULE SOFT SKILLS & PROFESSIONNALISATION
+
+
+
+
+   S25 : Comms                  S26 : Business            S27 : Gestion                S28 : Leadership             DEMO DAY
+                                          FIG. 12.1 : Timeline 4 semaines — Soft Skills & Pro
+
+
+                                          TAB. 12.1 : Vue d’ensemble du module (4 semaines)
+
+
+                            Sem. Thème              Livrable Principal          Évaluation
+                            S25 Communication Tech Audit Report & Documentation Revue par Pairs + Mentor
+                            S26 Négociation & Biz   Simulation Freelance (SOW)  Roleplay Client/Vendeur
+
+
+
+
+                                                                     EL
+                            S27 Gestion Projet Web3 Board Notion & Retro        Audit de Process
+
+
+
+
+                                                                  TI
+                            S28 Leadership          Pitch Deck & Démo           Jury Final (Investisseurs)
+
+
+
+
+                                                            EN
+Détail Semaine 25 : Communication Technique Objectifs : Savoir vulgariser sans simplifier à l’excès. Rédiger pour être lu. Ateliers :
+
+
+
+
+                                                       D
+”Writing for Developers” (Docs), ”Audit Reporting Standards”. Exercice : Réécrire le README d’un projet open-source complexe pour le
+
+
+
+
+                                                    FI
+rendre accessible. Livrable : Rapport d’incident (Post-Mortem) fictif sur un hack historique. Critères : Clarté, Précision technique, Ton
+professionnel, Anglais technique impeccable.
+                                                 N
+                                          CO
+Détail Semaine 26 : Business & Négociation Objectifs : Se vendre, chiffrer, contractualiser. Ateliers : ”Pricing your TJM”, ”Mock
+Négociation Client”, ”Structuring a DAO Proposal”. Exercice : Répondre à un appel d’offre réel (Upwork/Bounties) ou simulé. Livrable :
+Proposition Commerciale (Statement of Work) complète. Critères : Réalisme du chiffrage, couverture des risques (clauses), force de
+conviction.
+
+Détail Semaine 27 : Gestion de Projet Agile/Web3 Objectifs : Délivrer de la valeur en continu, gérer le chaos. Ateliers : ”Scrum for
+Web3”, ”Async Communication Rules”, ”Github Flow”. Exercice : Organiser le sprint final du Capstone. Livrable : Board Projet propre +
+Rétrospective Sincère (Start/Stop/Continue). Critères : Transparence, granularité des tickets, gestion des bloquants.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 107 sur 316
+

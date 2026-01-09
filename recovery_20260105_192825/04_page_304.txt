@@ -1,0 +1,72 @@
+RBK 2.0 — Whitepaper Architecte Web3                                              Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                         TAB. V.9 : Annexe X — Traceability Matrix (SSOT & Release Gate)
+
+                            Paramètre     Macro SSOT      Fichiers critiques concer- Tests / preuves        Gate
+                                                          nés
+                            Durée pro-    \ProgramWeeks   00_factsheet.tex           verify_params.sh   GO : aucun
+                            gramme        \ProgramDuration 01a_note_cadrage.tex      (required/forbidden)
+                                                                                                        hardcode,
+                                          Text             annexe_j_offre.tex        verify_no_         cohérence SSOT.
+                                                          annexe_b_finance.tex       hardcode.sh        NO-GO : durées en
+                                                                                     CI                 clair hors macros
+                                                                                     doc-release-checks (SSOT non
+                                                                                     make release-check respectée).
+                           ISA — Seuil    \ISAThreshold   annexe_j_offre.tex         verify_no_             GO : seuil
+
+
+
+
+                                                                               EL
+                           (brut)         TND             annexe_f_isa.tex           hardcode.sh            uniquement via
+                                                                                     (pattern TND)          macro.
+
+
+
+
+                                                                        TI
+                                                          annexe_q_contrat_isa.tex
+                                                          annexe_b_finance.tex       CI pipelines           NO-GO : seuil en
+
+
+
+
+                                                                       N
+                                                          00_factsheet.tex           make release-check     dur ou
+                                                                                                            confusion
+
+
+
+
+                                                                 DE
+                                                                                                            brut/net.
+                            ISA — Taux                                                                      GO : taux
+
+
+
+
+                                                              FI
+                                          \ISARate        00_factsheet.tex           verify_params.sh
+                                                          01a_note_cadrage.tex       (SSOT)                 uniquement via
+
+
+                                                          N
+                                                          annexe_j_offre.tex         verify_no_             macro.
+                                                     CO
+                                                          annexe_f_isa.tex           hardcode.sh            NO-GO : 15% en
+                                                          annexe_q_contrat_isa.tex   (15% brut/revenu)      dur en
+                                                          annexe_b_finance.tex       CI pipelines           contexte
+                                                                                     make release-check     brut/revenu.
+                            ISA — Cap     \ISACapTND      annexe_j_offre.tex         verify_no_             GO : cap via
+                                                          annexe_f_isa.tex           hardcode.sh            macro.
+                                                          annexe_q_contrat_isa.tex   (pattern cap TND)      NO-GO : cap en
+                                                          annexe_b_finance.tex       CI pipelines           dur hors SSOT.
+                                                                                     make release-check
+                                                                                                            Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 302 sur 316
+

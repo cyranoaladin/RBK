@@ -1,0 +1,48 @@
+Liste des Acronymes
+
+
+
+
+                                                             EL
+API Application Programming Interface
+
+
+
+
+                                                          TI
+CAGR Compound Annual Growth Rate (Taux de croissance annuel moyen)
+
+
+
+
+                                                       EN
+CI/CD Continuous Integration / Continuous Deployment
+
+CLI Command Line Interface
+
+
+
+
+                                                    D
+                                                 FI
+DAO Decentralized Autonomous Organization
+
+DApp Decentralized Application
+                                              N
+                                        CO
+DeFi Decentralized Finance
+
+DePIN Decentralized Physical Infrastructure Networks
+
+DoD Definition of Done
+
+EVM Ethereum Virtual Machine
+
+ISA Income Share Agreement
+
+KPI Key Performance Indicator
+
+
+
+                                                          20
+

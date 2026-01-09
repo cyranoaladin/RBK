@@ -1,0 +1,66 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+       • Modèle Économique :
+
+             – Frais annuels : 15 900 TND TTC par apprenant pour le cycle complet Genesis Pool + Explorer + Bâtisseur + Architecte.
+
+
+             – Forfait opérateur : Nexus Réussite, maître d’œuvre pédagogique exclusif, facture 3 300 TND par apprenant (design, mentors,
+               supervision et usage de la plateforme Venture Engine de Money Factory AI).
+
+
+             – Partage incubateur : Nexus Réussite perçoit 30% des revenus générés par les projets incubés via le Launchpad.
+
+
+             – ISA : Seuil : 2500 TND brut ; Partage : 15% du brut ; Cap : 20000 TND ; Durée : 36 mensualités payées max. (réf. Annexe K) ;
+
+
+
+
+                                                                                EL
+               contrat RBK – Apprenant géré intégralement par RBK via Fonds de Garantie ISA2 dédié.
+
+
+
+
+                                                                             TI
+             – Entreprise : Parcours Corporate “Dev DAO” (B2B) sur devis, aligné sur la grille Nexus.
+
+
+
+
+                                                                      EN
+ISA3 .
+
+
+
+
+                                                                D
+                                                             FI
+   Paramètres ISA — version unifiée (Annexe K)
+
+   Cadre juridique : Contrat de Partenariat Pédagogiquea et de Partage de Succès (CPPS) signé entre RBK et l’apprenant. Seuil : 2 500
+                                                         N
+   TND brut/mois. Taux : 15% du brut mensuel. Cap : 20 000 TND. Durée : 36 mensualités payées max. Pause automatique si
+                                                  CO
+   revenu < seuil. Référence : Annexe K (Q).
+         a
+       Finance/Juridique/Compliance — Accord conditionnant le remboursement à l’obtention d’un revenu dans le périmètre Web3, encadrant droits, obligations
+   et procédures de recours pour les apprenants RBK.
+
+
+
+
+Mentorat de la première cohorte
+   2
+     Finance/Juridique/Compliance — Compte séquestré capitalisant les contributions RBK/ISA pour couvrir défauts temporaires, avances de bourses et incidents de
+paiement, gouverné conjointement avec Nexus.
+   3
+     Finance/Juridique/Compliance — Income Share Agreement (ISA) : contrat où l’étudiant rembourse une part de revenu selon des paramètres centralisés dans la
+SSOT.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 24 sur 316
+

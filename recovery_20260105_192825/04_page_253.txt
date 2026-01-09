@@ -1,0 +1,53 @@
+J | DASHBOARD DE SUIVI PROMO
+
+
+J.1 Indicateurs Hebdomadaires (KPI)
+
+
+
+
+                                                                              EL
+Les KPI suivants pilotent la santé hebdomadaire de la promo.
+
+
+
+
+                                                                            TI
+                                                               Table : Métriques de Santé Promo
+
+
+
+
+                                                                        N
+                                                                      DE
+                                      Catégorie   KPI             Formule                               Cible
+                                      Progression Velocity        Nb exercices validés / Nb total       > 90%
+
+
+
+
+                                                                FI
+                                      Qualité     First Time Pass % Labs validés du 1er coup            > 50%
+
+
+                                                               N
+                                      Engagement Attendance
+                                                        CO        Taux présence Dailies                 > 95%
+                                      Moral       NPS Hebdo       ”Recommanderiez-vous cette semaine ?” > 8/10
+
+
+
+J.2 Questionnaire Bien-être Minimal
+   Envoyé chaque vendredi via Bot Discord (Anonyme).
+
+   1. Niveau de stress (1-5) ?
+
+   2. Charge de travail (Trop faible / OK / Trop forte) ?
+
+   3. Sentiment de progression (Je stagne / J’apprends / Je vole) ?
+
+
+
+
+                                                                             251
+

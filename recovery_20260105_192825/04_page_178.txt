@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                            Chapitre 22. FEUILLE DE ROUTE 120 JOURS
+
+
+      • P0 : Création structure juridique porteuse (SPV ou LLC).
+
+      • P1 : Rédaction CGV/CGU et Politique de Confidentialité (GDPR).
+
+Workstream B : Produit Pédagogique
+
+      Owner : Lead Instructor. Definition of Done : Contenu accessible sur LMS et testé par un pairs.
+
+      • P0 : Finalisation structure Chapitres 5-8 (Syllabus détaillé).
+
+      • P1 : Création des ”Golden Templates” (Repos de référence).
+
+      • P1 : Banque de Quiz (300 questions) pour l’évaluation continue.
+
+
+
+
+                                                                                  EL
+                                                                               TI
+Workstream C : Stack & Ops
+
+
+
+
+                                                                        EN
+      Owner : CTO. Definition of Done : Infra stable, monitoring actif, zéro friction étudiant.
+
+      • P0 : Configuration Workspace GitHub (Orga, Teams, Permissions).
+
+
+
+
+                                                                  D
+                                                               FI
+      • P1 : Déploiement serveur Discord (Bots, Rôles, Channels).
+
+
+                                                           N
+      • P2 : Automatisation onboarding (Zapier/Make : Typeform → Notion → Discord).
+                                                    CO
+Workstream D : Acquisition
+
+      Owner : CMO. Definition of Done : Pipeline rempli à 150% des objectifs.
+
+      • P0 : Lancement Site Web V1 (Landing, FAQ, Team).
+
+      • P1 : Mise en ligne Simulateur ROI (Lead Magnet) et suivi NPS4 .
+
+      • P1 : Campagne LinkedIn5 /Twitter ”Building in Public” (Daily).
+  4
+      Marketing — Net Promoter Score (NPS) : indicateur de recommandation (promoteurs - détracteurs) pour mesurer satisfaction et fidélité.
+  5
+      Organisation — Réseau professionnel utilisé pour la visibilité, l’acquisition de leads et le recrutement de partenaires ou candidats.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 176 sur 316
+

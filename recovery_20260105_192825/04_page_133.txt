@@ -1,0 +1,29 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+   • DevRel : doc system versionné + starter kits + SDK + playbooks intégration.
+
+   Disqualifiants (marché)
+
+   Pas de tests négatifs, documentation inexistante, CI rouge, absence de specs, ”projet non rejouable” (setup flou), incapacité à produire
+   un runbook incident.
+
+  Accélérateurs (marché)
+  1 rapport d’audit public solide, 1 démo utilisée par des tiers, 1 starter kit populaire, contributions open-source, capacité à gérer un
+  incident et à communiquer proprement (post-mortem).
+
+
+
+
+                                                                       EL
+                                                                    TI
+                                                         D    EN
+                                                      FI
+                                                   N
+                                            CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 131 sur 316
+

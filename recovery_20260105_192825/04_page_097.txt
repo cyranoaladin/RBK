@@ -1,0 +1,54 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                      Chapitre 9. Track A : Solana Engineer
+
+
+    Les diplômés du Validator Track deviennent des points focaux pour les cohortes suivantes : ils co-animent les Block Check “Build”,
+fournissent des audits PRR pour les projets Launchpad et siègent au jury Gate GO/NO-GO. Cette boucle d’excellence garantit la résilience
+de la communauté RBK et renforce la proposition de valeur auprès des partenaires institutionnels.
+
+
+9.5 Profil de Sortie : Le « Guardian »
+    Le Guardian est un ingénieur rare. Il ne ”bricole” pas des scripts. Il construit des infrastructures financières immuables. Il est capable
+de livrer un protocole DeFi sécurisé, documenté et performant en autonomie. Son employabilité est maximale car il maîtrise la chaîne de
+valeur complète : du bas niveau (Rust/BPF) au haut niveau (Architecture/Produit).
+
+
+
+
+                                                                        EL
+Missions Types en Entreprise
+
+
+
+
+                                                                     TI
+    • Construire un DEX (Decentralized Exchange) à haute fréquence.
+
+
+
+
+                                                              EN
+    • Auditer un protocole de Lending pour détecter les failles de liquidité.
+
+
+
+
+                                                         D
+    • Optimiser les coûts de gas d’un programme NFT à fort volume (Compression).
+
+
+
+
+                                                      FI
+                                                  TAB. 9.13 : Checklist Portfolio Guardian
+                                                   N
+                                            CO
+                                   Artefact       Contenu                              Critère
+                                   3 Repos GitHub Code Rust clean, Tests, CI           Green CI Badge
+                                   Audit Report   Analyse d’un protocole tiers         3 failles identifiées
+                                   Demo Live      Vidéo Loom (3 min) expliquant l’arch Clarté orale
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 96 sur 316
+

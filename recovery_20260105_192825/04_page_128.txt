@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Responsabilités cœur (opérationnelles)
+  1. Test Strategy : cartographie risques → tests, priorisation ”money paths”.
+
+  2. Automation (CI) : gates bloquants, rapports, artifacts, règles de merge.
+
+  3. Fork / Simulation : tests sur fork mainnet/devnet, scénarios réalistes.
+
+  4. Fuzz / Invariants : propriétés, campagnes fuzz, rapports d’échec minimisés.
+
+  5. Regression Discipline : tests e2e, snapshots, versions, changelog test.
+
+Trajectoire Carrière & Mission
+
+
+
+
+                                                                          EL
+    • Junior : écrit tests unit/int, maintient CI, reproduit bugs. Mission : écrire une suite d’intégration pour staking + claim + withdraw.
+
+
+
+
+                                                                   TI
+    • Senior : construit frameworks internes, fuzz/invariants systématiques, fork pipelines. Mission : empêcher une régression critique avant
+      audit externe.
+
+
+
+
+                                                                  N
+                                                             DE
+Interactions Guardian (propriétés/invariants), dApp Engineer (e2e), Builder (DoD), Ops (environnements), DevRel (repro guides).
+
+
+
+
+                                                         FI
+Livrables standard     TEST_STRATEGY.md, CI_GATES.md, suites unit/int/fork/fuzz, rapports coverage, REGRESSION_PLAYBOOK.md, bugs
+repro steps.
+                                                     N
+                                               CO
+KPIs Taux de régression, couverture utile (pas ”ligne”), temps de reproduction bug, taux de flakiness, findings évités, qualité des artefacts
+CI.
+                                                          Table : Pipeline Qualité
+                                       Étape           Gate Bloquant (minimum)
+                                       Lint/Format     Échec si style/format non conforme
+                                       Unit Tests      Échec si logique locale incorrecte
+                                       Integration     Échec si scénario critique cassé
+                                       Fork Tests      Échec si comportement diverge sur fork
+                                       Fuzz/Invariants Échec si invariant violé ou crash
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 127 sur 316
+

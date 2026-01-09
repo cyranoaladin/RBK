@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                            Chapitre 4. ANALYSE DU CONTEXTE
+
+
+    • Conversion : 1 USD ≈ 3.1 TND.
+    • Fiscalité : En statut ”Exportateur de Services” (entreprise totalement exportatrice), l’imposition est avantageuse, maximisant le net.
+    • Réalité Marché : Le salaire ”Junior” Web3 (60k$) correspond souvent à un salaire ”VP Engineering” sur le marché local.
+
+
+4.2.0.3 Grille de Rémunération Standard
+
+
+                                                 TAB. 4.5 : Grille Salariale Web3 (Remote Global) vs Local
+
+
+                     Rôle                          Junior (0-2 ans)        Senior (3+ ans)          Pré-requis
+                     Solana Rust Engineer            60k$ - 90k$            140k$ - 220k$           Portfolio GitHub Solide
+
+
+
+
+                                                                                     EL
+                     Security Auditor                80k$ - 120k$              250k$+               Track Record de vulnérabilités trouvées
+                     Fullstack dApp                  50k$ - 80k$            110k$ - 160k$           Portfolio React + Anchor
+
+
+
+
+                                                                                   TI
+                     Dev Web2 (Tunisie)             15k - 25k TND           40k - 60k TND           Diplôme Ingénieur
+
+
+
+
+                                                                           N
+                                                                         DE
+Sources : Web3.career, Pantera Capital Salary Survey 2024. Note : Les montants Web3 sont en Brut Global. En Tunisie, grâce au statut exportateur (off-shore/startup act), le
+                                           Net est maximisé (charges allégées), rendant le pouvoir d’achat x3 supérieur au local.
+
+
+
+
+                                                                  FI
+                                                                 N
+4.2.0.4 Modèle ROI Candidat (Simulation 1 an)
+                                                          CO
+                                    Scénario     Revenu Cible        Time-to-Revenue               Risques
+                                    Prudent      1 500 $/mois        4 mois post-cursus            Marché Bear, Anglais moyen
+                                    Médian       2 500 $/mois        2 mois post-cursus            Concurrence, Portfolio standard
+                                    Top Gun      5 000 $/mois        Pendant le cursus (S20)       Burnout, Gestion charge travail
+
+
+
+4.3 Croissance du Marché
+    Nous analysons la traction emploi/produits pour valider la soutenabilité du modèle RBK au-delà des cycles crypto.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 59 sur 316
+

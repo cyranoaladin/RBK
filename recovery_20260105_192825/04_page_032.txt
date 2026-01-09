@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Chapitre 1. Vision & Manifeste
+
+
+
+          • KPI 4 : Satisfaction Étudiante (NPS) : > 60 points (échelle : -100 à +100).
+
+          • KPI 5 : Score Technique de Diplôme : > 85/100 basé sur évaluation finale objectivée.
+
+
+1.1.0.1 Définition opérationnelle d’un Architecte Web3
+
+   Un Architecte Web3 ne se contente pas d’écrire des smart contracts ; il conçoit des systèmes financiers inarrêtables. Sa responsabilité
+principale est la gestion du risque. Contrairement au développeur Web2 qui optimise pour la vitesse de livraison, l’architecte Web3
+optimise pour la sécurité et la résilience (Trust Minimization).
+   Concrètement, un architecte RBK maîtrise :
+
+
+
+
+                                                                      EL
+   • Le Design de Protocoles : Définition des invariants économiques et des surfaces d’attaque (Threat Modeling).
+
+
+
+
+                                                                   TI
+   • L’Optimisation Bas-Niveau : Gestion fine des Compute Units et du stockage on-chain (PDA Seeds, Merkle Trees).
+
+
+
+
+                                                            EN
+   • Les Patterns de Sécurité : Protection contre les attaques classiques (Re-entrancy, CPI hijacking, Sybil attacks).
+
+
+
+
+                                                        D
+   • L’Observabilité : Capacité à monitorer l’état du système en temps réel (Indexing, RPCs).
+
+
+
+
+                                                     FI
+                                                 N
+   Livrables attendus d’un Architecte RBK :
+                                           CO
+   • Diagrammes d’architecture (C4 Model) et de flux de données.
+
+   • Rapport de Threat Modeling identifiant les vecteurs d’attaque.
+
+   • Suite de tests exhaustive (Unitaires + Fuzzing + Invariants).
+
+   • Code audité et documenté (NatSpec / RustDoc).
+
+   • Runbook d’incident (Procédure de pause/fixation d’urgence).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 31 sur 316
+

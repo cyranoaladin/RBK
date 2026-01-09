@@ -1,0 +1,40 @@
+9 | TRACK A : SOLANA SMART CONTRACT ENGINEER
+           (RUST/ANCHOR)
+
+
+
+
+                                                                     EL
+                                                                  TI
+9.1 Philosophie du Track : L’Excellence par Rust
+
+
+
+
+                                                            EN
+    Solana n’est pas une simple blockchain rapide ; c’est un système d’exploitation décentralisé massivement parallèle (Sealevel). Pour y
+développer, comprendre la syntaxe ne suffit pas. Il faut maîtriser la gestion mémoire, la concurrence d’accès aux données (Account Model)
+
+
+
+
+                                                        D
+et l’optimisation des cycles CPU (Compute Units). Le choix de Rust n’est pas anodin : il impose une rigueur absolue (Safety) qui, combinée
+
+
+
+
+                                                     FI
+aux contraintes de Solana, forme des ingénieurs d’élite. Notre objectif est de former des ”Guardians” : des développeurs obsédés par la
+sécurité des fonds, la performance du code et la résilience de l’architecture.
+                                                 N
+                                           CO
+Positionnement ”Guardian” Un Guardian ne se contente pas de coder une feature. Il pense ”adversarial”. Il sait comment une transaction
+peut échouer, comment un attaquant peut manipuler une instruction, et comment le réseau va réagir sous charge. C’est un profil hybride
+entre Architecte Système et Auditeur de Sécurité.
+
+
+
+
+                                                                   89
+

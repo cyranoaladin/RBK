@@ -1,0 +1,48 @@
+                                                                                                       Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                          DÉTAILLÉ ET STANDARDS
+
+
+     Critère                   Score                      Niveaux de performance
+     5. Documentation & Repro. 10 pts
+                                                          • 0–3 : Instructions floues ou absentes.
+                                                          • 4–7 : Quickstart fonctionnel mais incomplet.
+                                                          • 8–10 : Repro en 1 commande. Variables d’env claires.
+
+     6. Discipline (Preuves)           5 pts
+                                                          • 0–2 : PROOFS absent ou PR non traçables.
+                                                          • 3–4 : PROOFS partiel.
+                                                          • 5 : PROOFS complet + ADR + Changelog/Tags.
+
+
+
+
+                                                                      EL
+                                                                   TI
+                                                             EN
+B.4.2 Seuils de Décision (GO / WARN / NO-GO)
+   Le verdict dépend du score total ET des critères critiques.
+
+
+
+
+                                                        D
+                                                     FI
+1. Hebdomadaire
+
+   • ≥ 70/100 : VALIDÉ.                           N
+                                               CO
+   • 60–69 : VALIDÉ avec WARN (Remédiation obligatoire sous 72h).
+
+   • < 60 : NON-VALIDÉ (NO-GO). Progression bloquée.
+
+2. Gates (Genesis, Explorer, Bâtisseur/Architecte)
+
+   • ≥ 80/100 + Aucun KO : GO (Passage au niveau suivant).
+
+   • 70–79 ou 1 Faiblesse critique : WARN (Passage conditionnel + Plan d’action).
+
+   • < 70 ou Critère KO : NO-GO (Redoublement de phase ou sortie).
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 218 sur 316
+

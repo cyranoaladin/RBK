@@ -1,0 +1,96 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                           Annexe U. Registre des risques opérationnels
+
+
+                                                            Déclen-           Pré-             Conti-
+ID     Cat.      Risque            P I Sc. Niv. Own.                                                             KPI            St.
+                                                            cheurs            vention          ngence
+R-18   SCOPE     Programme trop 4 4 16 Cri- HoP           +Backlog qui ex- Modularisation Couper “Could”, Taux comple- Ou-
+                 dense (effet “tout    tique CEO           plose, labs non strict       Must/- étaler sur se- tion, heures vert
+                 sur tout”) → fa-                          terminés, sprints Should/Could, maines           sup- sup,     NPS,
+                 tigue, baisse qua-                        débordent.        DoD clair, ga- plémentaires,        backlog carry-
+                 lité, abandon.                                              ting,     rythme proposer option over.
+                                                                             réaliste.        “Elite” séparée.
+R-19   REP/    Document (livre 3 4 12 Élevé Ops           +ToC incorrecte, QA éditorial : Gel + refonte Nb             défauts Ou-
+       QUALITY blanc) manque                HoP            césures, tables build CI doc, mise en page,QA,               temps vert
+               de      cohérence                           mal     alignées, checklist, styles, réémission PDF, correction,
+               pro (typo, tables,                          figures     sans latex templates, validation finale retours      re-
+               figures) → im-                              légendes.         relectures croi-“Go/No-Go”.        viewers
+               pact crédibilité                                              sées.                              externes.
+               investisseurs/par-
+               tenaires.
+R-20   FIN/      Modèle       ISA/- 2 4 8    Mo- Legal +Ambiguïtés        Option ISA “à Retirer ISA de Nb demandes Ou-
+       MODEL     bourses       mal           déré CEO   contractuelles, l’étude”, contrats l’offre     pilote, ISA,  litiges, vert
+                 cadré (contrats,                       litiges,   incom- clairs,    seuils, basculer     sur taux impayés,
+                 recouvrement,                          préhensions       transparence,      paiement éche- satisfaction
+                 perception)     →                      candidats.        alternatives       lonné + bourses candidats.
+                 risque légal/répu-                                      (échelonne-         limitées.
+
+
+
+
+                                                                                                                                          EL
+                 tation.                                                  ment).
+R-21   IP/LEGAL Propriété intellec- 3 3 9    Mo- Legal +Refus de publier Clauses          IP Retirer      code Nb incidents Ou-
+
+
+
+
+                                                                                                                                        TI
+                tuelle des caps-             déré CEO   code, désaccord simples       (open- sensible, publier IP, taux repos vert
+                tones (RBK vs étu-                      sur réutilisation, source par défaut version anony- publics,       ac-
+                diants) mal défi-                       tensions à demo pour pédagogie) misée,          accord cords signés.
+
+
+
+
+                                                                                                                                         N
+                nie → conflits.                         day.              +       exceptions, spécifique projet
+
+
+
+
+                                                                                                                                       DE
+                                                                           consentement       incubé.
+                                                                           écrit.
+R-22   SEC/OPS Absence de PCA/- 2 4 8        Mo- Ops      +Perte repos, in- Backups,       ac- Restauration,   RPO/RTO       Ou-
+
+
+
+
+                                                                                                                          FI
+               PRA     minimum               déré CEO      dispo outils, cor- cès MFA, PRA bascule miroirs, atteints, tests vert
+               (continuité)    en                          ruption fichiers, doc, duplication replanification, restauration,
+               cas     d’incident                          vol matériel.      dépôts,   droits communication incidents
+
+
+
+
+                                                                                                                         N
+               majeur      (perte                                             minimaux.        apprenants.     sécurité.
+               données,     indis-                                                                            CO
+               po).
+                                                  TL
+R-23   TECH/     Changements     3 3 9       Mo- EVM        Breaking         Lock   versions, Patch       starter Nb incidents Ou-
+       EVM       tooling    EVM              déré           changes, erreurs images docker, kit, session “up- build, temps vert
+                 (Hardhat/Foun-                             compilation,     guides     repro- grade”, bascule fix, fréquence
+                 dry, forks, L2)                            docs obsolètes. ductibles, veille sur       versions updates.
+                 perturbent  mo-                                             mensuelle.        stables.
+                 dules.
+                                                  TL
+R-24   TECH/     Évolution rapide 3 3 9      Mo- SOL        Erreurs Anchor, Lock     versions, Migration    en- Nb incidents, Ou-
+       SOL       Solana/Anchor               déré           IDL    mismatch, starter kits, CI, cadrée, bascule temps patch, vert
+                 (versions, APIs)                           changements      notes migration, versions, gel sur stabilité CI
+                 cassant    labs/-                          CLI, docs diver-veille.            release   stable Anchor.
+                 tests.                                     gentes.                            promo.
+R-25   SEC/      Culture “security- 3 4 12 Élevé SecLead Retours         “ça Rubric      pénali- Refus validation Score sécurité Ou-
+       CULT      first” insuffisam-              + HoP marche mais…”, sante           sécurité, capstone, sprint moyen,      nb vert
+                 ment      intégrée                      absence threat week             “audit de remédiation, findings, taux
+                 (les étudiants op-                      model,      faibles sprint”, oral de- re-audit croisé. capstones
+                 timisent la démo,                       tests abus.         fense sur risques,                  “pass security
+                 pas la sûreté).                                             checklists.                          gate”.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                           Page 279 sur 316
+

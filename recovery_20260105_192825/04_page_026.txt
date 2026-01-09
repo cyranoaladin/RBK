@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+
+      • Explorer (Sem. 1-12) : 2 formateurs référents Nexus (Senior Solana/EVM) assurent 20% d’animation synchrone, le reste via Skill
+        Mirror et NFT Skills.
+
+      • Bâtisseur (Sem. 13-28) : Passage à un modèle hybride, mentors internes (Architecte N-1) validés par NFT Skills “Mentor Lead”.
+
+      • Architecte (Sem. 29-44) : Encadrement par les Architectes sortants (Dev DAO) + coach produit, monitoring qualité par Block Check
+        hebdomadaire.
+
+      • Launchpad (Option) : Mentorat business par Nexus Réussite, alignment incubateur et suivi des revenus partagés.
+
+
+
+
+                                                                                   EL
+Objectifs de Sortie (KPIs)
+
+
+
+
+                                                                                TI
+Les KPI4 ci-dessous structurent le pilotage cohorte et la viabilité du modèle.
+
+
+
+
+                                                                         EN
+  KPI & ROI
+
+
+
+
+                                                                   D
+                              Indicateur                       Définition                     Cible            Mesure / Source
+
+
+
+
+                                                                FI
+                              Taux de complétion               Graduation                     90%              Output Capstone
+                              Placement (post-parcours)
+                                                            N  CDI / Freelance / Grant        80%              Suivi Carrière
+                                                    CO
+                              Salaire moyen                    Premier emploi                 > 2.5k TND       Contrats signés
+                              Satisfaction                     NPS                            > 70             Enquêtes anonymes
+                              Break-even                       Rentabilité Promo              M+12             Cashflow ISA
+
+
+
+Livrables Apprenant (Portfolio)
+  4
+      Projet/Management/Qualité — Key Performance Indicator (KPI) : indicateur clé mesurant l’atteinte d’un objectif stratégique ou opérationnel.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 25 sur 316
+

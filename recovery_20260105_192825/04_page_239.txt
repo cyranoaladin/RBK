@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                 Annexe D. Addendum juridique
+
+
+ • Activation communauté : animation Discord, publication hebdomadaire Building in Public, coordination marketing RBK.
+
+ • Reporting commun : alimentation du cockpit décisionnel (CABooked , CAEligible , NPS, taux de complétion) et archivage des pièces justificatives.
+
+ • Gestion des risques : mise à jour du registre commun, déclenchement des plans de continuité, documentation post-mortem.
+
+ • Amélioration continue : rétro-planning trimestriel des évolutions, synthèse des feedbacks apprenants, proposition des expérimentations pédagogiques.
+
+
+
+D.2 KPIs contractuels et bonus/malus
+   Indicateurs de performance Nexus
+
+
+
+
+                                                                                        EL
+                  KPI                           Définition & mode de mesure            Seuils contractuels
+                  Qualité pédagogique           NPS cohortes, taux réussite Labs,      NPS ≥ 50, incidents critiques = 0, Labs complétés ≥ 90%.
+
+
+
+
+                                                                                      TI
+                                                incidents critiques
+
+
+
+
+                                                                           N
+                  Disponibilité mentors         Couverture slots mentoring, délai      Couverture ≥ 95%, délai ≤ 12h ouvrées.
+
+
+
+
+                                                                         DE
+                                                réponse Discord
+                  Engagement apprenants         Taux présence rituels, complétion      Présence ≥ 85%, plans complétés ≥ 90%.
+
+
+
+
+                                                                 FI
+                                                plans Wellbeing
+
+
+
+                                                                N
+                  Respect jalons                Respect planning livrables et SOW
+                                                         CO                            ≥ 95% des jalons validés à date prévue.
+                  Reporting financier           Mises à jour CABooked /CAEligible ,    Reporting mensuel livré J+5, écarts ≤ 2%.
+                                                facturation
+
+
+ • Bonus performance : +5% à +10% sur la facture jalon lorsque trois KPI clés dépassent le niveau ”Stretch” défini en comité.
+
+ • Malus : –10% et plan correctif sous 15 jours si deux KPI tombent sous les seuils plancher ; possibilité de suspension de jalon.
+
+ • Clause de revoyure : recalibrage semestriel des KPI et des niveaux de service sur décision conjointe CEC.
+
+
+
+D.3 Clauses de propriété intellectuelle & licences
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 237 sur 316
+

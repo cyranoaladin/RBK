@@ -1,0 +1,93 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                      Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                      TAB. V.1 : Registre des actions risques v1 — RBK Web3 Studio
+                                                   Action                                         Dé-   Éché-           Livrable       Dépend- Preuve
+                                       Act. Risque                    Type      Prio Owner                    Statut
+                                                   (verbe + livrable)                             but   ance            (DoD)          ances   (Trace)
+                                       ID
+                                       A- R-01     Définir ICP + mes- Préventif P1   Mkt + CEO    T0-90 T0-75 À faire   ICP validé +   Vali-      PDF/URL
+                                       001         sage de valeur (1                                                    FAQ publiée    dation
+                                                   page) + FAQ anti-                                                    (site + PDF)   Legal
+                                                   trading
+                                       A- R-01     Mettre en place    Préventif P1   Mkt + Ops    T0-90 T0-60 À faire   Pipeline      Outil   Capture +
+                                       002         funnel admissions                                                    (Lead→        CRM     procédure
+                                                   (CRM léger + pipe-                                                   Entretien→
+                                                   line)                                                                Admis) opéra-
+                                                                                                                        tionnel
+                                       A- R-01    Lancer 3 webinaires Préventif P1   Mkt + HoP    T0-75 T0-45 À faire   3 replays +   Landing Liens replays
+                                       003        “Web3 careers after                                                   200 leads     + tra-  + stats
+                                                  AI1 ” + collecte                                                      qualifiés     cking
+                                                  leads
+
+
+
+
+                                                                                                        EL
+                                       A- R-01    Plan “early bird + Préventif P2    CEO + Ops    T0-75 T0-60 À faire   Offre tarifaire Legal     Doc offre +
+                                       004        alumni” (grille prix                                                  validée + CGV             CGV
+
+
+
+
+                                                                                                  TI
+                                                  + conditions)
+
+
+
+
+                                                                                               N
+                                       A- R-01    Plan B : lancer 1     Conti-  P1   CEO + HoP    T0-30 T0-14 À faire   Règle Go/No- KPI ad- Note Go/No-
+
+
+
+
+                                                                                        DE
+                                       005        seul track si < seuil ngence                                          Go + com-      missions Go
+                                                  cohort                                                                munication
+
+
+
+
+                                                                                      FI
+                                                                                                                        prête
+                                       A- R-02     Construire budget Préventif P1    CEO + Ops    T0-90 T0-70 À faire   Budget table + Business Fichier budget
+
+
+
+
+                                                                                     N
+                                       006         détaillé (Must/-                                                     règles d’arbi- plan
+
+
+
+                                       A- R-02
+                                                   Should/Could) +
+                                                   réserve 15%
+                                                   Contractualiser
+                                                                             CO
+                                                                      Préventif P1   CEO + HoP    T0-75 T0-50 À faire
+                                                                                                                        trage signées
+
+                                                                                                                        Contrats signés Pool    Contrats
+                                       007         mentors (forfait +                                                   + calendrier    mentors
+                                                   SLA + calendrier)                                                    interventions
+                                       A- R-02     Mettre en place    Préventif P2   Ops          T0-60 T0-30 À faire   Tableau va-     Budget Dashboard
+                                       008         reporting mensuel                                                    riance + alerte A-006
+                                                   variance budget                                                      seuil 10%
+                                       A- R-03     Geler structure    Préventif P1   HoP          T0-90 T0-80 À faire   DoD module      –       Doc DoD
+                                       009         syllabus + DoD par                                                   (labs+tests+
+                                                   module (checklist)                                                   doc) validé
+                                                                                     TL
+                                       A- R-03     Produire “Golden Préventif P1                 T0-80 T0-45 À faire    2 repos tem-   A-009      URLs Git
+                                                                                     EVM + Solana
+                                       010         repos” : starter kits                                                plates (CI
+                                                   EVM + Solana                                                         verte)
+                                                                                                                                                Suite page suivante
+
+  1
+      Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                 Page 282 sur 316
+

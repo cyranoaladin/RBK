@@ -1,0 +1,27 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                       Annexe I. SPÉCIFICATIONS TECHNIQUES SBT
+
+
+
+I.2 Processus de Vérification
+  1. Issuer Check : Vérifier que l’adresse émettrice est bien le Multisig RBK Certifié.
+
+  2. Owner Check : L’étudiant prouve qu’il possède le wallet (Signature message).
+
+  3. Content Check : Le lien vers le rapport d’audit correspond au hash stocké on-chain.
+
+
+
+
+                                                                                 EL
+                                                                               TI
+                                                                        N
+                                                                      DE
+                                                               FI
+                                                              N
+                                                       CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 250 sur 316
+

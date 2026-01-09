@@ -1,0 +1,67 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         Liste des tableaux
+
+
+   18.3 Risques Compliance & Atténuation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+
+   22.1 Checklist Go/No-Go (Gates) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+   22.3 Backlog Opérationnel (Extrait Top Actions) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+
+   23.1 Jalons Clés du Plan de Lancement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+
+   24.1 Catalogue des Badges SBT (Extrait) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+   24.3 Usages et Bénéfices des SBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+   24.5 Roadmap Alumni (Année 1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+
+   25.1 Grille de Maturité Senior-by-Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+
+
+
+
+                                                                       EL
+   25.3 Checklist d’Audit Code IA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
+   25.5 Comparatif Technique Solana vs EVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
+
+
+
+
+                                                                    TI
+   25.7 Structure du On-Chain Resume . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191
+
+
+
+
+                                                             EN
+   25.9 Risk Register Export . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 192
+   25.11Matrice Comparée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 192
+
+
+
+
+                                                         D
+   C.1 Conversion locale des principaux montants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+
+
+
+
+                                                      FI
+   C.3 Projections financières selon taille de cohorte initiale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233
+
+                                                  N
+                                           CO
+   G.1 Scénarios de Remboursement        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+
+   H.1 Critères de sélection Piscine Rust . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247
+   H.3 Barème Admission Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 248
+
+   K.2 Structure tarifaire alignée sur le pipeline Genesis → Architecte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+
+   L.1 Grille de Rémunération Mentor (Junior → Lead) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257
+
+   M.1 Tarification B2B    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259
+
+   N.1 Matrice des Outils IA Autorisés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 201 sur 316
+

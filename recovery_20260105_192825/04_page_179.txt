@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                              Chapitre 22. FEUILLE DE ROUTE 120 JOURS
+
+
+      Les actions opérationnelles s’appuient sur une coordination Ops et un suivi CRM6 pour tracer l’acquisition et la montée en charge.
+
+                                                  TAB. 22.3 : Backlog Opérationnel (Extrait Top Actions)
+
+
+                               ID        Action                     Prio Owner        Critère Acceptation
+
+                               LEG-01 Validation ISA Avocat          P0 Legal         Mémo juridique signé (”Safe to operate”).
+
+                               LEG-02 Setup Compte Séquestre P0 Finance               IBAN fourni, dotation 150 000 TND créditée.
+
+                               PED-01 Syllabus S1-S4 Ready           P0 Lead Inst. PDF + Markdown sur LMS.
+
+                               OPS-01 Invite Mentors Discord         P1 Ops           Tous les mentors ont le rôle ”Sensei”.
+
+
+
+
+                                                                                   EL
+                               ACQ-01 Page Candidature Live          P0 Mktg          Formulaire testé, data arrive dans CRM.
+
+
+
+
+                                                                                TI
+                                                                         EN
+   Risques Opérationnels Critiques à 120 Jours
+
+
+
+
+                                                                   D
+          • Retard Légal (ISA) : Blocage du modèle économique. → Mitigation : Modèle de repli ”Upfront différé”.
+
+
+
+
+                                                                FI
+          • Déficit Candidats Qualifiés : Piscine vide. → Mitigation : Activation réseau partenaires (Bourses).
+
+                                                            N
+          • Churn Mentors : Départ en cours de route. → Mitigation : Roster de backup (Alumni experts).
+                                                    CO
+
+22.3 Diagramme de Gantt Macro
+    Ce diagramme de Gantt illustre le chemin critique. Les tâches Juridiques et Production Pédagogique sont les goulots d’étranglement
+initiaux.
+  6
+      Produit/Business — Customer Relationship Management (CRM) : outil ou processus de gestion de la relation client (prospects, ventes, support, suivi).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 177 sur 316
+

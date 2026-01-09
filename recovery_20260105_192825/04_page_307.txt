@@ -1,0 +1,70 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                     Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+
+Date           Élément               Macro /               Justification & impact (sections)                                                             Preuves        Gate
+                                     Fichier
+AAAA-          Paramètre             \ISARate /            Raison : (ex : alignement offre commerciale).                                                 make            GO /
+MM-JJ          contractuel           tex/                  Impact : Factsheet, Offre, ISA, Contrat ISA, Finance.                                         release-check WARN /
+                                     params.tex                                                                                                          OK ; CI verte ; NO-GO
+                                                                                                                                                         commit
+                                                                                                                                                         (hash)
+AAAA-          Contrôle     verify_no_                     Raison : (ex : ajout d’un fichier critique).                                                  make            GO /
+MM-JJ          documentaire hardcode.sh                    Impact : périmètre anti-régression.                                                           release-check WARN /
+                                                                                                                                                         OK ; CI verte ; NO-GO
+                                                                                                                                                         commit
+                                                                                                                                                         (hash)
+
+
+
+
+                                                                                                       EL
+AAAA-          Pipeline CI                                 Raison : (ex : fiabilisation build).                                                          CI verte ;     GO /
+
+
+
+
+                                                                                                  TI
+                                     doc-
+MM-JJ                                                      Impact : reproductibilité + artefact PDF.                                                     artefact PDF ; WARN /
+
+
+
+
+                                                                                               N
+                                     release-
+
+
+
+
+                                                                                       DE
+                                     checks.yml                                                                                                          commit         NO-GO
+                                                                                                                                                         (hash)
+
+
+
+
+                                                                                     FI
+                                                                                 N
+Définition des gates.
+                                                                           CO
+      • GO : build OK ; verify_params PASSED ; verify_no_hardcode PASSED ; CI verte + artefact PDF.
+
+      • WARN : tout OK, mais warnings LaTeX non contractuels (typographie, overfull hbox).
+
+      • NO-GO : build KO ; ou scripts en échec ; ou hardcode contractuel détecté ; ou incohérence brut/net.
+
+
+Note. Les valeurs contractuelles elles-mêmes restent dans la SSOT. Les preuves doivent pointer vers le commit et le run CI correspondant.
+
+Sign-off.
+
+Owner (responsable documentaire) :                                                                                                                            Date :
+
+Reviewer (sponsor / direction) :                                                                                                                             Date :
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                             Page 305 sur 316
+

@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                    Annexe A. Gabarits opérationnels & stratégiques
+
+
+
+A.3     Matrice RACI (Responsable, Accountable,
+        Consulted, Informed)
+  Matrice RACI — Design & Build (1/2)
+
+
+   Activité                             R                A                C                           I
+   Définir la vision/positionnement     CEO              CEO              HoP, Mkt, Legal             Ops, Mentors, Students
+   (RBK Web3 Studio)
+   Figer la “Factsheet” (durée, co-     HoP              CEO              Ops, Career, Legal          Mkt, Students
+
+
+
+
+                                                                EL
+   horte, prix, KPIs, tracks)
+
+
+
+
+                                                             TI
+   Concevoir le tronc commun (objec- HoP                 HoP              TechLeads, SecLead          CEO, Ops
+   tifs, labs, DoD)
+
+
+
+
+                                                       EN
+   Concevoir Track EVM (syllabus,       TechLead-EVM     HoP              SecLead, Mentors            CEO, Ops
+
+
+
+
+                                                      D
+   labs, tooling)
+
+
+
+
+                                                   FI
+   Concevoir Track Solana (syllabus,    TechLead-SOL     HoP              SecLead, Mentors            CEO, Ops
+   labs, tooling)
+                                                  N
+                                            CO
+   Définir rubrics d’évaluation (PR,    SecLead          HoP              TechLeads, Mentors          CEO, Students
+   capstones, examens)
+   Définir capstones (specs, critères   HoP              HoP              TechLeads, SecLead          CEO, Mkt
+   d’acceptation, scoring)
+   Mettre en place l’infra (LMS, repos Ops               HoP              TechLeads                   CEO, Students
+   templates, CI, comptes outils)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                          Page 207 sur 316
+

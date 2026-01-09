@@ -1,0 +1,66 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                            Annexe A. Gabarits opérationnels & stratégiques
+
+
+
+A.4     Gabarits Studio (Ops & Technique)
+   Ces modèles sont utilisés quotidiennement dans le cadre des rituels ”Studio”.
+
+
+A.4.1 Template : Incident Drill Postmortem
+
+   À remplir après chaque simulation d’attaque du Jeudi (War Room).
+
+   Incident Postmortem #ID
+  Date : JJ/MM/AAAA                                                                                   Severity : Critical / High / Medium
+  Reporter : @StudentName                                                                                                Duration : 45min
+
+
+
+
+                                                                         EL
+  1. Le Scénario (What happened ?)
+
+
+
+
+                                                                      TI
+  Exemple : Le smart contract permettait de retirer plus que le solde disponible (underflow).
+  2. Impact (Si Mainnet)
+
+
+
+
+                                                               EN
+  Exemple : Perte totale des fonds du pool de liquidité (TVL = $50k).
+  3. Root Cause Analysis (The ”Why”)
+
+
+
+
+                                                          D
+  Exemple : Utilisation de unchecked block dans Solidity 0.8+ sans vérification préalable.
+
+
+
+
+                                                       FI
+  4. Le Fix (Patch)
+
+                                                    N
+  Exemple : Retrait du bloc unchecked et ajout d’un revert CustomError().
+                                             CO
+  5. Lessons Learned (Prevention)
+  Exemple : Ajouter un test Fuzzing qui tente des retraits massifs aléatoires.
+
+
+
+A.5     Références Standards (Voir Annexe A)
+   Les gabarits obligatoires pour la structure de Repository, les ADRs et les journaux de preuves (PROOFS) sont définis exhaustivement
+dans l’Annexe B (”Standards de Preuves & Évaluation”).
+   Tout projet Genesis, Explorer, Bâtisseur ou Architecte doit se conformer à ces standards pour être auditable.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 209 sur 316
+

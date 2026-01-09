@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Chapitre 19. Gouvernance & transparence
+
+
+   • Valider les changements majeurs de curriculum.
+
+   • Arbitrer les contentieux ISA complexes (ex : demande de grâce pour cas de force majeure).
+
+   • Auditer les taux de placement déclarés.
+
+
+19.2 Transparence Radicale (Open Metrics)
+   Contrairement aux écoles opaques, RBK publie ses KPI en temps réel sur une page publique ”Status” (et On-chain).
+
+
+
+
+                                                                         EL
+  Metriques Publiques (Dashboard)
+
+
+
+
+                                                                      TI
+     • Taux de Placement Réel : Calculé à J+180 (CDI/Freelance).
+
+
+
+
+                                                             EN
+     • Salaire Médian de Sortie : Basé sur les fiches de paie anonymisées.
+
+     • Taux de Remboursement ISA : % de recouvrement (indicateur de santé financière).
+
+
+
+
+                                                    D
+     • Diversité : Ratio Homme/Femme et Répartition Géographique (Hors Grand Tunis).
+
+
+
+19.3 Charte de Déontologie
+                                                  FI
+                                         N
+   RBK s’engage formellement sur les points suivants :
+                                        O
+
+  1. Pas de Diplôme de Complaisance : Un étudiant qui paie Upfront mais échoue aux examens techniques ne reçoit PAS de certification.
+                                       C
+
+
+     Le niveau ne s’achète pas.
+
+  2. Consentement Éclairé ISA : Chaque candidat reçoit une simulation ”Worst Case” (Salaire élevé = Paiement max) avant de signer.
+
+  3. Neutralité Technologique : Bien que financés par des écosystèmes (ex : Solana), nous enseignons l’ingénierie fondamentale, pas le
+     dogmatisme. Nous critiquons les faiblesses de chaque chaine.
+
+  4. Protection des Données : Refus de monétiser les données étudiants auprès de recruteurs tiers sans ”Opt-in” spécifique.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                              Page 166 sur 316
+

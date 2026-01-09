@@ -1,0 +1,42 @@
+3 | Gouvernance, Partenariat et RACI
+
+
+    Ce chapitre détaille l’architecture du partenariat, les rôles des entités impliquées et la répartition des responsabilités (RACI) pour l’exécution du programme RBK
+2.0. Il constitue un addendum contractuel au présent manifeste.
+
+
+
+
+                                                                                   EL
+                                                                                 TI
+3.1 Cadre général du partenariat
+
+
+
+
+                                                                         N
+                                                                       DE
+3.2 Architecture détaillée du partenariat
+
+
+
+
+                                                                FI
+   Architecture Détaillée du Partenariat
+
+
+
+                                                               N
+                                                        CO
+    Entité            Apports Clés                                                           Documents Contractuels Clés
+
+    RBK               Marque, conformité, relation client, encaissements, contrats ap- Contrat-cadre RBK ↔ Nexus (MSA) : « Prestations d’ingénie-
+    (l’enseigne et    prenants (y compris ISA). Apports : locaux, logistique, admi- rie pédagogique & pilotage ». Bon de commande / SOW (RBK
+    l’infrastruc-     nistration, CRM, budget acquisition 3 000 TND/mois, abonne- ↔ Nexus) : périmètre cohorte 1 (durée, livrables, KPIs, staf-
+    ture)             ments logiciels “tiers”.                                         fing, plafonds d’heures).
+
+
+
+
+                                                                                 49
+

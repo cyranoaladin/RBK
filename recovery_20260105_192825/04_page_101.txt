@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                   Chapitre 10. Track B : EVM Engineer
+
+
+                                                   TAB. 10.3 : Security Checklist EVM
+
+
+                                       Vulnérabilité Contrôle                          Outil
+                                       Reentrancy     Checks-Effects-Interactions      Slither
+                                       Access Control Modifiers corrects               Manual Review
+                                       Arithmetic     Overflow (Solidity <0.8 checked) Fuzzing
+
+
+
+
+10.3 Stack Technique Spécifique
+
+
+
+
+                                                                      EL
+   On privilégie la stack moderne (Rust-based) pour sa rapidité.
+
+
+
+
+                                                                   TI
+                                                   TAB. 10.5 : Stack Track B (Foundry)
+
+
+
+
+                                                             EN
+                                           Catégorie Outils                       Usage
+
+
+
+
+                                                        D
+                                           Framework Foundry (Forge, Cast, Anvil) Tout-en-un
+
+
+
+
+                                                     FI
+                                           Libs      OpenZeppelin Contracts       Standards sécu
+                                           Client    Viem, Wagmi                  Front-end
+
+                                                  N
+                                           Analysis  Slither, Aderyn              Static Analysis
+                                           CO
+
+10.4 Profil de Sortie : L’Ingénieur d’Infrastructure EVM
+   L’Ingénieur EVM RBK est prêt pour intégrer une équipe Core Protocol ou une start-up DeFi. Il sait écrire du code qui gère des millions
+de dollars.
+
+Missions Types en Entreprise
+
+   • Développer une stratégie de Loop Staking sur un protocole de Lending (ex : Aave).
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 100 sur 316
+

@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                            Annexe C. Annexe B — Modèle financier
+
+
+
+
+                                         TAB. C.3 : Projections financières selon taille de cohorte initiale
+
+
+                                      Paramètre                          Scénario A       Scénario B    Scénario C
+                                      Genesis Pool (taille initiale)         15               20            30
+                                      Explorer (projection)                   9               12            18
+                                      Bâtisseur/Architecte                  7,2              9,6           14,4
+                                      (projection)
+                                      CA_Booked (TND)                     160 680          214 240       321 360
+                                      CAP MentorPool (25%                 40 170            53 560        80 340
+                                      CA_Booked)
+
+
+
+
+                                                                              EL
+                                      Management Fee (total)                12                12            12
+
+
+
+
+                                                                            TI
+                                                                        mensualités       mensualités   mensualités
+
+
+
+
+                                                                    N
+                                                                        4 500 TND         4 500 TND     4 500 TND
+
+
+
+
+                                                                  DE
+                                      Delivery Fee (12%                 19 281,60         25 708,80     38 563,20
+                                      CA_Booked)
+
+
+
+
+                                                             FI
+                                      Acquisition (total)                   12                12            12
+
+
+
+                                                            N
+                                                    CO                  mensualités       mensualités   mensualités
+                                                                        3 000 TND         3 000 TND     3 000 TND
+                                      Résiduel RBK (avant autres        11 228,40         64 971,20     111 456,80
+                                      overhead)
+
+
+
+   Données de calcul (constantes) :
+
+    • Taux de conversion Genesis → Explorer : 60%
+
+    • Taux de conversion Explorer → Bâtisseur/Architecte : 80%
+
+    • Prix Genesis Pool : 2 900 TND
+
+    • Prix Explorer : 5 900 TND
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 233 sur 316
+

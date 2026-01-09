@@ -1,0 +1,25 @@
+RBK 2.0 — Whitepaper Architecte Web3                                Annexe W. Glossaire des termes, acronymes et jargon
+
+
+
+W.4 Outils Cités
+    • Helius : Observabilité Solana.
+    • Trident : Solana Fuzzing Framework.
+    • Metaplex : Standard NFT.
+
+
+
+
+                                                        EL
+                                                      TI
+                                                   N
+                                                 DE
+                                             FI
+                                            N
+                                            CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                    Page 316 sur 316
+

@@ -1,0 +1,56 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                         Chapitre 16. Stratégie marketing & acquisition
+
+
+                                                         Awareness (X/LinkedIn)
+
+                                                    Considération (YouTube/Webinar)
+
+                                                     Intention (Discord/Simulateur)
+
+                                                          Action (Candidature)
+
+                                                FIG. 16.5 : Funnel d’Acquisition Simplifié
+
+
+
+16.6 Programme de Référence & Bounties
+
+
+
+
+                                                                        EL
+   Le ”Word of Mouth” est notre canal le plus rentable (CAC ≈ 0). Nous l’industrialisons.
+
+
+
+
+                                                                     TI
+                                                               EN
+Système de Parrainage (Referral)       Tout Alumni ou Étudiant validé peut parrainer un candidat.
+
+   • Pour le Parrain : 500 TND (Cash ou déduction ISA) versés APRÈS la validation de la Période d’Essai du filleul (Anti-fraude).
+
+
+
+
+                                                        D
+                                                     FI
+   • Pour le Filleul : 5% de réduction immédiate sur les frais Upfront.
+
+                                                    N
+                                            CO
+Programme ”Bug Bounties” Pédagogiques           Nous payons (en crédits ou token réputation) pour l’amélioration du cursus.
+
+   • Typo majeure dans le cours : 10 pts.
+
+   • Optimisation d’un exercice de code : 50 pts.
+
+   • Fix de sécurité sur l’infra école : 500 TND.
+
+Cela crée une culture de ”Contribution” dès le premier jour.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 149 sur 316
+

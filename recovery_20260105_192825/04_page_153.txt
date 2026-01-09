@@ -1,0 +1,47 @@
+17 | Á ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+   RBK 2.0 opère à l’intersection de deux secteurs volatils : l’éducation technologique et les actifs numériques. Cette position exige une
+
+
+
+
+                                                                      EL
+gestion des risques de niveau institutionnel.
+
+
+
+
+                                                                   TI
+                                                            EN
+17.1 Risques Réglementaires et Conformité
+    La pérennité de RBK repose sur une veille juridique proactive, particulièrement en Tunisie (siège opérationnel) et en Europe (marché
+
+
+
+
+                                                        D
+cible).
+
+
+
+
+                                                     FI
+17.1.1 Loi des Changes et Crypto-Actifs (Tunisie)
+                                                 N
+                                           CO
+   Risque : La détention de crypto-actifs reste une zone grise. Une interdiction stricte pourrait bloquer les paiements en Stablecoins.
+Mitigation :
+
+   • Structure Off-shore : RBK facture via une entité non-résidente (ou partenaire) pour les flux internationaux, en conformité totale
+     avec le code des changes.
+
+   • Modèle Opérationnel Détaillé : Voir Chapitre 16 pour l’application des Scénarios A (Export), B (Offshore) ou C (Portage) selon la
+     maturité de l’apprenant.
+
+   • Flux Fiat Prioritaire : 100% des frais de scolarité locaux sont encaissés en TND via virement bancaire classique. La crypto n’est
+     qu’un rail technologique optionnel pour les bourses étrangères.
+
+
+                                                                   151
+

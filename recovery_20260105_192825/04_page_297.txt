@@ -1,0 +1,27 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+Méthode de calcul du score (proposition). Chaque domaine est noté à partir de 3 à 6 KPI clés :
+
+• 5 = tous KPI au-dessus des cibles ; 4 = 1 KPI en alerte légère ; 3 = 1 KPI en alerte + plan d’action actif ;
+
+• 2 = plusieurs KPI en alerte ou 1 KPI critique ; 1 = plusieurs KPI critiques ; 0 = domaine non pilotable (données manquantes ou incident majeur).
+
+Décision COPIL requise si : un domaine ≤ 2/5 ou 2 domaines en alerte simultanée ou un KPI “critique” déclenché.
+
+
+
+
+                                                                                                         EL
+                                                                                                     TI
+                                                                                                 N
+                                                                                         DE
+                                                                                       FI
+                                                                                   N
+                                                                            CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                               Page 295 sur 316
+

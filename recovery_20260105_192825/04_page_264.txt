@@ -1,0 +1,51 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                   Annexe N. Outillage & stack technique
+
+
+
+
+                                                    TAB. N.1 : Matrice des Outils IA Autorisés
+
+
+                      Usage            Outil Validé       Politique d’Usage
+                      Coding Assistant GitHub Copilot     Autorisé pour boilerplate/tests. Interdit pour algo critique.
+                      Docs Search      Perplexity / Phind Recommandé pour la recherche contextuelle.
+                      Review           CodeRabbit         Pré-analyse des PRs avant review humaine.
+                      Diagrams         Mermaid.js         ”Diagrams as Code” obligatoire.
+
+
+
+
+                                                                            EL
+N.3 Infrastructure CI/CD (Github Actions)
+
+
+
+
+                                                                          TI
+   Tout repo étudiant doit inclure un workflow .github/workflows/ci.yml standardisé :
+
+
+
+
+                                                                   N
+                                                                 DE
+    • Lint : cargo clippy / solhint
+
+
+
+
+                                                           FI
+    • Test : cargo test / forge test
+
+
+
+
+                                                          N
+    • Audit : cargo audit                          CO
+    • Format : cargo fmt --check
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                      Page 262 sur 316
+

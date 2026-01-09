@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                           Chapitre 1. Vision & Manifeste
+
+
+
+                       Mécanisme                 Habitude Créée                     Preuve Tangible
+                       Code Review Obligatoire   ”Mon code sera lu par un humain”   Qualité des PRs, Commentaires
+                       Fuzzing Systématique      ”Le happy-path ne suffit pas”      Rapports de couverture > 90%
+                       Threat Modeling           ”Penser comme un attaquant”        Documents d’architecture défensive
+                       Démo Publique             ”Je dois défendre mes choix”       Vidéos de pitch, README pro
+
+
+
+
+1.1.0.4 Métriques de Succès et Méthode de Mesure
+
+
+
+
+                                                                       EL
+   Nous ne vendons pas du rêve, nous vendons des résultats mesurables.
+
+
+
+
+                                                                    TI
+   • Taux de placement (3 mois) : Pourcentage des diplômés ayant signé un contrat (CDI, Freelance > 3 mois, ou Grant > 5k$) 90
+     jours après la fin du cursus.
+
+
+
+
+                                                               EN
+   • Salaire Moyen de Sortie : Moyenne des rémunérations annualisées (converties en TND), hors equity/tokens non-liquides.
+
+
+
+
+                                                         D
+   • Time-to-First-Revenue : Délai moyen entre le début de la Phase 3 et le premier dollar gagné (souvent via un Bounty Superteam).
+
+
+
+
+                                                      FI
+                                                   N
+                                                  TAB. 1.2 : Métriques de Succès RBK 2.0
+                                            CO
+               Indicateur     Définition                         Cible     Méthode                         Preuve
+               Placement      Contrat signé ou facture émise     90%       Suivi Alumni J+90               Contrats, Relevés
+               Salaire        Revenu net mensuel équivalent     >3k TND    Déclaration sur l’honneur       Fiches de paie
+               Satisfaction   NPS (Net Promoter Score)           >70       Enquête anonyme fin de cursus   Typeform Export
+               Niveau Tech    Score aux tests finaux           >850/1000   Platforme d’examen (LMS)        Certificat On-chain
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 33 sur 316
+

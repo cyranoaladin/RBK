@@ -1,0 +1,43 @@
+REFERENCES & BIBLIOGRAPHIE
+
+
+
+
+                                                                    EL
+                                                                 TI
+W.1 Documentation Technique
+  • Solana Docs : https://docs.solana.com
+
+
+
+
+                                                       EN
+  • Anchor Framework : https://www.anchor-lang.com
+  • OtterSec Blog : https://osec.io/blog
+
+
+
+
+                                                       D
+                                                     FI
+W.2 Rapports de l’Industrie
+  • Electric Capital Developer Report (2024)
+                                                N
+  • Messari State of Solana (Q4 2024)
+                                               O
+  • Solana Whitepaper (2017) : Proof of History.
+                                        C
+
+  • The Rust Book : Steve Klabnik & Carol Nichols.
+
+
+
+W.3 Rapports de Marché
+  • HackerOne Security Report.
+  • Superteam Earn Metrics.
+
+
+
+
+                                                           315
+

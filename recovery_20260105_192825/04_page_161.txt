@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Chapitre 18. Guide Compliance Web3
+
+
+
+18.1 Operating Model Compliant : Scénarios pour la Tunisie
+  AVERTISSEMENT
+   Les schémas décrits ci-dessous sont des modèles types. Chaque apprenant, alumni ou startup issue de RBK doit impérativement
+   solliciter un expert-comptable et un avocat fiscaliste tunisien avant toute mise en œuvre. RBK et Nexus Réussite recommandent la
+   signature préalable d’un mandat avec un cabinet spécialisé pour valider la stratégie individuelle.
+
+    Pour opérer légalement depuis la Tunisie tout en servant un marché mondial Web3, nous structurons l’activité selon trois scénarios
+validés. Chaque scénario correspond à un stade de maturité de l’apprenant/entrepreneur.
+
+
+
+
+                                                                        EL
+18.1.1 Scénario A : Exportateur de Services Logiciels (Le Standard)
+
+
+
+
+                                                                     TI
+   Cible : Freelance individuel ou petite équipe (1-3 pers).
+
+
+
+
+                                                               EN
+Dimension      Détails Opérationnels
+
+
+
+
+                                                        D
+Périmètre      Développement, Audit, Consulting Technique. Pas de détention d’actifs pour compte de tiers.
+
+
+
+
+                                                     FI
+Statut         Personne Physique (Patente Catégorie Services Informatiques) ou SUARL Exportatrice.
+
+
+                                                 N
+Flux Financier Client (Devises) → Facture (EUR/USD) → Virement SWIFT → Compte Pro Devises TND. Crypto acceptée uniquement via processeur
+               de paiement (Bitwage, Request Finance) convertissant instantanément.
+                                           CO
+Risques        Volatilité de change (si délai de conversion), Blocage virement (Compliance bancaire).
+Limite         Interdiction de faire du ”Custody” (Garde de fonds) ou de l’Exchange.
+
+
+
+18.1.2 Scénario B : Filiale Offshore (Le Scale-Up)
+   Cible : Startup Web3 lancée par des Alumni RBK.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 159 sur 316
+

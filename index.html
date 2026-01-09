@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBK 3.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        #sidebar {
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+
+<body>
+    <aside id="sidebar">
+        <div id="logo"></div>
+        <nav id="sidebar-nav-list"></nav>
+    </aside>
+    <main id="content-engine">
+        <div id="master-container">
+            <section id="chapitre_02_contexte">
+                <h2>Chapitre 2: ANALYSE DU CONTEXTE</h2>
+                <section>
+                    <h3>L'Opportunité Web3 & Solana</h3>
+                    <h4>Définitions Minimales (Lexique Opérationnel)</h4>
+                    <p>Pour comprendre l'arbitrage RBK, il faut maîtriser le vocabulaire du marché :</p>
+                    <ul>
+                        <li><strong>Web3 :</strong> Un internet où les utilisateurs possèdent leurs données et leurs
+                            actifs, sécurisé par des réseaux décentralisés (Blockchains).</li>
+                        <li><strong>Solana (SVM) :</strong> La blockchain la plus performante à ce jour (65k TPS
+                            théoriques), optimisée pour des applications grand public (Payments, Gaming, <span
+                                class="term-pill">DePIN</span>).</li>
+                        <li><strong><span class="term-pill">DeFi</span> (Decentralized Finance) :</strong> Services
+                            financiers (prêt, échange) sans intermédiaire bancaire.</li>
+                        <li><strong><span class="term-pill">DePIN</span> (Decentralized Physical Infrastructure)
+                                :</strong> Réseaux physiques (Wifi, GPU) gérés par des incitations crypto.</li>
+                        <li><strong>Bounty :</strong> Mission à la tâche rémunérée en stablecoins (USDC), souvent
+                            premier revenu d'un étudiant.</li>
+                    </ul>
+                    <h4>Segmentation de la Demande</h4>
+                    <p>Le marché ne cherche pas "un dev blockchain", mais des spécialistes par verticale.</p>
+                    <table class="kpi-table">
+                        <caption>Segmentation des Rôles Web3 (2025)</caption>
+                        <thead>
+                            <tr>
+                                <th>Segment</th>
+                                <th>Rôles Clés</th>
+                                <th>Livrables Concrets</th>
+                                <th>Compétence Dominante</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>DeFi</strong></td>
+                                <td>Smart Contract Eng.</td>
+                                <td>AMM, Lending Protocol, Vaults</td>
+                                <td>Mathématiques & Sécurité</td>
+                            </tr>
+                            <tr>
+                                <td><strong><span class="term-pill">DePIN</span></strong></td>
+                                <td>Rust Embedded Eng.</td>
+                                <td>Drivers IoT, Proof-of-Coverage</td>
+                                <td>Optimisation Bas-niveau</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Infra</strong></td>
+                                <td>DevOps / <span class="term-pill">RPC</span> Eng.</td>
+                                <td>Indexers, Validators, Nodes</td>
+                                <td>Linux, Docker, Rust</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Consumer</strong></td>
+                                <td>Mobile dApp Dev.</td>
+                                <td>Wallet UI, Payment SDK</td>
+                                <td>UX/UI, React Native</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Pourquoi Solana est un Accélérateur d'Employabilité</h4>
+                    <p>Contrairement à Ethereum (EVM) qui est saturé et fragmenté (L2s), Solana offre un écosystème
+                        unifié et en hyper-croissance (+500% d'adresses actives en 2024). Pour un junior, la courbe
+                        d'apprentissage est plus raide (Rust), mais la concurrence est moindre et les primes sont plus
+                        élevées. La <strong>Superteam</strong> offre un pipeline direct vers l'emploi via Earn.</p>
+                    <div>
+                        <h4>Market Intelligence – Q4 2025</h4>
+                        <ol>
+                            <li><strong>Postes ouverts :</strong> 15~000+ offres actives en Remote Global.</li>
+                            <li><strong>Pénurie :</strong> 58% des Lead Techs citent le recrutement d'ingénieurs Rust
+                                seniors comme leur blocage n°1.</li>
+                            <li><strong>Développeurs Actifs :</strong>
+                                < 25~000 développeurs crypto mensuels vs 25M devs Web2. L'opportunité d'arbitrage est de
+                                    x1000.</li>
+                        </ol>
+                    </div>
+                </section>
+                <section>
+                    <h3>Dynamique Salariale</h3>
+                    <h4>Hypothèses de Lecture (TND vs USD)</h4>
+                    <ul>
+                        <li><strong>Conversion :</strong> 1 USD ≈ 3.1 TND.</li>
+                        <li><strong>Fiscalité :</strong> En statut "Exportateur de Services" (entreprise totalement
+                            exportatrice), l'imposition est avantageuse, maximisant le net.</li>
+                        <li><strong>Réalité Marché :</strong> Le salaire "Junior" Web3 (60k$) correspond souvent à un
+                            salaire "VP Engineering" sur le marché local.</li>
+                    </ul>
+                    <h4>Grille de Rémunération Standard</h4>
+                    <table>
+                        <caption>Grille Salariale Web3 (Remote Global) vs Local</caption>
+                        <thead>
+                            <tr>
+                                <th>Rôle</th>
+                                <th>Junior (0-2 ans)</th>
+                                <th>Senior (3+ ans)</th>
+                                <th>Pré-requis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Solana Rust Engineer</td>
+                                <td>60k\$ - 90k\$</td>
+                                <td>140k\$ - 220k\$</td>
+                                <td>Portfolio GitHub Solide</td>
+                            </tr>
+                            <tr>
+                                <td>Security Auditor</td>
+                                <td>80k\$ - 120k\$</td>
+                                <td>250k\$+</td>
+                                <td>Track Record de vulnérabilités trouvées</td>
+                            </tr>
+                            <tr>
+                                <td>Fullstack dApp</td>
+                                <td>50k\$ - 80k\$</td>
+                                <td>110k\$ - 160k\$</td>
+                                <td>Portfolio React + Anchor</td>
+                            </tr>
+                            <tr>
+                                <td><em>Dev Web2 (Tunisie)</em></td>
+                                <td><em>15k - 25k TND</em></td>
+                                <td><em>40k - 60k TND</em></td>
+                                <td><em>Diplôme Ingénieur</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Modèle ROI Candidat (Simulation 1 an)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Scénario</th>
+                                <th>Revenu Cible</th>
+                                <th>Time-to-Revenue</th>
+                                <th>Risques</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Prudent</strong></td>
+                                <td>1 500 \$/mois</td>
+                                <td>4 mois post-cursus</td>
+                                <td>Marché Bear, Anglais moyen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Médian</strong></td>
+                                <td>3 000 \$/mois</td>
+                                <td>2 mois post-cursus</td>
+                                <td>Concurrence, Portfolio standard</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Top Gun</strong></td>
+                                <td>5 000 \$/mois</td>
+                                <td>Pendant le cursus (S20)</td>
+                                <td>Burnout, Gestion charge travail</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Croissance du Marché</h3>
+                    <h4>Définition de l'Index</h4>
+                    <p>Le graphique ci-dessous agrège le volume d'offres d'emploi techniques (Engineering, Product,
+                        Design) postées sur les 5 principaux job boards crypto, normalisé sur une base 100 en Janvier
+                        2021.</p>
+                    <h4>Lecture Stratégique</h4>
+                    <p>La corrélation avec le prix des actifs (BTC/SOL) diminue : les entreprises construisent (Build)
+                        même en bear market. Cela signifie que l'embauche se professionnalise et devient moins volatile.
+                        Pour RBK, cela valide la stratégie de "formation longue" (7 mois) qui lisse les cycles de court
+                        terme.</p>
+                    <canvas id="chartTalentsTVL"></canvas>
+                    <canvas id="chartJobIndex"></canvas>
+                </section>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

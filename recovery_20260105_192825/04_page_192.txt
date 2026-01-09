@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Chapitre 25. ÉLÉMENTS DE DIFFÉRENCIATION
+
+
+                                                    TAB. 25.3 : Checklist d’Audit Code IA
+
+
+                                   Point de Contrôle Risque IA                       Validation Humaine
+                                   Logique Invariante Hallucination de règles métier Preuve mathématique
+                                   Vecteurs d’Attaque Oubli de ”Reentrancy Guard” Analyse statique
+                                   Edge Cases         Gestion naïve des erreurs      Tests de limites
+
+
+
+
+25.3 Dual Track Solana/EVM : Flexibilité Stratégique
+
+
+
+
+                                                                         EL
+   Pourquoi choisir ? Le marché valorise la polyvalence. Nos ingénieurs sont ”T-Shaped” : experts profonds sur une stack (ex : Solana) et
+compétents sur l’autre (EVM). Cela garantit une employabilité maximale et une capacité à auditer des architectures cross-chain.
+
+
+
+
+                                                                      TI
+                                              TAB. 25.5 : Comparatif Technique Solana vs EVM
+
+
+
+
+                                                           D   EN
+                                       Dimension     Solana (Track A)          EVM (Track B)
+
+
+
+
+                                                        FI
+                                       Modèle Mental Stateless (Account Model) Stateful (Contract Storage)
+                                       Langage       Rust + Anchor             Solidity + Foundry
+                                       Performance
+                                                    NParallélisme (SVM)        Séquentiel (EVM)
+                                             CO
+                                       Sécurité      Ownership checks          Reentrancy guards
+
+
+
+
+25.4 Intégration Superteam : Opportunités Directes
+   Superteam n’est pas un partenaire, c’est notre client. RBK est conçu comme une usine à talents pour l’écosystème Superteam (Bounties,
+Grants, Jobs).
+
+Processus
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 190 sur 316
+

@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+                                       Table : Matrice Compétence → Preuve → Outil (QA Web3)
+
+                                 Compétence       Preuve attendue                  Outil
+                                 Unit/Integration Suite rejouable + coverage       Foundry/Anchor tests
+                                 Fork testing     Scénarios mainnet-like           Anvil/Hardhat fork
+                                 Fuzz/Invariants Campagne + rapport + minimisation Foundry fuzz/Trident
+                                 CI Gates         Pipeline bloquante + artefacts   CI/CD
+                                 E2E dApp         Flows wallet + tx receipts       Playwright/Cypress
+
+
+
+14.7 Fiche Métier 7 : Developer Advocate & Technical Writer
+
+
+
+
+                                                                       EL
+Résumé métier Le DevRel/Technical Writer est la voix technique du protocole. Il rend le produit adoptable via documentation, SDKs,
+
+
+
+
+                                                                    TI
+exemples, support d’intégration, et boucle de feedback vers l’équipe core. C’est un multiplicateur de croissance : il transforme une tech
+”bonne” en tech ”utilisée”.
+
+
+
+
+                                                              EN
+Mission et périmètre
+
+
+
+
+                                                         D
+                                                      FI
+    • Produire une documentation complète : Quickstart, guides, API, architecture, runbooks intégration.
+
+                                                  N
+    • Maintenir des SDKs, examples, starters et templates.
+                                            CO
+    • Assurer le support technique (issues, Discord, forums), et formaliser les patterns de résolution.
+
+    • Organiser le feedback produit : bugs, frictions d’intégration, demandes API, priorisation.
+
+Responsabilités cœur (opérationnelles)
+
+  1. Docs Architecture : structure doc (learning path), style guide, versioning, dépréciations.
+
+  2. SDKs & Examples : starters maintenus, samples ”copy-paste safe”, tests des snippets.
+
+  3. Integration Support : playbooks d’intégration, debug guides, taxonomie d’erreurs.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 127 sur 316
+

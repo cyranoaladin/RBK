@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                Chapitre 11. Track C : Product Engineer
+
+
+11.2.2 Parcours de spécialisation (Semaines 19-28)
+
+  Choix de spécialisation
+
+
+   Axe                                     Modules & objectifs                           Livrables contractuels
+   Option A — Web3 Product Manager          • Tokenomics & Incentive Design : modélisa- • Playbook GTM complet (Pricing, messa-
+                                              tion cash-flow, gouvernance.                ging, funnels).
+
+                                            • Growth Engineering : campagnes referral • Smart sheet ”Growth Experiments” avec
+                                              on-chain, segmentation CRM.               KPIs.
+
+
+
+
+                                                                     EL
+                                       • GTM & Compliance : pricing, réglementa- • Dossier Contrat de Partenariat Pédago-
+
+
+
+
+                                                                  TI
+                                         tion marketplaces, storyboards UX.        gique aligné produit.
+   Option B — Web3 Full-Stack Engineer • Automation & Bots : Chainlink Automa- • Bot opérationnel (sniping/monitoring) au-
+
+
+
+
+                                                            EN
+                                         tion, bots Discord/TG.                    dité sécurité.
+
+
+
+
+                                                        D
+                                            • Observabilité & Sécurité : OpenTelemetry, • Tableau SRE avec budgets d’erreur.
+
+
+
+
+                                                     FI
+                                              SLO, alertes Threat Intel.
+                                                                                        • Infra codée (Terraform/Fly.io) + runbook
+
+                                                 N
+                                            • Production & DevOps : pipelines CI/CD       incident.
+                                           CO
+                                              (GitHub Actions), IaC pour déploiements
+                                              Web3.
+
+
+Travail en binôme et Capstone conjoints Chaque binôme associe un Product Manager et un Full-Stack. Ils co-conçoivent un SaaS Web3 :
+la composante Produit définit la roadmap, la métrologie et les boucles de croissance ; la composante Full-Stack implémente l’architecture
+technique, l’automatisation et les opérations. Le Capstone final est évalué sur la cohérence GTM, la robustesse technique et la capacité à
+itérer sur des métriques réelles.
+
+
+11.3 Profil de Sortie
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 104 sur 316
+

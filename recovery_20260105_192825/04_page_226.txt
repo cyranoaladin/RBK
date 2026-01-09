@@ -1,0 +1,65 @@
+                                                                                                                 Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    DÉTAILLÉ ET STANDARDS
+
+
+
+
+  CONTRAT DE LIVRABLE UNIQUE (Genesis/Explorer/Bâtisseur-Architecte)
+  Ce document fixe les exigences minimales non négociables. Tout manquement à un point KO entraîne un NO-GO immédiat.
+   • 1. Structure & Discipline (KO-Structure)
+        – Fichiers obligatoires : README.md, RUNBOOK.md, PROOFS.md, THREAT_MODEL.md, CHANGELOG.md, dossier adr/, dossier scripts/, dossier
+           tests/.
+        – ADR : Naming adr/NNNN-slug.md. Min. 1/sprint ou décis. structurante. Status/Context/Decision/Validation requis. KO si absentes.
+        – PROOFS.md : Ledger hebdo. Ordre imposé : 1.PRs, 2.Tag, 3.CI, 4.Démo, 5.Commandes Repro, 6.Docs, 7.ADR, 8.Metrics, 9.Issues. KO si
+
+
+
+
+                                                                                 EL
+           incomplet.
+   • 2. Reproductibilité (KO-Repro)
+        – Scripts obligatoires : setup.sh, lint.sh, test.sh, build.sh, dev.sh, smoke_test.sh.
+
+
+
+
+                                                                              TI
+        – Interface : Support --help, non-interactif, exit code standard.
+        – Règle d’Or : La séquence ./setup.sh && ./test.sh doit réussir sur une machine vierge.
+
+
+
+
+                                                                    EN
+   • 3. Tests & Qualité (KO-Tests)
+        – Commande : ./scripts/test.sh lance TOUS les tests. CI verte obligatoire.
+        – Seuils Genesis : ≥ 10 Tests U. + 1 Intégration ou Smoke Test.
+
+
+
+
+                                                         D
+        – Seuils Explorer : Unit + Integ + Min. 1 E2E (si UI/Flow).
+        – Seuils Bâtisseur/Architecte : E2E complets (Capstones) + Tests d’échec (Chaos/Error handling).
+
+
+                                                       FI
+        – Couverture : 1 cas nominal + 1 cas d’erreur par feature majeure.
+   • 4. Démo & Vérité (KO-Démo)
+                                             N
+        – Hebdo : 30-90s (Vidéo/Gif) montrant 1 User Story + 1 Erreur gérée.
+                                            O
+        – Gate : Démo live (10 min) reproductible par le jury via le Runbook.
+        – Anti-Storytelling : Toute affirmation (”ça marche”, ”sécurisé”) doit avoir une preuve (Lien, Log, Test, Code) dans PROOFS.md.
+                                       C
+
+   • 5. Sécurité & Ops (KO-Sécurité)
+        – THREAT_MODEL.md à jour. Checklist sécurité (docs/security/) cochée.
+        – Menaces majeures identifiées et mitigées (Preuves dans tests/guards).
+   Engagement : L’équipe s’engage à respecter ce contrat dès S01. Toute exception doit être justifiée par une ADR validée.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 224 sur 316
+

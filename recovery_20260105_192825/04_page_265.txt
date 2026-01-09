@@ -1,0 +1,45 @@
+O | RÉFÉRENTIEL DE COMPÉTENCES
+
+
+O.1 Matrice de Compétences
+
+
+
+
+                                                                   EL
+                                                                 TI
+                                     TAB. O.1 : Mapping Détaillé Compétences / Badges / Preuves
+
+
+
+
+                                                            N
+                                                          DE
+ Module         Compétence Clé                  Badge SBT        Preuve (Livrable)      Critère de Validation
+
+
+
+
+                                                   FI
+ Fundamentals   Algorithmique                   Algo Ninja       Profil Codewars        Rank 5kyu min.
+
+
+
+                                                  N
+ Rust Systems   Memory Safety (Borrow Checker) Rust Ace          Repo ”Rustlings”       100% Exos validés + 0 Warning clippy.
+                                             CO
+ Smart Contract Développement Logique           Protocol Architect Repo Capstone 2      Tests unitaires > 90% coverage.
+
+ Frontend       Intégration Wallet              dApp Builder     Repo Capstone 1        Connexion < 2s, Feedback UI fluide.
+
+ Sécurité       Audit                           Whitehat Jr      Rapport Audit Capstone Threat Model + 1 vulnérabilité (mock) trouvée.
+
+ Delivery       CI/CD                           DevOps Ready     GitHub Actions Logs    Build Vert + Deploy auto sur Devnet.
+
+ Soft Skills    Communication                   Squad Lead       Vidéo Demo Day         Pitch 3min clair, Slides pro.
+
+
+
+
+                                                                 263
+

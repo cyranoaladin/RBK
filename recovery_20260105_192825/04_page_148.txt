@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                              Chapitre 16. Stratégie marketing & acquisition
+
+
+  1. Option Genesis (Découverte) : Accès à la Genesis Pool (4 semaines) pour valider son appétence technique avec un investissement
+     initial limité et 100% flexible.
+
+  2. Option Explorer (Immersion) : Parcours Genesis →Explorer (4 + 12 semaines) financé par mensualités alignées sur la scolarité
+     (tuition annuelle 15 900 TND).
+
+  3. Option Nexus Launch (Complet) : Parcours intégral 48 semaines (Genesis Pool 4 + Explorer 12 + Bâtisseur 16 + Architecte 16)
+     suivi du Launchpad (forfait 3 300 TND + partage 30%), idéal pour les profils entrepreneuriaux.
+
+      Cas d’Usage : Le “Smart Start”
+      Profil : Étudiant hésitant avec side-job freelance.
+      Action : Rejoint la Genesis Pool, valide les Skill Mirror d’origine, signe ensuite le plan Explorer (paiement mensuel indexé
+
+
+
+
+                                                                          EL
+      sur 15 900 TND).
+
+
+
+
+                                                                       TI
+      Résultat : Remporte un bounty communautaire de 600$ et couvre ses mensualités Genesis + Explorer.
+      Décision : Intègre le Launchpad pour préparer son projet et accepte le forfait 3 300 TND financé par le bounty.
+
+
+
+
+                                                                 EN
+      ROI : Il autofinance la transition Genesis →Explorer et abaisse le risque perçu à zéro.
+
+
+
+
+                                                         D
+                                                      FI
+                              TAB. 16.5 : ROI Comparatif par Option (Sortie Junior : 2 500 TND brut/mois)
+
+                                                  N
+                                           CO
+Option            Cash-out Initial                                            Point d’Équilibre        Avantage Principal
+Genesis Pool      Frais modulaires, sans engagement long terme                < 3 mois (revenus bounties)
+                                                                                                       Découverte sécurisée, Skill Mirror
+                                                                                                       “Genesis Access”
+Explorer Track  Mensualités alignées sur 15 900 TND                       ≈ 6 mois (mission freelance) Portfolio opérationnel, accès Block
+                                                                                                       Check Explorer
+Nexus Launchpad Tuition complète + 3 300 TND (financé par ISA ou projets) < 12 mois (contrat CDI/CTO) Co-accompagnement marché + par-
+                                                                                                       tage 30% win-win
+
+
+
+
+16.4 Stratégie Multi-Canaux
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 146 sur 316
+

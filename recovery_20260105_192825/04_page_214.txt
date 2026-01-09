@@ -1,0 +1,62 @@
+                                                                                                   Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                      DÉTAILLÉ ET STANDARDS
+
+
+B.1.1 Exigences de Reproductibilité (Scripts Obligatoires)
+   La ”Reproductibilité en une commande” est la signature de l’ingénieur RBK. Tous les scripts suivants sont obligatoires (même si
+certains ne font qu’afficher ”N/A” avec explication) et doivent être exécutables depuis la racine du projet.
+
+Liste des Scripts Standardisés
+
+   • scripts/setup.sh : Installe les dépendances système/langage.
+
+   • scripts/lint.sh : Vérifie le style (clippy, eslint, prettier).
+
+   • scripts/test.sh : Exécute tous les tests. Doit échouer (exit != 0) en cas d’erreur.
+
+
+
+
+                                                                         EL
+   • scripts/build.sh : Construit les binaires ou contrats.
+
+
+
+
+                                                                      TI
+   • scripts/dev.sh : Lance l’environnement de développement local.
+
+
+
+
+                                                              EN
+   • scripts/smoke_test.sh : Vérifie que l’application démarre et répond (Healthcheck).
+
+
+
+
+                                                         D
+   • scripts/deploy_devnet.sh : Déploie sur le réseau de test (si applicable).
+
+
+
+
+                                                      FI
+Règles d’Interface
+                                                  N
+                                            CO
+   • Support de l’argument --help.
+
+   • Non-interactif : Aucun prompt bloquant (sauf login explicite).
+
+   • Codes de sortie standards (0 = Succès, !=0 = Échec).
+
+   KO-Repro (Éliminatoire)
+
+   Si la séquence ./scripts/setup.sh && ./scripts/test.sh échoue sur la machine de l’évaluateur, le projet est rejeté (NO-GO).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 212 sur 316
+

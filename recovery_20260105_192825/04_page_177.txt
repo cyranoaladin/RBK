@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Chapitre 22. FEUILLE DE ROUTE 120 JOURS
+
+
+  3. Rituels cadencés : Demo hebdo, Block Checks, revue Wellbeing par le Responsable Bien-être.
+
+
+                                              SPRINT 0               PRODUCTION                SÉLECTION              LANCEMENT
+                                          (Juridique, MVP)          (Contenu, Infra)         (Piscine, CPPS)         (Promo Alpha)
+
+
+                                   J-90                      J-60                      J0                      J60                   J120
+
+                                              FIG. 22.1 : Timeline 120 jours (Vue Exécutive) — Sprint 0 inclus
+
+
+                                                                TAB. 22.1 : Checklist Go/No-Go (Gates)
+
+
+
+
+                                                                                          EL
+               Gate          Validation      Critères Obligatoires                                  En cas de KO
+
+
+
+
+                                                                                       TI
+               Gate 0 (J-60) Sprint 0 Validé Avis juridique signé, MVP LMS, mentors clés onboardés. Pas de communication externe.
+               A (J-30)      Légal Ready     ISA conforme, Fonds bloqué (150 000 TND), assurances. Report Lancement.
+
+
+
+
+                                                                               EN
+               B (J0)        Infra Ready     Syllabus V1 figé, LMS opérationnel, Team Staffée.      Mode ”Dégradé” (Contenu JIT).
+               C (J60)       Candidats       > 100 Inscrits Piscine qualifiés.                      Extension période Marketing 2 sem.
+
+
+
+
+                                                                       D
+               D (J90)       Promo Ready 25 Contrats signés, 0 contentieux.                         Réduction taille promo.
+
+
+
+
+                                                                    FI
+                                                                    N
+                                                       CO
+22.2 Jalons Clés & Actions
+      Nous pilotons l’exécution par ”Workstreams”. Chaque action est priorisée (P0 Bloquant, P1 Critique, P2 Important).
+
+Workstream A : Juridique & Conformité
+
+      Owner : COO / Legal. DoD3 : Tous les contrats sont signés et stockés sécurisés.
+
+      • P0 : Validation modèle ISA v3 avec cabinet spécialisé.
+  3
+      Projet/Management/Qualité — Definition of Done (DoD) : liste les critères minimaux pour considérer un élément comme terminé et livrable.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                   Page 175 sur 316
+

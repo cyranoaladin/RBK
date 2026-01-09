@@ -1,0 +1,50 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                   Chapitre 24. TOKEN DE RÉPUTATION & ALUMNI PROGRAM
+
+
+
+                                                 Étudiant (Wallet)                 LMS (Résultats)
+
+
+
+
+                                                 Possède                            Moteur Règles
+
+
+                                                                                             Valid ?
+
+
+                                                                                    Multisig Issuer
+
+
+
+
+                                                                           EL
+                                                                    Mint
+                                                 Blockchain (SBT)
+
+
+
+
+                                                                        TI
+                                                                 EN
+                                                    FIG. 24.1 : Architecture d’Émission SBT
+
+
+
+
+                                                           D
+                                                        FI
+                                                    N
+                                                TAB. 24.1 : Catalogue des Badges SBT (Extrait)
+                                             CO
+                                Badge       Niveau Critères                           Valeur Employeur
+                                RS-Elite    Gold   Top 5% Piscine Rust.               Capacité cognitive, résilience.
+                                Solana-Arch Silver Capstone validé avec Audit Clean. ”Production-Ready” Engineer.
+                                Auditor-Jr Bronze 3 Rapports de vulnérabilité soumis. Conscience sécurité.
+                                Team-Lead Silver A géré une squad de 4 devs.          Soft skills, Management.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 184 sur 316
+

@@ -1,0 +1,49 @@
+14 | FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+    Ce chapitre détaille les 7 profils de sortie du cursus RBK. Chaque fiche est un standard industriel définissant les attentes, responsabilités
+
+
+
+
+                                                                         EL
+et preuves exigées. L’objectif n’est pas de ”décrire un poste”, mais de rendre le niveau observable : un diplômé RBK doit être capable de
+produire des livrables auditables, rejouables, et comparables aux standards d’un studio Web3.
+
+
+
+
+                                                                      TI
+                                                               EN
+14.1 Fiche Métier 1 : Smart Contract Engineer & Auditor (Le « Guardian »)
+
+
+
+
+                                                          D
+Résumé métier Le Guardian est le profil le plus critique : il construit des protocoles qui manipulent de la valeur et il sait les attaquer
+
+
+
+
+                                                       FI
+mentalement avant que d’autres ne le fassent. Il délivre du code audit-ready, documenté, testé, instrumenté, et il sait gérer le post-prod
+
+                                                    N
+(incident, patch, gouvernance, communication). Un Guardian qui ne sait pas écrire des tests négatifs et formaliser des invariants n’est pas
+”junior” : il est dangereux.
+                                             CO
+Mission et périmètre
+
+    • Concevoir et livrer des smart contracts (Solana/Anchor ou EVM selon track) avec garanties : invariants, contrôles d’accès, intégrité
+      économique.
+
+    • Réaliser des audits internes et externes : revue ”impitoyable”, modèle de menaces, classification des findings, correctifs, preuves.
+
+    • Organiser la sécurité opérationnelle : Runbooks, Multisig ops, war room, surveillance.
+
+
+
+
+                                                                      115
+

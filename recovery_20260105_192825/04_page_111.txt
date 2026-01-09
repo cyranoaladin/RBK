@@ -1,0 +1,51 @@
+13 | CAPSTONES (PROJETS SIGNATURES)
+
+
+
+
+                                                                    EL
+13.1 Philosophie du Capstone : Le Standard « Studio »
+   Chez RBK, un Capstone n’est pas un projet d’école. C’est un produit ”Mainnet-Ready” qui respecte les standards d’un studio de déve-
+
+
+
+
+                                                                 TI
+loppement professionnel. Il ne s’agit pas de prouver que ”ça marche”, mais que ”ça ne peut pas casser”.
+
+
+
+
+                                                           EN
+                                         TAB. 13.1 : Studio-Grade Checklist (Non-Négociable)
+
+
+
+
+                                                        D
+                                Catégorie Exigence                                      Preuve
+
+
+
+
+                                                     FI
+                                Sécurité  Threat Model formalisé AVANT le code          Doc STRIDE
+
+
+                                                 N
+                                Qualité   Zéro warning linter, coverage > 80%           Rapport CI
+                                Ops       Déploiement scripté et reproductible          Makefile / Taskfile
+                                          CO
+
+13.2 Les 3 Projets Signatures (Cahier des Charges Industriel)
+   Chaque Capstone simule un livrable client. Le niveau d’exigence est ”Audit Ready”.
+
+
+13.2.1 Capstone 1 — Wallet & Transaction Reliability Pack (Frontend/UX)
+   Focus : Expérience Utilisateur & Fiabilité RPC.
+
+
+
+
+                                                                 110
+

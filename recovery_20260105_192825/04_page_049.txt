@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Chapitre 2. Stratégie : Note de Cadrage
+
+
+2.11.1 Rétroplanning des Grands Jalons
+    • Mois 1-2 : Finalisation Ingénierie Pédagogique & Recrutement Staff.
+    • Mois 3 : Lancement Campagne Candidats (Marketing).
+    • Mois 4 : Sélection & Bootcamps pré-rentrée.
+    • Mois 5 : KICK-OFF Cohorte #1 (S0).
+    • Mois 11 : Demo Day & Graduation.
+
+
+2.11.2 Budget et Coûts
+    Le budget prévisionnel distingue les CAPEX (Infrastructure matériel, Contenu propriétaire) des OPEX (Salaires staff, Marketing, Cloud). Une provision pour risque
+
+
+
+
+                                                                                  EL
+de 10% est intégrée.
+
+
+
+
+                                                                                TI
+                                                                        N
+2.12 Conduite du changement
+
+
+
+
+                                                                      DE
+    La transformation vers RBK 2.0 demande un accompagnement soutenu :
+
+
+
+
+                                                               FI
+    • Formation des formateurs : Montée en compétence obligatoire sur Rust et Solidity Avancé.
+
+
+
+                                                              N
+    • Communication : Clarifier le passage d’une ”école de code” à un ”Centre d’Excellence Web3”.
+                                                        CO
+    • Adhésion : Impliquer les anciens (Alumni) comme mentors pour faciliter la transition culturelle.
+
+
+
+2.13 Conclusion de la Note
+   Cette note de cadrage valide la faisabilité et la pertinence du pivot RBK 2.0. En alignant l’excellence technique sur la réalité du marché Web3, RBK se dote d’un
+avantage concurrentiel décisif. La structure Dual-Track, soutenue par une gouvernance rigoureuse et une gestion des risques proactive, assure la pérennité du modèle.
+
+   w Recommandation
+   Il est recommandé de VALIDER ce cadrage et de lancer immédiatement la phase d’exécution (Recrutement Staff Technique & Préparation Infrastructure).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 48 sur 316
+

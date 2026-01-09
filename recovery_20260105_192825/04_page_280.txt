@@ -1,0 +1,102 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                                   Annexe U. Registre des risques opérationnels
+
+
+                                                              Déclen-           Pré-               Conti-
+ID         Cat.     Risque           P I Sc. Niv. Own.                                                               KPI            St.
+                                                              cheurs            vention            ngence
+R-11       FIN/FX   Risque change / 3 3 9      Mo- CEO      +Hausse     coûts Hedging “soft” : Augmenter             Part coûts en Ou-
+                    inflation (coûts           déré Ops      SaaS4 , factures buffer, pricing ré- prix prochaines devise      (%), vert
+                    outils en devise,                        en USD5 /EUR, visable, négocia- cohortes,           ré-variance coût
+                    recettes en TND)                         variation TND. tion annuelle, al- duire          outils outil,   mar-
+                    impactant marge.                                          ternatives open- non        critiques, ge/étudiant.
+                                                                              source6 .           contractualiser
+                                                                                                  en TND si pos-
+                                                                                                  sible.
+R-12       OPS/     Absence        de 3 4 12 Élevé Ops      +Chiffres contra- Single source of Gel       rédaction, Nb       inco- Ou-
+           PROC     processus docu-                HoP       dictoires,   sec- truth (Factsheet), nettoyage,    au- hérences      vert
+                    mentaire     (ver-                       tions dupliquées,CHANGELOG, dit              complet, détectées,
+                    sioning, sources,                        ToC erronée, in- build CI doc, réémission PDF, build LaTeX
+                    changelog)     →                         puts manquants. règles d’édition. checklist qualité. green, temps
+                    incohérences du                                                                                 correction.
+                    livre blanc.
+R-13       PART     Promesses       de 3 3 9   Mo- CEO      +Absence        de Pipeline parte- Remplacer par Nb partena- Ou-
+           NERS     partenariats (eco-         déré HoP      logos/letters, an- nariats    (tiers), mentors locaux/- riats signés, vert
+                    system, mentors,                         nulations, délais MOU       simples, diaspora, décaler heures men-
+                    sponsors)     non                        de réponse.        calendrier office annonce, recen- tors réelles,
+                    concrétisées →                                              hours, transpa- trer sur preuves taux présence
+                    baisse crédibilité.                                         rence “targets vs internes.          invités.
+                                                                                signed”.
+
+
+
+
+                                                                                                                                                  EL
+R-14       CAREER   Insertion     pro 3 5 15 Élevé Career     Peu       d’offres, Service carrière Prolonger      ac- Placement       Ou-
+                    insuffisante                   + HoP      apprenants sans structuré : port- compagnement, S1–S24              vs vert
+
+
+
+
+                                                                                                                                                  TI
+                    (remote/boun-                             portfolio, faible folio      GitHub, booster “boun- S25–S48,
+                    ties/placements)                          activité contribu- mock interviews, ties      sprints”, nb bounties,
+
+
+
+
+                                                                                                                                                N
+                    →        promesse                         tions.              bounties   enca- mentorat     CV/- part     portfo-
+
+
+
+
+                                                                                                                                             DE
+                    d’employabilité                                               drées, demo day LinkedIn, parte- lios “ready”,
+                    affaiblie.                                                    panel.           nariats RH.        offres reçues.
+
+
+
+
+                                                                                                                                             FI
+R-15       PED/     Usage irrespon- 4 4 16 Cri- HoP +PR          “copiées”, Règles IA : “IA Évaluations          Taux échec Ou-
+
+
+
+
+                                                                                                                                            N
+           ETHICS   sable de l’IA (vibe    tique SecLead incapacité expli-=        stagiaire”, orales, rewriting oral defense, vert
+
+
+
+
+                                                                                                                                   CO
+                    coding) : plagiat,                   quer code, bugs explication obli- en live, sanctions taux rework
+                    compréhension                        répétés, triche gatoire,         oral pédagogiques, PR,         simila-
+                    faible, code non                     sur tests.         defense,     jour- rework obliga- rité         code,
+                    maîtrisé.                                               naux décisions toire.                incidents de
+                                                                           (ADR).                                triche.
+R-16       TECH/    Gestion secrets 3 5 15 Élevé SecLead Secrets   com- Politique secrets, Rotation immé- Nb fuites dé- Ou-
+           SEC      / clés (API keys,            + Ops mités,       clés scans (gitleaks), diate, suppres- tectées, temps vert
+                    wallets)      mal                    partagées   sur .env.example, ro- sion historique, rotation,
+                    cadrée → exposi-                     chat, env non tation clés, sand- incident report, conformité
+                    tion accidentelle.                   sécurisé.       box devnet/test- formation     ex- scans repo.
+                                                                         net.              press.
+R-17       OPS/LMS Dépendance à un 3 3 9       Mo- Ops        Panne     service, Backups, miroirs, Basculer canal Temps indis- Ou-
+                   outil unique (LM-           déré           perte       accès, exports hebdo, secours,      res- ponibilité,   vert
+                   S/Discord/Git)                             suppression acci- documentation taurer backup, MTTR, nb ba-
+                   ou indisponibilité                         dentelle.          accès, comptes replanifier dead- ckups réussis.
+                   → perte continui-                                             admin multiples. lines.
+                   té.
+                                                                                                                       Suite page suivante
+
+
+       4
+         Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+       5
+         Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+       6
+         Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                                Page 278 sur 316
+

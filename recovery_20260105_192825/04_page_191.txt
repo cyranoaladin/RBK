@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                            Chapitre 25. ÉLÉMENTS DE DIFFÉRENCIATION
+
+
+                                              TAB. 25.1 : Grille de Maturité Senior-by-Design
+
+
+                              Axe           Niveau 0 (Junior) Niveau 4 (Senior RBK)          Preuve
+                              Architecture Code monolithique Modulaire, Composabilité        Diagramme C4
+                              Sécurité      ”Ça marche”       ”C’est incassable”             Threat Model
+                              Tests         Manuels           CI/CD, Fuzzing, Property-Based Rapport Coverage
+                              Collaboration Solo coder        Reviewer implacable            Historique PR
+
+
+
+
+                                                   Technique          Systémique
+
+
+
+
+                                                                        EL
+                                          Codeur (S0)      Builder (S12)      Architecte (S28)
+
+
+
+
+                                                                     TI
+                                              FIG. 25.1 : Transformation Codeur → Architecte
+
+
+
+
+                                                              EN
+25.2 Approche « Cyborg » : IA-Augmented Engineering
+
+
+
+
+                                                          D
+                                                       FI
+   L’IA n’est pas une béquille, c’est un exosquelette. Chez RBK, nous formons des ”Cyborgs” : des ingénieurs qui utilisent l’IA pour multiplier
+leur productivité par 10, tout en gardant le contrôle absolu sur la qualité et la sécurité.
+                                                   N
+                                            CO
+Protocole d’Usage
+
+    • Autorisé : Documentation, boilerplate, génération de tests unitaires, explication d’erreurs.
+
+    • Interdit : Copier-coller de logique métier critique sans audit ligne par ligne.
+
+    • Traçabilité : Tout prompt générant du code prod doit être loggé (Git commit message ou comments).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 189 sur 316
+

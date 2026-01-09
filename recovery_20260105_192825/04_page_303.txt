@@ -1,0 +1,40 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+Règles de gouvernance incidents (recommandation).
+• Sev1/Sev2 : postmortem obligatoire (cause, timeline, correctifs, prévention) + action(s) dans registre risques.
+
+• Drills : consigner scénario, temps de bascule, amélioration runbook.
+
+• Objectif MTTR : suivre tendance mensuelle ; si dérive, déclencher session “runbook hardening”.
+
+
+
+
+V.1 Annexe X — Traceability Matrix (SSOT & Release Gate)
+But. Cette matrice rend la documentation audit-ready : chaque paramètre contractuel est traçable jusqu’à sa macro SSOT4 , ses points d’exposition dans les sections critiques, et les contrôles automatisés (local
+
++ CI) qui empêchent toute régression.
+
+SSOT. Toutes les valeurs contractuelles sont centralisées dans tex/params.tex. Toute occurrence en dur (hors SSOT) dans les fichiers critiques est un NO-GO.
+
+
+
+
+                                                                                                          EL
+                                                                                                     TI
+                                                                                                  N
+                                                                                         DE
+                                                                                       FI
+                                                                                    N
+                                                                             CO
+
+
+
+
+    4
+        Finance/Juridique/Compliance — Single Source of Truth (SSOT) : garantit que les paramètres contractuels et références sensibles sont définis en un point unique.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                               Page 301 sur 316
+

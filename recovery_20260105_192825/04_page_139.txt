@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                Chapitre 15. Business Plan
+
+
+                                         TAB. 15.2 : Projection financière — scénario réaliste (TND)
+
+
+                            Indicateur                                 Année 1          Année 2          Année 3
+                            Effectif Genesis annuel                          30              60               90
+                            Diplômés (80% de rétention)                      24              48               72
+                            CA formation facturé (B2C)                  477 000          954 000        1 431 000
+                            Revenus B2B / Corporate                      60 000          120 000          180 000
+                            CA total (formation + B2B)                  537 000        1 074 000        1 611 000
+                            Encaissements ISA de l’année                         0        90 000          216 000
+
+
+
+
+                                                                       EL
+                            Forfait Nexus Réussite                       99 000          198 000          297 000
+                            Pool mentors (20% du CA formation)           95 400          190 800          286 200
+
+
+
+
+                                                                    TI
+                            Charges opérations RBK                 240 000 TND       270 000 TND   320 000 TND
+
+
+
+
+                                                              EN
+                            Marketing (CAC scénario)                75 000 TND        30 000 TND       45 000 TND
+                            Dotation fonds de garantie ISA         150 000 TND        30 000 TND       30 000 TND
+
+
+
+
+                                                          D
+                            Résultat opérationnel après ISA           −122 400           445 200          848 800
+
+
+
+
+                                                       FI
+                                                      N
+                                            CO
+  Lecture clé
+      • Année 1 volontairement déficitaire : la dotation du fonds de garantie et le budget marketing Sprint 0 génèrent un déficit de
+        −122 400 TND, pré-financé par l’apport initial et/ou une ligne de crédit court terme.
+
+      • Point mort : l’activité devient cash-flow positive dès l’année 2 avec un excédent opérationnel de 445 200 TND, permettant de
+        reconstituer les réserves et de financer la montée en puissance.
+
+      • Levier ISA : les encaissements différés dépassent 200 000 TND en année 3 ; ils sont systématiquement fléchés vers le fonds de
+        garantie et le renforcement du service carrière.
+
+   Analyse de Trésorerie : L’Année 1 est financée par le mix Upfront. L’effet de levier ISA commence à impacter significativement la
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 137 sur 316
+

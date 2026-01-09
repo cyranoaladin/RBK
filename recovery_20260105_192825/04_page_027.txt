@@ -1,0 +1,37 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+
+   À la fin du cursus, chaque ”Survivor” possède :
+
+  1. 3 Projets Capstone complets (Code, Tests, Docs) sur GitHub.
+
+  2. 1 Audit Report (Sécurité) sur un protocole tiers.
+
+  3. 1 Contribution Open Source validée (PR).
+
+  4. NFT Skills “Launch Proof” attestant de la réussite Block Check final, couplé au SBT “Audit-Ready”.
+
+   Disclaimer
+
+
+
+
+                                                                     EL
+   RBK est un programme d’ingénierie logicielle. Ce n’est pas une académie de trading, d’investissement ou de conseil financier. Nous
+   formons des constructeurs, pas des spéculateurs. Tout contenu relatif aux tokens est abordé sous l’angle technique et technologique.
+
+
+
+
+                                                                  TI
+                                                        D   EN
+                                                     FI
+                                                 N
+                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 26 sur 316
+

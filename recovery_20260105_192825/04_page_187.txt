@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                             Chapitre 24. TOKEN DE RÉPUTATION & ALUMNI PROGRAM
+
+
+  Conformité & Anti-Spéculation
+
+   Les SBT RBK sont strictement incessibles. Si un wallet est compromis, le SBT est ”brûlé” (revoked) et réémis vers une nouvelle adresse
+   après vérification d’identité (KYC). Ils n’ont aucune valeur monétaire et ne donnent droit à aucun dividende.
+
+
+
+24.2 Usages des SBT
+   Les SBT ne sont pas des objets de collection, ce sont des clés d’accès (”Token Gating”).
+
+1. Vérification Employeur Instantanée Plus besoin d’appeler l’école pour vérifier un diplôme. L’employeur scanne l’adresse publique
+
+
+
+
+                                                                       EL
+du candidat et voit instantanément ses certifications.
+
+
+
+
+                                                                    TI
+ Ď Story : La Vérification en 3 secondes
+
+
+
+
+                                                             EN
+      Avant : Un recruteur reçoit un PDF, doit appeler l’école, attendre 24h pour confirmer qu’il n’est pas falsifié. Coût : Temps +
+      Risque. Avec RBK SBT : Le recruteur colle l’adresse du candidat sur l’Explorer RBK. Le badge ”Certified Graduate” apparaît
+
+
+
+
+                                                        D
+      instantanément avec la signature cryptographique de l’école et le lien vers le code du Capstone. Résultat : Coût 0$, 3 secondes,
+
+
+
+
+                                                     FI
+      Confiance Absolue.
+
+                                                  N
+                                           CO
+2. Accès au Job Board Premium Seuls les détenteurs du badge ”Ready-to-Deploy” (cursus validé) peuvent voir les offres d’emploi
+exclusives de nos partenaires ”Gold”. Cela garantit aux recruteurs une qualité de candidature 100% filtrée.
+
+3. Gouvernance Alumni Le poids de vote dans la DAO Alumni est pondéré par les badges. Un ”Senior Mentor” a plus de voix qu’un
+”New Grad” sur les décisions pédagogiques (mais pas financières).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 185 sur 316
+

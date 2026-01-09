@@ -1,0 +1,90 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                   Action                                            Dé-   Éché-           Livrable        Dépend- Preuve
+                                       Act. Risque                      Type    Prio Owner                       Statut
+                                                   (verbe + livrable)                                but   ance            (DoD)           ances   (Trace)
+                                       ID
+                                       A- R-03     QA labs (reproduc- Préventif P1   TA + Ops        T0-60 T0-20 À faire   100% labs tes- A-010       Checklist QA
+                                       011         tibilité sur machine                                                    tés + correctifs           signée
+                                                   neuve)
+                                                                                                                                         Avancement
+                                       A- R-03     Plan de réduction Conti-        P2   HoP          T0-30 T0-14 À faire   Liste modules         Note
+                                                                                                                                         QA
+                                       012         périmètre (si retard) ngence                                            “cut” + com
+                                                                                                                           interne
+                                       A- R-04    Constituer pool       Préventif P1    HoP          T0-90 T0-60 À faire   Liste + dis-  Réseau Doc pool
+                                       013        de remplaçants (2                                                        ponibilité +
+                                                  profils/compétence)                                                      tarifs
+                                       A- R-04    Enregistrer cours     Préventif P2    HoP + Men- T0-14 T0+     À faire   Replays +     Calen-  Liens replays
+                                       014        critiques + notes                     tors             14                supports ver- drier
+                                                  complètes                                                                sionnés
+                                       A- R-05    Créer test d’en-      Préventif P1    HoP          T0-75 T0-60 À faire   Test + barème ICP     PDF test
+                                       015        trée (JS/TS2 , Git,                                                      + seuils
+                                                  logique, anglais)
+
+
+
+
+                                                                                                           EL
+                                       A- R-05    Mettre “Bridge”       Préventif P1    HoP + TA     T0-60 T0-30 À faire   Programme      A-015       Syllabus
+
+
+
+
+                                                                                                     TI
+                                       016        2–4 semaines                                                             bridge + mini-             bridge
+                                                  (TS+Git+tests)                                                           projet
+
+
+
+
+                                                                                                    N
+                                       A- R-05    Mettre en place       Correctif P2    HoP          T0+ T0+7 À faire      Matrice bi-    Cohorte     Planning
+
+
+
+
+                                                                                           DE
+                                       017        binômage “strong/-                                 0                     nômes +
+                                                  weak” + tutorat                                                          règles
+
+
+
+
+                                                                                         FI
+                                       A- R-06    Implémenter règles Préventif P1       Ops + Tech   T0-30 T0-14 À faire   Protection     Repos       Config Git
+
+
+
+
+                                                                                        N
+                                       018        Git : PR obligatoires                 Lead                               main + CI      A-010
+
+
+                                                                                  CO
+                                                  + branch protection                                                      required
+                                                                                        HoP
+                                       A- R-06    Créer rubric PR       Préventif P1                 T0-30 T0-14 À faire   Templates        A-018     Fichiers .gi-
+                                                                                        + SecLead
+                                       019        + template PR +                                                          actifs sur repos           thub
+                                                  codeowners
+                                       A- R-06    Mettre “merge         Correctif P2    HoP          T0+ T0+     À faire   Procédure +     KPI CI     Procédure
+                                       020        freeze” si CI rouge                                0   90                déclencheurs
+                                                  > 24h
+                                       A- R-07    Choisir 2 provi-      Préventif P1    Ops + Tech   T0-45 T0-20 À faire   Runbook         Budget     Doc runbook
+                                       021        ders RPC/track +                      Lead                               RPC + clés
+                                                  fallback strategy                                                        + quotas
+                                       A- R-07    Ajouter mocks         Préventif P2    Tech Lead    T0-30 T0-10 À faire   Scripts mocks   A-010      Repo
+                                       022        locaux + modes                                                           + doc usage
+                                                  “offline labs”
+                                                                                                                                                    Suite page suivante
+
+
+
+  2
+      Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                     Page 283 sur 316
+

@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                            Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+17.3.2 Tableau de réponse rapide
+
+                                              TAB. 17.5 : Déclencheurs et plans de continuité
+
+
+Scénario           Déclencheur         Actions H+4 → H+24                                                                            Responsable
+Outage Venture     SLA < 99%,          Bascule vers LMS backup (Moodle RBK), diffusion labs offline, collecte livrables via Git mir- Nexus CTO
+Engine             plateforme          ror, information cohorte                                                                      (R), RBK Ops
+
+
+
+
+                                                                               EL
+                   indisponible > 2h                                                                                                 (A)
+Panne blockchain Solana/RPC            Suspension travaux on-chain, lancement modules Rust Fundamentals, distribution simula- Lead Track
+majeure            injoignable,        teurs locaux, briefing sécurité                                                               Solana (R),
+
+
+
+
+                                                                            TI
+                   incident sécurité                                                                                                 Responsable
+                   critique                                                                                                          Bien-être (C)
+
+
+
+
+                                                                  EN
+Rupture mentor clé Indisponibilité >   Activation Mentor-in-a-Box, rotation bench alumni, replanification séances, communication Nexus People
+                   48h d’un mentor     cohorte                                                                                       Lead (R), RBK
+                   Core                                                                                                              Program
+
+
+
+
+                                                       D
+                                                                                                                                     Director (A)
+Fermeture campus Crise sanitaire,      Passage full-remote, allocation matériel (kits 4G, laptops), mise en place plages Wellbeing RBK COO (A),
+
+
+
+                                                     FI
+                 sinistre locaux       renforcées                                                                                    Nexus
+                                                                                                                                     Responsable
+                                           N
+                                                                                                                                     Bien-être (R)
+                                          O
+                                       C
+
+17.3.3 Protocole de tests et amélioration
+ • Exercices de simulation trimestriels (table-top) documentés et revus en comité qualité.
+
+ • Post-mortem systématique après chaque activation du PCP, intégrant feedbacks apprenants et mentors.
+
+ • Mise à jour des indicateurs de fatigue et des seuils d’alerte dans le cockpit central.
+
+ • Audit externe annuel pour valider la conformité du PCP aux normes ISO 22301 (Business Continuity) adaptées.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 155 sur 316
+

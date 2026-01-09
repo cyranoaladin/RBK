@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+
+
+ Paramètre                   Valeur Validée
+
+ Cadence annuelle            48 semaines (Genesis Pool 4 + Explorer 12 + Bâtisseur 16 + Architecte 16) complétées par un Launchpad
+                             optionnel de 4 semaines pour les projets incubés.
+
+ Format                      Campus Tunis (présentiel augmenté) et Remote synchrone, cohorte baptisée “Genesis Cohort” avec mixité
+                             internationale.
+
+ Rythme                      Full-time (9h00 – 18h00) + sessions de veille technique planifiées ; aucune exigence nocturne, protocole
+
+
+
+
+                                                                      EL
+                             anti-burnout appliqué.
+
+
+
+
+                                                                   TI
+ Phase d’entrée              Genesis Pool intensive de 4 semaines (bootcamp sélectif, 120h, 80% pair-programming).
+
+
+
+
+                                                              EN
+ Niveaux pédagogiques        Explorer (12 sem.), Bâtisseur (16 sem.), Architecte (16 sem.). Chaque niveau s’achève par un Block Check
+                             certifiant.
+
+
+
+
+                                                        D
+ Taille Cohorte              25 – 30 apprenants par Genesis Cohort, ratio mentor référent 1 :25 sur Explorer.
+
+
+
+
+                                                     FI
+ Tracks                      Solana Smart Contracts, EVM Engineering, Product Strategy, RBK Solana Validator Track (nouveau).
+                                                  N
+                                            CO
+ Langue                      Anglais (documentation, code) / Français (animation, soutenances).
+
+
+
+Conditions d’Accès & Tarifs
+   • Prérequis :
+
+          – Algorithmique solide (Test technique éliminatoire).
+          – Anglais technique lu/écrit (Niveau B2 minimum).
+          – Engagement full-time indispensable.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 23 sur 316
+

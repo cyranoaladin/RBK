@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Chapitre 2. Stratégie : Note de Cadrage
+
+
+
+    Faiblesses          Dépendance experts critiques et sylla- Lancer pool remplaçants & bridge skills              Internaliser 60% des tech leads via par-
+                        bus dense                              (actions A-013/016)                                  cours ”TL Academy” & déployer moni-
+                                                                                                                    toring burn-out
+    Opportunités        Pipeline Superteam/MFAI ouvert (9           Convertir 2 LOI en contrats cadres & ou- Atteindre 20 placements remote, 3 caps-
+                        partenaires actifs)                         vrir 1 corporate seat pilote             tones DePIN opérés & lancer Launchpad
+                                                                                                             V1
+    Menaces             Sensibilité réputationnelle (crypto/tra- Charte marketing + disclaimers signés              Assurance RC pro active, fonds ISA sé-
+                        ding) & choc marché                      (A-027) & comité risques mensuel                   questré & PRA complet testé (annexe
+                                                                                                                    PCA)
+
+Indicateurs de suivi : revue hebdomadaire des actions A-010, A-013, A-027 (Annexe V), NPS cohorte > 60, backlog Block Checks < 5%, et avancement handover
+
+
+
+
+                                                                               EL
+RBK ≥ 50% à M+12.
+
+
+
+
+                                                                             TI
+                                                                     N
+                                                                   DE
+2.4 Priorisation MoSCoW (Fonctionnalités Clés)
+
+
+
+
+                                                             FI
+   Priorisation MoSCoW — Fonctionnalités & Exigences
+
+
+
+
+                                                            N
+    Must have                             Should have
+                                                     CO                          Could have                              Won’t have (for now)
+    • Programme DualTrack.                • Micro-certifications (Badges).       • Incident Drills hebdos.               • Trading / Spéculation.
+    • Méthode Studio obligatoire.         • Réseau Mentors structuré.            • Module Security Avancé.               • Contournement fiscal.
+    • Capstones (3) + Projet Final.       • Outillage standardisé (Templates).   • Offre B2B Corporate.                  • Contenu ”Fluff” sans pratique.
+    • Note de cadrage remplie.            • Listes automatiques (Figures/Acro-   • Incubation légère (post-demo).        • Mainnet non audité obligatoire.
+    • Factsheet unique.                   nymes).                                • Scénarios de scalabilité.
+    • Conformité/Éthique (Disclaimers).   • Bibliographie sourcée.
+    • Employabilité (Portfolio).
+
+
+
+
+2.5 Objectifs SMART
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 43 sur 316
+

@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                       Chapitre 1. Vision & Manifeste
+
+
+
+   Gestion du risque    Pas de clauses de sortie formalisées Clauses go/no-go 4 semaines, Risque opérationnel borné contrac-
+                                                             droit de suspension Nexus, comité tuellement
+                                                             risques
+   Expérience           Variation forte selon batch, pas de NPS piloté (>60), Block Checks, Assure cohérence expérience RBK
+   apprenants           mesure systématique                 Skill Mirror, support MFAI
+   Notoriété            Visibilité locale principalement    Intégration Superteam, showcases Élargit pipeline candidats et investis-
+   internationale                                           Solana, partenariats DePIN       seurs
+   Monétisation long    Peu de services post-formation      Launchpad, Talent Services, Corpo- Nouveaux profit centers pour RBK
+   terme                                                    rate Seats 15 900 TND
+
+
+
+
+                                                                     EL
+   Pilotage             Processus informels, décisions réac- Comités CEC/Qualité, RACI clarifié, RBK arbitre, Nexus exécute sous
+
+
+
+
+                                                                  TI
+   gouvernance          tives                                reporting KPI partagé               contrôle
+
+
+
+
+                                                           EN
+   Preuves              Dossiers internes non mutualisés    Dashboards MFAI, repos Git véri- Démonstration objective pour le board
+   d’exécution                                              fiés, certificats on-chain       RBK
+
+
+
+
+                                                        D
+   Alignement           Offre 1.0 centrée hardware/networ- Vision RBK 2.0 alignée mission d’ex- Narratif cohérent pour les dirigeants
+
+
+
+
+                                                     FI
+   stratégique          king                               cellence tunisienne + expansion RBK
+
+                                                 N         Web3
+                                          CO
+   Continuité service   Risque rupture si équipe part       Plan de succession mentors, docu- Assure résilience opérationnelle
+                                                            mentation, shadowing Nexus/RBK
+
+
+   Cette approche protège RBK contre toute dilution de marque tout en maximisant la valeur vie apprenant : la qualité reste sous gouver-
+nance RBK (validation comités), la promesse marché est renforcée par des preuves auditées, et chaque clause contractuelle prévoit une
+sortie maîtrisée.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 37 sur 316
+

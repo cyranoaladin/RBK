@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                    Chapitre 7. STRUCTURE DU CURSUS AMÉLIORÉE
+
+
+7.2.1 Modules du Track C (16 semaines)
+
+
+                              TAB. 7.1 : Modules Détaillés du Track C - Web3 Product & Ecosystem Strategy
+
+
+ Module                                Contenu                                   Livrables                               Semaines
+ M1 : Tokenomics & Governance          Modèles économiques, jetons utili-        Whitepaper Tokenomics, Simulation       4 semaines
+                                       taires, DAOs, mécanismes de gouver-       Economique
+                                       nance
+ M2 : Écosystème & GTM                 Analyse des protocoles, stratégies de     Analyse de marché, Stratégie d’entrée   4 semaines
+                                       go-to-market, partnerships
+ M3 : Produit & UX                     Conception produit, expérience utilisa-   Figma UI/UX, Prototype interactif       4 semaines
+
+
+
+
+                                                                                  EL
+                                       teur, interfaces Web3, onboarding
+ M4 : Lancement & Scale                Lancement de produit, croissance, ges-    Plan de lancement, Campagnes marke-     4 semaines
+
+
+
+
+                                                                         TI
+                                       tion de communauté, métriques             ting
+
+
+
+
+                                                                        N
+                                                                  DE
+7.2.2 Compétences Visées du Track C
+
+
+
+
+                                                             FI
+                                                         N
+                                                           Tokenomics              Gouvernance
+                                                  CO
+
+                                                              Produit                  Marché
+
+
+
+
+7.3 Timeline pédagogique – Semaines 1 à 48
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                         Page 78 sur 316
+

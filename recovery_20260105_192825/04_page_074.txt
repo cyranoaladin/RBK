@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+                                         TAB. 6.7 : Correspondance NFT Skills et responsabilités pédagogiques
+
+
+           NFT Skills                   Pré-requis                                   Responsabilités activées
+           Genesis Access               Skill Mirror validés en Genesis Pool         Accès Explorer, participation Dev DAO.
+           Explorer Core                Block Check Explorer réussi                  Pairing obligatoire, relecture de Skill Mirror niveau 1.
+           Build Master                 Block Check Bâtisseur + audit sécurisé       Mentorat Explorer, animation Skill Mirror, accès labs Validator.
+           Architecte Launch Proof      Block Check final + SBT Audit-Ready          Mentorat Bâtisseur, jury Block Check, éligibilité Launchpad.
+           Mentor Lead                  30h mentorat + NPS > 4.5                     Suivi cohortes Genesis, modération Skill Mirror.
+
+
+
+
+                                                                                  EL
+6.5 Protocole Anti-Burnout
+
+
+
+
+                                                                                TI
+   Ʋ Gouvernance Bien-être
+  (Responsable Bien-êtrea & Résilience)
+
+
+
+
+                                                                        N
+                                                                      DE
+     a
+         Organisation — Référent Nexus habilité à ajuster charge, deadlines et protocoles de repos pour maintenir la santé mentale et physique des apprenants.
+
+
+
+
+                                                                FI
+  Objectif : déclencher des temps de récupération avant la rupture et protéger la qualité pédagogique.
+  Pilotage opérationnel :
+
+
+                                                               N
+                                                        CO
+    • Responsable Bien-être & Résilience (Nexus) : mandat adossé au contrat RBK ↔ Nexus, doté d’un pouvoir de veto sur les deadlines. Peut imposer
+      jusqu’à 48 heures de pause pédagogique ou redistribuer les livrables d’une squad.
+    • Boucle d’escalade : mentor référent → Responsable Bien-être → HoP Nexus → RBK Ops pour arbitrage budgétaire si besoin.
+    • Traçabilité : chaque décision est journalisée dans Venture Engine (ticket ”Health”) et partagée au Comité éthique (hebdomadaire).
+   Seuils quantitatifs déclencheurs :
+      1. Score Fatigue > 7/10 pendant deux semaines consécutives (questionnaire anonyme).
+      2. Sommeil < 5 h sur trois nuits consécutives (auto-tracking via formulaire).
+      3. Productivité : baisse > 30% du throughput squad (tickets ”Done”) ou absence à deux rituels critiques sur une semaine.
+      4. Signal pair : deux alertes ”burn” déclenchées par les camarades sur Skill Mirror → repos obligatoire.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 73 sur 316
+

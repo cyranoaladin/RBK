@@ -1,0 +1,59 @@
+                                                                                                          Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                              DÉTAILLÉ ET STANDARDS
+
+
+
+  KO-ADR
+  Aucune ADR ”Accepted” alors que des choix architecturaux majeurs ont été faits = NO-GO.
+
+
+B.3.2 Structure PROOFS.md (Journal des Preuves)
+   Ce fichier est le ”Ledger” de votre travail. Il doit contenir une entrée par semaine (SXX) avec les champs suivants dans l’ordre :
+
+  1. PR(s) : Liens vers les Pull Requests mergées.
+
+  2. Tag/Release : Version publiée (ex : v0.3.0).
+
+
+
+
+                                                                      EL
+  3. CI run(s) : Lien vers le job CI vert correspondant.
+
+
+
+
+                                                                    TI
+  4. Demo link(s) : Vidéo (Loom/Youtube) ou lien déploiement live.
+
+  5. Reproduce commands : Commandes exactes pour vérifier le travail.
+
+
+
+
+                                                               EN
+  6. Docs updated : Liste des fichiers de documentation mis à jour.
+
+
+
+
+                                                           ID
+  7. ADR added/updated : Référence aux ADRs impactées.
+
+                                                     NF
+  8. Metrics : Benchmarks ou métriques clés (si pertinent).
+                                                CO
+  9. Known issues : Bugs connus et contournements.
+
+  KO-PROOFS
+  Champs ”Reproduce commands” ou ”Demo link” manquants sans justification explicite = rejet immédiat.
+
+
+B.3.3 Template : PROOFS.md
+# PROOFS --- Ledger Hebdomadaire
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 214 sur 316
+

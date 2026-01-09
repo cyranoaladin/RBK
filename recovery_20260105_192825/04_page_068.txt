@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                Chapitre 5. Architecture de Partenariat
+
+
+                                                               Monitoring quotidien
+                                                                    (Dashboards
+                                                                     MFAI, NPS)
+
+
+
+
+  Comité CEC
+  (RBK + Nexus)                           Non
+                                                                 Alerte KPIou Incident ?
+      Actions correc-
+      tives mineures
+
+
+
+
+                                                                                    EL
+                                                                                     Oui
+
+
+
+
+                                                                                  TI
+                                                                        N
+                                                               Comité Risques RBK
+
+
+
+
+                                                                      DE
+                                                                   (Qualité, Sécu-                                                    Audit ciblé
+                                                                    rité, Finance)                                                         (externe ou interne)
+
+
+
+
+                                                            FI
+                                                           N
+                                                   CO
+
+                                                          Décision RBK                                              Plan d’action     Activation plan continuité
+                                                               Go / Pause / Résilia-                                                    (mentors réserve, backup
+                                                                tion conditionnelle                                                        LMS, communication)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0          Principes directeurs : RBK conservePage
+                                                                           le droit67  sur stratégique,
+                                                                                    de veto  316        les jalons go/no-go sont
+                                         actés par procès-verbal, et chaque décision est tracée dans Skill Mirror Governance.
+

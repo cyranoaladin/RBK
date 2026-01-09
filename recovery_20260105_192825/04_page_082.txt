@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Chapitre 8. SYLLABUS TECHNIQUE
+
+
+
+
+                                                      TAB. 8.1 : Genesis Pool – Synthèse des 4 semaines
+
+
+                                Sem.     Focus Technique        Livrable Pivot                Skill Mirror / Block Check
+                                S1       OS & Git Internals     Réplique ‘ls -la‘ en Rust     Skill Mirror “Core Shell”
+                                S2       Memory Safety          Custom Allocator              Skill Mirror “Memory”
+                                S3       Concurrence            HTTP Server multi-thread      Skill Mirror “Concurrency”
+                                S4       Cryptographie          CLI Wallet (Ed25519)          Block Check “Genesis” + NFT Access
+
+
+  La Stack du Vainqueur
+
+
+
+
+                                                                                   EL
+        • Rust: Langage système, sécurité mémoire garantie sans Garbage Collector.
+
+
+
+
+                                                                                 TI
+        • Anchor: Framework de développement Solana qui sécurise et accélère le code.
+
+
+
+
+                                                                          N
+                                                                        DE
+        • Solidity: Langage historique des Smart Contracts (EVM).
+
+
+
+
+                                                                 FI
+        • Foundry: Outil de test et déploiement Ethereum écrit en Rust.
+
+
+
+
+                                                                N
+                                                          CO
+8.2.1 Plan d’Exécution Explorer (S05-S16)
+      GATE1 structure les jalons.
+      Les contrôles CD ancrent les exigences de qualité dès la formation.
+
+
+
+
+  1
+    Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas
+d’échec.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 81 sur 316
+

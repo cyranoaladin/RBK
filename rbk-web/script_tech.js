@@ -45,6 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   let currentLang = localStorage.getItem('wb_lang') || 'fr';
+  let currentPageId = null;
+
+  function applyNavLanguage() {
+    document.querySelectorAll('[data-lang]').forEach((el) => {
+      el.classList.toggle('hidden', el.dataset.lang !== currentLang);
+    });
+  }
+
+  function setLanguage(lang, reload = true) {
+    if (!pagesByLang[lang]) return;
+    currentLang = lang;
+    localStorage.setItem('wb_lang', lang);
+    applyNavLanguage();
+    if (reload && currentPageId) {
+      loadPage(currentPageId);
+    }
+  }
+  // Expose globally for inline buttons
+  window.setLanguage = setLanguage;
 
   async function ensureMermaid() {
     if (window.mermaid) {
@@ -229,6 +248,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setActiveLink(pageId) {
     links.forEach((l) => {
+      if (l.dataset.lang && l.dataset.lang !== currentLang) {
+        l.classList.remove('bg-white/10', 'text-white', 'border-r-2', 'border-indigo-500');
+        l.classList.add('text-slate-400', 'hover:text-white');
+        return;
+      }
       if (l.dataset.page === pageId) {
         l.classList.add('bg-white/10', 'text-white', 'border-r-2', 'border-indigo-500');
         l.classList.remove('text-slate-400', 'hover:text-white');
@@ -325,9 +349,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- UX Premium helpers ----------
   function getNavSequence() {
-    return Array.from(document.querySelectorAll('aside nav a'))
-      // Exclude annex section separators etc. Keep clickable only
-      .filter(a => a.dataset.page)
+    const seen = new Set();
+    return Array.from(document.querySelectorAll('aside nav a[data-page]'))
+      .filter(a => !a.dataset.lang || a.dataset.lang === currentLang)
+      .filter(a => {
+        if (seen.has(a.dataset.page)) return false;
+        seen.add(a.dataset.page);
+        return true;
+      })
       .map(a => ({ id: a.dataset.page, title: a.textContent.trim(), el: a }));
   }
 
@@ -482,6 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const file = pagesByLang[currentLang]?.[pageId];
     if (!file) return;
 
+    currentPageId = pageId;
     setActiveLink(pageId);
     history.replaceState({ pageId }, '', `#${pageId}`);
 
@@ -539,12 +569,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
+      if (link.dataset.lang && link.dataset.lang !== currentLang) return;
       e.preventDefault();
       loadPage(link.dataset.page);
     });
   });
 
   // Charge la page d'accueil par défaut si pas de hash
-    const initialPage = window.location.hash.substring(1) || 'tech_00_home';
-    loadPage(initialPage);
+  applyNavLanguage();
+  const initialPage = window.location.hash.substring(1) || 'tech_00_home';
+  loadPage(initialPage);
 });

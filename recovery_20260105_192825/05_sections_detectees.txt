@@ -1,0 +1,319 @@
+1     Vision & Manifeste . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+2     Stratégie : Note de Cadrage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+3                                                                                  N
+4     ANALYSE DU CONTEXTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+5       Architecture de Partenariat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+6       MÉTHODOLOGIE CYBORG 2.0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+7     STRUCTURE DU CURSUS AMÉLIORÉE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+8     SYLLABUS TECHNIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+9     Track A : Solana Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+10    Track B : EVM Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+11    Track C : Product Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+12    MODULE SOFT SKILLS & PROFESSIONNALISATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+13    CAPSTONES (PROJETS SIGNATURES) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+14    FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+15    Business Plan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+16    Stratégie marketing & acquisition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+17    ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+18    Guide Compliance Web3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
+19    Gouvernance & transparence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165
+20    IMPACT SOCIAL & ALIGNEMENT ODD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168
+21    INFRASTRUCTURE SBT & CERTIFICATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
+22    FEUILLE DE ROUTE 120 JOURS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173
+23    FEUILLE DE ROUTE : LE PLAN DE LANCEMENT (90 JOURS) . . . . . . . . . . . . . . . . . . . . . . . . . 179
+24    TOKEN DE RÉPUTATION & ALUMNI PROGRAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+25    ÉLÉMENTS DE DIFFÉRENCIATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 188
+26    CONCLUSION & FEUILLE DE ROUTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+1.1 La Thèse Centrale : Former des Architectes, pas des Codeurs
+1.1.0.1 Définition opérationnelle d’un Architecte Web3
+1.1.0.2 Pourquoi le ”code basique” ne suffit plus à l’ère des LLM
+1.1.0.3 Le Mécanisme Senior-by-Design
+30%).
+1.1.0.4 Métriques de Succès et Méthode de Mesure
+1.2 Pourquoi RBK 2.0 ?
+1.2.0.1 Diagnostic : L’Écart de Compétence (Skills Gap)
+1.2.0.2 Les Différenciateurs RBK 2.0
+1.2.0.3 Ce que RBK 2.0 n’est pas
+1.2.0.4 Changement de Paradigme
+2.1 Contexte du projet                                    N
+2.1.1 Situation actuelle
+2.1.2 Motivations et enjeux
+2.2 Enjeux (Stratégiques, Opérationnels, Réglementaires)
+2.3 Matrice SWOT (Synthèse)
+2.4 Priorisation MoSCoW (Fonctionnalités Clés)
+2.5 Objectifs SMART
+2.6 Analyse des besoins
+2.6.1 Audit de l’existant
+2.6.2 Besoins Utilisateurs et Parties Prenantes
+2.7 Solutions techniques
+2.7.1 Justification du Dual-Track (EVM + Solana)
+2.7.2 Architecture Technique du Studio
+2.8 Évaluation des risques
+2.9 Gouvernance & pilotage
+2.9.1 Méthodologie
+2.9.2 Addendum — Gouvernance contractuelle
+2.10 Matrice RACI (Responsabilités Macro)
+2.11 Planification, budget, indicateurs
+2.11.1 Rétroplanning des Grands Jalons
+2.11.2 Budget et Coûts
+2.12 Conduite du changement
+2.13 Conclusion de la Note
+2.0. Il constitue un addendum contractuel au présent manifeste.
+3.1 Cadre général du partenariat
+3.2 Architecture détaillée du partenariat
+3.3 Matrice RACI (Répartition des responsabilités)
+4.1 L’Opportunité Web3 & Solana
+4.1.0.1 Définitions Minimales (Lexique Opérationnel)
+4.1.0.2 Segmentation de la Demande
+4.1.0.3 Indicateurs                                                                      2025                                                            actualisés
+4.1.0.4 Pourquoi Solana est un Accélérateur d’Employabilité
+4.2 Dynamique Salariale
+4.2.0.1 Indicateurs 2025 actualisés
+4.2.0.2 Hypothèses de Lecture (TND vs USD)
+4.2.0.3 Grille de Rémunération Standard
+4.2.0.4 Modèle ROI Candidat (Simulation 1 an)
+4.3 Croissance du Marché
+4.3.0.1 Définition de l’Index
+4.3.0.2 Lecture Stratégique
+5.1 Le partenariat structurant
+5.1.1 RBK — l’opérateur et la face publique
+5.1.2 Nexus Réussite — le Maître d’œuvre pédagogique
+5.1.3 Gouvernance conjointe et comités
+5.2 Rôle de Money Factory AI : fournisseur technologique
+5.3 Flux contractuels et financiers
+1. Contrat-cadre de services (RBK ↔ Nexus) : définit le périmètre pédagogique, les KPIs, les clauses de pénalité, la propriété intellectuelle partagée et la gouvernance
+2. Bon de commande / SOW par cohorte : précise les livrables phase par phase, le staffing validé, les plafonds d’heures mentors et les seuils de performance
+3. Facturation : Nexus facture RBK en trois jalons (Genesis, Bâtisseur, Architecte) ; RBK facture les apprenants (frais initiaux, échéanciers ISA) et constitue le Fonds
+4. Flux ISA : RBK conserve l’entier recouvrement, Nexus transmet les preuves de graduation et de placement nécessaires aux déclenchements.
+5. Gestion de la trésorerie : les comptes séquestres (ISA, bourses) sont opérés par RBK avec droit de regard Nexus ; un plancher de trésorerie minimal est fixé
+5.4 Sécurisation des intérêts de RBK
+5.5 Matrice RACI macro révisée
+6.1 Philosophie Pédagogique : Intégration du Bien-être
+6.2 Modèle 3 Niveaux RBK 3.0
+6.2.1 Cycle Skill Mirror & Block Check
+6.3 Genesis Pool : Bootcamp Sélectif
+6.3.1 Structure et Évaluation
+6.4 Gamification Web3 et Système de Réputation
+6.5 Protocole Anti-Burnout
+6.5.1 Organigramme de Monitoring
+6.5.2 Tableau de bord hebdomadaire
+7.1 Architecture pédagogique — 48 semaines de Genesis vers Launch Proof
+7.1.1 Diagramme de Structure du Curriculum (48 Semaines)
+7.1.2 Timeline pédagogique – Semaines 1 à 48
+7.2 Nouveau Track C : Web3 Product & Ecosystem Strategy
+7.2.1 Modules du Track C (16 semaines)
+7.2.2 Compétences Visées du Track C
+7.3 Timeline pédagogique – Semaines 1 à 48
+8.1 Calendrier Pédagogique Global
+8.2 Genesis Pool : Sélection Intensives (S1-S4)
+8.2.1 Plan d’Exécution Explorer (S05-S16)
+8.3 Tracks Bâtisseur A / B / C (S17-S32)
+8.4 STUDIO DE PRODUCTION (S29-S48)
+8.5 Modules de Diversification (Electifs)
+8.5.1 Module ZK : Zero-Knowledge Proofs (8 semaines)
+8.5.2 Module DePIN : Decentralized Physical Infra (6 semaines)
+8.5.3 Module Cross-Chain & Interop (4 semaines)
+9.1 Philosophie du Track : L’Excellence par Rust
+9.2 Structure Pédagogique : De l’Architecture au Produit (16 Semaines)
+9.2.1 MODULE 1 : Le Modèle Solana & Rust Natif (Semaines 13-16)
+9.2.2 MODULE 2 : Maîtrise du Framework Anchor (Semaines 17-20)
+9.2.3 MODULE 3 : Architectures Avancées & Innovation (Semaines 21-24)
+9.2.4 MODULE 4 : Production Hardening & UX Performance (Semaines 25-28)
+9.3 Stack Technique Spécifique
+9.4 RBK Solana Validator Track
+9.5 Profil de Sortie : Le « Guardian »
+10.1 Philosophie du Track : La Maîtrise du Standard Industriel
+10.2 Structure Pédagogique : De la Logique au Durcissement (16 Semaines)
+10.2.1 MODULE 1 : Smart Contract Basics & Solidity Deep Dive (Semaines 13-15)
+10.2.2 MODULE 2 : Environnement de Développement Pro (Semaines 16-18)
+10.2.3 MODULE 3 : Token Standards & Composabilité (Semaines 19-21)
+10.2.4 MODULE 4 : dApp Development & Web3 Integration (Semaines 22-24)
+10.2.5 MODULE 5 : L2 Scaling & Advanced Patterns (Semaines 25-26)
+10.2.6 MODULE 6 : Production Hardening & Security (Semaines 27-28)
+10.3 Stack Technique Spécifique
+10.4 Profil de Sortie : L’Ingénieur d’Infrastructure EVM
+11.1 Philosophie du Track : Le ”Product Builder” Complet
+11.2 Structure Pédagogique : Fondations communes, spécialisations binômes (16
+11.2.1 Bloc Fondations (Semaines 13-18)
+11.2.2 Parcours de spécialisation (Semaines 19-28)
+11.3 Profil de Sortie
+12.1 Structure du Module (4 semaines)
+12.2 Rubrique d’Évaluation
+13.1 Philosophie du Capstone : Le Standard « Studio »
+13.2 Les 3 Projets Signatures (Cahier des Charges Industriel)
+13.2.1 Capstone 1 — Wallet & Transaction Reliability Pack (Frontend/UX)
+13.2.1.1 Spécifications Fonctionnelles (User Stories)
+13.2.1.2 Spécifications Techniques
+13.2.1.3 Checklist Sécurité & Qualité
+13.2.1.4 Critères d’Acceptation & CI
+13.2.2 Capstone 2 — Tokenization & Admin Control Center (RWA/DeFi)
+13.2.2.1 Spécifications Fonctionnelles
+13.2.2.2 Spécifications Techniques
+13.2.2.3 Checklist Sécurité Dédiée
+13.2.3 Capstone 3 — Digital Assets & Utility Ecosystem (NFT/Gaming)
+13.2.3.1 Spécifications Fonctionnelles
+13.2.3.2 Spécifications Techniques
+13.2.3.3 Checklist Sécurité Dédiée
+13.3 Matrice d’Évaluation (Rubric Studio)
+13.4 Délivrables de Sortie (Le ”Package”)
+3 minutes max, scénarisée.
+14.1 Fiche Métier 1 : Smart Contract Engineer & Auditor (Le « Guardian »)
+14.2 Fiche Métier 2 : Protocol & Ecosystem Strategist (Le « Visionnaire »)
+14.3 Fiche Métier 3 : Web3 Product Builder / Entrepreneur (Le « Builder »)
+14.4 Fiche Métier 4 : Solana dApp Engineer (Front Web3)
+14.5 Fiche Métier 5 : Tokenization & DePIN Architect
+14.6 Fiche Métier 6 : Web3 QA & Test Automation Engineer
+14.7 Fiche Métier 7 : Developer Advocate & Technical Writer
+14.8 Perspectives Économiques & Carrière
+14.8.1 Revenus Annuels Cibles 2025
+14.8.2 Ce qui compose réellement la rémunération (important)
+14.8.3 Comment atteindre le palier
+15.1 Modèle Économique Hybride
+15.1.1 Modèle économique détaillé — Waterfall & caps mentors
+15.2 Hypothèses & Sources du Modèle
+15.2.1 Hypothèses Clés
+15.2.2 Structure des Coûts Directs
+15.3 Funnel d’Acquisition & Sourcing
+15.4 Le Pilier B2B : Corporate Upskilling
+15.5 Trajectoire Financière (36 Mois)
+15.6 Analyse de Sensibilité
+15.6.1 Gestion du Risque Crédit ISA
+15.7 Financements et Partenariats Stratégiques
+15.7.1 1. Écosystème Web3 (Grants)
+15.7.2 2. Bailleurs de Fonds Institutionnels
+15.7.3 3. Modèle de Franchise (Scale Africa)
+16.1 Programme ”Building in Public”
+16.2 Assets visuels Sprint 0 (Maquettes à livrer)
+16.3 Simulateur de ROI Interactif
+16.4 Stratégie Multi-Canaux
+16.5 Budget d’Acquisition & CAC Cible
+500 TND.
+16.5.1 Discord : Le cœur communautaire de la pré-sélection
+16.6 Programme de Référence & Bounties
+17.1 Risques Réglementaires et Conformité
+17.1.1 Loi des Changes et Crypto-Actifs (Tunisie)
+17.1.2 GDPR et Données Étudiantes On-Chain
+17.1.3 Cadre Légal des ISA (Income Share Agreements)
+17.2 Matrice de Risques Dynamique
+17.3 Plan de Continuité Pédagogique (PCP)
+17.3.1 Kit de survie pédagogique
+17.3.2 Tableau de réponse rapide
+17.3.3 Protocole de tests et amélioration
+17.4 Plan de Réponse aux Incidents Crypto (”Black Swan”)
+17.4.1 Scénario A : Effondrement de l’Écosystème Solana
+17.4.2 Scénario B : Hack d’un Bridge / Protocole Partenaire
+17.5 Tableau de Bord des Risques Critiques
+18.1 Operating Model Compliant : Scénarios pour la Tunisie
+18.1.1 Scénario A : Exportateur de Services Logiciels (Le Standard)
+18.1.2 Scénario B : Filiale Offshore (Le Scale-Up)
+18.1.3 Scénario C : Freelance ”Portage Salarial” (Le Simple)
+18.2 Matrice des Risques de Conformité
+18.3 Politique de Communication (Communication Policy)
+18.3.1 Interdits Absolus (Red Lines)
+18.3.2 Obligations (Green Lines)
+18.4 KYC/AML Décentralisé – La Conformité par la Technologie
+18.4.1 Philosophie du ”Privacy by Design”
+18.4.2 Architecture Technique
+18.4.3 Stack Pratique Enseignée
+18.5 GDPR & Données On-Chain
+18.5.1 Le Conflit Immuabilité vs Droit à l’Oubli
+18.5.2 Patterns Architecturaux
+18.6 Fiscalité Crypto & Statut ETE
+18.6.1 Le Guide de l’Ingénieur-Exportateur
+18.6.2 Flux Financier Recommandé
+19.1 Comité Éthique & Pédagogique (CEP)
+19.1.1 Composition (5 Membres)
+19.1.2 Mandat
+19.2 Transparence Radicale (Open Metrics)
+19.3 Charte de Déontologie
+19.4 Structure Juridique et Rôles (Branding)
+20.1 Contribution aux Objectifs de Développement Durable (ONU)
+20.2 Indicateurs de Performance Sociale
+20.2.1 1. Inclusion des Femmes dans la Tech
+20.2.2 2. Décentralisation Régionale
+20.2.3 3. Empreinte Carbone et Compensation
+21.1 Philosophie : ”Don’t Trust, Verify”
+21.2 Stack Technique SBT
+21.2.1 Choix du Standard
+21.3 Cycle de Vie de la Certification
+21.4 Conformité RGPD & Privacy
+21.5 Cas d’Usage : Le Recrutement Instantané
+22.1 Timeline des Opérations
+22.2 Jalons Clés & Actions
+22.3 Diagramme de Gantt Macro
+23.1 MOIS 1 : CADRAGE, ALLIANCE & ÉQUIPE NOYAU (J0 - J30)
+23.1.1 Validation & Cadrage Stratégique
+23.1.2 Constitution de l’Alliance Écosystémique
+23.1.3 Recrutement de l’Équipe Pilote
+23.2 MOIS 2 : PRODUCTION DE L’ARSENAL & INFRASTRUCTURE (J31 - J60)
+23.2.1 Ingénierie Pédagogique (Les « Golden Templates »)
+23.2.2 Mise en place du Cockpit Technique
+23.2.3 Lancement Commercial & Marketing
+23.3 MOIS 3 : SÉLECTION & LANCEMENT « PROMO ALPHA » (J61 - J90)
+23.3.1 Processus de Sélection d’Élite
+23.3.2 Finalisation de la Cohorte
+23.3.3 Kick-off Opérationnel
+23.4 RÉCAPITULATIF DES JALONS CLÉS (MILESTONES)
+24.1 RBK Soulbound Tokens (SBTs)
+24.2 Usages des SBT
+1. Vérification Employeur Instantanée Plus besoin d’appeler l’école pour vérifier un diplôme. L’employeur scanne l’adresse publique
+2. Accès au Job Board Premium Seuls les détenteurs du badge ”Ready-to-Deploy” (cursus validé) peuvent voir les offres d’emploi
+3. Gouvernance Alumni Le poids de vote dans la DAO Alumni est pondéré par les badges. Un ”Senior Mentor” a plus de voix qu’un
+24.3 Alumni Program Structuré
+25.1 Le Paradigme « Senior-by-Design »
+25.2 Approche « Cyborg » : IA-Augmented Engineering
+25.3 Dual Track Solana/EVM : Flexibilité Stratégique
+25.4 Intégration Superteam : Opportunités Directes
+25.5 « On-Chain Resume » : Preuve de Travail Public
+25.6 Ancrage Tunisie + Export : Software Factory Future
+25.6.1 Comparatif RBK 2.0 vs Bootcamps Classiques
+26.1 Priorités Immédiates (Semaine 1–4)
+26.2 KPI de Succès
+26.3 Engagement Qualité Formel
+26.4 Forge de l’Élite Africaine
+26.5 Synthèse Valeur Stratégique
+26.6 Synthèse Investisseur – Différenciateurs Nexus
+26.7 Appel à l’Action
+26.8 Message Final au CEO
+26.9 Profil de Sortie
+# PROOFS --- Ledger Hebdomadaire
+## Sxx (Semaine courante)
+# Threat Model
+## 1. Assets to Protect
+## 2. Attack Surface
+## 3. Threats & Mitigations
+## 4. Residual Risks
+# ADR NNNN --- <Titre de la Décision>
+## Status
+## Context
+## Decision
+## Consequences
+## Alternatives Considered
+## How to Validate
+1. Hebdomadaire
+2. Gates (Genesis, Explorer, Bâtisseur/Architecte)
+1. Produit / Fonctionnel
+2. Reproductibilité
+3. Architecture
+4. Sécurité
+5. Qualité & Ops
+6. Traçabilité
+1. Détection : Ecarts détectés via cockpit KPI, audits ou feedback apprenants sont consignés dans le registre commun sous 48h.
+2. Remédiation : Nexus propose un plan correctif (RACI, budget, échéance) validé en CEC ; RBK confirme ou demande un arbitrage.
+3. Escalade : En cas de désaccord, réunion extraordinaire du Comité éthique et pédagogique sous 5 jours, avec convocation optionnelle de MFAI pour sujets
+4. Arbitrage final : Si le différend persiste, médiation externe désignée conjointement ; défaut d’accord sous 30 jours déclenche clause de résiliation anticipée.
+1. Participants
+2. Ordre du jour
+1. Revue KPI & Heatmap (semaine                   )
+2. Avancement (pédagogie, contenus, tracks, capstones)
+3. Risques / incidents / décisions sécurité
+4. Budget & ressources (mentors, outils, infra)
+5. Carrière (placements, bounties, demo day)
+6. Décisions / arbitrages / actions
+7. Prochain comité
+3. Revue KPI (synthèse)
+4. Avancement & livrables
+5. Risques & incidents
+6. Décisions & arbitrages
+7. Plan d’actions (exécutable)
+8. Prochain comité

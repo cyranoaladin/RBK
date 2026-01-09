@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                     Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+  2. Spec & Scope : rédiger PRD, user stories, risques, contraintes chain (fees, latence, finalité).
+
+  3. Delivery Coordination : roadmap, sprints, arbitrages, dépendances (indexer, RPC, wallets).
+
+  4. Quality & Release : DoD robuste (tests, docs, rollback), release tagging, changelog.
+
+  5. Business Loop : instrumentation (events), KPIs (activation, retention, churn), itération.
+
+Trajectoire Carrière & Mission
+
+   • Junior : cadre un MVP, gère backlog + release, produit un PRD solide. Mission : lancer un MVP staking avec dashboard et support
+     utilisateur.
+
+
+
+
+                                                                            EL
+   • Senior : pilote multi-produits, gère incidents de prod, scale équipes, priorise sécurité/UX. Mission : orchestrer le lancement public d’un
+
+
+
+
+                                                                     TI
+     protocole avec bug bounty et plan de rollback.
+
+
+
+
+                                                                    N
+Interactions Visionnaire (hypothèses éco), Guardian (risques et gates), dApp Engineer (UX), QA (strategy), DevRel (docs/adoption),
+
+
+
+
+                                                              DE
+Ops/SRE (monitoring).
+
+
+
+
+                                                          FI
+                                                       N
+Livrables standard    PRD (PRD.md), backlog priorisé, roadmap, RELEASE_PLAN.md, CHANGELOG.md, ROLLBACK_PLAN.md, dashboards (KPIs
+                                                CO
+produit + erreurs).
+
+KPIs Time-to-Value (TTFV), activation (wallet connect → action), rétention, churn, NPS/support load, taux d’échec transactions, cadence
+release sans régressions.
+
+                                                     Table : Definition of Done (Builder)
+
+                                       Axe      Critère DoD (minimum studio-grade)
+                                       Sécurité Audit interne + checklist + restrictions roles + plan incident
+                                       Qualité Tests unit/int + scénario critique rejouable + CI verte
+                                       UX       Messages d’erreur clairs + retry/failover + latence sous seuil
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 121 sur 316
+

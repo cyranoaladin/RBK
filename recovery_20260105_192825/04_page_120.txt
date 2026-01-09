@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                              Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Interactions Guardian (risques/exploitabilité), Builder/PM (scope, contraintes produit), dApp Engineer (UX incentives), Legal/Com-
+pliance (si tokenisation/RWA), Growth/Community (programmes).
+
+Livrables  standard LITEPAPER.pdf, TOKENOMICS_SPEC.md, SIMULATION_MODEL.xlsx                                        (ou   notebook),   RISK_REGISTER.md,
+GOVERNANCE_SPEC.md, INCENTIVE_PLAN.md (budget, durée, KPI, antifraude).
+
+
+KPIs Stabilité (volatilité, drawdown), Rétention3 vs mercenaires, croissance organique des intégrations, ratio incentives / usage réel,
+incidents de gouvernance, ”surprises” économiques évitées.
+
+                                            Table : Matrice Compétence → Preuve → Outil (Visionnaire)
+
+
+
+
+                                                                                   EL
+                                     Compétence Preuve attendue                                      Outil
+                                     Tokenomics     Spec complète + paramètres + justifications      Markdown / Docs
+
+
+
+
+                                                                                TI
+                                     Simulation     Modèle rejouable + scénarios stress              Sheets / Notebook
+
+
+
+
+                                                                         EN
+                                     Risk           Risk register prob/impact + mitigations          Matrice / Checklist
+                                     Governance     Règles testables (quorum, timelock, rôles)       DAO spec
+
+
+
+
+                                                                   D
+                                     Microstructure Analyse liquidité / slippage / impact incentives DEX analytics
+
+
+
+
+                                                                FI
+                                     GTM            Incentive plan + budget + KPIs                   Roadmap / Notion
+
+
+                                                            N
+                                                    CO
+  3
+      Finance/Juridique/Compliance — Capacité à conserver clients ou utilisateurs sur la durée, inverse du churn.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 119 sur 316
+

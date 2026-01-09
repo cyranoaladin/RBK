@@ -1,0 +1,49 @@
+22 | FEUILLE DE ROUTE 120 JOURS
+
+
+
+
+                                                                                  EL
+22.1 Timeline des Opérations
+   Cette feuille de route couvre l’horizon critique de J-90 (Sprint 0 confidentiel) à J+120 (Fin de la première cohorte). Elle est conçue
+
+
+
+
+                                                                               TI
+pour sécuriser les fondations avant d’accélérer sur l’acquisition et la production publique. Nos hypothèses de départ incluent : une équipe
+
+
+
+
+                                                                       EN
+core opérationnelle (CEO, CTO, Head of Program Nexus), la disponibilité des mentors clés à J0 et la validation du modèle juridique ISA
+en amont.
+
+
+
+
+                                                                 D
+                                                              FI
+Phase 0 : J-90 → J-1 (Sprint 01 — Sécurisation des Fondations) Objectif : verrouiller juridique, finances et prototype pédagogique
+avant toute communication externe. Livrables Must-Have2 :
+                                                          N
+                                                  CO
+   1. Avis juridique signé couvrant contrat ISA, statut exportateur et gouvernance RBK ↔ Nexus.
+
+   2. Fonds de Garantie ISA doté à hauteur de 150 000 TND sur compte séquestré RBK (preuve bancaire).
+
+   3. MVP du LMS livré : module Genesis entièrement jouable, reporting Venture Engine synchronisé.
+
+   4. Recrutement et onboarding des trois mentors principaux (Lead Genesis, Lead Explorer, Responsable Bien-être).
+
+   5. Cellule Discord interne opérationnelle (staff uniquement) + kit ”Mentor-in-a-Box” initial (replays, playbooks).
+   1
+     Sécurité/Infra/Ops — Anti-Money Laundering (AML) : lutte contre le blanchiment d’argent couvrant surveillance des flux, filtrage des sanctions et déclarations
+aux autorités.
+   2
+     Projet/Qualité — Must, Should, Could, Won’t (MoSCoW) : méthode de priorisation cadrant le périmètre et arbitrant les fonctionnalités.
+
+
+                                                                               173
+

@@ -1,0 +1,25 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+
+                 Charge hebdomadaire    +/-10% cible   > 30% écart   Repriorisation via HoP, possibilité de décaler Block Check.
+                 (tickets)
+                 Alertes Skill Mirror        0            ≥2         Activation cellule support + suivi quotidien.
+                 ”burn”
+
+
+
+
+                                                                   EL
+                                                                 TI
+                                                           N
+                                                         DE
+                                                    FI
+                                                   N
+                                              CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 75 sur 316
+

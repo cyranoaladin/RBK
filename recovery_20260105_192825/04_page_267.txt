@@ -1,0 +1,23 @@
+RBK 2.0 — Whitepaper Architecte Web3                                               Annexe P. Charte de qualité & règles d’or
+
+
+
+P.3 Processus de Validation Qualité
+   Pipeline : Code Complete → Linter → Tests → Audit IA & Humain → Merge.
+
+
+
+
+                                                                         EL
+                                                                       TI
+                                                                N
+                                                              DE
+                                                        FI
+                                                       N
+                                                 CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 265 sur 316
+

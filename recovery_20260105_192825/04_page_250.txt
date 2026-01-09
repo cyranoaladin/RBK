@@ -1,0 +1,56 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Annexe H. GUIDE DE SÉLECTION & SCORING « PISCINE RUST »
+
+
+   2. Pratique (3h) : ”Mini-Piscine Express”. Implémentation d’une CLI Rust qui parse un fichier binaire et signe une payload cryptographique (Ed25519). Critère
+         Éliminatoire : Absence de tests unitaires ou usage d’IA générative détecté.
+
+   3. Entretien (15 min) : Code review live avec le Lead Instructor. Justification des choix d’allocation mémoire.
+
+
+                                                               TAB. H.3 : Barème Admission Explorer
+
+       Critère                                        Points         Attendu                                               KO si...
+       Code Quality                                     40           Rust idiomatique,                                     ‘unwrap()‘ non géré
+                                                                     Zero CLippy warnings
+       Tests                                            30           Unit tests couvrant                                   0 tests
+                                                                     les edge cases                                        fournis
+
+
+
+
+                                                                                    EL
+       Architecture                                     30           Gestion des erreurs (Result)                          Code non structuré
+                                                                     Structs propres                                       ou impropre
+
+
+
+
+                                                                                  TI
+                                                                           N
+Nous classons un dossier en KO1 lorsqu’aucun des attendus critiques n’est respecté.
+
+
+
+
+                                                                         DE
+                                                                  FI
+H.1.2 Test d’Entrée Bâtisseur/Architecte (Bypass Explorer)
+
+
+                                                                 N
+                                                           CO
+       Pré-requis : Portfolio prouvant 2+ ans d’expérience sur la stack cible (Solana ou EVM).
+
+   1. Audit Readiness : Soumission d’un repo personnel existant. Vérification des critères ”Studio” (CI/CD, Docs, Tests E2E).
+
+   2. Exercice de Review : L’étudiant doit auditer une PR contenant 3 vulnérabilités cachées (Reentrancy, Arithmetic Overflow, Access Control).
+
+
+
+
+   1
+       Projet/Qualité — Knock-Out (KO) : statut indiquant l’échec d’un contrôle ou d’un gate de release, nécessitant correction avant validation.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 248 sur 316
+

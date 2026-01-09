@@ -1,0 +1,48 @@
+P | Charte de qualité & règles d’or
+
+
+
+
+                                                                                      EL
+ RBK 2.0 repose sur un socle de valeurs non négociables. Tout manquement à ces règles entraîne une exclusion immédiate.
+
+
+
+
+                                                                                   TI
+P.1 Les 4 Commandements de l’Ingénieur RBK
+
+
+
+
+                                                                        EN
+ 1. No Broken Windows : Aucun code n’est mergé sur ’main’ s’il contient des warnings de linter ou des TODOs non résolus.
+
+ 2. Don’t Trust, Verify : Chaque ligne de code générée par IA doit être auditée.
+
+
+
+
+                                                            D
+ 3. Ships or Nothing : Un projet non déployé n’existe pas.
+
+
+
+                                                          FI
+ 4. Leave No One Behind : Le savoir ne vaut que s’il est partagé.
+                                               N
+P.2 Matrice de Conformité (Sanctions)
+                                              O
+                                         C
+
+
+                                  Infraction          Exemple                        Sanction
+                                  Plagiat             Copie repo externe sans crédit Exclusion
+                                  Négligence Sécurité Commit de Private Key          Blâme + Reset Projet
+                                  Ghosting            Absence non justifiée > 48h Avertissement
+
+
+
+
+                                                                            264
+

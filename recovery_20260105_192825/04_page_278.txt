@@ -1,0 +1,91 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                           Annexe U. Registre des risques opérationnels
+
+
+
+
+                                                                  TAB. U.1 : Registre de risques v1 — RBK Web3 Studio (DualTrack EVM/Solana)
+                                                        Déclen-          Pré-              Conti-
+ID     Cat.     Risque          P I Sc. Niv. Own.                                                            KPI            St.
+                                                        cheurs           vention           ngence
+R-01   STRAT/   Sous-remplissage 3 5 15 Élevé Mkt     +Taux de conver- Funnel      admis- Réduire      taille Leads / se- Ou-
+       MKT      de la cohorte pi-             CEO      sion en baisse, sions documenté cohorte,          bas- maine, CVR vert
+                lote (inscriptions                     peu de leads qua-(ICP clair), cam- culer      format lead → en-
+                insuffisantes pour                     lifiés, abandons pagne     alumni, part-time, lancer tretien, CVR
+                lancer).                               après entretien. webinaires,       1 track d’abord, entretien
+                                                                        partenariats       renforcer offres →        admis,
+                                                                        écoles,     early- bourses/finance- coût par lead
+                                                                        bird,    preuves ment.                (CPL).
+                                                                        (capstones).
+R-02   FIN      Dérive      budgé- 3 4 12 Élevé CEO   +Dépenses outils Budget        base Geler       options Variance       Ou-
+                taire    (experts,              Ops    > prévision, ho-+ réserve (10–“Could”,            rené- budget (%), vert
+                outils, infra) ré-                     noraires mentors 15%),        poli- gocier licences, burn-rate
+                duisant la marge                       imprévus, achats tique     d’achat, basculer        sur mensuel, coût
+                et la crédibilité                      hors budget.     liste       outils alternatives,       /   étudiant,
+                du business plan.                                       “Must/Should”, réduire          inter- marge brute.
+                                                                        contrats-cadres ventions          non
+                                                                        mentors.           critiques.
+
+
+
+
+                                                                                                                                          EL
+R-03   OPS/    Retard de produc- 3 4 12 Élevé HoP     +Absence         de Plan 90 jours, ja- Décaler     lance- %    modules Ou-
+       PLANNINGtion pédagogique               Ops      “starter     kits”, lons hebdo, “gol- ment,     réduire prêts (DoD), vert
+
+
+
+
+                                                                                                                                          TI
+               (labs, templates,                       modules incom- den repos” mini- périmètre initial nb labs testés,
+
+
+
+
+                                                                                                                                       N
+               rubrics,   repos)                       plets, QA doc malistes, QA La-(1 track), inten- nb               repos
+
+
+
+
+                                                                                                                                     DE
+               avant démarrage.                        non faite à J-30. TeX/ToC, check- sifier production templates
+                                                                           lists.            en sprint, mobili-validés.
+
+
+
+
+                                                                                                                                     FI
+                                                                                             ser mentors.
+
+
+
+
+                                                                                                                                   N
+R-04   HR       Indisponibilité/ 3 4 12 Élevé CEO     +Annulations       Pool de rem- Remplacer par Heures men- Ou-
+                défection d’un ex-            HoP      répétées, latence plaçants (2 ni- mentor backup, tors livrées vs vert
+
+
+
+
+                                                                                                                          CO
+                pert clé (Rust/An-                     réponses,     sur-veaux), sessions basculer    cer- prévues, taux
+                chor, Audit, EVM                       charge d’un seul enregistrées,     taines sessions d’annulation,
+                tooling).                              formateur.        documenta-       en asynchrone, satisfaction
+                                                                         tion   complète, réduire   scope apprenants
+                                                                         contrats    avec module avancé. (NPS        mo-
+                                                                         SLA.                              dule).
+R-05   PED/     Hétérogénéité du 4 4 16 Cri- HoP       Beaucoup      de Test      d’entrée Séparer en deux Taux comple- Ou-
+       QUAL     niveau des appre-       tique          “rattrapage”, PR+         entretien sous-groupes,      tion labs, nb vert
+                nants (écart trop                      refusées massive- technique,         augmenter TA, PR        rework,
+                grand) → ralentis-                     ment, labs non “Bridge”        2–4 réduire features, taux d’absen-
+                sement ou décro-                       terminés.         semaines,     exi- rallonger sprint, téisme, churn
+                chage.                                                   gences TS/Git, coaching indivi- apprenant
+                                                                         regroupement duel.                  (%).
+                                                                         par binômes.
+                                                                                                               Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                       Page 276 sur 316
+

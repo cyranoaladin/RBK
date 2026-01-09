@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                               Annexe L. Stratégie mentorat
+
+
+  3. Certification pédagogique : Formation interne de 2 semaines sur :
+
+         • La méthode Socratique (répondre par une question).
+
+         • La gestion de crise émotionnelle (Protocole Anti-Burnout).
+
+         • La détection de triche par IA.
+
+  4. Titularisation : Prise en charge d’une Squad de 15 étudiants, obligation contractuelle de produire un pack Mentor-in-a-Box par module critique.
+
+
+
+L.3 Modèle de Rémunération Incitatif
+   Nous alignons les intérêts des mentors sur la réussite des étudiants.
+
+
+
+
+                                                                                  EL
+                                              TAB. L.1 : Grille de Rémunération Mentor (Junior → Lead)
+
+
+
+
+                                                                                TI
+                                 Niveau          Fixe (Mensuel) Variable (Performance)
+
+
+
+
+                                                                        N
+                                 Junior Mentor 2 500 TND        100 TND par étudiant validant la Genesis Pool.
+
+
+
+
+                                                                      DE
+                                 Senior Mentor 4 500 TND        2% du Pool ISA de sa cohorte (si placement > 90%).
+                                 Lead Instructor 7 000 TND      Part de l’EBITDA annuel (BSPCE/Tokens).
+
+
+
+
+                                                                FI
+                                                               N
+                                                        CO
+L.4 Contrat type Mentor Nexus
+  Clauses essentielles du contrat Mentor
+
+
+
+   Clause                     Contenu contractuel
+   Confidentialité &          NDA renforcé, interdiction de réutiliser les artefacts pédagogiques hors Nexus/RBK, authentification MFA obligatoire.
+   sécurité
+   Propriété intellectuelle   Cession non exclusive à RBK & Nexus des supports créés, sans droit de publication publique sans accord écrit.
+   Non-sollicitation          Interdiction de recruter les apprenants ou mentors RBK pendant 12 mois post-contrat.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 257 sur 316
+

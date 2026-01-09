@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                Annexe A. Gabarits opérationnels & stratégiques
+
+
+
+A.2     Priorisation MoSCoW (Must, Should,
+        Could, Won’t)
+  Priorisation MoSCoW — Partie 1 (Critique)
+
+
+   Must have (Vital)                                                       Should have (Important)
+   • Programme DualTrack : choix EVM ou Solana avec tronc commun           • Micro-certifications (Badges) : critères vérifiables (Code + Demo).
+   + spécialisation.                                                       • Réseau mentors : Office Hours + Reviews + Panels.
+   • Zéro réduction de contenu : restructuration sans suppression.         • Outillage standardisé : Templates PR, ADR, Runbooks.
+
+
+
+
+                                                                          EL
+   • Méthode Studio obligatoire : PR reviews, CI, tests minimaux,          • Listes automatiques : Figures, Tableaux, Acronymes.
+   conventions repo.                                                       • Sources & Hypothèses : Bibliographie, Benchmark marché, ROI.
+
+
+
+
+                                                                       TI
+   • Capstones (3) + 1 projet final : livrables, critères d’acceptation,
+   notation.
+
+
+
+
+                                                                EN
+   • Note de cadrage remplie : SWOT/MoSCoW/RACI/risques non vides
+   dans le doc.
+
+
+
+
+                                                           D
+   • Cohérence chiffrée : Page Factsheet unique (prix, dates, KPI).
+
+
+
+
+                                                        FI
+   • Conformité/Éthique : Disclaimers, anti-trading, scénarios opéra-
+   toires.
+   • Employabilité : Portfolio, coaching, Demo Day. N
+                                             CO
+
+  Priorisation MoSCoW — Partie 2 (Futur & Exclu)
+
+
+   Could have (Confort)                                                    Won’t have (Exclu)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 205 sur 316
+

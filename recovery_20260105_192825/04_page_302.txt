@@ -1,0 +1,79 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                     Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                      TAB. V.8 : Journal d’incidents v1 — RBK Web3 Studio
+                                                               Sympt.                                                 Actions                  Cause
+                       ID     Date     Type    Sév.    Svc                          Source    Impact                                                       Réf.
+                                                               (rés.)                                        MTTA MTTRrest.                     rac.
+                                                                                                            hh :mmhh :mm
+
+                                                                                                                                                               RBKRBOPS02
+                       INC- 2025-01- Réel      Sev2    CI/CD   CI rouge (tests      GitHub    Blocage       00 :15 06 :10 Freeze merges ;    Cause : test      Postmortem
+                       0001 15 10 :42                          instables) : échec   Actions + merges ;                    relancer tests ;   dépendant         lien
+                                                               intermittent sur     alerte    risque retard               isoler flaky ;     timing RPC.
+                                                               suite e2e.           Slack     sprint.                     hotfix pipeline.   Correctifs :
+                                                                                                                                             mocks +
+                                                                                                                                             timeouts +
+                                                                                                                                             retry policy.
+                                                                                                                                             Actions : A-020,
+                                                                                                                                             A-022.
+                                                                                                                                                               RBKRBOPS01
+                       INC- 2025-01- Drill     Sev3    RPC/    Scénario “RPC    Exercice      Formation : 00 :05 00 :45 Fallback             Améliorer         CR drill
+
+
+
+
+                                                                                                  EL
+                       0002 22 14 :05                  Prv     down” : timeouts planifié      démontrer                    provider B ;      runbook RPC ; lien
+                                                               et rate-limit.   (Ops)         fallback et                  activer cache ; ajouter
+
+
+
+
+                                                                                              TI
+                                                                                              UX                           message UX.       observabilité
+
+
+
+
+                                                                                             N
+                                                                                              dégradée.                                      requêtes.
+
+
+
+
+                                                                                 DE
+                                                                                                                                             Actions : A-021,
+                                                                                                                                             A-023.
+
+
+
+
+                                                                               FI
+                                                                                                                                                               RBKRBSEC01
+                       INC-   2025-02- Réel    Sev1    Sécurité Secret détecté   Gitleaks     Risque fuite ; 00 :10 01 :05 Révoquer clé ;    Cause :           Postmortem
+
+
+
+
+                                                                            N
+                       0003   03 09 :18                         dans commit (clé CI           rotation                     purge             mauvaise          lien
+
+                                                                     CO
+                                                                API test).                    nécessaire.                  historique ;      hygiène .env.
+                                                                                                                           informer équipe ; Correctifs :
+                                                                                                                           renforcer         templates
+                                                                                                                           pre-commit.       .env.example +
+                                                                                                                                             formation +
+                                                                                                                                             scan obligatoire.
+                                                                                                                                             Actions : A-042,
+                                                                                                                                             A-043.
+                                               Sev1
+                                       Réel    Sev2
+                       INC-            Drill   Sev3
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 300 sur 316
+

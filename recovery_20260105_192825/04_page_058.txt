@@ -1,0 +1,54 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                            Chapitre 4. ANALYSE DU CONTEXTE
+
+
+
+                             3,000                                                                                Lecture :
+                                                                                                                  • Talent gap persistant
+                                                                                                                  • TVL ↑ traction produits
+                                                                                                                  • Offres emploi x4 en 4 ans
+                             2,500
+Développeurs actifs Solana
+
+
+
+
+                             2,000
+
+
+
+
+                                                                                                  EL
+                             1,000
+
+
+
+
+                                                                                                TI
+                                                                                       N
+                              500
+
+
+
+
+                                                                                     DE
+                                                                            FI
+                                 0
+                                2,021          2,022                               2,023                           2,024                             2,025              2,026
+
+
+                                                                           N
+                                                                                                 Année
+                                                                   CO
+
+                                                       Développeurs actifs (Electric Capital)   TVL Solana (M$)       Offres emploi Web3 (index base 2021)
+
+
+                                               FIG. 4.1 : Corrélation talents Solana vs traction financière (2021-2026)
+
+                   Benchmark formations Web3 (2025)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                            Page 57 sur 316
+

@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                           Annexe A. Gabarits opérationnels & stratégiques
+
+
+
+A.1     Matrice SWOT (Forces, Faiblesses, Opportunités, Menaces)
+  SWOT — Analyse Stratégique RBK 2.0
+
+
+   Forces                                                                Faiblesses
+   • Positionnement premium : “Senior-by-Design” (engineering,      • Risque de sur-ambition : contenu trop large si non modularisé
+   sécurité, production).                                           (fatigue, dilution).
+   • DualTrack EVM/Solana : double crédibilité et employabilité • Dépendance à des experts rares (Rust/Anchor, audit), risque
+   internationale.                                                  de disponibilité.
+   • Méthodologie Studio : sprints, PR reviews, CI, tests, incident • Exigence élevée : peut réduire le volume d’inscrits si admis-
+
+
+
+
+                                                                        EL
+   drills, demo days.                                               sions trop strictes ou discours mal cadré.
+
+
+
+
+                                                                     TI
+   • Production d’un portfolio vérifiable : repos, releases, docs,  • Nécessité d’une cohérence chiffrée stricte (durées, prix, KPI)
+   rubrics, capstones.                                              pour crédibilité business/investisseurs.
+
+
+
+
+                                                              EN
+   • Adossement possible à un réseau mentors (diaspora, builders, • Contexte local : sensibilité réglementaire autour des actifs
+   écosystèmes).                                                    numériques (communication à cadrer).
+
+
+
+
+                                                          D
+   Opportunités                                                          Menaces
+
+
+
+
+                                                       FI
+   • Marché remote Web3 : opportunités globales (teams distri-           • Volatilité Web3 : cycles de marché & narratives (risque sur
+   buées, rémunérations supérieures).              N                     marketing et perception).
+                                            CO
+   • Demande croissante pour profils sécurité / audit-readiness          • Risque réputationnel : confusion “formation dev” vs “pro-
+   (IA = plus de vulnérabilités).                                        messe crypto” si branding imprécis.
+   • Partenariats (protocols, infra, wallets, analytics) : crédibilité   • Risques sécurité : un capstone mal cadré peut exposer à des
+   + projets réels + recrutement.                                        mauvaises pratiques (à prévenir).
+   • RBK peut devenir un hub régional (Afrique du Nord / franco-         • Concurrence MOOC/bootcamps internationaux : différencia-
+   phonie) avec cohorte pilote forte.                                    tion doit être preuves + mentoring + studio.
+   • Monétisation additionnelle : B2B (formations entreprise), stu-      • Réglementaire : incertitudes locales (paiements, communica-
+   dio services, incubation.                                             tions), besoin d’un modèle opératoire compliant.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 204 sur 316
+

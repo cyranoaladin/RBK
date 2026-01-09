@@ -1,0 +1,68 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                   Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+3. Revue KPI (synthèse)
+
+                           Domaine      Score        État                             KPI en alerte              Décision / action
+                           Admissions                OK / Alerte / Critique
+                           Qualité                   OK / Alerte / Critique
+                           Sécurité                  OK / Alerte / Critique
+                           Ops                       OK / Alerte / Critique
+                           Carrière                  OK / Alerte / Critique
+                           Finance                   OK / Alerte / Critique
+
+
+
+4. Avancement & livrables
+Points clés (fait / en cours / à risque).
+
+
+
+
+                                                                                EL
+• Fait :
+
+
+
+
+                                                                              TI
+• En cours :
+
+
+
+
+                                                                          N
+• À risque / bloqué :
+
+
+
+
+                                                                  DE
+                                                                FI
+Décisions techniques majeures (ADR).
+
+
+
+                                                             N
+                                                      CO
+• ADR-             :                                                           (Owner :                           )
+
+• ADR-             :                                                           (Owner :                           )
+
+
+
+5. Risques & incidents
+Risque(s) en alerte / critique (extrait registre).
+• R-           :                                                              (Action : A-       )
+
+• R-           :                                                              (Action : A-       )
+
+
+
+Incidents depuis le dernier comité (résumé).
+• INC-                 :                                                          (Sévérité :         ; MTTR :          )
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                            Page 297 sur 316
+

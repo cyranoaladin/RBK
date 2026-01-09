@@ -1,0 +1,51 @@
+RBK 2.0 — Whitepaper Architecte Web3                                        Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+                                          TAB. 17.3 : Nouvelle Matrice des Risques (Version 2026)
+
+
+                                       Risque Probabilité Impact Mesures d’atténuation Responsable
+                                       R-XX   Stratégique 3      5                     15
+
+
+
+
+17.3 Plan de Continuité Pédagogique (PCP)
+  Le PCP garantit la poursuite des apprentissages malgré une indisponibilité de la plateforme, de la blockchain cible ou des ressources
+humaines critiques. Il est testé chaque trimestre sous la supervision conjointe du Responsable Bien-être et du CTO Nexus.
+
+
+
+
+                                                                      EL
+                                                                   TI
+17.3.1 Kit de survie pédagogique
+
+
+
+
+                                                             EN
+ • Contenus Offline : miroirs Git des Golden Templates, labs exportés en PDF/Markdown, vidéos masterclass stockées sur NAS RBK.
+
+ • Simulateurs Locaux : images Docker prêtes à l’emploi (Solana test validator, Foundry/Anvil, PostgreSQL seed), scripts de provisioning
+
+
+
+
+                                                         D
+   automatisés.
+
+
+
+
+                                                      FI
+ • Playbooks de Substitution : plans jour par jour pour basculer vers des activités ”Rust Core” ou ”Security Drills” sans dépendance
+   on-chain.                                      N
+                                            CO
+ • Canaux de Secours : serveur Discord privé Continuity, numéros d’astreinte, accès à la FAQ offline (Notion export).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 154 sur 316
+

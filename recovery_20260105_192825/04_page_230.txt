@@ -1,0 +1,64 @@
+                                                                                                                 Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    DÉTAILLÉ ET STANDARDS
+
+
+Architecte : Studio (S29-S48)
+
+                    Sem    Objectifs (Sprint)                  Labs (Production)            Livrable               DoD
+                    S29    Capstone 1 : Reliability, ADR, TM   ADR #3, Threat Model, Spec   Spec + ADR + TM        Menaces mitigées
+                    S30    Sessions, RPC Fallback              Impl. fallback, retries      Module Session         Pas de blocage
+                    S31    Tx Builder, Simulation              Builder, Idempotence         Tx Pipeline v1         Scénarios test
+                    S32    Observabilité, Support              Metrics, Traces, Playbook    Obs. Pack              Dashboards
+                    S33    GATE CAPSTONE 1                     Tests E2E, Démo filmée       Reliability Pack       Démo stable
+                    S34    Capstone 2 : Protocole On-chain     Invariants, Cas limites      Spec + Invariants      Stratégie tests
+                    S35    Implémentation Core                 Core v1, Unit tests          Core v1                CI verte
+                    S36    Sécurité                            Simu attaques, Mitigations   Security Checklist     Preuves fixes
+                    S37    Audit Readiness                     Scripts repro, Diagrammes    Audit Pack v1          Repro 1 cmd
+                    S38    GATE CAPSTONE 2                     Hardening, Perf              RC + Audit Pack        RC Tag
+                    S39    Capstone 3 : Ops, SLO               SLO, Alerting                SLO + Dashboards       Alertes utiles
+
+
+
+
+                                                                                         EL
+                    S40    Incident Simu                       Chaos monkey, Drill          Postmortem Simulé      Actions corr.
+                    S41    Deploy Prod-like                    Pipeline, Migration          Ops Playbook v1        Rollback doc
+                    S42    Perf & Cout                         Profiling, Optim             Rapport Perf           Mesures
+
+
+
+
+                                                                                       TI
+                    S43    GATE CAPSTONE 3                     Go-live simulé               Go-Live Pack           Runbook
+
+
+
+
+                                                                              N
+                    S44    Placement 1 : GitHub                Nettoyage, README            Portfolio Pack         Proof links
+                    S45    Placement 2 : CV/LinkedIn           ”Project one-liners”         CV + LinkedIn          Claims vérifiables
+
+
+
+
+                                                                            DE
+                    S46    Placement 3 : Demos                 Script, Vidéo, Slides        Demo Kit               Timing respecté
+                    S47    Placement 4 : Interviews            Mock, System Design          Interview Notes        Réponses rigoureuses
+
+
+
+
+                                                                     FI
+                    S48    Block Check “Launch Proof”          Soutenance                   PACK FINAL             GO MARCHÉ
+
+
+
+
+                                                                    N
+                                                               CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                       Page 228 sur 316
+

@@ -1,0 +1,51 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                              Chapitre 25. ÉLÉMENTS DE DIFFÉRENCIATION
+
+
+                                                        TAB. 25.9 : Risk Register Export
+
+
+                          Risque          Prob.   Impact               Mitigation
+
+                          Juridique       Moyen Blocage paiements      Contrats types validés, Crypto-payments
+
+                          Fuite Talents Haut      Perte expertise locale Modèle ”Remote from Tunisia” (Salaire indexé)
+
+                          Qualité         Moyen Perte réputation       QA systématique par Senior RBK
+
+
+
+
+                                                                          EL
+25.6.1 Comparatif RBK 2.0 vs Bootcamps Classiques
+   RBK n’est pas un bootcamp. C’est un centre d’entraînement olympique pour ingénieurs.
+
+
+
+
+                                                                       TI
+                                                                EN
+                                                        TAB. 25.11 : Matrice Comparée
+
+
+
+
+                                                           D
+                                       Critère    RBK 2.0               Bootcamp Web2 Université
+
+
+
+
+                                                        FI
+                                       Profondeur Expert (Rust/Systems) Surface (JS/React) Théorique
+                                       Sécurité   Obsessionnelle        Basique            Abstraite
+                                       Preuve
+                                                     N
+                                                  Audit Report          ”Projet TodoList” Diplôme Papier
+                                              CO
+                                       Modèle Éco ISA (Success fee)     Cash Upfront       Gratuit / Public
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 192 sur 316
+

@@ -1,0 +1,20 @@
+Title:           Livre Blanc RBK 2.0
+Subject:         Edition Professionnelle 2026
+Author:          Money Factory AI
+Creator:         LaTeX with hyperref
+Producer:        xdvipdfmx (20220710)
+CreationDate:    Sat Jan  3 15:54:10 2026 CET
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           318
+Encrypted:       no
+Page size:       841.89 x 595.28 pts (A4)
+Page rot:        0
+File size:       1041034 bytes
+Optimized:       no
+PDF version:     1.5

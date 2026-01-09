@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                        Chapitre 1. Vision & Manifeste
+
+
+1.1.0.2 Pourquoi le ”code basique” ne suffit plus à l’ère des LLM
+
+    L’avènement des LLMs (GPT-4, Claude 3.5 Sonnet) a commoditisé la production de code syntaxique. Générer un ERC-201 ou un
+programme Anchor standard prend désormais 30 secondes et coûte 0.01$. La valeur ajoutée du ”codeur” qui traduit une spec en fonctions
+s’effondre.
+    Cependant, l’IA ne sait pas raisonner sur l’intention. Elle peut générer un code qui compile parfaitement mais qui contient des failles
+logiques dévastatrices.
+
+   Le Risque des ”Failles Invisibles” (IA-Generated)
+      1. Hypothèses Non Vérifiées : L’IA suppose que l’utilisateur est honnête, omettant les contrôles d’accès (Missing Access Control).
+         Impact : Vol de fonds.
+
+
+
+
+                                                                                EL
+      2. Invariants Économiques : L’IA ne vérifie pas si ‘total_minted <= max_supply‘ après un calcul complexe. Impact : Inflation
+
+
+
+
+                                                                         TI
+         infinie.
+
+
+
+
+                                                                        N
+      3. Edge Cases : L’IA oublie les cas limites (division par zéro, overflow, array vide). Impact : Blocage du protocole (DoS).
+
+
+
+
+                                                                  DE
+   C’est pourquoi RBK 2.0 adopte l’approche ”Learning by Auditing”. Nous formons les étudiants à considérer tout code (humain ou IA)
+
+
+
+
+                                                             FI
+comme potentiellement hostile jusqu’à preuve du contraire.
+
+
+                                                          N
+                                                   CO
+1.1.0.3 Le Mécanisme Senior-by-Design
+
+    Comment transformer un profil junior en architecte senior en 48 semaines ? Par un conditionnement intensif en quatre étapes séquen-
+tielles :
+    1. Genesis Pool (4 semaines) : Bootcamp de sélection où l’apprenant prouve sa résilience, maîtrise les fondamentaux Rust et adopte les
+rituels Skill Mirror. 2. Explorer (12 semaines) : Consolidation technique et produit ; développement sur Solana/EVM, sécurité applicative,
+Block Check “Explorer”. 3. Bâtisseur & Architecte (16 + 16 semaines) : Spécialisation par tracks, audits croisés, leadership technique
+et préparation au Launch Proof. 4. Launchpad (optionnel) : Validation de marché via le parcours Nexus (forfait 3 300 TND + partage
+30%).
+  1
+   Web3/Blockchain — Ethereum Request for Comments 20 (ERC-20) : standard définissant l’interface minimale d’un jeton fongible (transfert, approbation, total
+supply).
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                         Page 32 sur 316
+

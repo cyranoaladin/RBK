@@ -1,0 +1,73 @@
+RBK 2.0 — Whitepaper Architecte Web3                                               Annexe W. Glossaire des termes, acronymes et jargon
+
+
+                  Terme
+                                 Domaine    Définition
+                /Acronyme
+    Sprint 0                                Phase amont de 90 jours dédiée à sécuriser juridique, finances, MVP pédagogique et staf-
+                                            fing avant toute communication publique du programme.
+
+    SLA                                     Service Level Agreement contractuel décrivant engagements de service, métriques, pénali-
+                                            tés et modalités de mesure.
+
+    AML                                     Anti-Money Laundering (AML) : lutte contre le blanchiment d’argent couvrant surveillance
+                                            des flux, filtrage des sanctions et déclarations aux autorités.
+
+    KYC                                     Know Your Customer (KYC) : processus de connaissance client vérifiant l’identité avant
+                                            d’accéder à un service financier ou réglementé.
+
+    RGPD                                    General Data Protection Regulation (GDPR / RGPD) : règlement encadrant collecte, traite-
+
+
+
+
+                                                           EL
+                                            ment et droits des personnes en Europe.
+
+
+
+
+                                                         TI
+    ROI                                     Return on Investment (ROI) : rapport entre gain généré et investissement engagé.
+
+
+
+
+                                                  N
+    SBT                                     Soulbound Token non transférable, attaché à une identité ou un compte pour prouver un
+
+
+
+
+                                                DE
+                                            statut, une attestation ou une réussite.
+
+    Taux de conversion                      Proportion d’utilisateurs qui passent à l’étape suivante du funnel ou réalisent l’action cible.
+
+
+
+
+                                            FI
+                                           N
+    Funnel                                  Parcours d’acquisition décomposé en étapes (awareness → consideration → conversion)
+                                            avec mesures à chaque étape.
+                                           CO
+    Rétention                               Capacité à conserver clients ou utilisateurs sur la durée, inverse du churn.
+
+    Tokenomics                              Token economics (tokenomics) : conception économique d’un token couvrant émission,
+                                            distribution, utilité, incitations et mécanismes de capture de valeur.
+
+    TVL                                     Total Value Locked (TVL) : valeur totale des actifs déposés ou immobilisés dans des proto-
+                                            coles DeFi, indicateur de liquidité et de traction.
+
+    RBAC                                    Role-Based Access Control (RBAC) : modèle limitant les privilèges par rôles prédéfinis pour
+                                            réduire la surface d’attaque.
+
+    API                                     Application Programming Interface (API) : interface de programmation exposant des ser-
+                                            vices ou données pour être consommés par d’autres applications.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                    Page 308 sur 316
+

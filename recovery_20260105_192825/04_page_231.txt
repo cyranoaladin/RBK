@@ -1,0 +1,44 @@
+C | ANNEXE B — Modèle financier & Waterfall contractuel
+            (RBK – Nexus Réussite)
+
+
+
+
+                                                                                 EL
+C.1 Référentiel financier contractuel
+
+
+
+
+                                                                               TI
+                                                                       N
+C.1.1 Définitions comptables
+
+
+
+
+                                                                     DE
+  Pour l’application des modalités financières, les définitions suivantes sont contractuellement contraignantes :
+
+
+
+
+                                                              FI
+  • CA_Booked : Valeur catalogue totale signée (Genesis Pool + Explorer + Bâtisseur/Architecte selon conversions validées)
+
+
+                                                             N
+                                                      CO
+  • CA_Cash : Montants effectivement encaissés (paiements directs + recouvrements ISA)
+
+  • CA_Eligible : CA_Cash net des refunds/chargebacks/remises
+
+  • Coûts_Directs : Mentor Pool (refacturé) + outils explicitement listés dans l’addendum technique
+
+  • Marge_Projet : CA_Eligible – Coûts_Directs – Franchise_RBK
+
+
+
+
+                                                                               229
+

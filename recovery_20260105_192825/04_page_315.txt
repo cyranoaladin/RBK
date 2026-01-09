@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                    Annexe W. Glossaire des termes, acronymes et jargon
+
+
+
+V5.3 — Sécurisation Réglementaire & Modèles Opérationnels
+    • Operating Models : Détaillage des 3 scénarios (Local, Export, Hybride) avec analyse d’impact et risques.
+    • Matrice Compliance : Ajout d’une vue dédiée aux risques Légal/Fiscal/Réputation.
+    • Communication Policy : Définition des ”Red Lines” (Promesses de gains) et obligations éthiques.
+    • Disclaimers : Renforcement des avertissements (”Ce document n’est pas un avis juridique”).
+
+
+
+
+                                                                                         EL
+V5.2 — Audit de Cohérence & Contenu (Factsheet)
+    • Factsheet Unique : Centralisation de toutes les métriques clés (Durée 24s, Prix, KPIs) dans le Chapitre 00.
+
+
+
+
+                                                                                      TI
+    • Cohérence : Alignement des durées (16+8 sem) et des objectifs financiers (Break-even M+12) entre Note de Cadrage et Business Plan.
+    • Contenu Stratégique : Renseignement complet des matrices SWOT, MoSCoW, RACI et Risques au sein de la Note de Cadrage.
+
+
+
+
+                                                                            EN
+    • Disclaimers : Ajout systématique des avertissements légaux (Pas de conseil financier).
+
+
+
+
+                                                                D
+V5.1 — Édition Professionnelle (Forme & Finitions)
+
+
+                                                              FI
+    • Standards LaTeX : Adoption de acro, threeparttable, bookmark.
+    • Typographie : Correction des césures agressives (Short Titles), espaces insécables, polices mathématiques (XITS).
+                                                  N
+    • Métadonnées : Intégration complète des métadonnées PDF.
+                                                 O
+    • Navigation : Ajouts de liste des figures, des tableaux et des acronymes automatiques.
+                                            C
+
+
+Modifications Structurelles
+    • Conservation intégrale du contenu v4 (aucune suppression).
+    • Réorganisation de l’ordre de lecture pour prioriser le cadrage stratégique.
+    • Optimisation des largeurs de tableaux (tabularx) pour le format A4.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 313 sur 316
+

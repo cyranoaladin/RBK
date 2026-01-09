@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Chapitre 9. Track A : Solana Engineer
+
+
+
+9.2 Structure Pédagogique : De l’Architecture au Produit (16 Semaines)
+    Le cursus s’articule autour de la montée en puissance technique. (Voir le détail semaine par semaine dans le Syllabus Opérationnel en
+Annexe B.7).
+    Le parcours est découpé en 4 modules progressifs. On commence par ”souffrir” avec Rust natif pour comprendre la mécanique interne,
+puis on accélère avec Anchor, avant de plonger dans l’architecture complexe (CPI) et le durcissement pour la production. Chaque module
+se solde par un ”Livrable Portfolio” qui prouve l’acquisition de la compétence.
+
+   Syllabus Opérationnel
+
+   Le syllabus opérationnel détaillé est présenté dans l’Annexe B.7.
+
+
+
+
+                                                                      EL
+                                              TAB. 9.3 : Carte des Modules (Résumé Exécutif)
+
+
+
+
+                                                                   TI
+                                                             EN
+                              Module Sem Objectif                        Lab Principal    Portfolio
+                              1. Native 13-16 Comprendre l’Account Model Mini-Vault Natif Repo ”Raw”
+
+
+
+
+                                                         D
+                              2. Anchor 17-20 Productivité               Marketplace NFT Program IDL
+
+
+
+
+                                                      FI
+                              3. Arch   21-24 Composabilité              CPI Orchestrator Diagramme Arch
+                              4. Prod
+                                                   N
+                                        25-28 Hardening                  Full dApp        Audit Report
+                                            CO
+
+9.2.1 MODULE 1 : Le Modèle Solana & Rust Natif (Semaines 13-16)
+Objectifs Opérationnels
+
+   • Maîtriser la dé-sérialisation manuelle des données (Borsh).
+
+   • Gérer le ”Rent” et l’allocation d’espace (realloc).
+
+   • Comprendre le cycle de vie d’une transaction (Signer, Writable).
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 91 sur 316
+

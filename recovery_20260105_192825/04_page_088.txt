@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 8. SYLLABUS TECHNIQUE
+
+
+                           Sem Objectifs (Sprint)                   Labs (Production)                Livrable                 DoD
+                           S29 Capstone 1 : Reliability, ADR,       ADR #3, Threat Model, Spec       Spec + ADR + TM          Menaces mitigées
+                               TM
+                           S30 Sessions, RPC Fallback               Impl. fallback, retries          Module Session           Pas de blocage
+                           S31 Tx Builder, Simulation               Builder, Idempotence             Tx Pipeline v1           Scénarios test
+                           S32 Observabilité, Support               Metrics, Traces, Playbook        Obs. Pack                Dashboards
+                           S33 GATE CAPSTONE 1                      Tests E2E, Démo filmée           Reliability Pack         Démo stable
+                           S34 Capstone 2 : Protocole               Invariants, Cas limites          Spec + Invariants        Stratégie tests
+                               On-chain
+                           S35 Implémentation Core                  Core v1, Unit tests              Core v1                  CI verte
+                           S36 Sécurité                             Simu attaques, Mitigations       Security Checklist       Preuves fixes
+
+
+
+
+                                                                                           EL
+                           S37 Audit Readiness                      Scripts repro, Diagrammes        Audit Pack v1            Repro 1 cmd
+
+
+
+
+                                                                                        TI
+                           S38 GATE CAPSTONE 2                      Hardening, Perf                  RC + Audit Pack          RC Tag
+                           S39 Capstone 3 : Ops, SLO                SLO, Alerting                    SLO + Dashboards         Alertes utiles
+
+
+
+
+                                                                                 EN
+                           S40 Incident Simu                        Chaos monkey, Drill              Postmortem Simulé        Actions corr.
+                           S41 Deploy Prod-like                     Pipeline, Migration              Ops Playbook v1          Rollback doc
+
+
+
+
+                                                                           D
+                           S42 Perf & Cout                          Profiling, Optim                 Rapport Perf             Mesures
+
+
+
+
+                                                                        FI
+                           S43 GATE CAPSTONE 3                      Go-live simulé                   Go-Live Pack             Runbook
+                           S44 Placement 1 : GitHub9                Nettoyage, README                Portfolio Pack           Proof links
+                           S45 Placement 2 : CV/LinkedIn            N
+                                                                    ”Project one-liners”             CV + LinkedIn            Claims vérifiables
+                                                             CO
+                           S46 Placement 3 : Demos                  Script, Vidéo, Slides            Demo Kit                 Timing respecté
+                           S47 Placement 4 : Interviews             Mock, System Design              Interview Notes          Réponses rigoureuses
+                           S48 GATE FINAL Architecte                Soutenance                       PACK FINAL               GO MARCHÉ
+
+
+
+
+  9
+      Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 87 sur 316
+

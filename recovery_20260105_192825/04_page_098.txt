@@ -1,0 +1,48 @@
+10 | TRACK B : EVM ENGINEER (SOLIDITY/FOUNDRY)
+
+
+
+
+                                                                            EL
+10.1 Philosophie du Track : La Maîtrise du Standard Industriel
+    L’EVM1 (Ethereum Virtual Machine) est le standard mondial des smart contracts. Maîtriser Solidity et Foundry, c’est s’ouvrir les portes
+
+
+
+
+                                                                         TI
+de l’écosystème le plus riche (Ethereum, Arbitrum, Optimism, Base, Polygon). Notre approche est ”Infrastructure-First”. Nous ne formons
+
+
+
+
+                                                                  EN
+pas des développeurs qui copient-collent du code OpenZeppelin, mais des ingénieurs capables de comprendre le stockage bas niveau,
+l’optimisation du Gas et les subtilités des upgrades (Proxies).
+
+
+
+
+                                                             D
+                                                          FI
+Positionnement ”Infra Engineer” L’ingénieur EVM RBK est un bâtisseur de protocoles. Il maîtrise la chaîne DevOps (Foundry, CI,
+
+                                                      N
+Verification), la sécurité offensive (Fuzzing, Invariants) et les patterns de composabilité (DeFi Lego).
+                                               CO
+   NON NÉGOCIABLE : AUDIT-READINESS
+       • Test-First : TDD strict avec Foundry. Fuzzing obligatoire.
+
+       • Gas Optimization : Chaque Opcode compte (Assembly si nécessaire).
+
+       • Security Mindset : ”Don’t trust, verify”. Protection Reentrancy, Overflow, Access Control.
+
+  1
+    Web3/Blockchain — Ethereum Virtual Machine (EVM) : moteur d’exécution des smart contracts bytecode compatibles sur Ethereum et chaînes EVM, assurant
+portabilité des dApps et outils.
+
+
+
+
+                                                                          97
+

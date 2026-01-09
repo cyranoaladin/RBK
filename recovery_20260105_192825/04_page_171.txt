@@ -1,0 +1,54 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                     Chapitre 20. IMPACT SOCIAL & ALIGNEMENT ODD
+
+
+   • Bourses ”Women in Web3” : Le coût Upfront est réduit de 50% pour les candidates validant la Piscine (financé par partenaires).
+
+   • Objectif 2026 : Atteindre 30% de femmes par cohorte (vs 5% moyenne secteur).
+
+
+20.2.2 2. Décentralisation Régionale
+   Le talent est partout, les opportunités sont à la capitale.
+
+   • Recrutement National : Roadshow dans les universités de l’intérieur (Sfax, Gabès, Gafsa).
+
+   • Hébergement : Partenariats avec des foyers pour faciliter l’installation à Tunis durant les 4 mois intensifs.
+
+
+
+
+                                                                          EL
+20.2.3 3. Empreinte Carbone et Compensation
+
+
+
+
+                                                                       TI
+   La blockchain est perçue comme polluante. RBK nuance et agit :
+
+
+
+
+                                                                 EN
+   • Choix Technologique : Solana est une chaîne Proof-of-Stake dont une transaction consomme moins qu’une requête Google (0.0005
+
+
+
+
+                                                          D
+     kWh).
+
+
+
+
+                                                       FI
+   • Compensation : Nous nous engageons à compenser 100% de l’empreinte carbone de l’école (serveurs + clim + déplacements staff)
+
+                                                   N
+     via l’achat de crédits carbone certifiés on-chain (ex : Toucan Protocol).
+                                            CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                    Page 169 sur 316
+

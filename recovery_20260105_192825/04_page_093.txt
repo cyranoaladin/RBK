@@ -1,0 +1,51 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                   Chapitre 9. Track A : Solana Engineer
+
+
+Labs & Livrables Lab A (Messagerie On-chain1 ) : Créer un programme qui permet à des utilisateurs de poster des messages stockés
+dans des comptes dédiés. Lab B (Mini-Escrow) : Un contrat qui bloque des fonds jusqu’à validation par un tiers. Livrable : Repo GitHub
+structuré avec tests TS (Mocha/Chai) interagissant avec ‘solana-test-validator‘.
+
+                                                           TAB. 9.5 : Checklist Sécurité Module 1
+
+
+                                       Contrôle     Vérification                                 Fail Typique
+                                       Owner Check Vérifier que account_info.owner == program_id Injection de données
+                                       Signer Check Vérifier account_info.is_signer              Usurpation
+                                       Rent Exempt Le compte est-il assez fondé ?                Compte purgé
+
+
+
+
+                                                                                  EL
+                                                                               TI
+9.2.2 MODULE 2 : Maîtrise du Framework Anchor (Semaines 17-20)
+
+
+
+
+                                                                        EN
+Objectifs Opérationnels
+
+      • Utiliser les macros Anchor pour sécuriser le code (#[account(...)]).
+
+
+
+
+                                                                  D
+                                                               FI
+      • Gérer les PDAs (Program Derived Addresses) de manière déterministe.
+
+      • Émettre des Events pour l’indexation.
+                                                           N
+                                                   CO
+Labs & Livrables Lab A (Counter PDA) : Un compteur global et des compteurs user-specific utilisant des seeds. Lab B (Staking Vault) :
+Un utilisateur dépose des tokens, le programme tracking le solde et le temps. Livrable : Code Anchor propre, Tests TypeScript étendus,
+IDL publié.
+  1
+      Web3/Blockchain — Donnée ou logique exécutée et stockée directement sur la blockchain, vérifiée par le consensus du réseau.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 92 sur 316
+

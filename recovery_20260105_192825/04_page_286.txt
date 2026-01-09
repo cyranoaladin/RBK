@@ -1,0 +1,90 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                            Action                                          Dé- Éché-             Livrable        Dépend- Preuve
+                                Act. Risque                      Type      Prio Owner                   Statut
+                                            (verbe + livrable)                              but ance              (DoD)           ances   (Trace)
+                                ID
+                                A- R-07     Tester incident      Préventif P2   Ops         T0-7 T0+7 À faire     Rapport drill + A-021      CR incident
+                                023         drill “RPC down”                                                      corrections                drill
+                                            (scénario)
+                                                                                Sec
+                                A- R-08     Exiger threat model Préventif P1                T0+ T0+ À faire       Threat model    Template Docs
+                                                                                Lead
+                                024         1 page par capstone                             14    21              signé
+                                            + validation Sec-
+                                            Lead
+                                                                                HoP
+                                A- R-08     Instaurer “Security Préventif P1                T0+ T0+ À faire       Checklist sécu- KPI     Evidence
+                                                                                + SecLead
+                                025         Sprint” obligatoire                             35    49              rité complétée findings checklist
+                                            (S19)
+                                                                                Sec
+                                A- R-08     Audit croisé inter- Préventif P2                T0+ T0+ À faire       Rapport audit A-025        PDF findings
+                                                                                Lead
+                                026         équipes (2 revie-                               49    56              croisé
+                                            wers)
+                                A- R-09     Charte marketing Préventif P1       Legal + Mkt T0-75 T0-60 À faire   Charte signée   CEO        Doc charte
+
+
+
+
+                                                                                                EL
+                                027         + disclaimers
+
+
+
+
+                                                                                            TI
+                                            “no trading / no
+                                            speculation”
+
+
+
+
+                                                                                         N
+                                A- R-09     Relecture Legal      Préventif P1   Legal       T0-45 T0-20 À faire   Visa Legal      A-027      Liste URLs
+
+
+
+
+                                                                                 DE
+                                028         de toutes pages                                                       (liste URLs)
+                                            publiques + ads
+
+
+
+
+                                                                               FI
+                                A- R-10     Définir modèle       Préventif P1   Legal + CEO T0-75 T0-45 À faire   Contrat + CGV –            PDFs
+
+
+
+
+                                                                            N
+                                029         contractuel “soft-                                                    + mentions
+
+
+                                                                      CO
+                                            ware training ex-
+                                            port”
+                                A- R-10     Scénarios opération- Préventif P2   CEO + Ops T0-60 T0-30 À faire     Note scénarios A-029       Note
+                                030         nels (local / export                                                  + triggers
+                                            / hybride)
+                                A- R-11     Lister coûts en      Préventif P3   CEO + Ops T0-60 T0-30 À faire     Tableau de-     Budget     Tableau
+                                031         devise + buffer +                                                     vises + clauses
+                                            règle révision prix
+                                A- R-12     Créer “Factsheet” Préventif P1      Ops         T0-45 T0-25 À faire   Factsheet       Livre      Factsheet
+                                032         (source unique                                                        versionnée +    blanc
+                                            chiffres) + ver-                                                      owners
+                                            rouillage
+                                A- R-12     Mettre CI build      Préventif P2   Ops         T0-30 T0-14 À faire   Build auto +    Repo doc CI logs
+                                033         LaTeX + lint doc                                                      alertes
+                                            (si applicable)
+                                                                                                                                           Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 284 sur 316
+

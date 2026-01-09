@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                          Chapitre 2. Stratégie : Note de Cadrage
+
+
+
+    Le projet RBK 2.0 s’articule autour d’objectifs précis garantissant la qualité, la maîtrise des coûts et le respect des délais.
+
+   Tableau de bord - Objectifs SMART
+
+
+
+    Indicateur                                Définition                                Cible                                    Mesure / Source
+    Objectif                                  Définition SMART                          Cible                                    KPI / Mesure
+    Excellence Tech                           Former des profils capables de dé-        100% de réussite aux Capstones           Taux de déploiement Mainnet
+                                              ployer en mainnet
+    Employabilité                             Placement des talents sous 90 jours       > 90%                                    Taux d’insertion Pro
+                                              post-graduation
+    Rentabilité                               ROI positif des cohortes via ISA et       Break-even à M+12                        ARR / Cohorte
+
+
+
+
+                                                                                      EL
+                                              Factory
+    Vélocité                                  Durée de formation optimisée sans         48 semaines (Genesis Pool 4 + Ex-        Time-to-Skills
+
+
+
+
+                                                                                    TI
+                                              perte de qualité                          plorer 12 + Bâtisseur 16 + Archi-
+
+
+
+
+                                                                           N
+                                                                                        tecte 16)
+
+
+
+
+                                                                         DE
+                                                                  FI
+ROI et Métriques Financières
+
+
+                                                                 N
+                                                           CO
+    L’hypothèse de ROI repose sur une valorisation moyenne des profils sortants à ~150 k TND/an (marché international) et sur le recouvrement ISA (net des pauses).
+Le modèle ”Factory” (production de MVP pour tiers) génère un revenu complémentaire estimé à 15% du CA global.
+
+
+
+2.6 Analyse des besoins
+    Nous clarifions ici ce qui manque aujourd’hui (tech, outils, expérience utilisateur) pour rendre le studio pleinement opérationnel.
+
+
+2.6.1 Audit de l’existant
+    L’infrastructure actuelle (locaux, connexion, serveurs) est robuste pour du développement Web2 classique. Le passage au Web3 nécessite une mise à niveau :
+    • Infrastructure Node : Nécessité de nœuds RPC privés ou dédiés pour les tests de charge.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                Page 44 sur 316
+

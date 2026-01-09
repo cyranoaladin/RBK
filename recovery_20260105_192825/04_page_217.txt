@@ -1,0 +1,60 @@
+                                                                      Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                          DÉTAILLÉ ET STANDARDS
+
+
+
+## Sxx (Semaine courante)
+- PR(s): <Lien vers GitHub>
+- Tag/Release: v0.x.x
+- CI Status: <Lien Run> (Green)
+- Demo Link: <Lien Loom/YouTube> (30-90s)
+- Reproduce commands: `./scripts/test_scenario_A.sh`
+- Docs Updated: README, ADR-002
+- ADR added/updated: ADR-005
+- Metrics: "TPS=5000 sur machine locale"
+- Known Issues: ...
+
+
+
+
+                                                            EL
+B.3.4 Template : THREAT_MODEL.md
+
+
+
+
+                                                          TI
+# Threat Model
+
+
+
+
+                                                         EN
+## 1. Assets to Protect
+
+
+
+
+                                                  ID
+- User Funds (Wallet keys)
+
+
+
+                                              NF
+- Data Integrity (Ledger)                 CO
+## 2. Attack Surface
+- Public RPC Endpoints
+- Input fields (DApp)
+
+
+## 3. Threats & Mitigations
+| Threat | Mitigation | Status |
+|--------|------------|--------|
+| Replay Attack | Nonce / Idempotency Key | Implemented |
+| XSS Injection | Sanitize Inputs + CSP     | Tested |
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                      Page 215 sur 316
+

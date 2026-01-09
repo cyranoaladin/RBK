@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                  Annexe D. Addendum juridique
+
+
+
+ • Les contenus pédagogiques, playbooks et assets produits par Nexus sont co-propriété RBK–Nexus ; RBK bénéficie d’une licence perpétuelle, mondiale et libre de
+   redevance pour exploitation interne.
+
+ • Les outils, scripts et gabarits publiés dans l’écosystème (GitHub) conservent une licence OSS compatible, avec attribution obligatoire aux deux parties.
+
+ • Money Factory AI demeure propriétaire de Venture Engine ; Nexus garantit la réversibilité des données et l’accès continu de RBK conformément à la licence.
+
+ • Toute réutilisation par des tiers nécessite accord écrit des deux parties et partage des revenus dérivés selon le waterfall financier (cf. C).
+
+
+
+
+                                                                                             EL
+D.4 Processus de pilotage et résolution des litiges
+1. Détection : Ecarts détectés via cockpit KPI, audits ou feedback apprenants sont consignés dans le registre commun sous 48h.
+
+
+
+
+                                                                                          TI
+2. Remédiation : Nexus propose un plan correctif (RACI, budget, échéance) validé en CEC ; RBK confirme ou demande un arbitrage.
+
+
+
+
+                                                                              EN
+3. Escalade : En cas de désaccord, réunion extraordinaire du Comité éthique et pédagogique sous 5 jours, avec convocation optionnelle de MFAI pour sujets
+   techniques.
+
+4. Arbitrage final : Si le différend persiste, médiation externe désignée conjointement ; défaut d’accord sous 30 jours déclenche clause de résiliation anticipée.
+
+
+
+
+                                                                  D
+D.5 Référentiel financier
+                                                                FI
+                                                    N
+    Toutes questions relatives aux éléments financiers contractuels (tarification, calendrier de paiement, rémunération, reporting, audits) sont régies par l’annexe B
+— Modèle financier & Waterfall contractuel (cf. C), qui constitue un élément contractuel intégral du présent contrat.
+                                                   O
+                                             C
+
+
+D.6 Modalités de paiement
+     • Délai de paiement : 15 jours ouvrés à compter de la date de facture
+
+     • Les factures sont émises mensuellement au prorata de l’avancement
+
+     • En cas de retard > 30 jours, suspension automatique des services
+
+     • Pénalités de retard : 1% du montant impayé par mois de retard
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 238 sur 316
+

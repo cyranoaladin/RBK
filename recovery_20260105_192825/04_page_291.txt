@@ -1,0 +1,84 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                      Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                             TAB. V.2 : KPI de pilotage v1 — RBK Web3 Studio
+                                                                                                                               Seuils                Actions
+                         KPI            Définition         Formule / Calcul             Cible   Cadence   Source     Owner
+                                                                                                                               Alerte/Critique       déclenchées
+                         Leads ICP      Volume de pros- #leads qualifiés / semaine ≥ 40 / Hebdo           CRM +      Mkt       Alerte < 25 ; Cri-    Intensifier webi-
+                                        pects répondant                            sem                    forms                tique < 15            nars, partenariats,
+                                        à l’ICP (profil                                                                                              retargeting
+                                        technique +
+                                        motivation)
+                         CVR L→E        Efficacité qualifi- #entretiens / #leads   ≥ 25% Hebdo            CRM        Mkt +     Alerte < 18% ;        Ajuster ICP, lan-
+                                        cation              qualifiés                                                HoP       Critique < 12%        ding, message,
+                                                                                                                                                     screening
+                         CVR E→A        Efficacité sélec- #admis / #entretiens          40–     Hebdo     CRM        HoP       Alerte < 30% ;        Revoir critères,
+                                        tion/adéquation                                 60%                                    Critique < 20%        renforcer bridge,
+                                        offre                                                                                                        clarifier prérequis
+                         Taille cohorte Seuil minimal de #admis confirmés               ≥ 15    Hebdo     CRM        CEO       Alerte 12–14 ; Cri-   Activer plan B :
+                                        lancement                                                                              tique < 12            1 track, format
+                                                                                                                                                     part-time, report
+
+
+
+
+                                                                                                        EL
+                         CPL            Coût acquisition  Budget marketing / #leads À       Hebdo         Budget + Mkt         Alerte +20% ; Cri-    Optimiser canaux,
+
+
+
+
+                                                                                                  TI
+                                                          qualifiés                 définir               CRM                  tique +40%            couper ads faibles
+                         Attendance     Présence aux ses- #présences / #sessions    ≥ 90% Hebdo           LMS /    HoP         Alerte < 85% ;        1 :1 coaching,
+
+
+
+
+                                                                                                N
+                                        sions synchrones attendues                                        Discord              Critique < 75%        rattrapages, ajuster
+
+
+
+
+                                                                                          DE
+                                                                                                                                                     charge
+                         Labs complets Livraison des       #labs validés / #labs        ≥ 85% Hebdo       Repo       HoP +     Alerte < 75% ;        Réduire scope,
+
+
+
+
+                                                                                        FI
+                                       labs dans les       prévus                                         issues/-   TA        Critique < 60%        ajouter TA, replani-
+
+
+
+
+                                                                                    N
+                                       délais                                                             grades                                     fier sprint
+
+
+                                                                            CO
+                         Jalons caps-  Respect jalons      #jalons atteints / #jalons   ≥ 80% Hebdo       Board      HoP       Alerte < 70% ;        Gating Must, cou-
+                         tone          capstone (S17–      planifiés                                      projet               Critique < 50%        per Could, mento-
+                                       S20)                                                                                                          rat intensif
+                         Churn         Décrochage          #abandons / #cohorte         ≤ 5%    Mensuel   Admin      HoP       Alerte 6–10% ; Cri-   Diagnostic charge,
+                                       apprenants                                                                              tique > 10%           accompagnement,
+                                                                                                                                                     adaptation rythme
+                         NPS pro-       Satisfaction       %promoteurs - %détrac-       ≥ 45    Mensuel   Survey     Ops +     Alerte 20–44 ; Cri-   Plan actions quali-
+                         gramme         globale (recom-    teurs                                                     HoP       tique < 20            té (top 3 irritants)
+                                        mandation)
+                         PR pass rate   PR acceptées       #PR pass / #PR totales       ≥ 70% Hebdo       GitHub     Tech Lead Alerte < 60% ;        Coaching code
+                                        sans rework                                                                            Critique < 45%        review, exemples,
+                                        majeur                                                                                                       pairing
+                         PR rework      Proportion PR      #PR rework / #PR totales ≤ 25% Hebdo           GitHub     Tech Lead Alerte > 35% ;        Revoir DoD, tem-
+                                        demandant                                                                              Critique > 50%        plates, formation
+                                        refonte                                                                                                      tests
+                                                                                                                                                       Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                 Page 289 sur 316
+

@@ -1,0 +1,29 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Chapitre 12. MODULE SOFT SKILLS & PROFESSIONNALISATION
+
+
+                                                 TAB. 12.3 : Rubrique d’Évaluation des Soft Skills
+
+
+Axe        Poids Preuves de niveau ”Pro” (14-17)                                       Preuves attendues (Artefacts)
+Comm. Tech 30% Documentation claire, PR descriptions détaillées, sait expliquer le     GitBook du Capstone, Historique de PRs, Rapport d’Audit.
+                 ”pourquoi” technique.
+Collab.    30% Débloque les autres, ne blâme pas, feedback constructif, utilise les    Commentaires Code Review, Activity Log Discord/Jira.
+                 outils async correctement.
+Pro.       40% Respect absolu des deadlines, communication immédiate en cas de         Ponctualité rendus, Qualité finition (typos, UX), Suivi planning.
+                 retard, proactivité sur les problèmes.
+
+
+
+
+                                                                             EL
+                                                                          TI
+                                                              D    EN
+                                                           FI
+                                                       N
+                                               CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                      Page 109 sur 316
+

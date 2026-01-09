@@ -1,0 +1,41 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                               Chapitre 1. Vision & Manifeste
+
+
+1.2.0.4 Changement de Paradigme
+
+
+                                          TAB. 1.5 : Le Changement de Paradigme RBK 2.0 (Détaillé)
+
+
+                  Dimension     Ancien Monde (Univ/Bootcamps)      RBK 2.0 (Senior-by-Design)         Signal Recruteur
+
+                  Objectif      Valider des modules                Livrer de la valeur                GitHub Activity
+                  Outils        Interdits (Pas d’IA)               Obligatoires (Cursor, Copilot)     Vitesse d’exécution
+                  Rythme        Linéaire, théorique                Cyclique, intense, pratique        Résilience
+
+
+
+
+                                                                       EL
+                  Sécurité      Optionnelle / Théorique            By Design (Audit Flow)             Portfolio d’audits
+                  Santé         Ignorée                            Gérée (Protocole Anti-Burnout)     Stabilité émotionnelle
+
+
+
+
+                                                                    TI
+                  Sortie        Stage sous-payé                    Consultance / CDI Senior / Grant   Contrats signés
+
+
+
+
+                                                          D   EN
+                                                       FI
+                                                       N
+                                             CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 39 sur 316
+

@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+                                  Permission   Admin Issuer User Garde-fou Standard
+                                  Mint          Oui    Oui Non Plafond + logs + approbation
+                                  Freeze        Oui   Non Non Timelock + justification + audit
+                                  Transfer      Non   Non Oui Règles policy + limites + recovery
+                                  Update Policy Oui   Non Non Review + multi-approval + versioning
+                                  Burn          Oui    Oui Non Motif + audit trail
+
+
+
+                                                     Mint           Transfer          Freeze
+
+
+
+
+                                                                        EL
+                                              Audit Trail          Burn           Update Policy
+
+
+
+
+                                                                     TI
+                                                               EN
+                            FIG. 14.5 : Cycle de vie tokenisé + Audit Trail (Tokenization & DePIN Architect)
+
+
+
+
+                                                          D
+                                                       FI
+14.6 Fiche Métier 6 : Web3 QA & Test Automation Engineer
+
+                                                   N
+Résumé métier Le QA Web3 écrit du code qui teste le code. C’est un rôle de sécurité et de fiabilité : il conçoit une stratégie de tests
+                                            CO
+multi-niveaux (unit, integration, fork, fuzz, invariants), automatise les gates CI et empêche les régressions. Un QA Web3 qui ne sait pas
+faire du fork testing et du fuzzing n’est pas ”incomplet” : il est aveugle.
+
+Mission et périmètre
+
+   • Définir la stratégie qualité (risques, scénarios critiques, niveaux de tests).
+
+   • Implémenter l’automatisation CI : lint, unit, integration, fork, fuzz, coverage, artefacts de preuve.
+
+   • Tester le comportement sous conditions chain : latence, reorg (EVM), congestion, RPC rate limit, comptes manquants.
+
+   • Maintenir une discipline de non-régression : suites rejouables, test data, snapshots.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 126 sur 316
+

@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         Chapitre 2. Stratégie : Note de Cadrage
+
+
+      • Sécurité : Environnements isolés (Sandbox) pour les manipulations de smart contracts4 .
+
+
+2.6.2 Besoins Utilisateurs et Parties Prenantes
+      • Apprenants (Talents) : Recherchent une expertise rare, un mentorat de haut niveau et une insertion rapide.
+      • Partenaires (Hiring Partners) : Recherchent des profils ”Plug & Play”, auditables via leur code sur GitHub.
+      • Instruction Team : A besoin d’outils de suivi automatisé (CI/CD5 pédagogique) et de supports à jour.
+
+   Priorisation des Fonctionnalités - MVP Studio
+
+
+
+      Must have                               Should have                             Could have                               Won’t have (for now)
+      • Cursus Dual-Track complet             • Module Audit Sécurité Avancé          • Hackathons Internationaux              • Token de gouvernance DAO (V2)
+
+
+
+
+                                                                                    EL
+      • Plateforme d’évaluation auto.         • Certification Soulbound (SBT)         • Incubateur physique dédié              • Expansion multi-sites
+
+
+
+
+                                                                                  TI
+      • Noeuds RPC Testnet
+
+
+
+
+                                                                          N
+                                                                        DE
+2.7 Solutions techniques
+
+
+
+                                                                 FI
+                                                                N
+      Les choix technologiques proposés ci-dessous concrétisent le dual-track et sécurisent la montée en échelle.
+                                                          CO
+2.7.1 Justification du Dual-Track (EVM + Solana)
+      Le choix de couvrir à la fois l’EVM (Ethereum Virtual Machine) et Solana répond à une logique de couverture de marché totale.
+      • EVM (Solidity/Foundry) : Standard industriel, essentiel pour la DeFi institutionnelle et l’interopérabilité (L2s).
+      • Solana (Rust/Anchor) : Performance extrême, essentiel pour les applications grand public (DePIN, Payments) et l’innovation haute fréquence.
+  4
+    Web3/Blockchain — Smart contract : programme déployé sur blockchain exécutant automatiquement des règles vérifiables, immuables et auditées par le réseau.
+  5
+    Produit/API/Architecture — Continuous Integration / Continuous Delivery (CI/CD) : chaîne d’intégration et de livraison continues automatisant tests, builds,
+audits et déploiements.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 45 sur 316
+

@@ -1,0 +1,22 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                            Annexe U. Registre des risques opérationnels
+
+
+Note d’exploitation.      Ce registre v1 est conçu pour être vivant : à chaque COPIL/COSUI (hebdo ou bi-hebdo), mettre à jour P, I, statut, actions et reporter les
+décisions dans le CHANGELOG (et/ou un journal de pilotage).
+
+
+
+
+                                                                               EL
+                                                                             TI
+                                                                      N
+                                                                    DE
+                                                             FI
+                                                            N
+                                                     CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                         Page 280 sur 316
+

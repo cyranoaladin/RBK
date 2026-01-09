@@ -1,0 +1,50 @@
+E | TEMPLATE DE RAPPORT D’AUDIT DE SÉCURITÉ
+
+
+
+
+                                                                                       EL
+  Un rapport d’audit professionnel doit être clair, complet et actionnable.
+
+
+
+
+                                                                                    TI
+E.1 Structure du Rapport
+
+
+
+
+                                                                              EN
+ 1. Executive Summary : Résumé pour les décideurs (Score, Risque global).
+
+ 2. Scope : Liste des fichiers audités et Commit Hash.
+
+
+
+
+                                                               D
+ 3. Findings : Liste des vulnérabilités classées par sévérité.
+
+ 4. Recommendations : Conseils d’architecture généraux.
+
+                                                             FI
+                                                 N
+E.2 Classification des Risques
+                                                O
+
+                                                                   Table : Échelle de Sévérité
+                                           C
+
+
+                           Niveau   Impact                                         Exemple
+                           CRITICAL Perte de fonds directe, Gel définitif          Reentrancy, Owner Key compromise
+                           HIGH     Dégradation sévère du service, Perte partielle DoS, Price Oracle manipulation
+                           MEDIUM   Grief mineur, Coût Gas élevé                   Griefing attack, Unbounded Loop
+                           LOW/INFO Bonnes pratiques, Lisibilité                   Typo, Dead code
+
+
+
+
+                                                                              241
+

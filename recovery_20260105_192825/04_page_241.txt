@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                           Annexe D. Addendum juridique
+
+
+
+D.7 Clause de ”Gross-Up”
+    Toutes retenues à la source, taxes ou impôts applicables sur les paiements dus à Nexus seront supportés par RBK, de sorte que Nexus reçoive in fine le montant
+net égal au montant HT facturé.
+
+
+
+D.8 Droit d’audit
+    • RBK dispose d’un droit d’audit annuel sur les justificatifs des coûts mentors
+
+    • Nexus dispose d’un droit d’accès aux données de CA_Booked et CA_Eligible pour vérification des calculs
+
+    • Les audits sont effectués sur 30 jours calendriers à compter de la demande
+
+
+
+
+                                                                                  EL
+    • Les coûts des audits sont supportés par la partie demandant l’audit, sauf si des écarts > 5% sont détectés
+
+
+
+
+                                                                                TI
+                                                                        N
+D.9 Responsabilités contractuelles
+
+
+
+
+                                                                      DE
+    • RBK : respect des délais de paiement, communication des données CA_Booked
+
+
+
+
+                                                                FI
+    • Nexus : fourniture conforme des services pédagogiques, reporting financier mensuel
+
+
+
+                                                               N
+    • Les deux parties : coopération pour l’audit mutuel et le reporting financier
+                                                        CO
+D.10 Force majeure
+    Est considéré comme un cas de force majeure tout événement échappant au contrôle raisonnable de la partie concernée, imprévisible et insurmontable malgré
+l’application de toutes les diligences raisonnables.
+
+
+
+D.11 Résiliation anticipée
+    En cas de résiliation anticipée pour faute grave ou non-respect des engagements contractuels :
+
+    • Arrêt immédiat des services
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 239 sur 316
+

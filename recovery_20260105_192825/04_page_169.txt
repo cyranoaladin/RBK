@@ -1,0 +1,45 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                              Chapitre 19. Gouvernance & transparence
+
+
+
+19.4 Structure Juridique et Rôles (Branding)
+      Pour assurer une clarté totale vis-à-vis des étudiants et partenaires, nous distinguons les entités comme suit :
+
+ReBootKamp (RBK) Tunisie : L’entité légale opératrice historique. Elle porte l’agrément de formation, gère les locaux (Ariana), les
+    contrats étudiants (ISA inclus via véhicule dédié) et le staff administratif. C’est le garant de la conformité locale.
+
+Nexus Réussite : Le maître d’œuvre pédagogique exclusif mandaté par RBK. Nexus conçoit et met en oeuvre le curriculum, contracte et
+    pilote les mentors, valide les Block Checks et fournit les reporting exigés par la gouvernance.
+
+Money Factory AI : Le fournisseur technologique référencé par Nexus. Basé à Dubai/Singapour, Money Factory délivre la plateforme
+    Venture Engine, maintient l’infrastructure de certification On-chain (SBT) et assure le support technique selon les SLA1 contractuels.
+
+
+
+
+                                                                                 EL
+Le Programme ”RBK 3.0” : Est une Offre RBK opérée avec Nexus Réussite et adossée aux briques technologiques de Money Factory AI,
+
+
+
+
+                                                                              TI
+     garantissant une chaîne de valeur clairement contractuelle et maîtrisée.
+
+
+
+
+                                                                 D     EN
+                                                              FI
+                                                          N
+                                                   CO
+
+
+
+
+  1
+      Finance/Juridique/Compliance — Service Level Agreement contractuel décrivant engagements de service, métriques, pénalités et modalités de mesure.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 167 sur 316
+

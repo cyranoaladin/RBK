@@ -1,0 +1,54 @@
+                                                                                                      Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                         DÉTAILLÉ ET STANDARDS
+
+
+
+   Ce barème est appliqué strictement lors des revues hebdomadaires et des Gates.
+
+
+B.4.1 Détail de la Notation (/100)
+
+
+     Critère                           Score           Niveaux de performance
+     1. Fonctionnel (Produit)          25 pts
+                                                       • 0–10 : Feature incomplète ou cassée.
+                                                       • 11–20 : Feature conforme mais fragile (pas de cas limites).
+                                                       • 21–25 : Conforme + Cas limites gérés + Démo fluide.
+
+
+
+
+                                                                   EL
+                                                                TI
+     2. Qualité Code & Tests           25 pts
+                                                       • 0–10 : Pas de tests ou code illisible. Pas de CI.
+
+
+
+
+                                                          EN
+                                                       • 11–20 : Tests présents mais couverture faible. CI verte.
+                                                       • 21–25 : Tests Unitaires/Intégration solides. Refactoring propre.
+
+
+
+
+                                                      D
+                                                   FI
+     3. Sécurité (Threat Model)        20 pts
+
+                                                N      • 0–8 : Aucun Threat Model ou mitigations absentes.
+                                            CO
+                                                       • 9–15 : TM présent mais incomplet. Risques résiduels flous.
+                                                       • 16–20 : TM complet + Checklist appliquée + Preuves.
+
+     4. Ops & Observabilité            15 pts
+                                                       • 0–5 : Logs insuffisants, pas de Runbook.
+                                                       • 6–11 : Logs présents. Runbook incomplet.
+                                                       • 12–15 : Logs structurés, Métriques clés, Incident Playbook.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                             Page 217 sur 316
+

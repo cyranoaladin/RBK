@@ -1,0 +1,25 @@
+11367: - PR(s): <Lien vers GitHub>
+11368: - Tag/Release: v0.x.x
+11369: - CI Status: <Lien Run> (Green)
+11370: - Demo Link: <Lien Loom/YouTube> (30-90s)
+11371: - Reproduce commands: `./scripts/test_scenario_A.sh`
+11372: - Docs Updated: README, ADR-002
+11373: - ADR added/updated: ADR-005
+11374: - Metrics: "TPS=5000 sur machine locale"
+11375: - Known Issues: ...
+11399: - User Funds (Wallet keys)
+11404: - Data Integrity (Ledger)                 CO
+11406: - Public RPC Endpoints
+11407: - Input fields (DApp)
+11411: | Threat | Mitigation | Status |
+11412: |--------|------------|--------|
+11413: | Replay Attack | Nonce / Idempotency Key | Implemented |
+11414: | XSS Injection | Sanitize Inputs + CSP     | Tested |
+11425: - Dependency supply chain attack (audit pending).
+11456: - Positive : ...
+11457: - Negative : ...
+11461: - Option A : rejetée car...
+11462: - Option B : rejetée car...
+13446: + Technique + Social) pour l’accès ISA. Conditions Unifiées :
+15341: Tableau de pilotage KPI (v1) — Admissions, Qualité, Sécurité, Ops, Carrière, Finance
+15960: + CI) qui empêchent toute régression.

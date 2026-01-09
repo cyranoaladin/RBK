@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                 Chapitre 9. Track A : Solana Engineer
+
+
+                                                      Client (TS)          IDL        Program (Rust)
+
+
+
+                                                                                      Accounts (Data)
+
+                                                                    FIG. 9.2 : Flux Anchor
+
+
+9.2.3 MODULE 3 : Architectures Avancées & Innovation (Semaines 21-24)
+Objectifs Opérationnels
+
+
+
+
+                                                                                EL
+      • CPI (Cross-Program Invocations) : Appeler un programme depuis un autre (ex : Transfert SPL Token).
+
+
+
+
+                                                                             TI
+      • Token Extensions (Token-20222 ) : Metadata, Transfer Hooks.
+
+
+
+
+                                                                      EN
+      • Architecture Modulaire : Séparer la logique métier du stockage.
+
+
+
+
+                                                                D
+Labs & Livrables Lab A (CPI Challenge) : Un programme ”Master” qui contrôle un programme ”Slave” via CPI signée (PDA Signer).
+
+
+
+
+                                                             FI
+Livrable : Architecture complexe documentée (C4 Model) et tests d’intégration multi-programmes.
+
+                                                          N
+                                                  CO
+9.2.4 MODULE 4 : Production Hardening & UX Performance (Semaines 25-28)
+Objectifs Opérationnels
+
+      • Optimisation des Compute Units (CU) pour réduire les coûts et la latence.
+
+      • Gestion des erreurs custom et logs structurés.
+
+      • Préparation à l’audit (Freeze Authority, Upgradeability).
+  2
+      Web3/Blockchain — SPL Token-2022 : standard Solana ajoutant des extensions (règles, hooks, métadonnées étendues) pour des jetons programmables.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                          Page 93 sur 316
+

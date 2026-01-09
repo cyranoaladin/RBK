@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                       Chapitre 5. Architecture de Partenariat
+
+
+
+1. Contrat-cadre de services (RBK ↔ Nexus) : définit le périmètre pédagogique, les KPIs, les clauses de pénalité, la propriété intellectuelle partagée et la gouvernance
+   (CEC).
+2. Bon de commande / SOW par cohorte : précise les livrables phase par phase, le staffing validé, les plafonds d’heures mentors et les seuils de performance
+   déclenchant bonus/malus.
+3. Facturation : Nexus facture RBK en trois jalons (Genesis, Bâtisseur, Architecte) ; RBK facture les apprenants (frais initiaux, échéanciers ISA) et constitue le Fonds
+   de Garantie ISA (voir §15.6.1).
+4. Flux ISA : RBK conserve l’entier recouvrement, Nexus transmet les preuves de graduation et de placement nécessaires aux déclenchements.
+5. Gestion de la trésorerie : les comptes séquestres (ISA, bourses) sont opérés par RBK avec droit de regard Nexus ; un plancher de trésorerie minimal est fixé
+   contractuellement (cf. Chapitre 15).
+
+
+
+
+                                                                                   EL
+5.4 Sécurisation des intérêts de RBK
+
+
+
+
+                                                                                 TI
+   Cette approche protège RBK contre les risques de dérive d’exécution tout en maximisant la valeur contractuelle : RBK garde la main sur les décisions structurantes,
+
+
+
+
+                                                                         N
+bénéficie d’un droit de suspension à clauses multiples et peut internaliser l’ensemble des actifs en moins de 60 jours.
+
+
+
+
+                                                                       DE
+   Clauses de réversibilité go/no-go
+
+
+
+
+                                                                FI
+                                                               N
+    Déclencheur           Mécanisme contractuel          CO                                                                                  Décision RBK
+    constaté
+    Marqueurs             Comité Qualité convoqué sous 5 jours, plan correctif écrit, jalon go/no-go à +4 semaines                           Validation RBK
+    qualité : NPS < 60                                                                                                                       obligatoire ; échec ⇒
+    sur 2 comités                                                                                                                            suspension jalon
+    consécutifs ou                                                                                                                           suivant activation
+    Learning Velocity                                                                                                                        plan de substitution
+    en alerte rouge                                                                                                                          mentors
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                             Page 64 sur 316
+

@@ -1,0 +1,36 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Chapitre 3. Gouvernance, Partenariat et RACI
+
+
+
+                Organisation des jurys & examens                    C                     A                       R
+                Suivi qualité & conformité                          R                     A                       C
+                Technologie & Plateforme
+                Fourniture plateforme journey.mfai.app              I                     R                       A
+                Support technique plateforme (SLA)                  I                     R                       A
+                Gestion des données apprenants (DPA)                A                     R                       C
+                Finance & Reporting
+                Facturation Apprenants & Recouvrement ISA           A                     C                       I
+                Facturation RBK → Nexus                             A                     R                       I
+                Reporting d’exécution (KPIs)                        R                     A                       I
+
+
+
+
+                                                                      EL
+  Légende : RResponsable (Responsible), AApprobateur (Accountable), CConsulté (Consulted), IInformé (Informed).
+
+
+
+
+                                                                    TI
+                                                              N
+                                                            DE
+                                                          FI
+                                                         N
+                                                     CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 51 sur 316
+

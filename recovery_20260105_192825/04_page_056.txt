@@ -1,0 +1,67 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                  Chapitre 4. ANALYSE DU CONTEXTE
+
+
+
+               Indicateur                    Lecture 2025                      Source
+               Développeurs actifs           ∼1 900 profils (+35% YoY)         Electric Capital Developer Report 2024 (addendum Q1 2025)
+               mensuels Solana               concentrés sur les couches core
+                                             et validator
+               TVL Solana                    4,6 Md$ (sept. 2024) → 6,5 Md$ Messari State of Solana Q3 2024, Artemis dashboard
+                                             (projection Q1 2025)
+               Volumes DEX Solana            30 Md$/mois au S4 2024 (x7 vs     CoinGecko Derivatives Monitor, 15/12/2025
+                                             2023)
+               Investissements MENA          310 M$ levés en 2024 (+22%        RootData ”MENA Web3 Funding” 2025 Outlook
+               Web3                          YoY)
+               Talents Rust/Web3             < 350 profils référencés          Nexus Talent Intelligence, déc. 2025
+
+
+
+
+                                                                               EL
+               disponibles (MENA)            (LinkedIn, Superteam Earn)
+
+
+
+
+                                                                             TI
+               Pipeline employeurs RBK       9 partenaires (3 Solana, 3 EVM,   MoU/LOI Nexus Réussite Superteam (𝑛 = 9)
+                                             3 DePIN) couvrant 120 postes
+
+
+
+
+                                                                     N
+                                             2025
+
+
+
+
+                                                                   DE
+               ISA-friendly roles (Remote)   42% des offres Solana proposées   Web3.career Salary Index, nov. 2025
+                                             en remote total avec packages
+
+
+
+
+                                                           FI
+                                             > 60k$/an
+
+
+                                                          N
+               Durée moyenne                 86 jours (contre 42 jours Web2    Lightspeed Crypto Talent Pulse 2025
+                                                    CO
+               recrutement Rust Senior       senior)
+               Solana validator count        3 400+ noeuds (doublement vs      Solana Foundation Validator Health Report 2025
+                                             2023) 33% en régions
+                                             émergentes
+               Activité bounties Superteam 2 7 M$ redistribués en 2024,        Superteam Earn Transparency Report 2024
+                                           ticket médian 1 2k$
+               Temps médian premier          48 jours post-onboarding pour     Nexus Earn Analytics, cohorte pilote 2024
+               revenu                        un builder Genesis
+               Coût moyen bug bounty L1      75k$ (x1,5 vs 2023)               Immunefi Crypto Losses Bug Bounties 2025
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                        Page 55 sur 316
+

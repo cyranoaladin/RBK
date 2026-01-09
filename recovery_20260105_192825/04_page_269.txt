@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                        Annexe Q. CONTRAT DE PARTENARIAT PÉDAGOGIQUE ET DE PARTAGE DE SUCCÈS (CPPS)
+
+
+
+Q.3 Définitions clés
+    • Seuil de succès : 2500 brut mensuel par rapport à la devise de référence contractuelle.
+
+    • Taux de partage : 15% du revenu brut éligible lorsque le seuil est dépassé.
+
+    • Plafond : 20000 cumulés ou 36 mensualités payées, la première condition atteinte mettant fin aux obligations.
+
+    • Pause automatique : suspension du versement dès que le revenu éligible repasse sous le seuil ; aucune capitalisation d’arriérés.
+
+
+
+
+                                                                                          EL
+Q.4 Obligations de RBK
+    • Délivrer le curriculum complet, les évaluations “Block Check” et l’accompagnement carrière définis dans le présent whitepaper.
+
+
+
+
+                                                                                       TI
+    • Mettre à disposition du bénéficiaire un accès transparent aux relevés d’heures et de preuves d’apprentissage fournis par Nexus Réussite via Venture Engine.
+
+
+
+
+                                                                            EN
+    • Alimenter et gérer le Fonds de Garantie ISA décrit au Chapitre 15, garantissant la prise en charge des défauts éventuels.
+
+
+
+
+                                                                D
+Q.5 Obligations du bénéficiaire
+
+
+                                                              FI
+    • Maintenir une assiduité supérieure à 95% et respecter le règlement intérieur pédagogique.
+
+    • Déclarer à RBK tout emploi ou mission éligible dans un délai de 10 jours ouvrés, fournir les justificatifs de rémunération et signer les mandats de prélèvement
+                                                  N
+      nécessaires.
+                                                 O
+    • Autoriser, si nécessaire, la vérification des informations auprès de l’employeur ou du client final dans le respect du RGPD (cf. Chapitre 18).
+                                            C
+
+
+Q.6 Collecte et validation des revenus
+  1. Transmission mensuelle par le bénéficiaire d’un bulletin de salaire, d’un contrat freelance ou d’une facture.
+
+  2. Validation par le Comité Carrière RBK & Nexus qui cote le poste et confirme son éligibilité au périmètre Web3.
+
+  3. En cas de doute, saisine automatique du Comité Éthique & Pédagogique décrit au Chapitre 5. Aucun prélèvement n’est effectué avant sa décision contradictoire.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 267 sur 316
+

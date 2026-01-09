@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                   Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+
+14.8 Perspectives Économiques & Carrière
+   Nous cadrons ici les fourchettes de revenus et les conditions pour atteindre chaque palier, afin de relier compétences et réalité marché.
+Principe RBK : le salaire est corrélé à la réduction de risque que vous apportez (sécurité, fiabilité, delivery, adoption). Les profils capables
+de produire des preuves studio-grade atteignent les hauts de fourchettes.
+
+
+14.8.1 Revenus Annuels Cibles 2025
+    Ce tableau présente des ordres de grandeur. Le haut de fourchette n’est accessible qu’avec des preuves de compétence ”Studio-Grade”
+(portfolio, livrables, track record, recommandations). Note : Le différentiel apparent ”Tunisie vs Remote” doit être pondéré par le coût de la
+vie et la fiscalité. À compétences égales, le plafond ”remote global” dépend aussi du niveau d’anglais, de la capacité à travailler async, et de la
+
+
+
+
+                                                                          EL
+crédibilité du portfolio.
+
+
+
+
+                                                                       TI
+                                                     TAB. 14.7 : Revenus Indicatifs (2025)
+
+
+
+
+                                                                EN
+                 Métier          Remote Global Tunisie          Condition Top Tier (preuve)
+
+
+
+
+                                                           D
+                                                        FI
+                 Guardian        $80k – $150k    5k – 10k TND 3 repos + Audit Report + fuzz/invariants + runbook
+
+                 Auditor (Elite) $120k – $250k N/A
+                                                    N           Track record de findings critiques + rapports publics
+                                              CO
+                 Strategist      $90k – $160k    Consultant     Modèles rejouables + risk register + décisions défendables
+
+                 Builder         $70k – $140k    4k – 9k TND    PRD + releases régulières + obs + incidents gérés proprement
+
+                 dApp Eng.       $60k – $110k    3k – 6k TND    UX tx irréprochable + failover RPC + e2e + métriques
+
+                 Token Arch.     $90k – $180k    Consultant     RBAC/policy + compliance ops + audit trail + lifecycle complet
+
+                 QA Eng.         $60k – $120k    3k – 7k TND    CI gates + fork suite + fuzz + faible flakiness
+
+                 DevRel          $50k – $110k    3k – 6k TND    Doc system + SDK + starters + baisse friction intégration
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 129 sur 316
+

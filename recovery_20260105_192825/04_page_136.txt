@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                          Chapitre 15. Business Plan
+
+
+
+                                       Salaire brut de sortie   2 000 TND     3 000 TND   4 000 TND
+                                       (médiane)
+                                       Part d’apprenants           50%             40%      30%
+                                       finançant via ISA
+                                       Volume annuel                24             30        36
+                                       d’admis (Genesis)
+                                       Taux de graduation          65%             80%      90%
+                                       Genesis → Architecte
+
+
+
+
+                                                                         EL
+                                       Part de revenus              8%             12%      18%
+                                       B2B/Corporate
+
+
+
+
+                                                                      TI
+                                       Budget marketing du      75 000 TND 75 000 TND 75 000 TND
+
+
+
+
+                                                                EN
+                                       Sprint 0 (90 jours)
+                                       Dotation initiale du     150 000 TND (compte séquestré RBK)
+
+
+
+
+                                                            D
+                                       fonds de garantie ISA
+
+
+
+
+                                                         FI
+                                                    N
+Le scénario réaliste est retenu comme base pour les projections financières présentées ci-dessous. Les scénarios prudent et ambitieux
+                                              CO
+servent aux tests de robustesse (voir Analyse de sensibilité).
+
+
+15.2.2 Structure des Coûts Directs
+   • Forfait Nexus Réussite : 3 300 TND par étudiant et par cohorte couvrant la conception pédagogique, la plateforme Venture Engine
+     et le pilotage qualité.
+
+   • Pool mentors : variable indexée sur le volume d’heures effectives (20% du chiffre d’affaires formation dans le scénario réaliste,
+     plafonné par SOW cohorte).
+
+   • Opérations RBK : masse salariale (opérations, carrière, juridique), loyers, assurances et coûts de conformité estimés à 240 000 TND
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 134 sur 316
+

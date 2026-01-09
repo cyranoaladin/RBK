@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                 Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+6.3.1 Structure et Évaluation
+
+
+                                         TAB. 6.5 : Compétences et évaluations ciblées durant la Genesis Pool
+
+
+                    Semaine       Compétence Cible                 Évaluation Spécifique
+                    Semaine 1     Concepts Rust de base            Ownership, borrowing, types, erreurs (Result/Option)
+                    Semaine 2     Structures et généricité         Enums, structs, traits, impls, patterns matching
+                    Semaine 3     Programmation fonctionnelle      Closures, iterators, modules, tests unitaires
+                    Semaine 4     Projet complet                   CLI tool Rust + parsing binaire + Ed25519 signing + première Skill Mirror
+
+
+
+
+                                                                                  EL
+6.4 Gamification Web3 et Système de Réputation
+
+
+
+
+                                                                                TI
+                                                                        N
+   ̪ Mécanismes Genesis Pool → Launch Proof
+
+
+
+
+                                                                      DE
+   • Skill Mirror : à chaque jalon, les pairs évaluent le livrable via une grille Rubik (technique, documentation, sécurité). Deux validations positives débloquent
+     l’accès au Block Check.
+
+
+
+
+                                                                FI
+                                                               N
+   • NFT Skills : NFT non-transférables frappés sur Devnet Solana à chaque Block Check (Genesis, Explorer, Build, Architecte). Ils encodent le niveau, les badges
+     “Mentor Lead” et les heures de mentoring réalisées.
+                                                        CO
+   • Launch Proof : certificat final combinant NFT Skills Architecte et SBT “Audit-Ready”. Nécessaire pour accéder au Launchpad et au partage de revenus.
+   • Dev DAO : les projets sont menés en “Dev DAO” (escouades auto-gérées). Chaque escouade gère son trésor fictif et soumet un rapport on-chain.
+   • Block Check : rituels hebdomadaires (vendredi) permettant de clôturer les sprints, générer des feedbacks horodatés et déclencher l’émission automatique
+     des points de réputation.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 72 sur 316
+

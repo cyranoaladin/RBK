@@ -1,0 +1,58 @@
+I | SPÉCIFICATIONS TECHNIQUES SBT
+
+
+I.1 Schéma de Métadonnées (JSON)
+
+
+
+
+                                                                                                      EL
+     Les SBT RBK suivent le standard Metaplex Core ou ERC-721 (Non-Transferable).
+
+
+
+
+                                                                                                    TI
+                                                                            Listing I.1 : Metadata SBT Standard
+
+
+
+
+                                                                                          N
+{
+
+
+
+
+                                                                                        DE
+    ”name” : ”RBK Guardian − Cohort 1 ” ,
+    ” symbol ” : ”RBKC1−G” ,
+
+
+
+
+                                                                               FI
+    ” d e s c r i p t i o n ” : ” C e r t i f i e d Solana Smart C o n t r a c t Engineer . ” ,
+
+
+
+                                                                              N
+    ” image ” : ” h t t p s :// arweave . n e t / . . . ” ,           CO
+    ” attributes ” : [
+       { ” t r a i t _ t y p e ” : ” Track ” , ” v a l u e ” : ” Solana ” } ,
+       { ” t r a i t _ t y p e ” : ” L e v e l ” , ” v a l u e ” : ” Gold ” } ,
+       { ” t r a i t _ t y p e ” : ” Cohort ” , ” v a l u e ” : ” G e n e s i s 2025” } ,
+       { ” t r a i t _ t y p e ” : ” F i n a l G r a d e ” , ” v a l u e ” : ”92/100” }
+    ],
+    ” properties ” : {
+       ” files” : [
+           { ” u r i ” : ” h t t p s :// g i t h u b . com/ s t u d e n t / c a p s t o n e ” , ” type ” : ” t e x t / html ” } ,
+           { ” u r i ” : ” h t t p s :// rbk . tn / a u d i t /S12345 ” , ” type ” : ” a p p l i c a t i o n / pdf ” }
+       ]
+    }
+}
+
+
+
+                                                                                                    249
+

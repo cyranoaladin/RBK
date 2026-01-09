@@ -1,0 +1,55 @@
+                                                                               Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                  DÉTAILLÉ ET STANDARDS
+
+
+## 4. Residual Risks
+- Dependency supply chain attack (audit pending).
+
+
+B.3.5 Template : adr/NNNN-template.md
+# ADR NNNN --- <Titre de la Décision>
+
+
+## Status
+Proposed | Accepted | Deprecated | Superseded
+
+
+
+
+                                                             EL
+## Context
+Quel est le problème ? Quelles sont les contraintes techniques ou business ?
+
+
+
+
+                                                          TI
+                                                    EN
+## Decision
+Quelle solution avons-nous choisie ? (Technologie, Pattern, Librairie)
+
+
+
+
+                                               D
+                                            FI
+## Consequences
+- Positive : ...
+- Negative : ...
+                                         N
+                                       CO
+## Alternatives Considered
+- Option A : rejetée car...
+- Option B : rejetée car...
+
+
+## How to Validate
+Quel test ou métrique prouve que c'est le bon choix ?
+
+
+
+B.4 Grille de Notation Standardisée (/100) et Seuils
+
+
+CONFIDENTIEL — PROJET RBK 2.0                       Page 216 sur 316
+

@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                             Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+6. Décisions & arbitrages
+
+                                               Déc. ID              Décision                                                        Validation
+                                               D-                                                                                   Approuvé / Rejeté
+                                               D-                                                                                   Approuvé / Rejeté
+
+
+
+7. Plan d’actions (exécutable)
+
+                                                           Action                                                           Éché-
+                                          Action ID                                                           Owner                         Statut
+                                                           (verbe + livrable)                                               ance
+                                                                                                                                            À faire /
+                                          A-                                                                                                En cours /
+                                                                                                                                            Fait
+
+
+
+
+                                                                                                              EL
+                                                                                                                                            À faire /
+                                          A-                                                                                                En cours /
+
+
+
+
+                                                                                                        TI
+                                                                                                                                            Fait
+
+
+
+
+                                                                                                        N
+                                                                                                                                            À faire /
+                                          A-                                                                                                En cours /
+
+
+
+
+                                                                                                    DE
+                                                                                                                                            Fait
+
+
+
+
+                                                                                                  FI
+                                                                                               N
+                                                                                        CO
+8. Prochain comité
+Date/heure :                                      Type : COPIL / COSUI     Objectif :
+
+Annexes : (1) Heatmap KPI, (2) Extrait registre risques, (3) Journal d’incidents, (4) ADRs nouvelles.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                              Page 298 sur 316
+

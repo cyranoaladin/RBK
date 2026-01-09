@@ -1,0 +1,45 @@
+21 | INFRASTRUCTURE SBT & CERTIFICATION
+
+
+   La certification RBK 2.0 n’est pas un fichier PDF. C’est une preuve cryptographique On-chain, incensurable et composable, matérialisée
+
+
+
+
+                                                                     EL
+par un Soulbound Token (SBT).
+
+
+
+
+                                                                  TI
+                                                            EN
+21.1 Philosophie : ”Don’t Trust, Verify”
+   Contrairement aux diplômes traditionnels (facilement falsifiables), le SBT RBK est :
+
+
+
+
+                                                       D
+   • Permanent : Ancré sur la blockchain (Solana/Polygon).
+
+
+
+                                                    FI
+                                                 N
+   • Révocable : En cas de triche avérée post-diplomation (mécanisme de slashing).
+                                          CO
+   • Riche : Contient des métadonnées prouvant les compétences (liens vers repos, hash des commits).
+
+
+21.2 Stack Technique SBT
+   Nous posons ici les choix d’implémentation du SBT afin de garantir coût, performance et auditabilité.
+
+
+21.2.1 Choix du Standard
+   Nous utilisons une architecture hybride optimisée pour le coût et la performance.
+
+
+
+                                                                  170
+

@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                           Chapitre 15. Business Plan
+
+
+15.1.1 Modèle économique détaillé — Waterfall & caps mentors
+
+   Référence contractuelle
+   Le modèle économique et les flux financiers entre les entités partenaires sont précisément décrits dans les annexes. Ces documents
+   définissent les mécanismes de partage des revenus, de plafonnement des coûts et de protection des marges.
+
+      • Pour le détail des flux financiers (Management Fee, Mentor Pool), voir l’addendum financier en Annexe, section C.
+
+      • Pour le plafonnement des heures des mentors (caps), voir l’Annexe T.
+
+
+
+
+                                                                      EL
+15.2 Hypothèses & Sources du Modèle
+
+
+
+
+                                                                   TI
+   Ce modèle repose sur des données de marché comparables (Bootcamps Web3, Market Research 2024-2025) et sur le modèle financier
+contractuel défini dans l’Annexe B — Modèle financier & Waterfall contractuel (cf. C).
+
+
+
+
+                                                         D   EN
+15.2.1 Hypothèses Clés
+
+
+
+
+                                                      FI
+  Scénarios macro-économiques utilisés pour la modélisation
+
+                                                   N
+                                             CO
+                                       Hypothèse              Scénario      Scénario     Scénario
+                                                              prudent        réaliste   ambitieux
+                                       Coût d’acquisition     800 TND       500 TND      300 TND
+                                       (CAC) par étudiant
+                                       converti
+                                       Taux de placement à      40%             65%        85%
+                                       6 mois
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 133 sur 316
+

@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                               Annexe W. Glossaire des termes, acronymes et jargon
+
+
+                 Terme
+                                 Domaine    Définition
+               /Acronyme
+    Bridge                                  Mécanisme de transfert ou de verrouillage d’actifs entre blockchains distinctes, basé sur des
+                                            preuves ou des validateurs fédérés.
+
+    Staking                                 Staking : blocage de tokens pour sécuriser un réseau Proof-of-Stake et recevoir des récom-
+                                            penses en échange de la participation au consensus.
+
+    EVM                                     Ethereum Virtual Machine (EVM) : moteur d’exécution des smart contracts bytecode com-
+                                            patibles sur Ethereum et chaînes EVM, assurant portabilité des dApps et outils.
+
+    Multisig                                Portefeuille multi-signature exigeant plusieurs signatures indépendantes pour autoriser une
+                                            transaction, réduisant le risque de compromission.
+
+    Ops                                     « Ops » désigne les pratiques et activités d’exploitation (monitoring, incidents, runbooks,
+
+
+
+
+                                                           EL
+                                            disponibilité).
+
+
+
+
+                                                         TI
+    Token-2022                              SPL Token-2022 : standard Solana ajoutant des extensions (règles, hooks, métadonnées
+                                            étendues) pour des jetons programmables.
+
+
+
+
+                                                  N
+                                                DE
+    On-chain                                Donnée ou logique exécutée et stockée directement sur la blockchain, vérifiée par le
+                                            consensus du réseau.
+
+
+
+
+                                            FI
+    GitHub                                  Plateforme de développement collaborative pour héberger code, pull requests, CI et revue
+
+
+
+                                           N
+                                            entre équipes.
+                                           CO
+    Runbook                                 Guide opérationnel décrivant les étapes techniques pour exécuter une tâche récurrente ou
+                                            un diagnostic.
+
+    Threat Model                            Threat Model : analyse structurée des actifs, surfaces d’attaque et scénarios adverses afin de
+                                            prioriser les contre-mesures de sécurité.
+
+    README                                  Fichier d’introduction d’un dépôt décrivant le projet, son installation et son usage.
+
+    ERC                                     Ethereum Request for Comments (ERC) : famille de standards décrivant des interfaces de
+                                            jetons et contrats (ex. ERC-20, ERC-721) dans l’écosystème Ethereum.
+
+    UX                                      User Experience (UX) : qualité perçue du parcours, de la compréhension et de l’efficacité
+                                            pour l’utilisateur final.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                    Page 309 sur 316
+

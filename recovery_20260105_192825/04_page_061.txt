@@ -1,0 +1,28 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         Chapitre 4. ANALYSE DU CONTEXTE
+
+
+4.3.0.1 Définition de l’Index
+    Le graphique ci-dessous agrège le volume d’offres d’emploi techniques (Engineering, Product, Design) postées sur les 5 principaux job boards crypto, normalisé
+sur une base 100 en Janvier 2021.
+
+
+4.3.0.2 Lecture Stratégique
+    La corrélation avec le prix des actifs (BTC/SOL) diminue : les entreprises construisent (Build) même en bear market. Cela signifie que l’embauche se professionnalise
+et devient moins volatile. Pour RBK, cela valide la stratégie de ”formation longue” (7 mois) qui lisse les cycles de court terme.
+
+
+
+
+                                                                                    EL
+                                                                                  TI
+                                                                          N
+                                                                        DE
+                                                                 FI
+                                                                N
+                                                         CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 60 sur 316
+

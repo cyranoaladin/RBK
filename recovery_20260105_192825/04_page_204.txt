@@ -1,0 +1,27 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Liste des tableaux
+
+
+   O.1 Mapping Détaillé Compétences / Badges / Preuves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+
+   U.1 Registre de risques v1 — RBK Web3 Studio (DualTrack EVM/Solana)          . . . . . . . . . . . . . . . . . . . . . . . . . . . . 276
+
+   V.1   Registre des actions risques v1 — RBK Web3 Studio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 282
+   V.2   KPI de pilotage v1 — RBK Web3 Studio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 289
+   V.8   Journal d’incidents v1 — RBK Web3 Studio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 300
+   V.9   Annexe X — Traceability Matrix (SSOT & Release Gate) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
+
+
+
+
+                                                                      EL
+                                                                   TI
+                                                        D    EN
+                                                     FI
+                                                  N
+                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 202 sur 316
+

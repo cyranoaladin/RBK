@@ -1,0 +1,49 @@
+D | ADDENDUM JURIDIQUE — Conditions générales com-
+              plémentaires (RBK – Nexus Réussite)
+
+
+
+
+                                                                                 EL
+D.1 Périmètre contractuel RBK–Nexus
+
+
+
+
+                                                                               TI
+                                                                         N
+    Le présent addendum fait office de cadre de services entre RBK et Nexus Réussite. Il reprend les engagements opérationnels décrits au chapitre 5 et les décline
+
+
+
+
+                                                                       DE
+sous forme d’obligations contractuelles opposables aux deux parties.
+
+
+
+
+                                                               FI
+D.1.1 Livrables contractuels par phase
+
+
+                                                              N
+                                                       CO
+   Livrables Nexus par phase opérationnelle
+
+
+
+    Phase                 Livrables obligatoires    Format échéance
+    Sprint 0 (J -90 →     Avis juridique            Dossiers signés, dépôt Git tagué, accès LMS sandbox, enregistrements vidéo, protocole Wellbeing publié.
+    J -1)                 opérationnel,
+                          curriculum Genesis
+                          validé, MVP LMS
+                          jouable, kit
+                          Mentor-in-a-Box v1,
+                          plan Wellbeing activé
+
+
+
+
+                                                                               235
+

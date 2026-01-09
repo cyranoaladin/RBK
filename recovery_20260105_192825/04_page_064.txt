@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                          Chapitre 5. Architecture de Partenariat
+
+
+5.1.2 Nexus Réussite — le Maître d’œuvre pédagogique
+ • Conçoit le curriculum intégral, pilote les Block Checks, anime les jurys et produit toutes les preuves d’exécution (reports, dashboards, procès-verbaux).
+ • Recrute, forme, contractualise et paie l’équipe pédagogique (mentors, responsables de tracks, intervenants externes).
+ • Garantit la qualité d’exécution : respect du Definition of Done, contrôle continu, audits internes, traçabilité des décisions.
+
+
+5.1.3 Gouvernance conjointe et comités
+ • Comité exécutif conjoint (CEC) : RBK et Nexus se réunissent chaque semaine (pilotage opérationnel) et chaque mois (revue stratégique) pour arbitrer les priorités,
+   approuver les plans correctifs et valider les budgets ; Money Factory AI peut être convié à titre consultatif sur les sujets plateforme.
+ • Comité éthique et pédagogique : instance Nexus présidée par RBK qui statue sur les cas d’escalade (burnout, litiges académiques, recours ISA).
+
+
+
+
+                                                                                     EL
+ • Comité qualité et risques : suit les indicateurs critiques (voir Chapitre 17) et déclenche les plans de continuité.
+
+
+
+
+                                                                                   TI
+                                                                           N
+5.2 Rôle de Money Factory AI : fournisseur technologique
+
+
+
+
+                                                                         DE
+   Licence Venture Engine et responsabilités
+
+
+
+
+                                                                  FI
+                                                                 N
+    Élément                      Description contractuelleCO
+    Licence logicielle           Nexus bénéficie d’une licence d’usage de la plateforme Venture Engine (journey.mfai.app) incluant maintenance, mises à jour et
+                                 support SLA 99,5%. RBK n’est pas redevable directement envers MFAI.
+    Réversibilité des            MFAI garantit la portabilité complète des données apprenants vers RBK en cas de sortie de Nexus (format ouvert, délai maximal
+    données                      30 jours).
+    Support et sécurité          MFAI fournit un canal d’escalade 24/7, applique une politique ”privacy-by-design” et notifie RBK et Nexus de tout incident de
+                                 sécurité en moins de 12 heures.
+
+
+
+
+5.3 Flux contractuels et financiers
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 63 sur 316
+

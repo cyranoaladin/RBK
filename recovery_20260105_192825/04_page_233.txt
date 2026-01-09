@@ -1,0 +1,69 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Annexe C. Annexe B — Modèle financier
+
+
+    • Payable d’avance : le 1er de chaque mois, échéance à 15 jours max
+
+    • Non remboursable sauf faute lourde prouvée de Nexus
+
+   (2) Delivery Fee (part variable liée au volume)
+
+    • DeliveryFee = 12% × CA_Booked (calculé sur la valeur catalogue signée)
+
+    • Paiement : mensuel au prorata de l’avancement (Genesis sur mois 1–4, Explorer sur mois 5–8, Bâtisseur/Architecte sur mois 9–12)
+
+    • Formule de proratisation : DeliveryFee_mois = DeliveryFee × (1/4) sur les 4 mois du niveau concerné
+
+   (3) Mentor Pool (refacturation encadrée)
+
+    • Nexus sous-traite les mentors et refacture à RBK ”au coût réel”, sur justificatifs.
+
+
+
+
+                                                                                    EL
+    • CAP MentorPool : 25% × CA_Booked de la cohorte (plafond annuel).
+
+
+
+
+                                                                                  TI
+    • Paiement : mensuel sur facture, délai 15 jours.
+
+
+
+
+                                                                          N
+    • Les coûts mentors sont exclus de la marge Nexus (ligne pass-through).
+
+
+
+
+                                                                        DE
+   (4) Success Fee (bonus placement / performance, simple et auditable)
+
+
+
+
+                                                                 FI
+    • 1 000 TND par apprenant placé (contrat ≥ 6 mois OU mission ≥ 3 mois), placement vérifié.
+
+
+
+                                                                N
+    • Facturable à la preuve (contrat / attestation), payable à 15 jours.
+                                                         CO
+C.4 Waterfall (ordre de distribution) — Clause contractuelle
+   Définir la ”Franchise_RBK” mensuelle :
+
+                                      Franchise_RBK = 3 000 TND /mois + frais de paiement (si listés) + outils listés (si listés)
+
+   Puis écrire l’ordre :
+
+  1. Franchise_RBK
+
+  2. Mentor Pool (coût réel, dans le cap)
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 231 sur 316
+

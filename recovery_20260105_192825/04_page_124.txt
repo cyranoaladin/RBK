@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                              Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Responsabilités cœur (opérationnelles)
+
+  1. Transaction Lifecycle UI : simulation, préparation comptes, signature, submit, confirm, finality, affichage receipt.
+
+  2. RPC Management : rate limit, failover multi-RPC, backoff, circuit breaker, timeouts.
+
+  3. Wallet UX : états wallet (locked, missing), chain mismatch, multi-wallet, deep links mobile, signature prompts.
+
+  4. Data Layer : indexer lag, fallback onchain, cache (SWR/React Query), revalidation.
+
+  5. Observabilité : tracking erreurs, funnel, latency, replay des transactions échouées.
+
+Trajectoire Carrière & Mission
+
+
+
+
+                                                                       EL
+   • Junior : implémente flows tx simples, gère erreurs classiques, met en place cache. Mission : mint NFT + listing + transaction receipts
+
+
+
+
+                                                                TI
+     propres.
+
+
+
+
+                                                               N
+                                                          DE
+   • Senior : architecture data + multi-RPC + indexer strategy, UX de crise, monitoring. Mission : construire une dApp à fort trafic sans
+     ”tx stuck”.
+
+
+
+
+                                                      FI
+                                                  N
+Interactions Guardian (préconditions, erreurs, events), QA (scénarios), Builder (DoD, funnel), DevRel (docs intégration), Ops (RPC
+                                            CO
+providers, status pages).
+
+Livrables standard TX_STATE_MACHINE.md, ERROR_TAXONOMY.md, RPC_FAILOVER.md, dashboards erreurs + latences, tests e2e (Play-
+wright/Cypress) sur flows web3.
+
+KPIs Tx success rate, temps moyen confirmation, taux ”blockhash expired / nonce issues”, support tickets wallet, TTFV, latence RPC,
+erreurs indexer.
+
+                                                 Table : Taxonomie erreurs (Extrait)
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 123 sur 316
+

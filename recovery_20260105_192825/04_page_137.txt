@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                           Chapitre 15. Business Plan
+
+
+        la première année (+30 000 TND/an).
+
+      • Marketing acquisition : Sprint 0 à 75 000 TND, puis CAC conforme au scénario (500 TND réaliste).
+
+      • Dotation fonds de garantie ISA : 150 000 TND affectés en année 1 dans un compte séquestré dédié, maintenu ensuite par des
+        abondements annuels ciblés de 30 000 TND.
+
+
+15.3 Funnel d’Acquisition & Sourcing
+      Le modèle de rentabilité dépend de la sélectivité en entrée (qualité des profils = placement garanti).
+
+
+
+
+                                                                               EL
+  1. Top of Funnel1 (Leads) : 1000 Inscrits Webinaire / Downloads Livre Blanc.
+
+
+
+
+                                                                            TI
+  2. Middle of Funnel (Applicants) : 200 Candidats passent le test technique Python/JS.
+
+
+
+
+                                                                     EN
+  3. Bottom of Funnel (Selection) : 50 Admissibles après entretien.
+
+  4. Taux de conversion2 (Cohorte) : 30 Inscrits payants (ou boursiers validés).
+
+
+
+
+                                                                D
+                                                             FI
+      Le ratio cible est de 3% de conversion Lead → Client, assurant une densité de talents élevée.
+
+                                                         N
+                                                  CO
+15.4 Le Pilier B2B : Corporate Upskilling
+   Pour réduire la dépendance aux frais de scolarité individuels, nous lançons une offre dédiée aux entreprises (Banques, ESN, Telcos)
+souhaitant monter une ”Blockchain Factory” interne.
+   Offre ”Corporate Cohort” :
+
+      • Principe : Une entreprise réserve un bloc de 3 à 5 sièges dans une cohorte pour ses employés.
+
+      • Tarif : 15 900 TND / siège (Premium Pricing).
+  1
+      Projet/Management/Qualité — Parcours d’acquisition décomposé en étapes (awareness → consideration → conversion) avec mesures à chaque étape.
+  2
+      Projet/Management/Qualité — Proportion d’utilisateurs qui passent à l’étape suivante du funnel ou réalisent l’action cible.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                        Page 135 sur 316
+

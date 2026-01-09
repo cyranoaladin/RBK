@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                 Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+
+                                       Obs     Dashboard KPIs + erreurs RPC + alerting + logs corrélés
+                                       Docs    README fresh clone + user guide + runbook support
+                                       Release Tag + changelog + rollback plan + release notes
+
+
+
+                                                 Discovery          PRD / Scope           Build
+
+
+
+
+                                             Measure (KPIs)           Release          QA / Gates
+
+
+
+
+                                                                         EL
+                                  FIG. 14.3 : Boucle Builder (Produit → Release → Mesure → Itération)
+
+
+
+
+                                                                      TI
+                                                                EN
+14.4 Fiche Métier 4 : Solana dApp Engineer (Front Web3)
+
+
+
+
+                                                           D
+Résumé métier Le dApp Engineer rend une blockchain instable utilisable humainement. Il maîtrise le cycle transactionnel (simula-
+
+
+
+
+                                                        FI
+tion, signature, envoi, confirmation, finalité), les erreurs RPC, l’UX wallet, et la cohérence des données (indexer vs onchain). C’est le rôle
+qui transforme des primitives chain en expérience produit fiable.
+                                                    N
+                                              CO
+Mission et périmètre
+
+   • Concevoir le front web3 (React/Next/Vite) et l’intégration wallet (Solana Wallet Adapter / EVM wallets selon track).
+
+   • Implémenter une machine à états transactionnelle robuste, avec retries, fallback RPC, et messages d’erreur actionnables.
+
+   • Gérer la couche data : caching, invalidation, indexers, re-sync onchain, pagination, perf.
+
+   • Mettre en place l’observabilité : logs client, métriques UX, erreurs chain, corrélations.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 122 sur 316
+

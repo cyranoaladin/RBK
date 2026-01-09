@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                             Chapitre 15. Business Plan
+
+
+trésorerie au milieu de l’Année 2, créant un ”Fond de Roulement” naturel pour l’expansion.
+
+
+15.6 Analyse de Sensibilité
+   Nous stress-testons le modèle selon 3 variables critiques.
+
+                                        TAB. 15.4 : Analyse de sensibilité sur le scénario réaliste
+
+Variable testée                                 Fourchette Effet observé
+Taux de placement (prudent 40% / ambitieux 85%) 40% → 85% EBITDA A3 passe de 848 800 TND à 312 000 TND (prudent) ou 1 042 000 TND (ambitieux).
+CAC (800 TND / 300 TND)                         ±200 TND Le besoin marketing annuel varie de +90 000 TND (prudent) à −54 000 TND (ambitieux).
+
+
+
+
+                                                                         EL
+Part d’apprenants en ISA (50% / 30%)            30% → 50% Le cash différé à 12 mois augmente de 180 000 TND en scénario prudent, exigeant une ligne
+
+
+
+
+                                                                      TI
+Le scénario prudent impose un besoin de trésorerie supplémentaire de 180 000 TND (fonds de roulement ISA + marketing), ce qui justifie la
+
+
+
+
+                                                                EN
+sécurisation d’une ligne de crédit confirmée avant lancement. À l’inverse, le scénario ambitieux permet d’atteindre la marge opérationnelle
+cible (>45%) dès l’année 2 sous réserve d’une capacité d’absorption mentors certifiée par Nexus.
+
+
+
+
+                                                        D
+                                                     FI
+15.6.1 Gestion du Risque Crédit ISA
+
+                                                  N
+   L’Income Share Agreement est traité comme un portefeuille de créances à risque. La gouvernance financière s’appuie sur trois garde-fous
+                                           CO
+complémentaires :
+
+  1. Fonds de garantie séquestré : 150 000 TND déposés dès l’année 1 dans un compte bloqué RBK dédié aux défauts, alimentés par
+     20% des encaissements upfront (acompte + premières mensualités ISA), puis complétés chaque année (30 000 TND) pour refléter
+     la montée en charge des cohortes.
+
+  2. Recouvrement professionnel : mandat confié à un cabinet spécialisé (ex. TCM Tunisia pour le national, Intrum pour l’international)
+     avec lettre de mission signée avant ouverture de la cohorte. RBK déclenche le recouvrement seulement après avis du Comité éthique
+     (Chapitre 5).
+
+  3. Incitations alignées :
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 138 sur 316
+

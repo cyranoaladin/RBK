@@ -1,0 +1,35 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 8. SYLLABUS TECHNIQUE
+
+
+                           Sem Cours (A/B/C)                 Labs (A/B/C)                     Livrable                        DoD / Skill Mirror
+                           S29 A : Prod Perf / B : Sec       A : Bench / B : Threat Model7 Repo S29 + TM                      TM présent, CI verte
+                               Hardening / C : Gouv. Design / C : Rules
+                           S30 A : Monitoring / B :          A : Metrics / B : Fix findings / ”Ops pack”                      Runbook8 incidents
+                               Correction & Preuve / C : GTM C : Launch plan
+                           S31 A : Wallet Intég. / B : Audit A : Adapters / B : Audit pack / Release Cand.                    Tag RC, Changelog
+                               Notes / C : Playbook          C : Metrics
+                           S32 Block Check “Build”           Stabilisation + Docs             PACK Bâtisseur                 GO/WARN/NO-GO
+                                                                                                                             + NFT “Build
+                                                                                                                             Master”
+
+
+
+
+                                                                                           EL
+                                                                                        TI
+                                                                           D     EN
+                                                                        FI
+                                                                    N
+                                                             CO
+
+
+
+
+  7
+      Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+  8
+      Projet/Management/Qualité — Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de hardcodes ; bloque la promotion en cas d’échec.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 85 sur 316
+

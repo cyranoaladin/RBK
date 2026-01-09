@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 2. Stratégie : Note de Cadrage
+
+
+2.9.2 Addendum — Gouvernance contractuelle
+
+   Note sur la gouvernance étendue
+
+   La gouvernance de l’exécution et du partenariat est détaillée de manière contractuelle dans les documents suivants :
+       • Le chapitre 3 sur la Gouvernance, Partenariat et RACI.
+       • L’annexe T sur le Modèle Piscine & Staffing.
+       • Les addenda aux annexes financières (Annexe C) et juridiques (Annexe D).
+
+
+
+
+2.10 Matrice RACI (Responsabilités Macro)
+
+
+
+
+                                                                                    EL
+  Matrice RACI — Rôles & Responsabilités
+
+
+
+
+                                                                                  TI
+                                                                          N
+                                     Activité                               R             A      C                    I
+
+
+
+
+                                                                        DE
+                                     Définir la vision/positionnement       CEO           CEO    HoP, Legal           Ops
+
+
+
+
+                                                                FI
+                                     Figer la “Factsheet”                   HoP           CEO    Ops, Legal           Students
+
+
+
+
+                                                               N
+                                     Concevoir les Tracks (EVM/Solana)      TechLeads     HoP    SecLead              CEO
+                                                        CO
+                                     Définir rubrics & Capstones            SecLead       HoP    TechLeads            CEO
+                                     Admissions & Sélection                 Mkt           CEO    HoP, TechLeads       Ops
+                                     Encadrement hebdo (Sprints)            HoP           HoP    TechLeads, Mentors   Ops
+                                     Conformité & Légal                     Legal         CEO    HoP                  Students
+                                     Demo Day & Carrière                    Career        CEO    HoP, Mentors         Ops
+
+
+
+
+2.11 Planification, budget, indicateurs
+   Ce bloc synthétise la trajectoire temporelle, les ressources et les KPI pour suivre l’exécution du cadrage.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                             Page 47 sur 316
+

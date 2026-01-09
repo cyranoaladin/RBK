@@ -1,0 +1,40 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                       Chapitre 10. Track B : EVM Engineer
+
+
+      • Migrer un token Gouvernance d’un Layer 1 vers un Layer 2 (Bridge3 Architecture).
+
+      • Écrire les scripts de déploiement automatisés pour une collection NFT de 10k pièces avec whitelist Merkle Tree.
+
+      La trajectoire comprend un volet Ops pour fiabiliser les déploiements et vérifier les contrats.
+
+                                                         TAB. 10.7 : Matrice Compétences Infra EVM
+
+
+                                                 Domaine Attendu                       Preuve
+                                                 Solidity Expert (Storage, Assembly) Gas Golfing Repo
+                                                 Testing  Expert (Fuzzing, Invariants) Coverage > 95%
+
+
+
+
+                                                                                   EL
+                                                 Ops      Autonome (Scripts, Verify) Déploiements vérifiés
+
+
+
+
+                                                                                TI
+                                                                   D     EN
+                                                                FI
+                                                            N
+                                                    CO
+
+
+
+
+  3
+      Web3/Blockchain — Mécanisme de transfert ou de verrouillage d’actifs entre blockchains distinctes, basé sur des preuves ou des validateurs fédérés.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 101 sur 316
+

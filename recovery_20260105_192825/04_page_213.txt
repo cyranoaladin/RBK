@@ -1,0 +1,68 @@
+                                                                                                    Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                       DÉTAILLÉ ET STANDARDS
+
+
+
+    adr/                        # Architecture Decision Records
+      0001-template.md
+      index.md
+
+
+    docs/                       # Documentation additionnelle
+      architecture/             # Diagrammes (C4, Séquence)
+      security/                 # Audits, checklists
+      ops/                      # SLO, Playbooks
+
+
+    src/                        # Code Source
+
+
+
+
+                                                                       EL
+    tests/                      # Tests (Unit, Integ, E2E)
+
+
+
+
+                                                                    TI
+    scripts/                    # Scripts d'automatisation (OBLIGATOIRES)
+
+
+
+
+                                                              EN
+      setup.sh                  # Installe deps, check versions
+      lint.sh                   # Format code & lint
+
+
+
+
+                                                          D
+      test.sh                   # Run all tests
+
+
+
+
+                                                       FI
+      build.sh                  # Compile artifacts
+      dev.sh                    # Start local dev env
+      smoke_test.sh
+                                                   N
+                                # Basic healthcheck on running app
+                                           CO
+      deploy_devnet.sh          # Deploy to devnet (si Web3)
+
+
+    infra/                      # Docker, CI/CD
+
+
+   KO-Structure (Éliminatoire)
+   L’absence de PROOFS.md, RUNBOOK.md, THREAT_MODEL.md ou du dossier adr/ est un échec automatique du livrable. Aucune évaluation
+   technique n’est réalisée si la structure n’est pas conforme.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 211 sur 316
+

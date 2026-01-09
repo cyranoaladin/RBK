@@ -1,0 +1,46 @@
+B | SYLLABUS TECHNIQUE
+              DÉTAILLÉ ET STANDARDS
+
+
+
+
+                                                                      EL
+   Cette annexe détaille les standards d’évaluation et le plan opérationnel semaine par semaine.
+
+
+
+
+                                                                   TI
+                                                             EN
+B.1 Gabarit de Dépôt Obligatoire
+
+
+
+
+                                                        D
+   Tout projet doit respecter scrupuleusement cette arborescence standardisée. L’absence de l’un des fichiers obligatoires entraîne un rejet
+
+
+
+
+                                                     FI
+automatique (KO).
+
+  Structure de Repository (Template)
+                                                  N
+                                           CO
+  repo-root/
+    README.md                  # Présentation, Quickstart
+    RUNBOOK.md                 # How-to run/test/debug, Variables d'env.
+    PROOFS.md                  # Ledger hebdo des preuves (Liens PR, Démos)
+    THREAT_MODEL.md            # Analyse des risques & mitigations
+    CHANGELOG.md               # Historique des versions
+    LICENSE                    # MIT / Apache 2.0
+    OPENAPI.yaml               # Spec API (si pertinent, sinon placeholder)
+    .gitignore
+
+
+
+
+                                                                    210
+

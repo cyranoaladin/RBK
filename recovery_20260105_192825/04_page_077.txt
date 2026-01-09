@@ -1,0 +1,56 @@
+7 | STRUCTURE DU CURSUS AMÉLIORÉE
+
+
+7.1 Architecture pédagogique — 48 semaines de Genesis vers Launch Proof
+
+
+
+
+                                                                                      EL
+    Le cursus RBK 3.0 repose sur un modèle hybride inspiré de 42 et adapté Web3. Il est structuré en quatre blocs obligatoires et un Launchpad optionnel :
+
+
+
+
+                                                                            TI
+    • Genesis Pool : 4 semaines de bootcamp sélectif (120h, Skill Mirror intensif).
+
+
+
+
+                                                                           N
+    • Explorer : 12 semaines de consolidations fondamentales (Rust, Web3, GitOps) avec Block Check “Explorer”.
+
+
+
+
+                                                                    DE
+    • Bâtisseur : 16 semaines de spécialisation et de projets Dev DAO pairés.
+
+
+
+
+                                                                FI
+    • Architecte : 16 semaines de leadership technique, mentorat et audit readiness.
+
+
+
+                                                            N
+    • Launchpad Nexus (optionnel) : 4 semaines pour incuber les projets et activer le partage de revenus 30% / 70%.
+                                                     CO
+* Note : Le Launchpad est optionnel et nécessite l’approbation de Nexus.
+
+   ˌ Structure du Curriculum RBK 3.0
+
+   Objectif : Former des constructeurs Web3 capables de livrer, auditer et opérer des protocoles Solana/EVM en moins d’un an, tout en préparant
+   l’incubation Launchpad.
+   Réorganisation : Passage de l’ancien découpage en niveaux au pipeline Genesis Pool →Explorer →Bâtisseur →Architecte, chaque Block Check
+   déclenchant un NFT Skills non transférable.
+   Logique : Les apprenants progressent de la sélection intensive (Genesis Pool) vers la consolidation (Explorer), l’accélération projet (Bâtisseur) et
+   la posture d’Architecte mentor/auditeur. Le Launchpad sécurise la dimension business et la répartition des revenus.
+
+
+
+
+                                                                                76
+

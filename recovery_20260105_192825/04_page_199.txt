@@ -1,0 +1,50 @@
+Table des figures
+
+
+
+
+                                                                     EL
+ 1.1 La Chaîne de Valeur RBK 2.0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     34
+
+
+
+
+                                                                  TI
+ 4.1 Corrélation talents Solana vs traction financière (2021-2026) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     57
+
+
+
+
+                                                           EN
+ 5.1 Flux décisionnel RBK → Nexus en cas d’alerte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      67
+
+
+
+
+                                                       D
+ 8.1 Timeline Macro du Cursus . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      80
+
+
+
+
+                                                    FI
+ 9.1 Pourquoi Solana est un track d’excellence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     90
+
+                                                N
+ 9.2 Flux Anchor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   93
+                                         CO
+ 10.1 Chaîne de Valeur EVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     98
+
+ 12.1 Timeline 4 semaines — Soft Skills & Pro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+
+ 13.1 Pipeline Packaging . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+
+ 14.1 Boucle Guardian (SecDevOps) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+ 14.2 Boucle Visionnaire (Design → Simulation → Risques → Déploiement) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+ 14.3 Boucle Builder (Produit → Release → Mesure → Itération) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+ 14.4 Machine à états transactionnelle (dApp Engineer) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+
+
+
+                                                                  197
+

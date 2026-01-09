@@ -1,0 +1,34 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+Objectif. Donner une lecture immédiate de l’état du programme par domaine (Admissions, Qualité, Sécurité, Ops, Carrière, Finance), avec un score global et des déclencheurs d’actions.
+
+
+Domaine                      Score global      Tendance       Statut                   Signal / Explication (KPI en alerte + action)
+                             (0–5)
+Admissions & Marketing       3.0/5             →              Alerte                   Alerte : CVR Lead→Entretien en baisse ; cohorte à 12 confirmés. Action : A-003 webinaires + A-002 pipeline admissions (Owner :
+                                                                                       Mkt/Ops).
+Pédagogie & Engagement       4.0/5             ↗              OK                       Attendance 92%, Lab completion 88%. Action : maintenir binômage A-017 et monitoring surcharge A-046.
+Qualité Studio (PR/CI/-      3.5/5             →              Alerte légère            CI pass rate 78% proche seuil ; MT Green 10h. Action : freeze merges si >24h (A-020) + stabilisation tests.
+Tests)
+Sécurité                     3.0/5             ↘              Alerte                   Threat models incomplets (80%). Action : A-024 threat model obligatoire + A-054 security gate capstone (Owner : SecLead).
+Ops & Infrastructure         4.5/5             →              OK                       RPC error rate 1.5% ; drills réalisés. Action : poursuivre runbooks + tests fallback (A-021/A-023).
+Carrière & Employabilité     3.0/5             →              Alerte                   Portfolio readiness 72% (trop tôt ou retard). Action : Career pack A-037 + sprint bounties A-038 (Owner : Career).
+Finance                      4.0/5             →              OK                       Budget variance +6% ; revenue collected 96%. Action : maintenir reporting variance A-008.
+
+
+
+
+                                                                                                                   EL
+                                                                                                               TI
+                                                                                                            N
+                                                                                                    DE
+                                                                                                  FI
+                                                                                              N
+                                                                                        CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                            Page 294 sur 316
+

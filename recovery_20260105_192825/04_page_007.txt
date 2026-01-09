@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+13    CAPSTONES (PROJETS SIGNATURES) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+      13.1    Philosophie du Capstone : Le Standard « Studio » . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+      13.2    Les 3 Projets Signatures (Cahier des Charges Industriel) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+              13.2.1            Capstone 1 — Wallet & Transaction Reliability Pack (Frontend/UX) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+               13.2.1.1 Spécifications Fonctionnelles (User Stories) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+               13.2.1.2 Spécifications Techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+               13.2.1.3 Checklist Sécurité & Qualité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+               13.2.1.4 Critères d’Acceptation & CI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+              13.2.2    Capstone 2 — Tokenization & Admin Control Center (RWA/DeFi) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+               13.2.2.1 Spécifications Fonctionnelles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+
+
+
+
+                                                                                                                EL
+               13.2.2.2 Spécifications Techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+               13.2.2.3 Checklist Sécurité Dédiée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+
+
+
+
+                                                                                                             TI
+              13.2.3    Capstone 3 — Digital Assets & Utility Ecosystem (NFT/Gaming) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+
+
+
+
+                                                                                                  EN
+               13.2.3.1 Spécifications Fonctionnelles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+               13.2.3.2 Spécifications Techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+
+
+
+
+                                                                                       D
+               13.2.3.3 Checklist Sécurité Dédiée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+
+
+
+
+                                                                                    FI
+      13.3    Matrice d’Évaluation (Rubric Studio) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+      13.4
+                                                                              N
+              Délivrables de Sortie (Le ”Package”) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+                                                                  CO
+14    FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+      14.1    Fiche Métier 1 : Smart Contract Engineer & Auditor (Le « Guardian ») . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+      14.2    Fiche Métier 2 : Protocol & Ecosystem Strategist (Le « Visionnaire ») . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+      14.3    Fiche Métier 3 : Web3 Product Builder / Entrepreneur (Le « Builder ») . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+      14.4    Fiche Métier 4 : Solana dApp Engineer (Front Web3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+      14.5    Fiche Métier 5 : Tokenization & DePIN Architect . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+      14.6    Fiche Métier 6 : Web3 QA & Test Automation Engineer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+      14.7    Fiche Métier 7 : Developer Advocate & Technical Writer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+      14.8    Perspectives Économiques & Carrière . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                       Page 6 sur 316
+

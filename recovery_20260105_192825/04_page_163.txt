@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Chapitre 18. Guide Compliance Web3
+
+
+
+
+                                               TAB. 18.3 : Risques Compliance & Atténuation
+
+
+              Domaine       Risque Identifié                                                 Niveau Atténuation (Contrôle)
+              Légal         Qualification en ”Vente de titres financiers” (Security Token)    Élevé   Disclaimer strict, Utility
+                                                                                                      Token uniquement, Avis
+                                                                                                      juridique préalable.
+              Fiscal        Redressement pour revenus non déclarés (Crypto)                  Moyen    Conversion Fiat systématique,
+                                                                                                      Déclaration BCT trimestrielle.
+
+
+
+
+                                                                         EL
+              Réputation    Association à des projets ”Scam” ou ”Ponzi”                      Critique Due Diligence des partenaires,
+                                                                                                      Refus de tout projet
+
+
+
+
+                                                                      TI
+                                                                                                      High-Yield non audité.
+
+
+
+
+                                                               EN
+              Technique     Sanctions internationales (Tornado Cash, OFAC)                    Élevé   Filtrage des adresses
+                                                                                                      (Chainalysis), Refus des
+
+
+
+
+                                                          D
+                                                                                                      interactions mixeurs.
+
+
+
+
+                                                       FI
+                                                   N
+                                            CO
+18.3 Politique de Communication (Communication Policy)
+   Pour protéger l’école et ses membres, RBK impose une charte de communication stricte.
+
+
+18.3.1 Interdits Absolus (Red Lines)
+  1. Promesse de Gains : Interdiction totale d’utiliser des termes comme ”ROI”, ”Lambo”, ”To the moon”, ”Revenu passif garanti”.
+
+  2. Conseil Financier : Aucun conseil d’achat/vente de token. L’analyse est toujours technique (Smart Contract) ou fondamentale
+     (Tokenomics), jamais spéculative.
+
+  3. Incitation à l’Évasion : Interdiction de promouvoir des schémas de contournement fiscal ou de change.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 161 sur 316
+

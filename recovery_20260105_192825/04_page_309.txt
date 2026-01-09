@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                               Annexe W. Glossaire des termes, acronymes et jargon
+
+
+                  Terme
+                                 Domaine    Définition
+                /Acronyme
+    TechLead                                Référent technique (TechLead) coordonnant architecture, qualité et mentoring d’équipe
+                                            pour livrer un produit robuste.
+
+    SecLead                                 Référent sécurité (SecLead) pilotant analyse de risques, contrôles et plans d’actions lors des
+                                            projets ou incidents.
+
+    TND                                     Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections
+                                            financières du programme.
+
+    NDA                                     Non-Disclosure Agreement (NDA) : accord encadrant la confidentialité et l’usage des infor-
+                                            mations échangées entre parties.
+
+    KO                                      Knock-Out (KO) : statut indiquant l’échec d’un contrôle ou d’un gate de release, nécessitant
+
+
+
+
+                                                           EL
+                                            correction avant validation.
+
+
+
+
+                                                         TI
+    DualTrack                               Organisation en deux parcours parallèles (ex. EVM et Solana) partageant un tronc commun
+                                            puis une spécialisation.
+
+
+
+
+                                                  N
+                                                DE
+    Airdrop                                 Distribution gratuite ou ciblée de tokens à une communauté pour récompenser l’usage ou
+                                            stimuler l’adoption.
+
+
+
+
+                                            FI
+    Whitelist                               Whitelist : liste d’adresses ou d’identités autorisées à interagir avec un contrat, souvent
+
+
+
+                                           N
+                                            utilisée pour les mint ou accès anticipés.
+                                           CO
+    CRM                                     Customer Relationship Management (CRM) : outil ou processus de gestion de la relation
+                                            client (prospects, ventes, support, suivi).
+
+    LinkedIn                                Réseau professionnel utilisé pour la visibilité, l’acquisition de leads et le recrutement de
+                                            partenaires ou candidats.
+
+    NPS                                     Net Promoter Score (NPS) : indicateur de recommandation (promoteurs - détracteurs) pour
+                                            mesurer satisfaction et fidélité.
+
+    DoD                                     Definition of Done (DoD) : liste les critères minimaux pour considérer un élément comme
+                                            terminé et livrable.
+
+    MoSCoW                                  Must, Should, Could, Won’t (MoSCoW) : méthode de priorisation cadrant le périmètre et
+                                            arbitrant les fonctionnalités.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                    Page 307 sur 316
+

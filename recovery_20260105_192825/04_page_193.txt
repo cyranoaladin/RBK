@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                        Chapitre 25. ÉLÉMENTS DE DIFFÉRENCIATION
+
+
+  1. Sourcing : Les meilleurs bounties sont sélectionnés chaque lundi.
+
+  2. Squads : Des équipes de 2-3 étudiants se forment pour attaquer les bounties complexes.
+
+  3. Review RBK : Un mentor senior valide la soumission avant envoi (Quality Gate).
+
+  4. Revenue : 100% des gains vont aux étudiants (preuve de concept économique).
+
+
+25.5 « On-Chain Resume » : Preuve de Travail Public
+    Le CV PDF est mort. RBK délivre un ”On-Chain Resume” vérifiable cryptographiquement. Chaque compétence validée, chaque projet
+
+
+
+
+                                                                     EL
+livré, chaque audit réalisé est ancré sur la blockchain via des SBT (Soulbound Tokens) et un historique GitHub immuable.
+
+                                              TAB. 25.7 : Structure du On-Chain Resume
+
+
+
+
+                                                                  TI
+                                                            EN
+                                       Composant Support       Preuve Vérifiable
+                                       Identité    Wallet      Signature cryptographique
+
+
+
+
+                                                       D
+                                       Compétences SBT Badge   Transaction on-chain (Issuer : RBK)
+
+
+
+
+                                                    FI
+                                       Projets     GitHub Repo Commit history, CI logs
+                                       Réputation
+                                                 N DAO Vote    Poids de vote on-chain
+                                          CO
+
+25.6 Ancrage Tunisie + Export : Software Factory Future
+    RBK positionne la Tunisie comme la ”Base Arrière” de l’ingénierie Web3 mondiale. Moins cher que l’Europe de l’Est, plus qualifié que
+l’Asie du Sud-Est (sur la niche Rust/Crypto), et sur le même fuseau horaire que Paris/Berlin/Lagos.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 191 sur 316
+

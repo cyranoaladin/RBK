@@ -1,0 +1,42 @@
+2 | Note de cadrage — RBK 2.0 (Web3 Studio Dual-Track
+               EVM & Solana)
+
+
+
+
+                                                                                 EL
+                                                                              TI
+   Avant-propos stratégique
+
+   Le passage à RBK 2.0 marque une rupture avec les modèles éducatifs traditionnels. En pivotant vers une architecture de Web3 Build
+
+
+
+
+                                                                       EN
+   Studio hybride (EVM & Solana), nous ne formons plus de simples développeurs, mais des architectes de la souveraineté numérique.
+   Cette note de cadrage formalise l’ambition, les moyens et le pilotage de cette transformation structurante.
+
+
+
+
+                                                                 D
+                                                              FI
+2.1 Contexte du projet                                    N
+                                                  CO
+       Cette section situe le pivot RBK 2.0 dans son environnement actuel avant d’entrer dans le détail des enjeux et des rôles.
+
+
+2.1.1 Situation actuelle
+    RBK (ReBootKamp) s’est imposé comme un acteur clé de la formation intensive en développement logiciel. Toutefois, l’écosystème
+technologique mondial subit une mutation profonde avec l’avènement du Web3, de la finance décentralisée (DeFi1 ) et des architectures
+distribuées. La version 1.0 du modèle a prouvé son efficacité pédagogique, mais doit désormais intégrer une dimension industrielle et
+   1
+    Web3/Blockchain — Decentralized Finance (DeFi) : finance décentralisée construite sur des smart contracts, offrant prêts, échanges et rendements sans intermé-
+diaire bancaire traditionnel.
+
+
+
+
+                                                                               40
+

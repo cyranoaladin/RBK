@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Chapitre 16. Stratégie marketing & acquisition
+
+
+
+   Nous ne cherchons pas à être partout, mais à dominer 5 canaux spécifiques où se trouve notre cible ”Elite”.
+
+Les 5 Canaux Prioritaires
+
+  1. LinkedIn (La Vitrine) : Pour les parents, les recruteurs et les partenariats corporatifs. Cadence : 2 posts/semaine.
+
+  2. X / Twitter (L’Arène) : Pour la crédibilité technique crypto, les news Rust, et l’engagement communautaire. Cadence : Quotidien.
+
+  3. YouTube (La Preuve) : Replays de workshops, Démos de Capstones, Témoignages. Cadence : 2 vidéos/mois.
+
+  4. GitHub (Le CV) : C’est notre canal d’acquisition ”silencieux”. Des repos propres et étoilés attirent les curieux techniques.
+
+
+
+
+                                                                      EL
+  5. Discord (Le Salon) : Conversion des leads chauds, support, Q&A avant inscription.
+
+
+
+
+                                                                   TI
+                                                             EN
+16.5 Budget d’Acquisition & CAC Cible
+   Le plan marketing respecte la doctrine Sprint 0 : investir 75 000 TND sur 12 semaines pour installer le funnel Discord et documenter
+
+
+
+
+                                                        D
+chaque victoire. Les années suivantes appliquent un run rate maîtrisé (30 000 TND puis 45 000 TND) afin de rester sous le plafond CAC ≤
+
+
+
+
+                                                     FI
+500 TND.
+
+                                                  N
+                                            TAB. 16.7 : Allocation budgétaire et objectifs CAC
+                                           CO
+                  Phase Budget        Focales marketing                                                      Garde-fou CAC
+                  Sprint 0 75 000 TND Paid social ciblé, production ”Building in Public”, onboarding Discord 800 TND
+                  Année 1 30 000 TND Webinaires mensuels, nurturing e-mail, nurturing alumni                 500 TND
+                  Année 2 45 000 TND Programme ambassadeurs + partenariats HR, événements hybrides           300 TND
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 147 sur 316
+

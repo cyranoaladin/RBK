@@ -1,0 +1,55 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                Chapitre 21. INFRASTRUCTURE SBT & CERTIFICATION
+
+
+
+   La blockchain est publique, mais les données personnelles ne le sont pas.
+
+   • On-Chain : Un pointeur vers le credential (hash + CID) et un indicateur d’état. Aucune donnée nominative directe n’est stockée.
+
+   • Off-Chain (Verifiable Credentials) : Les informations identifiantes sont conservées dans une base chiffrée gérée par RBK, signées
+     par Nexus Réussite. La preuve de réussite est exposée via un schéma W3C VC.
+
+   • Zero-Knowledge Proofs : L’étudiant présente une preuve ZK attestant qu’il détient un credential valide sans divulguer ses données
+     (utilisation de Sismo/Polygon ID).
+
+   • Droit à l’oubli : Demande de burn + purge du credential off-chain ; la DPA RBK/Nexus documente le processus et l’horodatage des
+
+
+
+
+                                                                     EL
+     suppressions.
+
+
+
+
+                                                                  TI
+21.5 Cas d’Usage : Le Recrutement Instantané
+
+
+
+
+                                                            EN
+   Les partenaires B2B (Job Board) peuvent interroger le Smart Contract pour filtrer les candidats : ”Montre-moi tous les wallets qui
+
+
+
+
+                                                       D
+détiennent le SBT ’Solana Advanced’ ET le SBT ’Security Auditor’.” Cela réduit le temps de screening de plusieurs jours à quelques milli-
+
+
+
+
+                                                    FI
+secondes.
+
+
+                                                 N
+                                          CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 172 sur 316
+

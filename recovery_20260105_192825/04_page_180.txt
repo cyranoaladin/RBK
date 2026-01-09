@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                             Chapitre 22. FEUILLE DE ROUTE 120 JOURS
+
+
+
+                                                                     2025
+
+                                       01    02               03            04                 05           06
+
+
+                  SPRINT 0
+
+               Juridique ISA
+
+            Fonds Séquestré
+
+                   MVP LMS
+
+
+
+
+                                                           EL
+               Mentors Core
+
+
+
+
+                                                        TI
+                   PHASE 1
+
+
+
+
+                                                  EN
+          Durcissement LMS
+
+
+
+
+                                                D
+           CI/CD & Sécurité
+
+
+
+
+                                             FI
+       Playbooks Wellbeing
+                                            N
+                                            CO
+             Roster Mentors
+
+                   PHASE 2
+
+              Campagne BIP
+
+                Piscine Rust
+
+             Signature CPPS
+
+                   PHASE 3
+
+         Onboarding Promo
+CONFIDENTIEL — PROJET RBK 2.0                     Page 178 sur 316
+               Genesis Week
+

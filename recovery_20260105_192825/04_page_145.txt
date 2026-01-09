@@ -1,0 +1,59 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                            Chapitre 16. Stratégie marketing & acquisition
+
+
+
+
+            LinkedIn Carousel — ”Architecte vs Codeur” (6 slides).
+            Slide 1 : promesse RBK 2.0.
+            Slide 2 : comparaison RBK 1.0 / RBK 2.0.
+            Slide 3 : chiffres Indicateurs 2025.
+            Slide 4 : témoignage alumni.
+            Slide 5 : call-to-action ”Genesis Pool”.
+            Slide 6 : coordonnées RBK Discord.
+            Statut actuel : story-board validé, design final en production (cf. Chapitre 23).
+
+                            FIG. 16.1 : Maquette LinkedIn (placeholder visuel) — livrable D-21 avant lancement
+
+
+
+
+                                                                                EL
+                                                                             TI
+            Landing Page Hero — RBK Web3 Studio.
+
+
+
+
+                                                                     EN
+            Hero : visuel Validator + claim ”De Codeur à Architecte Web3”.
+            Sections : preuves (NFT Skills), pipeline employeurs, simulateur ROI.
+
+
+
+
+                                                               D
+            Bloc CTA : formulaire double (Genesis Pool / Corporate Seat).
+
+
+
+
+                                                            FI
+            Statut actuel : wireframe Figma prêt, intégration prévue Sprint 0 semaine 3.
+
+
+                                                        N
+                              FIG. 16.2 : Wireframe landing page (placeholder) — référentiel product marketing
+                                                CO
+            Script vidéo 60s — ”RBK 2.0 in Action”.
+            Hook (0-10s) : question ”Où se forment les architectes Web3 tunisiens ?”
+            Proof (10-35s) : extraits audits, dashboards, mentors.
+            CTA (35-60s) : ouverture Genesis Cohort Alpha.
+            Statut actuel : storyboard validé, tournage planifié Sprint 0 semaine 5.
+
+                                      FIG. 16.3 : Storyboard vidéo (placeholder) — diffusion multi-canale
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                         Page 143 sur 316
+

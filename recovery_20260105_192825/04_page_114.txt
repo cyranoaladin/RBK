@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                     Chapitre 13. CAPSTONES (PROJETS SIGNATURES)
+
+
+13.2.3.1 Spécifications Fonctionnelles
+
+  1. US.1 (Gating) : ”En tant qu’utilisateur, je ne peux accéder au contenu Beta que si je possède le NFT ’Early Bird’.”
+
+  2. US.2 (Claim) : ”En tant que joueur, je peux clamer mon reward une seule fois par jour.”
+
+13.2.3.2 Spécifications Techniques
+
+   • Mécanisme : Merkle Tree (Allowlist) ou Signature verifier backend.
+
+   • Optimisation : Utilisation de la compression (cNFT Solana) ou ERC-721A (EVM) pour réduire les coûts de mint.
+
+
+
+
+                                                                       EL
+13.2.3.3 Checklist Sécurité Dédiée
+
+
+
+
+                                                                    TI
+     Bot Protection : Captcha ou signature nonce pour empêcher le mint massif par bots.
+
+
+
+
+                                                              EN
+     Replay Attack : Vérification que la signature n’a pas déjà été utilisée.
+
+
+
+
+                                                         D
+     Metadata : Fichiers hébergés sur IPFS (pas de liens HTTP centralisés).
+
+
+
+
+                                                      FI
+13.3 Matrice d’Évaluation (Rubric Studio)
+                                                  N
+                                            CO
+   Chaque projet est noté sur 100 points selon une grille industrielle stricte.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 113 sur 316
+

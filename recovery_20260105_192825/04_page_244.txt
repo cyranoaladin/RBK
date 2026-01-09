@@ -1,0 +1,28 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                             Annexe E. TEMPLATE DE RAPPORT D’AUDIT DE SÉCURITÉ
+
+
+
+E.3 Fiche Finding Type
+   ID-01 : Unchecked External Call (H-01)
+
+   Sévérité : HIGH
+   Fichier : vault.rs
+   Description : L’appel CPI vers le programme Token ne vérifie pas le code retour. Impact : Un attaquant peut forcer l’échec silencieux du transfert et créditer
+   son solde interne. Recommandation : Utiliser anchor_lang::solana_program::program::invoke_signed et gérer le Result.
+
+
+
+
+                                                                                 EL
+                                                                               TI
+                                                                       N
+                                                                     DE
+                                                               FI
+                                                              N
+                                                       CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 242 sur 316
+

@@ -1,0 +1,45 @@
+16 | STRATÉGIE MARKETING & ACQUISITION RENFORCÉE
+
+
+
+
+                                                                      EL
+16.1 Programme ”Building in Public”
+   RBK 2.0 ne fait pas de publicité, elle produit de la preuve. Notre stratégie d’acquisition repose sur le ”Building in Public”. Nous
+
+
+
+
+                                                                   TI
+documentons publiquement nos succès, nos échecs, nos audits et nos outils. Cette transparence radicale a trois objectifs : 1. Crédibilité :
+
+
+
+
+                                                             EN
+Montrer le niveau technique réel avant même l’inscription. 2. Confiance : Rassurer les candidats (et leurs parents) sur le sérieux de la
+pédagogie. 3. Communauté : Attirer des mentors et des entreprises qui partagent nos valeurs.
+
+
+
+
+                                                        D
+                                                     FI
+Les 3 Piliers de Contenu
+
+                                                 N
+  1. Technique (The Code) : Partage de snippets Rust, analyses de hacks récents, tutoriels Solana. Cible : Développeurs, CTOs.
+                                           CO
+  2. Pédagogie (The Journey) : Avant/Après des étudiants, rediffusion de Code Reviews, partage de ressources (Cheat Sheets). Cible :
+     Candidats.
+
+  3. Success Stories (The Result) : Interviews d’Alumni, montants des bounties gagnés, projets lancés. Cible : Grand public.
+
+
+16.2 Assets visuels Sprint 0 (Maquettes à livrer)
+
+
+
+
+                                                                   142
+

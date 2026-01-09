@@ -1,0 +1,93 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                   Action                                            Dé- Éché-             Livrable       Dépend- Preuve
+                                       Act. Risque                        Type      Prio Owner                   Statut
+                                                   (verbe + livrable)                                but ance              (DoD)          ances   (Trace)
+                                       ID
+                                       A- R-18     Mettre indicateur      Préventif P2   HoP + TA    T0+ T0+ À faire       Tableau charge Outils   Tableau
+                                       046         surcharge (heures                                 7     90              hebdo
+                                                   sup + carry-over)
+                                       A- R-19     Checklist QA PDF Préventif P2         Ops         T0-30 T0-14 À faire   Checklist      Factsheet Checklist
+                                       047         (ToC, tables, figures,                                                  signée
+                                                   cohérence chiffres)
+                                       A- R-19     Relectures croisées Préventif P2      Ops + HoP T0-21 T0-7 À faire      CR relecture + A-047    CR
+                                       048         (2 reviewers) +                                                         patches
+                                                   corrections
+                                       A- R-20     Définir politique      Préventif P3   CEO + Legal T0-45 T0-20 À faire   Politique      –        Doc
+                                       049         bourses simple                                                          bourses
+                                                   (pilot) + critères
+                                       A- R-21     Ajouter clause IP3 Préventif P2       Legal       T0-45 T0-20 À faire   Clause dans    A-029    Contrat
+                                       050         (open-source par dé-                                                    contrat
+                                                   faut + exceptions)
+
+
+
+
+                                                                                                         EL
+                                       A- R-22     Écrire PCA/PRA mi- Préventif P2       Ops         T0-30 T0-10 À faire   Doc PCA/PRA A-044       Doc + logs
+                                       051         nimum (RPO/RTO,                                                         + test
+
+
+
+
+                                                                                                    TI
+                                                   backups, rôles)
+
+
+
+
+                                                                                                 N
+                                       A- R-23     Verrouiller versions Préventif P2     TL (EVM)    T0-30 T0-14 À faire   Dockerfile +   A-010    Repo
+
+
+
+
+                                                                                         DE
+                                       052         + docker image +                                                        doc
+                                                   guide install
+
+
+
+
+                                                                                       FI
+                                       A- R-24     Verrouiller versions Préventif P2     TL (Solana) T0-30 T0-14 À faire   Notes versions A-010    Repo
+                                       053         Anchor/Solana +                                                         + doc
+
+
+
+
+                                                                                    N
+                                                   guide migration
+
+                                       A- R-25
+                                       054
+                                                   Créer “Security
+                                                   Gate” capstone :
+                                                                              CO
+                                                                          Préventif P1
+                                                                                         Sec
+                                                                                         Lead
+                                                                                                     T0+ T0+ À faire
+                                                                                                     35    56
+                                                                                                                           Critères gate + A-025
+                                                                                                                           checklist
+                                                                                                                                                   Doc gate
+
+                                                   seuil findings +
+                                                   blocage
+                                                                                         SecLead
+                                       A- R-25     Instaurer “oral        Préventif P2               T0+ T0+ À faire       Grille + PV    A-054    PV
+                                                                                         + HoP
+                                       055         defense sécurité”                                 56    63
+                                                   (10 min/équipe)
+
+
+
+
+  3
+      Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                  Page 286 sur 316
+

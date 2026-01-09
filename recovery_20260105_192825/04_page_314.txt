@@ -1,0 +1,50 @@
+Journal des modifications — Version 5.0
+
+
+  Cette version 5.0 du Livre Blanc RBK marque l’intégration formelle des outils de pilotage stratégique et la densification du volet ”Business & Operations”.
+
+
+
+
+                                                                                EL
+                                                                              TI
+Ajouts Majeurs
+
+
+
+
+                                                                      N
+  • Direction Stratégique : Ajout ”Note de Cadrage” (Chap 1-A) avec SWOT, MoSCoW, RACI et Registre des Risques remplis.
+
+
+
+
+                                                                    DE
+  • Modèle Économique : Mise à jour Business Plan (Hypothèses, Funnel, Sources) et Factsheet unique (Chap 00).
+
+
+
+
+                                                              FI
+  • Conformité : Ajout Guide Operating Model (Scénarios A/B/C) et Disclaimers légaux (Chap 16).
+
+
+
+                                                             N
+  • Méthodologie : Intégration du standard ”Studio” (DoD, Incident Drills) (Chap 4).
+                                                      CO
+  • Outillage LaTeX : Création macros haute fidélité \RBKSWOT etc. et harmonisation versionnelle (5.0).
+
+
+
+V5.4 — Industrialisation du ”Studio Operating System”
+  • Capstones : Spécifications industrielles (User Stories, Checklist Secu) + Rubric de notation unifiée (100pts).
+  • Compétences : Mapping précis Module → Badge → Preuve Technique (Repo) → Critère.
+  • Process : Définition du DoD Global et de la Politique de Pull Request (Template, Review).
+  • Outillage : Ajout des templates ”Incident Postmortem”, ”Repo Structure” et ”ADR” en annexe.
+
+
+
+
+                                                                              312
+

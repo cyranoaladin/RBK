@@ -1,0 +1,53 @@
+A | Gabarits opérationnels & stratégiques
+
+
+   Cette annexe présente les matrices stratégiques validées pour le déploiement de RBK 2.0.
+
+
+
+
+                                                                       EL
+Légende des rôles (RACI).
+
+
+
+
+                                                                    TI
+• CEO : Direction RBK (décisions stratégiques / arbitrage).
+
+
+
+
+                                                              EN
+• HoP : Head of Program / Directeur pédagogique (qualité, curriculum, delivery).
+
+
+
+
+                                                         D
+• TechLead-EVM : Référent technique EVM (Solidity, tooling, patterns, sécurité).
+
+
+
+
+                                                      FI
+• TechLead-SOL : Référent technique Solana (Rust/Anchor, tooling, sécurité).
+                                                  N
+                                           CO
+• SecLead : Référent sécurité/audit (méthodologie, checklists, hardening).
+
+• Ops : Opérations (planning, salles, outils, LMS, comptes, supports).
+
+• Career : Career services (coaching, portfolio, placements, partenariats RH).
+
+• Mkt : Marketing & admissions (funnel, contenus, événements, conversion).
+
+• Legal : Conseil conformité (disclaimer, scénarios opératoires, risques).
+
+• Mentors : intervenants/mentors externes (reviews, office hours, panels).
+
+• Students : apprenants (delivery, repo, docs, demo, éthique).
+
+
+                                                                    203
+

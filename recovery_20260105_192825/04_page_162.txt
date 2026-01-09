@@ -1,0 +1,48 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                             Chapitre 18. Guide Compliance Web3
+
+
+
+Dimension      Détails Opérationnels
+Périmètre      Édition de logiciel SaaS/DApp, Tokenisation, Revenus protocolaires.
+Structure      Holding (Estonie/Delaware/Dubaï) qui encaisse la Crypto + Filiale Tunisie (Cost Center) qui produit.
+Flux Financier La Holding facture les clients, encaisse les tokens, gère la trésorerie. La Filiale refacture ses coûts (Salaires + Marge) à la Holding en
+               Fiat (EUR).
+Risques        Prix de transfert (doit être justifié), Substance fiscale (Holding doit avoir une gestion réelle).
+
+
+
+18.1.3 Scénario C : Freelance ”Portage Salarial” (Le Simple)
+   Cible : Débutant ou mission courte durée.
+
+
+
+
+                                                                             EL
+   • Mecanisme : Utilisation d’un EoR (Employer of Record) comme Deel ou Remote.
+
+
+
+
+                                                                          TI
+   • Avantage : Zéro gestion administrative. Protection sociale complète (CNSS).
+
+
+
+
+                                                                   EN
+   • Inconvénient : Coût (Frais 5-10%) + Moins d’optimisation fiscale que le statut ETE.
+
+
+
+
+                                                             D
+                                                          FI
+18.2 Matrice des Risques de Conformité
+                                                      N
+                                               CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                      Page 160 sur 316
+

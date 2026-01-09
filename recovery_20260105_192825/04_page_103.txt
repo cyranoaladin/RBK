@@ -1,0 +1,46 @@
+11 | TRACK C : PRODUCT & GROWTH ENGINEER (FULL
+              STACK + ANALYTICS)
+
+
+
+
+                                                                            EL
+                                                                         TI
+11.1 Philosophie du Track : Le ”Product Builder” Complet
+
+
+
+
+                                                                EN
+   Le monde Web3 regorge de protocoles techniquement brillants mais inutilisables. Le Track C forme le chaînon manquant : l’ingénieur
+capable de construire une dApp de bout en bout (Front, Indexing, Analytics) et de piloter sa croissance. Ce n’est pas un track ”No-Code”.
+
+
+
+
+                                                      D
+C’est un track ”Full-Code” orienté utilisateur. L’étudiant apprend à connecter les smart contracts au monde réel, à visualiser la data
+On-chain, et à itérer sur le produit en fonction des métriques.
+
+
+                                                    FI
+                                          N
+Positionnement ”Product Engineer”
+  Il maîtrise la stack Next.js/React, l’indexation (Subgraphs/Squid), et l’analyse de données (Dune/SQL). Il sait que le code n’est qu’un
+                                         O
+
+moyen de livrer de la valeur.
+                                     C
+
+
+   NON NÉGOCIABLE : USER-CENTRICITY
+      • Zero-Friction : Gérer les erreurs RPC, les wallets et l’UX dégradée sans perdre l’utilisateur.
+
+      • Data-Driven : Pas de feature sans tracking. Dashboard analytique jour 1.
+
+      • Shipping : Déploiement continu (Vercel/Fleek) et tests E2E (Playwright).
+
+
+
+                                                                   102
+

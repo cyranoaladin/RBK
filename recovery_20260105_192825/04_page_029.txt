@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3
+
+
+    Notre Promesse : Former en 48 semaines (Genesis Pool 4 + Explorer 12 + Bâtisseur 16 + Architecte 16) des ingénieurs possédant la
+maturité technique d’un profil de 3 ans d’expérience (”Senior-by-Design8 ”), audités, certifiés on-chain via les NFT Skills “Launch Proof”,
+et prêts à déployer de la valeur dès le jour 1.
+
+      • Genesis Pool (4 sem.) : bootcamp intensif sans IA, culture Dev DAO, sélection des 30 meilleurs profils.
+
+      • Explorer (12 sem.) : fondamentaux Web3 + pipeline produit, validation Block Check “Explorer”.
+
+      • Bâtisseur (16 sem.) : projets pairés, spécialisation Solana/EVM/Product, préparation RBK Solana Validator Track.
+
+      • Architecte (16 sem.) : leadership technique, mentorat des niveaux inférieurs, production d’audits.
+
+
+
+
+                                                                                    EL
+      • Launchpad (4 sem., sur dossier) : incubation, revenue share 30% Nexus / 70% RBK ou startup.
+
+
+
+
+                                                                                 TI
+Cibles et Personas
+
+
+
+
+                                                                         EN
+      • Le Junior Ambitieux : Diplômé CS ou autodidacte talentueux bloqué par le ”plafond de verre” du marché local.
+
+
+
+
+                                                                   D
+      • Le Tech Switcher : Ingénieur Web2 confirmé (Java/JS) cherchant à pivoter vers la blockchain et le remote international.
+
+
+
+
+                                                                FI
+                                                            N
+      • Le Validator Architect : Profil infra/SRE visant la certification RBK Solana Validator Track pour opérer des nœuds institutionnels.
+                                                    CO
+      • Le Stratège (Track C) : Profil business/finance souhaitant maîtriser la Tokenomics et la gouvernance DAO.
+
+(Voir Annexe G pour les critères détaillés d’admission.)
+
+
+Chiffres Clés & Objectifs 2026
+  8
+      Organisation — Principe de conception du programme visant à inculquer dès la formation les réflexes et standards d’un profil senior.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                             Page 28 sur 316
+

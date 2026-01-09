@@ -1,0 +1,32 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Chapitre 5. Architecture de Partenariat
+
+
+
+         a
+         Pédagogie — Processus d’évaluation et de validation des mentors RBK/Nexus couvrant expertise technique, soft skills et conformité aux standards de
+      mentoring Senior-by-Design.
+
+
+  Audits et continuité pédagogique
+
+  Audits croisés : RBK mandate un cabinet tiers au moins une fois par an sur trois volets (académique, sécurité, finance) ; Nexus supporte la préparation
+  documentaire et l’accès aux environnements. Plan de continuité : un registre de ressources critiques (mentors, outils, données) est tenu par le Comité Risques ;
+  des remplaçants RBK pré-qualifiés sont contractualisés. Escalade structurée : incidents classés en 3 niveaux (Majeur, Critique, Catastrophique) avec délais de
+  réponse (4h, 12h, 24h) et processus de communication apprenant/employeur.
+
+
+
+
+                                                                                 EL
+                                                                               TI
+                                                                       N
+                                                                     DE
+                                                               FI
+                                                              N
+                                                       CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 66 sur 316
+

@@ -1,0 +1,62 @@
+                                                                                                      Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                         DÉTAILLÉ ET STANDARDS
+
+
+
+  Critères Critiques (Échec Automatique)
+
+   Un score insuffisant dans ces catégories entraîne un NO-GO immédiat, quel que soit le total :
+
+      • Sécurité : Score < 8/20.
+
+      • Reproductibilité : Score < 4/10.
+
+      • Tests/CI : Score < 10/25.
+
+   Exemple : Un projet avec 85/100 mais 0 tests est NO-GO.
+
+
+
+
+                                                                      EL
+B.5 Format de Jury Gate et Procès-Verbal
+
+
+
+
+                                                                   TI
+   Cette section détaille le déroulé standard (45-60 min), les questions imposées et le modèle de verdict pour les passages de niveau
+
+
+
+
+                                                             EN
+(Genesis, Explorer, Bâtisseur/Architecte).
+
+
+
+
+                                                        D
+                                                     FI
+B.5.1 Déroulé Standard (45–60 min)
+
+
+                                                 N
+  1. Pitch (2 min) : Quoi, pour qui, pourquoi maintenant, scope exact.
+                                           CO
+  2. Demo Live (8–10 min) : Cas nominal (User Story principale) + 1 Cas d’erreur géré (RPC down, input invalid...).
+
+  3. Reproduction (5 min) : Exécution en direct des scripts setup / test / run sur la machine d’un juré ou environnement vierge.
+
+  4. Architecture (10 min) : Diagramme, composants, justification des choix (ADR).
+
+  5. Sécurité (10 min) : Threat Model, 3 menaces majeures, mitigations prouvées, risques résiduels.
+
+  6. Qualité / Ops (5–10 min) : Stratégie de tests, CI, Logs, Metrics, Incident Playbook.
+
+  7. Q&A et Verdict (5 min) : Questions de creusement et décision.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 219 sur 316
+

@@ -1,0 +1,55 @@
+G | Modèle ISA (Income Share Agreement)
+
+
+G.1 Objet et Principes
+
+
+
+
+                                                                                    EL
+    L’ISA est un mécanisme de financement sélectif destiné à aligner l’école et l’étudiant : l’étudiant ne paie que s’il dépasse un seuil de revenu, et l’école accepte un
+
+
+
+
+                                                                                  TI
+risque. L’ISA est réservé aux profils validés Top Talent.
+
+
+
+
+                                                                          N
+   Répartition des responsabilités
+
+
+
+
+                                                                        DE
+   Il est fondamental de noter que RBK porte le risque de crédit (en tant que porteur légal du contrat) tandis que Nexus Réussite porte le risque d’exécution
+
+
+
+
+                                                                 FI
+   (garant de la qualité pédagogique et de l’employabilité). Cette répartition est détaillée dans l’addendum sur la gouvernance (Chapitre 3) et l’addendum juridique
+   (Section D).
+
+
+                                                                N
+                                                            CO
+G.2 Éligibilité (Gating)
+    • Périmètre : réservé au parcours complet Genesis Pool →Explorer →Bâtisseur →Architecte.
+
+    • Quota : nombre de places ISA limité par cohorte (ex : 30% max).
+
+    • Sélection : top performance + validation par comité.
+
+
+
+G.3 Paramètres ISA unifiés
+    • Seuil de déclenchement : 2500 brut/mois (revenu traçable).
+
+
+
+                                                                                  244
+

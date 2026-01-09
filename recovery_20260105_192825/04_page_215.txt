@@ -1,0 +1,59 @@
+                                                                                                            Annexe B. SYLLABUS TECHNIQUE
+RBK 2.0 — Whitepaper Architecte Web3                                                                               DÉTAILLÉ ET STANDARDS
+
+
+
+B.2 Rubrique d’Évaluation & Processus
+    L’évaluation chez RBK est binaire sur la forme (KO si non-conforme) et granulaire sur le fond (Grille /100). Elle s’applique à deux
+fréquences : Hebdomadaire (Sprints) et Mensuelle/Trimestrielle (Gates).
+
+
+B.2.1 Revues Hebdomadaires (Sprints)
+   Chaque vendredi, le livrable est évalué selon le Gabarit et la Grille Standardisée (voir Section B.4).
+
+   • Validation Automatique : Exécution des scripts ‘scripts/test.sh‘ et ‘scripts/lint.sh‘.
+
+   • Review Technique : Qualité du code, couverture de tests, et conformité de l’architecture.
+
+
+
+
+                                                                       EL
+   • Review Produit : Démo fonctionnelle et UI/UX (si applicable).
+
+
+
+
+                                                                    TI
+                                                             EN
+B.2.2 Format de Jury (Gate)
+
+
+
+
+                                                         D
+  Le passage de niveau se fait devant un jury technique. Le format détaillé, les questions fixes et le modèle de verdict sont définis en
+
+
+
+
+                                                      FI
+Annexe B.5.
+
+
+                                                  N
+                                           CO
+B.3 Standards de Documentation et Templates
+   Cette section définit le contenu attendu des fichiers critiques. Le non-respect de ces formats entraîne des pénalités ou un KO.
+
+
+B.3.1 Règles ADR (Architecture Decision Records)
+   Dossier : adr/
+Convention de nommage : NNNN-slug-kebab-case.md (ex : 0002-choix-db-sql.md).
+Fréquence : Au moins 1 ADR par module majeur ou décision structurante. Une ADR doit être immuable une fois ”Accepted” (sauf
+changement de statut).
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 213 sur 316
+

@@ -1,0 +1,63 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                        Chapitre 13. CAPSTONES (PROJETS SIGNATURES)
+
+
+13.2.2 Capstone 2 — Tokenization & Admin Control Center (RWA/DeFi)
+
+      Focus : Gestion des droits (RBAC1 ) et Logique Métier.
+
+13.2.2.1 Spécifications Fonctionnelles
+
+  1. US.1 (Role) : ”En tant que SuperAdmin, je peux nommer ou révoquer un ’Operator’.”
+
+  2. US.2 (Freeze) : ”En tant qu’Operator, je peux geler un compte utilisateur suspect (Compliance).”
+
+  3. US.3 (Audit) : ”En tant qu’Auditeur, je peux consulter l’historique on-chain de toutes les actions Admin.”
+
+
+
+
+                                                                                    EL
+13.2.2.2 Spécifications Techniques
+
+
+
+
+                                                                                 TI
+      • Stack : Solidity (OZ AccessControl) ou Anchor (PDA Authorities).
+
+
+
+
+                                                                          EN
+      • Invariants : TotalSupply doit toujours égaler la somme des balances (sauf mint/burn explicite).
+
+
+
+
+                                                                    D
+      • Events : Émission d’événement pour CHAQUE changement d’état critique.
+
+
+
+
+                                                                 FI
+13.2.2.3 Checklist Sécurité Dédiée
+                                                             N
+                                                     CO
+        Access Control : Vérifier onlyRole sur toutes les fonctions sensibles.
+
+        Two-Step Transfer : Changement d’admin en 2 étapes (Propose + Accept).
+
+        Checks-Effects-Interactions : Respect strict du pattern anti-reentrancy.
+
+
+13.2.3 Capstone 3 — Digital Assets & Utility Ecosystem (NFT/Gaming)
+      Focus : Performance & Vérification de propriété.
+  1
+      Sécurité/Infra/Ops — Role-Based Access Control (RBAC) : modèle limitant les privilèges par rôles prédéfinis pour réduire la surface d’attaque.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                             Page 112 sur 316
+

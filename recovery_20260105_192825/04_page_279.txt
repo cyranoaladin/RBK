@@ -1,0 +1,92 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                                                 Annexe U. Registre des risques opérationnels
+
+
+                                                              Déclen-           Pré-              Conti-
+ID         Cat.     Risque            P I Sc. Niv. Own.                                                             KPI           St.
+                                                              cheurs            vention           ngence
+R-06       PED/     Méthode “Studio” 3 5 15 Élevé HoP      CI rouge ignorée, Gates stricts : Bloquer merges, Taux            PR Ou-
+           QUAL     non      appliquée            +    Se- PR sans rubric, li- zero-merge sans “freeze” releases, conformes      vert
+                    (merges       sans            cLead2 vrables non do- review + tests, séance de reme-(%), CI pass
+                    review/tests) →                        cumentés.           templates   PR, diation QA, re- rate,         nb
+                    perte de différen-                                         codeowners,     work obligatoire merges       di-
+                    ciation et baisse                                          rubric PR.      avant capstone. rects,      dette
+                    qualité.                                                                                      technique
+                                                                                                                 (issues).
+R-07       TECH/    Pannes/          4 3 12 Élevé Ops       +Timeouts,       er- Multi-providers, Basculer         sur Taux erreurs Ou-
+           INFRA    instabilités RPC              TL3        reurs blockhash stratégie          fall- environnement RPC, latence vert
+                    (EVM/Solana)                             expiré,       rate- back,       cache, local/mocks,       moyenne,
+                    pendant labs →                           limit, impossibi- mocks        locaux, déplacer     labs, incidents/
+                    pertes de temps,                         lité de confirmer quotas, “incident prolonger sprint, semaine,
+                    démo cassée.                             tx.                 drills” planifiés. publier runbook. temps moyen
+                                                                                                                       de     reprise
+                                                                                                                       (MTTR).
+R-08       SEC      Capstone          3 5 15 Élevé SecLead Findings     cri- Checklist      sé- Bloquer    livrai- Nb findings Ou-
+                    contient      une              + HoP tiques en review, curité,      threat son, exiger patch High/Critical, vert
+                    vulnérabilité                          tests     d’abus model      obliga-+ re-audit, dé- couverture
+                    grave    (contrat                      échouent,     lo- toire, “security mo sur testnet, tests sécurité,
+                    ou logique wal-                        gique    d’authz review sprint”, documenter limi- temps            de
+                    let/tx) → risque                       fragile.          tests d’abus mi- tations.             remédiation.
+                    réputationnel.                                           nimaux.
+
+
+
+
+                                                                                                                                                EL
+R-09       LEGAL/   Confusion      pu- 3 5 15 Élevé CEO +Messages/ads        Charte de com- Rectificatif pu- Nb incidents Ou-
+
+
+
+
+                                                                                                                                                TI
+           REP      blique   :    pro-              Legal +ambigus, ques- munication,         blic,     retrait comm, taux vert
+                    gramme      perçu               Mkt    tions    trading, disclaimers,     contenus, FAQ de questions
+
+
+
+
+                                                                                                                                              N
+                    comme “forma-                          commentaires “software engi- officielle,         for- trading, senti-
+
+
+
+
+                                                                                                                                           DE
+                    tion à gagner                          négatifs, presse neering export”, mation interne ment réseau
+                    de l’argent avec                       locale.           interdits expli- marketing, vali- social.
+
+
+
+
+                                                                                                                                           FI
+                    crypto/trading”.                                         cites (trading). dation Legal.
+
+
+
+
+                                                                                                                                          N
+R-10       LEGAL/   Incertitudes ré- 3 4 12 Élevé Legal +Blocage banque, Operating model Basculer         sur Nb blocages Ou-
+
+
+
+
+                                                                                                                                 CO
+           OPS      glementaires                  CEO    partenaires       par     scénarios modèle export paiement,          vert
+                    locales impactant                    frileux,    refus (local/export/- +      facturation time-to-
+                    paiements/com-                       sponsor,     avis hybride), paie- service, limiter contract,
+                    munication/par-                      contradictoires. ments classiques, mentions, renfor- retours     ju-
+                    tenariats.                                             docs juridiques. cer disclaimers. ridiques,
+                                                                                                              incidents
+                                                                                                              conformité.
+                                                                                                                     Suite page suivante
+
+
+
+
+       2
+           Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+       3
+           Finance/Juridique/Compliance — Dinar tunisien, devise utilisée pour exprimer les montants dans l’offre et les projections financières du programme.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                                              Page 277 sur 316
+

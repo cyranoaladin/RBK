@@ -1,0 +1,57 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                          Chapitre 7. STRUCTURE DU CURSUS AMÉLIORÉE
+
+
+
+
+                                      TAB. 7.3 : Timeline pédagogique détaillée (Genesis Pool →Launchpad)
+
+
+       Semaine      Mois     Jalons pédagogiques                                  Évaluations & livrables
+         1–4        M1       Genesis Pool – Sélection Rust, culture Dev DAO       3 Skill Mirror + Block Check “Genesis” (NFT Access)
+         5–8        M2       Explorer – Fondamentaux Rust/Web3                    Skill Mirror Fundamentals, mini-projets pairés
+         9–12       M3       Explorer – Protocoles, sécurité de base              Block Check “Explorer” + Portfolio pack
+        13–16       M4       Explorer – Delivery produit, UX wallet               Block Check “Explorer” consolidation
+        17–20       M5       Bâtisseur – Solana/EVM track, Dev DAO sprint         Skill Mirror avançés, Block Check “Build” 1
+        21–24       M6       Bâtisseur – Architecture & audits croisés            Audit croisé, Block Check “Build” 2
+
+
+
+
+                                                                         EL
+        25–28       M7       Bâtisseur – Indexation, monitoring, DevOps           Release candidate + NFT Skills “Build Master”
+
+
+
+
+                                                                   TI
+        29–32       M8       Bâtisseur – Capstone Track (Validator/Product)       Jury Dev DAO, pitch technique
+        33–36       M9       Architecte – Leadership, mentorat Explorer           Skill Mirror modéré, Block Check “Architecte” 1
+
+
+
+
+                                                                  N
+        37–40       M10      Architecte – Audit, sécurité, opérations             Audit pack + NFT Skills “Mentor Lead”
+
+
+
+
+                                                             DE
+        41–44       M11      Architecte – Industrialisation, runbooks             Block Check “Architecte” final (Launch Proof)
+
+
+
+
+                                                         FI
+        45–48       M12      Architecte – Déploiement marché, alliances           Soutenance Launch Proof, signature SBT Audit-Ready
+        49–52*      M13      Launchpad (option) – Incubation, revenue model       Pitch investisseur, pacte Nexus (30% / 70%)
+
+                                                      N
+                                                     CO
+* Activation Launchpad : dossier validé par Nexus.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 79 sur 316
+

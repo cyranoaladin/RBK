@@ -1,0 +1,62 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                Chapitre 6. MÉTHODOLOGIE CYBORG 2.0
+
+
+                                       TAB. 6.3 : Mesures Anti-Burnout Intégrées dans le Cycle Hebdomadaire
+
+
+   Type de Mesure         Mise en Œuvre                                                             Indicateur de Suivi
+   Monitoring Mental      Check-ins hebdo (1-1 mentor-mentoré) + mood tracker                       Taux de complétion des check-ins, score de bien-être (1-10)
+   Pause Cognitive        2h/semaine ”Pause Active” (sport, jeu, art) + 1h veille douce             Temps dédié aux pauses, taux de participation
+   Limites Claires        Max 6h de deep-work par jour, blocage week-end, seuil de PR par jour      Respect des quotas hebdo, heures de connexion
+   Support Immédiat       Ligne directe ”Well-being” + réponse < 24h                                Temps de réponse moyen, nb tickets
+
+
+
+
+6.3 Genesis Pool : Bootcamp Sélectif
+
+
+
+
+                                                                                   EL
+   ͆ Structure Genesis Pool — Sélection Niveau Zéro
+
+
+
+
+                                                                                 TI
+  La Genesis Pool est une phase intensive de 4 semaines conçue pour évaluer la capacité cognitive des candidats et leur propension à résoudre des problèmes
+  complexes en Rust sans assistance IA (Copilot désactivé). Cette phase filtre les candidats selon leur potentiel d’apprentissage et leur capacité à s’intégrer au
+
+
+
+
+                                                                         N
+  dispositif Dev DAO.
+
+
+
+
+                                                                       DE
+  Objectifs :
+
+
+
+
+                                                                FI
+       • Mesurer la capacité d’apprentissage en situation de stress cognitif
+
+
+
+
+                                                               N
+       • Évaluer les concepts fondamentaux de Rust (ownership, borrowing, lifetimes)
+                                                        CO
+       • Tester la persistance face à des défis techniques non triviaux
+       • Identifier les profils qui réussissent à apprendre sans assistance IA
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                              Page 71 sur 316
+

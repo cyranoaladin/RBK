@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                           Chapitre 4. ANALYSE DU CONTEXTE
+
+
+                                                       TAB. 4.1 : Segmentation des Rôles Web3 (2025)
+
+
+4.1.0.3 Indicateurs                                                                      2025                                                            actualisés
+
+
+                              Segment        Rôles Clés                Livrables Concrets                     Compétence Dominante
+                              DeFi           Smart Contract Eng.       AMM, Lending Protocol, Vaults          Mathématiques & Sécurité
+                              DePIN          Rust Embedded Eng.        Drivers IoT, Proof-of-Coverage         Optimisation Bas-niveau
+                              Infra          DevOps / RPC Eng.         Indexers, Validators, Nodes            Linux, Docker, Rust
+                              Consumer       Mobile dApp Dev.          Wallet UI, Payment SDK                 UX/UI, React Native
+
+
+
+
+                                                                                    EL
+4.1.0.4 Pourquoi Solana est un Accélérateur d’Employabilité
+
+
+
+
+                                                                                  TI
+    Contrairement à Ethereum (EVM) qui est saturé et fragmenté (L2s), Solana offre un écosystème unifié et en hyper-croissance (+500% d’adresses actives en 2024).
+
+
+
+
+                                                                          N
+Pour un junior, la courbe d’apprentissage est plus raide (Rust), mais la concurrence est moindre et les primes sont plus élevées. La Superteam offre un pipeline direct
+
+
+
+
+                                                                        DE
+vers l’emploi via Earn.
+
+
+
+
+                                                                 FI
+  Statistiques Marché 2025
+
+
+
+
+                                                                N
+     1. Postes ouverts : 15 000+ offres actives en Remote GlobalWeb3.careera .
+                                                          CO
+     2. Pénurie : 58% des Lead Techs citent le recrutement d'ingénieurs Rust seniors comme leur blocage n°1.
+
+     3. Développeurs Actifs : < 25 000 développeurs crypto mensuels vs 25M devs Web2. L'opportunité d'arbitrage est de x1000Electric
+           Capitalb .
+     a
+         Source --- Données agrégées par Web3.career & TrueUp Tech Jobs Report, Q4 2024.
+     b
+         Source --- Source : Electric Capital Developer Report 2023.
+
+
+
+
+4.2 Dynamique Salariale
+    Cette section éclaire l’arbitrage salarial et fiscal afin d’ancrer les promesses de revenu dans des ordres de grandeur réalistes.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 53 sur 316
+

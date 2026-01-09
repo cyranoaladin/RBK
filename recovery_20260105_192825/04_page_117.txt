@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                               Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+Responsabilités cœur (opérationnelles)
+
+  1. Threat Modeling (avant le code) : Définir actifs critiques, surfaces d’attaque, hypothèses. Produire un threat model exploitable
+     (STRIDE simplifié).
+
+  2. High-Assurance Coding : Formaliser les invariants (soldes, monotonicité). Machine à états explicite.
+
+  3. Review & Audit : Revue structurée (checklist auth, CPI, oracles). Rédiger findings et findings.
+
+  4. Hardening (pré-prod) : Tests négatifs, fuzz/invariants, quality gates bloquants.
+
+  5. Emergency Response : War room, diagnostic, patch, rollback, communication.
+
+
+
+
+                                                                                     EL
+Trajectoire Carrière & Mission
+
+
+
+
+                                                                              TI
+      • Junior (0-2 ans) : Écrit des tests, corrige des bugs, audite des modules isolés. Mission : Implémenter le Staking Reward d’un protocole.
+
+
+
+
+                                                                             N
+                                                                      DE
+      • Senior (3+ ans) : Lead l’architecture, gère la War Room, valide les upgrades critiques. Mission : Sécuriser un Bridge cross-chain à
+        500M$ TVL1 .
+
+
+
+
+                                                                  FI
+                                                              N
+Interactions Builder/PM (cadrage), dApp Engineer (API/erreurs), QA Engineer (stratégie tests), Visionnaire (hypothèses éco).
+                                                       CO
+Livrables standard          docs/threat-model.md, AUDIT_REPORT.md (10 pages), Architecture doc, Tests suite (unit, int, fuzz), RUNBOOK.md.
+
+
+KPIs Taux de findings critiques avant audit externe (”zéro surprise”), MTTR (correction vuln), Couverture utile, Fréquence incidents.
+
+                                                     Table : Matrice Compétence → Preuve → Outil
+
+                                               Compétence      Preuve attendue                 Outil
+                                               Threat modeling Threat model (actifs, surfaces) STRIDE
+
+
+  1
+      Web3/Blockchain — Total Value Locked (TVL) : valeur totale des actifs déposés ou immobilisés dans des protocoles DeFi, indicateur de liquidité et de traction.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 116 sur 316
+

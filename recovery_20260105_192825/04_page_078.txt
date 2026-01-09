@@ -1,0 +1,52 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                            Chapitre 7. STRUCTURE DU CURSUS AMÉLIORÉE
+
+
+7.1.1 Diagramme de Structure du Curriculum (48 Semaines)
+
+                                                                    Cursus
+                                                                    48 Sem.
+
+
+              Genesis Pool                        Explorer                          Bâtisseur                         Architecte
+
+
+                  S1-S4                            S5-S16                            S17-S32                            S33-S48
+
+
+
+
+                                                                          EL
+7.1.2 Timeline pédagogique – Semaines 1 à 48
+
+                             Genesis Pool        Explorer          Bâtisseur         Architecte         Launchpad
+
+
+
+
+                                                                   TI
+                                S1-S4             S5-S16            S17-S32           S33-S48            S49-S52*
+
+
+
+
+                                                                  N
+                                                              DE
+7.2 Nouveau Track C : Web3 Product & Ecosystem Strategy
+
+
+
+                                                        FI
+                                                     N
+   Ż Spécialisation en Stratégie Produit et Écosystème Web3
+                                               CO
+  Objectif : Former des experts capables de concevoir, lancer et scaler des produits Web3 avec une compréhension approfondie de l’écosystème,
+  des communautés et des mécanismes économiques.
+  Public Cible : Profils business/finance avec intérêt pour la technologie, ou ingénieurs souhaitant évoluer vers des rôles de produit/solution
+  architect dans l’écosystème Web3.
+  Durée : 16 semaines, avec un accent sur la création de valeur et la compréhension des dynamiques de marché.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 77 sur 316
+

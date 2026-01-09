@@ -1,0 +1,53 @@
+F | LE COCKPIT DE L’ARCHITECTE
+
+
+  Liste des outils obligatoires pour un étudiant en phase de production.
+
+
+
+
+                                                                               EL
+F.1 Stack Outillage Minimal
+
+
+
+
+                                                                             TI
+                                                                      N
+                                                                     Table : Cockpit Tools
+
+
+
+
+                                                                    DE
+                                      Outil           Usage           Output Attendu
+
+
+
+
+                                                              FI
+                                      Obsidian/Notion Knowledge Base Wiki du projet, Notes de recherche
+                                      Excalidraw      Diagramming     Schémas d’architecture C4
+
+
+                                                             N
+                                      Linear/Jira     Task Management Tickets spécifiés et trackés
+                                                      CO
+                                      Cursor/VSCode IDE               Code avec Linter et Copilot configuré
+
+
+
+F.2 Journée Type (Productivité)
+  • 09h-12h (Deep Work) : Coding (Feature complexe ou Refactoring). Pas de notifs.
+
+  • 13h-14h (Review) : Code Review des PRs des collègues.
+
+  • 14h-16h (Ops) : Tests, Documentation, Fixes mineurs.
+
+  • 16h-17h (Sync) : Daily Standup, Synchro Architecte.
+
+
+
+
+                                                                             243
+

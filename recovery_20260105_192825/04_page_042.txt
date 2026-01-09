@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                  Chapitre 2. Stratégie : Note de Cadrage
+
+
+commerciale directe. L’environnement actuel se caractérise par une forte demande de profils ”Seniors-by-Design” capables d’opérer sur
+des environnements de production critiques (Solana, Ethereum), face à une pénurie structurelle de talents vérifiés.
+
+
+2.1.2 Motivations et enjeux
+       La motivation principale est de repositionner RBK non plus comme une école, mais comme un Talent/Venture Studio. L’enjeu est triple :
+
+   1. Technologique : Maîtriser le double standard du marché (Rust/Solana pour la performance, Solidity/EVM pour l’interopérabilité).
+
+   2. Économique : Sécuriser le modèle via les ISA et la production de valeur tangible (MVP2 , audits) durant la formation.
+
+   3. Humain : Offrir une employabilité internationale immédiate aux talents tunisiens et africains.
+
+
+
+
+                                                                                 EL
+                                                                              TI
+2.2 Enjeux (Stratégiques, Opérationnels, Réglementaires)
+
+
+
+
+                                                                       EN
+Légende des rôles (RACI3 ).
+
+
+
+
+                                                                 D
+• CEO : Direction RBK (décisions stratégiques).
+
+
+
+
+                                                              FI
+• HoP : Head of Program (qualité, curriculum).
+                                                          N
+                                                  CO
+• TechLeads : Référents techniques (EVM/Solana).
+
+• SecLead : Référent sécurité/audit.
+
+• Ops : Opérations & Career : Carrière.
+   2
+    Produit/API/Architecture — Minimum Viable Product (MVP) : produit minimum viable permettant de valider une hypothèse avec l’effort minimal avant itérations.
+   3
+    Web3/Blockchain — Decentralized Finance (DeFi) : finance décentralisée construite sur des smart contracts, offrant prêts, échanges et rendements sans intermé-
+diaire bancaire traditionnel.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 41 sur 316
+

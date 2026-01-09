@@ -1,0 +1,74 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                         Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+Note de périmètre. Les contrôles anti-hardcode ciblent explicitement une liste de fichiers critiques. Si une nouvelle section devient contractuelle (ou si une annexe est dupliquée), mettre à jour la liste dans
+
+scripts/verify_no_hardcode.sh.
+
+
+
+
+V.2 Annexe Y — Change Control (SSOT & Release Gate)
+Objet. Cette annexe définit un mécanisme de contrôle des changements des paramètres contractuels et des sections sensibles du livre blanc. Elle vise un statut audit-ready : toute évolution est tracée, justifiée,
+
+et prouvée par des contrôles automatisés (local + CI).
+
+Périmètre. Est considéré comme changement contrôlé toute modification de :
+
+      • la SSOT tex/
+
+        params.tex (durée programme, ISA : seuil/taux/cap/durée max, helpers de texte) ;
+
+
+
+
+                                                                                                             EL
+      • les scripts de contrôles scripts/
+
+
+
+
+                                                                                                   TI
+        verify_params.sh et scripts/
+
+
+
+
+                                                                                                  N
+        verify_no_hardcode.sh ;
+
+
+
+
+                                                                                         DE
+      • le pipeline CI .github/workflows/
+
+        doc-release-checks.yml ;
+
+
+
+
+                                                                                   FI
+      • les sections contractuelles / financières exposant les paramètres (factsheet, offre, ISA, contrat ISA, finance).
+
+
+
+                                                                              N
+                                                                     CO
+Règle SSOT. Toute valeur contractuelle est définie uniquement dans tex/params.tex. Toute occurrence en dur (hors SSOT) dans les fichiers critiques constitue un NO-GO.
+
+Procédure obligatoire (avant merge / release).
+
+     1. Mettre à jour la SSOT (si applicable) et/ou les sections concernées uniquement via macros.
+
+     2. Exécuter la preuve locale : make release-check.
+
+     3. Vérifier la preuve CI : workflow doc-release-checks vert + artefact PDF.
+
+     4. Enregistrer le changement dans la table ci-dessous (une ligne par changement).
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                                Page 304 sur 316
+

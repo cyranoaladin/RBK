@@ -1,0 +1,25 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                      Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                                                                                            Seuils                Actions
+                         KPI           Définition        Formule / Calcul             Cible     Cadence   Source    Owner
+                                                                                                                            Alerte/Critique       déclenchées
+                         Marge/        Marge brute par   (Recettes - coûts directs) / À         Mensuel   Finance   CEO     Alerte baisse 15% ;   Ajuster prix, coûts,
+                         étudiant      étudiant          #étudiants                   définir                               Critique baisse 30%   taille cohorte
+
+
+
+
+                                                                                                      EL
+                                                                                                  TI
+                                                                                                N
+                                                                                      DE
+                                                                                    FI
+                                                                                 N
+                                                                          CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 291 sur 316
+

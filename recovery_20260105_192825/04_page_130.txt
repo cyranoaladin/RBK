@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                              Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+  4. Developer Experience : friction mapping, time-to-first-success, simplification flows.
+
+  5. Content & Adoption : posts techniques, workshops, templates, bounties doc.
+
+Trajectoire Carrière & Mission
+
+   • Junior : écrit docs, maintient examples, répond support niveau 1. Mission : produire un Quickstart intégration wallet + transaction +
+     indexer.
+
+   • Senior : pilote DX, versioning docs/SDK, influence roadmap produit. Mission : réduire de 50% le temps d’intégration moyen via docs +
+     SDK.
+
+
+
+
+                                                                      EL
+Interactions dApp Engineer (DX et erreurs), Guardian (sécurité des patterns), Builder (priorités), QA (snippets testés), Community/-
+
+
+
+
+                                                                   TI
+Growth.
+
+
+
+
+                                                            EN
+Livrables standard  Doc set complet (Quickstart, Concepts, API, Guides), STARTER_KIT maintenu, INTEGRATION_PLAYBOOK.md,
+
+
+
+
+                                                        D
+TROUBLESHOOTING.md, templates (CI, env, config), FAQ.
+
+
+
+
+                                                     FI
+KPIs Time-to-first-success, taux d’intégrations réussies, support load, résolution issues, adoption SDK, taux de docs à jour, satisfaction
+devs.                                            N
+                                           CO
+                                       Table : Matrice Compétence → Preuve → Outil (DevRel)
+
+                                   Compétence       Preuve attendue                  Outil
+                                   Docs system      Doc set versionné + style guide  Docusaurus/MkDocs
+                                   Snippets fiables Snippets testés en CI            CI + examples
+                                   SDK & starters Starter kit maintenu + releases    NPM/Cargo
+                                   Support          Playbook + base de connaissances Issues/Discord
+                                   DX analytics     Mesure TFFS + friction points    Analytics
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 128 sur 316
+

@@ -1,0 +1,30 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                     Annexe G. Modèle ISA (Income Share Agreement)
+
+
+
+
+                                                 TAB. G.1 : Scénarios de Remboursement
+
+
+                                       Scénario         RNM Mensualité Statut Final
+                                       A. Junior local 3 500 525       Arrêt à 36 mois (< Cap)
+                                       B. Profil solide 5 000 750      Cap atteint au 27ème mois
+                                       C. Remote        6 000 900      Cap atteint au 23ème mois
+                                       D. Chômage       0     0        Drop-off à 36 mois (0 TND)
+
+
+
+
+                                                                    EL
+                                                                  TI
+                                                            N
+                                                          DE
+                                                      FI
+                                                     N
+                                                CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 246 sur 316
+

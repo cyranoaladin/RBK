@@ -1,0 +1,49 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                            Chapitre 3. Gouvernance, Partenariat et RACI
+
+
+
+
+   Nexus             Unique responsable de la livraison pédagogique de A à Z : de- Contrat-cadre RBK ↔ Nexus (MSA) (voir ci-dessus). Bon de
+   Réussite          sign du programme, sélection/contrats/paiement des mentors, commande / SOW (RBK ↔ Nexus) (voir ci-dessus). Contrats
+   (maître           standards qualité, examens, jurys, traçabilité, preuves d’exécu- mentors ↔ Nexus : sous-traitance, confidentialité, cession/u-
+   d’œuvre           tion. Interface contractuelle : Nexus facture RBK, Nexus sous- sage limité des supports, non-sollicitation. Politique données
+   pédagogique       traite les mentors.                                              (DPA) : RBK ↔ Nexus ↔ MFAI.
+   et opérateur)
+
+   Money             Détient l’IP et l’exploitation de journey.mfai.app. Consent Licence MFAI ↔ Nexus : usage journey.mfai.app, IP, SLA,
+   Factory AI        à Nexus une licence d’usage (gratuite cohorte pilote, au- réversibilité, données. Politique données (DPA) (voir ci-
+   (propriétaire     delà, accord contractuel prédéfini (redevance par cohorte ou dessus).
+   techno / IP)      MFAI ne facture pas RBK : RBK contracte avec Nexus ; Nexus
+                     contracte avec MFAI.
+
+
+
+
+                                                                                EL
+                                                                              TI
+                                                                       N
+                                                                     DE
+3.3 Matrice RACI (Répartition des responsabilités)
+   Le tableau ci-dessous présente une macro-répartition des tâches clés. Une version détaillée sera annexée au contrat-cadre.
+
+
+
+
+                                                                 FI
+                                                                N
+  Matrice RACI — Macro-Processus RBK 2.0
+                                                       CO
+                   Activité / Tâche                                          RBK                 Nexus Réussite           Money Factory AI
+                   Phase Commerciale
+                   Marketing & Acquisition Apprenants                          A                        C                        I
+                   Inscriptions & Contrats Apprenants (ISA inclus)             A                        R                        I
+                   Exécution Pédagogique
+                   Design du programme & Syllabus                              C                        R                        A
+                   Sélection & contractualisation des mentors                  C                        A                        I
+                   Paiement des mentors                                        I                        A                        I
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 50 sur 316
+

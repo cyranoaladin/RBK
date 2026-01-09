@@ -1,0 +1,61 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                       Chapitre 26. CONCLUSION & FEUILLE DE ROUTE
+
+
+
+                                       Attrition % Dropout durant piscine < 30%        > 50%
+                                       Job Ready % Certifiés ”Audit-Ready” > 80%       < 60%
+                                       Placement % en poste à J+90         > 70%       < 50%
+
+
+
+26.3 Engagement Qualité Formel
+   RBK s’engage sur une politique ”Zéro Complaisance”.
+
+
+
+
+                                                                            EL
+   • Pas de diplôme de complaisance : Si le niveau n’est pas atteint, l’étudiant double ou sort.
+
+
+
+
+                                                                         TI
+   • Code Review systématique : Aucun code ne part en prod (ou validation) sans review par un pair et un mentor.
+
+   • Transparence totale : Les statistiques de placement et de salaire sont publiées et auditées.
+
+
+
+
+                                                               EN
+26.4 Forge de l’Élite Africaine
+
+
+
+
+                                                     D
+   RBK a l’ambition de devenir le ”MIT du Web3” pour l’Afrique. Nous ne formons pas des exécutants bon marché, mais l’élite technolo-
+
+
+                                                   FI
+gique qui construira l’infrastructure financière souveraine du continent.
+
+                                                    [Schéma : Flywheel RBK]
+                                          N
+                              (Sélection → Formation → Preuves → Revenus → Réputation → Sélection)
+                                         O
+                                       C
+
+
+26.5 Synthèse Valeur Stratégique
+   • Pour l’Étudiant : Une carrière internationale à haute valeur ajoutée, sans dette initiale (ISA).
+
+   • Pour l’Écosystème : Un pipeline fiable de talents ”Audit-Ready”.
+
+   • Pour la Tunisie : Une entrée de devises forte et une montée en gamme technologique.
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 194 sur 316
+

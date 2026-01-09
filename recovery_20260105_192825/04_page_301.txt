@@ -1,0 +1,23 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+
+Journal d’incidents (v1) — Aligné MTTR / drills / runbooks
+But. Tracer chaque incident (réel ou drill), mesurer MTTA/MTTR, relier aux runbooks et suivre les actions correctives jusqu’à clôture.
+
+
+
+
+                                                                                                       EL
+                                                                                                   TI
+                                                                                               N
+                                                                                       DE
+                                                                                     FI
+                                                                                  N
+                                                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                             Page 299 sur 316
+

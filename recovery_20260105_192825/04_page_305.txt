@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                            Paramètre       Macro SSOT       Fichiers critiques concer- Tests / preuves         Gate
+                                                             nés
+                            ISA — Max       \ISAMaxPaid      00_factsheet.tex              verify_params.sh     GO : durée max
+                            paiements       Months           annexe_j_offre.tex            (required)           via macro.
+                                                             annexe_f_isa.tex              verify_no_           NO-GO : 36 en dur
+                                                             annexe_q_contrat_isa.tex      hardcode.sh          en
+                                                             annexe_b_finance.tex          (36 +                contexte mois /
+                                                                                           mensualités/mois)    mensualités.
+                                                                                           CI pipelines
+                                                                                           make release-check
+                            Termes inter-   (n/a) — poli-    Tout le corpus                verify_params.sh    GO : aucun interdit
+                            dits (durées    tique documen-   (sections programme / KPI /   (forbidden)         détecté.
+                            courtes)        taire            annexes)                      CI pipelines        NO-GO : durées
+                                                                                           make release-check courtes
+
+
+
+
+                                                                                  EL
+                                                                                                               explicites
+
+
+
+
+                                                                              TI
+                                                                                                               détectées.
+
+
+
+
+                                                                             N
+                           Release          (n/a) — pipeline Repo (racine)                 make release-check GO : CI verte +
+
+
+
+
+                                                                      DE
+                           (preuve exé-                      CI pipelines                  (local)             artefact PDF.
+
+
+
+
+                                                                    FI
+                           cutable)                                                        CI                  WARN : warnings
+                                                                                           doc-release-checks LaTeX non
+
+
+
+
+                                                                  N
+                                                             CO
+                                                                                           (PDF + scripts)     contractuels.
+                                                                                           docs/RELEASE_DOC.md NO-GO :
+                                                                                                               scripts en échec ou
+                                                                                                               build KO.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 303 sur 316
+

@@ -1,0 +1,68 @@
+RBK 2.0 — Whitepaper Architecte Web3                                              Annexe W. Glossaire des termes, acronymes et jargon
+
+
+                   Terme
+                                 Domaine    Définition
+                 /Acronyme
+    OpenAPI                                 OpenAPI Specification (OpenAPI) : spécification standardisée décrivant de façon contrac-
+                                            tuelle les endpoints, schémas et flux d’une API HTTP.
+
+    RPC                                     Remote Procedure Call (RPC) : interface exposant des points de terminaison pour lire l’état
+                                            de la blockchain ou soumettre des transactions.
+
+    Gate GO/NO-GO                           Point de décision formalisé (GO/NO-GO) après vérification build, scripts et absence de
+                                            hardcodes ; bloque la promotion en cas d’échec.
+
+    CLI                                     Command Line Interface (CLI) : interface en ligne de commande permettant d’exécuter des
+                                            actions et scripts via un terminal.
+
+    Responsable Bien-être                   Référent Nexus habilité à ajuster charge, deadlines et protocoles de repos pour maintenir la
+
+
+
+
+                                                           EL
+                                            santé mentale et physique des apprenants.
+
+
+
+
+                                                         TI
+    Certification mentor RBK                Processus d’évaluation et de validation des mentors RBK/Nexus couvrant expertise tech-
+                                            nique, soft skills et conformité aux standards de mentoring Senior-by-Design.
+
+
+
+
+                                                  N
+                                                DE
+    Electric Capital                        Source : Electric Capital Developer Report 2023.
+
+    Web3.career                             Données agrégées par Web3.career & TrueUp Tech Jobs Report, Q4 2024.
+
+
+
+
+                                            FI
+                                           N
+    Stablecoin                              Stablecoin : actif numérique cherchant à maintenir une parité stable via collatéral, algo-
+                                            rithme ou réserves hors chaîne auditées.
+                                           CO
+    DAO                                     Decentralized Autonomous Organization (DAO) : organisation autonome décentralisée où
+                                            les détenteurs de jetons votent les décisions et les budgets via des propositions transpa-
+                                            rentes.
+
+    CI/CD                                   Continuous Integration / Continuous Delivery (CI/CD) : chaîne d’intégration et de livraison
+                                            continues automatisant tests, builds, audits et déploiements.
+
+    Smart contract                          Smart contract : programme déployé sur blockchain exécutant automatiquement des règles
+                                            vérifiables, immuables et auditées par le réseau.
+
+    RACI                                    Responsible, Accountable, Consulted, Informed (RACI) : matrice clarifiant qui porte les
+                                            décisions, exécute, consulte et informe pour chaque activité.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                    Page 310 sur 316
+

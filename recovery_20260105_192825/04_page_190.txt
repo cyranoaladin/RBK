@@ -1,0 +1,44 @@
+25 | ÉLÉMENTS DE DIFFÉRENCIATION
+
+
+
+
+                                                                       EL
+25.1 Le Paradigme « Senior-by-Design »
+   Le terme ”Junior” est banni de notre vocabulaire. Un étudiant RBK ne sort pas pour ”apprendre le métier”, mais pour ”exécuter
+
+
+
+
+                                                                    TI
+le métier”. L’objectif est de produire un ingénieur immédiatement opérationnel, capable de livrer du code sécurisé en production sans
+
+
+
+
+                                                              EN
+supervision constante.
+
+
+
+
+                                                         D
+Mécanisme Opérationnel
+
+
+
+
+                                                      FI
+   • No-AI Piscine : Le filtre d’entrée se fait à la dure (Rust pur, sans Copilot) pour garantir la capacité cognitive.
+
+                                                  N
+                                           CO
+   • Standards Audit : Dès la semaine 9, tout code est soumis aux standards des cabinets d’audit (Documentation, Tests, Invariants).
+
+   • Autonomie Radicale : Pas de ”prof” qui corrige. Peer-review et documentation technique sont les seules sources de vérité.
+
+
+
+
+                                                                    188
+

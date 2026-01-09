@@ -1,0 +1,66 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                    Chapitre 1. Vision & Manifeste
+
+
+                           Entrée (Bases)      IA (x10)        Cyborg 2.0       Réseau (Superteam)     Architecte
+                                                            Méthode & Rigueur                    Preuves : Portfolio, Audit
+
+                                                  FIG. 1.1 : La Chaîne de Valeur RBK 2.0
+
+
+
+1.2 Pourquoi RBK 2.0 ?
+    RBK 2.0 répond à un décalage structurel entre l’offre éducative classique et les exigences d’architectes Web3 seniors : nous cadrons ici
+le ”pourquoi” avant de détailler les sous-piliers.
+
+1.2.0.1 Diagnostic : L’Écart de Compétence (Skills Gap)
+
+
+
+
+                                                                       EL
+   Le fossé entre l’offre de formation classique et la demande du marché Web3 est béant.
+
+
+
+
+                                                                    TI
+  1. Évaluation obsolète : Les écoles notent la mémorisation ; le marché paie la résolution de problèmes inconnus.
+
+
+
+
+                                                             EN
+  2. Absence de Sécurité : La sécurité est souvent une option ou un module théorique. En Web3, c’est le prérequis absolu.
+
+
+
+
+                                                             D
+  3. Pas de Production Réelle : Les projets d’école finissent dans un dossier ”brouillon”. Un profil senior doit montrer un code en
+
+
+
+
+                                                          FI
+     production.
+
+
+                                                  N
+  4. Signaux Marché Faibles : Un diplôme papier ne prouve rien à une DAO internationale. Seul le code (GitHub) et la réputation
+                                            CO
+     (On-chain) comptent.
+
+1.2.0.2 Les Différenciateurs RBK 2.0
+
+   • Méthodologie Cyborg 2.0 (voir Chap. 4) : Nous intégrons l’IA comme outil de base, pas comme aide à la triche.
+
+   • Intensité 48 semaines (voir Chap. 7) : Une immersion totale Genesis →Explorer →Bâtisseur →Architecte pour ancrer le mindset
+     “senior-by-design”.
+
+   • Preuve de Travail (Proof of Work) (voir Chap. 11) : Chaque ligne de code contribue à un portfolio public auditable.
+
+   • Réseau Global : Connexion directe avec la Superteam et les opportunités internationales.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 34 sur 316
+

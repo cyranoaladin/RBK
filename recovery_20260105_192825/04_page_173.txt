@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                   Chapitre 21. INFRASTRUCTURE SBT & CERTIFICATION
+
+
+      • Réseau : Polygon POS (compatibilité EVM, frais nuls pour l’utilisateur) ou Solana (Compressed NFTs pour le volume).
+
+      • Standard : ERC-5192 (Minimal Soulbound NFTs) sur EVM.
+
+  Interface SBT (Solidity)
+
+
+  interface ISoulbound {
+         /// @notice Émis quand un SBT est minté. Locké par défaut.
+         event Locked(uint256 tokenId);
+         /// @notice Le transfert est impossible sauf pour le burn (révocation).
+         function locked(uint256 tokenId) external view returns (bool);
+
+
+
+
+                                                                         EL
+         /// @notice Seul l'admin (Smart Contract RBK) peut révoquer.
+         function revoke(uint256 tokenId) external onlyRole(ADMIN);
+
+
+
+
+                                                                      TI
+  }
+
+
+
+
+                                                         D      EN
+21.3 Cycle de Vie de la Certification
+
+
+
+                                                      FI
+                                                    N Trigger
+                                                                 LMS (Web2)
+                                                                              Valide Gate
+                                           CO
+                                         Étudiant                                           Oracle RBK
+
+
+                                                                                            Signe Tx
+
+
+                                                    Wallet (SBT)              SC Factory
+                                                                     Mint
+
+                                               FIG. 21.1 : Workflow d’Émission Automatisé
+
+
+21.4 Conformité RGPD & Privacy
+
+CONFIDENTIEL — PROJET RBK 2.0                                   Page 171 sur 316
+

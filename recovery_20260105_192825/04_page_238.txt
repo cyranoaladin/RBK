@@ -1,0 +1,71 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                             Annexe D. Addendum juridique
+
+
+
+    Phase 1 (J1 →         Dureté LMS (S1-S12),       Rapports QA hebdo, scripts CI validés, contrats mentors archivés, Notion playbooks, spec simulateur validée
+    J60)                  pipeline CI/CD &           par RBK.
+                          sécurité, roster mentors
+                          complet, playbooks
+                          Wellbeing, simulateur
+                          ROI pré-production
+    Phase 2 (J61 →        Piscine Rust exécutée,     Export CRM, dashboards fatigue, calendrier contenus, scoring candidats, CPPS en pré-signature.
+    J90)                  reporting fatigue,
+                          campagne Building in
+                          Public, shortlist
+                          candidats Alpha,
+                          dossiers CPPS prêts
+
+
+
+
+                                                                                  EL
+    Phase 3 (J91 →        Onboarding promo           Procès-verbaux d’onboarding, agendas rituels, cockpit KPI, comptes rendus comité, synthèse Wellbeing.
+    J120)                 Alpha, rituels cadencés,
+
+
+
+
+                                                                                TI
+                          reporting KPI hebdo,
+
+
+
+
+                                                                        N
+                          comité qualité, retours
+
+
+
+
+                                                                      DE
+                          Wellbeing consolidés
+    Cycle continu (post   Mise à jour contenu,       Release notes mensuelles, attestation formation mentors, rapport alumni, backlog priorisé.
+
+
+
+
+                                                                FI
+    J120)                 train-the-trainer,
+
+
+
+                                                               N
+                          support alumni,
+                          amélioration continue
+                                                        CO
+   Chaque livrable est considéré comme une obligation de moyens renforcée assortie de critères d’acceptation documentés et signés en comité exécutif conjoint.
+
+
+D.1.2 Domaines transverses
+ • Pilotage pédagogique : maintien du tronc commun, animation des Block Checks et publication des DoD par module.
+
+ • Qualité mentors : ratios mentors / apprenants respectés, audit mensuel des performances et activation du plan ”Mentor-in-a-Box”.
+
+ • Ops apprenants & Wellbeing : traitement des tickets sous 24h, exploitation des indicateurs de fatigue, déclenchement des temps de repos via le Responsable
+  Bien-être.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                            Page 236 sur 316
+

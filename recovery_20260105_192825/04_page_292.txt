@@ -1,0 +1,86 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                        Annexe V. Plan d’actions risques & tableau de bord KPI (v1)
+
+
+                                                                                                                                 Seuils                    Actions
+                         KPI            Définition         Formule / Calcul           Cible      Cadence    Source     Owner
+                                                                                                                                 Alerte/Critique           déclenchées
+                         CI pass rate   Qualité pipeline   #runs CI OK / #runs CI     ≥ 85% Hebdo           GitHub     Ops +     Alerte < 75% ;            Stop merges, fix
+                                        CI (lint/tests)    totaux                                           Actions    Tech Lead Critique < 60%            flakes, stabiliser
+                                                                                                                                                           tests
+                         MT green CI    Vitesse de répara- Temps moyen entre CI       ≤ 6ℎ       Hebdo      GitHub     Ops       Alerte > 12h ; Cri-       Freeze merges +
+                                        tion CI            rouge et CI verte                                                     tique > 24h               task force
+                         Couverture     Couverture tests Couverture % (ou proxy :     ≥ 60% Mensuel         CI reports Tech Lead Alerte < 50% ;            Sprint tests, obliga-
+                         tests          minimale (selon #tests)                       (min)                                      Critique < 35%            tions DoD
+                                        repos)
+                         Findings       Findings sécurité #findings High+Critical     0          Hebdo      Audit      SecLead   Alerte : 1 Critical ou    Bloquer release,
+                         High/Crit      majeurs sur                                   Critical ;            notes                >2 High ; Critique :      security sprint,
+                                        capstones                                     ≤ 2                                        >=2 Critical              re-audit
+                                                                                     High
+                         TM conformes Threat model         #capstones avec TM validé 100%        Hebdo      Docs repo SecLead    Alerte < 90% ;            Refus validation
+                                      présent et validé    / total                               (capstone)                      Critique < 75%            milestone
+                         Incidents    Fuites détectées     #incidents / période      0           Hebdo      Gitleaks / SecLead   Alerte : 1 ; Critique :   Rotation immé-
+                         secrets      (keys, tokens)                                                        alerts               >1                        diate + incident
+
+
+
+
+                                                                                                         EL
+                                                                                                                                                           report
+
+
+
+
+                                                                                                   TI
+                         Erreurs RPC  Erreurs RPC          #erreurs / #requêtes (ou   ≤ 2%       Hebdo      Logs app   Ops       Alerte > 5% ; Cri-        Basculer provider,
+                                      (timeouts, rate-     logs)                                                                 tique > 10%               activer cache/-
+
+
+
+
+                                                                                                 N
+                                      limit)                                                                                                               mocks
+
+
+
+
+                                                                                        DE
+                         MTTR         Temps moyen de       Moyenne temps résolution ≤ 2ℎ   Mensuel          Incident Ops         Alerte > 4h ; Cri-        Revoir runbooks,
+                                      rétablissement       incidents                                        log                  tique > 8h                drills, ownership
+
+
+
+
+                                                                                      FI
+                         Portfolios   Portfolios prêts     #apprenants ready / total ≥ 90% Hebdo            Checklist Career     Alerte < 80% ;            Bootcamp portfolio
+
+
+
+
+                                                                                  N
+                         prêts        (repos + docs +                                      (fin)                                 Critique < 65%            + rework
+
+
+                                                                           CO
+                                      demo)
+                         Placement 3m Placement (job/-     #placés / #diplômés        ≥ 50% Mensuel         Place-     Career + Alerte < 35% ;             Intensifier réseau,
+                                      mission/bounty                                                        ment       CEO      Critique < 20%             mock interviews,
+                                      régulier) à 3                                                         sheet                                          bounties
+                                      mois
+                         Placement    Placement post-      #placés / #diplômés        ≥ 70% Mensuel         Place-     Career + Alerte < 55% ;             Partenariats RH +
+                         post         parcours                                                              ment       CEO      Critique < 40%             suivi individuel
+                                                                                                            sheet
+                         Bounties       Bounties com-      #bounties validées / co-   ≥ 1        Mensuel    Table      Career    Alerte < 0.5 ; Cri-       Sprint bounties,
+                         complétées     plétées (Super-    horte                      par étu-              bounties             tique < 0.2               mentorat ciblé
+                                        team/OSS etc.)                                diant
+                                                                                      (min)
+                         Variance       Écart budget réel (Réel - Prévu) / Prévu      ≤     Mensuel         Budget     CEO +     Alerte +10–20% ;          Couper “Could”,
+                         budget         vs prévisionnel                               +10%                  sheet      Ops       Critique > 20%            renégocier licences
+                         Encaissement   Encaissement vs Encaissement / Factura-       ≥ 95% Mensuel         Finance    CEO       Alerte < 90% ;            Relances, ajuster
+                                        facturé           tion                                                                   Critique < 80%            modalités paiement
+                                                                                                                                                             Suite page suivante
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                                 Page 290 sur 316
+

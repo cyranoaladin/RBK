@@ -1,0 +1,56 @@
+RBK 2.0 — Whitepaper Architecte Web3                                         Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+
+17.4 Plan de Réponse aux Incidents Crypto (”Black Swan”)
+   Face à la volatilité intrinsèque du secteur, nous déployons un plan de continuité ”Grade Militaire”.
+
+
+17.4.1 Scénario A : Effondrement de l’Écosystème Solana
+   Déclencheur : Panne du réseau > 72 h ou chute du token SOL < 10$.
+
+  1. Immédiat (H+1) : Communication de crise rassurance (”Nous formons des ingénieurs, pas des spéculateurs”).
+
+  2. Pivot Pédagogique (H+24) : Bascule des modules ”Solana Specific” vers ”Rust Générique” (valable pour Polkadot, Near, ou Backend
+     Web2).
+
+
+
+
+                                                                      EL
+  3. Trésorerie : Conversion automatique de tous les assets crypto en Fiat/Stablecoin dès que la volatilité dépasse un seuil d’alerte
+
+
+
+
+                                                                   TI
+     (Stop-Loss).
+
+
+
+
+                                                        D    EN
+17.4.2 Scénario B : Hack d’un Bridge / Protocole Partenaire
+
+
+
+
+                                                     FI
+   Déclencheur : Un outil utilisé dans le cours (ex : Wormhole) est compromis. Ce scénario couvre la compromission d’un Bridge tiers.
+
+
+                                                  N
+  1. Arrêt des Nodes : Les étudiants déconnectent leurs environnements de dev locaux.
+                                           CO
+  2. Learning Moment : L’incident devient un cas d’étude ”Live”. Analyse on-chain du hack en cours de sécurité.
+
+  3. Fonds de Sécurité : Si des bourses étudiantes étaient bloquées, le Fonds de Garantie ISA avance la liquidité.
+
+
+17.5 Tableau de Bord des Risques Critiques
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                Page 156 sur 316
+

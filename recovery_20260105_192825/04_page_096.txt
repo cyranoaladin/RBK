@@ -1,0 +1,65 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                   Chapitre 9. Track A : Solana Engineer
+
+
+du réseau et préparer l’offre Launchpad Nexus (forfait 3 300 TND + 30% de partage sur les protocoles accompagnés).
+
+  Objectifs clés
+
+      • Garantir un uptime > 99,5% et une latence de signature stable en conditions de production.
+
+      • Automatiser la rotation des clés vote et staker avec un Runbook reproductible.
+
+      • Exposer des métriques GraphQL/Prometheus et alertes Discord intégrées au cockpit RBK.
+
+      • Déployer un plan de réponse incident (rollback snapshot, vote account recovery) validé par les mentors SRE.
+
+
+
+
+                                                                       EL
+                                               TAB. 9.11 : Itinéraire Validator (6 semaines)
+
+
+
+
+                                                                    TI
+          Semaine Focus                                Livrable                                         NFT Skills
+
+
+
+
+                                                             EN
+          1       Provision bare-metal / Cloud hybride Terraform + Script Ansible validés (Stage CI/CD) Genesis Access (validator)
+          2       Performance & Observabilité          Dash Grafana + Alertes PagerDuty                 Skill Mirror “Ops” #1
+
+
+
+
+                                                        D
+          3       Sécurité Clés & Gouvernance          Procédure rotation clés, Multisig Squads         Badge “Guardian Ops”
+
+
+
+
+                                                     FI
+          4       Participation Réseau                 Vote account sur mainnet-beta, Score RPC stable  Skill Mirror “Reliability”
+          5       Monétisation Launchpad
+                                                  N    Modèle de rémunération, prévision ISA/Launchpad NFT “Validator Lead”
+                                           CO
+          6       Incident Game Day                    Postmortem complet + plan remédiation            Contribution Launch Proof
+
+
+
+Livrables attendus
+
+   • Validator Runbook : procédures cold/hot restart, gestion snapshots, mapping dépendances réseau.
+
+   • Observability Pack : dashboards partagés avec l’équipe Launchpad et intégrations alerting.
+
+   • NFT Skills Validator Lead : conditionnée à ≥ 2 Skill Mirror “Ops” validés et audit mentor.
+
+   • Dossier Nexus : fiche projet incluant modèle économique (tuition 15 900 TND, forfait 3 300 TND, partage 30%).
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                 Page 95 sur 316
+

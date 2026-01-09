@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                  Chapitre 14. FICHES MÉTIERS & ÉCONOMIE DU DIPLÔMÉ
+
+
+
+                                        Idea / Thesis           Tokenomics Spec               Simulation
+
+
+
+
+                                             Governance             Risk Register          Stress Tests
+
+
+
+
+                                                                     GTM Plan
+
+                             FIG. 14.2 : Boucle Visionnaire (Design → Simulation → Risques → Déploiement)
+
+
+
+
+                                                                         EL
+                                                                      TI
+14.3 Fiche Métier 3 : Web3 Product Builder / Entrepreneur (Le « Builder »)
+
+
+
+
+                                                               EN
+Résumé métier Le Builder est obsédé par la livraison utilisable. Il transforme une hypothèse en produit, cadre le MVP, orchestre le
+
+
+
+
+                                                           D
+delivery multi-métiers (smart contracts, front, infra, ops, growth) et garantit la qualité. C’est le rôle qui empêche le projet de devenir un
+
+
+
+
+                                                        FI
+”prototype éternel”.
+
+Mission et périmètre                                N
+                                             CO
+    • Conduire le cycle Discovery → MVP → Release → Iteration.
+
+    • Produire une spécification exécutable : PRD, user stories, acceptance criteria, Definition of Done.
+
+    • Orchestrer sécurité/qualité : checklists, audits internes, bug bounty, observabilité.
+
+    • Tenir la boucle business : activation, rétention, pricing (si SaaS), partenariats.
+
+Responsabilités cœur (opérationnelles)
+
+  1. Product Discovery : définir personas, pain points, jobs-to-be-done, hypothèses testables.
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                  Page 120 sur 316
+

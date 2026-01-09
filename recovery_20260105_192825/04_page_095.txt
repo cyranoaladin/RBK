@@ -1,0 +1,60 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                          Chapitre 9. Track A : Solana Engineer
+
+
+Projet Final Une dApp complète (ex : AMM simplifié ou DAO Voting) déployée sur Devnet, avec une UI fonctionnelle, une suite de tests
+CI/CD, et un rapport d’auto-audit. La préparation inclut des contrôles Ops3 pour sécuriser la mise en production.
+
+                                                         TAB. 9.7 : Production Readiness Review (PRR)
+
+
+                                               Domaine Critère           Preuve                          Statut
+                                               Sécurité Fuzzing Tests    Corps de cas limites testés     Obligatoire
+                                               Ops      Multisig Upgrade Clés gérées par Squads/Multisig Obligatoire
+                                               Doc      Architecture     Diagramme Mermaid à jour        Obligatoire
+
+
+
+
+                                                                                      EL
+9.3 Stack Technique Spécifique
+
+
+
+
+                                                                                   TI
+      La stack Solana évolue vite. Nous imposons une version LTS (Long Term Support) et des outils standards.
+
+
+
+
+                                                                           EN
+                                                               TAB. 9.9 : Stack Track A (Standard)
+
+
+
+
+                                                                     D
+                                                                  FI
+                                                Catégorie Outils                         Usage
+
+
+                                                              N
+                                                Core      Rust, Solana CLI, Anchor       Dev, Deploy, Test
+                                                Client    TypeScript, web3.js, Anchor.ts Intégration Front/Tests
+                                                      CO
+                                                Security  Trident (Fuzzing), Soteria     Audit auto
+                                                DevOps    GitHub Actions, Solana Verify CI/CD
+
+
+
+
+9.4 RBK Solana Validator Track
+   Le Validator Track prolonge le niveau Bâtisseur vers l’Architecte : les apprenants qui réussissent le Block Check “Build” peuvent intégrer
+un parcours opérationnel focalisé sur l’exploitation d’un validateur mainnet-beta Solana. L’objectif est double : maîtriser les exigences SRE
+  3
+      Ops/SRE — « Ops » désigne les pratiques et activités d’exploitation (monitoring, incidents, runbooks, disponibilité).
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                               Page 94 sur 316
+

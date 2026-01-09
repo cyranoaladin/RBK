@@ -1,0 +1,29 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                 Chapitre 11. Track C : Product Engineer
+
+
+
+   Un ”Full Stack Web3” capable de lancer sa propre startup ou de rejoindre une équipe Growth dans un grand protocole.
+
+                                                TAB. 11.3 : Matrice Compétences Product
+
+
+                                       Domaine Attendu                          Preuve
+                                       Front-end Expert React/Next.js           App fluide 60fps
+                                       Data      Capable d’écrire des subgraphs API GraphQL
+                                       Growth    Comprend les funnels           Analytics intégrés
+
+
+
+
+                                                                     EL
+                                                                  TI
+                                                        D   EN
+                                                     FI
+                                                 N
+                                           CO
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 105 sur 316
+

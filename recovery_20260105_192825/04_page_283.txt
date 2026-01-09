@@ -1,0 +1,32 @@
+V | Plan d’actions risques & tableau de bord KPI (v1)
+
+
+    Cette annexe détaille le plan d’action opérationnel pour mitiger les risques identifiés, ainsi que le tableau de bord de pilotage (KPI) pour le suivi hebdomadaire.
+Le dispositif s’appuie sur un pilotage Ops et sur la traçabilité des leads dans un CRM.
+
+
+
+
+                                                                                   EL
+                                                                                 TI
+Registre des actions risques v1 (transforme chaque risque en tâches exécutables)
+
+
+
+
+                                                                         N
+Référence planning.          On note T0 la date de démarrage officiel de la cohorte. Les échéances sont exprimées relativement à T0.
+
+
+
+
+                                                                       DE
+                                                                 FI
+                                                                N
+                                                         CO
+
+
+
+
+                                                                                 281
+

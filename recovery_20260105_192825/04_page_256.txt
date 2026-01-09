@@ -1,0 +1,64 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                         Annexe K. OFFRE COMMERCIALE & MODALITÉS
+
+
+K.2.1 Mécanisme d’Incitation (Upgrade)
+    • Crédit Genesis : Les frais Genesis Pool sont imputés à 100% sur la suite du parcours en cas de passage vers Explorer.
+
+    • Fenêtre 30 jours : La décision d’upgrade doit intervenir sous 30 jours après le Block Check “Genesis” pour garantir l’étalement sur 15 900 TND.
+
+
+K.2.2 Admission Directe (Passerelles)
+    Accès direct Explorer : Possible via test technique Rust/Algo/Git + soutenance Skill Mirror. Frais administratifs : 200 TND (déduits en cas d’inscription). Accès
+
+
+
+
+                                                                                         EL
+direct Bâtisseur/Architecte : Réservé aux profils expérimentés (portfolio Web3 + audit). Test + entretien. Frais : 300 TND.
+
+
+
+
+                                                                                      TI
+K.2.3 Offre ISA (Income Share Agreement)
+    Périmètre : Réservé aux ”Top Talents” qui s’engagent sur le parcours complet Genesis → Architecte ou sur le module Architecte seul. Sélection stricte (Dossier
+
+
+
+
+                                                                           EN
++ Technique + Social) pour l’accès ISA. Conditions Unifiées :
+
+    • Partage : 15% du revenu brut mensuel.
+
+
+
+
+                                                                 D
+    • Déclencheur (Threshold) : Salaire > 2 500 TND Brut.
+
+
+
+
+                                                               FI
+    • Durée : 36 mensualités (paiements effectifs) maximum.
+
+    • Plafond (Cap) : 20 000 TND total remboursé (Risk Premium inclus).
+                                                  N
+    • Clause de pause : Automatique en cas de chômage ou revenu < Seuil.
+                                                 O
+    • Juridiction : Droit Tunisien, contrat enregistré.
+                                            C
+
+
+                                     Parcours Complet (15 900 TND + 3 300 TND)
+
+
+                     Genesis Pool  Conv. 60%     Explorer     Conv. 80% Bâtisseur/Architecte                                        Launchpad
+                  (25% 15 900 TND)           (50% 15 900 TND)            (25% 15 900 TND)                                           + ISA 15%
+
+                                                          FIG. K.1 : Value Ladder et Parcours Étudiant
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                           Page 254 sur 316
+

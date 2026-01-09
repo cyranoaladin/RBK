@@ -1,0 +1,58 @@
+RBK 2.0 — Whitepaper Architecte Web3                                        Chapitre 17. ANALYSE DES RISQUES & MODÈLE DE RÉSILIENCE
+
+
+   • Lobbying Actif : RBK participe aux groupes de travail de la BCT (Banque Centrale) pour encadrer le statut de ”Service Exporter”
+     blockchain.
+
+
+17.1.2 GDPR et Données Étudiantes On-Chain
+   Risque : Les SBT (Soulbound Tokens) sont immuables. Si des données personnelles y sont inscrites, le ”Droit à l’oubli” est impossible.
+Mitigation :
+
+   • Architecture Privacy-First : Aucun nom, email ou IP n’est stocké sur la blockchain. Le SBT contient uniquement un Hash Cryptogra-
+     phique (ex : Keccak256(Diplome_PDF)).
+
+
+
+
+                                                                     EL
+   • Consentement Explicite : L’étudiant signe une décharge explicite pour le minting de ses résultats.
+
+   • Droit à la Révocation : Le contrat intelligent permet à l’admin (sur demande de l’étudiant) de ”brûler” un token, rompant le lien
+
+
+
+
+                                                                  TI
+     public.
+
+
+
+
+                                                       D    EN
+17.1.3 Cadre Légal des ISA (Income Share Agreements)
+
+
+
+
+                                                    FI
+   Risque : Requalification du contrat ISA en crédit à la consommation déguisé ou clause abusive. Mitigation :
+
+                                                 N
+   • Juridiction Compétente : Contrats régis par le droit commercial (prestation de service avec paiement différé) et non le droit de la
+                                          CO
+     consommation.
+
+   • Clauses Protectrices : Plafond de remboursement (Cap) strict et durée limitée pour éviter toute notion de ”servitude”.
+
+   • Enforceability : Partenariat avec des cabinets de recouvrement locaux en Tunisie, Maroc et Côte d’Ivoire.
+
+
+17.2 Matrice de Risques Dynamique
+   Nous évaluons la résilience du modèle selon trois scénarios de marché.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                               Page 152 sur 316
+

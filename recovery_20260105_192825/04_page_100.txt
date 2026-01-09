@@ -1,0 +1,53 @@
+RBK 2.0 — Whitepaper Architecte Web3                                                                                      Chapitre 10. Track B : EVM Engineer
+
+
+10.2.2 MODULE 2 : Environnement de Développement Pro (Semaines 16-18)
+
+Objectifs Passer de Remix à Foundry. Maîtriser ‘forge test‘, ‘cast‘, et le Fuzzing. Lab (Test Suite) : Écrire une suite de tests exhaustive
+(Unit + Fuzz) pour un protocole existant (ex : Uniswap V2 Pair simplifié). Livrable : Repo avec GitHub Actions qui lance les tests à chaque
+PR.
+
+
+10.2.3 MODULE 3 : Token Standards & Composabilité (Semaines 19-21)
+Objectifs Implémenter ERC20, ERC721, ERC1155. Comprendre ‘approve‘, ‘transferFrom‘ et les risques associés. Lab (DeFi Lego) : Un
+contrat qui ”wrap” un token pour ajouter du rendement (Staking2 ). Critères : Interopérabilité vérifiée avec les standards.
+
+
+
+
+                                                                                   EL
+10.2.4 MODULE 4 : dApp Development & Web3 Integration (Semaines 22-24)
+
+
+
+
+                                                                                TI
+Objectifs Connecter un Front (React/Next) au contrat via Wagmi/Viem. Gérer le cycle de vie de la transaction (Pending, Confirmed,
+
+
+
+
+                                                                         EN
+Failed). Lab (Mini-DEX UI) : Interface pour swapper des tokens (simulation). Checklist : Gestion des erreurs RPC, Feedback utilisateur.
+
+
+
+
+                                                                   D
+                                                                FI
+10.2.5 MODULE 5 : L2 Scaling & Advanced Patterns (Semaines 25-26)
+Objectifs Comprendre les Rollups (Optimistic/ZK). Déployer sur Arbitrum/Base. Gérer l’upgradeabilité (Proxies). Lab (UUPS Upgrade) :
+                                                            N
+Déployer une V1, puis upgrader vers une V2 sans perdre l’état (Storage).
+                                                    CO
+10.2.6 MODULE 6 : Production Hardening & Security (Semaines 27-28)
+Objectifs Sécurisation finale. Audit interne. Projet Final : Déploiement d’un protocole complet sur Testnet (Sepolia/Goerli) avec scripts
+de vérification Etherscan automatisés.
+  2
+      Web3/Blockchain — Staking : blocage de tokens pour sécuriser un réseau Proof-of-Stake et recevoir des récompenses en échange de la participation au consensus.
+
+
+
+
+CONFIDENTIEL — PROJET RBK 2.0                                             Page 99 sur 316
+
