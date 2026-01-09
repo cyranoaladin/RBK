@@ -8,80 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mapping strict: data-page == nom de fichier sans extension
   const pages = {
-    // 00. Cadrage & Synthèse
-    "00_home": "chapters/00_home.html",
-    "00_executive_summary": "chapters/00_executive_summary.html",
-    "00_factsheet": "chapters/00_factsheet.html",
-    "00_guide_lecture": "chapters/00_guide_lecture.html",
-    "00_acronymes": "chapters/00_acronymes.html",
-
-    // 01–05. Vision & Structure
-    "01a_note_cadrage": "chapters/01a_note_cadrage.html",
-    "01_vision": "chapters/01_vision.html",
-    "02_contexte": "chapters/02_contexte.html",
-    "03_arbitrage": "chapters/03_arbitrage.html",
-    "04_methodologie": "chapters/04_methodologie.html",
-    "05_structure": "chapters/05_structure.html",
-
-    // 06–11. Programme
-    "06_syllabus": "chapters/06_syllabus.html",
-    "07_soft_skills": "chapters/07_soft_skills.html",
-    "08_track_solana": "chapters/08_track_solana.html",
-    "track_solana_manifest": "chapters/track_solana_manifest.html",
-    "track_solana_n1": "chapters/track_solana_n1.html",
-    "track_solana_n2": "chapters/track_solana_n2.html",
-    "track_solana_n3": "chapters/track_solana_n3.html",
-    "09_track_evm": "chapters/09_track_evm.html",
-    "09_track_product": "chapters/09_track_product.html",
-    "10_metiers": "chapters/10_metiers.html",
-    "11_capstones": "chapters/11_capstones.html",
-
-    // 12–15. Business
-    "12_business_plan": "chapters/12_business_plan.html",
-    "13_marketing": "chapters/13_marketing.html",
-    "14_risques": "chapters/14_risques.html",
-    "15_roadmap": "chapters/15_roadmap.html",
-
-    // 16–19. Gouvernance
-    "16_token_reputation": "chapters/16_token_reputation.html",
-    "16_compliance_guide": "chapters/16_compliance_guide.html",
-    "16_compliance_sbt": "chapters/16_compliance_sbt.html",
-    "17_impact_odd": "chapters/17_impact_odd.html",
-    "18_nexus_factory": "chapters/18_nexus_factory.html",
-    "18_gouvernance": "chapters/18_gouvernance.html",
-    "19_gouvernance_ethique": "chapters/19_gouvernance_ethique.html",
-    "19_infrastructure_sbt": "chapters/19_infrastructure_sbt.html",
-
-    // 20–22. Clôture
-    "20_roadmap_lancement": "chapters/20_roadmap_lancement.html",
-    "21_differentiation": "chapters/21_differentiation.html",
-    "22_conclusion": "chapters/22_conclusion.html",
-
-    // Annexes
-    "annexe_a_gabarits": "chapters/annexe_a_gabarits.html",
-    "annexe_a_syllabus": "chapters/annexe_a_syllabus.html",
-    "annexe_b_finance": "chapters/annexe_b_finance.html",
-    "annexe_c_juridique": "chapters/annexe_c_juridique.html",
-    "annexe_d_audit": "chapters/annexe_d_audit.html",
-    "annexe_e_cockpit": "chapters/annexe_e_cockpit.html",
-    "annexe_f_isa": "chapters/annexe_f_isa.html",
-    "annexe_g_selection": "chapters/annexe_g_selection.html",
-    "annexe_h_sbt": "chapters/annexe_h_sbt.html",
-    "annexe_i_dashboard": "chapters/annexe_i_dashboard.html",
-    "annexe_j_offre": "chapters/annexe_j_offre.html",
-    "annexe_l_mentors": "chapters/annexe_l_mentors.html",
-    "annexe_m_b2b": "chapters/annexe_m_b2b.html",
-    "annexe_n_stack": "chapters/annexe_n_stack.html",
-    "annexe_o_competences": "chapters/annexe_o_competences.html",
-    "annexe_p_charte": "chapters/annexe_p_charte.html",
-    "annexe_q_cpps": "chapters/annexe_q_cpps.html",
-    "annexe_r_hiring": "chapters/annexe_r_hiring.html",
-    "annexe_s_juridique_kit": "chapters/annexe_s_juridique_kit.html",
-    "annexe_t_staffing": "chapters/annexe_t_staffing.html",
-    "annexe_u_risques": "chapters/annexe_u_risques.html",
-    "annexe_v_pilotage": "chapters/annexe_v_pilotage.html",
-    "annexe_w_glossaire": "chapters/annexe_w_glossaire.html",
-    "annexe_z_gabarits": "chapters/annexe_z_gabarits.html"
+    tech_intro: "chapters/tech_00_intro.html",
+    tech_methodology: "chapters/tech_01_methodology.html",
+    tech_syllabus: "chapters/tech_02_syllabus.html",
+    tech_stack: "chapters/tech_03_stack.html",
+    tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide.html"
   };
 
   async function ensureMermaid() {
@@ -119,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function cleanupCharts() {
-    (window._rbkCharts || []).forEach((ch) => { try { ch.destroy(); } catch { } });
-    window._rbkCharts = [];
+    (window._techCharts || []).forEach((ch) => { try { ch.destroy(); } catch { } });
+    window._techCharts = [];
   }
 
   function renderContextCharts(root) {
@@ -148,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
           plugins: { legend: { labels: { boxWidth: 10 } } }
         }
       });
-      (window._rbkCharts ||= []).push(chart);
+      (window._techCharts ||= []).push(chart);
     }
     if (c2) {
       const ctx = c2.getContext('2d');
@@ -164,23 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { boxWidth: 10 } } } }
       });
-      (window._rbkCharts ||= []).push(chart);
-    }
-  }
-
-  function renderBusinessCharts(root) {
-    const pie = root.querySelector('#chartRevenueMix');
-    if (pie) {
-      const ctx = pie.getContext('2d');
-      const chart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ['Formation Initiale (Cash)', 'ISA (Excellence)', 'B2B (Corporate)'],
-          datasets: [{ data: [85, 5, 10], backgroundColor: ['#ffffff', '#14F195', '#6366f1'], borderWidth: 0 }]
-        },
-        options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
-      });
-      (window._rbkCharts ||= []).push(chart);
+      (window._techCharts ||= []).push(chart);
     }
   }
 
@@ -331,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function injectTechStackContext(pageId, root) {
-    if (pageId !== 'annexe_n_stack') return;
+    if (pageId !== 'tech_stack') return;
     const target = root.querySelector('section');
     if (!target) return;
 
@@ -533,20 +448,15 @@ document.addEventListener('DOMContentLoaded', () => {
       // Diagrams
       try {
         if (pageId === '15_roadmap' || pageId === '20_roadmap_lancement') injectGanttForRoadmap(pageId, contentDiv);
-        // Mermaid désactivé pour les sections finance/business afin d’éviter le flash de code/erreurs
-        if (pageId === 'annexe_n_stack') injectTechStackContext(pageId, contentDiv);
-        if (pageId === '06_syllabus') injectSyllabusGantt(pageId, contentDiv);
+        if (pageId === 'tech_stack') injectTechStackContext(pageId, contentDiv);
+        if (pageId === 'tech_syllabus') injectSyllabusGantt(pageId, contentDiv);
         await ensureMermaid();
         runMermaidSafely();
 
         // Chart.js charts
         await ensureChartJS();
         cleanupCharts();
-        if (pageId === '02_contexte') renderContextCharts(contentDiv);
-        if (pageId === '12_business_plan') {
-          renderBusinessCharts(contentDiv);
-          injectNexusSimulator('nexus-simulator-area');
-        }
+        if (pageId === 'tech_intro') renderContextCharts(contentDiv);
       } catch { }
 
       window.scrollTo(0, 0);
@@ -562,110 +472,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Expose loadPage globally for inline onclick handlers
   window.loadPage = loadPage;
 
-  function injectNexusSimulator(targetId) {
-    const container = document.getElementById(targetId);
-    if (!container) return;
-
-    const html = `
-    <div class="glass-card p-6 mt-0 border border-emerald-500/30">
-        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-            <i data-lucide="landmark" class="text-emerald-400"></i>
-            Simulateur : Modèle Premium (Cash Flow)
-        </h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="space-y-6">
-                <div>
-                    <label class="text-xs uppercase text-emerald-300 font-bold">1. Chiffre d'Affaires (CASH)</label>
-                    <p class="text-[10px] text-slate-500 mb-2">95% payé upfront (Clients Solvables)</p>
-                    <input type="range" min="100000" max="2000000" step="50000" value="850000" id="sim-ca" class="w-full accent-emerald-500">
-                    <div class="text-right font-mono text-emerald-300" id="val-ca">850,000 TND</div>
-                </div>
-                <div>
-                    <label class="text-xs uppercase text-indigo-300 font-bold">2. Coûts Service Nexus (Facture)</label>
-                    <p class="text-[10px] text-slate-500 mb-2">Technologie, Staffing & R&D</p>
-                    <input type="range" min="50000" max="1000000" step="10000" value="595000" id="sim-costs" class="w-full accent-indigo-500">
-                    <div class="text-right font-mono text-indigo-300" id="val-costs">595,000 TND</div>
-                </div>
-                <div class="p-3 bg-white/5 rounded border border-white/10 opacity-60">
-                     <label class="text-xs uppercase text-slate-400 font-bold">3. Impact ISA (Excellence)</label>
-                     <p class="text-[10px] text-slate-500">Plafonné à 2 étudiants (Volume négligeable)</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col justify-center space-y-4 bg-slate-900/50 p-4 rounded-xl border border-white/5">
-                
-                <div class="pb-2 border-b border-white/10">
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm text-slate-400">Sortie Cash (Vers Nexus)</span>
-                        <span class="font-bold font-mono text-indigo-400" id="res-nexus">595,000 TND</span>
-                    </div>
-                </div>
-
-                <div class="pb-2 border-b border-white/10">
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm text-emerald-400 font-bold">Marge Brute RBK (Immédiate)</span>
-                        <span class="font-bold font-mono text-emerald-400 text-lg" id="res-rbk">255,000 TND</span>
-                    </div>
-                    <p class="text-[9px] text-slate-500 mt-1 text-right">Trésorerie disponible J+1</p>
-                </div>
-                
-                <div class="w-full h-4 bg-slate-800 rounded-full overflow-hidden flex mt-2">
-                    <div id="bar-nexus" class="h-full bg-indigo-500/80 transition-all duration-500" style="width: 70%"></div>
-                    <div id="bar-rbk" class="h-full bg-emerald-500/80 transition-all duration-500" style="width: 30%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    `;
-
-    container.innerHTML += html;
-    if (window.lucide) lucide.createIcons();
-
-    // Logic
-    const inputs = ['sim-ca', 'sim-costs'];
-    inputs.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('input', updateSim);
-    });
-
-    function updateSim() {
-      const ca = parseInt(document.getElementById('sim-ca').value);
-      const costs = parseInt(document.getElementById('sim-costs').value);
-
-      // Dans ce nouveau modèle, Nexus coute ce qu'il coute (input), pas de marge complexe calculée ici
-      // On simplifie pour montrer la soustraction CASH - FACTURE
-      const nexusBill = costs;
-      let rbkNet = ca - nexusBill;
-
-      // Mise à jour DOM
-      document.getElementById('val-ca').innerText = ca.toLocaleString() + ' TND';
-      document.getElementById('val-costs').innerText = costs.toLocaleString() + ' TND';
-      document.getElementById('res-nexus').innerText = nexusBill.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
-
-      const rbkEl = document.getElementById('res-rbk');
-      rbkEl.innerText = rbkNet.toLocaleString(undefined, { maximumFractionDigits: 0 }) + ' TND';
-
-      // Alerte si RBK est en déficit
-      if (rbkNet < 0) {
-        rbkEl.classList.remove('text-emerald-400');
-        rbkEl.classList.add('text-rose-500');
-        rbkEl.innerText += " (Déficit)";
-      } else {
-        rbkEl.classList.remove('text-rose-500');
-        rbkEl.classList.add('text-emerald-400');
-      }
-
-      // Update Bar
-      const total = Math.max(ca, nexusBill); // Base 100 on the largest to fit bar
-      const pctNexus = Math.min((nexusBill / total) * 100, 100);
-      const pctRbk = rbkNet > 0 ? (rbkNet / total) * 100 : 0;
-
-      document.getElementById('bar-nexus').style.width = pctNexus + '%';
-      document.getElementById('bar-rbk').style.width = pctRbk + '%';
-    }
-  }
-
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -674,6 +480,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Charge la page d'accueil par défaut si pas de hash
-  const initialPage = window.location.hash.substring(1) || '00_home';
+  const initialPage = window.location.hash.substring(1) || 'tech_intro';
   loadPage(initialPage);
 });
