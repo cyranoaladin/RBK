@@ -408,6 +408,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function imageFallbacks(root) {
+    root.querySelectorAll('img').forEach((img) => {
+      if (img.dataset.fallbackBound) return;
+      img.dataset.fallbackBound = '1';
+      img.addEventListener('error', () => {
+        const src = img.getAttribute('src') || 'image.png';
+        const name = (src.split('/').pop() || 'image').split('?')[0];
+        const ph = document.createElement('div');
+        ph.className = 'w-full min-h-[120px] bg-slate-800/60 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-xs font-mono';
+        ph.textContent = `Missing: ${name}`;
+        img.replaceWith(ph);
+      }, { once: true });
+    });
+  }
+
   function initLanguageToggle(pageId, root) {
     if (pageId !== 'tech_00_home') return;
     if (root.dataset.langBound === '1') return;
@@ -439,20 +453,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btnEn.addEventListener('click', () => setLang('en'));
     setLang('fr');
     root.dataset.langBound = '1';
-  }
-
-    root.querySelectorAll('img').forEach((img) => {
-      if (img.dataset.fallbackBound) return;
-      img.dataset.fallbackBound = '1';
-      img.addEventListener('error', () => {
-        const src = img.getAttribute('src') || 'image.png';
-        const name = (src.split('/').pop() || 'image').split('?')[0];
-        const ph = document.createElement('div');
-        ph.className = 'w-full min-h-[120px] bg-slate-800/60 border border-white/10 rounded-lg flex items-center justify-center text-slate-500 text-xs font-mono';
-        ph.textContent = `Missing: ${name}`;
-        img.replaceWith(ph);
-      }, { once: true });
-    });
   }
 
 
