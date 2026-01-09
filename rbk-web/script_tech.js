@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
     tech_methodology: "chapters/tech_01_methodology.html",
     tech_syllabus: "chapters/tech_02_syllabus.html",
     tech_stack: "chapters/tech_03_stack.html",
-    tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide.html"
+    tech_pedagogy_guide: "chapters/tech_04_pedagogy_guide.html",
+    tech_soft_skills: "chapters/tech_05_soft_skills.html",
+    tech_solana_hub: "chapters/tech_06_solana_hub.html",
+    tech_solana_n1: "chapters/tech_06a_solana_n1.html",
+    tech_solana_n2: "chapters/tech_06b_solana_n2.html",
+    tech_solana_n3: "chapters/tech_06c_solana_n3.html",
+    tech_evm_hub: "chapters/tech_07_evm_hub.html",
+    tech_capstones: "chapters/tech_08_capstones.html",
+    tech_competencies: "chapters/tech_09_competencies.html",
+    tech_mentor_guide: "chapters/tech_10_mentor_guide.html"
   };
 
   async function ensureMermaid() {
