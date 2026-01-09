@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i styles/tailwind.css -o assets/tailwind.css --watch --content index.html,chapters/**/*.html,script.js",
-    "build": "tailwindcss -i styles/tailwind.css -o assets/tailwind.css --minify --content index.html,chapters/**/*.html,script.js"
+    "build": "tailwindcss -i styles/tailwind.css -o assets/tailwind.css --minify --content index.html,chapters/**/*.html,script.js",
+    "lint": "npx prettier --check .",
+    "format": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
